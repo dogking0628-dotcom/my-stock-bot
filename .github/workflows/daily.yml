@@ -1,0 +1,44 @@
+name: Daily ATH Scan
+
+on:
+  schedule:
+    # 每日 UTC 21:30 = 美股收盤後 30 分（夏令）= 越南 04:30 早晨
+    # GitHub Actions cron 偶有延遲 5-15 分，可接受
+    - cron: '30 21 * * 1-5'  # Mon-Fri 美東交易日對應的 UTC
+  workflow_dispatch:  # 允許手動觸發
+
+permissions:
+  contents: write  # 需要寫回 state.json
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          cd cloud_bot
+          pip install -r requirements.txt
+
+      - name: Run daily scan
+        env:
+          LINE_TOKEN:   ${{ secrets.LINE_TOKEN }}
+          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
+        run: |
+          cd cloud_bot
+          python daily_scan.py
+
+      - name: Commit state
+        run: |
+          git config user.name  "github-actions"
+          git config user.email "github-actions@github.com"
+          git add cloud_bot/state.json || true
+          git diff --staged --quiet || git commit -m "chore: update state $(date -u +%Y-%m-%d)"
+          git push

@@ -6,35 +6,35 @@
       "ticker": "INTC",
       "entry_date": "2026-05-01",
       "entry_price": 99.62,
-      "peak_price": 99.62,
+      "peak_price": 99.62000274658203,
       "shares": 100.381447
     },
     {
       "ticker": "MU",
       "entry_date": "2026-05-01",
       "entry_price": 542.21,
-      "peak_price": 542.21,
+      "peak_price": 542.2100219726562,
       "shares": 18.443038
     },
     {
       "ticker": "AMD",
       "entry_date": "2026-05-01",
       "entry_price": 360.54,
-      "peak_price": 360.54,
+      "peak_price": 360.5400085449219,
       "shares": 27.736173
     },
     {
       "ticker": "AMZN",
       "entry_date": "2026-05-01",
       "entry_price": 268.26,
-      "peak_price": 268.26,
+      "peak_price": 268.260009765625,
       "shares": 37.277267
     },
     {
       "ticker": "GOOGL",
       "entry_date": "2026-05-01",
       "entry_price": 385.69,
-      "peak_price": 385.69,
+      "peak_price": 385.69000244140625,
       "shares": 25.927558
     }
   ],

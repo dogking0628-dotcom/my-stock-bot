@@ -44,12 +44,14 @@ def fetch_market_caps(tickers):
         mcap, name = 0, t
         try:
             tk = yf.Ticker(t)
+            # 先試 fast_info（快但有時 None）
             try:
                 fi = tk.fast_info
                 mcap = (fi.get("market_cap") or 0)
                 if mcap == 0 and fi.get("last_price") and fi.get("shares"):
                     mcap = fi.get("last_price") * fi.get("shares")
             except: pass
+            # fallback: info (慢但完整)
             if mcap == 0:
                 info = tk.info
                 mcap = info.get("marketCap") or 0

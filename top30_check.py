@@ -37,18 +37,30 @@ def load_holdings():
         return json.load(f).get("holdings", [])
 
 def fetch_market_caps(tickers):
-    """用 yfinance 抓市值（單位：十億美元）"""
+    """用 yfinance 抓市值（單位：十億美元）— 雙重來源：fast_info + info fallback"""
     print(f"Fetching market caps for {len(tickers)} candidates...")
     results = []
     for t in tickers:
+        mcap, name = 0, t
         try:
-            info = yf.Ticker(t).fast_info
-            mcap = info.get("market_cap") or 0
-            name = info.get("longName") or t
-            if mcap > 0:
-                results.append({"ticker": t, "name": name, "mcap": mcap / 1e9})
+            tk = yf.Ticker(t)
+            try:
+                fi = tk.fast_info
+                mcap = (fi.get("market_cap") or 0)
+                if mcap == 0 and fi.get("last_price") and fi.get("shares"):
+                    mcap = fi.get("last_price") * fi.get("shares")
+            except: pass
+            if mcap == 0:
+                info = tk.info
+                mcap = info.get("marketCap") or 0
+                name = info.get("longName") or info.get("shortName") or t
         except Exception as e:
             print(f"  {t}: {e}")
+            continue
+        if mcap > 0:
+            results.append({"ticker": t, "name": name, "mcap": mcap / 1e9})
+        else:
+            print(f"  {t}: NO MARKET CAP DATA")
     return results
 
 def main():

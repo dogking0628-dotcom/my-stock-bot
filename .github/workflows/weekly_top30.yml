@@ -2,7 +2,6 @@ name: Weekly Top30 Check
 
 on:
   schedule:
-    # 每週一 UTC 02:00 = 越南 09:00 週一早晨
     - cron: '0 2 * * 1'
   workflow_dispatch:
 
@@ -21,14 +20,10 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: |
-          cd cloud_bot
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
 
       - name: Run Top30 check
         env:
           LINE_TOKEN:   ${{ secrets.LINE_TOKEN }}
           LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
-        run: |
-          cd cloud_bot
-          python top30_check.py
+        run: python top30_check.py

@@ -138,9 +138,12 @@ def analyze_stock(ticker, name, suffix="", price_mode="adjusted"):
     hist_max = c.max()
     is_ath = today >= hist_max * 0.999
     is_bullish = ma5 > ma20 > ma60 > ma200
-    # 4 個濾網
-    pass_vol  = vol_ratio >= 1.5
-    pass_rsi  = rsi_val < 80
+    # 漲停鎖死偵測（台股 +10% 限制 → 漲停 + 量縮 = 賣壓真空 = 最強訊號）
+    is_limit_up = change >= 9.5
+    is_locked_limit_up = is_limit_up and vol_ratio < 1.2
+    # 4 個濾網（漲停板特例）
+    pass_vol  = vol_ratio >= 1.5 or is_locked_limit_up
+    pass_rsi  = rsi_val < 80 or is_limit_up
     pass_heat = bull_strength < 100
     return {
         "ticker": ticker, "name": name,
@@ -149,6 +152,7 @@ def analyze_stock(ticker, name, suffix="", price_mode="adjusted"):
         "ma5": ma5, "ma20": ma20, "ma60": ma60, "ma200": ma200,
         "bull_strength": bull_strength,
         "is_ath": is_ath, "is_bullish": is_bullish,
+        "is_limit_up": is_limit_up, "is_locked_limit_up": is_locked_limit_up,
         "pass_vol": pass_vol, "pass_rsi": pass_rsi, "pass_heat": pass_heat,
         "stop_price": ma5 * 0.98,
         "entry_price": ma5,
@@ -165,8 +169,11 @@ def market_regime(market="US"):
 
 def render_stock_card(a, market_bull):
     """渲染個股卡片"""
+    is_locked = a.get("is_locked_limit_up", False)
     n_pass = sum([a["pass_vol"], a["pass_rsi"], a["pass_heat"], market_bull])
-    if n_pass == 4:
+    if is_locked:
+        cls, status, emoji = "ok", "🚀 漲停鎖死（最強）", "🚀"
+    elif n_pass == 4:
         cls, status, emoji = "ok", "🟢 可進場", "🟢"
     elif n_pass >= 2:
         cls, status, emoji = "warn", "🟡 觀察", "🟡"
@@ -175,7 +182,10 @@ def render_stock_card(a, market_bull):
 
     chg_color = "green" if a["change"] > 0 else "red"
     rsi_tag = "🔥過熱" if a["rsi"] > 80 else ("✓健康" if a["rsi"] >= 50 else "")
-    vol_tag = "✓爆量" if a["vol_ratio"] >= 1.5 else "量少"
+    if is_locked:
+        vol_tag = "🚀 漲停鎖死（量縮=賣壓真空）"
+    else:
+        vol_tag = "✓爆量" if a["vol_ratio"] >= 1.5 else "量少"
     heat_tag = "✓正常" if a["bull_strength"] < 100 else "🔥漲過頭"
 
     html = f"""

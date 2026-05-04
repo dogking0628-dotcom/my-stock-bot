@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
 """
-雲端版每日掃描 — 用 yfinance 取代 moomoo
-─────────────────────────────────────────
-邏輯：
-  進場：當日收盤 > 過去所有歷史最高
-  止損：從持倉峰值 -20%
-  最多 10 檔分散
+雲端版每日掃描 — 美股ATH策略 + 台股0050策略
+─────────────────────────────────────────────
+美股：ATH突破進場 + 20%移動止損（最多10檔）
+台股：MA200(5日確認) + 熊市三段加碼 + 超漲40%減倉
 
-執行頻率：每日美股收盤後（GitHub Actions cron 21:30 UTC = 04:30 VN）
-狀態：state.json 在 repo 內，每次執行後 commit 回去
+執行頻率：每日美股收盤後（GitHub Actions cron 21:30 UTC）
+狀態：state.json / tw_state.json，每次執行後 commit 回去
 """
 import os, sys, json, datetime as dt
 import yfinance as yf
 from config import UNIVERSE, MAX_SLOTS, STOP_PCT, INITIAL_CASH
 import notify_line
+import tw_0050_signal
+import tw_breakout_filter
 
 STATE_PATH = os.path.join(os.path.dirname(__file__), "state.json")
 
@@ -123,70 +123,105 @@ def commit_actions(state, sells, buys, holds, today):
             rem -= 1
     state["last_run"] = today
 
-# ── LINE 訊息 ────────────────────────────
-def build_msg(state, sells, buys, holds, today, n_buy):
-    cash_after = state["cash"] + sum(r["shares"] * r["current"] for r in sells)
-    cash_per = cash_after / n_buy if n_buy else 0
+# ── 美股 LINE 訊息區塊 ─────────────────────
+def build_us_block(state, sells, buys, holds, today, n_buy):
+    cash_after   = state["cash"] + sum(r["shares"] * r["current"] for r in sells)
+    cash_per     = cash_after / n_buy if n_buy else 0
     holdings_val = sum(h["shares"] * h["current"] for h in holds)
-    total_val = state["cash"] + holdings_val + sum(r["shares"]*r["current"] for r in sells)
+    total_val    = state["cash"] + holdings_val + sum(r["shares"]*r["current"] for r in sells)
 
-    lines = [f"📊 策略A 雲端掃描 {today}", "═" * 18]
+    lines = ["🇺🇸 美股策略A（ATH突破）"]
 
     if not sells and n_buy == 0:
-        lines.append("✅ 今日無動作（無止損觸發、無新高訊號）")
+        lines.append("  ⏸ 今日不動（無止損、無新ATH突破）")
     else:
-        lines.append("【今日下單清單】")
         if sells:
-            lines.append("")
-            lines.append(f"🔴 賣出 {len(sells)} 檔：")
+            lines.append(f"  🔴 賣出 {len(sells)} 檔：")
             for r in sells:
-                lines.append(f"  • SELL {r['ticker']} {r['shares']:.2f}股 @${r['current']:.2f}")
-                lines.append(f"    損益 {r['change_pct']:+.1f}% (從峰值 -{abs(r['peak_dd']):.1f}%)")
+                lines.append(f"    SELL {r['ticker']} {r['shares']:.2f}股 @${r['current']:.2f}"
+                              f"  損益{r['change_pct']:+.1f}%")
         if n_buy > 0:
-            lines.append("")
-            lines.append(f"🟢 買入 {n_buy} 檔（每檔 ≈${cash_per:,.0f}）：")
+            lines.append(f"  🟢 買入 {n_buy} 檔（每檔 ≈${cash_per:,.0f}）：")
             for r in buys[:n_buy]:
                 shares = cash_per / r["last"]
-                lines.append(f"  • BUY  {r['ticker']} {shares:.2f}股 @${r['last']:.2f}")
-                lines.append(f"    突破前ATH +{r['breakout_pct']:.1f}%")
+                lines.append(f"    BUY {r['ticker']} {shares:.2f}股 @${r['last']:.2f}"
+                              f"  +{r['breakout_pct']:.1f}%ATH")
 
-    lines.append("")
-    lines.append("─" * 18)
-    lines.append(f"💼 組合總值 ${total_val:,.0f}")
-    lines.append(f"持倉 {len(state['positions'])}/{MAX_SLOTS}  現金 ${state['cash']:,.0f}")
+    lines.append(f"  💼 總值 ${total_val:,.0f}  持倉{len(state['positions'])}/{MAX_SLOTS}"
+                 f"  現金${state['cash']:,.0f}")
 
     if holds:
-        holds_sorted = sorted(holds, key=lambda h: -h["shares"]*h["current"])
-        lines.append("")
-        lines.append(f"📌 持有 {len(holds)} 檔：")
-        for r in holds_sorted:
-            mkt = r["shares"] * r["current"]
-            wt = mkt / total_val * 100 if total_val else 0
-            sign = "+" if r["change_pct"] >= 0 else ""
-            lines.append(f"  {r['ticker']:<5} {wt:>4.1f}%  ${mkt:>6,.0f}  {sign}{r['change_pct']:.1f}%  止損${r['new_peak']*(1-STOP_PCT):.2f}")
+        holds_sorted = sorted(holds, key=lambda h: -h["shares"]*h["current"])[:5]
+        lines.append("  持有（前5）：" + "  ".join(
+            f"{h['ticker']}{h['change_pct']:+.0f}%" for h in holds_sorted
+        ) + ("  ..." if len(holds) > 5 else ""))
 
-    lines.append("")
-    lines.append("👉 收盤前下 MOC（moomoo）或限價單（Firstrade）")
     return "\n".join(lines)
+
+# ── 合併訊息 ──────────────────────────────
+def build_combined_msg(us_block, tw_result, tw_breakout_block, watchlist_block, today):
+    tw_block    = tw_0050_signal.build_line_block(tw_result)
+    has_us_act  = ("SELL" in us_block or "BUY" in us_block)
+    has_tw_act  = tw_result.get("action", "HOLD") != "HOLD"
+    has_tw_high = "🟢 高機率" in tw_breakout_block
+    has_watch_alert = "🚨 進場！" in watchlist_block
+    has_any_act = has_us_act or has_tw_act or has_tw_high or has_watch_alert
+
+    header = f"📊 投資策略日報 {today}"
+    if has_any_act:
+        header = f"🚨 投資訊號觸發 {today}"
+
+    return "\n".join([
+        header,
+        "═" * 22,
+        us_block,
+        "─" * 22,
+        tw_block,
+        "─" * 22,
+        tw_breakout_block,
+        "─" * 22,
+        watchlist_block,
+        "─" * 22,
+        "👉 建議收盤前執行，moomoo/Firstrade",
+    ])
 
 # ── Main ─────────────────────────────────
 def main():
-    state = load_state()
-    hist = fetch_data(UNIVERSE)
-    if not hist:
-        notify_line.push("❌ 雲端掃描：無法取得 yfinance 資料")
-        return
+    today = dt.date.today().strftime("%Y-%m-%d")
 
-    sells, buys, holds, today = scan(state, hist)
-    n_buy = min(len(buys), MAX_SLOTS - len(state["positions"]) + len(sells))
-    msg = build_msg(state, sells, buys, holds, today, n_buy)
+    # ── 美股掃描 ──────────────────────────
+    state = load_state()
+    hist  = fetch_data(UNIVERSE)
+    if not hist:
+        notify_line.push("❌ 雲端掃描：yfinance 資料取得失敗")
+        return
+    sells, buys, holds, today_data = scan(state, hist)
+    n_buy   = min(len(buys), MAX_SLOTS - len(state["positions"]) + len(sells))
+    us_block= build_us_block(state, sells, buys, holds, today_data, n_buy)
+
+    # ── 台股訊號 ──────────────────────────
+    print("Checking TW 0050 signal...")
+    tw_result = tw_0050_signal.check()
+
+    # ── 台股突破篩選（含統計濾網）──────────
+    print("Scanning TW breakout candidates...")
+    tw_breakout_results = tw_breakout_filter.scan_all()
+    tw_breakout_block = tw_breakout_filter.build_line_block(tw_breakout_results)
+
+    # ── 個人觀察清單（5 檔追蹤）──────────
+    print("Tracking personal watchlist...")
+    watchlist = tw_breakout_filter.scan_watchlist()
+    watchlist_block = tw_breakout_filter.build_watchlist_block(watchlist)
+
+    # ── 合併推播 ──────────────────────────
+    msg = build_combined_msg(us_block, tw_result, tw_breakout_block, watchlist_block, today)
     print(msg)
     notify_line.push(msg)
 
-    # 自動 commit
-    commit_actions(state, sells, buys, holds, today)
+    # ── 更新美股狀態 ──────────────────────
+    commit_actions(state, sells, buys, holds, today_data)
     save_state(state)
-    print(f"\n[STATE] saved {STATE_PATH}")
+    print(f"\n[STATE] US saved. TW regime={tw_result['regime']} alloc={tw_result['allocation']:.0%}")
 
 if __name__ == "__main__":
     main()

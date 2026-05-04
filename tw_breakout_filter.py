@@ -131,23 +131,29 @@ def analyze(ticker, name):
     is_ath = today >= hist_max * 0.999
     is_bullish = ma5 > ma20 > ma60 > ma200
 
-    # ── 統計實證濾網（4 個條件）──
-    pass_volume = vol_ratio >= 1.5
-    pass_change = 2 <= change <= 10  # 中段漲幅最強
-    pass_rsi    = rsi_val < 80
-    pass_bull   = 20 <= bull_strength <= 100  # 不太弱也不過熱
+    # ── 漲停鎖死偵測（台股獨有 +10% 限制）──
+    # 漲幅 ≥ 9.5% 視為觸及漲停板，量縮代表「鎖死」= 賣壓真空 = 最強訊號
+    is_limit_up = change >= 9.5
+    is_locked_limit_up = is_limit_up and vol_ratio < 1.2  # 漲停 + 量縮 = 鎖死
 
-    # ── 假突破嫌疑 ──
-    is_fake = (
-        vol_ratio < 1.0 or          # 量縮突破
+    # ── 統計實證濾網（4 個條件，漲停板特例）──
+    pass_volume = vol_ratio >= 1.5 or is_locked_limit_up  # 漲停鎖死視同 pass
+    pass_change = 2 <= change <= 10
+    pass_rsi    = rsi_val < 80 or is_limit_up  # 漲停板放寬 RSI 要求
+    pass_bull   = 20 <= bull_strength <= 100
+
+    # ── 假突破嫌疑（漲停板免責）──
+    is_fake = (not is_limit_up) and (
+        vol_ratio < 1.0 or          # 真量縮（非漲停）
         rsi_val > 85 or             # 嚴重過熱
-        change > 10 or              # 噴出末端
         bull_strength > 100         # 漲過頭
     )
 
     # ── 分類 ──
     n_pass = sum([pass_volume, pass_change, pass_rsi, pass_bull])
-    if is_fake:
+    if is_locked_limit_up and bull_strength <= 100:
+        category = "limit_up"  # 🚀 漲停鎖死（最強）
+    elif is_fake:
         category = "fake"   # 🔴 假突破嫌疑
     elif n_pass == 4:
         category = "high"   # 🟢 高機率
@@ -180,19 +186,28 @@ WATCHLIST = [
 ]
 
 def momentum_score(a):
-    """0-90 分動能評分（基於 3,292 筆統計）"""
+    """0-90 分動能評分（含漲停鎖死特例）"""
     s = 0
-    if a["vol_ratio"] >= 3: s += 30
+    is_limit_up = a["change"] >= 9.5
+    is_locked = is_limit_up and a["vol_ratio"] < 1.2
+    # 漲停鎖死 = 滿分量能（最強訊號）
+    if is_locked:
+        s += 30
+    elif a["vol_ratio"] >= 3: s += 30
     elif a["vol_ratio"] >= 2: s += 20
     elif a["vol_ratio"] >= 1.5: s += 12
-    elif a["vol_ratio"] < 1: s -= 5
-    if 5 <= a["change"] <= 8: s += 25
+    elif a["vol_ratio"] < 1 and not is_limit_up: s -= 5
+    # 漲幅
+    if is_limit_up: s += 30  # 漲停滿分
+    elif 5 <= a["change"] <= 8: s += 25
     elif 2 <= a["change"] < 5: s += 15
-    elif a["change"] > 10: s += 5
     elif 0 < a["change"] < 2: s += 8
+    # RSI
     if 60 <= a["rsi"] <= 75: s += 20
     elif 75 < a["rsi"] <= 80: s += 12
-    elif a["rsi"] > 85: s -= 10
+    elif a["rsi"] > 85 and not is_limit_up: s -= 10
+    elif a["rsi"] > 85 and is_limit_up: s += 5  # 漲停板過熱合理
+    # 多頭強度
     if 20 <= a["bull_strength"] <= 60: s += 15
     elif 60 < a["bull_strength"] <= 100: s += 10
     elif a["bull_strength"] > 100: s -= 8
@@ -213,7 +228,7 @@ def scan_watchlist():
 
 def scan_all():
     """掃描全部觀察池，返回符合 ATH+多頭排列的清單（按分類）"""
-    results = {"high": [], "medium": [], "low": [], "fake": []}
+    results = {"limit_up": [], "high": [], "medium": [], "low": [], "fake": []}
     for tk, name in TW_UNIVERSE:
         a = analyze(tk, name)
         if not a: continue
@@ -250,15 +265,22 @@ def build_watchlist_block(watchlist):
 
 def build_line_block(results):
     """為 LINE 訊息產生台股突破區塊（精簡版）"""
+    limit_up = results.get("limit_up", [])
     high = results["high"]; medium = results["medium"]
     low = results["low"]; fake = results["fake"]
-    total = len(high) + len(medium) + len(low) + len(fake)
+    total = len(limit_up) + len(high) + len(medium) + len(low) + len(fake)
 
     lines = ["🇹🇼 台股突破篩選 (統計濾網)"]
     if total == 0:
         lines.append("  ⏸ 今日無創新高+多頭排列個股")
         return "\n".join(lines)
 
+    if limit_up:
+        lines.append(f"  🚀 漲停鎖死 ({len(limit_up)}) — 賣壓真空，最強訊號！")
+        for a in limit_up[:8]:
+            lines.append(f"    {a['ticker']} {a['name']}  ${a['close']:.0f}"
+                         f" {a['change']:+.1f}% 量{a['vol_ratio']:.1f}x")
+            lines.append(f"      💡 隔日續強機率高，等回測 5MA(${a['entry_price']:.0f}) 進")
     if high:
         lines.append(f"  🟢 高機率 ({len(high)}) — 量爆+漲幅佳+多頭強")
         for a in high[:5]:
@@ -288,8 +310,8 @@ if __name__ == "__main__":
     res = scan_all()
     print(build_line_block(res))
     print("\n--- 詳細 ---")
-    for cat in ["high", "medium", "low", "fake"]:
-        emoji = {"high":"🟢","medium":"🟡","low":"🟠","fake":"🔴"}[cat]
+    for cat in ["limit_up", "high", "medium", "low", "fake"]:
+        emoji = {"limit_up":"🚀","high":"🟢","medium":"🟡","low":"🟠","fake":"🔴"}[cat]
         for a in res[cat]:
             print(f"{emoji} {a['ticker']} {a['name']:<8} "
                   f"${a['close']:.0f} {a['change']:+.1f}% "

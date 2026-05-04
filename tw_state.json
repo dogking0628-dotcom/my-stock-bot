@@ -1,0 +1,16 @@
+{
+  "regime": "reduced",
+  "allocation": 0.7,
+  "ref_price": 90.5,
+  "dip_flags": [
+    false,
+    false,
+    false
+  ],
+  "consec_below": 0,
+  "consec_above": 0,
+  "bull_high": 90.5,
+  "last_close": 94.6,
+  "last_ma200": 64.3938,
+  "last_update": "2026-05-04"
+}

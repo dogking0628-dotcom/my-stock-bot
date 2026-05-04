@@ -226,11 +226,77 @@ def scan_watchlist():
     out.sort(key=lambda x: -x["score"])
     return out
 
-def scan_all():
-    """掃描全部觀察池，返回符合 ATH+多頭排列的清單（按分類）"""
+def get_full_universe():
+    """動態抓全台股市場（上市+上櫃約 1900+ 檔），失敗時 fallback 到內建 145 檔"""
+    try:
+        import universe_loader
+        full = universe_loader.fetch_tw_universe()
+        if full and len(full) > 200:
+            return full
+    except Exception as e:
+        print(f"[tw_filter] full universe load failed: {e}")
+    return TW_UNIVERSE
+
+import time
+
+def _quick_screen_batch(tickers_batch):
+    """
+    批次快速篩選（raw close 寬鬆篩）
+    用 0.92 閾值（容忍 8% 配息衰減），讓真正的還原 ATH 候選不被漏掉
+    """
+    candidates = []
+    yf_codes = []
+    code_map = {}
+    for code, name in tickers_batch:
+        # 4 位數股號預設先試 .TW；若 fail Stage 2 會自動 fallback .TWO
+        yf_codes.append(f"{code}.TW")
+        code_map[f"{code}.TW"] = (code, name)
+    try:
+        df = yf.download(" ".join(yf_codes), period="2y",
+                         auto_adjust=False, progress=False, threads=True,
+                         group_by="ticker")
+    except: return []
+    for yfc in yf_codes:
+        try:
+            if yfc not in df.columns.get_level_values(0): continue
+            sub = df[yfc]
+            cl = sub["Close"].dropna()
+            if len(cl) < 200: continue
+            today = float(cl.iloc[-1])
+            hist_max = float(cl.max())
+            # 寬鬆 0.92：留 8% 緩衝給配息衰減（高股息股 raw 會掉，還原後可能仍 ATH）
+            if today >= hist_max * 0.92:
+                code, name = code_map[yfc]
+                candidates.append((code, name))
+        except: continue
+    return candidates
+
+def scan_all(use_full_universe=True):
+    """
+    雙階段掃描：
+    1. 批次快速篩出 ATH 候選（用 raw close）
+    2. 對候選做完整 analyze（含還原權值、漲停判讀）
+    """
     results = {"limit_up": [], "high": [], "medium": [], "low": [], "fake": []}
-    for tk, name in TW_UNIVERSE:
-        a = analyze(tk, name)
+    universe = get_full_universe() if use_full_universe else TW_UNIVERSE
+    print(f"[tw_filter] Stage 1: 批次快篩 {len(universe)} 檔...")
+
+    # 第一階段：批次快篩（每 50 檔一批，間隔 sleep 避免 yfinance 限流）
+    all_candidates = []
+    BATCH = 50
+    for i in range(0, len(universe), BATCH):
+        batch = universe[i:i+BATCH]
+        cands = _quick_screen_batch(batch)
+        all_candidates.extend(cands)
+        if i % 200 == 0:
+            print(f"  [{i}/{len(universe)}] 已找 {len(all_candidates)} 個寬鬆 ATH 候選")
+        time.sleep(0.8)  # 避免限流
+    print(f"[tw_filter] Stage 1 完成：{len(all_candidates)} 個候選（將用還原權值二次驗證）")
+
+    # 第二階段：完整 analyze（含還原權值、多頭排列、漲停判讀）
+    print(f"[tw_filter] Stage 2: 完整分析 {len(all_candidates)} 檔...")
+    for code, name in all_candidates:
+        a = analyze(code, name)
         if not a: continue
         if a["is_ath"] and a["is_bullish"]:
             results[a["category"]].append(a)

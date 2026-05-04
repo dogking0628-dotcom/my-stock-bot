@@ -10,10 +10,19 @@
 """
 import os, sys, json, datetime as dt
 import yfinance as yf
-from config import UNIVERSE, MAX_SLOTS, STOP_PCT, INITIAL_CASH
+from config import UNIVERSE as DEFAULT_UNIVERSE, MAX_SLOTS, STOP_PCT, INITIAL_CASH
 import notify_line
 import tw_0050_signal
 import tw_breakout_filter
+import universe_loader
+
+# 動態抓 S&P 500 作為美股池（如果失敗 fallback 到 config 的 30 檔）
+try:
+    UNIVERSE = universe_loader.fetch_sp500() or DEFAULT_UNIVERSE
+    print(f"[universe] US: {len(UNIVERSE)} 檔（S&P 500 動態載入）")
+except Exception as e:
+    UNIVERSE = DEFAULT_UNIVERSE
+    print(f"[universe] US: fallback to {len(UNIVERSE)} 檔")
 
 STATE_PATH = os.path.join(os.path.dirname(__file__), "state.json")
 

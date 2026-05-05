@@ -16,8 +16,11 @@ import yfinance as yf
 import numpy as np
 import os, sys
 
-# 嘗試使用 Shioaji（永豐官方 API）— 無設定時 fallback 到 yfinance
-USE_SHIOAJI = bool(os.environ.get("SHIOAJI_API_KEY") and os.environ.get("SHIOAJI_SECRET_KEY"))
+# 永豐 Shioaji 暫時停用（帳戶 ca_required=true，歷史 K 抓不到）
+# 改用 yfinance auto_adjust=True，要重啟永豐請設 USE_SHIOAJI=1
+USE_SHIOAJI = bool(os.environ.get("SHIOAJI_API_KEY")
+                   and os.environ.get("SHIOAJI_SECRET_KEY")
+                   and os.environ.get("FORCE_SHIOAJI") == "1")
 if USE_SHIOAJI:
     try:
         import shioaji_data
@@ -25,6 +28,8 @@ if USE_SHIOAJI:
     except ImportError:
         USE_SHIOAJI = False
         print("[tw_filter] ⚠️ 找不到 shioaji_data 模組，改用 yfinance", file=sys.stderr)
+else:
+    print("[tw_filter] 📡 使用 yfinance（永豐 CA 未開通歷史 K）", file=sys.stderr)
 
 # 台股觀察池 — 上市 + 上櫃 200+ 檔（fetch_tw 自動嘗試 .TW / .TWO）
 TW_UNIVERSE = [

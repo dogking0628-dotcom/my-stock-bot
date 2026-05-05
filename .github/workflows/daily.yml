@@ -26,14 +26,18 @@ jobs:
         env:
           LINE_TOKEN:           ${{ secrets.LINE_TOKEN }}
           LINE_USER_ID:         ${{ secrets.LINE_USER_ID }}
+          # SHIOAJI 暫停（帳戶 ca_required，歷史 K 抓不到）— 設 FORCE_SHIOAJI=1 才會啟用
           SHIOAJI_API_KEY:      ${{ secrets.SHIOAJI_API_KEY }}
           SHIOAJI_SECRET_KEY:   ${{ secrets.SHIOAJI_SECRET_KEY }}
         run: python daily_scan.py
+
+      - name: Run industry ATH scan (yfinance)
+        run: python industry_ath_yf.py || echo "industry scan failed (non-fatal)"
 
       - name: Commit state
         run: |
           git config user.name  "github-actions"
           git config user.email "github-actions@github.com"
-          git add state.json dashboard_data.json tw_top5_state.json capital_cache.json sp500_universe.json tw_universe.json || true
+          git add state.json dashboard_data.json tw_top5_state.json capital_cache.json sp500_universe.json tw_universe.json ath_industry_report.json scan_output.txt || true
           git diff --staged --quiet || git commit -m "chore: update state $(date -u +%Y-%m-%d)"
           git push

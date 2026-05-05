@@ -1,9 +1,1897 @@
 {
   "timestamp": "2026-05-05",
-  "basis": "2y monthly close (Shioaji raw, ~adj)",
-  "total_analyzed": 0,
-  "exact_ath": [],
-  "near_ath_top30": [],
-  "industry_stats": [],
-  "top_industry": null
+  "basis": "yfinance 2y monthly auto-adjust",
+  "total_analyzed": 1069,
+  "exact_ath": [
+    {
+      "ticker": "2426",
+      "name": "鼎元",
+      "today": 69.30000305175781,
+      "monthly_max_2y": 57.29999923706055,
+      "ratio": 1.2094241531322028,
+      "from_high_pct": 20.942415313220273,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6861",
+      "name": "睿生光電",
+      "today": 396.5,
+      "monthly_max_2y": 328.0,
+      "ratio": 1.208841463414634,
+      "from_high_pct": 20.884146341463406,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6451",
+      "name": "訊芯-KY",
+      "today": 521.0,
+      "monthly_max_2y": 431.0,
+      "ratio": 1.208816705336427,
+      "from_high_pct": 20.881670533642694,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2454",
+      "name": "聯發科",
+      "today": 3155.0,
+      "monthly_max_2y": 2610.0,
+      "ratio": 1.2088122605363985,
+      "from_high_pct": 20.881226053639846,
+      "bullish": true,
+      "industry": "半導體"
+    },
+    {
+      "ticker": "3030",
+      "name": "德律",
+      "today": 414.0,
+      "monthly_max_2y": 342.5,
+      "ratio": 1.2087591240875912,
+      "from_high_pct": 20.875912408759124,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "1809",
+      "name": "中釉",
+      "today": 31.049999237060547,
+      "monthly_max_2y": 25.700000762939453,
+      "ratio": 1.2081711406731175,
+      "from_high_pct": 20.81711406731175,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "3532",
+      "name": "台勝科",
+      "today": 228.0,
+      "monthly_max_2y": 189.0,
+      "ratio": 1.2063492063492063,
+      "from_high_pct": 20.63492063492063,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6405",
+      "name": "悅城",
+      "today": 61.400001525878906,
+      "monthly_max_2y": 50.900001525878906,
+      "ratio": 1.2062868307511057,
+      "from_high_pct": 20.628683075110565,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "1597",
+      "name": "直得",
+      "today": 173.0,
+      "monthly_max_2y": 143.5,
+      "ratio": 1.2055749128919862,
+      "from_high_pct": 20.557491289198616,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "4764",
+      "name": "雙鍵",
+      "today": 311.0,
+      "monthly_max_2y": 258.0,
+      "ratio": 1.2054263565891472,
+      "from_high_pct": 20.54263565891472,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "3016",
+      "name": "嘉晶",
+      "today": 108.0,
+      "monthly_max_2y": 89.69999694824219,
+      "ratio": 1.2040134188891567,
+      "from_high_pct": 20.40134188891567,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "8150",
+      "name": "南茂",
+      "today": 84.0999984741211,
+      "monthly_max_2y": 71.5,
+      "ratio": 1.1762237548828125,
+      "from_high_pct": 17.62237548828125,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6197",
+      "name": "佳必琪",
+      "today": 243.5,
+      "monthly_max_2y": 208.0,
+      "ratio": 1.1706730769230769,
+      "from_high_pct": 17.067307692307686,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "3026",
+      "name": "禾伸堂",
+      "today": 248.5,
+      "monthly_max_2y": 212.5,
+      "ratio": 1.1694117647058824,
+      "from_high_pct": 16.94117647058824,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2342",
+      "name": "茂矽",
+      "today": 39.70000076293945,
+      "monthly_max_2y": 34.150001525878906,
+      "ratio": 1.1625182720081213,
+      "from_high_pct": 16.25182720081213,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2423",
+      "name": "固緯",
+      "today": 66.5,
+      "monthly_max_2y": 57.5,
+      "ratio": 1.1565217391304348,
+      "from_high_pct": 15.652173913043477,
+      "bullish": false,
+      "industry": null
+    },
+    {
+      "ticker": "3135",
+      "name": "凌航",
+      "today": 163.0,
+      "monthly_max_2y": 141.5,
+      "ratio": 1.1519434628975265,
+      "from_high_pct": 15.194346289752648,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6830",
+      "name": "汎銓",
+      "today": 975.0,
+      "monthly_max_2y": 850.0,
+      "ratio": 1.1470588235294117,
+      "from_high_pct": 14.705882352941169,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "7610",
+      "name": "聯友金屬-創",
+      "today": 729.0,
+      "monthly_max_2y": 640.0,
+      "ratio": 1.1390625,
+      "from_high_pct": 13.906250000000009,
+      "bullish": null,
+      "industry": null
+    },
+    {
+      "ticker": "6205",
+      "name": "詮欣",
+      "today": 98.19999694824219,
+      "monthly_max_2y": 86.5,
+      "ratio": 1.1352600803264994,
+      "from_high_pct": 13.526008032649939,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "3443",
+      "name": "創意",
+      "today": 4835.0,
+      "monthly_max_2y": 4260.0,
+      "ratio": 1.1349765258215962,
+      "from_high_pct": 13.497652582159624,
+      "bullish": true,
+      "industry": "半導體"
+    },
+    {
+      "ticker": "2486",
+      "name": "一詮",
+      "today": 307.0,
+      "monthly_max_2y": 270.5,
+      "ratio": 1.1349353049907578,
+      "from_high_pct": 13.493530499075778,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "7769",
+      "name": "鴻勁",
+      "today": 5600.0,
+      "monthly_max_2y": 4945.0,
+      "ratio": 1.1324570273003034,
+      "from_high_pct": 13.24570273003034,
+      "bullish": null,
+      "industry": null
+    },
+    {
+      "ticker": "3535",
+      "name": "晶彩科",
+      "today": 145.5,
+      "monthly_max_2y": 128.5,
+      "ratio": 1.132295719844358,
+      "from_high_pct": 13.229571984435795,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6141",
+      "name": "柏承",
+      "today": 36.70000076293945,
+      "monthly_max_2y": 32.5,
+      "ratio": 1.1292307927058294,
+      "from_high_pct": 12.923079270582939,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2369",
+      "name": "菱生",
+      "today": 33.20000076293945,
+      "monthly_max_2y": 29.549999237060547,
+      "ratio": 1.1235195133711275,
+      "from_high_pct": 12.351951337112755,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "3715",
+      "name": "定穎投控",
+      "today": 196.5,
+      "monthly_max_2y": 175.0,
+      "ratio": 1.1228571428571428,
+      "from_high_pct": 12.285714285714278,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2417",
+      "name": "圓剛",
+      "today": 56.900001525878906,
+      "monthly_max_2y": 50.721038818359375,
+      "ratio": 1.1218224794182043,
+      "from_high_pct": 12.182247941820435,
+      "bullish": false,
+      "industry": null
+    },
+    {
+      "ticker": "8210",
+      "name": "勤誠",
+      "today": 1265.0,
+      "monthly_max_2y": 1130.0,
+      "ratio": 1.1194690265486726,
+      "from_high_pct": 11.946902654867264,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "4919",
+      "name": "新唐",
+      "today": 165.0,
+      "monthly_max_2y": 147.5,
+      "ratio": 1.11864406779661,
+      "from_high_pct": 11.864406779661007,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6531",
+      "name": "愛普*",
+      "today": 935.0,
+      "monthly_max_2y": 840.0,
+      "ratio": 1.1130952380952381,
+      "from_high_pct": 11.309523809523814,
+      "bullish": true,
+      "industry": "半導體"
+    },
+    {
+      "ticker": "2455",
+      "name": "全新",
+      "today": 386.5,
+      "monthly_max_2y": 347.5,
+      "ratio": 1.112230215827338,
+      "from_high_pct": 11.223021582733805,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6525",
+      "name": "捷敏-KY",
+      "today": 102.5,
+      "monthly_max_2y": 92.4000015258789,
+      "ratio": 1.1093073409884342,
+      "from_high_pct": 10.93073409884342,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6715",
+      "name": "嘉基",
+      "today": 444.0,
+      "monthly_max_2y": 400.5,
+      "ratio": 1.1086142322097379,
+      "from_high_pct": 10.861423220973787,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2313",
+      "name": "華通",
+      "today": 274.5,
+      "monthly_max_2y": 248.0,
+      "ratio": 1.1068548387096775,
+      "from_high_pct": 10.685483870967749,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6168",
+      "name": "宏齊",
+      "today": 27.649999618530273,
+      "monthly_max_2y": 25.100000381469727,
+      "ratio": 1.1015935935579946,
+      "from_high_pct": 10.159359355799458,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6278",
+      "name": "台表科",
+      "today": 185.0,
+      "monthly_max_2y": 168.0,
+      "ratio": 1.1011904761904763,
+      "from_high_pct": 10.119047619047628,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2327",
+      "name": "國巨*",
+      "today": 348.5,
+      "monthly_max_2y": 317.0,
+      "ratio": 1.0993690851735016,
+      "from_high_pct": 9.936908517350162,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2855",
+      "name": "統一證",
+      "today": 39.099998474121094,
+      "monthly_max_2y": 35.599998474121094,
+      "ratio": 1.098314610955511,
+      "from_high_pct": 9.83146109555111,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "3090",
+      "name": "日電貿",
+      "today": 109.5,
+      "monthly_max_2y": 99.69999694824219,
+      "ratio": 1.0982949182721173,
+      "from_high_pct": 9.829491827211733,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2489",
+      "name": "瑞軒",
+      "today": 46.20000076293945,
+      "monthly_max_2y": 42.099998474121094,
+      "ratio": 1.0973872312926243,
+      "from_high_pct": 9.738723129262429,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6426",
+      "name": "統新",
+      "today": 245.0,
+      "monthly_max_2y": 223.5,
+      "ratio": 1.0961968680089484,
+      "from_high_pct": 9.619686800894844,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6831",
+      "name": "邁科",
+      "today": 520.0,
+      "monthly_max_2y": 474.5,
+      "ratio": 1.095890410958904,
+      "from_high_pct": 9.589041095890405,
+      "bullish": null,
+      "industry": null
+    },
+    {
+      "ticker": "6224",
+      "name": "聚鼎",
+      "today": 80.30000305175781,
+      "monthly_max_2y": 73.30000305175781,
+      "ratio": 1.0954979496393369,
+      "from_high_pct": 9.549794963933689,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6225",
+      "name": "天瀚",
+      "today": 22.399999618530273,
+      "monthly_max_2y": 20.450000762939453,
+      "ratio": 1.095354463708613,
+      "from_high_pct": 9.535446370861301,
+      "bullish": false,
+      "industry": null
+    },
+    {
+      "ticker": "6257",
+      "name": "矽格",
+      "today": 197.0,
+      "monthly_max_2y": 180.0,
+      "ratio": 1.0944444444444446,
+      "from_high_pct": 9.444444444444455,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2345",
+      "name": "智邦",
+      "today": 2495.0,
+      "monthly_max_2y": 2280.0,
+      "ratio": 1.094298245614035,
+      "from_high_pct": 9.42982456140351,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "3450",
+      "name": "聯鈞",
+      "today": 365.0,
+      "monthly_max_2y": 333.72027587890625,
+      "ratio": 1.0937303675622152,
+      "from_high_pct": 9.37303675622152,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "4960",
+      "name": "誠美材",
+      "today": 42.599998474121094,
+      "monthly_max_2y": 39.0,
+      "ratio": 1.0923076531825922,
+      "from_high_pct": 9.230765318259216,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "3711",
+      "name": "日月光投控",
+      "today": 520.0,
+      "monthly_max_2y": 478.0,
+      "ratio": 1.0878661087866108,
+      "from_high_pct": 8.786610878661083,
+      "bullish": true,
+      "industry": "半導體"
+    },
+    {
+      "ticker": "1802",
+      "name": "台玻",
+      "today": 72.80000305175781,
+      "monthly_max_2y": 67.0,
+      "ratio": 1.0865672097277286,
+      "from_high_pct": 8.656720972772858,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2449",
+      "name": "京元電子",
+      "today": 354.0,
+      "monthly_max_2y": 327.0,
+      "ratio": 1.0825688073394495,
+      "from_high_pct": 8.25688073394495,
+      "bullish": false,
+      "industry": "半導體"
+    },
+    {
+      "ticker": "3042",
+      "name": "晶技",
+      "today": 165.5,
+      "monthly_max_2y": 153.0,
+      "ratio": 1.0816993464052287,
+      "from_high_pct": 8.169934640522868,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "4739",
+      "name": "康普",
+      "today": 91.69999694824219,
+      "monthly_max_2y": 84.80000305175781,
+      "ratio": 1.0813678496246393,
+      "from_high_pct": 8.136784962463928,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "3044",
+      "name": "健鼎",
+      "today": 484.5,
+      "monthly_max_2y": 448.5,
+      "ratio": 1.080267558528428,
+      "from_high_pct": 8.026755852842804,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6285",
+      "name": "啟",
+      "today": 233.0,
+      "monthly_max_2y": 216.0,
+      "ratio": 1.0787037037037037,
+      "from_high_pct": 7.870370370370372,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "3033",
+      "name": "威健",
+      "today": 38.54999923706055,
+      "monthly_max_2y": 35.75,
+      "ratio": 1.0783216569807146,
+      "from_high_pct": 7.832165698071458,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "1711",
+      "name": "永光",
+      "today": 60.900001525878906,
+      "monthly_max_2y": 56.5,
+      "ratio": 1.0778761332013966,
+      "from_high_pct": 7.787613320139664,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "3049",
+      "name": "精金",
+      "today": 13.149999618530273,
+      "monthly_max_2y": 12.199999809265137,
+      "ratio": 1.077868838042413,
+      "from_high_pct": 7.786883804241307,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6706",
+      "name": "惠特",
+      "today": 183.0,
+      "monthly_max_2y": 170.0,
+      "ratio": 1.076470588235294,
+      "from_high_pct": 7.647058823529407,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2484",
+      "name": "希華",
+      "today": 42.54999923706055,
+      "monthly_max_2y": 39.54999923706055,
+      "ratio": 1.0758533516528828,
+      "from_high_pct": 7.585335165288276,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2303",
+      "name": "聯電",
+      "today": 83.0999984741211,
+      "monthly_max_2y": 77.30000305175781,
+      "ratio": 1.0750322793451867,
+      "from_high_pct": 7.503227934518675,
+      "bullish": true,
+      "industry": "半導體"
+    },
+    {
+      "ticker": "3229",
+      "name": "晟鈦",
+      "today": 42.95000076293945,
+      "monthly_max_2y": 40.04999923706055,
+      "ratio": 1.0724095276185517,
+      "from_high_pct": 7.240952761855168,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "1773",
+      "name": "勝一",
+      "today": 179.0,
+      "monthly_max_2y": 167.0,
+      "ratio": 1.0718562874251496,
+      "from_high_pct": 7.18562874251496,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6414",
+      "name": "樺漢",
+      "today": 345.0,
+      "monthly_max_2y": 322.0,
+      "ratio": 1.0714285714285714,
+      "from_high_pct": 7.14285714285714,
+      "bullish": false,
+      "industry": null
+    },
+    {
+      "ticker": "2472",
+      "name": "立隆電",
+      "today": 188.5,
+      "monthly_max_2y": 176.5,
+      "ratio": 1.0679886685552409,
+      "from_high_pct": 6.798866855524088,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "4977",
+      "name": "眾達-KY",
+      "today": 232.0,
+      "monthly_max_2y": 217.5,
+      "ratio": 1.0666666666666667,
+      "from_high_pct": 6.666666666666665,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "8438",
+      "name": "昶昕",
+      "today": 94.0999984741211,
+      "monthly_max_2y": 88.30000305175781,
+      "ratio": 1.065685110100886,
+      "from_high_pct": 6.568511010088596,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "5284",
+      "name": "jpp-KY",
+      "today": 365.5,
+      "monthly_max_2y": 343.0,
+      "ratio": 1.065597667638484,
+      "from_high_pct": 6.559766763848396,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "4576",
+      "name": "大銀微系統",
+      "today": 236.5,
+      "monthly_max_2y": 222.0,
+      "ratio": 1.0653153153153154,
+      "from_high_pct": 6.5315315315315425,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2368",
+      "name": "金像電",
+      "today": 1480.0,
+      "monthly_max_2y": 1390.0,
+      "ratio": 1.064748201438849,
+      "from_high_pct": 6.474820143884896,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2451",
+      "name": "創見",
+      "today": 283.0,
+      "monthly_max_2y": 266.5,
+      "ratio": 1.0619136960600375,
+      "from_high_pct": 6.191369606003749,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2885",
+      "name": "元大金",
+      "today": 55.400001525878906,
+      "monthly_max_2y": 52.20000076293945,
+      "ratio": 1.0613026957120537,
+      "from_high_pct": 6.130269571205371,
+      "bullish": true,
+      "industry": "金融"
+    },
+    {
+      "ticker": "8021",
+      "name": "尖點",
+      "today": 426.5,
+      "monthly_max_2y": 402.5,
+      "ratio": 1.0596273291925467,
+      "from_high_pct": 5.962732919254665,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "1560",
+      "name": "中砂",
+      "today": 572.0,
+      "monthly_max_2y": 540.0,
+      "ratio": 1.0592592592592593,
+      "from_high_pct": 5.9259259259259345,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2478",
+      "name": "大毅",
+      "today": 77.0999984741211,
+      "monthly_max_2y": 72.80000305175781,
+      "ratio": 1.0590658687102823,
+      "from_high_pct": 5.90658687102823,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6456",
+      "name": "GIS-KY",
+      "today": 80.69999694824219,
+      "monthly_max_2y": 76.19999694824219,
+      "ratio": 1.0590551204753533,
+      "from_high_pct": 5.905512047535333,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2236",
+      "name": "百達-KY",
+      "today": 139.5,
+      "monthly_max_2y": 132.0,
+      "ratio": 1.0568181818181819,
+      "from_high_pct": 5.681818181818188,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2329",
+      "name": "華泰",
+      "today": 62.099998474121094,
+      "monthly_max_2y": 58.76971435546875,
+      "ratio": 1.0566666718594055,
+      "from_high_pct": 5.666667185940555,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "1721",
+      "name": "三晃",
+      "today": 26.700000762939453,
+      "monthly_max_2y": 25.299999237060547,
+      "ratio": 1.0553360303595631,
+      "from_high_pct": 5.533603035956314,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "8271",
+      "name": "宇瞻",
+      "today": 232.0,
+      "monthly_max_2y": 220.0,
+      "ratio": 1.0545454545454545,
+      "from_high_pct": 5.454545454545445,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2360",
+      "name": "致茂",
+      "today": 2235.0,
+      "monthly_max_2y": 2120.0,
+      "ratio": 1.054245283018868,
+      "from_high_pct": 5.4245283018868,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2330",
+      "name": "台積電",
+      "today": 2250.0,
+      "monthly_max_2y": 2135.0,
+      "ratio": 1.053864168618267,
+      "from_high_pct": 5.386416861826704,
+      "bullish": true,
+      "industry": "半導體"
+    },
+    {
+      "ticker": "6213",
+      "name": "聯茂",
+      "today": 284.0,
+      "monthly_max_2y": 270.0,
+      "ratio": 1.0518518518518518,
+      "from_high_pct": 5.185185185185182,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "8261",
+      "name": "富鼎",
+      "today": 124.5,
+      "monthly_max_2y": 118.5,
+      "ratio": 1.0506329113924051,
+      "from_high_pct": 5.063291139240511,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6658",
+      "name": "聯策",
+      "today": 157.0,
+      "monthly_max_2y": 149.5,
+      "ratio": 1.0501672240802675,
+      "from_high_pct": 5.0167224080267525,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "4956",
+      "name": "光鋐",
+      "today": 49.599998474121094,
+      "monthly_max_2y": 47.25,
+      "ratio": 1.0497354174417162,
+      "from_high_pct": 4.973541744171617,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6789",
+      "name": "采鈺",
+      "today": 604.0,
+      "monthly_max_2y": 576.0,
+      "ratio": 1.0486111111111112,
+      "from_high_pct": 4.861111111111116,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2233",
+      "name": "宇隆",
+      "today": 314.5,
+      "monthly_max_2y": 300.0,
+      "ratio": 1.0483333333333333,
+      "from_high_pct": 4.833333333333334,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "3605",
+      "name": "宏致",
+      "today": 91.19999694824219,
+      "monthly_max_2y": 87.0999984741211,
+      "ratio": 1.0470723139603644,
+      "from_high_pct": 4.707231396036438,
+      "bullish": false,
+      "industry": null
+    },
+    {
+      "ticker": "6944",
+      "name": "兆聯實業",
+      "today": 945.0,
+      "monthly_max_2y": 903.0,
+      "ratio": 1.0465116279069768,
+      "from_high_pct": 4.651162790697683,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2337",
+      "name": "旺宏",
+      "today": 160.5,
+      "monthly_max_2y": 154.0,
+      "ratio": 1.0422077922077921,
+      "from_high_pct": 4.220779220779214,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2383",
+      "name": "台光電",
+      "today": 4730.0,
+      "monthly_max_2y": 4545.0,
+      "ratio": 1.0407040704070407,
+      "from_high_pct": 4.0704070407040716,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "3665",
+      "name": "貿聯-KY",
+      "today": 2875.0,
+      "monthly_max_2y": 2770.0,
+      "ratio": 1.0379061371841156,
+      "from_high_pct": 3.790613718411562,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2409",
+      "name": "友達",
+      "today": 17.850000381469727,
+      "monthly_max_2y": 17.200000762939453,
+      "ratio": 1.0377906738196674,
+      "from_high_pct": 3.7790673819667386,
+      "bullish": false,
+      "industry": "面板"
+    },
+    {
+      "ticker": "7750",
+      "name": "新代",
+      "today": 2670.0,
+      "monthly_max_2y": 2575.0,
+      "ratio": 1.036893203883495,
+      "from_high_pct": 3.689320388349504,
+      "bullish": null,
+      "industry": null
+    },
+    {
+      "ticker": "1568",
+      "name": "倉佑",
+      "today": 29.549999237060547,
+      "monthly_max_2y": 28.5,
+      "ratio": 1.0368420784933525,
+      "from_high_pct": 3.6842078493352526,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "3209",
+      "name": "全科",
+      "today": 54.099998474121094,
+      "monthly_max_2y": 52.20000076293945,
+      "ratio": 1.0363984230538668,
+      "from_high_pct": 3.6398423053866757,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2495",
+      "name": "普安",
+      "today": 41.650001525878906,
+      "monthly_max_2y": 40.20000076293945,
+      "ratio": 1.0360696700353353,
+      "from_high_pct": 3.6069670035335344,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2351",
+      "name": "順德",
+      "today": 159.5,
+      "monthly_max_2y": 154.0,
+      "ratio": 1.0357142857142858,
+      "from_high_pct": 3.571428571428581,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "3673",
+      "name": "TPK-KY",
+      "today": 62.5,
+      "monthly_max_2y": 60.400001525878906,
+      "ratio": 1.034768185779289,
+      "from_high_pct": 3.4768185779288974,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2402",
+      "name": "毅嘉",
+      "today": 72.5999984741211,
+      "monthly_max_2y": 70.19999694824219,
+      "ratio": 1.0341880574104356,
+      "from_high_pct": 3.4188057410435624,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "5243",
+      "name": "乙盛-KY",
+      "today": 109.0,
+      "monthly_max_2y": 105.5,
+      "ratio": 1.033175355450237,
+      "from_high_pct": 3.3175355450236976,
+      "bullish": false,
+      "industry": null
+    },
+    {
+      "ticker": "6924",
+      "name": "榮惠-KY創",
+      "today": 91.80000305175781,
+      "monthly_max_2y": 88.9000015258789,
+      "ratio": 1.0326209389887886,
+      "from_high_pct": 3.2620938988788595,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6139",
+      "name": "亞翔",
+      "today": 691.0,
+      "monthly_max_2y": 670.0,
+      "ratio": 1.0313432835820895,
+      "from_high_pct": 3.1343283582089487,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "3010",
+      "name": "華立",
+      "today": 136.5,
+      "monthly_max_2y": 132.5,
+      "ratio": 1.030188679245283,
+      "from_high_pct": 3.018867924528301,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "4967",
+      "name": "十銓",
+      "today": 289.0,
+      "monthly_max_2y": 281.0,
+      "ratio": 1.0284697508896796,
+      "from_high_pct": 2.8469750889679624,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6209",
+      "name": "今國光",
+      "today": 68.69999694824219,
+      "monthly_max_2y": 66.80000305175781,
+      "ratio": 1.0284430211030413,
+      "from_high_pct": 2.844302110304131,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2440",
+      "name": "太空梭",
+      "today": 18.75,
+      "monthly_max_2y": 18.25,
+      "ratio": 1.0273972602739727,
+      "from_high_pct": 2.7397260273972712,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2382",
+      "name": "廣達",
+      "today": 321.0,
+      "monthly_max_2y": 312.5,
+      "ratio": 1.0272,
+      "from_high_pct": 2.719999999999989,
+      "bullish": true,
+      "industry": "AI伺服器"
+    },
+    {
+      "ticker": "8162",
+      "name": "微矽電子-創",
+      "today": 52.0,
+      "monthly_max_2y": 50.70000076293945,
+      "ratio": 1.0256410102070612,
+      "from_high_pct": 2.564101020706122,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "4526",
+      "name": "東台",
+      "today": 40.29999923706055,
+      "monthly_max_2y": 39.349998474121094,
+      "ratio": 1.0241423329041355,
+      "from_high_pct": 2.4142332904135477,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "1303",
+      "name": "南亞",
+      "today": 94.0,
+      "monthly_max_2y": 91.80000305175781,
+      "ratio": 1.023965107571966,
+      "from_high_pct": 2.3965107571966016,
+      "bullish": true,
+      "industry": "塑化"
+    },
+    {
+      "ticker": "6108",
+      "name": "競國",
+      "today": 20.0,
+      "monthly_max_2y": 19.539749145507812,
+      "ratio": 1.0235545938212824,
+      "from_high_pct": 2.3554593821282443,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "3701",
+      "name": "大眾控",
+      "today": 67.30000305175781,
+      "monthly_max_2y": 65.80000305175781,
+      "ratio": 1.0227963515263079,
+      "from_high_pct": 2.279635152630788,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "3037",
+      "name": "欣興",
+      "today": 903.0,
+      "monthly_max_2y": 883.0,
+      "ratio": 1.0226500566251415,
+      "from_high_pct": 2.2650056625141524,
+      "bullish": true,
+      "industry": "半導體"
+    },
+    {
+      "ticker": "3028",
+      "name": "增你強",
+      "today": 69.5999984741211,
+      "monthly_max_2y": 68.30000305175781,
+      "ratio": 1.019033607090444,
+      "from_high_pct": 1.9033607090443994,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "8039",
+      "name": "台虹",
+      "today": 139.0,
+      "monthly_max_2y": 136.5,
+      "ratio": 1.0183150183150182,
+      "from_high_pct": 1.831501831501825,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "1409",
+      "name": "新纖",
+      "today": 17.100000381469727,
+      "monthly_max_2y": 16.799999237060547,
+      "ratio": 1.0178572117876876,
+      "from_high_pct": 1.7857211787687621,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6024",
+      "name": "群益期",
+      "today": 57.20000076293945,
+      "monthly_max_2y": 56.20000076293945,
+      "ratio": 1.017793594064494,
+      "from_high_pct": 1.779359406449399,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6669",
+      "name": "緯穎",
+      "today": 4755.0,
+      "monthly_max_2y": 4675.0,
+      "ratio": 1.0171122994652406,
+      "from_high_pct": 1.7112299465240621,
+      "bullish": true,
+      "industry": "AI伺服器"
+    },
+    {
+      "ticker": "3481",
+      "name": "群創",
+      "today": 27.25,
+      "monthly_max_2y": 26.799999237060547,
+      "ratio": 1.0167910737220158,
+      "from_high_pct": 1.6791073722015826,
+      "bullish": true,
+      "industry": "面板"
+    },
+    {
+      "ticker": "3717",
+      "name": "聯嘉投控",
+      "today": 22.0,
+      "monthly_max_2y": 21.649999618530273,
+      "ratio": 1.0161662996598928,
+      "from_high_pct": 1.6166299659892802,
+      "bullish": null,
+      "industry": null
+    },
+    {
+      "ticker": "2355",
+      "name": "敬鵬",
+      "today": 52.0,
+      "monthly_max_2y": 51.20000076293945,
+      "ratio": 1.0156249848660084,
+      "from_high_pct": 1.5624984866008385,
+      "bullish": false,
+      "industry": null
+    },
+    {
+      "ticker": "2399",
+      "name": "映泰",
+      "today": 43.099998474121094,
+      "monthly_max_2y": 42.45000076293945,
+      "ratio": 1.0153120777267244,
+      "from_high_pct": 1.5312077726724382,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "3702",
+      "name": "大聯大",
+      "today": 102.5,
+      "monthly_max_2y": 101.0,
+      "ratio": 1.0148514851485149,
+      "from_high_pct": 1.4851485148514865,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "1528",
+      "name": "恩德",
+      "today": 29.200000762939453,
+      "monthly_max_2y": 28.799999237060547,
+      "ratio": 1.0138889422387267,
+      "from_high_pct": 1.388894223872672,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "4904",
+      "name": "遠傳",
+      "today": 95.80000305175781,
+      "monthly_max_2y": 94.5,
+      "ratio": 1.0137566460503473,
+      "from_high_pct": 1.375664605034732,
+      "bullish": true,
+      "industry": "電信"
+    },
+    {
+      "ticker": "5434",
+      "name": "崇越",
+      "today": 411.5,
+      "monthly_max_2y": 406.0,
+      "ratio": 1.0135467980295567,
+      "from_high_pct": 1.3546798029556717,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "4958",
+      "name": "臻鼎-KY",
+      "today": 426.5,
+      "monthly_max_2y": 421.0,
+      "ratio": 1.013064133016627,
+      "from_high_pct": 1.306413301662701,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "4540",
+      "name": "全球傳動",
+      "today": 69.30000305175781,
+      "monthly_max_2y": 68.5,
+      "ratio": 1.0116788766679972,
+      "from_high_pct": 1.1678876667997162,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2436",
+      "name": "偉詮電",
+      "today": 73.5,
+      "monthly_max_2y": 72.69999694824219,
+      "ratio": 1.0110041689867932,
+      "from_high_pct": 1.100416898679324,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6949",
+      "name": "沛爾生醫-創",
+      "today": 779.0,
+      "monthly_max_2y": 771.0,
+      "ratio": 1.0103761348897535,
+      "from_high_pct": 1.037613488975353,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2481",
+      "name": "強茂",
+      "today": 102.0,
+      "monthly_max_2y": 101.0,
+      "ratio": 1.00990099009901,
+      "from_high_pct": 0.990099009900991,
+      "bullish": false,
+      "industry": null
+    },
+    {
+      "ticker": "2414",
+      "name": "精技",
+      "today": 46.099998474121094,
+      "monthly_max_2y": 45.70000076293945,
+      "ratio": 1.0087526850000847,
+      "from_high_pct": 0.8752685000084748,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2535",
+      "name": "達欣工",
+      "today": 72.69999694824219,
+      "monthly_max_2y": 72.0999984741211,
+      "ratio": 1.008321754324814,
+      "from_high_pct": 0.8321754324813968,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2340",
+      "name": "台亞",
+      "today": 41.70000076293945,
+      "monthly_max_2y": 41.364501953125,
+      "ratio": 1.0081107905081184,
+      "from_high_pct": 0.811079050811836,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6226",
+      "name": "光鼎",
+      "today": 12.800000190734863,
+      "monthly_max_2y": 12.699999809265137,
+      "ratio": 1.0078740459032742,
+      "from_high_pct": 0.7874045903274229,
+      "bullish": false,
+      "industry": null
+    },
+    {
+      "ticker": "2059",
+      "name": "川湖",
+      "today": 4140.0,
+      "monthly_max_2y": 4110.0,
+      "ratio": 1.0072992700729928,
+      "from_high_pct": 0.7299270072992803,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6655",
+      "name": "科定",
+      "today": 138.0,
+      "monthly_max_2y": 137.0,
+      "ratio": 1.0072992700729928,
+      "from_high_pct": 0.7299270072992803,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6672",
+      "name": "騰輝電子-KY",
+      "today": 220.5,
+      "monthly_max_2y": 219.0,
+      "ratio": 1.0068493150684932,
+      "from_high_pct": 0.6849315068493178,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "3714",
+      "name": "富采",
+      "today": 74.5999984741211,
+      "monthly_max_2y": 74.0999984741211,
+      "ratio": 1.006747638465534,
+      "from_high_pct": 0.6747638465534056,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "3661",
+      "name": "世芯-KY",
+      "today": 4150.0,
+      "monthly_max_2y": 4135.0,
+      "ratio": 1.003627569528416,
+      "from_high_pct": 0.36275695284160303,
+      "bullish": false,
+      "industry": "半導體"
+    },
+    {
+      "ticker": "6271",
+      "name": "同欣電",
+      "today": 177.5,
+      "monthly_max_2y": 177.0,
+      "ratio": 1.002824858757062,
+      "from_high_pct": 0.28248587570620654,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "3583",
+      "name": "辛耘",
+      "today": 794.0,
+      "monthly_max_2y": 792.0,
+      "ratio": 1.0025252525252526,
+      "from_high_pct": 0.2525252525252597,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "8112",
+      "name": "至上",
+      "today": 84.80000305175781,
+      "monthly_max_2y": 84.5999984741211,
+      "ratio": 1.0023641203456748,
+      "from_high_pct": 0.23641203456747917,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2010",
+      "name": "春源",
+      "today": 24.799999237060547,
+      "monthly_max_2y": 24.75,
+      "ratio": 1.0020201711943655,
+      "from_high_pct": 0.20201711943654832,
+      "bullish": false,
+      "industry": null
+    },
+    {
+      "ticker": "5007",
+      "name": "三星",
+      "today": 57.900001525878906,
+      "monthly_max_2y": 57.79999923706055,
+      "ratio": 1.0017301434279993,
+      "from_high_pct": 0.17301434279992645,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2395",
+      "name": "研華",
+      "today": 396.5,
+      "monthly_max_2y": 395.904296875,
+      "ratio": 1.0015046644598256,
+      "from_high_pct": 0.15046644598255554,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "1717",
+      "name": "長興",
+      "today": 79.0,
+      "monthly_max_2y": 78.9000015258789,
+      "ratio": 1.0012674077590265,
+      "from_high_pct": 0.1267407759026451,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2308",
+      "name": "台達電",
+      "today": 2165.0,
+      "monthly_max_2y": 2165.0,
+      "ratio": 1.0,
+      "from_high_pct": 0.0,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2412",
+      "name": "中華電",
+      "today": 136.0,
+      "monthly_max_2y": 136.0,
+      "ratio": 1.0,
+      "from_high_pct": 0.0,
+      "bullish": true,
+      "industry": "電信"
+    },
+    {
+      "ticker": "9942",
+      "name": "茂順",
+      "today": 119.0,
+      "monthly_max_2y": 119.0,
+      "ratio": 1.0,
+      "from_high_pct": 0.0,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "9136",
+      "name": "巨騰-DR",
+      "today": 12.149999618530273,
+      "monthly_max_2y": 12.149999618530273,
+      "ratio": 1.0,
+      "from_high_pct": 0.0,
+      "bullish": true,
+      "industry": null
+    }
+  ],
+  "near_ath_top30": [
+    {
+      "ticker": "2426",
+      "name": "鼎元",
+      "today": 69.30000305175781,
+      "monthly_max_2y": 57.29999923706055,
+      "ratio": 1.2094241531322028,
+      "from_high_pct": 20.942415313220273,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6861",
+      "name": "睿生光電",
+      "today": 396.5,
+      "monthly_max_2y": 328.0,
+      "ratio": 1.208841463414634,
+      "from_high_pct": 20.884146341463406,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6451",
+      "name": "訊芯-KY",
+      "today": 521.0,
+      "monthly_max_2y": 431.0,
+      "ratio": 1.208816705336427,
+      "from_high_pct": 20.881670533642694,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2454",
+      "name": "聯發科",
+      "today": 3155.0,
+      "monthly_max_2y": 2610.0,
+      "ratio": 1.2088122605363985,
+      "from_high_pct": 20.881226053639846,
+      "bullish": true,
+      "industry": "半導體"
+    },
+    {
+      "ticker": "3030",
+      "name": "德律",
+      "today": 414.0,
+      "monthly_max_2y": 342.5,
+      "ratio": 1.2087591240875912,
+      "from_high_pct": 20.875912408759124,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "1809",
+      "name": "中釉",
+      "today": 31.049999237060547,
+      "monthly_max_2y": 25.700000762939453,
+      "ratio": 1.2081711406731175,
+      "from_high_pct": 20.81711406731175,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "3532",
+      "name": "台勝科",
+      "today": 228.0,
+      "monthly_max_2y": 189.0,
+      "ratio": 1.2063492063492063,
+      "from_high_pct": 20.63492063492063,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6405",
+      "name": "悅城",
+      "today": 61.400001525878906,
+      "monthly_max_2y": 50.900001525878906,
+      "ratio": 1.2062868307511057,
+      "from_high_pct": 20.628683075110565,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "1597",
+      "name": "直得",
+      "today": 173.0,
+      "monthly_max_2y": 143.5,
+      "ratio": 1.2055749128919862,
+      "from_high_pct": 20.557491289198616,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "4764",
+      "name": "雙鍵",
+      "today": 311.0,
+      "monthly_max_2y": 258.0,
+      "ratio": 1.2054263565891472,
+      "from_high_pct": 20.54263565891472,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "3016",
+      "name": "嘉晶",
+      "today": 108.0,
+      "monthly_max_2y": 89.69999694824219,
+      "ratio": 1.2040134188891567,
+      "from_high_pct": 20.40134188891567,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "8150",
+      "name": "南茂",
+      "today": 84.0999984741211,
+      "monthly_max_2y": 71.5,
+      "ratio": 1.1762237548828125,
+      "from_high_pct": 17.62237548828125,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6197",
+      "name": "佳必琪",
+      "today": 243.5,
+      "monthly_max_2y": 208.0,
+      "ratio": 1.1706730769230769,
+      "from_high_pct": 17.067307692307686,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "3026",
+      "name": "禾伸堂",
+      "today": 248.5,
+      "monthly_max_2y": 212.5,
+      "ratio": 1.1694117647058824,
+      "from_high_pct": 16.94117647058824,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2342",
+      "name": "茂矽",
+      "today": 39.70000076293945,
+      "monthly_max_2y": 34.150001525878906,
+      "ratio": 1.1625182720081213,
+      "from_high_pct": 16.25182720081213,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2423",
+      "name": "固緯",
+      "today": 66.5,
+      "monthly_max_2y": 57.5,
+      "ratio": 1.1565217391304348,
+      "from_high_pct": 15.652173913043477,
+      "bullish": false,
+      "industry": null
+    },
+    {
+      "ticker": "3135",
+      "name": "凌航",
+      "today": 163.0,
+      "monthly_max_2y": 141.5,
+      "ratio": 1.1519434628975265,
+      "from_high_pct": 15.194346289752648,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6830",
+      "name": "汎銓",
+      "today": 975.0,
+      "monthly_max_2y": 850.0,
+      "ratio": 1.1470588235294117,
+      "from_high_pct": 14.705882352941169,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "7610",
+      "name": "聯友金屬-創",
+      "today": 729.0,
+      "monthly_max_2y": 640.0,
+      "ratio": 1.1390625,
+      "from_high_pct": 13.906250000000009,
+      "bullish": null,
+      "industry": null
+    },
+    {
+      "ticker": "6205",
+      "name": "詮欣",
+      "today": 98.19999694824219,
+      "monthly_max_2y": 86.5,
+      "ratio": 1.1352600803264994,
+      "from_high_pct": 13.526008032649939,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "3443",
+      "name": "創意",
+      "today": 4835.0,
+      "monthly_max_2y": 4260.0,
+      "ratio": 1.1349765258215962,
+      "from_high_pct": 13.497652582159624,
+      "bullish": true,
+      "industry": "半導體"
+    },
+    {
+      "ticker": "2486",
+      "name": "一詮",
+      "today": 307.0,
+      "monthly_max_2y": 270.5,
+      "ratio": 1.1349353049907578,
+      "from_high_pct": 13.493530499075778,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "7769",
+      "name": "鴻勁",
+      "today": 5600.0,
+      "monthly_max_2y": 4945.0,
+      "ratio": 1.1324570273003034,
+      "from_high_pct": 13.24570273003034,
+      "bullish": null,
+      "industry": null
+    },
+    {
+      "ticker": "3535",
+      "name": "晶彩科",
+      "today": 145.5,
+      "monthly_max_2y": 128.5,
+      "ratio": 1.132295719844358,
+      "from_high_pct": 13.229571984435795,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "6141",
+      "name": "柏承",
+      "today": 36.70000076293945,
+      "monthly_max_2y": 32.5,
+      "ratio": 1.1292307927058294,
+      "from_high_pct": 12.923079270582939,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2369",
+      "name": "菱生",
+      "today": 33.20000076293945,
+      "monthly_max_2y": 29.549999237060547,
+      "ratio": 1.1235195133711275,
+      "from_high_pct": 12.351951337112755,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "3715",
+      "name": "定穎投控",
+      "today": 196.5,
+      "monthly_max_2y": 175.0,
+      "ratio": 1.1228571428571428,
+      "from_high_pct": 12.285714285714278,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "2417",
+      "name": "圓剛",
+      "today": 56.900001525878906,
+      "monthly_max_2y": 50.721038818359375,
+      "ratio": 1.1218224794182043,
+      "from_high_pct": 12.182247941820435,
+      "bullish": false,
+      "industry": null
+    },
+    {
+      "ticker": "8210",
+      "name": "勤誠",
+      "today": 1265.0,
+      "monthly_max_2y": 1130.0,
+      "ratio": 1.1194690265486726,
+      "from_high_pct": 11.946902654867264,
+      "bullish": true,
+      "industry": null
+    },
+    {
+      "ticker": "4919",
+      "name": "新唐",
+      "today": 165.0,
+      "monthly_max_2y": 147.5,
+      "ratio": 1.11864406779661,
+      "from_high_pct": 11.864406779661007,
+      "bullish": true,
+      "industry": null
+    }
+  ],
+  "industry_stats": [
+    {
+      "industry": "未分類",
+      "count": 227,
+      "bullish_count": 174
+    },
+    {
+      "industry": "半導體",
+      "count": 10,
+      "bullish_count": 8
+    },
+    {
+      "industry": "金融",
+      "count": 4,
+      "bullish_count": 3
+    },
+    {
+      "industry": "面板",
+      "count": 3,
+      "bullish_count": 2
+    },
+    {
+      "industry": "AI伺服器",
+      "count": 3,
+      "bullish_count": 3
+    },
+    {
+      "industry": "電信",
+      "count": 3,
+      "bullish_count": 2
+    },
+    {
+      "industry": "塑化",
+      "count": 2,
+      "bullish_count": 2
+    },
+    {
+      "industry": "儲存",
+      "count": 1,
+      "bullish_count": 1
+    },
+    {
+      "industry": "航運",
+      "count": 1,
+      "bullish_count": 1
+    }
+  ],
+  "top_industry": "未分類"
 }

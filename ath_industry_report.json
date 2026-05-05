@@ -11,7 +11,7 @@
       "ratio": 1.2094241531322028,
       "from_high_pct": 20.942415313220273,
       "bullish": true,
-      "industry": null
+      "industry": "光電"
     },
     {
       "ticker": "6861",
@@ -21,7 +21,7 @@
       "ratio": 1.208841463414634,
       "from_high_pct": 20.884146341463406,
       "bullish": true,
-      "industry": null
+      "industry": "生技醫療"
     },
     {
       "ticker": "6451",
@@ -31,7 +31,7 @@
       "ratio": 1.208816705336427,
       "from_high_pct": 20.881670533642694,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "2454",
@@ -51,7 +51,7 @@
       "ratio": 1.2087591240875912,
       "from_high_pct": 20.875912408759124,
       "bullish": true,
-      "industry": null
+      "industry": "其他電子"
     },
     {
       "ticker": "1809",
@@ -61,7 +61,7 @@
       "ratio": 1.2081711406731175,
       "from_high_pct": 20.81711406731175,
       "bullish": true,
-      "industry": null
+      "industry": "玻璃陶瓷"
     },
     {
       "ticker": "3532",
@@ -71,7 +71,7 @@
       "ratio": 1.2063492063492063,
       "from_high_pct": 20.63492063492063,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "6405",
@@ -81,7 +81,7 @@
       "ratio": 1.2062868307511057,
       "from_high_pct": 20.628683075110565,
       "bullish": true,
-      "industry": null
+      "industry": "光電"
     },
     {
       "ticker": "1597",
@@ -91,7 +91,7 @@
       "ratio": 1.2055749128919862,
       "from_high_pct": 20.557491289198616,
       "bullish": true,
-      "industry": null
+      "industry": "電機機械"
     },
     {
       "ticker": "4764",
@@ -101,7 +101,7 @@
       "ratio": 1.2054263565891472,
       "from_high_pct": 20.54263565891472,
       "bullish": true,
-      "industry": null
+      "industry": "化學工業"
     },
     {
       "ticker": "3016",
@@ -111,7 +111,7 @@
       "ratio": 1.2040134188891567,
       "from_high_pct": 20.40134188891567,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "8150",
@@ -121,7 +121,7 @@
       "ratio": 1.1762237548828125,
       "from_high_pct": 17.62237548828125,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "6197",
@@ -131,7 +131,7 @@
       "ratio": 1.1706730769230769,
       "from_high_pct": 17.067307692307686,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "3026",
@@ -141,7 +141,7 @@
       "ratio": 1.1694117647058824,
       "from_high_pct": 16.94117647058824,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "2342",
@@ -151,7 +151,7 @@
       "ratio": 1.1625182720081213,
       "from_high_pct": 16.25182720081213,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "2423",
@@ -161,7 +161,7 @@
       "ratio": 1.1565217391304348,
       "from_high_pct": 15.652173913043477,
       "bullish": false,
-      "industry": null
+      "industry": "其他電子"
     },
     {
       "ticker": "3135",
@@ -171,7 +171,7 @@
       "ratio": 1.1519434628975265,
       "from_high_pct": 15.194346289752648,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "6830",
@@ -181,7 +181,7 @@
       "ratio": 1.1470588235294117,
       "from_high_pct": 14.705882352941169,
       "bullish": true,
-      "industry": null
+      "industry": "其他電子"
     },
     {
       "ticker": "7610",
@@ -191,7 +191,7 @@
       "ratio": 1.1390625,
       "from_high_pct": 13.906250000000009,
       "bullish": null,
-      "industry": null
+      "industry": "運動休閒"
     },
     {
       "ticker": "6205",
@@ -201,7 +201,7 @@
       "ratio": 1.1352600803264994,
       "from_high_pct": 13.526008032649939,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "3443",
@@ -221,7 +221,7 @@
       "ratio": 1.1349353049907578,
       "from_high_pct": 13.493530499075778,
       "bullish": true,
-      "industry": null
+      "industry": "光電"
     },
     {
       "ticker": "7769",
@@ -231,7 +231,7 @@
       "ratio": 1.1324570273003034,
       "from_high_pct": 13.24570273003034,
       "bullish": null,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "3535",
@@ -241,7 +241,7 @@
       "ratio": 1.132295719844358,
       "from_high_pct": 13.229571984435795,
       "bullish": true,
-      "industry": null
+      "industry": "光電"
     },
     {
       "ticker": "6141",
@@ -251,7 +251,7 @@
       "ratio": 1.1292307927058294,
       "from_high_pct": 12.923079270582939,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "2369",
@@ -261,7 +261,7 @@
       "ratio": 1.1235195133711275,
       "from_high_pct": 12.351951337112755,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "3715",
@@ -271,7 +271,7 @@
       "ratio": 1.1228571428571428,
       "from_high_pct": 12.285714285714278,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "2417",
@@ -281,7 +281,7 @@
       "ratio": 1.1218224794182043,
       "from_high_pct": 12.182247941820435,
       "bullish": false,
-      "industry": null
+      "industry": "電腦及週邊"
     },
     {
       "ticker": "8210",
@@ -291,7 +291,7 @@
       "ratio": 1.1194690265486726,
       "from_high_pct": 11.946902654867264,
       "bullish": true,
-      "industry": null
+      "industry": "電腦及週邊"
     },
     {
       "ticker": "4919",
@@ -301,7 +301,7 @@
       "ratio": 1.11864406779661,
       "from_high_pct": 11.864406779661007,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "6531",
@@ -321,7 +321,7 @@
       "ratio": 1.112230215827338,
       "from_high_pct": 11.223021582733805,
       "bullish": true,
-      "industry": null
+      "industry": "通信網路"
     },
     {
       "ticker": "6525",
@@ -331,7 +331,7 @@
       "ratio": 1.1093073409884342,
       "from_high_pct": 10.93073409884342,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "6715",
@@ -341,7 +341,7 @@
       "ratio": 1.1086142322097379,
       "from_high_pct": 10.861423220973787,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "2313",
@@ -351,7 +351,7 @@
       "ratio": 1.1068548387096775,
       "from_high_pct": 10.685483870967749,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "6168",
@@ -361,7 +361,7 @@
       "ratio": 1.1015935935579946,
       "from_high_pct": 10.159359355799458,
       "bullish": true,
-      "industry": null
+      "industry": "光電"
     },
     {
       "ticker": "6278",
@@ -371,7 +371,7 @@
       "ratio": 1.1011904761904763,
       "from_high_pct": 10.119047619047628,
       "bullish": true,
-      "industry": null
+      "industry": "光電"
     },
     {
       "ticker": "2327",
@@ -381,7 +381,7 @@
       "ratio": 1.0993690851735016,
       "from_high_pct": 9.936908517350162,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "2855",
@@ -391,7 +391,7 @@
       "ratio": 1.098314610955511,
       "from_high_pct": 9.83146109555111,
       "bullish": true,
-      "industry": null
+      "industry": "金融保險"
     },
     {
       "ticker": "3090",
@@ -401,7 +401,7 @@
       "ratio": 1.0982949182721173,
       "from_high_pct": 9.829491827211733,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "2489",
@@ -411,7 +411,7 @@
       "ratio": 1.0973872312926243,
       "from_high_pct": 9.738723129262429,
       "bullish": true,
-      "industry": null
+      "industry": "光電"
     },
     {
       "ticker": "6426",
@@ -421,7 +421,7 @@
       "ratio": 1.0961968680089484,
       "from_high_pct": 9.619686800894844,
       "bullish": true,
-      "industry": null
+      "industry": "通信網路"
     },
     {
       "ticker": "6831",
@@ -431,7 +431,7 @@
       "ratio": 1.095890410958904,
       "from_high_pct": 9.589041095890405,
       "bullish": null,
-      "industry": null
+      "industry": "電腦及週邊"
     },
     {
       "ticker": "6224",
@@ -441,7 +441,7 @@
       "ratio": 1.0954979496393369,
       "from_high_pct": 9.549794963933689,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "6225",
@@ -451,7 +451,7 @@
       "ratio": 1.095354463708613,
       "from_high_pct": 9.535446370861301,
       "bullish": false,
-      "industry": null
+      "industry": "光電"
     },
     {
       "ticker": "6257",
@@ -461,7 +461,7 @@
       "ratio": 1.0944444444444446,
       "from_high_pct": 9.444444444444455,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "2345",
@@ -471,7 +471,7 @@
       "ratio": 1.094298245614035,
       "from_high_pct": 9.42982456140351,
       "bullish": true,
-      "industry": null
+      "industry": "通信網路"
     },
     {
       "ticker": "3450",
@@ -481,7 +481,7 @@
       "ratio": 1.0937303675622152,
       "from_high_pct": 9.37303675622152,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "4960",
@@ -491,7 +491,7 @@
       "ratio": 1.0923076531825922,
       "from_high_pct": 9.230765318259216,
       "bullish": true,
-      "industry": null
+      "industry": "光電"
     },
     {
       "ticker": "3711",
@@ -511,7 +511,7 @@
       "ratio": 1.0865672097277286,
       "from_high_pct": 8.656720972772858,
       "bullish": true,
-      "industry": null
+      "industry": "玻璃陶瓷"
     },
     {
       "ticker": "2449",
@@ -531,7 +531,7 @@
       "ratio": 1.0816993464052287,
       "from_high_pct": 8.169934640522868,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "4739",
@@ -541,7 +541,7 @@
       "ratio": 1.0813678496246393,
       "from_high_pct": 8.136784962463928,
       "bullish": true,
-      "industry": null
+      "industry": "化學工業"
     },
     {
       "ticker": "3044",
@@ -551,7 +551,7 @@
       "ratio": 1.080267558528428,
       "from_high_pct": 8.026755852842804,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "6285",
@@ -561,7 +561,7 @@
       "ratio": 1.0787037037037037,
       "from_high_pct": 7.870370370370372,
       "bullish": true,
-      "industry": null
+      "industry": "通信網路"
     },
     {
       "ticker": "3033",
@@ -571,7 +571,7 @@
       "ratio": 1.0783216569807146,
       "from_high_pct": 7.832165698071458,
       "bullish": true,
-      "industry": null
+      "industry": "電子通路"
     },
     {
       "ticker": "1711",
@@ -581,7 +581,7 @@
       "ratio": 1.0778761332013966,
       "from_high_pct": 7.787613320139664,
       "bullish": true,
-      "industry": null
+      "industry": "化學工業"
     },
     {
       "ticker": "3049",
@@ -591,7 +591,7 @@
       "ratio": 1.077868838042413,
       "from_high_pct": 7.786883804241307,
       "bullish": true,
-      "industry": null
+      "industry": "光電"
     },
     {
       "ticker": "6706",
@@ -601,7 +601,7 @@
       "ratio": 1.076470588235294,
       "from_high_pct": 7.647058823529407,
       "bullish": true,
-      "industry": null
+      "industry": "光電"
     },
     {
       "ticker": "2484",
@@ -611,7 +611,7 @@
       "ratio": 1.0758533516528828,
       "from_high_pct": 7.585335165288276,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "2303",
@@ -631,7 +631,7 @@
       "ratio": 1.0724095276185517,
       "from_high_pct": 7.240952761855168,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "1773",
@@ -641,7 +641,7 @@
       "ratio": 1.0718562874251496,
       "from_high_pct": 7.18562874251496,
       "bullish": true,
-      "industry": null
+      "industry": "化學工業"
     },
     {
       "ticker": "6414",
@@ -651,7 +651,7 @@
       "ratio": 1.0714285714285714,
       "from_high_pct": 7.14285714285714,
       "bullish": false,
-      "industry": null
+      "industry": "電腦及週邊"
     },
     {
       "ticker": "2472",
@@ -661,7 +661,7 @@
       "ratio": 1.0679886685552409,
       "from_high_pct": 6.798866855524088,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "4977",
@@ -671,7 +671,7 @@
       "ratio": 1.0666666666666667,
       "from_high_pct": 6.666666666666665,
       "bullish": true,
-      "industry": null
+      "industry": "通信網路"
     },
     {
       "ticker": "8438",
@@ -681,7 +681,7 @@
       "ratio": 1.065685110100886,
       "from_high_pct": 6.568511010088596,
       "bullish": true,
-      "industry": null
+      "industry": "運動休閒"
     },
     {
       "ticker": "5284",
@@ -691,7 +691,7 @@
       "ratio": 1.065597667638484,
       "from_high_pct": 6.559766763848396,
       "bullish": true,
-      "industry": null
+      "industry": "其他"
     },
     {
       "ticker": "4576",
@@ -701,7 +701,7 @@
       "ratio": 1.0653153153153154,
       "from_high_pct": 6.5315315315315425,
       "bullish": true,
-      "industry": null
+      "industry": "電機機械"
     },
     {
       "ticker": "2368",
@@ -711,7 +711,7 @@
       "ratio": 1.064748201438849,
       "from_high_pct": 6.474820143884896,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "2451",
@@ -721,7 +721,7 @@
       "ratio": 1.0619136960600375,
       "from_high_pct": 6.191369606003749,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "2885",
@@ -731,7 +731,7 @@
       "ratio": 1.0613026957120537,
       "from_high_pct": 6.130269571205371,
       "bullish": true,
-      "industry": "金融"
+      "industry": "金融保險"
     },
     {
       "ticker": "8021",
@@ -741,7 +741,7 @@
       "ratio": 1.0596273291925467,
       "from_high_pct": 5.962732919254665,
       "bullish": true,
-      "industry": null
+      "industry": "其他電子"
     },
     {
       "ticker": "1560",
@@ -751,7 +751,7 @@
       "ratio": 1.0592592592592593,
       "from_high_pct": 5.9259259259259345,
       "bullish": true,
-      "industry": null
+      "industry": "電機機械"
     },
     {
       "ticker": "2478",
@@ -761,7 +761,7 @@
       "ratio": 1.0590658687102823,
       "from_high_pct": 5.90658687102823,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "6456",
@@ -771,7 +771,7 @@
       "ratio": 1.0590551204753533,
       "from_high_pct": 5.905512047535333,
       "bullish": true,
-      "industry": null
+      "industry": "光電"
     },
     {
       "ticker": "2236",
@@ -781,7 +781,7 @@
       "ratio": 1.0568181818181819,
       "from_high_pct": 5.681818181818188,
       "bullish": true,
-      "industry": null
+      "industry": "汽車"
     },
     {
       "ticker": "2329",
@@ -791,7 +791,7 @@
       "ratio": 1.0566667404468366,
       "from_high_pct": 5.666674044683662,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "1721",
@@ -801,7 +801,7 @@
       "ratio": 1.0553360303595631,
       "from_high_pct": 5.533603035956314,
       "bullish": true,
-      "industry": null
+      "industry": "化學工業"
     },
     {
       "ticker": "8271",
@@ -811,7 +811,7 @@
       "ratio": 1.0545454545454545,
       "from_high_pct": 5.454545454545445,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "2360",
@@ -821,7 +821,7 @@
       "ratio": 1.054245283018868,
       "from_high_pct": 5.4245283018868,
       "bullish": true,
-      "industry": null
+      "industry": "其他電子"
     },
     {
       "ticker": "2330",
@@ -841,7 +841,7 @@
       "ratio": 1.0518518518518518,
       "from_high_pct": 5.185185185185182,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "8261",
@@ -851,7 +851,7 @@
       "ratio": 1.0506329113924051,
       "from_high_pct": 5.063291139240511,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "6658",
@@ -861,7 +861,7 @@
       "ratio": 1.0501672240802675,
       "from_high_pct": 5.0167224080267525,
       "bullish": true,
-      "industry": null
+      "industry": "其他電子"
     },
     {
       "ticker": "4956",
@@ -871,7 +871,7 @@
       "ratio": 1.0497354174417162,
       "from_high_pct": 4.973541744171617,
       "bullish": true,
-      "industry": null
+      "industry": "光電"
     },
     {
       "ticker": "6789",
@@ -881,7 +881,7 @@
       "ratio": 1.0486111111111112,
       "from_high_pct": 4.861111111111116,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "2233",
@@ -891,7 +891,7 @@
       "ratio": 1.0483333333333333,
       "from_high_pct": 4.833333333333334,
       "bullish": true,
-      "industry": null
+      "industry": "汽車"
     },
     {
       "ticker": "3605",
@@ -901,7 +901,7 @@
       "ratio": 1.0470723139603644,
       "from_high_pct": 4.707231396036438,
       "bullish": false,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "6944",
@@ -911,7 +911,7 @@
       "ratio": 1.0465116279069768,
       "from_high_pct": 4.651162790697683,
       "bullish": true,
-      "industry": null
+      "industry": "運動休閒"
     },
     {
       "ticker": "2337",
@@ -921,7 +921,7 @@
       "ratio": 1.0422077922077921,
       "from_high_pct": 4.220779220779214,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "2383",
@@ -931,7 +931,7 @@
       "ratio": 1.0407040704070407,
       "from_high_pct": 4.0704070407040716,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "3665",
@@ -941,7 +941,7 @@
       "ratio": 1.0379061371841156,
       "from_high_pct": 3.790613718411562,
       "bullish": true,
-      "industry": null
+      "industry": "其他電子"
     },
     {
       "ticker": "2409",
@@ -951,7 +951,7 @@
       "ratio": 1.0377906738196674,
       "from_high_pct": 3.7790673819667386,
       "bullish": false,
-      "industry": "面板"
+      "industry": "光電"
     },
     {
       "ticker": "7750",
@@ -961,7 +961,7 @@
       "ratio": 1.036893203883495,
       "from_high_pct": 3.689320388349504,
       "bullish": null,
-      "industry": null
+      "industry": "電機機械"
     },
     {
       "ticker": "1568",
@@ -971,7 +971,7 @@
       "ratio": 1.0368420784933525,
       "from_high_pct": 3.6842078493352526,
       "bullish": true,
-      "industry": null
+      "industry": "汽車"
     },
     {
       "ticker": "3209",
@@ -981,7 +981,7 @@
       "ratio": 1.0363984230538668,
       "from_high_pct": 3.6398423053866757,
       "bullish": true,
-      "industry": null
+      "industry": "電子通路"
     },
     {
       "ticker": "2495",
@@ -991,7 +991,7 @@
       "ratio": 1.0360696700353353,
       "from_high_pct": 3.6069670035335344,
       "bullish": true,
-      "industry": null
+      "industry": "電腦及週邊"
     },
     {
       "ticker": "2351",
@@ -1001,7 +1001,7 @@
       "ratio": 1.0357142857142858,
       "from_high_pct": 3.571428571428581,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "3673",
@@ -1011,7 +1011,7 @@
       "ratio": 1.034768185779289,
       "from_high_pct": 3.4768185779288974,
       "bullish": true,
-      "industry": null
+      "industry": "光電"
     },
     {
       "ticker": "2402",
@@ -1021,7 +1021,7 @@
       "ratio": 1.0341880574104356,
       "from_high_pct": 3.4188057410435624,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "5243",
@@ -1031,7 +1031,7 @@
       "ratio": 1.033175355450237,
       "from_high_pct": 3.3175355450236976,
       "bullish": false,
-      "industry": null
+      "industry": "光電"
     },
     {
       "ticker": "6924",
@@ -1041,7 +1041,7 @@
       "ratio": 1.0326209389887886,
       "from_high_pct": 3.2620938988788595,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "6139",
@@ -1051,7 +1051,7 @@
       "ratio": 1.0313432835820895,
       "from_high_pct": 3.1343283582089487,
       "bullish": true,
-      "industry": null
+      "industry": "其他電子"
     },
     {
       "ticker": "3010",
@@ -1061,7 +1061,7 @@
       "ratio": 1.030188679245283,
       "from_high_pct": 3.018867924528301,
       "bullish": true,
-      "industry": null
+      "industry": "電子通路"
     },
     {
       "ticker": "4967",
@@ -1071,7 +1071,7 @@
       "ratio": 1.0284697508896796,
       "from_high_pct": 2.8469750889679624,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "6209",
@@ -1081,7 +1081,7 @@
       "ratio": 1.0284430211030413,
       "from_high_pct": 2.844302110304131,
       "bullish": true,
-      "industry": null
+      "industry": "光電"
     },
     {
       "ticker": "2440",
@@ -1091,7 +1091,7 @@
       "ratio": 1.0273972602739727,
       "from_high_pct": 2.7397260273972712,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "2382",
@@ -1101,7 +1101,7 @@
       "ratio": 1.0272,
       "from_high_pct": 2.719999999999989,
       "bullish": true,
-      "industry": "AI伺服器"
+      "industry": "電腦及週邊"
     },
     {
       "ticker": "8162",
@@ -1111,7 +1111,7 @@
       "ratio": 1.0256410102070612,
       "from_high_pct": 2.564101020706122,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "4526",
@@ -1121,7 +1121,7 @@
       "ratio": 1.0241423329041355,
       "from_high_pct": 2.4142332904135477,
       "bullish": true,
-      "industry": null
+      "industry": "電機機械"
     },
     {
       "ticker": "1303",
@@ -1131,7 +1131,7 @@
       "ratio": 1.023965107571966,
       "from_high_pct": 2.3965107571966016,
       "bullish": true,
-      "industry": "塑化"
+      "industry": "塑膠"
     },
     {
       "ticker": "6108",
@@ -1141,7 +1141,7 @@
       "ratio": 1.0235545938212824,
       "from_high_pct": 2.3554593821282443,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "3701",
@@ -1151,7 +1151,7 @@
       "ratio": 1.0227963515263079,
       "from_high_pct": 2.279635152630788,
       "bullish": true,
-      "industry": null
+      "industry": "電腦及週邊"
     },
     {
       "ticker": "3037",
@@ -1161,7 +1161,7 @@
       "ratio": 1.0226500566251415,
       "from_high_pct": 2.2650056625141524,
       "bullish": true,
-      "industry": "半導體"
+      "industry": "電子零組件"
     },
     {
       "ticker": "3028",
@@ -1171,7 +1171,7 @@
       "ratio": 1.019033607090444,
       "from_high_pct": 1.9033607090443994,
       "bullish": true,
-      "industry": null
+      "industry": "電子通路"
     },
     {
       "ticker": "8039",
@@ -1181,7 +1181,7 @@
       "ratio": 1.0183150183150182,
       "from_high_pct": 1.831501831501825,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "1409",
@@ -1191,7 +1191,7 @@
       "ratio": 1.0178572117876876,
       "from_high_pct": 1.7857211787687621,
       "bullish": true,
-      "industry": null
+      "industry": "紡織纖維"
     },
     {
       "ticker": "6024",
@@ -1201,7 +1201,7 @@
       "ratio": 1.017793594064494,
       "from_high_pct": 1.779359406449399,
       "bullish": true,
-      "industry": null
+      "industry": "金融保險"
     },
     {
       "ticker": "6669",
@@ -1211,7 +1211,7 @@
       "ratio": 1.0171122994652406,
       "from_high_pct": 1.7112299465240621,
       "bullish": true,
-      "industry": "AI伺服器"
+      "industry": "電腦及週邊"
     },
     {
       "ticker": "3481",
@@ -1221,7 +1221,7 @@
       "ratio": 1.0167910737220158,
       "from_high_pct": 1.6791073722015826,
       "bullish": true,
-      "industry": "面板"
+      "industry": "光電"
     },
     {
       "ticker": "3717",
@@ -1231,7 +1231,7 @@
       "ratio": 1.0161662996598928,
       "from_high_pct": 1.6166299659892802,
       "bullish": null,
-      "industry": null
+      "industry": "汽車"
     },
     {
       "ticker": "2355",
@@ -1241,7 +1241,7 @@
       "ratio": 1.0156249848660084,
       "from_high_pct": 1.5624984866008385,
       "bullish": false,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "2399",
@@ -1251,7 +1251,7 @@
       "ratio": 1.0153120777267244,
       "from_high_pct": 1.5312077726724382,
       "bullish": true,
-      "industry": null
+      "industry": "電腦及週邊"
     },
     {
       "ticker": "3702",
@@ -1261,7 +1261,7 @@
       "ratio": 1.0148514851485149,
       "from_high_pct": 1.4851485148514865,
       "bullish": true,
-      "industry": null
+      "industry": "電子通路"
     },
     {
       "ticker": "1528",
@@ -1271,7 +1271,7 @@
       "ratio": 1.0138889422387267,
       "from_high_pct": 1.388894223872672,
       "bullish": true,
-      "industry": null
+      "industry": "電機機械"
     },
     {
       "ticker": "4904",
@@ -1281,7 +1281,7 @@
       "ratio": 1.0137566460503473,
       "from_high_pct": 1.375664605034732,
       "bullish": true,
-      "industry": "電信"
+      "industry": "通信網路"
     },
     {
       "ticker": "5434",
@@ -1291,7 +1291,7 @@
       "ratio": 1.0135467980295567,
       "from_high_pct": 1.3546798029556717,
       "bullish": true,
-      "industry": null
+      "industry": "電子通路"
     },
     {
       "ticker": "4958",
@@ -1301,7 +1301,7 @@
       "ratio": 1.013064133016627,
       "from_high_pct": 1.306413301662701,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "4540",
@@ -1311,7 +1311,7 @@
       "ratio": 1.0116788766679972,
       "from_high_pct": 1.1678876667997162,
       "bullish": true,
-      "industry": null
+      "industry": "電機機械"
     },
     {
       "ticker": "2436",
@@ -1321,7 +1321,7 @@
       "ratio": 1.0110041689867932,
       "from_high_pct": 1.100416898679324,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "6949",
@@ -1331,7 +1331,7 @@
       "ratio": 1.0103761348897535,
       "from_high_pct": 1.037613488975353,
       "bullish": true,
-      "industry": null
+      "industry": "生技醫療"
     },
     {
       "ticker": "2481",
@@ -1341,7 +1341,7 @@
       "ratio": 1.00990099009901,
       "from_high_pct": 0.990099009900991,
       "bullish": false,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "2414",
@@ -1351,7 +1351,7 @@
       "ratio": 1.0087526850000847,
       "from_high_pct": 0.8752685000084748,
       "bullish": true,
-      "industry": null
+      "industry": "電子通路"
     },
     {
       "ticker": "2535",
@@ -1361,7 +1361,7 @@
       "ratio": 1.008321754324814,
       "from_high_pct": 0.8321754324813968,
       "bullish": true,
-      "industry": null
+      "industry": "建材營造"
     },
     {
       "ticker": "2340",
@@ -1371,7 +1371,7 @@
       "ratio": 1.0081107905081184,
       "from_high_pct": 0.811079050811836,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "6226",
@@ -1381,7 +1381,7 @@
       "ratio": 1.0078740459032742,
       "from_high_pct": 0.7874045903274229,
       "bullish": false,
-      "industry": null
+      "industry": "光電"
     },
     {
       "ticker": "2059",
@@ -1391,7 +1391,7 @@
       "ratio": 1.0072992700729928,
       "from_high_pct": 0.7299270072992803,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "6655",
@@ -1401,7 +1401,7 @@
       "ratio": 1.0072992700729928,
       "from_high_pct": 0.7299270072992803,
       "bullish": true,
-      "industry": null
+      "industry": "其他"
     },
     {
       "ticker": "6672",
@@ -1411,7 +1411,7 @@
       "ratio": 1.0068493150684932,
       "from_high_pct": 0.6849315068493178,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "3714",
@@ -1421,7 +1421,7 @@
       "ratio": 1.006747638465534,
       "from_high_pct": 0.6747638465534056,
       "bullish": true,
-      "industry": null
+      "industry": "光電"
     },
     {
       "ticker": "3661",
@@ -1441,7 +1441,7 @@
       "ratio": 1.002824858757062,
       "from_high_pct": 0.28248587570620654,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "3583",
@@ -1451,7 +1451,7 @@
       "ratio": 1.0025252525252526,
       "from_high_pct": 0.2525252525252597,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "8112",
@@ -1461,7 +1461,7 @@
       "ratio": 1.0023641203456748,
       "from_high_pct": 0.23641203456747917,
       "bullish": true,
-      "industry": null
+      "industry": "電子通路"
     },
     {
       "ticker": "2010",
@@ -1471,7 +1471,7 @@
       "ratio": 1.0020201711943655,
       "from_high_pct": 0.20201711943654832,
       "bullish": false,
-      "industry": null
+      "industry": "鋼鐵"
     },
     {
       "ticker": "5007",
@@ -1481,7 +1481,7 @@
       "ratio": 1.0017301434279993,
       "from_high_pct": 0.17301434279992645,
       "bullish": true,
-      "industry": null
+      "industry": "鋼鐵"
     },
     {
       "ticker": "2395",
@@ -1491,7 +1491,7 @@
       "ratio": 1.0015046644598256,
       "from_high_pct": 0.15046644598255554,
       "bullish": true,
-      "industry": null
+      "industry": "電腦及週邊"
     },
     {
       "ticker": "1717",
@@ -1501,7 +1501,7 @@
       "ratio": 1.0012674077590265,
       "from_high_pct": 0.1267407759026451,
       "bullish": true,
-      "industry": null
+      "industry": "化學工業"
     },
     {
       "ticker": "2308",
@@ -1511,7 +1511,7 @@
       "ratio": 1.0,
       "from_high_pct": 0.0,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "2412",
@@ -1521,7 +1521,7 @@
       "ratio": 1.0,
       "from_high_pct": 0.0,
       "bullish": true,
-      "industry": "電信"
+      "industry": "通信網路"
     },
     {
       "ticker": "9942",
@@ -1531,7 +1531,7 @@
       "ratio": 1.0,
       "from_high_pct": 0.0,
       "bullish": true,
-      "industry": null
+      "industry": "其他"
     },
     {
       "ticker": "9136",
@@ -1541,7 +1541,7 @@
       "ratio": 1.0,
       "from_high_pct": 0.0,
       "bullish": true,
-      "industry": null
+      "industry": "存託憑證"
     }
   ],
   "near_ath_top30": [
@@ -1553,7 +1553,7 @@
       "ratio": 1.2094241531322028,
       "from_high_pct": 20.942415313220273,
       "bullish": true,
-      "industry": null
+      "industry": "光電"
     },
     {
       "ticker": "6861",
@@ -1563,7 +1563,7 @@
       "ratio": 1.208841463414634,
       "from_high_pct": 20.884146341463406,
       "bullish": true,
-      "industry": null
+      "industry": "生技醫療"
     },
     {
       "ticker": "6451",
@@ -1573,7 +1573,7 @@
       "ratio": 1.208816705336427,
       "from_high_pct": 20.881670533642694,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "2454",
@@ -1593,7 +1593,7 @@
       "ratio": 1.2087591240875912,
       "from_high_pct": 20.875912408759124,
       "bullish": true,
-      "industry": null
+      "industry": "其他電子"
     },
     {
       "ticker": "1809",
@@ -1603,7 +1603,7 @@
       "ratio": 1.2081711406731175,
       "from_high_pct": 20.81711406731175,
       "bullish": true,
-      "industry": null
+      "industry": "玻璃陶瓷"
     },
     {
       "ticker": "3532",
@@ -1613,7 +1613,7 @@
       "ratio": 1.2063492063492063,
       "from_high_pct": 20.63492063492063,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "6405",
@@ -1623,7 +1623,7 @@
       "ratio": 1.2062868307511057,
       "from_high_pct": 20.628683075110565,
       "bullish": true,
-      "industry": null
+      "industry": "光電"
     },
     {
       "ticker": "1597",
@@ -1633,7 +1633,7 @@
       "ratio": 1.2055749128919862,
       "from_high_pct": 20.557491289198616,
       "bullish": true,
-      "industry": null
+      "industry": "電機機械"
     },
     {
       "ticker": "4764",
@@ -1643,7 +1643,7 @@
       "ratio": 1.2054263565891472,
       "from_high_pct": 20.54263565891472,
       "bullish": true,
-      "industry": null
+      "industry": "化學工業"
     },
     {
       "ticker": "3016",
@@ -1653,7 +1653,7 @@
       "ratio": 1.2040134188891567,
       "from_high_pct": 20.40134188891567,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "8150",
@@ -1663,7 +1663,7 @@
       "ratio": 1.1762237548828125,
       "from_high_pct": 17.62237548828125,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "6197",
@@ -1673,7 +1673,7 @@
       "ratio": 1.1706730769230769,
       "from_high_pct": 17.067307692307686,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "3026",
@@ -1683,7 +1683,7 @@
       "ratio": 1.1694117647058824,
       "from_high_pct": 16.94117647058824,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "2342",
@@ -1693,7 +1693,7 @@
       "ratio": 1.1625182720081213,
       "from_high_pct": 16.25182720081213,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "2423",
@@ -1703,7 +1703,7 @@
       "ratio": 1.1565217391304348,
       "from_high_pct": 15.652173913043477,
       "bullish": false,
-      "industry": null
+      "industry": "其他電子"
     },
     {
       "ticker": "3135",
@@ -1713,7 +1713,7 @@
       "ratio": 1.1519434628975265,
       "from_high_pct": 15.194346289752648,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "6830",
@@ -1723,7 +1723,7 @@
       "ratio": 1.1470588235294117,
       "from_high_pct": 14.705882352941169,
       "bullish": true,
-      "industry": null
+      "industry": "其他電子"
     },
     {
       "ticker": "7610",
@@ -1733,7 +1733,7 @@
       "ratio": 1.1390625,
       "from_high_pct": 13.906250000000009,
       "bullish": null,
-      "industry": null
+      "industry": "運動休閒"
     },
     {
       "ticker": "6205",
@@ -1743,7 +1743,7 @@
       "ratio": 1.1352600803264994,
       "from_high_pct": 13.526008032649939,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "3443",
@@ -1763,7 +1763,7 @@
       "ratio": 1.1349353049907578,
       "from_high_pct": 13.493530499075778,
       "bullish": true,
-      "industry": null
+      "industry": "光電"
     },
     {
       "ticker": "7769",
@@ -1773,7 +1773,7 @@
       "ratio": 1.1324570273003034,
       "from_high_pct": 13.24570273003034,
       "bullish": null,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "3535",
@@ -1783,7 +1783,7 @@
       "ratio": 1.132295719844358,
       "from_high_pct": 13.229571984435795,
       "bullish": true,
-      "industry": null
+      "industry": "光電"
     },
     {
       "ticker": "6141",
@@ -1793,7 +1793,7 @@
       "ratio": 1.1292307927058294,
       "from_high_pct": 12.923079270582939,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "2369",
@@ -1803,7 +1803,7 @@
       "ratio": 1.1235195133711275,
       "from_high_pct": 12.351951337112755,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     },
     {
       "ticker": "3715",
@@ -1813,7 +1813,7 @@
       "ratio": 1.1228571428571428,
       "from_high_pct": 12.285714285714278,
       "bullish": true,
-      "industry": null
+      "industry": "電子零組件"
     },
     {
       "ticker": "2417",
@@ -1823,7 +1823,7 @@
       "ratio": 1.1218224794182043,
       "from_high_pct": 12.182247941820435,
       "bullish": false,
-      "industry": null
+      "industry": "電腦及週邊"
     },
     {
       "ticker": "8210",
@@ -1833,7 +1833,7 @@
       "ratio": 1.1194690265486726,
       "from_high_pct": 11.946902654867264,
       "bullish": true,
-      "industry": null
+      "industry": "電腦及週邊"
     },
     {
       "ticker": "4919",
@@ -1843,55 +1843,155 @@
       "ratio": 1.11864406779661,
       "from_high_pct": 11.864406779661007,
       "bullish": true,
-      "industry": null
+      "industry": "半導體"
     }
   ],
   "industry_stats": [
     {
-      "industry": "未分類",
-      "count": 227,
-      "bullish_count": 174
+      "industry": "半導體",
+      "count": 46,
+      "bullish_count": 38
     },
     {
-      "industry": "半導體",
-      "count": 10,
+      "industry": "電子零組件",
+      "count": 45,
+      "bullish_count": 42
+    },
+    {
+      "industry": "光電",
+      "count": 27,
+      "bullish_count": 21
+    },
+    {
+      "industry": "其他電子",
+      "count": 15,
+      "bullish_count": 14
+    },
+    {
+      "industry": "金融保險",
+      "count": 15,
+      "bullish_count": 10
+    },
+    {
+      "industry": "化學工業",
+      "count": 13,
       "bullish_count": 8
     },
     {
-      "industry": "金融",
-      "count": 4,
-      "bullish_count": 3
+      "industry": "電腦及週邊",
+      "count": 13,
+      "bullish_count": 10
     },
     {
-      "industry": "面板",
+      "industry": "通信網路",
+      "count": 11,
+      "bullish_count": 7
+    },
+    {
+      "industry": "電子通路",
+      "count": 11,
+      "bullish_count": 9
+    },
+    {
+      "industry": "電機機械",
+      "count": 10,
+      "bullish_count": 9
+    },
+    {
+      "industry": "運動休閒",
+      "count": 6,
+      "bullish_count": 4
+    },
+    {
+      "industry": "其他",
+      "count": 6,
+      "bullish_count": 4
+    },
+    {
+      "industry": "汽車",
+      "count": 6,
+      "bullish_count": 4
+    },
+    {
+      "industry": "生技醫療",
       "count": 3,
       "bullish_count": 2
     },
     {
-      "industry": "AI伺服器",
-      "count": 3,
-      "bullish_count": 3
-    },
-    {
-      "industry": "電信",
+      "industry": "塑膠",
       "count": 3,
       "bullish_count": 2
     },
     {
-      "industry": "塑化",
+      "industry": "建材營造",
+      "count": 3,
+      "bullish_count": 2
+    },
+    {
+      "industry": "貿易百貨",
+      "count": 3,
+      "bullish_count": 1
+    },
+    {
+      "industry": "玻璃陶瓷",
       "count": 2,
       "bullish_count": 2
     },
     {
-      "industry": "儲存",
+      "industry": "鋼鐵",
+      "count": 2,
+      "bullish_count": 1
+    },
+    {
+      "industry": "食品",
+      "count": 2,
+      "bullish_count": 0
+    },
+    {
+      "industry": "油電燃氣",
+      "count": 2,
+      "bullish_count": 0
+    },
+    {
+      "industry": "航運",
+      "count": 2,
+      "bullish_count": 2
+    },
+    {
+      "industry": "居家生活",
+      "count": 2,
+      "bullish_count": 0
+    },
+    {
+      "industry": "紡織纖維",
       "count": 1,
       "bullish_count": 1
     },
     {
-      "industry": "航運",
+      "industry": "存託憑證",
       "count": 1,
       "bullish_count": 1
+    },
+    {
+      "industry": "橡膠",
+      "count": 1,
+      "bullish_count": 1
+    },
+    {
+      "industry": "觀光",
+      "count": 1,
+      "bullish_count": 1
+    },
+    {
+      "industry": "代碼38",
+      "count": 1,
+      "bullish_count": 0
+    },
+    {
+      "industry": "水泥",
+      "count": 1,
+      "bullish_count": 0
     }
   ],
-  "top_industry": "未分類"
+  "top_industry": "半導體"
 }

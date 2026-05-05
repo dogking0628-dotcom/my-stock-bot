@@ -224,10 +224,12 @@ def main():
     print("Checking market regime...")
     regime_block = market_regime_alert.build_line_block()
 
-    # ── 個人觀察清單（5 檔追蹤）──────────
-    print("Tracking personal watchlist...")
-    watchlist = tw_breakout_filter.scan_watchlist()
-    watchlist_block = tw_breakout_filter.build_watchlist_block(watchlist)
+    # ── 動態 Top 5 追蹤 + 假突破警報（取代固定觀察清單）──
+    print("Tracking dynamic Top 5...")
+    today_top5, dropped_warnings, today_warnings = \
+        tw_breakout_filter.update_and_track_top5(tw_breakout_results)
+    watchlist_block = tw_breakout_filter.build_top5_block(
+        today_top5, dropped_warnings, today_warnings)
 
     # ── 合併推播 ──────────────────────────
     msg = build_combined_msg(us_block, tw_result, tw_breakout_block, watchlist_block, regime_block, today)

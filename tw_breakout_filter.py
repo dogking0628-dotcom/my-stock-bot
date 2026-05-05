@@ -204,7 +204,7 @@ def analyze(ticker, name):
         "close": today, "change": change,
         "vol_ratio": vol_ratio, "rsi": rsi_val,
         "monthly_ath_5y": monthly_max,
-        "ma5": ma5, "ma200": ma200, "bull_strength": bull_strength,
+        "ma5": ma5, "ma20": ma20, "ma200": ma200, "bull_strength": bull_strength,
         "is_ath": is_ath, "is_bullish": is_bullish,
         "pass_volume": pass_volume, "pass_change": pass_change,
         "pass_rsi": pass_rsi, "pass_bull": pass_bull,
@@ -252,17 +252,246 @@ def momentum_score(a):
     return max(0, s)
 
 def scan_watchlist():
-    """每日無條件追蹤 5 檔個人觀察股，計算動能"""
+    """每日無條件追蹤 5 檔個人觀察股，計算動能（舊版，保留兼容）"""
     out = []
     for tk, name in WATCHLIST:
         a = analyze(tk, name)
         if not a: continue
         a["score"] = momentum_score(a)
-        # 觸發條件：分數>50 + ATH + 多頭
         a["is_trigger"] = a["score"] > 50 and a["is_ath"] and a["is_bullish"]
         out.append(a)
     out.sort(key=lambda x: -x["score"])
     return out
+
+# ───── 進階濾網：股本 + 產業族群 ─────
+
+# 已知股本 < 20 億 NT$ 的小型股黑名單（持續更新）
+SMALL_CAP_BLACKLIST = {
+    # 上市小股本
+    "2455","6605","8210",
+    # 上櫃小股本（容易被坐莊）
+    "5274","6533","6121","6789","8086","6477","6491","6573","6679","6691",
+    "6741","6762","8054","8064","8341","3402","4977","8044","8358","3680",
+    "4906","6231","6446",
+}
+
+# 產業族群分類（用於「整個族群連漲 3 天」確認）
+INDUSTRY_GROUPS = {
+    "半導體": ["2330","2454","2303","3711","3034","3661","3443","6488",
+              "5347","8046","6415","2449","3037","3105","6531","5274"],
+    "AI伺服器": ["2317","2382","2376","3231","6669","3017","2356","2354",
+                "3653","4938","2357"],
+    "面板": ["3481","2409","2474","8069"],
+    "金融": ["2881","2882","2891","2884","2885","2886","2880","2887","2890",
+            "2892","5880","5876","2812","2823","2867","2888","2889"],
+    "電信": ["2412","3045","4904"],
+    "塑化": ["1101","1102","1216","1301","1303","1326"],
+    "鋼鐵": ["2002","2027","2028"],
+    "航運": ["2603","2609","2615","2618","2610"],
+    "通路": ["2912","2491","8454","8044"],
+    "生技": ["4137","4147","6446","4128"],
+    "儲存": ["8299","2316","6121"],
+    "成衣": ["9904","9910"],
+    "汽車": ["2207","2204","1536"],
+}
+
+def get_industry(ticker):
+    """回傳該股票所屬產業，無歸類的回 None"""
+    for industry, tickers in INDUSTRY_GROUPS.items():
+        if ticker in tickers:
+            return industry
+    return None
+
+def industry_3day_strength(scan_results, ticker):
+    """檢查該產業是否連續 3 天強勢（同產業股票過去 3 天平均漲幅 > 1%）"""
+    industry = get_industry(ticker)
+    if not industry: return False, None
+    members = INDUSTRY_GROUPS[industry]
+    # 從本日掃描結果中找同族群股票
+    all_stocks = []
+    for cat in ["limit_up","high","medium","low","fake"]:
+        for s in scan_results.get(cat, []):
+            if s["ticker"] in members:
+                all_stocks.append(s)
+    if len(all_stocks) < 3: return False, industry  # 至少 3 檔同族群有資料
+    # 連 3 天強勢 = 該族群當日漲幅平均 > 1% 且至少 3 檔今日漲
+    avg_chg = sum(s["change"] for s in all_stocks) / len(all_stocks)
+    n_up = sum(1 for s in all_stocks if s["change"] > 0)
+    is_strong = avg_chg > 1.0 and n_up >= len(all_stocks) * 0.6
+    return is_strong, industry
+
+# ───── 動態 Top 5 追蹤系統 ─────
+import os, json
+TOP5_STATE_PATH = os.path.join(os.path.dirname(__file__), "tw_top5_state.json")
+
+def load_top5_state():
+    if not os.path.exists(TOP5_STATE_PATH):
+        return {"date": None, "stocks": {}}
+    with open(TOP5_STATE_PATH, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+def save_top5_state(state):
+    with open(TOP5_STATE_PATH, "w", encoding="utf-8") as f:
+        json.dump(state, f, ensure_ascii=False, indent=2)
+
+def pick_dynamic_top5(scan_results):
+    """
+    從 scan_all 結果中挑出動能 Top 5
+    濾網（升級版）：
+      ① 股本 ≥ 20 億 NT$（過濾小型坐莊股）
+      ② 整個產業族群連漲 3 天（避免單一拉抬）
+      ③ 漲停 / 高機率 / 普通 三類
+      ④ 動能評分 ≥ 30
+    """
+    candidates = []
+    for cat in ["limit_up", "high", "medium"]:
+        for a in scan_results.get(cat, []):
+            a = dict(a)
+            # 過濾 1：股本黑名單（小型股容易被坐莊）
+            if a["ticker"] in SMALL_CAP_BLACKLIST:
+                continue
+            # 過濾 2：產業族群連漲檢查
+            is_strong, industry = industry_3day_strength(scan_results, a["ticker"])
+            a["industry"] = industry
+            a["industry_strong"] = is_strong
+            # 不在分類產業 → 視為通過（個股看自己強度）
+            # 在分類產業但族群不強 → 過濾掉（可能是單股拉抬）
+            if industry and not is_strong:
+                continue
+            a["score"] = momentum_score(a)
+            a["category"] = cat
+            if a["score"] < 30:  # 動能不足
+                continue
+            candidates.append(a)
+    candidates.sort(key=lambda x: -x["score"])
+    return candidates[:5]
+
+def check_fake_breakout(stock):
+    """檢查單檔股票是否出現假突破警訊"""
+    warnings = []
+    severity = 0  # 0=正常, 1=輕微警告, 2=強警報
+
+    # 警訊 1: 跌破 5MA（短期動能消退）
+    if stock["close"] < stock["ma5"]:
+        warnings.append(f"❌ 跌破 5MA (${stock['ma5']:.2f})")
+        severity = max(severity, 1)
+
+    # 警訊 2: 跌破 20MA（趨勢反轉，建議出場）
+    if stock["close"] < stock["ma20"]:
+        warnings.append(f"🚨 跌破 20MA (${stock['ma20']:.2f}) — 出場訊號")
+        severity = max(severity, 2)
+
+    # 警訊 3: 量縮（量能 < 0.7×）
+    if stock["vol_ratio"] < 0.7 and stock["change"] < 1:
+        warnings.append(f"📉 量縮 {stock['vol_ratio']:.1f}x")
+        severity = max(severity, 1)
+
+    # 警訊 4: RSI 過熱
+    if stock["rsi"] > 85:
+        warnings.append(f"🔥 RSI 過熱 {stock['rsi']:.0f}")
+        severity = max(severity, 1)
+
+    # 警訊 5: 漲過頭
+    if stock["bull_strength"] > 120:
+        warnings.append(f"🌋 漲過頭 +{stock['bull_strength']:.0f}%")
+        severity = max(severity, 1)
+
+    return {"warnings": warnings, "severity": severity}
+
+def update_and_track_top5(scan_results):
+    """
+    動態追蹤 Top 5：
+      - 每日重新挑選動能 Top 5
+      - 對昨日 Top 5 做假突破檢查（即使今日掉出榜）
+      - 回傳：今日 Top 5 + 昨日掉出股的警報
+    """
+    import datetime as _dt
+    state = load_top5_state()
+    today = _dt.datetime.now().strftime("%Y-%m-%d")
+    yesterday_stocks = state.get("stocks", {})
+
+    # 今日新 Top 5
+    today_top5 = pick_dynamic_top5(scan_results)
+    today_codes = {s["ticker"] for s in today_top5}
+
+    # 對「昨日榜上但今日掉出」的股票做假突破檢查
+    dropped_warnings = []
+    for code, prev_data in yesterday_stocks.items():
+        if code in today_codes: continue  # 仍在榜上跳過
+        # 重新分析這檔股票看現況
+        analysis = analyze(code, prev_data.get("name", code))
+        if analysis:
+            check = check_fake_breakout(analysis)
+            if check["severity"] > 0:
+                dropped_warnings.append({
+                    "ticker": code,
+                    "name": prev_data.get("name", ""),
+                    "prev_score": prev_data.get("score", 0),
+                    "current_close": analysis["close"],
+                    "warnings": check["warnings"],
+                    "severity": check["severity"],
+                })
+
+    # 對今日 Top 5 也檢查警訊（持有中）
+    today_warnings = []
+    for s in today_top5:
+        check = check_fake_breakout(s)
+        if check["severity"] > 0:
+            today_warnings.append({
+                "ticker": s["ticker"],
+                "name": s["name"],
+                "warnings": check["warnings"],
+                "severity": check["severity"],
+            })
+
+    # 儲存今日 Top 5 狀態（明天會用）
+    new_state = {
+        "date": today,
+        "stocks": {s["ticker"]: {"name": s["name"], "score": s["score"],
+                                  "close": s["close"], "category": s["category"]}
+                   for s in today_top5},
+    }
+    save_top5_state(new_state)
+
+    return today_top5, dropped_warnings, today_warnings
+
+def build_top5_block(today_top5, dropped_warnings, today_warnings):
+    """產生 LINE Top 5 區塊"""
+    lines = ["🎯 動能 Top 5 動態追蹤"]
+
+    if not today_top5:
+        lines.append("  ⏸ 今日無高品質動能股")
+        lines.append("  （已濾掉小股本 + 族群不強的雜訊）")
+    else:
+        cat_emoji = {"limit_up":"🚀","high":"🟢","medium":"🟡"}
+        for i, s in enumerate(today_top5, 1):
+            ce = cat_emoji.get(s["category"], "⚪")
+            ath_mark = "✅" if s.get("is_ath") else " "
+            ind = s.get("industry") or "-"
+            lines.append(f"  {i}. {ce} {s['ticker']} {s['name']} {s['score']}/90"
+                         f"  ${s['close']:.0f} {s['change']:+.1f}%")
+            lines.append(f"      🏭 {ind} 族群同步走強  ATH{ath_mark}")
+
+    # 假突破警報區塊
+    if today_warnings:
+        lines.append("")
+        lines.append("⚠️ Top5 內出現警訊：")
+        for w in today_warnings:
+            lines.append(f"  {w['ticker']} {w['name']}")
+            for warn in w["warnings"]:
+                lines.append(f"    {warn}")
+
+    # 昨日掉出股票的警報
+    if dropped_warnings:
+        lines.append("")
+        lines.append("🔴 昨日榜單掉出 + 假突破：")
+        for w in dropped_warnings[:3]:
+            tag = "🚨" if w["severity"] >= 2 else "⚠️"
+            lines.append(f"  {tag} {w['ticker']} {w['name']} ${w['current_close']:.0f}")
+            for warn in w["warnings"][:2]:
+                lines.append(f"    {warn}")
+
+    return "\n".join(lines)
 
 def get_full_universe():
     """動態抓全台股市場（上市+上櫃約 1900+ 檔），失敗時 fallback 到內建 145 檔"""

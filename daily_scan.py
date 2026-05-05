@@ -177,8 +177,41 @@ def build_us_block(state, sells, buys, holds, today, n_buy):
 
     return "\n".join(lines)
 
+# ── 全市場族群統計（讀 industry_ath_yf.py 產的報表）──
+def build_industry_block():
+    """讀 ath_industry_report.json，產出全市場創新高族群統計 LINE 區塊"""
+    path = os.path.join(os.path.dirname(__file__), "ath_industry_report.json")
+    if not os.path.exists(path):
+        return ""  # 報表不存在直接跳過
+    try:
+        with open(path, encoding="utf-8") as f:
+            r = json.load(f)
+    except Exception:
+        return ""
+    exact = r.get("exact_ath", [])
+    industry_stats = r.get("industry_stats", [])
+    top_ind = r.get("top_industry")
+    if not exact:
+        return ""
+    lines = ["🌐 全市場創 2y 月線新高",
+             f"  共 {len(exact)} 檔創新高"]
+    # 排除「未分類」找最強有名族群
+    classified = [s for s in industry_stats if s["industry"] != "未分類"]
+    classified.sort(key=lambda x: -x["count"])
+    if classified:
+        top3 = classified[:3]
+        lines.append(f"  🏆 強勢族群 Top 3：")
+        for s in top3:
+            lines.append(f"    • {s['industry']} {s['count']} 檔（多頭 {s['bullish_count']}）")
+    # 標示「未分類」也很多代表半導體生態圈外溢
+    unclassified = next((s for s in industry_stats if s["industry"] == "未分類"), None)
+    if unclassified and unclassified["count"] >= 30:
+        lines.append(f"  💡 未分類 {unclassified['count']} 檔多為半導體周邊/設備")
+    return "\n".join(lines)
+
+
 # ── 合併訊息 ──────────────────────────────
-def build_combined_msg(us_block, tw_result, tw_breakout_block, watchlist_block, regime_block, today):
+def build_combined_msg(us_block, tw_result, tw_breakout_block, watchlist_block, regime_block, today, industry_block=""):
     tw_block    = tw_0050_signal.build_line_block(tw_result)
     has_us_act  = ("SELL" in us_block or "BUY" in us_block)
     has_tw_act  = tw_result.get("action", "HOLD") != "HOLD"
@@ -190,21 +223,13 @@ def build_combined_msg(us_block, tw_result, tw_breakout_block, watchlist_block, 
     if has_any_act:
         header = f"🚨 投資訊號觸發 {today}"
 
-    return "\n".join([
-        header,
-        "═" * 22,
-        regime_block,
-        "─" * 22,
-        us_block,
-        "─" * 22,
-        tw_block,
-        "─" * 22,
-        tw_breakout_block,
-        "─" * 22,
-        watchlist_block,
-        "─" * 22,
-        "👉 建議收盤前執行，moomoo/Firstrade",
-    ])
+    parts = [header, "═" * 22, regime_block, "─" * 22,
+             us_block, "─" * 22, tw_block, "─" * 22,
+             tw_breakout_block, "─" * 22, watchlist_block]
+    if industry_block:
+        parts += ["─" * 22, industry_block]
+    parts += ["─" * 22, "👉 建議收盤前執行，moomoo/Firstrade"]
+    return "\n".join(parts)
 
 # ── Main ─────────────────────────────────
 def main():
@@ -244,8 +269,11 @@ def main():
         today_top5, dropped_warnings, today_warnings,
         top20=today_top20, recommended_industry=_recommended_industry)
 
+    # ── 全市場族群統計（須先跑完 industry_ath_yf.py）──
+    industry_block = build_industry_block()
+
     # ── 合併推播 ──────────────────────────
-    msg = build_combined_msg(us_block, tw_result, tw_breakout_block, watchlist_block, regime_block, today)
+    msg = build_combined_msg(us_block, tw_result, tw_breakout_block, watchlist_block, regime_block, today, industry_block)
     print(msg)
     notify_line.push(msg)
 
@@ -295,6 +323,14 @@ def main():
             "us_state": {"cash": state["cash"], "n_positions": len(state["positions"]),
                          "max_slots": MAX_SLOTS},
         }
+        # 全市場族群統計（從 ath_industry_report.json 帶進來）
+        try:
+            ath_path = os.path.join(os.path.dirname(__file__), "ath_industry_report.json")
+            if os.path.exists(ath_path):
+                with open(ath_path, encoding="utf-8") as f:
+                    dashboard["tw_market_industry"] = json.load(f)
+        except Exception as e:
+            print(f"[dashboard] industry merge failed: {e}")
         dashboard_path = os.path.join(os.path.dirname(__file__), "dashboard_data.json")
         with open(dashboard_path, "w", encoding="utf-8") as f:
             json.dump(dashboard, f, ensure_ascii=False, indent=2, default=str)

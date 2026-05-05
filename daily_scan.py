@@ -15,6 +15,7 @@ import notify_line
 import tw_0050_signal
 import tw_breakout_filter
 import universe_loader
+import market_regime_alert
 
 # 動態抓 S&P 500 作為美股池（如果失敗 fallback 到 config 的 30 檔）
 try:
@@ -168,7 +169,7 @@ def build_us_block(state, sells, buys, holds, today, n_buy):
     return "\n".join(lines)
 
 # ── 合併訊息 ──────────────────────────────
-def build_combined_msg(us_block, tw_result, tw_breakout_block, watchlist_block, today):
+def build_combined_msg(us_block, tw_result, tw_breakout_block, watchlist_block, regime_block, today):
     tw_block    = tw_0050_signal.build_line_block(tw_result)
     has_us_act  = ("SELL" in us_block or "BUY" in us_block)
     has_tw_act  = tw_result.get("action", "HOLD") != "HOLD"
@@ -183,6 +184,8 @@ def build_combined_msg(us_block, tw_result, tw_breakout_block, watchlist_block, 
     return "\n".join([
         header,
         "═" * 22,
+        regime_block,
+        "─" * 22,
         us_block,
         "─" * 22,
         tw_block,
@@ -217,13 +220,17 @@ def main():
     tw_breakout_results = tw_breakout_filter.scan_all()
     tw_breakout_block = tw_breakout_filter.build_line_block(tw_breakout_results)
 
+    # ── 大盤體制警報（SPY/0050 vs MA200）──
+    print("Checking market regime...")
+    regime_block = market_regime_alert.build_line_block()
+
     # ── 個人觀察清單（5 檔追蹤）──────────
     print("Tracking personal watchlist...")
     watchlist = tw_breakout_filter.scan_watchlist()
     watchlist_block = tw_breakout_filter.build_watchlist_block(watchlist)
 
     # ── 合併推播 ──────────────────────────
-    msg = build_combined_msg(us_block, tw_result, tw_breakout_block, watchlist_block, today)
+    msg = build_combined_msg(us_block, tw_result, tw_breakout_block, watchlist_block, regime_block, today)
     print(msg)
     notify_line.push(msg)
 

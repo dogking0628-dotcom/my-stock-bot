@@ -77,13 +77,25 @@ def fetch_kbars(stock_code, start_date=None, end_date=None):
     start = start_date or (end - dt.timedelta(days=365*5 + 30))  # 預設 5 年（多 1 個月緩衝）
 
     try:
-        # Shioaji 用字典式存取
-        contract = api.Contracts.Stocks.get(stock_code) if hasattr(api.Contracts.Stocks, 'get') else None
+        # Shioaji 的 Stocks 分 TSE/OTC 兩個 namespace，要分別查
+        contract = None
+        for ns_name in ("TSE", "OTC"):
+            try:
+                ns = getattr(api.Contracts.Stocks, ns_name)
+                if hasattr(ns, stock_code):
+                    contract = getattr(ns, stock_code)
+                    break
+                # 退而用 [] 索引
+                try:
+                    c = ns[stock_code]
+                    if c:
+                        contract = c
+                        break
+                except Exception: pass
+            except Exception: pass
         if not contract:
-            # 用索引方式
-            try: contract = api.Contracts.Stocks[stock_code]
-            except: pass
-        if not contract: return []
+            print(f"[shioaji] contract not found: {stock_code}", file=sys.stderr)
+            return []
 
         kbars = api.kbars(contract=contract,
                           start=start.strftime("%Y-%m-%d"),
@@ -106,7 +118,7 @@ def fetch_kbars(stock_code, start_date=None, end_date=None):
         # 合併同日資料（kbars 預設可能是 1 分鐘）→ 改用 daily 呼叫
         return _aggregate_daily(out)
     except Exception as e:
-        print(f"[shioaji] fetch_kbars {stock_code} 失敗: {e}", file=sys.stderr)
+        print(f"[shioaji] fetch_kbars {stock_code} 失敗: {type(e).__name__}: {e}", file=sys.stderr)
         return []
 
 def _aggregate_daily(bars):

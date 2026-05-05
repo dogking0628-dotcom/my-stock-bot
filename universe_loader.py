@@ -28,11 +28,24 @@ def _is_cache_fresh(path):
 # 已知會跑出但不存在/已下市的 ticker 黑名單
 SP500_BLACKLIST = {"TSYS","CSRA","GGP","MBIA","IQVIA","LVMH","SCANA","TMK","XLNX","MXIM","ATVI"}
 
+def _filter_blacklist(tickers):
+    """過濾黑名單 + 格式清理"""
+    out = []
+    for t in tickers:
+        t = str(t).replace(".", "-").strip()
+        if not t or len(t) > 5: continue
+        if t in SP500_BLACKLIST: continue
+        if not t.replace("-","").isalnum(): continue
+        out.append(t)
+    return list(dict.fromkeys(out))
+
 def fetch_sp500():
     """從 Wikipedia 抓 S&P 500 列表（用 pandas 正確解析第一個表）"""
     if _is_cache_fresh(SP500_CACHE):
         with open(SP500_CACHE, "r", encoding="utf-8") as f:
-            return json.load(f)["tickers"]
+            cached = json.load(f)["tickers"]
+        # ⚠️ 載入時也過濾一次（防舊 cache 含下市股票）
+        return _filter_blacklist(cached)
     try:
         # 優先用 pandas read_html（精準抓第一個 current constituents 表）
         try:

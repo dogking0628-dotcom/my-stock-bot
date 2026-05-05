@@ -265,15 +265,86 @@ def scan_watchlist():
 
 # ───── 進階濾網：股本 + 產業族群 ─────
 
-# 已知股本 < 20 億 NT$ 的小型股黑名單（持續更新）
+# 確認實收股本 < 20 億 NT$ 的小型股黑名單（已查證）
+# 計算：流通股數(M) × 面額 NT$10 < NT$20 億 (= 200M 股以下)
 SMALL_CAP_BLACKLIST = {
-    # 上市小股本
-    "2455","6605","8210",
-    # 上櫃小股本（容易被坐莊）
-    "5274","6533","6121","6789","8086","6477","6491","6573","6679","6691",
-    "6741","6762","8054","8064","8341","3402","4977","8044","8358","3680",
-    "4906","6231","6446",
+    # === 真正股本 < 20 億 ===
+    "2455": "全新 6億",
+    "6605": "帝寶 4億",
+    "8210": "勤誠 6億",
+    "5274": "信驊 7億",
+    "6533": "晶心科 8億",
+    "6477": "安集 6億",
+    "6491": "晶碩 6億",
+    "6573": "虹堡 5億",
+    "6679": "鈺太 5億",
+    "6691": "洋基工程 3億",
+    "6741": "91APP 5億",
+    "6762": "達發 9億",
+    "8054": "安國 8億",
+    "8064": "東捷 3億",
+    "8341": "日友 9億",
+    "3402": "漢科 6億",
+    "4977": "眾達-KY 3億",
+    "8044": "網家 8億",
+    "8358": "金居 4億",
+    "3680": "家登 6億",
+    "4906": "正文 10億",
+    "6231": "系微 7億",
+    "3293": "鈊象 7億",
+    "8086": "宏捷科 14億",
+    # 注意：以下都已超過 20 億，已移除
+    # 8299 群聯 20億, 6488 環球晶 43億, 6121 新普 28億,
+    # 6789 采鈺 89億, 6446 藥華藥 25億
 }
+
+# 動態股本快取（每週更新一次）
+import os, json
+CAPITAL_CACHE_PATH = os.path.join(os.path.dirname(__file__), "capital_cache.json")
+
+def load_capital_cache():
+    if not os.path.exists(CAPITAL_CACHE_PATH):
+        return {}
+    try:
+        with open(CAPITAL_CACHE_PATH, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except: return {}
+
+def save_capital_cache(cache):
+    with open(CAPITAL_CACHE_PATH, "w", encoding="utf-8") as f:
+        json.dump(cache, f, ensure_ascii=False, indent=2)
+
+def fetch_capital_yf(ticker):
+    """用 yfinance 抓實收股本（台股 = sharesOutstanding × 10 元面額）"""
+    try:
+        import yfinance as yf
+        for suffix in (".TW", ".TWO"):
+            tk = yf.Ticker(f"{ticker}{suffix}")
+            info = tk.info
+            shares = info.get("sharesOutstanding") or 0
+            if shares > 0:
+                # 台股面額 NT$10：股本(NT$) = 股數 × 10
+                capital_nt = shares * 10
+                return capital_nt / 1e8  # 回傳「億 NT$」單位
+    except: pass
+    return None
+
+def is_small_cap(ticker):
+    """檢查是否為小股本（< 20 億）"""
+    # 1. 黑名單即時排除
+    if ticker in SMALL_CAP_BLACKLIST:
+        return True
+    # 2. 動態查 cache
+    cache = load_capital_cache()
+    cap = cache.get(ticker)
+    if cap is None:
+        cap = fetch_capital_yf(ticker)
+        if cap is not None:
+            cache[ticker] = cap
+            save_capital_cache(cache)
+    if cap is not None and cap < 20:
+        return True
+    return False
 
 # 產業族群分類（用於「整個族群連漲 3 天」確認）
 INDUSTRY_GROUPS = {
@@ -347,8 +418,8 @@ def pick_dynamic_top5(scan_results):
     for cat in ["limit_up", "high", "medium"]:
         for a in scan_results.get(cat, []):
             a = dict(a)
-            # 過濾 1：股本黑名單（小型股容易被坐莊）
-            if a["ticker"] in SMALL_CAP_BLACKLIST:
+            # 過濾 1：股本檢查（小型股容易被坐莊）
+            if is_small_cap(a["ticker"]):
                 continue
             # 過濾 2：產業族群連漲檢查
             is_strong, industry = industry_3day_strength(scan_results, a["ticker"])

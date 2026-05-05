@@ -1,23 +1,4 @@
 {
   "date": "2026-05-05",
-  "stocks": {
-    "2454": {
-      "name": "聯發科",
-      "score": 75,
-      "close": 3155.0,
-      "category": "limit_up"
-    },
-    "2455": {
-      "name": "全新",
-      "score": 50,
-      "close": 386.5,
-      "category": "high"
-    },
-    "1303": {
-      "name": "南亞",
-      "score": 40,
-      "close": 94.0,
-      "category": "medium"
-    }
-  }
+  "stocks": {}
 }

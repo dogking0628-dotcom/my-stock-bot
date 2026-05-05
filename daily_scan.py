@@ -40,27 +40,40 @@ def save_state(st):
 
 # ── yfinance 抓收盤（靜音下市股錯誤）──────
 def fetch_data(tickers, period="2y"):
-    """回傳 {ticker: [(date_str, close)]}"""
-    import contextlib, io as _io, logging
-    print(f"Fetching {len(tickers)} tickers from yfinance...")
-    # 抑制 yfinance + urllib3 的 stderr 噪音
+    """回傳 {ticker: [(date_str, close)]} — 分批 50 檔下載避免 yfinance batch 失敗"""
+    import contextlib, io as _io, logging, time
+    print(f"Fetching {len(tickers)} tickers from yfinance (batched)...")
     logging.getLogger("yfinance").setLevel(logging.CRITICAL)
-    with contextlib.redirect_stderr(_io.StringIO()):
-        data = yf.download(" ".join(tickers), period=period, group_by="ticker",
-                           auto_adjust=True, progress=False, threads=True)
+    BATCH = 50
     out = {}
     skipped = 0
-    for t in tickers:
+    for i in range(0, len(tickers), BATCH):
+        batch = tickers[i:i+BATCH]
         try:
-            df = data[t] if len(tickers) > 1 else data
-            df = df.dropna(subset=["Close"])
-            if df.empty:
-                skipped += 1; continue
-            out[t] = [(d.strftime("%Y-%m-%d"), float(c)) for d, c in df["Close"].items()]
-        except Exception:
-            skipped += 1  # 靜默跳過（已下市/不可用）
-    if skipped > 0:
-        print(f"  跳過 {skipped} 檔已下市/無資料股票")
+            with contextlib.redirect_stderr(_io.StringIO()):
+                data = yf.download(" ".join(batch), period=period, group_by="ticker",
+                                   auto_adjust=True, progress=False, threads=True)
+        except Exception as e:
+            print(f"  batch {i} fail: {type(e).__name__}")
+            skipped += len(batch)
+            time.sleep(2)
+            continue
+        for t in batch:
+            try:
+                if len(batch) == 1:
+                    df = data
+                else:
+                    if t not in data.columns.get_level_values(0):
+                        skipped += 1; continue
+                    df = data[t]
+                df = df.dropna(subset=["Close"])
+                if df.empty:
+                    skipped += 1; continue
+                out[t] = [(d.strftime("%Y-%m-%d"), float(c)) for d, c in df["Close"].items()]
+            except Exception:
+                skipped += 1
+        time.sleep(0.8)  # 避免 rate limit
+    print(f"  成功 {len(out)} 檔，跳過 {skipped} 檔")
     return out
 
 # ── 掃描邏輯 ─────────────────────────────

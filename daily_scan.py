@@ -236,6 +236,45 @@ def main():
     print(msg)
     notify_line.push(msg)
 
+    # ── 寫 dashboard_data.json 給 Streamlit App 讀（保證一致）──
+    try:
+        # market regime 細節
+        spy_r = market_regime_alert.check_regime("SPY", "🇺🇸 美股 SPY")
+        tw_r  = market_regime_alert.check_regime("0050.TW", "🇹🇼 台股 0050")
+
+        def slim(stock):
+            """挑出 dashboard 需要欄位（避免 JSON 過大）"""
+            keys = ("ticker","name","close","change","vol_ratio","rsi","ma5","ma20","ma200",
+                    "bull_strength","is_ath","is_bullish","category","score","monthly_ath_5y")
+            return {k: stock.get(k) for k in keys if k in stock}
+
+        dashboard = {
+            "timestamp": today,
+            "regime": {"spy": spy_r, "tw0050": tw_r},
+            "tw_top5": [slim(s) for s in today_top5],
+            "tw_dropped_warnings": dropped_warnings,
+            "tw_today_warnings": today_warnings,
+            "tw_breakout": {
+                cat: [slim(s) for s in stocks]
+                for cat, stocks in tw_breakout_results.items()
+            },
+            "tw_0050_signal": tw_result,
+            "us_buys":  [{"ticker":b["ticker"], "last":b["last"],
+                          "breakout_pct":b["breakout_pct"]} for b in buys[:n_buy]],
+            "us_sells": [{"ticker":s["ticker"], "shares":s["shares"], "current":s["current"],
+                          "change_pct":s["change_pct"]} for s in sells],
+            "us_holds": [{"ticker":h["ticker"], "shares":h["shares"], "current":h["current"],
+                          "change_pct":h["change_pct"]} for h in holds[:10]],
+            "us_state": {"cash": state["cash"], "n_positions": len(state["positions"]),
+                         "max_slots": MAX_SLOTS},
+        }
+        dashboard_path = os.path.join(os.path.dirname(__file__), "dashboard_data.json")
+        with open(dashboard_path, "w", encoding="utf-8") as f:
+            json.dump(dashboard, f, ensure_ascii=False, indent=2, default=str)
+        print(f"[dashboard] saved {dashboard_path}")
+    except Exception as e:
+        print(f"[dashboard] save failed: {e}")
+
     # ── 更新美股狀態 ──────────────────────
     commit_actions(state, sells, buys, holds, today_data)
     save_state(state)

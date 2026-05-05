@@ -24,8 +24,10 @@ jobs:
 
       - name: Run daily scan
         env:
-          LINE_TOKEN:   ${{ secrets.LINE_TOKEN }}
-          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
+          LINE_TOKEN:           ${{ secrets.LINE_TOKEN }}
+          LINE_USER_ID:         ${{ secrets.LINE_USER_ID }}
+          SHIOAJI_API_KEY:      ${{ secrets.SHIOAJI_API_KEY }}
+          SHIOAJI_SECRET_KEY:   ${{ secrets.SHIOAJI_SECRET_KEY }}
         run: python daily_scan.py
 
       - name: Commit state

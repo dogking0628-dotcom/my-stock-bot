@@ -394,11 +394,11 @@ def save_top5_state(state):
     with open(TOP5_STATE_PATH, "w", encoding="utf-8") as f:
         json.dump(state, f, ensure_ascii=False, indent=2)
 
-def pick_dynamic_top5(scan_results):
+def pick_dynamic_topn(scan_results, n=20):
     """
-    從 scan_all 結果中挑出動能 Top 5
+    從 scan_all 結果中挑出動能 Top N（候選）
     濾網（升級版）：
-      ① 股本 ≥ 20 億 NT$（過濾小型坐莊股）
+      ① 市值 ≥ 200 億 NT$ + 流動性夠
       ② 整個產業族群連漲 3 天（避免單一拉抬）
       ③ 漲停 / 高機率 / 普通 三類
       ④ 動能評分 ≥ 30
@@ -407,24 +407,24 @@ def pick_dynamic_top5(scan_results):
     for cat in ["limit_up", "high", "medium"]:
         for a in scan_results.get(cat, []):
             a = dict(a)
-            # 過濾 1：股本檢查（小型股容易被坐莊）
             if is_small_cap(a["ticker"]):
                 continue
-            # 過濾 2：產業族群連漲檢查
             is_strong, industry = industry_3day_strength(scan_results, a["ticker"])
             a["industry"] = industry
             a["industry_strong"] = is_strong
-            # 不在分類產業 → 視為通過（個股看自己強度）
-            # 在分類產業但族群不強 → 過濾掉（可能是單股拉抬）
             if industry and not is_strong:
                 continue
             a["score"] = momentum_score(a)
             a["category"] = cat
-            if a["score"] < 30:  # 動能不足
+            if a["score"] < 30:
                 continue
             candidates.append(a)
     candidates.sort(key=lambda x: -x["score"])
-    return candidates[:5]
+    return candidates[:n]
+
+def pick_dynamic_top5(scan_results):
+    """向後相容：取 Top 5"""
+    return pick_dynamic_topn(scan_results, 5)
 
 def check_fake_breakout(stock):
     """檢查單檔股票是否出現假突破警訊"""
@@ -460,18 +460,19 @@ def check_fake_breakout(stock):
 
 def update_and_track_top5(scan_results):
     """
-    動態追蹤 Top 5：
-      - 每日重新挑選動能 Top 5
+    動態追蹤 Top 5 + 回傳 Top 20 候選：
+      - 每日重新挑選動能 Top 5（推薦）和 Top 20（候選）
       - 對昨日 Top 5 做假突破檢查（即使今日掉出榜）
-      - 回傳：今日 Top 5 + 昨日掉出股的警報
+      - 回傳：今日 Top 5 推薦 + Top 20 候選 + 昨日掉出股的警報
     """
     import datetime as _dt
     state = load_top5_state()
     today = _dt.datetime.now().strftime("%Y-%m-%d")
     yesterday_stocks = state.get("stocks", {})
 
-    # 今日新 Top 5
-    today_top5 = pick_dynamic_top5(scan_results)
+    # 取 Top 20 候選，前 5 為推薦
+    today_top20 = pick_dynamic_topn(scan_results, n=20)
+    today_top5 = today_top20[:5]
     today_codes = {s["ticker"] for s in today_top5}
 
     # 對「昨日榜上但今日掉出」的股票做假突破檢查
@@ -513,7 +514,7 @@ def update_and_track_top5(scan_results):
     }
     save_top5_state(new_state)
 
-    return today_top5, dropped_warnings, today_warnings
+    return today_top5, dropped_warnings, today_warnings, today_top20
 
 def build_top5_block(today_top5, dropped_warnings, today_warnings):
     """產生 LINE Top 5 區塊"""

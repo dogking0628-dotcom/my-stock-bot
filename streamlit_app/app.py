@@ -116,37 +116,55 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs([
 ])
 
 # ────────────────────────
-# Tab 1: 動能 Top 5
+# Tab 1: 動能 Top 5 推薦 + Top 20 候選
 # ────────────────────────
+def render_stock_card(s, rank=None, is_recommend=False):
+    cat = s.get("category", "")
+    tag = "🚀" if cat == "limit_up" else ("🟢" if cat == "high" else "🟡")
+    cls = "strong" if cat == "limit_up" else ("ok" if cat == "high" else "warn")
+    chg = s.get("change", 0)
+    chg_color = "green" if chg >= 0 else "red"
+    score = s.get("score", 0)
+    rank_str = f"#{rank} " if rank else ""
+    star = "⭐ " if is_recommend else ""
+    html = f"""
+    <div class="alert-card {cls}">
+      <div class="name">{star}{tag} {rank_str}{s['ticker']} {s['name']}
+        <span class="purple">{score}/90</span></div>
+      <div class="meta">
+        ${s.get('close', 0):,.2f}
+        <span class="{chg_color}"> {chg:+.2f}%</span>
+        ｜ 量 {s.get('vol_ratio', 0):.1f}x ｜ RSI {s.get('rsi', 0):.0f}
+        ｜ 多頭 {s.get('bull_strength', 0):+.0f}%
+      </div>
+      <div class="meta" style="margin-top:4px;">
+        進場 5MA(${s.get('ma5', 0):.0f}) ｜ 停損 20MA(${s.get('ma20', 0):.0f})
+      </div>
+    </div>
+    """
+    return html
+
 with tab1:
-    st.markdown("### 🎯 動能 Top 5（5 年月線 ATH + 多頭排列 + 濾網）")
-    top5 = data.get("tw_top5", [])
+    top5  = data.get("tw_top5", [])
+    top20 = data.get("tw_top20_candidates", [])
+
+    # ── 推薦 5 檔 ──
+    st.markdown("### ⭐ 推薦 Top 5（LINE 也推這 5 檔）")
     if not top5:
-        st.info("⏸ 今日無高品質動能股")
+        st.info("⏸ 今日無高品質推薦股")
     else:
         for i, s in enumerate(top5, 1):
-            cat = s.get("category", "")
-            tag = "🚀" if cat == "limit_up" else ("🟢" if cat == "high" else "🟡")
-            cls = "strong" if cat == "limit_up" else ("ok" if cat == "high" else "warn")
-            chg_color = "green" if s.get("change", 0) >= 0 else "red"
-            chg = s.get("change", 0)
-            score = s.get("score", 0)
-            html = f"""
-            <div class="alert-card {cls}">
-              <div class="name">{tag} #{i} {s['ticker']} {s['name']}
-                <span class="purple">{score}/90</span></div>
-              <div class="meta">
-                ${s.get('close', 0):,.2f}
-                <span class="{chg_color}"> {chg:+.2f}%</span>
-                ｜ 量 {s.get('vol_ratio', 0):.1f}x ｜ RSI {s.get('rsi', 0):.0f}
-                ｜ 多頭強度 {s.get('bull_strength', 0):+.0f}%
-              </div>
-              <div class="meta" style="margin-top:6px;">
-                ✅ 進場參考: 等回測 5MA(${s.get('ma5', 0):.0f}) ｜ 停損: 跌破 20MA(${s.get('ma20', 0):.0f})
-              </div>
-            </div>
-            """
-            st.markdown(html, unsafe_allow_html=True)
+            st.markdown(render_stock_card(s, rank=i, is_recommend=True),
+                        unsafe_allow_html=True)
+
+    # ── 候選 20 檔 ──
+    if len(top20) > 5:
+        st.markdown(f"### 📋 候選名單（Top {len(top20)}）")
+        st.caption("第 6-20 名為觀察候選，動能評分 ≥ 30 但暫未列入推薦")
+        with st.expander(f"展開查看候選 {len(top20)-5} 檔", expanded=False):
+            for i, s in enumerate(top20[5:], 6):
+                st.markdown(render_stock_card(s, rank=i, is_recommend=False),
+                            unsafe_allow_html=True)
 
 # ────────────────────────
 # Tab 2: 台股突破篩選

@@ -224,9 +224,9 @@ def main():
     print("Checking market regime...")
     regime_block = market_regime_alert.build_line_block()
 
-    # ── 動態 Top 5 追蹤 + 假突破警報（取代固定觀察清單）──
-    print("Tracking dynamic Top 5...")
-    today_top5, dropped_warnings, today_warnings = \
+    # ── 動態 Top 5 推薦 + Top 20 候選 + 假突破警報 ──
+    print("Tracking dynamic Top 5 + Top 20 candidates...")
+    today_top5, dropped_warnings, today_warnings, today_top20 = \
         tw_breakout_filter.update_and_track_top5(tw_breakout_results)
     watchlist_block = tw_breakout_filter.build_top5_block(
         today_top5, dropped_warnings, today_warnings)
@@ -251,7 +251,8 @@ def main():
         dashboard = {
             "timestamp": today,
             "regime": {"spy": spy_r, "tw0050": tw_r},
-            "tw_top5": [slim(s) for s in today_top5],
+            "tw_top5": [slim(s) for s in today_top5],          # 推薦 5 檔（LINE 也用這個）
+            "tw_top20_candidates": [slim(s) for s in today_top20],  # 候選 20 檔（App 額外顯示）
             "tw_dropped_warnings": dropped_warnings,
             "tw_today_warnings": today_warnings,
             "tw_breakout": {

@@ -164,9 +164,13 @@ def analyze(ticker, name):
     ma5, ma20, ma60, ma200 = c[-5:].mean(), c[-20:].mean(), c[-60:].mean(), c[-200:].mean()
     bull_strength = (ma5/ma200 - 1) * 100
 
-    # 🆕 5 年還原月線歷史最高
+    # 🆕 2 年日線 ATH（504 日內最高，比月線寬鬆）
+    last_504 = c[-504:] if len(c) >= 504 else c[:-1]
+    daily_2y_max = float(np.max(last_504)) if len(last_504) > 0 else None
+    # 同時保留 5 年月線參考（用於資訊顯示）
     monthly_max = _monthly_max_close(c, dates)
-    is_ath = (monthly_max is not None) and (today >= monthly_max * 0.999)
+    # ATH 判定改用 2 年日線最高
+    is_ath = (daily_2y_max is not None) and (today >= daily_2y_max * 0.999)
     is_bullish = ma5 > ma20 > ma60 > ma200
 
     # ── 漲停鎖死偵測（台股獨有 +10% 限制）──

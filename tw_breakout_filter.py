@@ -374,21 +374,20 @@ def get_industry(ticker):
     return None
 
 def industry_3day_strength(scan_results, ticker):
-    """檢查該產業是否連續 3 天強勢（同產業股票過去 3 天平均漲幅 > 1%）"""
+    """檢查該產業是否強勢（連漲 2 天版：放寬門檻 50%/0.5%）"""
     industry = get_industry(ticker)
     if not industry: return False, None
     members = INDUSTRY_GROUPS[industry]
-    # 從本日掃描結果中找同族群股票
     all_stocks = []
     for cat in ["limit_up","high","medium","low","fake"]:
         for s in scan_results.get(cat, []):
             if s["ticker"] in members:
                 all_stocks.append(s)
-    if len(all_stocks) < 3: return False, industry  # 至少 3 檔同族群有資料
-    # 連 3 天強勢 = 該族群當日漲幅平均 > 1% 且至少 3 檔今日漲
+    if len(all_stocks) < 2: return False, industry  # 至少 2 檔同族群有資料
+    # 連漲 2 天版：族群當日平均漲幅 > 0.5% 且 ≥50% 今日漲（比 3 天版寬鬆）
     avg_chg = sum(s["change"] for s in all_stocks) / len(all_stocks)
     n_up = sum(1 for s in all_stocks if s["change"] > 0)
-    is_strong = avg_chg > 1.0 and n_up >= len(all_stocks) * 0.6
+    is_strong = avg_chg > 0.5 and n_up >= len(all_stocks) * 0.5
     return is_strong, industry
 
 # ───── 動態 Top 5 追蹤系統 ─────

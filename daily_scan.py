@@ -224,7 +224,7 @@ def build_industry_block():
 
 
 # ── 合併訊息 ──────────────────────────────
-def build_combined_msg(us_block, tw_result, tw_breakout_block, watchlist_block, regime_block, today, industry_block=""):
+def build_combined_msg(us_block, tw_result, tw_breakout_block, watchlist_block, regime_block, today, industry_block="", exit_block=""):
     tw_block    = tw_0050_signal.build_line_block(tw_result)
     has_us_act  = ("SELL" in us_block or "BUY" in us_block)
     has_tw_act  = tw_result.get("action", "HOLD") != "HOLD"
@@ -239,6 +239,8 @@ def build_combined_msg(us_block, tw_result, tw_breakout_block, watchlist_block, 
     parts = [header, "═" * 22, regime_block, "─" * 22,
              us_block, "─" * 22, tw_block, "─" * 22,
              tw_breakout_block, "─" * 22, watchlist_block]
+    if exit_block:
+        parts += ["─" * 22, exit_block]
     if industry_block:
         parts += ["─" * 22, industry_block]
     parts += ["─" * 22, "👉 建議收盤前執行，moomoo/Firstrade"]
@@ -273,7 +275,7 @@ def main():
 
     # ── 動態 Top 5 推薦 + Top 20 候選 + 假突破警報 ──
     print("Tracking dynamic Top 5 + Top 20 candidates...")
-    today_top5, dropped_warnings, today_warnings, today_top20 = \
+    today_top5, dropped_warnings, today_warnings, today_top20, exit_signals = \
         tw_breakout_filter.update_and_track_top5(tw_breakout_results)
     # 計算推薦族群（傳給 LINE 顯示）
     _industry_groups = tw_breakout_filter.group_by_industry(today_top20)
@@ -282,11 +284,20 @@ def main():
         today_top5, dropped_warnings, today_warnings,
         top20=today_top20, recommended_industry=_recommended_industry)
 
+    # ── 出場訊號（跌破 20MA）──
+    exit_block = ""
+    if exit_signals:
+        lines = ["🚨 跌破 20MA 出場訊號"]
+        for e in exit_signals[:5]:
+            lines.append(f"  ❌ {e['ticker']} {e['name']} ${e['current_close']:.1f}"
+                         f"（20MA ${e['ma20']:.1f}，{e['drop_pct']:+.1f}%）")
+        exit_block = "\n".join(lines)
+
     # ── 全市場族群統計（須先跑完 industry_ath_yf.py）──
     industry_block = build_industry_block()
 
     # ── 合併推播 ──────────────────────────
-    msg = build_combined_msg(us_block, tw_result, tw_breakout_block, watchlist_block, regime_block, today, industry_block)
+    msg = build_combined_msg(us_block, tw_result, tw_breakout_block, watchlist_block, regime_block, today, industry_block, exit_block)
     print(msg)
     notify_line.push(msg)
 
@@ -322,6 +333,8 @@ def main():
             "tw_recommended_industry": recommended_industry,    # 推薦族群
             "tw_dropped_warnings": dropped_warnings,
             "tw_today_warnings": today_warnings,
+            "tw_exit_signals": exit_signals,                  # 🚨 跌破 20MA 出場
+
             "tw_breakout": {
                 cat: [slim(s) for s in stocks]
                 for cat, stocks in tw_breakout_results.items()

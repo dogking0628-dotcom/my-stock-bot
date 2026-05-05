@@ -209,6 +209,9 @@ def analyze(ticker, name):
     else:
         category = "low"    # 🟠 低機率
 
+    # 🚨 出場訊號：收盤跌破 20MA = 趨勢反轉
+    is_exit = today < ma20
+
     return {
         "ticker": ticker, "name": name,
         "close": today, "change": change,
@@ -217,6 +220,7 @@ def analyze(ticker, name):
         "ma5": ma5, "ma20": ma20, "ma60": ma60, "ma120": ma120, "ma200": ma200,
         "bull_strength": bull_strength,
         "is_ath": is_ath, "is_bullish": is_bullish,
+        "is_exit": is_exit,                          # ← 跌破 20MA 出場
         "pass_volume": pass_volume, "pass_change": pass_change,
         "pass_rsi": pass_rsi, "pass_bull": pass_bull,
         "n_pass": n_pass, "is_fake": is_fake,
@@ -546,23 +550,32 @@ def update_and_track_top5(scan_results):
     today_top5 = today_top20[:5]
     today_codes = {s["ticker"] for s in today_top5}
 
-    # 對「昨日榜上但今日掉出」的股票做假突破檢查
+    # 對「昨日榜上但今日掉出」的股票做假突破檢查 + 出場訊號
     dropped_warnings = []
+    exit_signals = []   # ← 跌破 20MA 出場專用清單
     for code, prev_data in yesterday_stocks.items():
-        if code in today_codes: continue  # 仍在榜上跳過
-        # 重新分析這檔股票看現況
+        if code in today_codes: continue
         analysis = analyze(code, prev_data.get("name", code))
-        if analysis:
-            check = check_fake_breakout(analysis)
-            if check["severity"] > 0:
-                dropped_warnings.append({
-                    "ticker": code,
-                    "name": prev_data.get("name", ""),
-                    "prev_score": prev_data.get("score", 0),
-                    "current_close": analysis["close"],
-                    "warnings": check["warnings"],
-                    "severity": check["severity"],
-                })
+        if not analysis: continue
+        # 跌破 20MA = 出場訊號（最高優先）
+        if analysis.get("is_exit"):
+            exit_signals.append({
+                "ticker": code,
+                "name": prev_data.get("name", ""),
+                "current_close": analysis["close"],
+                "ma20": analysis["ma20"],
+                "drop_pct": (analysis["close"] / analysis["ma20"] - 1) * 100,
+            })
+        check = check_fake_breakout(analysis)
+        if check["severity"] > 0:
+            dropped_warnings.append({
+                "ticker": code,
+                "name": prev_data.get("name", ""),
+                "prev_score": prev_data.get("score", 0),
+                "current_close": analysis["close"],
+                "warnings": check["warnings"],
+                "severity": check["severity"],
+            })
 
     # 對今日 Top 5 也檢查警訊（持有中）
     today_warnings = []
@@ -585,7 +598,7 @@ def update_and_track_top5(scan_results):
     }
     save_top5_state(new_state)
 
-    return today_top5, dropped_warnings, today_warnings, today_top20
+    return today_top5, dropped_warnings, today_warnings, today_top20, exit_signals
 
 def build_industry_recommend_block(recommended):
     """LINE 推薦族群短訊（一行）"""

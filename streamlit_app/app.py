@@ -115,8 +115,8 @@ st.markdown("---")
 # ════════════════════════════════════════
 # Tabs
 # ════════════════════════════════════════
-tab1, tab_ind, tab2, tab3, tab4, tab5 = st.tabs([
-    "🎯 Top5+候選", "🏆 族群推薦", "🇹🇼 篩選", "🇹🇼 0050", "🇺🇸 美股", "⚠️ 警報"
+tab1, tab_ind, tab_market, tab2, tab3, tab4, tab5 = st.tabs([
+    "🎯 Top5+候選", "🏆 族群推薦", "🌐 全市場族群", "🇹🇼 篩選", "🇹🇼 0050", "🇺🇸 美股", "⚠️ 警報"
 ])
 
 # ────────────────────────
@@ -222,6 +222,57 @@ with tab_ind:
                       <div class="meta">${s.get('close', 0):,.2f} <span class="{chg_c}">{s.get('change', 0):+.2f}%</span></div>
                     </div>
                     """, unsafe_allow_html=True)
+
+# ────────────────────────
+# Tab Market: 全市場創 2y 月線新高族群統計（yfinance 全市場 1962 檔）
+# ────────────────────────
+with tab_market:
+    st.markdown("### 🌐 全市場創 2y 月線新高族群統計")
+    mkt = data.get("tw_market_industry")
+    if not mkt:
+        st.info("⏸ 全市場族群資料未生成（等待下次 daily scan）")
+    else:
+        exact = mkt.get("exact_ath", [])
+        near = mkt.get("near_ath_top30", [])
+        stats = mkt.get("industry_stats", [])
+        top_ind = mkt.get("top_industry")
+
+        col1, col2, col3 = st.columns(3)
+        col1.metric("🔥 真正創新高", f"{len(exact)} 檔")
+        col2.metric("🟡 接近高點 Top30", f"{len(near)} 檔")
+        col3.metric("🏆 族群最多", top_ind or "—")
+
+        # 族群分布表
+        if stats:
+            st.markdown("#### 📊 族群分布（依檔數排序）")
+            classified = [s for s in stats if s["industry"] != "未分類"]
+            unclassified = next((s for s in stats if s["industry"] == "未分類"), None)
+            for s in classified[:10]:
+                pct = s["bullish_count"] / s["count"] * 100 if s["count"] else 0
+                st.markdown(f"""
+                <div class="stock-row">
+                  <div class="name">🏭 {s['industry']}</div>
+                  <div class="meta">{s['count']} 檔 ｜ 多頭排列 {s['bullish_count']} 檔（{pct:.0f}%）</div>
+                </div>
+                """, unsafe_allow_html=True)
+            if unclassified:
+                st.caption(f"💡 未分類 {unclassified['count']} 檔（多為半導體周邊/設備未在字典內，可待擴充分類字典）")
+
+        # 創新高個股清單（可展開）
+        if exact:
+            with st.expander(f"📋 全部 {len(exact)} 檔創新高個股", expanded=False):
+                for r in exact:
+                    bull = "✅ 多頭" if r.get("bullish") else "—"
+                    ind = r.get("industry") or "未分類"
+                    st.markdown(f"""
+                    <div class="stock-row">
+                      <div class="name">{r['ticker']} {r['name']} <span class="purple">{ind}</span></div>
+                      <div class="meta">${r['today']:.1f} ｜ 距高 {r['from_high_pct']:+.2f}% ｜ {bull}</div>
+                    </div>
+                    """, unsafe_allow_html=True)
+
+        st.caption(f"基準：{mkt.get('basis', '2y monthly')} ｜ 共分析 {mkt.get('total_analyzed', '?')} 檔")
+
 
 # ────────────────────────
 # Tab 2: 台股突破篩選

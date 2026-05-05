@@ -12,7 +12,8 @@ except Exception:
 import numpy as np
 import yfinance as yf
 from collections import defaultdict
-from tw_breakout_filter import INDUSTRY_GROUPS, get_industry
+# 改用證交所官方產業分類（覆蓋全市場 1968 檔）
+from industry_map_loader import get_industry
 
 NEAR_THRESHOLD = 0.95
 EXACT_THRESHOLD = 0.999

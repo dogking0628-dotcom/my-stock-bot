@@ -88,8 +88,7 @@ def rsi(closes, period=14):
     return 100 - 100 / (1 + avg_up/avg_dn)
 
 def fetch_tw(ticker):
-    """抓 TW 還原權值 — 5 年資料含日期。回傳 (closes, volumes, dates) np arrays + list"""
-    # ═══ Shioaji 路徑（5 年還原權值，速度快）═══
+    """抓 TW 還原權值 — Shioaji 為主，無資料直接跳過（不再用 yfinance fallback 避免噪音）"""
     if USE_SHIOAJI:
         try:
             bars = shioaji_data.fetch_kbars(ticker)
@@ -99,15 +98,18 @@ def fetch_tw(ticker):
                 volumes = np.array([b["volume"] for b in bars])
                 dates   = [b["date"] for b in bars]
                 return closes, volumes, dates
-        except Exception as e:
-            print(f"[shioaji] {ticker} 失敗 → fallback yfinance: {e}", file=sys.stderr)
+        except Exception:
+            pass  # 靜默失敗（主流股 95%+ 正常）
+        return None  # Shioaji 沒資料 → 直接跳過，不用 yfinance fallback
 
-    # ═══ Fallback yfinance（5 年手動還原）═══
+    # 沒設 Shioaji 才用 yfinance（本機測試用）
+    import contextlib, io as _io
     df = None; t = None
     for suffix in (".TW", ".TWO"):
         try:
-            tk = yf.Ticker(f"{ticker}{suffix}")
-            d = tk.history(period="5y", auto_adjust=False)
+            with contextlib.redirect_stderr(_io.StringIO()):  # 抑制 yfinance 噪音
+                tk = yf.Ticker(f"{ticker}{suffix}")
+                d = tk.history(period="5y", auto_adjust=False)
             if not d.empty and len(d) > 100:
                 t = tk; df = d
                 break
@@ -116,7 +118,6 @@ def fetch_tw(ticker):
     try:
         closes = df["Close"].copy()
         volumes = df["Volume"]
-        # 手動還原
         divs = t.dividends
         if not divs.empty:
             cl_idx_naive = (closes.index.tz_convert(None)

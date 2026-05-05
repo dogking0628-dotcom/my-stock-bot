@@ -23,7 +23,10 @@ OUTPUT_PATH = os.path.join(os.path.dirname(__file__), "ath_industry_report.json"
 
 
 def analyze_one(code, name, exchange):
-    bars = sd.fetch_kbars(code)
+    # 只抓 2 年（夠算 2y ATH + MA200），避免 5 年資料量過大 timeout
+    end = dt.date.today()
+    start = end - dt.timedelta(days=365*2 + 30)
+    bars = sd.fetch_kbars(code, start_date=start, end_date=end)
     if not bars or len(bars) < 200:
         return None
     closes = np.array([b["close"] for b in bars], dtype=float)
@@ -59,15 +62,21 @@ def main():
 
     print("[2/3] 逐檔抓 2y 日 K 計算距高 % ...")
     results = []
+    err_samples = []
     for i, (code, name, ex) in enumerate(all_stocks):
         try:
             r = analyze_one(code, name, ex)
             if r:
                 results.append(r)
+            elif len(err_samples) < 5:
+                err_samples.append(f"{code} {name}: 無資料或長度<200")
         except Exception as e:
-            pass
+            if len(err_samples) < 5:
+                err_samples.append(f"{code} {name}: {type(e).__name__}: {e}")
         if (i + 1) % 200 == 0:
             print(f"  [{i+1}/{len(all_stocks)}] 已分析 {len(results)} 檔")
+            if err_samples:
+                print(f"    錯誤樣本: {err_samples[:3]}")
 
     print(f"  完成，共 {len(results)} 檔有效資料")
 

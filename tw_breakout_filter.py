@@ -397,30 +397,23 @@ def build_line_block(results):
         return "\n".join(lines)
 
     if limit_up:
-        lines.append(f"  🚀 漲停鎖死 ({len(limit_up)}) — 賣壓真空，最強訊號！")
-        for a in limit_up[:8]:
-            lines.append(f"    {a['ticker']} {a['name']}  ${a['close']:.0f}"
-                         f" {a['change']:+.1f}% 量{a['vol_ratio']:.1f}x")
-            lines.append(f"      💡 隔日續強機率高，等回測 5MA(${a['entry_price']:.0f}) 進")
+        lines.append(f"  🚀 漲停鎖死 ({len(limit_up)})")
+        for a in limit_up[:3]:
+            lines.append(f"    {a['ticker']} {a['name']} ${a['close']:.0f} {a['change']:+.1f}%")
     if high:
-        lines.append(f"  🟢 高機率 ({len(high)}) — 量爆+漲幅佳+多頭強")
-        for a in high[:5]:
-            lines.append(f"    {a['ticker']} {a['name']}  ${a['close']:.0f}"
-                         f" {a['change']:+.1f}% 量{a['vol_ratio']:.1f}x")
-            lines.append(f"      💡 等回測 5MA(${a['entry_price']:.0f}) 進場")
+        lines.append(f"  🟢 高機率 ({len(high)})")
+        for a in high[:3]:
+            lines.append(f"    {a['ticker']} {a['name']} ${a['close']:.0f} {a['change']:+.1f}%")
     if medium:
-        lines.append(f"  🟡 普通 ({len(medium)}) — 部分條件達成")
-        for a in medium[:5]:
-            lines.append(f"    {a['ticker']} {a['name']}  ${a['close']:.0f}"
-                         f" {a['change']:+.1f}% RSI{a['rsi']:.0f}")
+        lines.append(f"  🟡 普通 ({len(medium)})")
+        for a in medium[:3]:
+            lines.append(f"    {a['ticker']} {a['name']} ${a['close']:.0f} {a['change']:+.1f}%")
     if fake:
-        lines.append(f"  🔴 假突破嫌疑 ({len(fake)}) — 不建議追")
-        fake_str = ", ".join(f"{a['ticker']}" for a in fake[:8])
-        lines.append(f"    {fake_str}")
+        fake_top3 = ", ".join(a['ticker'] for a in fake[:3])
+        lines.append(f"  🔴 假突破({len(fake)}): {fake_top3}")
     if low:
-        lines.append(f"  🟠 低機率 ({len(low)})")
-        low_str = ", ".join(f"{a['ticker']}" for a in low[:8])
-        lines.append(f"    {low_str}")
+        low_top3 = ", ".join(a['ticker'] for a in low[:3])
+        lines.append(f"  🟠 低機率({len(low)}): {low_top3}")
 
     return "\n".join(lines)
 

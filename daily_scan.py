@@ -228,8 +228,12 @@ def main():
     print("Tracking dynamic Top 5 + Top 20 candidates...")
     today_top5, dropped_warnings, today_warnings, today_top20 = \
         tw_breakout_filter.update_and_track_top5(tw_breakout_results)
+    # 計算推薦族群（傳給 LINE 顯示）
+    _industry_groups = tw_breakout_filter.group_by_industry(today_top20)
+    _recommended_industry = tw_breakout_filter.recommend_industry(_industry_groups)
     watchlist_block = tw_breakout_filter.build_top5_block(
-        today_top5, dropped_warnings, today_warnings)
+        today_top5, dropped_warnings, today_warnings,
+        top20=today_top20, recommended_industry=_recommended_industry)
 
     # ── 合併推播 ──────────────────────────
     msg = build_combined_msg(us_block, tw_result, tw_breakout_block, watchlist_block, regime_block, today)
@@ -248,11 +252,24 @@ def main():
                     "bull_strength","is_ath","is_bullish","category","score","monthly_ath_5y")
             return {k: stock.get(k) for k in keys if k in stock}
 
+        # 族群分組與推薦（重用上面的計算）
+        industry_summary = [
+            {"industry": k,
+             "count": v["count"],
+             "avg_score": round(v["avg_score"], 1),
+             "strength": round(v["strength"], 1),
+             "stocks": [slim(s) for s in v["stocks"]]}
+            for k, v in _industry_groups
+        ]
+        recommended_industry = _recommended_industry
+
         dashboard = {
             "timestamp": today,
             "regime": {"spy": spy_r, "tw0050": tw_r},
             "tw_top5": [slim(s) for s in today_top5],          # 推薦 5 檔（LINE 也用這個）
-            "tw_top20_candidates": [slim(s) for s in today_top20],  # 候選 20 檔（App 額外顯示）
+            "tw_top20_candidates": [slim(s) for s in today_top20],  # 候選 20 檔
+            "tw_industry_groups": industry_summary,             # 族群分組
+            "tw_recommended_industry": recommended_industry,    # 推薦族群
             "tw_dropped_warnings": dropped_warnings,
             "tw_today_warnings": today_warnings,
             "tw_breakout": {

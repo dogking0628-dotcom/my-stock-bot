@@ -34,6 +34,10 @@ st.markdown("""
     .strong  { border-color: #8b5cf6; background: rgba(139,92,246,0.10); }
     .info    { border-color: #3b82f6; background: rgba(59,130,246,0.08); }
 
+    .stock-row {
+        background: rgba(255,255,255,0.03);
+        border-radius: 6px; padding: 8px 10px; margin: 4px 0;
+    }
     .name { font-size: 15px; font-weight: 700; color: #f1f5f9; }
     .meta { font-size: 12px; color: #94a3b8; margin-top: 4px; }
     .green { color: #10b981; font-weight: 600; }
@@ -111,8 +115,8 @@ st.markdown("---")
 # ════════════════════════════════════════
 # Tabs
 # ════════════════════════════════════════
-tab1, tab2, tab3, tab4, tab5 = st.tabs([
-    "🎯 動能 Top5", "🇹🇼 台股篩選", "🇹🇼 0050 策略", "🇺🇸 美股", "⚠️ 警報"
+tab1, tab_ind, tab2, tab3, tab4, tab5 = st.tabs([
+    "🎯 Top5+候選", "🏆 族群推薦", "🇹🇼 篩選", "🇹🇼 0050", "🇺🇸 美股", "⚠️ 警報"
 ])
 
 # ────────────────────────
@@ -165,6 +169,59 @@ with tab1:
             for i, s in enumerate(top20[5:], 6):
                 st.markdown(render_stock_card(s, rank=i, is_recommend=False),
                             unsafe_allow_html=True)
+
+# ────────────────────────
+# Tab Industry: 族群推薦
+# ────────────────────────
+with tab_ind:
+    st.markdown("### 🏆 推薦族群")
+    rec = data.get("tw_recommended_industry")
+    groups = data.get("tw_industry_groups", [])
+
+    if rec:
+        st.markdown(f"""
+        <div class="alert-card strong">
+          <div class="name">🏆 {rec['industry']} 族群最強</div>
+          <div class="meta">
+            {rec['count']} 檔入選候選 ｜ 平均動能 <strong>{rec['avg_score']}/90</strong>
+            ｜ 強度指標 {rec['strength']}
+          </div>
+        </div>
+        """, unsafe_allow_html=True)
+        st.markdown(f"#### 🌟 {rec['industry']} 族群代表股")
+        for s in rec.get("top_stocks", []):
+            chg_c = "green" if s.get("change", 0) >= 0 else "red"
+            st.markdown(f"""
+            <div class="alert-card ok">
+              <div class="name">⭐ {s['ticker']} {s['name']}
+                <span class="purple">{s['score']}/90</span></div>
+              <div class="meta">
+                ${s.get('close', 0):,.2f}
+                <span class="{chg_c}"> {s.get('change', 0):+.2f}%</span>
+              </div>
+            </div>
+            """, unsafe_allow_html=True)
+    else:
+        st.info("⏸ 今日無推薦族群")
+
+    # 全部族群分布
+    if groups:
+        st.markdown("### 📊 候選股族群分布")
+        for g in groups:
+            ind = g["industry"]
+            cnt = g["count"]
+            avg = g["avg_score"]
+            stocks = g.get("stocks", [])
+            with st.expander(f"🏭 {ind} ({cnt} 檔，平均 {avg:.0f}/90，強度 {g['strength']:.0f})",
+                             expanded=(ind == rec["industry"] if rec else False)):
+                for s in stocks:
+                    chg_c = "green" if s.get("change", 0) >= 0 else "red"
+                    st.markdown(f"""
+                    <div class="stock-row">
+                      <div class="name">{s['ticker']} {s['name']} <span class="purple">{s.get('score', 0)}</span></div>
+                      <div class="meta">${s.get('close', 0):,.2f} <span class="{chg_c}">{s.get('change', 0):+.2f}%</span></div>
+                    </div>
+                    """, unsafe_allow_html=True)
 
 # ────────────────────────
 # Tab 2: 台股突破篩選

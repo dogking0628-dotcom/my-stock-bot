@@ -426,6 +426,48 @@ def pick_dynamic_top5(scan_results):
     """向後相容：取 Top 5"""
     return pick_dynamic_topn(scan_results, 5)
 
+def group_by_industry(stocks):
+    """
+    將股票清單按產業分組
+    回傳 list of (industry, {stocks, count, avg_score, strength})
+    依強度排序，未分類歸入「其他」
+    """
+    groups = {}
+    for s in stocks:
+        ind = s.get("industry") or "其他"
+        if ind not in groups:
+            groups[ind] = {"stocks": [], "total_score": 0}
+        groups[ind]["stocks"].append(s)
+        groups[ind]["total_score"] += s.get("score", 0)
+    for ind, g in groups.items():
+        g["count"] = len(g["stocks"])
+        g["avg_score"] = g["total_score"] / g["count"] if g["count"] else 0
+        # 強度 = 檔數 × 平均分（鼓勵多檔同步走強）
+        g["strength"] = g["count"] * g["avg_score"]
+    return sorted(groups.items(), key=lambda x: -x[1]["strength"])
+
+def recommend_industry(grouped):
+    """從分組挑出最強族群"""
+    # 排除「其他」（未分類），找有名稱的最強族群
+    classified = [(k, v) for k, v in grouped if k != "其他" and v["count"] >= 2]
+    if not classified:
+        # 退而求其次：取最強（含其他）
+        if not grouped: return None
+        top = grouped[0]
+    else:
+        top = classified[0]
+    name, info = top
+    return {
+        "industry": name,
+        "count": info["count"],
+        "avg_score": round(info["avg_score"], 1),
+        "strength": round(info["strength"], 1),
+        "top_stocks": [{"ticker": s["ticker"], "name": s["name"],
+                        "score": s["score"], "change": s.get("change", 0),
+                        "close": s.get("close", 0)}
+                       for s in info["stocks"][:5]],
+    }
+
 def check_fake_breakout(stock):
     """檢查單檔股票是否出現假突破警訊"""
     warnings = []
@@ -516,9 +558,20 @@ def update_and_track_top5(scan_results):
 
     return today_top5, dropped_warnings, today_warnings, today_top20
 
-def build_top5_block(today_top5, dropped_warnings, today_warnings):
+def build_industry_recommend_block(recommended):
+    """LINE 推薦族群短訊（一行）"""
+    if not recommended: return ""
+    stocks_str = ", ".join(s["ticker"] for s in recommended["top_stocks"][:3])
+    return (f"🏆 推薦族群：{recommended['industry']}（"
+            f"{recommended['count']} 檔，平均 {recommended['avg_score']:.0f}/90）\n"
+            f"   主要：{stocks_str}")
+
+def build_top5_block(today_top5, dropped_warnings, today_warnings, top20=None, recommended_industry=None):
     """產生 LINE Top 5 區塊"""
     lines = ["🎯 動能 Top 5 動態追蹤"]
+    # 推薦族群
+    if recommended_industry:
+        lines.append(build_industry_recommend_block(recommended_industry))
 
     if not today_top5:
         lines.append("  ⏸ 今日無高品質動能股")

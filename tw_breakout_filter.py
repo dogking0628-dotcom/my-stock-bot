@@ -154,24 +154,25 @@ def analyze(ticker, name):
     data = fetch_tw(ticker)
     if not data: return None
     c, v, dates = data
-    if len(c) < 200: return None
+    if len(c) < 120: return None  # 改用 120MA（之前要 200）
 
     today = c[-1]; prev = c[-2]
     change = (today/prev - 1) * 100
     avg_vol_20 = v[-20:].mean()
     vol_ratio = v[-1]/avg_vol_20 if avg_vol_20 > 0 else 0
     rsi_val = rsi(c, 14)
-    ma5, ma20, ma60, ma200 = c[-5:].mean(), c[-20:].mean(), c[-60:].mean(), c[-200:].mean()
-    bull_strength = (ma5/ma200 - 1) * 100
+    ma5, ma20, ma60 = c[-5:].mean(), c[-20:].mean(), c[-60:].mean()
+    ma120 = c[-120:].mean()
+    ma200 = c[-200:].mean() if len(c) >= 200 else ma120  # 仍計算給 bull_strength
+    bull_strength = (today/ma120 - 1) * 100  # 用 120MA 為基準
 
-    # 🆕 2 年日線 ATH（504 日內最高，比月線寬鬆）
+    # 🆕 2 年日線 ATH（504 日內最高）
     last_504 = c[-504:] if len(c) >= 504 else c[:-1]
     daily_2y_max = float(np.max(last_504)) if len(last_504) > 0 else None
-    # 同時保留 5 年月線參考（用於資訊顯示）
     monthly_max = _monthly_max_close(c, dates)
-    # ATH 判定改用 2 年日線最高
     is_ath = (daily_2y_max is not None) and (today >= daily_2y_max * 0.999)
-    is_bullish = ma5 > ma20 > ma60 > ma200
+    # 🆕 多頭排列：今日收盤 > 20MA > 60MA > 120MA（放寬版）
+    is_bullish = today > ma20 > ma60 > ma120
 
     # ── 漲停鎖死偵測（台股獨有 +10% 限制）──
     # 漲幅 ≥ 9.5% 視為觸及漲停板，量縮代表「鎖死」= 賣壓真空 = 最強訊號
@@ -209,14 +210,15 @@ def analyze(ticker, name):
         "close": today, "change": change,
         "vol_ratio": vol_ratio, "rsi": rsi_val,
         "monthly_ath_5y": monthly_max,
-        "ma5": ma5, "ma20": ma20, "ma200": ma200, "bull_strength": bull_strength,
+        "ma5": ma5, "ma20": ma20, "ma60": ma60, "ma120": ma120, "ma200": ma200,
+        "bull_strength": bull_strength,
         "is_ath": is_ath, "is_bullish": is_bullish,
         "pass_volume": pass_volume, "pass_change": pass_change,
         "pass_rsi": pass_rsi, "pass_bull": pass_bull,
         "n_pass": n_pass, "is_fake": is_fake,
         "category": category,
-        "stop_price": ma5 * 0.98,
-        "entry_price": ma5,
+        "stop_price": ma20 * 0.98,
+        "entry_price": ma20,
     }
 
 # ── 個人觀察清單（無條件每日追蹤）──

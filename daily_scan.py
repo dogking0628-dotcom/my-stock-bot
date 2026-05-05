@@ -257,8 +257,8 @@ def main():
 
         def slim(stock):
             """挑出 dashboard 需要欄位（避免 JSON 過大）"""
-            keys = ("ticker","name","close","change","vol_ratio","rsi","ma5","ma20","ma200",
-                    "bull_strength","is_ath","is_bullish","category","score","monthly_ath_5y")
+            keys = ("ticker","name","close","change","vol_ratio","rsi","ma5","ma20","ma60","ma120","ma200",
+                    "bull_strength","is_ath","is_bullish","category","score","monthly_ath_5y","industry")
             return {k: stock.get(k) for k in keys if k in stock}
 
         # 族群分組與推薦（重用上面的計算）

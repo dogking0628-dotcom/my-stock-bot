@@ -14,6 +14,17 @@
 """
 import yfinance as yf
 import numpy as np
+import os, sys
+
+# 嘗試使用 Shioaji（永豐官方 API）— 無設定時 fallback 到 yfinance
+USE_SHIOAJI = bool(os.environ.get("SHIOAJI_API_KEY") and os.environ.get("SHIOAJI_SECRET_KEY"))
+if USE_SHIOAJI:
+    try:
+        import shioaji_data
+        print("[tw_filter] 🚀 使用 Shioaji 永豐 API（速度 50x）", file=sys.stderr)
+    except ImportError:
+        USE_SHIOAJI = False
+        print("[tw_filter] ⚠️ 找不到 shioaji_data 模組，改用 yfinance", file=sys.stderr)
 
 # 台股觀察池 — 上市 + 上櫃 200+ 檔（fetch_tw 自動嘗試 .TW / .TWO）
 TW_UNIVERSE = [
@@ -77,9 +88,21 @@ def rsi(closes, period=14):
     return 100 - 100 / (1 + avg_up/avg_dn)
 
 def fetch_tw(ticker):
-    """抓 TW 還原權值（手動處理配息）— 自動嘗試 .TW 與 .TWO"""
+    """抓 TW 還原權值 — 優先用 Shioaji（含官方還原），fallback yfinance"""
+    # ═══ Shioaji 路徑（速度快、還原準確）═══
+    if USE_SHIOAJI:
+        try:
+            bars = shioaji_data.fetch_kbars(ticker)
+            if bars and len(bars) > 100:
+                import numpy as np
+                closes = np.array([b["close"] for b in bars])
+                volumes = np.array([b["volume"] for b in bars])
+                return closes, volumes
+        except Exception as e:
+            print(f"[shioaji] {ticker} 失敗 → fallback yfinance: {e}", file=sys.stderr)
+
+    # ═══ Fallback yfinance（手動還原權值）═══
     df = None; t = None
-    # 上市優先，再試上櫃
     for suffix in (".TW", ".TWO"):
         try:
             tk = yf.Ticker(f"{ticker}{suffix}")

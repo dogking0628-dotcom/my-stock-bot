@@ -25,31 +25,48 @@ def _is_cache_fresh(path):
     age_days = (dt.datetime.now() - dt.datetime.fromtimestamp(os.path.getmtime(path))).days
     return age_days < CACHE_DAYS
 
+# 已知會跑出但不存在/已下市的 ticker 黑名單
+SP500_BLACKLIST = {"TSYS","CSRA","GGP","MBIA","IQVIA","LVMH","SCANA","TMK","XLNX","MXIM","ATVI"}
+
 def fetch_sp500():
-    """從 Wikipedia 抓 S&P 500 列表"""
+    """從 Wikipedia 抓 S&P 500 列表（用 pandas 正確解析第一個表）"""
     if _is_cache_fresh(SP500_CACHE):
         with open(SP500_CACHE, "r", encoding="utf-8") as f:
             return json.load(f)["tickers"]
     try:
-        url = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
-        req = urllib.request.Request(url, headers={"User-Agent":"Mozilla/5.0"})
-        html = urllib.request.urlopen(req, timeout=20).read().decode("utf-8")
-        # 抓第一個 wikitable 的 ticker
-        # 格式：<a href="/wiki/Apple_Inc.">AAPL</a> 或 <a ...>AAPL</a> in NYSE column
-        # 用正則抓 NYSE/NASDAQ ticker（大寫字母 1-5 + 連字號）
-        m = re.findall(r'<td[^>]*><a[^>]*>([A-Z][A-Z0-9.]{0,5}(?:-[A-Z])?)</a>', html)
-        # 過濾合理 ticker（1-5 字元）
-        tickers = [t for t in m if 1 <= len(t) <= 5 and t.replace("-","").replace(".","").isalnum()]
+        # 優先用 pandas read_html（精準抓第一個 current constituents 表）
+        try:
+            import pandas as pd
+            tables = pd.read_html("https://en.wikipedia.org/wiki/List_of_S%26P_500_companies",
+                                  storage_options={"User-Agent":"Mozilla/5.0"})
+            sp500 = tables[0]  # 第一個表 = 當前 S&P 500 成分股
+            tickers = sp500["Symbol"].dropna().astype(str).tolist()
+        except Exception:
+            # fallback: regex 解析（只取第一個 <table> 的內容）
+            url = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
+            req = urllib.request.Request(url, headers={"User-Agent":"Mozilla/5.0"})
+            html = urllib.request.urlopen(req, timeout=20).read().decode("utf-8")
+            # 只解析第一個 wikitable
+            first_table = html.split("</table>")[0]
+            m = re.findall(r'<td[^>]*><a[^>]*>([A-Z][A-Z0-9.]{0,5}(?:-[A-Z])?)</a>', first_table)
+            tickers = m
+
+        # 清理：去黑名單 + 字數合理 + BRK.B → BRK-B
+        cleaned = []
+        for t in tickers:
+            t = t.replace(".", "-").strip()
+            if not t or len(t) > 5: continue
+            if t in SP500_BLACKLIST: continue
+            if not t.replace("-","").isalnum(): continue
+            cleaned.append(t)
         # 去重保序
-        tickers = list(dict.fromkeys(tickers))[:520]
-        # 將 BRK.B → BRK-B (yfinance 格式)
-        tickers = [t.replace(".", "-") for t in tickers]
+        tickers = list(dict.fromkeys(cleaned))[:520]
         with open(SP500_CACHE, "w", encoding="utf-8") as f:
             json.dump({"updated": dt.datetime.now().isoformat(), "tickers": tickers}, f)
+        print(f"[universe] S&P 500: {len(tickers)} 檔（已過濾黑名單 {len(SP500_BLACKLIST)} 檔）")
         return tickers
     except Exception as e:
         print(f"[universe] S&P500 fetch failed: {e}")
-        # fallback 用內建 30 檔
         from config import UNIVERSE
         return UNIVERSE
 

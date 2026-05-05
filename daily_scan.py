@@ -329,6 +329,38 @@ def main():
             if os.path.exists(ath_path):
                 with open(ath_path, encoding="utf-8") as f:
                     dashboard["tw_market_industry"] = json.load(f)
+                market = dashboard["tw_market_industry"]
+                # ── Fallback 1: Top 5 空時從全市場 154 檔挑（多頭排列 + 距高最近前 5）──
+                if not dashboard["tw_top5"]:
+                    cands = [r for r in market.get("exact_ath", []) if r.get("bullish")]
+                    cands.sort(key=lambda x: -x["ratio"])
+                    fallback5 = cands[:5]
+                    # 補上 dashboard 需要的欄位（與 slim 對齊）
+                    for r in fallback5:
+                        r["close"] = r["today"]; r["change"] = 0
+                        r["score"] = 0; r["category"] = "market_ath"
+                        r["ma5"] = r["ma20"] = r["ma60"] = r["ma120"] = r["ma200"] = r["today"]
+                        r["bull_strength"] = r["from_high_pct"]
+                        r["is_ath"] = True; r["is_bullish"] = r.get("bullish", False)
+                        r["vol_ratio"] = 0; r["rsi"] = 0
+                    dashboard["tw_top5"] = fallback5
+                    dashboard["tw_top20_candidates"] = cands[:20]
+                    dashboard["tw_top5_fallback"] = True  # 標示為 fallback 來源
+                # ── Fallback 2: 推薦族群空時，用全市場族群 stats ──
+                if not dashboard["tw_recommended_industry"]:
+                    stats = market.get("industry_stats", [])
+                    classified = [s for s in stats if s["industry"] not in ("未分類", None)]
+                    if classified:
+                        top = classified[0]
+                        dashboard["tw_recommended_industry"] = {
+                            "industry": top["industry"],
+                            "count": top["count"],
+                            "avg_score": 0,
+                            "strength": top["count"] * 10,
+                            "top_stocks": [r for r in market.get("exact_ath", [])
+                                           if r.get("industry") == top["industry"]][:5],
+                            "source": "market_scan",
+                        }
         except Exception as e:
             print(f"[dashboard] industry merge failed: {e}")
         dashboard_path = os.path.join(os.path.dirname(__file__), "dashboard_data.json")

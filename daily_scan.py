@@ -38,20 +38,29 @@ def save_state(st):
     with open(STATE_PATH, "w", encoding="utf-8") as f:
         json.dump(st, f, ensure_ascii=False, indent=2)
 
-# ── yfinance 抓收盤 ──────────────────────
+# ── yfinance 抓收盤（靜音下市股錯誤）──────
 def fetch_data(tickers, period="2y"):
     """回傳 {ticker: [(date_str, close)]}"""
+    import contextlib, io as _io, logging
     print(f"Fetching {len(tickers)} tickers from yfinance...")
-    data = yf.download(" ".join(tickers), period=period, group_by="ticker",
-                       auto_adjust=True, progress=False, threads=True)
+    # 抑制 yfinance + urllib3 的 stderr 噪音
+    logging.getLogger("yfinance").setLevel(logging.CRITICAL)
+    with contextlib.redirect_stderr(_io.StringIO()):
+        data = yf.download(" ".join(tickers), period=period, group_by="ticker",
+                           auto_adjust=True, progress=False, threads=True)
     out = {}
+    skipped = 0
     for t in tickers:
         try:
             df = data[t] if len(tickers) > 1 else data
             df = df.dropna(subset=["Close"])
+            if df.empty:
+                skipped += 1; continue
             out[t] = [(d.strftime("%Y-%m-%d"), float(c)) for d, c in df["Close"].items()]
-        except Exception as e:
-            print(f"  {t}: ERROR {e}")
+        except Exception:
+            skipped += 1  # 靜默跳過（已下市/不可用）
+    if skipped > 0:
+        print(f"  跳過 {skipped} 檔已下市/無資料股票")
     return out
 
 # ── 掃描邏輯 ─────────────────────────────

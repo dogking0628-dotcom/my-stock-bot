@@ -88,38 +88,37 @@ def rsi(closes, period=14):
     return 100 - 100 / (1 + avg_up/avg_dn)
 
 def fetch_tw(ticker):
-    """抓 TW 還原權值 — 優先用 Shioaji（含官方還原），fallback yfinance"""
-    # ═══ Shioaji 路徑（速度快、還原準確）═══
+    """抓 TW 還原權值 — 5 年資料含日期。回傳 (closes, volumes, dates) np arrays + list"""
+    # ═══ Shioaji 路徑（5 年還原權值，速度快）═══
     if USE_SHIOAJI:
         try:
             bars = shioaji_data.fetch_kbars(ticker)
             if bars and len(bars) > 100:
                 import numpy as np
-                closes = np.array([b["close"] for b in bars])
+                closes  = np.array([b["close"]  for b in bars])
                 volumes = np.array([b["volume"] for b in bars])
-                return closes, volumes
+                dates   = [b["date"] for b in bars]
+                return closes, volumes, dates
         except Exception as e:
             print(f"[shioaji] {ticker} 失敗 → fallback yfinance: {e}", file=sys.stderr)
 
-    # ═══ Fallback yfinance（手動還原權值）═══
+    # ═══ Fallback yfinance（5 年手動還原）═══
     df = None; t = None
     for suffix in (".TW", ".TWO"):
         try:
             tk = yf.Ticker(f"{ticker}{suffix}")
-            d = tk.history(period="2y", auto_adjust=False)
+            d = tk.history(period="5y", auto_adjust=False)
             if not d.empty and len(d) > 100:
                 t = tk; df = d
                 break
         except: continue
     if df is None or df.empty: return None
     try:
-        pass
         closes = df["Close"].copy()
         volumes = df["Volume"]
-        # 手動還原（向下調整過去價格）
+        # 手動還原
         divs = t.dividends
         if not divs.empty:
-            # 統一去時區
             cl_idx_naive = (closes.index.tz_convert(None)
                            if closes.index.tz else closes.index)
             divs_naive = divs.copy()
@@ -133,14 +132,27 @@ def fetch_tw(ticker):
                 factor = 1 - div_amount / last_before
                 if 0 < factor <= 1:
                     closes.iloc[mask] = closes.iloc[mask] * factor
-        return closes.dropna().values.astype(float), volumes.dropna().values.astype(float)
+        closes = closes.dropna()
+        dates = [d.strftime("%Y-%m-%d") for d in closes.index]
+        return closes.values.astype(float), volumes.dropna().values.astype(float), dates
     except: return None
+
+def _monthly_max_close(closes, dates):
+    """從日線取每月最後一個交易日的收盤，回傳歷史最高（排除當月未收完）"""
+    import datetime as _dt
+    by_month = {}
+    for d, c in zip(dates, closes):
+        ym = d[:7]  # YYYY-MM
+        by_month[ym] = c  # 後寫覆蓋 → 月底收盤
+    today_ym = _dt.datetime.now().strftime("%Y-%m")
+    historical = [v for ym, v in by_month.items() if ym < today_ym]
+    return max(historical) if historical else None
 
 def analyze(ticker, name):
     """完整分析一檔股票，返回所有特徵與分類"""
     data = fetch_tw(ticker)
     if not data: return None
-    c, v = data
+    c, v, dates = data
     if len(c) < 200: return None
 
     today = c[-1]; prev = c[-2]
@@ -150,8 +162,10 @@ def analyze(ticker, name):
     rsi_val = rsi(c, 14)
     ma5, ma20, ma60, ma200 = c[-5:].mean(), c[-20:].mean(), c[-60:].mean(), c[-200:].mean()
     bull_strength = (ma5/ma200 - 1) * 100
-    hist_max = c.max()
-    is_ath = today >= hist_max * 0.999
+
+    # 🆕 5 年還原月線歷史最高
+    monthly_max = _monthly_max_close(c, dates)
+    is_ath = (monthly_max is not None) and (today >= monthly_max * 0.999)
     is_bullish = ma5 > ma20 > ma60 > ma200
 
     # ── 漲停鎖死偵測（台股獨有 +10% 限制）──
@@ -189,6 +203,7 @@ def analyze(ticker, name):
         "ticker": ticker, "name": name,
         "close": today, "change": change,
         "vol_ratio": vol_ratio, "rsi": rsi_val,
+        "monthly_ath_5y": monthly_max,
         "ma5": ma5, "ma200": ma200, "bull_strength": bull_strength,
         "is_ath": is_ath, "is_bullish": is_bullish,
         "pass_volume": pass_volume, "pass_change": pass_change,

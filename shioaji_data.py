@@ -74,7 +74,7 @@ def fetch_kbars(stock_code, start_date=None, end_date=None):
     api = get_api()
     if not api: return []
     end = end_date or dt.date.today()
-    start = start_date or (end - dt.timedelta(days=730))  # 預設 2 年
+    start = start_date or (end - dt.timedelta(days=365*5 + 30))  # 預設 5 年（多 1 個月緩衝）
 
     try:
         # Shioaji 用字典式存取

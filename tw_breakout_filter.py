@@ -265,38 +265,9 @@ def scan_watchlist():
 
 # ───── 進階濾網：股本 + 產業族群 ─────
 
-# 確認實收股本 < 20 億 NT$ 的小型股黑名單（已查證）
-# 計算：流通股數(M) × 面額 NT$10 < NT$20 億 (= 200M 股以下)
-SMALL_CAP_BLACKLIST = {
-    # === 真正股本 < 20 億 ===
-    "2455": "全新 6億",
-    "6605": "帝寶 4億",
-    "8210": "勤誠 6億",
-    "5274": "信驊 7億",
-    "6533": "晶心科 8億",
-    "6477": "安集 6億",
-    "6491": "晶碩 6億",
-    "6573": "虹堡 5億",
-    "6679": "鈺太 5億",
-    "6691": "洋基工程 3億",
-    "6741": "91APP 5億",
-    "6762": "達發 9億",
-    "8054": "安國 8億",
-    "8064": "東捷 3億",
-    "8341": "日友 9億",
-    "3402": "漢科 6億",
-    "4977": "眾達-KY 3億",
-    "8044": "網家 8億",
-    "8358": "金居 4億",
-    "3680": "家登 6億",
-    "4906": "正文 10億",
-    "6231": "系微 7億",
-    "3293": "鈊象 7億",
-    "8086": "宏捷科 14億",
-    # 注意：以下都已超過 20 億，已移除
-    # 8299 群聯 20億, 6488 環球晶 43億, 6121 新普 28億,
-    # 6789 采鈺 89億, 6446 藥華藥 25億
-}
+# ⚠️ 黑名單清空 — 已改用「市值 + 流動性」自動過濾
+# 信驊、創意等股本小但市值大的「實質大型股」不能用股本判斷
+SMALL_CAP_BLACKLIST = set()
 
 # 動態股本快取（每週更新一次）
 import os, json
@@ -314,35 +285,53 @@ def save_capital_cache(cache):
     with open(CAPITAL_CACHE_PATH, "w", encoding="utf-8") as f:
         json.dump(cache, f, ensure_ascii=False, indent=2)
 
-def fetch_capital_yf(ticker):
-    """用 yfinance 抓實收股本（台股 = sharesOutstanding × 10 元面額）"""
+def fetch_stock_metrics(ticker):
+    """
+    用 yfinance 抓股本/市值/成交量（一次性）
+    回傳：(capital_億, market_cap_億, avg_volume_NT$)
+    """
     try:
         import yfinance as yf
         for suffix in (".TW", ".TWO"):
             tk = yf.Ticker(f"{ticker}{suffix}")
             info = tk.info
             shares = info.get("sharesOutstanding") or 0
+            mcap   = info.get("marketCap") or 0   # 已是 NT$
+            vol    = info.get("averageVolume") or 0
+            price  = info.get("regularMarketPrice") or info.get("previousClose") or 0
             if shares > 0:
-                # 台股面額 NT$10：股本(NT$) = 股數 × 10
                 capital_nt = shares * 10
-                return capital_nt / 1e8  # 回傳「億 NT$」單位
+                avg_vol_nt = vol * price  # 每日成交額（NT$）
+                return (capital_nt / 1e8,    # 股本(億)
+                        mcap / 1e8,           # 市值(億)
+                        avg_vol_nt / 1e4)     # 成交額(萬)
     except: pass
-    return None
+    return (None, None, None)
+
+# 過濾門檻（市值+流動性 為主，股本不單獨判斷）
+# 例：創意 3443 股本 13 億但市值 6,479 億 → 應保留
+MIN_MARKET_CAP  = 200     # 市值 ≥ 200 億 NT$（主要濾網）
+MIN_AVG_VOLUME  = 5000    # 日均成交額 ≥ NT$5,000 萬
 
 def is_small_cap(ticker):
-    """檢查是否為小股本（< 20 億）"""
+    """雙層濾網：市值 + 流動性（任一不過就濾掉）"""
     # 1. 黑名單即時排除
     if ticker in SMALL_CAP_BLACKLIST:
         return True
     # 2. 動態查 cache
     cache = load_capital_cache()
-    cap = cache.get(ticker)
-    if cap is None:
-        cap = fetch_capital_yf(ticker)
-        if cap is not None:
-            cache[ticker] = cap
-            save_capital_cache(cache)
-    if cap is not None and cap < 20:
+    metrics = cache.get(ticker)
+    if metrics is None or not isinstance(metrics, dict):
+        cap, mcap, avg_vol = fetch_stock_metrics(ticker)
+        metrics = {"capital": cap, "mcap": mcap, "avg_vol": avg_vol}
+        cache[ticker] = metrics
+        save_capital_cache(cache)
+    mcap    = metrics.get("mcap")
+    avg_vol = metrics.get("avg_vol")
+    # 市值 < 200 億 → 剔除
+    if mcap is not None and mcap < MIN_MARKET_CAP:
+        return True
+    if avg_vol is not None and avg_vol < MIN_AVG_VOLUME:
         return True
     return False
 

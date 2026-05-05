@@ -2,6 +2,11 @@
 
 完全免費，跑在 GitHub Actions，**不需要你的電腦開機**。
 
+## 🔗 線上 Dashboard
+**https://my-stock-bot-4c2bijuppmsxgtlasobq8h.streamlit.app**
+
+每日 LINE 推播 + Streamlit Cloud App，內容自動同步。
+
 ## 功能
 - **每日掃描**（週一-週五美股收盤後）：ATH 突破 BUY/SELL 訊號 → LINE
 - **每週 Top30 對照**（每週一）：持股 vs 美股市值前 30 → LINE

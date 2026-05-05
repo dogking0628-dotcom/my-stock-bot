@@ -374,7 +374,7 @@ def get_industry(ticker):
     return None
 
 def industry_3day_strength(scan_results, ticker):
-    """檢查該產業是否強勢（連漲 2 天版：放寬門檻 50%/0.5%）"""
+    """檢查該產業是否強勢：同族群 ≥60% 今日上漲"""
     industry = get_industry(ticker)
     if not industry: return False, None
     members = INDUSTRY_GROUPS[industry]
@@ -384,10 +384,9 @@ def industry_3day_strength(scan_results, ticker):
             if s["ticker"] in members:
                 all_stocks.append(s)
     if len(all_stocks) < 2: return False, industry  # 至少 2 檔同族群有資料
-    # 連漲 2 天版：族群當日平均漲幅 > 0.5% 且 ≥50% 今日漲（比 3 天版寬鬆）
-    avg_chg = sum(s["change"] for s in all_stocks) / len(all_stocks)
+    # 60% 同天上漲（不再要求 avg 漲幅）
     n_up = sum(1 for s in all_stocks if s["change"] > 0)
-    is_strong = avg_chg > 0.5 and n_up >= len(all_stocks) * 0.5
+    is_strong = n_up >= len(all_stocks) * 0.6
     return is_strong, industry
 
 # ───── 動態 Top 5 追蹤系統 ─────
@@ -406,12 +405,12 @@ def save_top5_state(state):
 
 def pick_dynamic_topn(scan_results, n=20):
     """
-    從 scan_all 結果中挑出動能 Top N（候選）
-    濾網（升級版）：
-      ① 市值 ≥ 200 億 NT$ + 流動性夠
-      ② 整個產業族群連漲 3 天（避免單一拉抬）
-      ③ 漲停 / 高機率 / 普通 三類
-      ④ 動能評分 ≥ 30
+    挑 Top N（升級版：優先從最強族群挑最強股）
+    流程：
+      1. 通過基本濾網（市值、族群 60% 同天漲、動能 ≥30）
+      2. 計算每個族群的「強度」= 該族群入選檔數 × 平均動能
+      3. 從強度最高的族群開始，按動能挑入 Top N
+      4. 同族群挑滿後才換下個族群
     """
     candidates = []
     for cat in ["limit_up", "high", "medium"]:
@@ -429,8 +428,28 @@ def pick_dynamic_topn(scan_results, n=20):
             if a["score"] < 30:
                 continue
             candidates.append(a)
-    candidates.sort(key=lambda x: -x["score"])
-    return candidates[:n]
+
+    # 按族群分組，計算族群強度
+    from collections import defaultdict
+    by_ind = defaultdict(list)
+    for c in candidates:
+        by_ind[c.get("industry") or "未分類"].append(c)
+    ind_rank = []
+    for ind, lst in by_ind.items():
+        avg_score = sum(x["score"] for x in lst) / len(lst)
+        strength = len(lst) * avg_score  # 檔數 × 平均動能
+        ind_rank.append((ind, strength, sorted(lst, key=lambda x: -x["score"])))
+    # 強度最高族群優先
+    ind_rank.sort(key=lambda x: -x[1])
+
+    # 依族群輪流取（強度最高族群先全部取，其他依序）
+    out = []
+    for ind, strength, sorted_lst in ind_rank:
+        for c in sorted_lst:
+            if len(out) >= n: break
+            out.append(c)
+        if len(out) >= n: break
+    return out
 
 def pick_dynamic_top5(scan_results):
     """向後相容：取 Top 5"""

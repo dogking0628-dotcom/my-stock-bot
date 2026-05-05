@@ -297,14 +297,31 @@ def _quick_screen_batch(tickers_batch):
 def scan_all(use_full_universe=True):
     """
     雙階段掃描：
-    1. 批次快速篩出 ATH 候選（用 raw close）
-    2. 對候選做完整 analyze（含還原權值、漲停判讀）
+    - Shioaji 模式：直接全用 Shioaji 分析（速度快，無限流）
+    - yfinance 模式：Stage 1 批次快篩 → Stage 2 完整分析
     """
     results = {"limit_up": [], "high": [], "medium": [], "low": [], "fake": []}
     universe = get_full_universe() if use_full_universe else TW_UNIVERSE
-    print(f"[tw_filter] Stage 1: 批次快篩 {len(universe)} 檔...")
 
-    # 第一階段：批次快篩（每 50 檔一批，間隔 sleep 避免 yfinance 限流）
+    # ═══ Shioaji 路徑（速度快，跳過 Stage 1）═══
+    if USE_SHIOAJI:
+        print(f"[tw_filter] 🚀 Shioaji 模式：直接全分析 {len(universe)} 檔...", file=sys.stderr)
+        analyzed = 0
+        for tk, name in universe:
+            a = analyze(tk, name)
+            analyzed += 1
+            if analyzed % 200 == 0:
+                hits = sum(len(v) for v in results.values())
+                print(f"  [{analyzed}/{len(universe)}] 已找 {hits} 個 ATH+多頭", file=sys.stderr)
+            if not a: continue
+            if a["is_ath"] and a["is_bullish"]:
+                results[a["category"]].append(a)
+        for k in results:
+            results[k].sort(key=lambda x: -x["change"])
+        return results
+
+    # ═══ yfinance fallback 路徑（雙階段）═══
+    print(f"[tw_filter] Stage 1: 批次快篩 {len(universe)} 檔...")
     all_candidates = []
     BATCH = 50
     for i in range(0, len(universe), BATCH):

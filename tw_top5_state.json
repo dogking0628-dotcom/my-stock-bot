@@ -1,4 +1,35 @@
 {
-  "date": "2026-05-05",
-  "stocks": {}
+  "date": "2026-05-06",
+  "stocks": {
+    "8150": {
+      "name": "南茂",
+      "score": 90,
+      "close": 84.0999984741211,
+      "category": "limit_up"
+    },
+    "8210": {
+      "name": "勤誠",
+      "score": 75,
+      "close": 1265.0,
+      "category": "limit_up"
+    },
+    "2426": {
+      "name": "鼎元",
+      "score": 72,
+      "close": 69.30000305175781,
+      "category": "medium"
+    },
+    "3030": {
+      "name": "德律",
+      "score": 64,
+      "close": 414.0,
+      "category": "medium"
+    },
+    "4764": {
+      "name": "雙鍵",
+      "score": 64,
+      "close": 311.0,
+      "category": "medium"
+    }
+  }
 }

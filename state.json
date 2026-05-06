@@ -6,14 +6,14 @@
       "ticker": "INTC",
       "entry_date": "2026-05-01",
       "entry_price": 99.62,
-      "peak_price": 99.62000274658203,
+      "peak_price": 108.1500015258789,
       "shares": 100.381447
     },
     {
       "ticker": "MU",
       "entry_date": "2026-05-01",
       "entry_price": 542.21,
-      "peak_price": 576.4500122070312,
+      "peak_price": 640.2000122070312,
       "shares": 18.443038
     },
     {
@@ -27,21 +27,21 @@
       "ticker": "AMZN",
       "entry_date": "2026-05-01",
       "entry_price": 268.26,
-      "peak_price": 272.04998779296875,
+      "peak_price": 273.54998779296875,
       "shares": 37.277267
     },
     {
       "ticker": "GOOGL",
       "entry_date": "2026-05-01",
       "entry_price": 385.69,
-      "peak_price": 385.69000244140625,
+      "peak_price": 388.42999267578125,
       "shares": 25.927558
     },
     {
       "ticker": "SNDK",
       "entry_date": "2026-05-04",
       "entry_price": 1255.86,
-      "peak_price": 1255.86,
+      "peak_price": 1406.3199462890625,
       "shares": 7.946511
     },
     {
@@ -55,7 +55,7 @@
       "ticker": "CBOE",
       "entry_date": "2026-05-04",
       "entry_price": 338.91,
-      "peak_price": 338.9100036621094,
+      "peak_price": 343.9800109863281,
       "shares": 29.446476
     },
     {
@@ -69,7 +69,7 @@
       "ticker": "LITE",
       "entry_date": "2026-05-04",
       "entry_price": 976.18,
-      "peak_price": 976.18,
+      "peak_price": 994.5599975585938,
       "shares": 10.223223
     }
   ],

@@ -305,6 +305,21 @@ def main():
     # ── 全市場族群統計（須先跑完 industry_ath_yf.py）──
     industry_block = build_industry_block()
 
+    # ── 昨日 Top 5 回顧 + 改進建議 ──
+    review_block = ""
+    try:
+        import daily_review
+        analysis = daily_review.analyze_review(daily_review.review_yesterday())
+        if analysis:
+            review_block = daily_review.build_review_block(analysis)
+            with open(os.path.join(os.path.dirname(__file__), "daily_review.json"),
+                      "w", encoding="utf-8") as f:
+                json.dump(analysis, f, ensure_ascii=False, indent=2)
+        # 紀錄今日（供明日回顧）
+        daily_review.record_today_top5()
+    except Exception as e:
+        print(f"[review] failed: {e}")
+
     # ── 合併推播 ──────────────────────────
     msg = build_combined_msg(us_block, tw_result, tw_breakout_block, watchlist_block, regime_block, today, industry_block, exit_block)
     print(msg)

@@ -53,34 +53,28 @@ def monthly_max_close(closes_series):
 
 
 def momentum_confirm_score(rec):
-    """三層動能確認，0-100 分；≥80 = 隔日續漲 85%+"""
+    """簡化版：只看 Tier 1（漲停/量爆/跳空）+ 創 ATH + 族群同步"""
     s = 0
     notes = []
 
-    # Tier 1（核心，3 選 1 給 25 分）
+    # Tier 1（核心，3 選 1，+50 分）
     is_locked = rec.get("change_pct", 0) >= 9.5 and rec.get("vol_ratio", 0) < 1.2
     vol_surge = rec.get("vol_ratio", 0) >= 3 and rec.get("change_pct", 0) >= 5
     gap_up = rec.get("gap_up", False)
     if is_locked:
-        s += 25; notes.append("漲停鎖死")
+        s += 50; notes.append("漲停鎖死")
     elif vol_surge:
-        s += 25; notes.append("量爆價揚")
+        s += 50; notes.append("量爆價揚")
     elif gap_up:
-        s += 22; notes.append("跳空缺口")
+        s += 45; notes.append("跳空缺口")
 
-    # Tier 2（各 +15，最多 75）
-    if 60 <= rec.get("rsi", 0) <= 75:
-        s += 15; notes.append("RSI 強勢")
-    if rec.get("bullish_fast"):
-        s += 15; notes.append("加速多頭")
+    # 創 ATH（+30）
     if rec.get("ratio", 0) >= 0.999:
-        s += 15; notes.append("ATH")
-    if rec.get("close_near_high"):
-        s += 12; notes.append("收盤近高")
-    if rec.get("long_red"):
-        s += 10; notes.append("長紅 K")
+        s += 30; notes.append("ATH")
+
+    # 族群同步（+20）
     if rec.get("industry_strong"):
-        s += 10; notes.append("族群同步")
+        s += 20; notes.append("族群同步")
 
     return min(s, 100), notes
 
@@ -203,10 +197,34 @@ def main():
         else:
             r["tier"] = "⭐"; r["next_day_prob"] = "<70%"
 
-    # 隔日高機率 Top 5
+    # 隔日高機率（全市場，所有 ≥80）
     high_prob = sorted([r for r in exact if r.get("momentum_score", 0) >= 80],
                        key=lambda x: -x["momentum_score"])
-    tomorrow_top5 = sorted(exact, key=lambda x: -x.get("momentum_score", 0))[:5]
+
+    # 🆕 找最強族群：ATH 檔數最多 + 多頭比例 ≥50% 的有名族群
+    by_ind_for_pick = defaultdict(list)
+    for r in exact:
+        ind = r.get("industry") or "未分類"
+        if ind != "未分類":
+            by_ind_for_pick[ind].append(r)
+    strongest_industry = None
+    for ind, lst in sorted(by_ind_for_pick.items(), key=lambda x: -len(x[1])):
+        bull_ratio = sum(1 for x in lst if x.get("bullish")) / max(len(lst), 1)
+        if len(lst) >= 5 and bull_ratio >= 0.5:
+            strongest_industry = ind
+            break
+
+    # 從最強族群挑前 5 檔（依 momentum_score 排序，同分用漲幅 + 量比破解）
+    if strongest_industry:
+        in_industry = sorted(
+            by_ind_for_pick[strongest_industry],
+            key=lambda x: (-x.get("momentum_score", 0),
+                           -x.get("change_pct", 0),
+                           -x.get("vol_ratio", 0)))
+        tomorrow_top5 = in_industry[:5]
+    else:
+        # fallback：全市場挑
+        tomorrow_top5 = sorted(exact, key=lambda x: -x.get("momentum_score", 0))[:5]
 
     lines = []
     def p(s=""):
@@ -250,12 +268,13 @@ def main():
 
     out = {
         "timestamp": dt.date.today().isoformat(),
-        "basis": "yfinance 2y monthly + 動能確認分數",
+        "basis": "yfinance 2y monthly + 動能確認分數（最強族群挑 5）",
         "total_analyzed": len(results),
         "exact_ath": exact,
         "near_ath_top30": near[:30],
-        "tomorrow_top5": tomorrow_top5,           # 🆕 明日續漲 Top 5
-        "high_prob_count": len(high_prob),         # 🆕 ≥85% 機率股數
+        "tomorrow_top5": tomorrow_top5,
+        "tomorrow_top5_industry": strongest_industry,  # 🆕 最強族群名稱
+        "high_prob_count": len(high_prob),
         "industry_stats": [{"industry": ind, "count": len(items),
              "bullish_count": sum(1 for x in items if x["bullish"])}
             for ind, items in ranked],

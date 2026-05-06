@@ -208,7 +208,6 @@ def build_industry_block():
         return ""
     lines = ["🌐 全市場創 2y 月線新高",
              f"  共 {len(exact)} 檔創新高"]
-    # 排除「未分類」找最強有名族群
     classified = [s for s in industry_stats if s["industry"] != "未分類"]
     classified.sort(key=lambda x: -x["count"])
     if classified:
@@ -216,10 +215,20 @@ def build_industry_block():
         lines.append(f"  🏆 強勢族群 Top 3：")
         for s in top3:
             lines.append(f"    • {s['industry']} {s['count']} 檔（多頭 {s['bullish_count']}）")
-    # 標示「未分類」也很多代表半導體生態圈外溢
-    unclassified = next((s for s in industry_stats if s["industry"] == "未分類"), None)
-    if unclassified and unclassified["count"] >= 30:
-        lines.append(f"  💡 未分類 {unclassified['count']} 檔多為半導體周邊/設備")
+    # 🆕 明日續漲高機率 Top 5
+    tomorrow = r.get("tomorrow_top5", [])
+    high_n = r.get("high_prob_count", 0)
+    if tomorrow:
+        lines.append("")
+        lines.append(f"⭐⭐⭐ 明日續漲高機率 Top 5（{high_n} 檔 ≥85%）")
+        for i, t in enumerate(tomorrow, 1):
+            ind = t.get("industry") or "未分類"
+            lines.append(f"  #{i} {t['ticker']} {t['name']} ({ind})"
+                         f" {t.get('tier','⭐')} {t.get('momentum_score',0)}/100"
+                         f" {t.get('next_day_prob','')}")
+            notes = "、".join(t.get("momentum_notes", [])[:3])
+            if notes:
+                lines.append(f"     {notes}")
     return "\n".join(lines)
 
 

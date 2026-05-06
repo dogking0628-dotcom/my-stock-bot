@@ -237,10 +237,36 @@ with tab_market:
         stats = mkt.get("industry_stats", [])
         top_ind = mkt.get("top_industry")
 
-        col1, col2, col3 = st.columns(3)
+        col1, col2, col3, col4 = st.columns(4)
         col1.metric("🔥 真正創新高", f"{len(exact)} 檔")
         col2.metric("🟡 接近高點 Top30", f"{len(near)} 檔")
-        col3.metric("🏆 族群最多", top_ind or "—")
+        col3.metric("⭐⭐⭐ 明日高機率", f"{mkt.get('high_prob_count', 0)} 檔")
+        col4.metric("🏆 族群最多", top_ind or "—")
+
+        # ⭐⭐⭐ 明日續漲 Top 5
+        tomorrow = mkt.get("tomorrow_top5", [])
+        if tomorrow:
+            st.markdown("### ⭐⭐⭐ 明日續漲高機率 Top 5")
+            for i, t in enumerate(tomorrow, 1):
+                ind = t.get("industry") or "未分類"
+                tier = t.get("tier", "⭐")
+                score = t.get("momentum_score", 0)
+                prob = t.get("next_day_prob", "")
+                notes = "、".join(t.get("momentum_notes", []))
+                cls = "strong" if score >= 80 else ("ok" if score >= 60 else "warn")
+                st.markdown(f"""
+                <div class="alert-card {cls}">
+                  <div class="name">#{i} {tier} {t['ticker']} {t['name']}
+                    <span class="purple">{score}/100</span> ｜ 隔日續漲 {prob}</div>
+                  <div class="meta">
+                    {ind} ｜ ${t.get('today',0):.1f}
+                    <span class="{'green' if t.get('change_pct',0)>=0 else 'red'}"> {t.get('change_pct',0):+.1f}%</span>
+                    ｜ 量 {t.get('vol_ratio',0):.1f}x ｜ RSI {t.get('rsi',0):.0f}
+                  </div>
+                  <div class="meta" style="margin-top:4px;">📌 {notes}</div>
+                </div>
+                """, unsafe_allow_html=True)
+            st.divider()
 
         # 族群分布表
         if stats:

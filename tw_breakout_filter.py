@@ -174,7 +174,8 @@ def analyze(ticker, name):
     last_504 = c[-504:] if len(c) >= 504 else c[:-1]
     daily_2y_max = float(np.max(last_504)) if len(last_504) > 0 else None
     monthly_max = _monthly_max_close(c, dates)
-    is_ath = (daily_2y_max is not None) and (today >= daily_2y_max * 0.999)
+    # 放寬版：距 2y 日線高 ≤ 1% 即視為「準新高」（避免太嚴只剩 0 檔）
+    is_ath = (daily_2y_max is not None) and (today >= daily_2y_max * 0.99)
     # 🆕 多頭排列：今日收盤 > 20MA > 60MA > 200MA（放寬版，去掉 5MA 嚴格性）
     is_bullish = today > ma20 > ma60 > ma200
 

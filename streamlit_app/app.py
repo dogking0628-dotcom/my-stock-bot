@@ -78,7 +78,12 @@ data = load_dashboard()
 if data is None:
     st.stop()
 
-st.caption(f"📅 資料日期: **{data.get('timestamp','?')}** ｜ 與 LINE 推播完全一致")
+_market = data.get("tw_market_industry", {})
+_intraday = _market.get("intraday_updated") if _market else None
+if _intraday:
+    st.caption(f"📅 收盤資料: **{data.get('timestamp','?')}** ｜ 🟢 **盤中即時更新**: {_intraday}（yfinance 延遲約 15 分）")
+else:
+    st.caption(f"📅 資料日期: **{data.get('timestamp','?')}** ｜ 與 LINE 推播完全一致")
 
 # ════════════════════════════════════════
 # 大盤體制

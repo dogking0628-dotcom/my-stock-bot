@@ -8,15 +8,24 @@
 部署：Streamlit Cloud → main file 填 `monitor_app/app.py`
 """
 import json
+import urllib.error
 import urllib.request
 
 import streamlit as st
 
+REPO = "dogking0628-dotcom/my-stock-bot"
 DASHBOARD_URL = (
-    "https://raw.githubusercontent.com/"
-    "dogking0628-dotcom/my-stock-bot/main/dashboard_data.json"
+    f"https://raw.githubusercontent.com/{REPO}/main/dashboard_data.json"
 )
 CACHE_TTL_SEC = 300
+
+WORKFLOWS = {
+    "daily.yml": "🌅 Daily 完整掃描（產 dashboard_data.json）",
+    "intraday.yml": "⏱️ Intraday 盤中掃描",
+    "post_close_review.yml": "📋 盤後策略檢討",
+    "industry_scan.yml": "🏭 Industry 掃描（Shioaji）",
+    "weekly_top30.yml": "📅 Weekly Top30",
+}
 
 st.set_page_config(
     page_title="📡 投資監控",
@@ -33,6 +42,40 @@ def load_dashboard():
     )
     raw = urllib.request.urlopen(req, timeout=15).read()
     return json.loads(raw)
+
+
+def dispatch_workflow(workflow_file: str, ref: str = "main") -> tuple[bool, str]:
+    """呼叫 GitHub API 觸發 workflow_dispatch。"""
+    token = st.secrets.get("GITHUB_TOKEN") if hasattr(st, "secrets") else None
+    if not token:
+        return False, "缺少 GITHUB_TOKEN（在 Streamlit Cloud Secrets 設定）"
+
+    url = (
+        f"https://api.github.com/repos/{REPO}/actions/workflows/"
+        f"{workflow_file}/dispatches"
+    )
+    body = json.dumps({"ref": ref}).encode("utf-8")
+    req = urllib.request.Request(
+        url,
+        data=body,
+        method="POST",
+        headers={
+            "Authorization": f"Bearer {token}",
+            "Accept": "application/vnd.github+json",
+            "X-GitHub-Api-Version": "2022-11-28",
+            "Content-Type": "application/json",
+        },
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            if resp.status == 204:
+                return True, "已送出觸發請求（請到 Actions 頁查看執行）"
+            return False, f"非預期狀態碼 {resp.status}"
+    except urllib.error.HTTPError as exc:
+        detail = exc.read().decode("utf-8", errors="ignore")[:200]
+        return False, f"HTTP {exc.code}：{detail}"
+    except Exception as exc:
+        return False, f"{type(exc).__name__}: {exc}"
 
 
 def render_regime(regime):
@@ -83,11 +126,43 @@ def render_exits(exits):
         )
 
 
+def render_workflow_trigger():
+    with st.expander("▶️ 觸發 GitHub Actions", expanded=False):
+        st.caption(
+            "點下後會送出 workflow_dispatch 請求，到 GitHub Actions 排隊執行。"
+            "需在 Streamlit Cloud Secrets 設定 `GITHUB_TOKEN`（PAT）。"
+        )
+        choice = st.selectbox(
+            "選擇 workflow",
+            options=list(WORKFLOWS.keys()),
+            format_func=lambda k: WORKFLOWS[k],
+        )
+        if st.button("🚀 立即執行", type="secondary", use_container_width=True):
+            with st.spinner("送出中..."):
+                ok, msg = dispatch_workflow(choice)
+            if ok:
+                st.success(f"✅ {msg}")
+                st.markdown(
+                    f"[👉 到 Actions 頁查看](https://github.com/{REPO}/actions)"
+                )
+            else:
+                st.error(f"❌ {msg}")
+
+
 st.title("📡 投資監控")
 
-if st.button("🔄 重新載入", type="primary", use_container_width=True):
-    st.cache_data.clear()
-    st.rerun()
+c1, c2 = st.columns(2)
+with c1:
+    if st.button("🔄 重新載入資料", type="primary", use_container_width=True):
+        st.cache_data.clear()
+        st.rerun()
+with c2:
+    st.markdown(
+        f"[📂 開 Actions 頁](https://github.com/{REPO}/actions)",
+        help="到 GitHub 看 workflow 執行狀態",
+    )
+
+render_workflow_trigger()
 
 try:
     data = load_dashboard()

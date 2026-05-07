@@ -14,9 +14,10 @@
   資金：
     100 萬 NT$，每檔等比例 1/5 倉位
 """
-import sys, io, os, json, datetime as dt, time
-try: sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
-except Exception: pass
+import sys, os, json, datetime as dt, time, io
+if not isinstance(sys.stdout, io.TextIOWrapper) or sys.stdout.encoding.lower() != 'utf-8':
+    try: sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', line_buffering=True)
+    except Exception: pass
 
 import numpy as np
 import pandas as pd

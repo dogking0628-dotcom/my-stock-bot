@@ -17,6 +17,12 @@ from industry_map_loader import get_industry
 NEAR_THRESHOLD = 0.95
 EXACT_THRESHOLD = 0.999
 BATCH = 50
+
+# 科技限定族群（回測證實近半年勝率 53% vs 全市場 35%）
+ALLOWED_INDUSTRIES = {
+    "半導體", "電子零組件", "光電", "電腦及週邊",
+    "電子通路", "通信網路", "其他電子",
+}
 OUTPUT_PATH = os.path.join(os.path.dirname(__file__), "ath_industry_report.json")
 TXT_PATH = os.path.join(os.path.dirname(__file__), "scan_output.txt")
 
@@ -201,11 +207,11 @@ def main():
     high_prob = sorted([r for r in exact if r.get("momentum_score", 0) >= 80],
                        key=lambda x: -x["momentum_score"])
 
-    # 🆕 找最強族群：ATH 檔數最多 + 多頭比例 ≥50% 的有名族群
+    # 🆕 找最強族群（限定科技族群）：ATH 檔數最多 + 多頭比例 ≥50%
     by_ind_for_pick = defaultdict(list)
     for r in exact:
         ind = r.get("industry") or "未分類"
-        if ind != "未分類":
+        if ind in ALLOWED_INDUSTRIES:           # 🔒 科技限定
             by_ind_for_pick[ind].append(r)
     strongest_industry = None
     for ind, lst in sorted(by_ind_for_pick.items(), key=lambda x: -len(x[1])):
@@ -223,8 +229,11 @@ def main():
                            -x.get("vol_ratio", 0)))
         tomorrow_top5 = in_industry[:5]
     else:
-        # fallback：全市場挑
-        tomorrow_top5 = sorted(exact, key=lambda x: -x.get("momentum_score", 0))[:5]
+        # fallback：科技族群任一動能 ≥80 排序
+        tech_pool = [r for r in exact
+                     if (r.get("industry") in ALLOWED_INDUSTRIES)]
+        tomorrow_top5 = sorted(tech_pool,
+                               key=lambda x: -x.get("momentum_score", 0))[:5]
 
     lines = []
     def p(s=""):

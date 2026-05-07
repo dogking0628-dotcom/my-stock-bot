@@ -643,3 +643,41 @@ CAGR +24.8% / 最大回撤 -9.6%。
 請先 git pull，改完跑 backtest 確認 PF/CAGR/最大回撤都不退步，
 通過再 commit + push。
 ```
+
+---
+
+## 📡 給「監控 APP 開發」新 session 的指令範本
+
+當你在新 session 開發 / 擴充 `monitor_app/`（手機 PWA 監控介面）時，可以這樣開頭：
+
+```
+我要在 https://github.com/dogking0628-dotcom/my-stock-bot
+擴充監控 APP，code 在 monitor_app/ 子目錄。
+
+請先 git pull，讀以下檔案了解上下文：
+1. STRATEGY.md（V4 策略邏輯，CAGR +24.8% / MDD -9.6%）
+2. monitor_app/README.md（監控 APP 現狀與待辦）
+3. monitor_app/app.py（目前骨架）
+4. dashboard_data.json（資料來源 schema，由 daily_scan.py 產出）
+
+我要新增以下功能：[具體需求，例如：
+  - 讀 holdings.json 顯示持股對應出場警報
+  - 加美股 Top 5 / 出場 tab
+  - 加 0050 進出建議顯示
+  - 加 streamlit-autorefresh 自動刷新
+  - LINE webhook 推送（用 st.secrets）
+]
+
+完成後在 monitor_app/ 內 commit + push 到 [指定分支]。
+不要動 monitor_app/ 以外的檔案，除非有明確理由。
+```
+
+### 監控 APP 架構約定
+
+| 項目 | 說明 |
+|---|---|
+| 資料來源 | `https://raw.githubusercontent.com/.../main/dashboard_data.json`（5 分快取） |
+| 不直接抓 yfinance | 避免 Streamlit Cloud 觸發 rate limit；資料更新交給 GitHub Actions |
+| 不寫策略邏輯 | 監控 APP 只負責「呈現」，策略改動仍走 `industry_ath_yf.py` + `backtest_v?.py` |
+| 部署 | Streamlit Cloud，main file 填 `monitor_app/app.py` |
+| 主題 | 沿用 `.streamlit/config.toml`（深色） |

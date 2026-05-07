@@ -228,7 +228,7 @@ def main():
     print("\n" + "=" * 60)
     print("📊 V4 回測結果")
     print("=" * 60)
-    bs.report(cash, trades)
+    bs.report(cash, trades, label="V4")
     print(f"\n跳過進場天數：{skipped} 天（佔回測期 {skipped/1290*100:.1f}%）")
 
     out = {"final_cash": cash, "trades": trades, "n_trades": len(trades),

@@ -232,7 +232,7 @@ def main():
     print("\n" + "=" * 60)
     print("📊 V3 回測結果")
     print("=" * 60)
-    bs.report(cash, trades)
+    bs.report(cash, trades, label="V3")
 
     out = {"final_cash": cash, "trades": trades, "n_trades": len(trades),
            "version": "v3 (tech + mcap + us_boost)"}

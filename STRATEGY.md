@@ -334,7 +334,13 @@ https://my-stock-bot-4c2bijuppmsxgtlasobq8h.streamlit.app
 
 ---
 
-## 🛡️ 黑天鵝壓力測試（5 年內所有極端事件）
+## 🛡️ 自動壓力測試（每次回測都跑）
+
+> **規則**：每個新策略版本回測時，`backtest_strategy.report()` 會**自動呼叫** `stress_test_lib.run_stress_test()`，不需手動。
+> 模組路徑：`stress_test_lib.py`
+> 用法：`bs.report(cash, trades, label="V5 my_new_strategy")` 即可
+
+## 黑天鵝壓力測試（5 年內所有極端事件）
 
 ### 全期最大回撤對比
 

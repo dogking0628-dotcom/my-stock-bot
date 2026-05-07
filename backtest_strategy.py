@@ -251,7 +251,7 @@ def run_backtest(history):
     return cash, trades
 
 
-def report(final_cash, trades):
+def report(final_cash, trades, label="strategy", run_stress=True):
     n = len(trades)
     if n == 0:
         print("⚠️ 無交易")
@@ -298,6 +298,14 @@ def report(final_cash, trades):
     worst = min(trades, key=lambda x: x["ret_pct"])
     print(f"\n最大單筆獲利：{best['ticker']} {best['ret_pct']:+.1f}% ({best['entry_date']}→{best['exit_date']})")
     print(f"最大單筆虧損：{worst['ticker']} {worst['ret_pct']:+.1f}% ({worst['entry_date']}→{worst['exit_date']})")
+
+    # 🛡️ 自動執行黑天鵝壓力測試
+    if run_stress:
+        try:
+            from stress_test_lib import run_stress_test
+            run_stress_test(trades, label=label)
+        except Exception as e:
+            print(f"\n⚠️ 壓力測試失敗: {e}")
 
 
 def main():

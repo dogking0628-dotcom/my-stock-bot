@@ -137,7 +137,7 @@ def main():
     print("\n" + "=" * 60)
     print("📊 限制版（科技股限定）回測結果")
     print("=" * 60)
-    bs.report(cash_filt, trades_filt)
+    bs.report(cash_filt, trades_filt, label="V2 tech-only")
 
     out = {"final_cash": cash_filt, "trades": trades_filt,
            "n_trades": len(trades_filt),

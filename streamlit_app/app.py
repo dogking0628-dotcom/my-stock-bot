@@ -5,7 +5,7 @@
 import streamlit as st
 import json, os
 import datetime as dt
-import urllib.request
+import urllib.request, urllib.error
 
 # ════════════════════════════════════════
 # 設定
@@ -50,6 +50,86 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ════════════════════════════════════════
+# GitHub Actions workflow 觸發（手機一鍵更新）
+# ════════════════════════════════════════
+GITHUB_OWNER  = "dogking0628-dotcom"
+GITHUB_REPO   = "my-stock-bot"
+GITHUB_BRANCH = "main"
+
+WORKFLOWS = [
+    ("daily.yml",             "🔥 Daily ATH Scan",         "完整每日掃描（會更新 dashboard_data.json）"),
+    ("intraday.yml",          "⏰ Intraday Scan",          "台股盤中掃描"),
+    ("post_close_review.yml", "📝 Post-close Review",      "收盤策略回顧"),
+    ("weekly_top30.yml",      "🏆 Weekly Top30",           "Top30 對照"),
+    ("industry_scan.yml",     "🏭 Industry ATH (Shioaji)", "產業 ATH（Shioaji 版）"),
+]
+
+def _gh_token():
+    try:
+        t = st.secrets.get("GITHUB_TOKEN", "")
+        if t:
+            return t
+    except Exception:
+        pass
+    return os.environ.get("GITHUB_TOKEN", "")
+
+def _gh_request(url, method="GET", payload=None, token=""):
+    data = json.dumps(payload).encode() if payload is not None else None
+    req = urllib.request.Request(
+        url,
+        data=data,
+        method=method,
+        headers={
+            "Accept": "application/vnd.github+json",
+            "Authorization": f"Bearer {token}",
+            "X-GitHub-Api-Version": "2022-11-28",
+            "User-Agent": "streamlit-app",
+            "Content-Type": "application/json",
+        },
+    )
+    return urllib.request.urlopen(req, timeout=15)
+
+def trigger_workflow(workflow_file):
+    token = _gh_token()
+    if not token:
+        return False, "❌ 缺少 GITHUB_TOKEN，請到 Streamlit Cloud → App settings → Secrets 設定"
+    url = (f"https://api.github.com/repos/{GITHUB_OWNER}/{GITHUB_REPO}"
+           f"/actions/workflows/{workflow_file}/dispatches")
+    try:
+        _gh_request(url, method="POST", payload={"ref": GITHUB_BRANCH}, token=token)
+        return True, f"✅ 已觸發 `{workflow_file}`，1-3 分鐘後再點「重新載入」看新資料"
+    except urllib.error.HTTPError as e:
+        body = e.read().decode()[:200] if hasattr(e, "read") else ""
+        return False, f"❌ HTTP {e.code}: {body}"
+    except Exception as e:
+        return False, f"❌ {e}"
+
+@st.cache_data(ttl=30)
+def get_latest_run(workflow_file):
+    token = _gh_token()
+    if not token:
+        return None
+    url = (f"https://api.github.com/repos/{GITHUB_OWNER}/{GITHUB_REPO}"
+           f"/actions/workflows/{workflow_file}/runs?per_page=1")
+    try:
+        data = json.loads(_gh_request(url, token=token).read())
+        runs = data.get("workflow_runs", [])
+        return runs[0] if runs else None
+    except Exception:
+        return None
+
+def _run_badge(run):
+    if not run:
+        return "—"
+    status = run.get("status", "")
+    conclusion = run.get("conclusion") or ""
+    when = (run.get("updated_at") or "")[:16].replace("T", " ")
+    if status == "completed":
+        emoji = {"success": "✅", "failure": "❌", "cancelled": "⚪"}.get(conclusion, "⚫")
+        return f"{emoji} {conclusion} · {when}"
+    return f"🟡 {status} · {when}"
+
+# ════════════════════════════════════════
 # 載入 dashboard_data.json（從 GitHub raw 讀，永遠最新）
 # ════════════════════════════════════════
 DASHBOARD_URL = "https://raw.githubusercontent.com/dogking0628-dotcom/my-stock-bot/main/dashboard_data.json"
@@ -73,6 +153,28 @@ st.title("📊 投資監控")
 if st.button("🔄 重新載入", type="primary", use_container_width=True):
     st.cache_data.clear()
     st.rerun()
+
+with st.expander("🚀 手動觸發 GitHub Actions Workflow", expanded=False):
+    if not _gh_token():
+        st.warning(
+            "尚未設定 `GITHUB_TOKEN`。到 Streamlit Cloud → **App settings** → **Secrets** "
+            "貼入下面這行（PAT 需勾選 `workflow` scope）："
+        )
+        st.code('GITHUB_TOKEN = "ghp_xxx..."', language="toml")
+    else:
+        st.caption("點按鈕後到 GitHub Actions 看進度，跑完回來點「重新載入」拿到新資料。")
+    for wf_file, label, desc in WORKFLOWS:
+        c1, c2 = st.columns([2, 3])
+        with c1:
+            if st.button(label, key=f"trigger_{wf_file}", use_container_width=True):
+                ok, msg = trigger_workflow(wf_file)
+                (st.success if ok else st.error)(msg)
+                if ok:
+                    get_latest_run.clear()
+        with c2:
+            run = get_latest_run(wf_file)
+            st.caption(f"{desc}")
+            st.caption(f"最近一次：{_run_badge(run)}")
 
 data = load_dashboard()
 if data is None:

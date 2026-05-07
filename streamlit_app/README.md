@@ -32,6 +32,25 @@
 - 📈 大盤體制即時顯示
 - 🔄 一鍵清除快取重新掃描
 
+## 🚀 手動觸發 Workflow（手機一鍵）
+
+App 內附 **手動觸發 GitHub Actions Workflow** 按鈕（頁面頂部 expander），可從手機直接重跑：
+- 🔥 Daily ATH Scan（會更新 `dashboard_data.json`）
+- ⏰ Intraday Scan / 📝 Post-close Review / 🏆 Weekly Top30 / 🏭 Industry ATH
+
+### 一次性設定（GITHUB_TOKEN）
+1. GitHub → **Settings** → **Developer settings** → **Personal access tokens**
+   - Classic：勾選 `workflow` scope
+   - Fine-grained：限定 repo `dogking0628-dotcom/my-stock-bot`，勾選 `Actions: Read and write`、`Contents: Read`
+2. 複製 token
+3. Streamlit Cloud → 你的 App → **Settings** → **Secrets**，貼上：
+   ```toml
+   GITHUB_TOKEN = "ghp_xxx..."
+   ```
+4. App 自動 reload 後按鈕即可使用
+
+按下按鈕 → workflow 在 GitHub Actions 跑（1-3 分鐘）→ 回 App 點「🔄 重新載入」拿到新資料。
+
 ## ⚠️ 注意
 
 - yfinance 有 15 分鐘延遲，盤中參考用

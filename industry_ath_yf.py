@@ -54,15 +54,20 @@ def get_us_sector_change():
     for tk in US_SECTOR_BOOST.keys():
         try:
             df = yf.download(tk, period="5d", auto_adjust=True,
-                             progress=False, threads=False)
-            if df.empty or "Close" not in df.columns: continue
+                             progress=False, threads=False, group_by="column")
+            if df.empty: continue
+            # yfinance 1.3+ 返回 MultiIndex，先壓平
+            if hasattr(df.columns, "levels"):
+                df.columns = [c[0] if isinstance(c, tuple) else c for c in df.columns]
+            if "Close" not in df.columns: continue
             cl = df["Close"].dropna()
+            if hasattr(cl, "iloc"): cl = cl.values  # 轉純 array 避免 Series 型別
             if len(cl) < 2: continue
-            chg = (cl.iloc[-1] / cl.iloc[-2] - 1) * 100
-            out[tk] = float(chg)
+            chg = float((cl[-1] / cl[-2] - 1) * 100)
+            out[tk] = chg
             print(f"  [{tk}] 昨日 {chg:+.2f}%", file=sys.stderr)
         except Exception as e:
-            print(f"  [{tk}] fail: {e}", file=sys.stderr)
+            print(f"  [{tk}] fail: {type(e).__name__}: {e}", file=sys.stderr)
     return out
 
 
@@ -287,13 +292,24 @@ def main():
             break
 
     # 從最強族群挑前 5 檔（依 momentum_score 排序，同分用漲幅 + 量比破解）
+    # V3 改：只列分數 ≥ 80 的高機率股，不足 5 檔就少於 5 檔
     if strongest_industry:
         in_industry = sorted(
             by_ind_for_pick[strongest_industry],
             key=lambda x: (-x.get("momentum_score", 0),
                            -x.get("change_pct", 0),
                            -x.get("vol_ratio", 0)))
-        tomorrow_top5 = in_industry[:5]
+        high_only = [r for r in in_industry if r.get("momentum_score", 0) >= 80]
+        tomorrow_top5 = high_only[:5]
+        # 若不足 3 檔，補科技族群其他高分股
+        if len(tomorrow_top5) < 3:
+            extra_pool = [r for r in exact
+                          if r.get("industry") in ALLOWED_INDUSTRIES
+                          and r.get("mcap_pass")
+                          and r.get("momentum_score", 0) >= 80
+                          and r["ticker"] not in {x["ticker"] for x in tomorrow_top5}]
+            extra_pool.sort(key=lambda x: -x.get("momentum_score", 0))
+            tomorrow_top5 += extra_pool[: 5-len(tomorrow_top5)]
     else:
         # fallback：科技族群 + 市值合格的任一動能排序
         tech_pool = [r for r in exact

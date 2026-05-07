@@ -48,6 +48,30 @@ def load_mcap():
         return {}
 
 
+def get_market_regime():
+    """V4：檢查 0050 是否在 MA200 之上（Stage 2 牛市）"""
+    try:
+        df = yf.download("0050.TW", period="1y", auto_adjust=True,
+                         progress=False, threads=False, group_by="column")
+        if hasattr(df.columns, "levels"):
+            df.columns = [c[0] if isinstance(c, tuple) else c for c in df.columns]
+        if "Close" not in df.columns: return True, None
+        cl = df["Close"].dropna().values
+        if len(cl) < 200: return True, None
+        today = float(cl[-1])
+        ma200 = float(cl[-200:].mean())
+        in_stage2 = today > ma200
+        ext_pct = (today / ma200 - 1) * 100
+        print(f"  [0050] 今價 ${today:.1f} / MA200 ${ma200:.1f} "
+              f"→ {'🟢 Stage 2（可進場）' if in_stage2 else '🔴 Stage 4（禁止進場）'}"
+              f" 偏離 {ext_pct:+.1f}%", file=sys.stderr)
+        return in_stage2, {"today": today, "ma200": ma200, "ext_pct": ext_pct,
+                           "in_stage2": in_stage2}
+    except Exception as e:
+        print(f"  [0050] regime fail: {e}", file=sys.stderr)
+        return True, None  # 抓不到資料時預設可進場
+
+
 def get_us_sector_change():
     """抓 QQQ/SMH/IGV 昨日漲跌（用於美股連動加分）"""
     out = {}
@@ -245,9 +269,11 @@ def main():
         n_up = sum(1 for x in lst if x.get("change_pct", 0) > 0)
         industry_up_ratio[ind] = n_up / len(lst)
 
-    # 🆕 V3: 預載市值 + 美股族群昨日漲跌
+    # 🆕 V4: 大盤體制 + V3 市值 + 美股加分
     mcap = load_mcap()
-    print(f"\n[3/3] 載入市值 {len(mcap)} 檔，抓美股族群連動...", file=sys.stderr)
+    print(f"\n[3/3] 載入市值 {len(mcap)} 檔，檢查 0050 體制 + 美股連動...",
+          file=sys.stderr)
+    in_stage2, regime_info = get_market_regime()
     us_chg = get_us_sector_change()
 
     # 對 ATH 股算動能確認分數（含 V3 美股加分 + 市值標記）
@@ -291,9 +317,11 @@ def main():
             strongest_industry = ind
             break
 
-    # 從最強族群挑前 5 檔（依 momentum_score 排序，同分用漲幅 + 量比破解）
-    # V3 改：只列分數 ≥ 80 的高機率股，不足 5 檔就少於 5 檔
-    if strongest_industry:
+    # 🚨 V4 大盤體制濾網：0050 < MA200（Stage 4 熊市）禁止進場
+    if not in_stage2:
+        print("  ⛔ V4: 0050 跌破 MA200 → 禁止進場（熊市段）", file=sys.stderr)
+        tomorrow_top5 = []
+    elif strongest_industry:
         in_industry = sorted(
             by_ind_for_pick[strongest_industry],
             key=lambda x: (-x.get("momentum_score", 0),
@@ -370,6 +398,8 @@ def main():
              "bullish_count": sum(1 for x in items if x["bullish"])}
             for ind, items in ranked],
         "top_industry": ranked[0][0] if ranked else None,
+        "market_regime": regime_info,  # 🆕 V4: 0050 體制資料
+        "v4_blocked": (not in_stage2),  # 🆕 V4: 是否禁止進場
     }
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)

@@ -222,8 +222,8 @@ st.markdown("---")
 # ════════════════════════════════════════
 # Tabs
 # ════════════════════════════════════════
-tab1, tab_ind, tab_market, tab2, tab3, tab4, tab5 = st.tabs([
-    "🎯 Top5+候選", "🏆 族群推薦", "🌐 全市場族群", "🇹🇼 篩選", "🇹🇼 0050", "🇺🇸 美股", "⚠️ 警報"
+tab1, tab_ind, tab_market, tab_sync, tab2, tab3, tab4, tab5 = st.tabs([
+    "🎯 Top5+候選", "🏆 族群推薦", "🌐 全市場族群", "📡 美台同步", "🇹🇼 篩選", "🇹🇼 0050", "🇺🇸 美股", "⚠️ 警報"
 ])
 
 # ────────────────────────
@@ -405,6 +405,59 @@ with tab_market:
                     """, unsafe_allow_html=True)
 
         st.caption(f"基準：{mkt.get('basis', '2y monthly')} ｜ 共分析 {mkt.get('total_analyzed', '?')} 檔")
+
+
+# ────────────────────────
+# Tab Sync: 美台同步族群（V5c 資訊參考，不影響進場）
+# ────────────────────────
+with tab_sync:
+    st.markdown("### 📡 美台同步族群（資訊參考）")
+    st.caption("昨日美股大漲族群 → 對應台股族群同步表現（不取代 V4 主邏輯）")
+    sync = data.get("us_tw_sync")
+    if not sync:
+        st.info("⏸ 資料尚未生成（等待下次 daily scan）")
+    else:
+        us_sectors = sync.get("us_sectors_yesterday", {})
+        hot = sync.get("hot_us_sectors", {})
+        synced = sync.get("tw_industries_synced", [])
+        top5 = sync.get("top5_synced_picks", [])
+
+        # 美股 ETF 漲跌排名
+        st.markdown("#### 🇺🇸 昨日美股 ETF 漲跌")
+        sorted_us = sorted(us_sectors.items(), key=lambda x: -x[1])
+        for tk, chg in sorted_us:
+            emoji = "🔥" if chg >= 1 else ("✅" if chg >= 0 else "❌")
+            color = "green" if chg >= 0 else "red"
+            st.markdown(f"<div class='stock-row'>"
+                       f"<div class='name'>{emoji} {tk}</div>"
+                       f"<div class='meta'><span class='{color}'>{chg:+.2f}%</span></div>"
+                       f"</div>", unsafe_allow_html=True)
+
+        # 對應台股族群
+        if synced:
+            st.markdown(f"#### 🇹🇼 對應台股族群")
+            for ind in synced:
+                st.markdown(f"  • **{ind}**")
+
+        # Top 5 同步推薦
+        if top5:
+            st.markdown("#### 🎯 美台同步 Top 5（可考慮加碼參考）")
+            for i, s in enumerate(top5, 1):
+                st.markdown(f"""
+                <div class="alert-card ok">
+                  <div class="name">#{i} {s['ticker']} {s['name']}（{s.get('industry','?')}）</div>
+                  <div class="meta">
+                    昨日 <span class="green">{s['change_pct']:+.2f}%</span>
+                    ｜ 收 ${s['today']:.1f}
+                    ｜ 美股族群連動 +{s.get('us_score',0):.1f}%
+                    ｜ 綜合分 {s.get('combined',0):.1f}
+                  </div>
+                </div>
+                """, unsafe_allow_html=True)
+        elif hot:
+            st.warning("⚠️ 美股有大漲但台股對應族群昨日未跟進")
+        else:
+            st.info("⏸ 昨日美股無大漲族群（≥1%）")
 
 
 # ────────────────────────

@@ -190,6 +190,34 @@ def build_us_block(state, sells, buys, holds, today, n_buy):
 
     return "\n".join(lines)
 
+# ── 美台同步族群（資訊參考，不影響進場）──
+def build_us_tw_sync_block():
+    """讀 us_tw_sync_report.json 產出資訊區塊"""
+    path = os.path.join(os.path.dirname(__file__), "us_tw_sync_report.json")
+    if not os.path.exists(path): return ""
+    try:
+        with open(path, encoding="utf-8") as f:
+            r = json.load(f)
+    except Exception:
+        return ""
+    hot = r.get("hot_us_sectors", {})
+    top5 = r.get("top5_synced_picks", [])
+    if not hot:
+        return "📡 美台同步族群：昨日美股無大漲族群（≥1%）"
+    lines = ["📡 美台同步族群（參考）"]
+    # 大漲族群
+    sorted_hot = sorted(hot.items(), key=lambda x: -x[1])
+    for tk, chg in sorted_hot[:3]:
+        lines.append(f"  🔥 {tk} {chg:+.2f}%")
+    if top5:
+        lines.append("  📋 對應台股 ATH 連動股（可考慮加碼）：")
+        for s in top5[:5]:
+            ind = s.get("industry") or "?"
+            lines.append(f"    {s['ticker']} {s['name']} ({ind})"
+                         f" {s['change_pct']:+.1f}%")
+    return "\n".join(lines)
+
+
 # ── 全市場族群統計（讀 industry_ath_yf.py 產的報表）──
 def build_industry_block():
     """讀 ath_industry_report.json，產出全市場創新高族群統計 LINE 區塊"""
@@ -233,7 +261,7 @@ def build_industry_block():
 
 
 # ── 合併訊息 ──────────────────────────────
-def build_combined_msg(us_block, tw_result, tw_breakout_block, watchlist_block, regime_block, today, industry_block="", exit_block=""):
+def build_combined_msg(us_block, tw_result, tw_breakout_block, watchlist_block, regime_block, today, industry_block="", exit_block="", us_tw_sync_block=""):
     tw_block    = tw_0050_signal.build_line_block(tw_result)
     has_us_act  = ("SELL" in us_block or "BUY" in us_block)
     has_tw_act  = tw_result.get("action", "HOLD") != "HOLD"
@@ -252,6 +280,8 @@ def build_combined_msg(us_block, tw_result, tw_breakout_block, watchlist_block, 
         parts += ["─" * 22, exit_block]
     if industry_block:
         parts += ["─" * 22, industry_block]
+    if us_tw_sync_block:
+        parts += ["─" * 22, us_tw_sync_block]
     parts += ["─" * 22, "👉 建議收盤前執行，moomoo/Firstrade"]
     return "\n".join(parts)
 
@@ -305,6 +335,9 @@ def main():
     # ── 全市場族群統計（須先跑完 industry_ath_yf.py）──
     industry_block = build_industry_block()
 
+    # ── 美台同步族群（V5c 資訊參考）──
+    us_tw_sync_block = build_us_tw_sync_block()
+
     # ── 昨日 Top 5 回顧 + 改進建議 ──
     review_block = ""
     try:
@@ -321,7 +354,7 @@ def main():
         print(f"[review] failed: {e}")
 
     # ── 合併推播 ──────────────────────────
-    msg = build_combined_msg(us_block, tw_result, tw_breakout_block, watchlist_block, regime_block, today, industry_block, exit_block)
+    msg = build_combined_msg(us_block, tw_result, tw_breakout_block, watchlist_block, regime_block, today, industry_block, exit_block, us_tw_sync_block)
     print(msg)
     notify_line.push(msg)
 
@@ -373,6 +406,15 @@ def main():
             "us_state": {"cash": state["cash"], "n_positions": len(state["positions"]),
                          "max_slots": MAX_SLOTS},
         }
+        # 美台同步族群（V5c 資訊）
+        try:
+            sync_path = os.path.join(os.path.dirname(__file__), "us_tw_sync_report.json")
+            if os.path.exists(sync_path):
+                with open(sync_path, encoding="utf-8") as f:
+                    dashboard["us_tw_sync"] = json.load(f)
+        except Exception as e:
+            print(f"[dashboard] us_tw_sync merge failed: {e}")
+
         # 全市場族群統計（從 ath_industry_report.json 帶進來）
         try:
             ath_path = os.path.join(os.path.dirname(__file__), "ath_industry_report.json")

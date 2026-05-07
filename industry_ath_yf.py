@@ -18,13 +18,65 @@ NEAR_THRESHOLD = 0.95
 EXACT_THRESHOLD = 0.999
 BATCH = 50
 
-# 科技限定族群（回測證實近半年勝率 53% vs 全市場 35%）
+# 科技限定族群（V3 回測：CAGR +23.6%，PF 3.94）
 ALLOWED_INDUSTRIES = {
     "半導體", "電子零組件", "光電", "電腦及週邊",
     "電子通路", "通信網路", "其他電子",
 }
+MIN_MCAP_BILLIONS = 100  # 市值 ≥ 100 億 NT$ — 砍小型股雜訊
+
+# 美股族群連動加分（昨日漲，TW 對應族群隔日加分）
+US_SECTOR_BOOST = {
+    "QQQ": {"industries": list(ALLOWED_INDUSTRIES), "threshold": 0.0, "bonus": 5},
+    "SMH": {"industries": ["半導體", "其他電子"], "threshold": 0.5, "bonus": 10},
+    "IGV": {"industries": ["通信網路", "電腦及週邊"], "threshold": 0.5, "bonus": 10},
+}
+
 OUTPUT_PATH = os.path.join(os.path.dirname(__file__), "ath_industry_report.json")
 TXT_PATH = os.path.join(os.path.dirname(__file__), "scan_output.txt")
+MCAP_CACHE = os.path.join(os.path.dirname(__file__), "marketcap_cache.json")
+
+
+def load_mcap():
+    """讀取市值快取（億 NT$）"""
+    if not os.path.exists(MCAP_CACHE):
+        return {}
+    try:
+        with io.open(MCAP_CACHE, encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
+def get_us_sector_change():
+    """抓 QQQ/SMH/IGV 昨日漲跌（用於美股連動加分）"""
+    out = {}
+    for tk in US_SECTOR_BOOST.keys():
+        try:
+            df = yf.download(tk, period="5d", auto_adjust=True,
+                             progress=False, threads=False)
+            if df.empty or "Close" not in df.columns: continue
+            cl = df["Close"].dropna()
+            if len(cl) < 2: continue
+            chg = (cl.iloc[-1] / cl.iloc[-2] - 1) * 100
+            out[tk] = float(chg)
+            print(f"  [{tk}] 昨日 {chg:+.2f}%", file=sys.stderr)
+        except Exception as e:
+            print(f"  [{tk}] fail: {e}", file=sys.stderr)
+    return out
+
+
+def us_bonus_for(industry, us_chg):
+    """計算某產業的美股加分"""
+    if not us_chg: return 0, []
+    bonus = 0; notes = []
+    for etf, cfg in US_SECTOR_BOOST.items():
+        chg = us_chg.get(etf)
+        if chg is None: continue
+        if industry in cfg["industries"] and chg >= cfg["threshold"]:
+            bonus += cfg["bonus"]
+            notes.append(f"{etf}+{chg:.1f}%")
+    return bonus, notes
 
 
 def load_universe():
@@ -188,12 +240,26 @@ def main():
         n_up = sum(1 for x in lst if x.get("change_pct", 0) > 0)
         industry_up_ratio[ind] = n_up / len(lst)
 
-    # 對 ATH 股算動能確認分數
-    print("\n[3/3] 對 ATH 股獨立算動能確認分數...")
+    # 🆕 V3: 預載市值 + 美股族群昨日漲跌
+    mcap = load_mcap()
+    print(f"\n[3/3] 載入市值 {len(mcap)} 檔，抓美股族群連動...", file=sys.stderr)
+    us_chg = get_us_sector_change()
+
+    # 對 ATH 股算動能確認分數（含 V3 美股加分 + 市值標記）
     for r in exact:
         ind = r.get("industry") or "未分類"
         r["industry_strong"] = industry_up_ratio.get(ind, 0) >= 0.6
+        # 標記市值
+        mc = mcap.get(r["ticker"])
+        r["market_cap_billions"] = mc
+        r["mcap_pass"] = (mc is not None and mc >= MIN_MCAP_BILLIONS)
+        # 動能基礎分數
         score, notes = momentum_confirm_score(r)
+        # V3: 美股族群連動加分（只對科技族群有效）
+        if ind in ALLOWED_INDUSTRIES:
+            us_b, us_notes = us_bonus_for(ind, us_chg)
+            score = min(score + us_b, 100)
+            notes = notes + us_notes
         r["momentum_score"] = score
         r["momentum_notes"] = notes
         if score >= 80:
@@ -207,16 +273,16 @@ def main():
     high_prob = sorted([r for r in exact if r.get("momentum_score", 0) >= 80],
                        key=lambda x: -x["momentum_score"])
 
-    # 🆕 找最強族群（限定科技族群）：ATH 檔數最多 + 多頭比例 ≥50%
+    # 🆕 V3 找最強族群：科技限定 + 市值 ≥ 100 億
     by_ind_for_pick = defaultdict(list)
     for r in exact:
         ind = r.get("industry") or "未分類"
-        if ind in ALLOWED_INDUSTRIES:           # 🔒 科技限定
+        if ind in ALLOWED_INDUSTRIES and r.get("mcap_pass"):  # 🔒 科技+市值
             by_ind_for_pick[ind].append(r)
     strongest_industry = None
     for ind, lst in sorted(by_ind_for_pick.items(), key=lambda x: -len(x[1])):
         bull_ratio = sum(1 for x in lst if x.get("bullish")) / max(len(lst), 1)
-        if len(lst) >= 5 and bull_ratio >= 0.5:
+        if len(lst) >= 3 and bull_ratio >= 0.5:  # V3: 市值濾後候選變少，3 檔即可
             strongest_industry = ind
             break
 
@@ -229,9 +295,9 @@ def main():
                            -x.get("vol_ratio", 0)))
         tomorrow_top5 = in_industry[:5]
     else:
-        # fallback：科技族群任一動能 ≥80 排序
+        # fallback：科技族群 + 市值合格的任一動能排序
         tech_pool = [r for r in exact
-                     if (r.get("industry") in ALLOWED_INDUSTRIES)]
+                     if r.get("industry") in ALLOWED_INDUSTRIES and r.get("mcap_pass")]
         tomorrow_top5 = sorted(tech_pool,
                                key=lambda x: -x.get("momentum_score", 0))[:5]
 

@@ -22,6 +22,12 @@ def push(message: str) -> bool:
     token   = os.environ.get("LINE_TOKEN", "")
     user_id = os.environ.get("LINE_USER_ID", "")
     debug   = os.environ.get("DEBUG_MODE", "false").lower() == "true"
+    paused  = os.environ.get("LINE_PAUSED", "false").lower() in ("1", "true", "yes")
+
+    # 🔇 暫停模式：完全靜默不推（GitHub Secrets 設 LINE_PAUSED=1 即可）
+    if paused:
+        print(f"[LINE] 🔇 已暫停（LINE_PAUSED=1），跳過推播", file=sys.stderr)
+        return True
 
     if debug:
         print(f"[LINE][DEBUG] 推播內容預覽（未實際發送）：\n{message}", file=sys.stderr)

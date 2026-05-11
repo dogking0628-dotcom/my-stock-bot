@@ -32,7 +32,6 @@ jobs:
         env:
           LINE_TOKEN:           ${{ secrets.LINE_TOKEN }}
           LINE_USER_ID:         ${{ secrets.LINE_USER_ID }}
-          LINE_PAUSED:          "1"   # 🔇 暫停 LINE 推播（要恢復改 0 或刪除）
           # SHIOAJI 暫停（帳戶 ca_required，歷史 K 抓不到）— 設 FORCE_SHIOAJI=1 才會啟用
           SHIOAJI_API_KEY:      ${{ secrets.SHIOAJI_API_KEY }}
           SHIOAJI_SECRET_KEY:   ${{ secrets.SHIOAJI_SECRET_KEY }}

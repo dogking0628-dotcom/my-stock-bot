@@ -27,7 +27,6 @@ jobs:
         env:
           LINE_TOKEN:    ${{ secrets.LINE_TOKEN }}
           LINE_USER_ID:  ${{ secrets.LINE_USER_ID }}
-          LINE_PAUSED:   "1"   # 🔇 暫停推播
         run: python intraday_scan.py
 
       - name: Commit report

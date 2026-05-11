@@ -24,7 +24,6 @@ jobs:
         env:
           LINE_TOKEN:    ${{ secrets.LINE_TOKEN }}
           LINE_USER_ID:  ${{ secrets.LINE_USER_ID }}
-          LINE_PAUSED:   "1"   # 🔇 暫停推播
         run: |
           python weekly_review.py | tee review_output.txt
           # 推 LINE

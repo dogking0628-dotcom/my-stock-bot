@@ -222,8 +222,8 @@ st.markdown("---")
 # ════════════════════════════════════════
 # Tabs
 # ════════════════════════════════════════
-tab1, tab_ind, tab_market, tab_sync, tab2, tab3, tab4, tab5 = st.tabs([
-    "🎯 Top5+候選", "🏆 族群推薦", "🌐 全市場族群", "📡 美台同步", "🇹🇼 篩選", "🇹🇼 0050", "🇺🇸 美股", "⚠️ 警報"
+tab1, tab_ind, tab_market, tab_sync, tab_perf, tab2, tab3, tab4, tab5 = st.tabs([
+    "🎯 Top5+候選", "🏆 族群推薦", "🌐 全市場族群", "📡 美台同步", "📈 績效追蹤", "🇹🇼 篩選", "🇹🇼 0050", "🇺🇸 美股", "⚠️ 警報"
 ])
 
 # ────────────────────────
@@ -458,6 +458,207 @@ with tab_sync:
             st.warning("⚠️ 美股有大漲但台股對應族群昨日未跟進")
         else:
             st.info("⏸ 昨日美股無大漲族群（≥1%）")
+
+
+# ────────────────────────
+# Tab Perf: 績效追蹤（每日 Top 5 後續表現）
+# ────────────────────────
+with tab_perf:
+    st.markdown("### 📈 績效追蹤儀表板")
+    st.caption("追蹤每日 Top 5 推薦的實際後續表現")
+
+    # 從 GitHub 拉 top5_history.json
+    HISTORY_URL = "https://raw.githubusercontent.com/dogking0628-dotcom/my-stock-bot/main/top5_history.json"
+
+    @st.cache_data(ttl=600)
+    def load_history():
+        try:
+            req = urllib.request.Request(HISTORY_URL, headers={"User-Agent":"Mozilla/5.0"})
+            return json.loads(urllib.request.urlopen(req, timeout=15).read())
+        except Exception as e:
+            return None
+
+    @st.cache_data(ttl=600)
+    def fetch_latest_prices(tickers):
+        """批次抓最新收盤"""
+        try:
+            import yfinance as yf
+            yf_codes = " ".join(f"{t}.TW" for t in tickers)
+            df = yf.download(yf_codes, period="3d", auto_adjust=True,
+                            progress=False, threads=True, group_by="ticker")
+            out = {}
+            for t in tickers:
+                try:
+                    yfc = f"{t}.TW"
+                    if len(tickers) == 1:
+                        sub = df
+                    else:
+                        if yfc not in df.columns.get_level_values(0): continue
+                        sub = df[yfc]
+                    cl = sub["Close"].dropna()
+                    if len(cl) > 0:
+                        out[t] = float(cl.iloc[-1])
+                except Exception:
+                    continue
+            return out
+        except Exception:
+            return {}
+
+    hist = load_history()
+    if not hist or not hist.get("records"):
+        st.info("⏸ 尚無選股歷史紀錄（等待 daily scan 累積）")
+    else:
+        records = hist["records"]
+        # 收集所有推薦過的 ticker
+        all_tickers = list(set(p["ticker"] for r in records for p in r.get("picks", [])))
+
+        with st.spinner(f"抓取 {len(all_tickers)} 檔最新報價..."):
+            latest_prices = fetch_latest_prices(all_tickers)
+
+        # 計算每筆推薦的後續表現
+        all_picks = []
+        for r in records:
+            rec_date = r["date"]
+            for p in r.get("picks", []):
+                latest = latest_prices.get(p["ticker"])
+                if latest is None or p.get("rec_close", 0) <= 0:
+                    continue
+                ret = (latest / p["rec_close"] - 1) * 100
+                all_picks.append({
+                    "date": rec_date,
+                    "ticker": p["ticker"],
+                    "name": p["name"],
+                    "industry": p.get("industry", "?"),
+                    "rec_close": p["rec_close"],
+                    "current": latest,
+                    "ret_pct": ret,
+                    "hit": ret > 0,
+                    "score": p.get("momentum_score", 0),
+                    "tier": p.get("tier", "⭐"),
+                })
+
+        if not all_picks:
+            st.warning("無法取得後續價格資料")
+        else:
+            # ── 整體統計 ──
+            n = len(all_picks)
+            wins = sum(1 for p in all_picks if p["hit"])
+            avg_ret = sum(p["ret_pct"] for p in all_picks) / n
+            win_picks = [p for p in all_picks if p["hit"]]
+            lose_picks = [p for p in all_picks if not p["hit"]]
+            avg_win = sum(p["ret_pct"] for p in win_picks)/len(win_picks) if win_picks else 0
+            avg_loss = sum(p["ret_pct"] for p in lose_picks)/len(lose_picks) if lose_picks else 0
+
+            c1, c2, c3, c4 = st.columns(4)
+            c1.metric("總推薦數", f"{n} 筆")
+            c2.metric("勝率", f"{wins/n*100:.0f}%", f"{wins} 勝 {n-wins} 敗")
+            c3.metric("平均報酬", f"{avg_ret:+.2f}%")
+            c4.metric("盈虧比", f"{abs(avg_win/avg_loss):.2f}" if avg_loss else "∞")
+
+            # ── 最佳 / 最差 ──
+            best = max(all_picks, key=lambda x: x["ret_pct"])
+            worst = min(all_picks, key=lambda x: x["ret_pct"])
+            cb, cw = st.columns(2)
+            with cb:
+                st.markdown(f"""
+                <div class="alert-card ok">
+                  <div class="name">🏆 最佳</div>
+                  <div class="meta">{best['ticker']} {best['name']} ({best['industry']})</div>
+                  <div class="meta"><span class="green">{best['ret_pct']:+.2f}%</span> ｜ {best['date']}</div>
+                </div>
+                """, unsafe_allow_html=True)
+            with cw:
+                st.markdown(f"""
+                <div class="alert-card danger">
+                  <div class="name">💀 最差</div>
+                  <div class="meta">{worst['ticker']} {worst['name']} ({worst['industry']})</div>
+                  <div class="meta"><span class="red">{worst['ret_pct']:+.2f}%</span> ｜ {worst['date']}</div>
+                </div>
+                """, unsafe_allow_html=True)
+
+            # ── 各日 Top 5 紀錄表 ──
+            st.markdown("### 📋 每日推薦回顧")
+            for r in reversed(records):
+                rec_date = r["date"]
+                day_picks = [p for p in all_picks if p["date"] == rec_date]
+                if not day_picks: continue
+                d_wins = sum(1 for p in day_picks if p["hit"])
+                d_avg = sum(p["ret_pct"] for p in day_picks) / len(day_picks)
+                tag = "✅" if d_avg > 0 else "❌"
+                with st.expander(
+                    f"{tag} {rec_date} {r.get('industry','?')} "
+                    f"{d_wins}/{len(day_picks)} 勝 ({d_wins/len(day_picks)*100:.0f}%) "
+                    f"平均 {d_avg:+.2f}%",
+                    expanded=(rec_date == records[-1]["date"])
+                ):
+                    for p in day_picks:
+                        emoji = "✅" if p["hit"] else "❌"
+                        color = "green" if p["hit"] else "red"
+                        st.markdown(f"""
+                        <div class="stock-row">
+                          <div class="name">{emoji} {p['ticker']} {p['name']}
+                            <span class="purple">{p['industry']}</span></div>
+                          <div class="meta">
+                            推薦 ${p['rec_close']:.1f} → 現價 ${p['current']:.1f}
+                            ｜ <span class="{color}">{p['ret_pct']:+.2f}%</span>
+                            ｜ {p['tier']} 動能 {p['score']}/100
+                          </div>
+                        </div>
+                        """, unsafe_allow_html=True)
+
+            # ── 族群表現 ──
+            st.markdown("### 🏭 各族群表現")
+            ind_stats = {}
+            for p in all_picks:
+                ind = p["industry"]
+                if ind not in ind_stats:
+                    ind_stats[ind] = {"n": 0, "wins": 0, "ret_sum": 0}
+                ind_stats[ind]["n"] += 1
+                ind_stats[ind]["ret_sum"] += p["ret_pct"]
+                if p["hit"]: ind_stats[ind]["wins"] += 1
+            sorted_ind = sorted(ind_stats.items(),
+                              key=lambda x: -x[1]["ret_sum"]/x[1]["n"])
+            for ind, s in sorted_ind:
+                avg = s["ret_sum"]/s["n"]
+                wr = s["wins"]/s["n"]*100
+                color = "green" if avg > 0 else "red"
+                st.markdown(f"""
+                <div class="stock-row">
+                  <div class="name">🏭 {ind}</div>
+                  <div class="meta">
+                    {s['n']} 檔 ｜ 勝率 {wr:.0f}%
+                    ｜ 平均 <span class="{color}">{avg:+.2f}%</span>
+                  </div>
+                </div>
+                """, unsafe_allow_html=True)
+
+            # ── 訊號表現（Tier） ──
+            st.markdown("### ⭐ 訊號表現（按 Tier）")
+            tier_stats = {}
+            for p in all_picks:
+                t = p["tier"]
+                if t not in tier_stats:
+                    tier_stats[t] = {"n": 0, "wins": 0, "ret_sum": 0}
+                tier_stats[t]["n"] += 1
+                tier_stats[t]["ret_sum"] += p["ret_pct"]
+                if p["hit"]: tier_stats[t]["wins"] += 1
+            for t in ["⭐⭐⭐", "⭐⭐", "⭐"]:
+                if t not in tier_stats: continue
+                s = tier_stats[t]
+                avg = s["ret_sum"]/s["n"]
+                wr = s["wins"]/s["n"]*100
+                color = "green" if avg > 0 else "red"
+                st.markdown(f"""
+                <div class="stock-row">
+                  <div class="name">{t}</div>
+                  <div class="meta">
+                    {s['n']} 檔 ｜ 勝率 {wr:.0f}%
+                    ｜ 平均 <span class="{color}">{avg:+.2f}%</span>
+                  </div>
+                </div>
+                """, unsafe_allow_html=True)
+
+    st.caption("💡 資料來自 top5_history.json + 即時 yfinance 報價，每 10 分鐘更新一次")
 
 
 # ────────────────────────

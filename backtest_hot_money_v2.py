@@ -37,9 +37,23 @@ END_DATE = "2026-05-22"
 
 # ── 策略參數 ──
 TOP_INDUSTRIES = 2          # 取上漲家數 Top N 族群
-VOL_RATIO_MIN = 1.5         # 量增門檻
 RSI_MIN = 55                # RSI 下限
 RSI_MAX = 75                # RSI 上限（避免超買）
+
+# 量增門檻（依市值分層 — 大型藍籌放寬）
+VOL_RATIO_MID = 1.5         # 中型股（100-1000 億）
+VOL_RATIO_LARGE = 1.2       # 大型股（1000-5000 億）
+VOL_RATIO_MEGA = 1.0        # 超大型股（≥ 5000 億，如台積電/聯發科）
+LARGE_CAP_THRESHOLD = 1000  # 億
+MEGA_CAP_THRESHOLD = 5000   # 億
+
+def required_vol_ratio(mc):
+    if mc >= MEGA_CAP_THRESHOLD:
+        return VOL_RATIO_MEGA
+    elif mc >= LARGE_CAP_THRESHOLD:
+        return VOL_RATIO_LARGE
+    else:
+        return VOL_RATIO_MID
 
 # ── 投資組合 ──
 INITIAL = 1_000_000
@@ -115,8 +129,13 @@ def pick_v2(candidates, mcap):
         # 快速多頭（close > MA5 > MA10 > MA20）
         if not c.get("bullish_fast"):
             continue
-        # 量增 ≥ 1.5x
-        if c.get("vol_ratio", 0) < VOL_RATIO_MIN:
+        # 市值
+        mc = mcap.get(c["ticker"])
+        if mc is None or mc < MIN_MCAP:
+            continue
+        # 量增（依市值分層）— 大型藍籌放寬
+        req_vol = required_vol_ratio(mc)
+        if c.get("vol_ratio", 0) < req_vol:
             continue
         # 收長紅 K 或跳空（任一）
         if not (c.get("long_red") or c.get("gap_up")):
@@ -128,14 +147,11 @@ def pick_v2(candidates, mcap):
         # 收盤靠近當日高
         if not c.get("close_near_high"):
             continue
-        # 市值
-        mc = mcap.get(c["ticker"])
-        if mc is None or mc < MIN_MCAP:
-            continue
 
-        # 綜合分：量 + RSI + 漲幅
+        # 綜合分：量 + RSI + 漲幅 + 大型股加分（鼓勵藍籌）
+        size_bonus = 5 if mc >= LARGE_CAP_THRESHOLD else 0
         score = (c.get("vol_ratio", 0) * 10 + rsi +
-                 c.get("change_pct", 0) * 2)
+                 c.get("change_pct", 0) * 2 + size_bonus)
         c["_score"] = score
         picks.append(c)
 

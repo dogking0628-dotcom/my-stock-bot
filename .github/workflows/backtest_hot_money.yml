@@ -48,12 +48,14 @@ jobs:
       - name: Run backtest (~20-30 min)
         run: python backtest_hot_money_radar.py 2>&1 | tee backtest_log.txt
 
-      - name: Notify LINE
-        if: always()
-        env:
-          LINE_TOKEN: ${{ secrets.LINE_TOKEN }}
-          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
-        run: python notify_backtest_result.py
+      # LINE notify disabled — 用戶要求回測結果不推 LINE
+      # 結果在 backtest_hot_money_radar.json + GitHub Actions logs
+      # - name: Notify LINE
+      #   if: always()
+      #   env:
+      #     LINE_TOKEN: ${{ secrets.LINE_TOKEN }}
+      #     LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
+      #   run: python notify_backtest_result.py
 
       - name: Commit results
         if: success()

@@ -359,100 +359,73 @@ def detect_rotation(momentum):
 # LINE 訊息組裝
 # ═════════════════════════════════════════════════
 def build_line_message(today_report, momentum, rising, cooling, real, normal, fake, newsys, rotation_picks=None):
+    """極簡版：今日推薦族群 + 5 檔個股（進場/停損）"""
     rotation_picks = rotation_picks or []
     date = today_report.get("timestamp", dt.date.today().isoformat())
-    regime = today_report.get("market_regime", {})
-    v4_blocked = today_report.get("v4_blocked", False)
 
-    lines = []
-    lines.append(f"📡 {date[5:]} 熱錢輪動雷達")
-    lines.append("")
+    # 候選池：升溫族群裡的真突破 + V4 真突破，去重
+    from collections import Counter
+    seen = set()
+    pool = []
+    for p in (rotation_picks or []) + (real or []):
+        tk = p.get("ticker")
+        if not tk or tk in seen:
+            continue
+        seen.add(tk)
+        pool.append(p)
 
-    # ── 大盤狀態 ──
-    in_stage2 = not v4_blocked
-    lines.append(f"📊 大盤體制：{'Stage 2 ✅' if in_stage2 else 'Stage 4 ⛔ 嚴禁追價'}")
-    lines.append("")
+    # 推薦族群 = pool 中個股最多且 status=rising 的族群
+    # （個股池大 + 動能強 = 真接棒，避免「電腦及週邊動能高但只 1-2 檔可選」）
+    ind_count = Counter(p.get("industry", "?") for p in pool)
+    top_industry = None
+    best_score = -1
+    for ind, cnt in ind_count.items():
+        m = momentum.get(ind, {})
+        if m.get("status") != "rising":
+            continue
+        mom_pct = m.get("momentum_pct", 0) or 0
+        # 加權：個股數 ×2 + 動能 %
+        score = cnt * 2 + mom_pct
+        if score > best_score:
+            best_score = score
+            top_industry = (ind, m)
 
-    # ── 接棒族群（升溫）──
-    if rising:
-        lines.append("🔥 升溫族群（資金進駐）")
-        for ind, m in rising[:5]:
-            trend = f" 連{m['trend_days']}天" if m['trend_days'] >= 2 else ""
-            lines.append(f"  {ind} +{m['momentum_pct']:.0f}%{trend}  {int(m['avg_n'])}→{m['today']}檔")
+    # 推薦族群內優先排到前面
+    if top_industry:
+        in_top = [p for p in pool if p.get("industry") == top_industry[0]]
+        out_top = [p for p in pool if p.get("industry") != top_industry[0]]
+        picks = in_top + out_top
     else:
-        if any(m["status"] == "new" for m in momentum.values()):
-            lines.append("📅 系統歷史累積中（需 5 天）")
-        else:
-            lines.append("😐 無明顯升溫族群（市場觀望）")
+        picks = pool
+
+    lines = [f"📡 {date[5:]} 推薦", ""]
+
+    if top_industry:
+        ind, m = top_industry
+        trend = f" 連{m['trend_days']}天" if m.get('trend_days', 0) >= 2 else ""
+        lines.append(f"🔥 族群：{ind} +{m['momentum_pct']:.0f}%{trend}")
+    elif any(m.get("status") == "new" for m in momentum.values()):
+        lines.append("📅 系統歷史累積中")
+    else:
+        lines.append("😐 無明顯熱錢族群（空手觀望）")
     lines.append("")
 
-    # ── 退潮族群 ──
-    if cooling:
-        lines.append("📉 退潮族群（資金撤離）")
-        for ind, m in cooling[:3]:
-            lines.append(f"  {ind} {m['momentum_pct']:+.0f}%  {int(m['avg_n'])}→{m['today']}檔")
-        lines.append("")
+    if picks:
+        lines.append("🎯 5 檔個股：")
+        for i, p in enumerate(picks[:5], 1):
+            price = p.get("today") or p.get("close", 0)
+            stop = round(price * 0.93, 1)
+            name = p.get("name", "")
+            tk = p.get("ticker", "")
+            ind = p.get("industry", "")
+            lines.append(f"  {i}. {tk} {name} ({ind})")
+            lines.append(f"     進${price} 停${stop}")
 
-    # ── ⭐ 接棒族群真突破候選（核心輸出） ──
-    if rotation_picks:
-        lines.append("━━━━━━━━━━━━━━━━━━━━")
-        lines.append("⭐ 接棒族群真突破 TOP")
-        lines.append("（V4 系統盲點，這裡才是熱錢）")
-        for p in rotation_picks[:6]:
-            stop = round(p['today'] * 0.93, 1)
-            from_high = (p['ratio'] - 1) * 100
-            lines.append(f"  {p['ticker']} {p['name']} ({p['industry']})")
-            lines.append(f"    超高 +{from_high:.0f}% 族群+{p['industry_momentum_pct']:.0f}%")
-            lines.append(f"    進${p['today']} 停${stop}")
-        lines.append("")
-
-    # ── V4 picks 中真突破（族群升溫） ──
-    if real:
-        lines.append("━━━━━━━━━━━━━━━━━━━━")
-        lines.append("✅ V4 推薦中的真突破")
-        for p in real[:5]:
-            stop = round(p['today'] * 0.93, 1)
-            lines.append(f"  {p['ticker']} {p['name']} mom{p['momentum_score']}")
-            lines.append(f"    進${p['today']} 停${stop} {p['tier']}")
-        lines.append("")
-
-    # ── 假突破警示 ──
+    # 假突破警示（V4 推但族群退潮的）— 只顯示族群名，不羅列個股
     if fake:
-        lines.append("━━━━━━━━━━━━━━━━━━━━")
-        lines.append("⚠️ 假突破風險（不建議追）")
-        for p in fake[:5]:
-            lines.append(f"  {p['ticker']} {p['name']} mom{p['momentum_score']}")
-            lines.append(f"    ❌ {p['industry']} 族群退潮 {p['industry_momentum_pct']:+.0f}%")
+        fake_inds = sorted(set(p.get("industry") for p in fake))
         lines.append("")
-
-    # ── 系統剛上線（前 5 天）──
-    if newsys and not real and not fake:
-        lines.append("━━━━━━━━━━━━━━━━━━━━")
-        lines.append("📋 今日 V4 推薦（族群動能尚未累積）")
-        for p in newsys[:5]:
-            lines.append(f"  {p['ticker']} {p['name']} ({p['industry']}) mom{p['momentum_score']}")
-        lines.append("")
-
-    # ── 一般推薦（持平族群）──
-    if normal and not (real and fake):
-        lines.append("━━━━━━━━━━━━━━━━━━━━")
-        lines.append("🟡 一般推薦（族群持平）")
-        for p in normal[:3]:
-            lines.append(f"  {p['ticker']} {p['name']} ({p['industry']}) mom{p['momentum_score']}")
-        lines.append("")
-
-    # ── 行動指引 ──
-    lines.append("━━━━━━━━━━━━━━━━━━━━")
-    if real:
-        lines.append("🎯 優先做真突破，避開假突破")
-    elif newsys:
-        lines.append(f"🎯 系統需 {LOOKBACK_DAYS - len([h for h in load_history()['history'] if h])} 天累積")
-    else:
-        lines.append("🎯 空手觀望，等明確訊號")
-    lines.append("")
-    lines.append("💬 細節問 LINE Bot：")
-    lines.append("  「2327 國巨能進嗎」")
-    lines.append("  「半導體還能追嗎」")
+        lines.append(f"⚠️ 避開：{','.join(fake_inds)}（族群退溫）")
 
     return "\n".join(lines)
 

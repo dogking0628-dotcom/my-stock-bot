@@ -207,7 +207,7 @@ def classify_picks(today_report, momentum):
 # ═════════════════════════════════════════════════
 # ⭐ 主動從升溫族群挖真突破候選（解 V4 盲點）
 # ═════════════════════════════════════════════════
-def find_real_breakouts_from_rising(today_report, momentum, max_picks=6):
+def find_real_breakouts_from_rising(today_report, momentum, max_picks=8):
     """
     V4 只從「ATH 檔數最多」的族群挑 → 常推到「最熱但動能退溫」的族群
     Hot money radar 從「動能升溫」的族群挑 → 真接棒
@@ -238,6 +238,101 @@ def find_real_breakouts_from_rising(today_report, momentum, max_picks=6):
 
     candidates.sort(key=lambda x: -x["rotation_score"])
     return candidates[:max_picks]
+
+
+# ═════════════════════════════════════════════════
+# ⭐ 韌性過濾（用戶指標：3 日修正 < 10% = 強勢）
+# ═════════════════════════════════════════════════
+def add_resilience(picks):
+    """
+    對 picks 加入「3/5/10 日 close-to-close max drawdown」+ 量增 + 連漲天數
+    用戶定義「最熱族群修正都很小」→ 拉回 < 10% 強勢、< 5% 超強勢
+    """
+    if not picks:
+        return picks
+    try:
+        import yfinance as yf
+    except ImportError:
+        print("⚠️ yfinance 未安裝，跳過韌性分析", file=sys.stderr)
+        return picks
+
+    tickers = [f"{p['ticker']}.TW" for p in picks]
+    print(f"      抓 {len(tickers)} 檔最近 15 天 yfinance...")
+    try:
+        import contextlib, io as _io, logging
+        logging.getLogger("yfinance").setLevel(logging.CRITICAL)
+        with contextlib.redirect_stderr(_io.StringIO()):
+            data = yf.download(" ".join(tickers), period="20d", group_by="ticker",
+                               auto_adjust=True, progress=False, threads=True)
+    except Exception as e:
+        print(f"⚠️ yfinance 抓取失敗：{e}", file=sys.stderr)
+        return picks
+
+    def max_dd(prices, n):
+        window = prices[-n:]
+        peak = window[0]
+        m = 0.0
+        for c in window:
+            if c > peak: peak = c
+            dd = (c / peak - 1) * 100
+            if dd < m: m = dd
+        return m
+
+    enriched = []
+    for p in picks:
+        t = f"{p['ticker']}.TW"
+        try:
+            df = data[t] if len(tickers) > 1 else data
+            df = df.dropna(subset=["Close"])
+            if len(df) < 5:
+                enriched.append(p); continue
+            closes = df["Close"].values
+            vols = df["Volume"].values
+            today = float(closes[-1])
+            p3 = max_dd(closes, 3)
+            p5 = max_dd(closes, 5)
+            p10 = max_dd(closes, min(10, len(closes)))
+            rising = 0
+            for i in range(len(closes)-1, 0, -1):
+                if closes[i] > closes[i-1]: rising += 1
+                else: break
+            vg = 0
+            if len(vols) >= 10:
+                rv = vols[-5:].mean()
+                pv = vols[-10:-5].mean()
+                vg = (rv/pv - 1) * 100 if pv > 0 else 0
+            # 韌性等級
+            if p3 >= -5 and p5 >= -5:
+                strength = "⭐⭐⭐ 超強勢"
+            elif p3 >= -10 and p5 >= -10:
+                strength = "⭐⭐ 強勢"
+            elif p3 >= -15:
+                strength = "⭐ 一般"
+            else:
+                strength = "⚠️ 弱勢"
+            enriched.append({**p,
+                "pullback_3d": round(p3, 2),
+                "pullback_5d": round(p5, 2),
+                "pullback_10d": round(p10, 2),
+                "consecutive_rising": rising,
+                "vol_growth_pct": round(vg, 1),
+                "strength": strength,
+            })
+        except Exception as e:
+            enriched.append(p)
+
+    # 重排：韌性 + 連漲 + 量能
+    def resilience_score(p):
+        if "pullback_3d" not in p: return -999
+        # 拉回越小越好（-5% 滿分 100）
+        p3 = p["pullback_3d"]; p5 = p["pullback_5d"]
+        s = max(0, 100 + p3*10) * 0.5 + max(0, 100 + p5*5) * 0.3
+        s += min(p.get("consecutive_rising", 0), 5) * 5
+        s += min(p.get("vol_growth_pct", 0), 100) * 0.1
+        return s
+
+    enriched.sort(key=lambda x: -resilience_score(x))
+    return enriched
 
 
 # ═════════════════════════════════════════════════

@@ -1,0 +1,106 @@
+name: Backtest Hot Money Radar (3 年回測)
+
+on:
+  workflow_dispatch:
+    inputs:
+      start_date:
+        description: "回測起始日（預設 2023-05-01）"
+        required: false
+        default: "2023-05-01"
+      use_resilience:
+        description: "用韌性過濾（3 日拉回 < 10%）"
+        required: false
+        default: "true"
+        type: choice
+        options: ["true", "false"]
+
+permissions:
+  contents: write
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Hot Money Radar Backtest
+        env:
+          BT_START:          ${{ inputs.start_date }}
+          USE_RESILIENCE:    ${{ inputs.use_resilience }}
+        run: |
+          # 動態替換參數
+          sed -i "s|^START_DATE = .*|START_DATE = \"${BT_START}\"|" backtest_hot_money_radar.py
+          sed -i "s|^USE_RESILIENCE = .*|USE_RESILIENCE = ${USE_RESILIENCE^}|" backtest_hot_money_radar.py
+          python backtest_hot_money_radar.py 2>&1 | tee backtest_log.txt
+
+      - name: Push LINE notification with results
+        if: always()
+        env:
+          LINE_TOKEN:   ${{ secrets.LINE_TOKEN }}
+          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
+        run: |
+          python <<'EOF'
+          import os, json, urllib.request
+          token = os.environ["LINE_TOKEN"]
+          user = os.environ["LINE_USER_ID"]
+          try:
+              with open("backtest_hot_money_radar.json", encoding="utf-8") as f:
+                  d = json.load(f)
+              final = d["final_cash"]
+              n = d["n_trades"]
+              trades = d["trades"]
+              total_ret = (final / 1_000_000 - 1) * 100
+              wins = sum(1 for t in trades if t["ret_pct"] > 0)
+              wr = wins / n * 100 if n else 0
+              total_gains = sum(t["ret_pct"] for t in trades if t["ret_pct"] > 0)
+              total_loss = abs(sum(t["ret_pct"] for t in trades if t["ret_pct"] < 0))
+              pf = total_gains / total_loss if total_loss > 0 else 999
+              best = max(trades, key=lambda x: x["ret_pct"]) if trades else {}
+              worst = min(trades, key=lambda x: x["ret_pct"]) if trades else {}
+              msg = f"""📊 Hot Money Radar 回測完成
+
+期間：{d['params']['start']} ~ {d['params']['end']}
+策略：升溫族群 +{d['params']['rising_threshold']}%
+韌性過濾：{d['params']['use_resilience']}
+
+━━━━━━━━━━━━━━━━━━━━
+🏆 績效
+總報酬：{total_ret:+.1f}%
+最終資金：${final:,.0f}
+交易筆數：{n}
+勝率：{wr:.0f}%
+獲利因子：{pf:.2f}
+
+🎯 最佳：{best.get('ticker','-')} {best.get('ret_pct',0):+.1f}%
+💀 最差：{worst.get('ticker','-')} {worst.get('ret_pct',0):+.1f}%
+
+詳細結果在 GitHub Actions 看
+"""
+              body = json.dumps({"to": user, "messages": [{"type":"text","text": msg}]},
+                              ensure_ascii=False).encode("utf-8")
+              req = urllib.request.Request("https://api.line.me/v2/bot/message/push",
+                                          data=body, method="POST",
+                                          headers={"Authorization": f"Bearer {token}",
+                                                  "Content-Type": "application/json"})
+              with urllib.request.urlopen(req, timeout=10) as r:
+                  print(f"LINE notify: {r.status}")
+          except Exception as e:
+              print(f"notify failed: {e}")
+          EOF
+
+      - name: Commit backtest result
+        if: success()
+        run: |
+          git config user.name  "github-actions"
+          git config user.email "github-actions@github.com"
+          git add backtest_hot_money_radar.json backtest_log.txt || true
+          git diff --staged --quiet || git commit -m "feat: hot money radar backtest $(date -u +%Y-%m-%d)"
+          git push

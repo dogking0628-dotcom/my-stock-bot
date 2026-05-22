@@ -323,11 +323,14 @@ def main():
     print(f"   - 同時 {MAX_SLOTS} 檔")
     print()
 
-    bs.START_DATE = START_DATE
-    bs.END_DATE = END_DATE
+    # 保留 bs 原本範圍（2021-01-01 起）抓歷史，但回測 loop 內限定 2 年區間
+    # 必須留 ≥ 504 天歷史才能算 2y ATH，所以 fetch_history 用 5y
+    bs.END_DATE = END_DATE  # 只更新結束日（包含到今天）
     codes = bs.load_universe()
     mcap = load_mcap()
     print(f"[1/4] universe {len(codes)} 檔，市值 {len(mcap)} 檔")
+    print(f"      bs.START_DATE = {bs.START_DATE} (5y history for ATH calc)")
+    print(f"      回測區間: {START_DATE} ~ {END_DATE} ({(pd.Timestamp(END_DATE)-pd.Timestamp(START_DATE)).days/365.25:.1f} 年)")
 
     print("[2/4] 抓 0050 體制...")
     regime = fetch_0050_regime()
@@ -364,7 +367,10 @@ def main():
 
     print(f"\n📊 v2 績效：")
     print(f"  總報酬 {total_ret:+.1f}%  CAGR {cagr:+.1f}%")
-    print(f"  PF {pf:.2f}  勝率 {wins/n*100:.0f}%  ({wins}/{n})")
+    if n > 0:
+        print(f"  PF {pf:.2f}  勝率 {wins/n*100:.0f}%  ({wins}/{n})")
+    else:
+        print(f"  ⚠️ 無交易 — 過濾條件可能過嚴")
     print(f"\n📊 對照組（5/3/2 年）：")
     print(f"  V4 (5年): +226.8% / 24.8% / PF 3.40 / 勝率 46%")
     print(f"  v1 hot_money (3年): +126.3% / 30.6% / PF 3.91 / 勝率 52%")

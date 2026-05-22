@@ -1,0 +1,460 @@
+{
+  "results": [
+    {
+      "code": "3090",
+      "name": "日電貿",
+      "ind": "電子零組件",
+      "today_close": 215.0,
+      "limit_up_count": 6,
+      "events": [
+        {
+          "limit_up_idx": 10,
+          "next_day_change": 3.79,
+          "future_3d_max": 9.95,
+          "event_type": "✅ 隔日小漲/平盤"
+        },
+        {
+          "limit_up_idx": 13,
+          "next_day_change": -2.16,
+          "future_3d_max": 3.88,
+          "event_type": "🟡 隔日小修 <5%"
+        },
+        {
+          "limit_up_idx": 19,
+          "next_day_change": 4.23,
+          "future_3d_max": 25.7,
+          "event_type": "✅ 隔日小漲/平盤"
+        },
+        {
+          "limit_up_idx": 21,
+          "next_day_change": 9.85,
+          "future_3d_max": 32.31,
+          "event_type": "🚀 隔日續漲 5%+"
+        },
+        {
+          "limit_up_idx": 22,
+          "next_day_change": 9.8,
+          "future_3d_max": 20.45,
+          "event_type": "🚀 隔日續漲 5%+"
+        },
+        {
+          "limit_up_idx": 23,
+          "next_day_change": 9.69,
+          "future_3d_max": 9.69,
+          "event_type": "🚀 隔日續漲 5%+"
+        }
+      ],
+      "continuation_score": 100.0,
+      "verdict": "🔥 熱錢續航強（漲停後不修正）"
+    },
+    {
+      "code": "2478",
+      "name": "大毅",
+      "ind": "電子零組件",
+      "today_close": 127.5,
+      "limit_up_count": 3,
+      "events": [
+        {
+          "limit_up_idx": 20,
+          "next_day_change": 4.9,
+          "future_3d_max": 26.36,
+          "event_type": "✅ 隔日小漲/平盤"
+        },
+        {
+          "limit_up_idx": 22,
+          "next_day_change": 9.95,
+          "future_3d_max": 20.85,
+          "event_type": "🚀 隔日續漲 5%+"
+        },
+        {
+          "limit_up_idx": 23,
+          "next_day_change": 9.91,
+          "future_3d_max": 9.91,
+          "event_type": "🚀 隔日續漲 5%+"
+        }
+      ],
+      "continuation_score": 100.0,
+      "verdict": "🔥 熱錢續航強（漲停後不修正）"
+    },
+    {
+      "code": "2327",
+      "name": "國巨*",
+      "ind": "電子零組件",
+      "today_close": 629.0,
+      "limit_up_count": 4,
+      "events": [
+        {
+          "limit_up_idx": 13,
+          "next_day_change": 4.71,
+          "future_3d_max": 12.92,
+          "event_type": "✅ 隔日小漲/平盤"
+        },
+        {
+          "limit_up_idx": 18,
+          "next_day_change": -1.41,
+          "future_3d_max": 8.44,
+          "event_type": "🟡 隔日小修 <5%"
+        },
+        {
+          "limit_up_idx": 20,
+          "next_day_change": -0.8,
+          "future_3d_max": 14.17,
+          "event_type": "🟡 隔日小修 <5%"
+        },
+        {
+          "limit_up_idx": 23,
+          "next_day_change": 9.97,
+          "future_3d_max": 9.97,
+          "event_type": "🚀 隔日續漲 5%+"
+        }
+      ],
+      "continuation_score": 100.0,
+      "verdict": "🔥 熱錢續航強（漲停後不修正）"
+    },
+    {
+      "code": "6924",
+      "name": "榮惠-KY",
+      "ind": "電子零組件",
+      "today_close": 168.5,
+      "limit_up_count": 6,
+      "events": [
+        {
+          "limit_up_idx": 15,
+          "next_day_change": 9.71,
+          "future_3d_max": 19.9,
+          "event_type": "🚀 隔日續漲 5%+"
+        },
+        {
+          "limit_up_idx": 16,
+          "next_day_change": 9.29,
+          "future_3d_max": 16.81,
+          "event_type": "🚀 隔日續漲 5%+"
+        },
+        {
+          "limit_up_idx": 17,
+          "next_day_change": -2.83,
+          "future_3d_max": 17.41,
+          "event_type": "🟡 隔日小修 <5%"
+        },
+        {
+          "limit_up_idx": 19,
+          "next_day_change": 9.85,
+          "future_3d_max": 23.48,
+          "event_type": "🚀 隔日續漲 5%+"
+        },
+        {
+          "limit_up_idx": 20,
+          "next_day_change": 10.0,
+          "future_3d_max": 13.1,
+          "event_type": "🚀 隔日續漲 5%+"
+        },
+        {
+          "limit_up_idx": 21,
+          "next_day_change": 2.19,
+          "future_3d_max": 5.64,
+          "event_type": "✅ 隔日小漲/平盤"
+        }
+      ],
+      "continuation_score": 100.0,
+      "verdict": "🔥 熱錢續航強（漲停後不修正）"
+    },
+    {
+      "code": "2492",
+      "name": "華新科",
+      "ind": "電子零組件",
+      "today_close": 292.5,
+      "limit_up_count": 6,
+      "events": [
+        {
+          "limit_up_idx": 7,
+          "next_day_change": -5.28,
+          "future_3d_max": -2.46,
+          "event_type": "⚠️ 隔日修 5-10%"
+        },
+        {
+          "limit_up_idx": 15,
+          "next_day_change": 9.91,
+          "future_3d_max": 28.28,
+          "event_type": "🚀 隔日續漲 5%+"
+        },
+        {
+          "limit_up_idx": 16,
+          "next_day_change": 6.1,
+          "future_3d_max": 16.71,
+          "event_type": "🚀 隔日續漲 5%+"
+        },
+        {
+          "limit_up_idx": 18,
+          "next_day_change": -6.36,
+          "future_3d_max": 0.0,
+          "event_type": "⚠️ 隔日修 5-10%"
+        },
+        {
+          "limit_up_idx": 22,
+          "next_day_change": 9.92,
+          "future_3d_max": 20.87,
+          "event_type": "🚀 隔日續漲 5%+"
+        },
+        {
+          "limit_up_idx": 23,
+          "next_day_change": 9.96,
+          "future_3d_max": 9.96,
+          "event_type": "🚀 隔日續漲 5%+"
+        }
+      ],
+      "continuation_score": 67.0,
+      "verdict": "✅ 熱錢續航中"
+    },
+    {
+      "code": "3026",
+      "name": "禾伸堂",
+      "ind": "電子零組件",
+      "today_close": 476.5,
+      "limit_up_count": 7,
+      "events": [
+        {
+          "limit_up_idx": 11,
+          "next_day_change": 9.86,
+          "future_3d_max": 32.8,
+          "event_type": "🚀 隔日續漲 5%+"
+        },
+        {
+          "limit_up_idx": 12,
+          "next_day_change": 9.89,
+          "future_3d_max": 20.88,
+          "event_type": "🚀 隔日續漲 5%+"
+        },
+        {
+          "limit_up_idx": 13,
+          "next_day_change": 10.0,
+          "future_3d_max": 10.0,
+          "event_type": "🚀 隔日續漲 5%+"
+        },
+        {
+          "limit_up_idx": 14,
+          "next_day_change": -0.15,
+          "future_3d_max": 0.0,
+          "event_type": "🟡 隔日小修 <5%"
+        },
+        {
+          "limit_up_idx": 18,
+          "next_day_change": -8.53,
+          "future_3d_max": 2.1,
+          "event_type": "⚠️ 隔日修 5-10%"
+        },
+        {
+          "limit_up_idx": 20,
+          "next_day_change": 1.53,
+          "future_3d_max": 20.58,
+          "event_type": "✅ 隔日小漲/平盤"
+        },
+        {
+          "limit_up_idx": 23,
+          "next_day_change": 9.92,
+          "future_3d_max": 9.92,
+          "event_type": "🚀 隔日續漲 5%+"
+        }
+      ],
+      "continuation_score": 86.0,
+      "verdict": "🔥 熱錢續航強（漲停後不修正）"
+    },
+    {
+      "code": "3481",
+      "name": "群創",
+      "ind": "光電",
+      "today_close": 44.650001525878906,
+      "limit_up_count": 4,
+      "events": [
+        {
+          "limit_up_idx": 11,
+          "next_day_change": 3.12,
+          "future_3d_max": 9.17,
+          "event_type": "✅ 隔日小漲/平盤"
+        },
+        {
+          "limit_up_idx": 15,
+          "next_day_change": 9.91,
+          "future_3d_max": 16.1,
+          "event_type": "🚀 隔日續漲 5%+"
+        },
+        {
+          "limit_up_idx": 16,
+          "next_day_change": 5.63,
+          "future_3d_max": 5.63,
+          "event_type": "🚀 隔日續漲 5%+"
+        },
+        {
+          "limit_up_idx": 23,
+          "next_day_change": 9.98,
+          "future_3d_max": 9.98,
+          "event_type": "🚀 隔日續漲 5%+"
+        }
+      ],
+      "continuation_score": 100.0,
+      "verdict": "🔥 熱錢續航強（漲停後不修正）"
+    },
+    {
+      "code": "4916",
+      "name": "事欣科",
+      "ind": "電腦及週邊",
+      "today_close": 98.30000305175781,
+      "limit_up_count": 4,
+      "events": [
+        {
+          "limit_up_idx": 20,
+          "next_day_change": 9.95,
+          "future_3d_max": 32.8,
+          "event_type": "🚀 隔日續漲 5%+"
+        },
+        {
+          "limit_up_idx": 21,
+          "next_day_change": 9.9,
+          "future_3d_max": 20.78,
+          "event_type": "🚀 隔日續漲 5%+"
+        },
+        {
+          "limit_up_idx": 22,
+          "next_day_change": 9.9,
+          "future_3d_max": 9.9,
+          "event_type": "🚀 隔日續漲 5%+"
+        },
+        {
+          "limit_up_idx": 23,
+          "next_day_change": -0.51,
+          "future_3d_max": -0.51,
+          "event_type": "🟡 隔日小修 <5%"
+        }
+      ],
+      "continuation_score": 100.0,
+      "verdict": "🔥 熱錢續航強（漲停後不修正）"
+    },
+    {
+      "code": "4919",
+      "name": "新唐",
+      "ind": "半導體",
+      "today_close": 199.5,
+      "limit_up_count": 7,
+      "events": [
+        {
+          "limit_up_idx": 1,
+          "next_day_change": 2.12,
+          "future_3d_max": 8.83,
+          "event_type": "✅ 隔日小漲/平盤"
+        },
+        {
+          "limit_up_idx": 7,
+          "next_day_change": -3.02,
+          "future_3d_max": 8.72,
+          "event_type": "🟡 隔日小修 <5%"
+        },
+        {
+          "limit_up_idx": 10,
+          "next_day_change": 1.85,
+          "future_3d_max": 9.26,
+          "event_type": "✅ 隔日小漲/平盤"
+        },
+        {
+          "limit_up_idx": 13,
+          "next_day_change": -5.37,
+          "future_3d_max": 3.95,
+          "event_type": "⚠️ 隔日修 5-10%"
+        },
+        {
+          "limit_up_idx": 15,
+          "next_day_change": -1.63,
+          "future_3d_max": -1.63,
+          "event_type": "🟡 隔日小修 <5%"
+        },
+        {
+          "limit_up_idx": 22,
+          "next_day_change": 10.0,
+          "future_3d_max": 20.91,
+          "event_type": "🚀 隔日續漲 5%+"
+        },
+        {
+          "limit_up_idx": 23,
+          "next_day_change": 9.92,
+          "future_3d_max": 9.92,
+          "event_type": "🚀 隔日續漲 5%+"
+        }
+      ],
+      "continuation_score": 86.0,
+      "verdict": "🔥 熱錢續航強（漲停後不修正）"
+    },
+    {
+      "code": "3532",
+      "name": "台勝科",
+      "ind": "半導體",
+      "today_close": 248.5,
+      "limit_up_count": 4,
+      "events": [
+        {
+          "limit_up_idx": 10,
+          "next_day_change": 9.88,
+          "future_3d_max": 26.75,
+          "event_type": "🚀 隔日續漲 5%+"
+        },
+        {
+          "limit_up_idx": 11,
+          "next_day_change": 9.87,
+          "future_3d_max": 15.35,
+          "event_type": "🚀 隔日續漲 5%+"
+        },
+        {
+          "limit_up_idx": 12,
+          "next_day_change": 4.99,
+          "future_3d_max": 6.99,
+          "event_type": "✅ 隔日小漲/平盤"
+        },
+        {
+          "limit_up_idx": 23,
+          "next_day_change": 9.96,
+          "future_3d_max": 9.96,
+          "event_type": "🚀 隔日續漲 5%+"
+        }
+      ],
+      "continuation_score": 100.0,
+      "verdict": "🔥 熱錢續航強（漲停後不修正）"
+    },
+    {
+      "code": "3711",
+      "name": "日月光投控",
+      "ind": "半導體",
+      "today_close": 561.0,
+      "limit_up_count": 1,
+      "events": [
+        {
+          "limit_up_idx": 10,
+          "next_day_change": -0.95,
+          "future_3d_max": 2.86,
+          "event_type": "🟡 隔日小修 <5%"
+        }
+      ],
+      "continuation_score": 100.0,
+      "verdict": "🔥 熱錢續航強（漲停後不修正）"
+    },
+    {
+      "code": "7769",
+      "name": "鴻勁",
+      "ind": "半導體",
+      "today_close": 7730.0,
+      "limit_up_count": 2,
+      "events": [
+        {
+          "limit_up_idx": 15,
+          "next_day_change": 7.68,
+          "future_3d_max": 18.5,
+          "event_type": "🚀 隔日續漲 5%+"
+        },
+        {
+          "limit_up_idx": 23,
+          "next_day_change": 0.72,
+          "future_3d_max": 0.72,
+          "event_type": "✅ 隔日小漲/平盤"
+        }
+      ],
+      "continuation_score": 100.0,
+      "verdict": "🔥 熱錢續航強（漲停後不修正）"
+    }
+  ]
+}

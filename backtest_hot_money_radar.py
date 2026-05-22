@@ -303,12 +303,13 @@ def main():
     print()
 
     print("[1/4] 載入 universe...")
-    # 暫時 override bs 的 START_DATE 影響 fetch_history 範圍
-    bs.START_DATE = START_DATE
+    # 保留 bs.START_DATE = 2021-01-01 抓完整 5y history（504 天才能算 2y ATH）
+    # 只在回測 loop 內限定 START_DATE ~ END_DATE 區間
     bs.END_DATE = END_DATE
     codes = bs.load_universe()
     mcap = load_mcap()
     print(f"      universe: {len(codes)} 檔，市值: {len(mcap)} 檔")
+    print(f"      bs.START_DATE = {bs.START_DATE} (5y for ATH)，回測區間 {START_DATE} ~ {END_DATE}")
 
     print("[2/4] 抓 0050 大盤體制...")
     regime = fetch_0050_regime()

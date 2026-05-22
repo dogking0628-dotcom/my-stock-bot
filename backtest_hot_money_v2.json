@@ -1,5 +1,5 @@
 {
-  "final_cash": 1643908.7716173162,
+  "final_cash": 1711125.4333655157,
   "trades": [
     {
       "ticker": "3005",
@@ -35,17 +35,6 @@
       "hold_days": 2
     },
     {
-      "ticker": "2530",
-      "industry": "建材營造",
-      "entry_date": "2024-04-09",
-      "exit_date": "2024-05-08",
-      "entry": 44.22605117166581,
-      "exit": 44.109712807895775,
-      "ret_pct": -0.26305392565675323,
-      "reason": "跌破20MA",
-      "hold_days": 29
-    },
-    {
       "ticker": "2515",
       "industry": "建材營造",
       "entry_date": "2024-04-22",
@@ -57,24 +46,13 @@
       "hold_days": 16
     },
     {
-      "ticker": "2547",
-      "industry": "建材營造",
-      "entry_date": "2024-04-19",
-      "exit_date": "2024-05-10",
-      "entry": 11.17085665960212,
-      "exit": 10.519222640527975,
-      "ret_pct": -5.833339724344421,
-      "reason": "跌破20MA",
-      "hold_days": 21
-    },
-    {
       "ticker": "2543",
       "industry": "建材營造",
       "entry_date": "2024-05-03",
       "exit_date": "2024-05-14",
-      "entry": 29.028044331439723,
-      "exit": 26.80326983968008,
-      "ret_pct": -7.664224521491558,
+      "entry": 29.02804608223883,
+      "exit": 26.80326789779183,
+      "ret_pct": -7.664236780333134,
       "reason": "跌破20MA",
       "hold_days": 11
     },
@@ -95,8 +73,8 @@
       "entry_date": "2024-05-08",
       "exit_date": "2024-05-31",
       "entry": 47.670317382079006,
-      "exit": 46.68834946003007,
-      "ret_pct": -2.0599147980879473,
+      "exit": 46.68834563802495,
+      "ret_pct": -2.0599228156664595,
       "reason": "跌破20MA",
       "hold_days": 23
     },
@@ -112,24 +90,13 @@
       "hold_days": 14
     },
     {
-      "ticker": "2478",
-      "industry": "電子零組件",
-      "entry_date": "2024-05-27",
-      "exit_date": "2024-06-13",
-      "entry": 48.89879832757968,
-      "exit": 48.5262354044068,
-      "ret_pct": -0.7619060915915132,
-      "reason": "跌破20MA",
-      "hold_days": 17
-    },
-    {
       "ticker": "2451",
       "industry": "半導體",
       "entry_date": "2024-06-11",
       "exit_date": "2024-07-01",
       "entry": 108.68180873030323,
-      "exit": 105.05907660590279,
-      "ret_pct": -3.3333380873245777,
+      "exit": 105.05908447265625,
+      "ret_pct": -3.333330848989513,
       "reason": "跌破20MA",
       "hold_days": 20
     },
@@ -143,17 +110,6 @@
       "ret_pct": 9.613232803892146,
       "reason": "跌破20MA",
       "hold_days": 29
-    },
-    {
-      "ticker": "6449",
-      "industry": "電子零組件",
-      "entry_date": "2024-06-17",
-      "exit_date": "2024-07-22",
-      "entry": 136.75321985880535,
-      "exit": 156.67871149745557,
-      "ret_pct": 14.57040036002284,
-      "reason": "跌破20MA",
-      "hold_days": 35
     },
     {
       "ticker": "2539",
@@ -178,6 +134,17 @@
       "hold_days": 40
     },
     {
+      "ticker": "4958",
+      "industry": "電子零組件",
+      "entry_date": "2024-06-19",
+      "exit_date": "2024-07-23",
+      "entry": 126.07850595150354,
+      "exit": 133.71962327223557,
+      "ret_pct": 6.0606026880356545,
+      "reason": "跌破20MA",
+      "hold_days": 34
+    },
+    {
       "ticker": "8028",
       "industry": "半導體",
       "entry_date": "2024-06-13",
@@ -193,22 +160,11 @@
       "industry": "金融保險",
       "entry_date": "2024-07-30",
       "exit_date": "2024-08-06",
-      "entry": 38.87959010431116,
-      "exit": 36.94460774620041,
-      "ret_pct": -4.976858945578721,
+      "entry": 38.879586249459166,
+      "exit": 36.94460399994883,
+      "ret_pct": -4.976859159701707,
       "reason": "跌破20MA",
       "hold_days": 7
-    },
-    {
-      "ticker": "3645",
-      "industry": "電子零組件",
-      "entry_date": "2024-08-19",
-      "exit_date": "2024-09-05",
-      "entry": 57.292693733063466,
-      "exit": 51.41652273835849,
-      "ret_pct": -10.256405506229239,
-      "reason": "跌破20MA",
-      "hold_days": 17
     },
     {
       "ticker": "8028",
@@ -220,17 +176,6 @@
       "ret_pct": -10.752681684233846,
       "reason": "跌破20MA",
       "hold_days": 10
-    },
-    {
-      "ticker": "8374",
-      "industry": "電機機械",
-      "entry_date": "2024-09-05",
-      "exit_date": "2024-09-09",
-      "entry": 159.2105218695934,
-      "exit": 135.82648699763692,
-      "ret_pct": -14.687493387597804,
-      "reason": "跌破20MA",
-      "hold_days": 4
     },
     {
       "ticker": "4576",
@@ -343,17 +288,6 @@
       "hold_days": 31
     },
     {
-      "ticker": "3605",
-      "industry": "電子零組件",
-      "entry_date": "2025-02-12",
-      "exit_date": "2025-03-04",
-      "entry": 64.86160718794474,
-      "exit": 58.02885612379337,
-      "ret_pct": -10.534353619010107,
-      "reason": "跌破20MA",
-      "hold_days": 20
-    },
-    {
       "ticker": "2891",
       "industry": "金融保險",
       "entry_date": "2025-03-04",
@@ -407,17 +341,6 @@
       "ret_pct": -10.909090909090914,
       "reason": "跌破20MA",
       "hold_days": 18
-    },
-    {
-      "ticker": "3605",
-      "industry": "電子零組件",
-      "entry_date": "2025-09-09",
-      "exit_date": "2025-09-18",
-      "entry": 83.30000305175781,
-      "exit": 74.69999694824219,
-      "ret_pct": -10.324136600777889,
-      "reason": "跌破20MA",
-      "hold_days": 9
     },
     {
       "ticker": "2449",
@@ -486,26 +409,15 @@
       "hold_days": 23
     },
     {
-      "ticker": "3135",
+      "ticker": "3711",
       "industry": "半導體",
-      "entry_date": "2025-10-13",
-      "exit_date": "2025-11-05",
-      "entry": 40.47189341329672,
-      "exit": 40.08085840132454,
-      "ret_pct": -0.9661890734365963,
-      "reason": "跌破20MA",
-      "hold_days": 23
-    },
-    {
-      "ticker": "2313",
-      "industry": "電子零組件",
       "entry_date": "2025-10-17",
-      "exit_date": "2025-11-05",
-      "entry": 88.0,
-      "exit": 82.5,
-      "ret_pct": -6.25,
+      "exit_date": "2025-11-19",
+      "entry": 191.5,
+      "exit": 211.0,
+      "ret_pct": 10.182767624020883,
       "reason": "跌破20MA",
-      "hold_days": 19
+      "hold_days": 33
     },
     {
       "ticker": "8131",
@@ -519,26 +431,26 @@
       "hold_days": 17
     },
     {
-      "ticker": "2421",
-      "industry": "電子零組件",
-      "entry_date": "2025-11-10",
-      "exit_date": "2025-11-27",
-      "entry": 173.0,
-      "exit": 171.5,
-      "ret_pct": -0.8670520231213841,
+      "ticker": "6770",
+      "industry": "半導體",
+      "entry_date": "2025-11-13",
+      "exit_date": "2025-11-25",
+      "entry": 36.900001525878906,
+      "exit": 33.599998474121094,
+      "ret_pct": -8.943097331428119,
       "reason": "跌破20MA",
-      "hold_days": 17
+      "hold_days": 12
     },
     {
       "ticker": "2451",
       "industry": "半導體",
-      "entry_date": "2025-11-10",
+      "entry_date": "2025-10-17",
       "exit_date": "2025-12-03",
-      "entry": 163.0,
+      "entry": 141.0,
       "exit": 177.0,
-      "ret_pct": 8.588957055214719,
+      "ret_pct": 25.531914893617014,
       "reason": "跌破20MA",
-      "hold_days": 23
+      "hold_days": 47
     },
     {
       "ticker": "8039",
@@ -552,6 +464,28 @@
       "hold_days": 22
     },
     {
+      "ticker": "2472",
+      "industry": "電子零組件",
+      "entry_date": "2026-01-05",
+      "exit_date": "2026-01-09",
+      "entry": 119.0,
+      "exit": 107.0,
+      "ret_pct": -10.084033613445376,
+      "reason": "跌破20MA",
+      "hold_days": 4
+    },
+    {
+      "ticker": "2472",
+      "industry": "電子零組件",
+      "entry_date": "2026-01-14",
+      "exit_date": "2026-01-30",
+      "entry": 121.5,
+      "exit": 111.0,
+      "ret_pct": -8.64197530864198,
+      "reason": "跌破20MA",
+      "hold_days": 16
+    },
+    {
       "ticker": "8110",
       "industry": "半導體",
       "entry_date": "2025-11-07",
@@ -561,17 +495,6 @@
       "ret_pct": 178.4905775538031,
       "reason": "跌破20MA",
       "hold_days": 88
-    },
-    {
-      "ticker": "3135",
-      "industry": "半導體",
-      "entry_date": "2025-11-28",
-      "exit_date": "2026-02-03",
-      "entry": 57.384058539086254,
-      "exit": 117.5,
-      "ret_pct": 104.76070008182971,
-      "reason": "跌破20MA",
-      "hold_days": 67
     },
     {
       "ticker": "2344",
@@ -585,6 +508,17 @@
       "hold_days": 35
     },
     {
+      "ticker": "6770",
+      "industry": "半導體",
+      "entry_date": "2025-12-23",
+      "exit_date": "2026-03-05",
+      "entry": 41.95000076293945,
+      "exit": 66.4000015258789,
+      "ret_pct": 58.28367179563845,
+      "reason": "跌破20MA",
+      "hold_days": 72
+    },
+    {
       "ticker": "4958",
       "industry": "電子零組件",
       "entry_date": "2026-02-05",
@@ -594,17 +528,6 @@
       "ret_pct": -5.037783375314864,
       "reason": "跌破20MA",
       "hold_days": 28
-    },
-    {
-      "ticker": "6770",
-      "industry": "半導體",
-      "entry_date": "2026-02-25",
-      "exit_date": "2026-03-05",
-      "entry": 74.69999694824219,
-      "exit": 66.4000015258789,
-      "ret_pct": -11.111105437011126,
-      "reason": "跌破20MA",
-      "hold_days": 8
     },
     {
       "ticker": "2313",
@@ -651,17 +574,6 @@
       "hold_days": 7
     },
     {
-      "ticker": "4989",
-      "industry": "電子零組件",
-      "entry_date": "2026-03-19",
-      "exit_date": "2026-03-25",
-      "entry": 76.0,
-      "exit": 68.19999694824219,
-      "ret_pct": -10.263161910207652,
-      "reason": "跌破20MA",
-      "hold_days": 6
-    },
-    {
       "ticker": "8271",
       "industry": "半導體",
       "entry_date": "2026-03-12",
@@ -673,15 +585,15 @@
       "hold_days": 15
     },
     {
-      "ticker": "2369",
+      "ticker": "2337",
       "industry": "半導體",
-      "entry_date": "2026-03-23",
+      "entry_date": "2026-03-19",
       "exit_date": "2026-04-01",
-      "entry": 35.79999923706055,
-      "exit": 29.649999618530273,
-      "ret_pct": -17.178770250262264,
+      "entry": 139.5,
+      "exit": 125.0,
+      "ret_pct": -10.39426523297491,
       "reason": "跌破20MA",
-      "hold_days": 9
+      "hold_days": 13
     },
     {
       "ticker": "3715",
@@ -739,7 +651,7 @@
       "hold_days": 7
     }
   ],
-  "n_trades": 67,
+  "n_trades": 59,
   "version": "v2 真版 (用戶 3 步驟流程)",
   "params": {
     "start": "2023-05-22",
@@ -751,7 +663,7 @@
     "rsi_min": 55,
     "rsi_max": 75,
     "max_slots": 5,
-    "min_mcap": 100
+    "min_mcap": 200
   },
   "daily_top_industries": [
     {

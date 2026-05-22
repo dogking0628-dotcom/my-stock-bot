@@ -28,10 +28,11 @@ jobs:
       - name: Run US-TW sector sync scan - V5c 資訊參考
         run: python us_tw_sector_sync.py || echo "sync scan failed (non-fatal)"
 
-      - name: Run daily scan
+      - name: Run daily scan (V4 完整日報 — 計算但 LINE 暫停，僅 hot_money_radar 推播)
         env:
           LINE_TOKEN:           ${{ secrets.LINE_TOKEN }}
           LINE_USER_ID:         ${{ secrets.LINE_USER_ID }}
+          LINE_PAUSED:          "1"   # ← 暫停 V4 LINE 推（state 仍會更新）
           # SHIOAJI 暫停（帳戶 ca_required，歷史 K 抓不到）— 設 FORCE_SHIOAJI=1 才會啟用
           SHIOAJI_API_KEY:      ${{ secrets.SHIOAJI_API_KEY }}
           SHIOAJI_SECRET_KEY:   ${{ secrets.SHIOAJI_SECRET_KEY }}

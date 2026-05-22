@@ -272,7 +272,7 @@ def main():
     print(f"📊 策略：用戶實際 3 步驟流程")
     print(f"   1. ATH 池")
     print(f"   2. 族群當日上漲家數 Top {TOP_INDUSTRIES}")
-    print(f"   3. 最強線型 (多頭+快速多頭+量{VOL_RATIO_MIN}x+長紅/跳空+RSI{RSI_MIN}-{RSI_MAX}+收高)")
+    print(f"   3. 最強線型 (多頭+快速多頭+量{VOL_RATIO_MID}/{VOL_RATIO_LARGE}/{VOL_RATIO_MEGA}x (中/大/超大)+長紅/跳空+RSI{RSI_MIN}-{RSI_MAX}+收高)")
     print(f"   出場: 跌破 20MA / 從峰值 -30%")
     print(f"   同時 {MAX_SLOTS} 檔, 市值 ≥ {MIN_MCAP} 億")
     print()
@@ -374,7 +374,7 @@ def main():
            "params": {
                "start": START_DATE, "end": END_DATE,
                "top_industries": TOP_INDUSTRIES,
-               "vol_ratio_min": VOL_RATIO_MIN,
+               "vol_ratio_mid": VOL_RATIO_MID, "vol_ratio_large": VOL_RATIO_LARGE, "vol_ratio_mega": VOL_RATIO_MEGA,
                "rsi_min": RSI_MIN, "rsi_max": RSI_MAX,
                "max_slots": MAX_SLOTS, "min_mcap": MIN_MCAP,
            },

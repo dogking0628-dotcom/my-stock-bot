@@ -38,16 +38,21 @@ jobs:
           SHIOAJI_SECRET_KEY:   ${{ secrets.SHIOAJI_SECRET_KEY }}
         run: python daily_scan.py
 
-      - name: Run Hot Money Radar - 熱錢輪動雷達 + 假突破過濾 + 早盤推播
+      - name: Run Hot Money Radar - 內部訊號 (不推 LINE)
+        env:
+          LINE_PAUSED:          "1"
+        run: python hot_money_radar.py || echo "hot money radar failed (non-fatal)"
+
+      - name: Run Daily V2 Picker - 每日推播 (V2 原版策略)
         env:
           LINE_TOKEN:           ${{ secrets.LINE_TOKEN }}
           LINE_USER_ID:         ${{ secrets.LINE_USER_ID }}
-        run: python hot_money_radar.py || echo "hot money radar failed (non-fatal)"
+        run: python daily_v2_picker.py || echo "daily v2 picker failed (non-fatal)"
 
       - name: Commit state
         run: |
           git config user.name  "github-actions"
           git config user.email "github-actions@github.com"
-          git add state.json dashboard_data.json tw_top5_state.json capital_cache.json sp500_universe.json tw_universe.json ath_industry_report.json scan_output.txt marketcap_cache.json top5_history.json daily_review.json us_tw_sync_report.json industry_heat_history.json hot_money_signal.json || true
+          git add state.json dashboard_data.json tw_top5_state.json capital_cache.json sp500_universe.json tw_universe.json ath_industry_report.json scan_output.txt marketcap_cache.json top5_history.json daily_review.json us_tw_sync_report.json industry_heat_history.json hot_money_signal.json daily_v2_signal.json || true
           git diff --staged --quiet || git commit -m "chore: update state $(date -u +%Y-%m-%d)"
           git push

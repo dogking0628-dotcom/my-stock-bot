@@ -59,7 +59,7 @@ def required_vol_ratio(mc):
 INITIAL = 1_000_000
 MAX_SLOTS = 5
 PER_SLOT = INITIAL / MAX_SLOTS
-MIN_MCAP = 200              # 100 億以上
+MIN_MCAP = 100              # 100 億以上
 
 
 def load_mcap():

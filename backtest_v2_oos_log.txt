@@ -2,9 +2,9 @@
 📊 策略：用戶實際 3 步驟流程
    1. ATH 池
    2. 族群當日上漲家數 Top 2
-   3. 最強線型 (多頭+快速多頭+量1.5x+長紅/跳空+RSI55-75+收高)
+   3. 最強線型 (多頭+快速多頭+量1.5/1.2/1.0x (中/大/超大)+長紅/跳空+RSI55-75+收高)
    出場: 跌破 20MA / 從峰值 -30%
-   同時 5 檔, 市值 ≥ 100 億
+   同時 5 檔, 市值 ≥ 200 億
 
 [1/4] universe 1962 檔, 市值 1078 檔
       bs.START_DATE = 2016-01-01 (5y for ATH)
@@ -38,1066 +38,1066 @@ $2762.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) 
 1 Failed download:
 ['2762.TW']: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
   [550/1962] 已收 542 檔
-$3717.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 $3716.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$3717.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 
 2 Failed downloads:
-['3717.TW', '3716.TW']: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$4585.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+['3716.TW', '3717.TW']: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 $4178.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$4441.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 $4169.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 $4771.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$4585.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$4441.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 $4736.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 $4569.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 
 7 Failed downloads:
-['4585.TW', '4178.TW', '4441.TW', '4169.TW', '4771.TW', '4736.TW', '4569.TW']: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+['4178.TW', '4169.TW', '4771.TW', '4585.TW', '4441.TW', '4736.TW', '4569.TW']: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 $4949.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 
 1 Failed download:
 ['4949.TW']: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
   [800/1962] 已收 778 檔
-$6272.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 $6526.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6272.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 
 2 Failed downloads:
-['6272.TW', '6526.TW']: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6722.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+['6526.TW', '6272.TW']: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 $6589.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6614.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6657.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6658.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6794.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 $6757.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6614.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6794.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6722.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6658.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6657.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 
 7 Failed downloads:
-['6722.TW', '6589.TW', '6614.TW', '6657.TW', '6658.TW', '6794.TW', '6757.TW']: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$7711.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6902.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6890.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6952.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$7769.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+['6589.TW', '6757.TW', '6614.TW', '6794.TW', '6722.TW', '6658.TW', '6657.TW']: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6863.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 $6901.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$7736.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6965.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6933.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6957.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6862.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6934.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6885.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6909.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6906.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$7750.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6937.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$7732.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6831.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6994.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$7749.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 $6838.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6805.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$7705.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$7780.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6944.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6962.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6916.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$7760.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6918.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$7721.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6923.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 $6914.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 $7722.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6887.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 $7765.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6863.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6928.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6936.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6937.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6902.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$7705.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$7711.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$7736.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6805.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6916.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6994.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$7721.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$7732.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6965.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$7749.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6957.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6934.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$7769.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6962.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$7760.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 $6958.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6944.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6923.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6909.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6936.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6885.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$7780.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6933.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6890.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6831.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6952.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$7750.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6928.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6887.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6918.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6862.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6906.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 
 40 Failed downloads:
-['7711.TW', '6902.TW', '6890.TW', '6952.TW', '7769.TW', '6901.TW', '7736.TW', '6965.TW', '6933.TW', '6957.TW', '6862.TW', '6934.TW', '6885.TW', '6909.TW', '6906.TW', '7750.TW', '6937.TW', '7732.TW', '6831.TW', '6994.TW', '7749.TW', '6838.TW', '6805.TW', '7705.TW', '7780.TW', '6944.TW', '6962.TW', '6916.TW', '7760.TW', '6918.TW', '7721.TW', '6923.TW', '6914.TW', '7722.TW', '6887.TW', '7765.TW', '6863.TW', '6928.TW', '6936.TW', '6958.TW']: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+['6863.TW', '6901.TW', '6838.TW', '6914.TW', '7722.TW', '7765.TW', '6937.TW', '6902.TW', '7705.TW', '7711.TW', '7736.TW', '6805.TW', '6916.TW', '6994.TW', '7721.TW', '7732.TW', '6965.TW', '7749.TW', '6957.TW', '6934.TW', '7769.TW', '6962.TW', '7760.TW', '6958.TW', '6944.TW', '6923.TW', '6909.TW', '6936.TW', '6885.TW', '7780.TW', '6933.TW', '6890.TW', '6831.TW', '6952.TW', '7750.TW', '6928.TW', '6887.TW', '6918.TW', '6862.TW', '6906.TW']: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$7822.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 $7799.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 $7795.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$7821.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 $7791.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$7822.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 $7786.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 $7788.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$7821.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 
 7 Failed downloads:
-['7799.TW', '7795.TW', '7821.TW', '7791.TW', '7822.TW', '7786.TW', '7788.TW']: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+['7822.TW', '7799.TW', '7795.TW', '7791.TW', '7786.TW', '7788.TW', '7821.TW']: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
   [1050/1962] 已收 966 檔
+$1268.TW: possibly delisted; no timezone found
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: 1584.TW"}}}
+$6924.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: 1784.TW"}}}
 $1584.TW: possibly delisted; no timezone found
-$7610.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: 1569.TW"}}}
-HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: 1580.TW"}}}
-$1569.TW: possibly delisted; no timezone found
-$1781.TW: possibly delisted; no timezone found
-$6949.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$4590.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$1599.TW: possibly delisted; no timezone found
 $1593.TW: possibly delisted; no timezone found
-$1580.TW: possibly delisted; no timezone found
-$1259.TW: possibly delisted; no timezone found
-$1336.TW: possibly delisted; no timezone found
-$6921.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$2432.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$7740.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$7730.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6969.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$8487.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$1595.TW: possibly delisted; no timezone found
-$6534.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6908.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$1240.TW: possibly delisted; no timezone found
-$7823.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$1742.TW: possibly delisted; no timezone found
-$1586.TW: possibly delisted; no timezone found
-$1570.TW: possibly delisted; no timezone found
 $1294.TW: possibly delisted; no timezone found
 $1784.TW: possibly delisted; no timezone found
-$2258.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$1777.TW: possibly delisted; no timezone found
-$6771.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6921.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 $6988.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$1570.TW: possibly delisted; no timezone found
+$1295.TW: possibly delisted; no timezone found
+$6969.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$7631.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$7740.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$1586.TW: possibly delisted; no timezone found
+$7823.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6949.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$1777.TW: possibly delisted; no timezone found
+$1565.TW: possibly delisted; no timezone found
+$1336.TW: possibly delisted; no timezone found
+$8487.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6955.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$7730.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 $1591.TW: possibly delisted; no timezone found
+$1742.TW: possibly delisted; no timezone found
+$1595.TW: possibly delisted; no timezone found
+$1240.TW: possibly delisted; no timezone found
+$1781.TW: possibly delisted; no timezone found
+$1259.TW: possibly delisted; no timezone found
+$6951.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 $1264.TW: possibly delisted; no timezone found
 $3150.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$7631.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$8162.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6955.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$6924.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$1268.TW: possibly delisted; no timezone found
-$1565.TW: possibly delisted; no timezone found
-$1295.TW: possibly delisted; no timezone found
+$2432.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6534.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$2258.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$1569.TW: possibly delisted; no timezone found
 $2254.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$1599.TW: possibly delisted; no timezone found
+$6771.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 $1785.TW: possibly delisted; no timezone found
-$6951.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$8162.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$4590.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$1580.TW: possibly delisted; no timezone found
+$7610.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
+$6908.TW: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 
 44 Failed downloads:
-['1584.TW', '1569.TW', '1781.TW', '1593.TW', '1580.TW', '1259.TW', '1336.TW', '1595.TW', '1240.TW', '1742.TW', '1586.TW', '1570.TW', '1294.TW', '1784.TW', '1777.TW', '1591.TW', '1264.TW', '1268.TW', '1565.TW', '1295.TW', '1599.TW', '1785.TW']: possibly delisted; no timezone found
-['7610.TW', '6949.TW', '4590.TW', '6921.TW', '2432.TW', '7740.TW', '7730.TW', '6969.TW', '8487.TW', '6534.TW', '6908.TW', '7823.TW', '2258.TW', '6771.TW', '6988.TW', '3150.TW', '7631.TW', '8162.TW', '6955.TW', '6924.TW', '2254.TW', '6951.TW']: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
-$1788.TW: possibly delisted; no timezone found
+['1268.TW', '1584.TW', '1599.TW', '1593.TW', '1294.TW', '1784.TW', '1570.TW', '1295.TW', '1586.TW', '1777.TW', '1565.TW', '1336.TW', '1591.TW', '1742.TW', '1595.TW', '1240.TW', '1781.TW', '1259.TW', '1264.TW', '1569.TW', '1785.TW', '1580.TW']: possibly delisted; no timezone found
+['6924.TW', '6921.TW', '6988.TW', '6969.TW', '7631.TW', '7740.TW', '7823.TW', '6949.TW', '8487.TW', '6955.TW', '7730.TW', '6951.TW', '3150.TW', '2432.TW', '6534.TW', '2258.TW', '2254.TW', '6771.TW', '8162.TW', '4590.TW', '7610.TW', '6908.TW']: possibly delisted; no price data found  (1d 2016-01-01 -> 2022-12-31) (Yahoo error = "Data doesn't exist for startDate = 1451577600, endDate = 1672416000")
 $2745.TW: possibly delisted; no timezone found
-$2948.TW: possibly delisted; no timezone found
-$2926.TW: possibly delisted; no timezone found
-$2916.TW: possibly delisted; no timezone found
-$3066.TW: possibly delisted; no timezone found
-$2752.TW: possibly delisted; no timezone found
-$2736.TW: possibly delisted; no timezone found
-$2073.TW: possibly delisted; no timezone found
-$2949.TW: possibly delisted; no timezone found
-$2751.TW: possibly delisted; no timezone found
-$2719.TW: possibly delisted; no timezone found
-$2937.TW: possibly delisted; no timezone found
-$1796.TW: possibly delisted; no timezone found
-$2221.TW: possibly delisted; no timezone found
 $2947.TW: possibly delisted; no timezone found
-$2732.TW: possibly delisted; no timezone found
-$2743.TW: possibly delisted; no timezone found
-$2734.TW: possibly delisted; no timezone found
-$2754.TW: possibly delisted; no timezone found
+$1788.TW: possibly delisted; no timezone found
 $2756.TW: possibly delisted; no timezone found
-$2061.TW: possibly delisted; no timezone found
-$2924.TW: possibly delisted; no timezone found
-$2755.TW: possibly delisted; no timezone found
-$1813.TW: possibly delisted; no timezone found
-$2067.TW: possibly delisted; no timezone found
-$2724.TW: possibly delisted; no timezone found
-$2726.TW: possibly delisted; no timezone found
 $2065.TW: possibly delisted; no timezone found
-$1799.TW: possibly delisted; no timezone found
-$3067.TW: possibly delisted; no timezone found
-$2063.TW: possibly delisted; no timezone found
-$2641.TW: possibly delisted; no timezone found
-$2035.TW: possibly delisted; no timezone found
-$2941.TW: possibly delisted; no timezone found
-$2718.TW: possibly delisted; no timezone found
-$2740.TW: possibly delisted; no timezone found
-$2640.TW: possibly delisted; no timezone found
-$3073.TW: possibly delisted; no timezone found
-$2596.TW: possibly delisted; no timezone found
-$1815.TW: possibly delisted; no timezone found
-$2070.TW: possibly delisted; no timezone found
-$3064.TW: possibly delisted; no timezone found
-$3071.TW: possibly delisted; no timezone found
 $2230.TW: possibly delisted; no timezone found
-$2066.TW: possibly delisted; no timezone found
-$2729.TW: possibly delisted; no timezone found
-$2064.TW: possibly delisted; no timezone found
 $2235.TW: possibly delisted; no timezone found
+$2061.TW: possibly delisted; no timezone found
+$1815.TW: possibly delisted; no timezone found
+$2755.TW: possibly delisted; no timezone found
+$2948.TW: possibly delisted; no timezone found
+$2916.TW: possibly delisted; no timezone found
+$2729.TW: possibly delisted; no timezone found
+$2754.TW: possibly delisted; no timezone found
+$2724.TW: possibly delisted; no timezone found
+$2924.TW: possibly delisted; no timezone found
+$2926.TW: possibly delisted; no timezone found
+$1796.TW: possibly delisted; no timezone found
+$2064.TW: possibly delisted; no timezone found
+$1799.TW: possibly delisted; no timezone found
+$2736.TW: possibly delisted; no timezone found
+$2751.TW: possibly delisted; no timezone found
+$3073.TW: possibly delisted; no timezone found
+$2949.TW: possibly delisted; no timezone found
 $2643.TW: possibly delisted; no timezone found
+$3067.TW: possibly delisted; no timezone found
+$2734.TW: possibly delisted; no timezone found
+$2732.TW: possibly delisted; no timezone found
+$2640.TW: possibly delisted; no timezone found
+$2070.TW: possibly delisted; no timezone found
+$3066.TW: possibly delisted; no timezone found
+$2073.TW: possibly delisted; no timezone found
+$3064.TW: possibly delisted; no timezone found
+$2718.TW: possibly delisted; no timezone found
+$2752.TW: possibly delisted; no timezone found
+$2035.TW: possibly delisted; no timezone found
+$2719.TW: possibly delisted; no timezone found
+$1813.TW: possibly delisted; no timezone found
+$2596.TW: possibly delisted; no timezone found
+$2740.TW: possibly delisted; no timezone found
+$2937.TW: possibly delisted; no timezone found
+$2063.TW: possibly delisted; no timezone found
+$3071.TW: possibly delisted; no timezone found
+$2221.TW: possibly delisted; no timezone found
+$2941.TW: possibly delisted; no timezone found
+$2726.TW: possibly delisted; no timezone found
+$2066.TW: possibly delisted; no timezone found
+$2743.TW: possibly delisted; no timezone found
+$2067.TW: possibly delisted; no timezone found
+$2641.TW: possibly delisted; no timezone found
 
 50 Failed downloads:
-['1788.TW', '2745.TW', '2948.TW', '2926.TW', '2916.TW', '3066.TW', '2752.TW', '2736.TW', '2073.TW', '2949.TW', '2751.TW', '2719.TW', '2937.TW', '1796.TW', '2221.TW', '2947.TW', '2732.TW', '2743.TW', '2734.TW', '2754.TW', '2756.TW', '2061.TW', '2924.TW', '2755.TW', '1813.TW', '2067.TW', '2724.TW', '2726.TW', '2065.TW', '1799.TW', '3067.TW', '2063.TW', '2641.TW', '2035.TW', '2941.TW', '2718.TW', '2740.TW', '2640.TW', '3073.TW', '2596.TW', '1815.TW', '2070.TW', '3064.TW', '3071.TW', '2230.TW', '2066.TW', '2729.TW', '2064.TW', '2235.TW', '2643.TW']: possibly delisted; no timezone found
-$3207.TW: possibly delisted; no timezone found
-$3178.TW: possibly delisted; no timezone found
-$3232.TW: possibly delisted; no timezone found
-$3176.TW: possibly delisted; no timezone found
-$3115.TW: possibly delisted; no timezone found
-$3118.TW: possibly delisted; no timezone found
-$3122.TW: possibly delisted; no timezone found
-$3163.TW: possibly delisted; no timezone found
-$3259.TW: possibly delisted; no timezone found
-$3162.TW: possibly delisted; no timezone found
-$3088.TW: possibly delisted; no timezone found
-$3141.TW: possibly delisted; no timezone found
-$3086.TW: possibly delisted; no timezone found
-$3252.TW: possibly delisted; no timezone found
-$3078.TW: possibly delisted; no timezone found
-$3114.TW: possibly delisted; no timezone found
-$3265.TW: possibly delisted; no timezone found
-$3105.TW: possibly delisted; no timezone found
+['2745.TW', '2947.TW', '1788.TW', '2756.TW', '2065.TW', '2230.TW', '2235.TW', '2061.TW', '1815.TW', '2755.TW', '2948.TW', '2916.TW', '2729.TW', '2754.TW', '2724.TW', '2924.TW', '2926.TW', '1796.TW', '2064.TW', '1799.TW', '2736.TW', '2751.TW', '3073.TW', '2949.TW', '2643.TW', '3067.TW', '2734.TW', '2732.TW', '2640.TW', '2070.TW', '3066.TW', '2073.TW', '3064.TW', '2718.TW', '2752.TW', '2035.TW', '2719.TW', '1813.TW', '2596.TW', '2740.TW', '2937.TW', '2063.TW', '3071.TW', '2221.TW', '2941.TW', '2726.TW', '2066.TW', '2743.TW', '2067.TW', '2641.TW']: possibly delisted; no timezone found
 $3218.TW: possibly delisted; no timezone found
-$3171.TW: possibly delisted; no timezone found
-$3228.TW: possibly delisted; no timezone found
-$3206.TW: possibly delisted; no timezone found
-$3260.TW: possibly delisted; no timezone found
-$3081.TW: possibly delisted; no timezone found
-$3226.TW: possibly delisted; no timezone found
-$3211.TW: possibly delisted; no timezone found
-$3147.TW: possibly delisted; no timezone found
-$3128.TW: possibly delisted; no timezone found
-$3268.TW: possibly delisted; no timezone found
-$3224.TW: possibly delisted; no timezone found
+$3118.TW: possibly delisted; no timezone found
 $3236.TW: possibly delisted; no timezone found
-$3221.TW: possibly delisted; no timezone found
-$3219.TW: possibly delisted; no timezone found
-$3188.TW: possibly delisted; no timezone found
-$3227.TW: possibly delisted; no timezone found
-$3191.TW: possibly delisted; no timezone found
-$3217.TW: possibly delisted; no timezone found
-$3131.TW: possibly delisted; no timezone found
-$3205.TW: possibly delisted; no timezone found
-$3230.TW: possibly delisted; no timezone found
-$3234.TW: possibly delisted; no timezone found
+$3259.TW: possibly delisted; no timezone found
 $3085.TW: possibly delisted; no timezone found
-$3264.TW: possibly delisted; no timezone found
-$3158.TW: possibly delisted; no timezone found
-$3083.TW: possibly delisted; no timezone found
+$3227.TW: possibly delisted; no timezone found
+$3141.TW: possibly delisted; no timezone found
 $3213.TW: possibly delisted; no timezone found
-$3095.TW: possibly delisted; no timezone found
-$3093.TW: possibly delisted; no timezone found
+$3265.TW: possibly delisted; no timezone found
+$3219.TW: possibly delisted; no timezone found
+$3226.TW: possibly delisted; no timezone found
+$3081.TW: possibly delisted; no timezone found
+$3078.TW: possibly delisted; no timezone found
+$3086.TW: possibly delisted; no timezone found
+$3114.TW: possibly delisted; no timezone found
 $3169.TW: possibly delisted; no timezone found
+$3095.TW: possibly delisted; no timezone found
+$3228.TW: possibly delisted; no timezone found
+$3264.TW: possibly delisted; no timezone found
+$3093.TW: possibly delisted; no timezone found
+$3211.TW: possibly delisted; no timezone found
+$3128.TW: possibly delisted; no timezone found
+$3232.TW: possibly delisted; no timezone found
+$3178.TW: possibly delisted; no timezone found
+$3206.TW: possibly delisted; no timezone found
+$3234.TW: possibly delisted; no timezone found
 $3152.TW: possibly delisted; no timezone found
+$3176.TW: possibly delisted; no timezone found
+$3221.TW: possibly delisted; no timezone found
+$3205.TW: possibly delisted; no timezone found
+$3224.TW: possibly delisted; no timezone found
+$3207.TW: possibly delisted; no timezone found
+$3083.TW: possibly delisted; no timezone found
+$3252.TW: possibly delisted; no timezone found
+$3147.TW: possibly delisted; no timezone found
+$3163.TW: possibly delisted; no timezone found
+$3188.TW: possibly delisted; no timezone found
+$3162.TW: possibly delisted; no timezone found
+$3268.TW: possibly delisted; no timezone found
+$3230.TW: possibly delisted; no timezone found
+$3217.TW: possibly delisted; no timezone found
+$3158.TW: possibly delisted; no timezone found
+$3088.TW: possibly delisted; no timezone found
+$3260.TW: possibly delisted; no timezone found
+$3191.TW: possibly delisted; no timezone found
+$3171.TW: possibly delisted; no timezone found
+$3131.TW: possibly delisted; no timezone found
+$3105.TW: possibly delisted; no timezone found
+$3115.TW: possibly delisted; no timezone found
+$3122.TW: possibly delisted; no timezone found
 
 50 Failed downloads:
-['3207.TW', '3178.TW', '3232.TW', '3176.TW', '3115.TW', '3118.TW', '3122.TW', '3163.TW', '3259.TW', '3162.TW', '3088.TW', '3141.TW', '3086.TW', '3252.TW', '3078.TW', '3114.TW', '3265.TW', '3105.TW', '3218.TW', '3171.TW', '3228.TW', '3206.TW', '3260.TW', '3081.TW', '3226.TW', '3211.TW', '3147.TW', '3128.TW', '3268.TW', '3224.TW', '3236.TW', '3221.TW', '3219.TW', '3188.TW', '3227.TW', '3191.TW', '3217.TW', '3131.TW', '3205.TW', '3230.TW', '3234.TW', '3085.TW', '3264.TW', '3158.TW', '3083.TW', '3213.TW', '3095.TW', '3093.TW', '3169.TW', '3152.TW']: possibly delisted; no timezone found
-$3455.TW: possibly delisted; no timezone found
-$3287.TW: possibly delisted; no timezone found
-$3373.TW: possibly delisted; no timezone found
-$3339.TW: possibly delisted; no timezone found
-$3325.TW: possibly delisted; no timezone found
-$3332.TW: possibly delisted; no timezone found
-$3317.TW: possibly delisted; no timezone found
-$3390.TW: possibly delisted; no timezone found
-$3349.TW: possibly delisted; no timezone found
-$3360.TW: possibly delisted; no timezone found
-$3483.TW: possibly delisted; no timezone found
-$3479.TW: possibly delisted; no timezone found
-$3444.TW: possibly delisted; no timezone found
-$3272.TW: possibly delisted; no timezone found
-$3306.TW: possibly delisted; no timezone found
-$3438.TW: possibly delisted; no timezone found
-$3490.TW: possibly delisted; no timezone found
-$3388.TW: possibly delisted; no timezone found
-$3363.TW: possibly delisted; no timezone found
-$3465.TW: possibly delisted; no timezone found
-$3374.TW: possibly delisted; no timezone found
-$3426.TW: possibly delisted; no timezone found
-$3484.TW: possibly delisted; no timezone found
-$3313.TW: possibly delisted; no timezone found
-$3430.TW: possibly delisted; no timezone found
-$3354.TW: possibly delisted; no timezone found
-$3284.TW: possibly delisted; no timezone found
-$3324.TW: possibly delisted; no timezone found
-$3402.TW: possibly delisted; no timezone found
-$3357.TW: possibly delisted; no timezone found
-$3288.TW: possibly delisted; no timezone found
-$3303.TW: possibly delisted; no timezone found
-$3297.TW: possibly delisted; no timezone found
-$3466.TW: possibly delisted; no timezone found
-$3434.TW: possibly delisted; no timezone found
-$3276.TW: possibly delisted; no timezone found
-$3467.TW: possibly delisted; no timezone found
-$3323.TW: possibly delisted; no timezone found
-$3285.TW: possibly delisted; no timezone found
+['3218.TW', '3118.TW', '3236.TW', '3259.TW', '3085.TW', '3227.TW', '3141.TW', '3213.TW', '3265.TW', '3219.TW', '3226.TW', '3081.TW', '3078.TW', '3086.TW', '3114.TW', '3169.TW', '3095.TW', '3228.TW', '3264.TW', '3093.TW', '3211.TW', '3128.TW', '3232.TW', '3178.TW', '3206.TW', '3234.TW', '3152.TW', '3176.TW', '3221.TW', '3205.TW', '3224.TW', '3207.TW', '3083.TW', '3252.TW', '3147.TW', '3163.TW', '3188.TW', '3162.TW', '3268.TW', '3230.TW', '3217.TW', '3158.TW', '3088.TW', '3260.TW', '3191.TW', '3171.TW', '3131.TW', '3105.TW', '3115.TW', '3122.TW']: possibly delisted; no timezone found
 $3310.TW: possibly delisted; no timezone found
-$3362.TW: possibly delisted; no timezone found
-$3290.TW: possibly delisted; no timezone found
+$3388.TW: possibly delisted; no timezone found
 $3289.TW: possibly delisted; no timezone found
-$3294.TW: possibly delisted; no timezone found
 $3293.TW: possibly delisted; no timezone found
-$3441.TW: possibly delisted; no timezone found
-$3379.TW: possibly delisted; no timezone found
-$3322.TW: possibly delisted; no timezone found
 $3489.TW: possibly delisted; no timezone found
+$3467.TW: possibly delisted; no timezone found
+$3313.TW: possibly delisted; no timezone found
+$3373.TW: possibly delisted; no timezone found
+$3287.TW: possibly delisted; no timezone found
+$3285.TW: possibly delisted; no timezone found
+$3349.TW: possibly delisted; no timezone found
+$3322.TW: possibly delisted; no timezone found
+$3357.TW: possibly delisted; no timezone found
+$3390.TW: possibly delisted; no timezone found
+$3288.TW: possibly delisted; no timezone found
+$3362.TW: possibly delisted; no timezone found
+$3402.TW: possibly delisted; no timezone found
+$3294.TW: possibly delisted; no timezone found
+$3303.TW: possibly delisted; no timezone found
+$3325.TW: possibly delisted; no timezone found
+$3272.TW: possibly delisted; no timezone found
+$3466.TW: possibly delisted; no timezone found
 $3372.TW: possibly delisted; no timezone found
+$3374.TW: possibly delisted; no timezone found
+$3363.TW: possibly delisted; no timezone found
+$3317.TW: possibly delisted; no timezone found
+$3297.TW: possibly delisted; no timezone found
+$3324.TW: possibly delisted; no timezone found
+$3434.TW: possibly delisted; no timezone found
+$3430.TW: possibly delisted; no timezone found
+$3483.TW: possibly delisted; no timezone found
+$3438.TW: possibly delisted; no timezone found
+$3332.TW: possibly delisted; no timezone found
+$3379.TW: possibly delisted; no timezone found
+$3284.TW: possibly delisted; no timezone found
+$3323.TW: possibly delisted; no timezone found
+$3290.TW: possibly delisted; no timezone found
+$3465.TW: possibly delisted; no timezone found
+$3479.TW: possibly delisted; no timezone found
+$3306.TW: possibly delisted; no timezone found
+$3490.TW: possibly delisted; no timezone found
+$3484.TW: possibly delisted; no timezone found
+$3354.TW: possibly delisted; no timezone found
+$3444.TW: possibly delisted; no timezone found
+$3455.TW: possibly delisted; no timezone found
+$3426.TW: possibly delisted; no timezone found
+$3339.TW: possibly delisted; no timezone found
+$3360.TW: possibly delisted; no timezone found
+$3441.TW: possibly delisted; no timezone found
+$3276.TW: possibly delisted; no timezone found
 
 50 Failed downloads:
-['3455.TW', '3287.TW', '3373.TW', '3339.TW', '3325.TW', '3332.TW', '3317.TW', '3390.TW', '3349.TW', '3360.TW', '3483.TW', '3479.TW', '3444.TW', '3272.TW', '3306.TW', '3438.TW', '3490.TW', '3388.TW', '3363.TW', '3465.TW', '3374.TW', '3426.TW', '3484.TW', '3313.TW', '3430.TW', '3354.TW', '3284.TW', '3324.TW', '3402.TW', '3357.TW', '3288.TW', '3303.TW', '3297.TW', '3466.TW', '3434.TW', '3276.TW', '3467.TW', '3323.TW', '3285.TW', '3310.TW', '3362.TW', '3290.TW', '3289.TW', '3294.TW', '3293.TW', '3441.TW', '3379.TW', '3322.TW', '3489.TW', '3372.TW']: possibly delisted; no timezone found
-$3499.TW: possibly delisted; no timezone found
-$3540.TW: possibly delisted; no timezone found
-$3548.TW: possibly delisted; no timezone found
-$3556.TW: possibly delisted; no timezone found
-$3664.TW: possibly delisted; no timezone found
-$3623.TW: possibly delisted; no timezone found
-$3527.TW: possibly delisted; no timezone found
-$3511.TW: possibly delisted; no timezone found
-$3567.TW: possibly delisted; no timezone found
-$3630.TW: possibly delisted; no timezone found
-$3520.TW: possibly delisted; no timezone found
-$3628.TW: possibly delisted; no timezone found
-$3666.TW: possibly delisted; no timezone found
-$3564.TW: possibly delisted; no timezone found
-$3492.TW: possibly delisted; no timezone found
-$3611.TW: possibly delisted; no timezone found
-$3521.TW: possibly delisted; no timezone found
-$3594.TW: possibly delisted; no timezone found
-$3632.TW: possibly delisted; no timezone found
-$3552.TW: possibly delisted; no timezone found
-$3615.TW: possibly delisted; no timezone found
-$3581.TW: possibly delisted; no timezone found
-$3555.TW: possibly delisted; no timezone found
-$3597.TW: possibly delisted; no timezone found
-$3526.TW: possibly delisted; no timezone found
-$3512.TW: possibly delisted; no timezone found
-$3624.TW: possibly delisted; no timezone found
-$3491.TW: possibly delisted; no timezone found
-$3570.TW: possibly delisted; no timezone found
-$3629.TW: possibly delisted; no timezone found
-$3523.TW: possibly delisted; no timezone found
-$3558.TW: possibly delisted; no timezone found
-$3537.TW: possibly delisted; no timezone found
-$3587.TW: possibly delisted; no timezone found
-$3508.TW: possibly delisted; no timezone found
-$3529.TW: possibly delisted; no timezone found
-$3646.TW: possibly delisted; no timezone found
-$3498.TW: possibly delisted; no timezone found
-$3551.TW: possibly delisted; no timezone found
+['3310.TW', '3388.TW', '3289.TW', '3293.TW', '3489.TW', '3467.TW', '3313.TW', '3373.TW', '3287.TW', '3285.TW', '3349.TW', '3322.TW', '3357.TW', '3390.TW', '3288.TW', '3362.TW', '3402.TW', '3294.TW', '3303.TW', '3325.TW', '3272.TW', '3466.TW', '3372.TW', '3374.TW', '3363.TW', '3317.TW', '3297.TW', '3324.TW', '3434.TW', '3430.TW', '3483.TW', '3438.TW', '3332.TW', '3379.TW', '3284.TW', '3323.TW', '3290.TW', '3465.TW', '3479.TW', '3306.TW', '3490.TW', '3484.TW', '3354.TW', '3444.TW', '3455.TW', '3426.TW', '3339.TW', '3360.TW', '3441.TW', '3276.TW']: possibly delisted; no timezone found
 $3631.TW: possibly delisted; no timezone found
-$3609.TW: possibly delisted; no timezone found
-$3577.TW: possibly delisted; no timezone found
+$3546.TW: possibly delisted; no timezone found
 $3516.TW: possibly delisted; no timezone found
-$3625.TW: possibly delisted; no timezone found
+$3511.TW: possibly delisted; no timezone found
+$3520.TW: possibly delisted; no timezone found
+$3526.TW: possibly delisted; no timezone found
+$3630.TW: possibly delisted; no timezone found
+$3491.TW: possibly delisted; no timezone found
+$3541.TW: possibly delisted; no timezone found
+$3666.TW: possibly delisted; no timezone found
+$3664.TW: possibly delisted; no timezone found
+$3499.TW: possibly delisted; no timezone found
+$3521.TW: possibly delisted; no timezone found
+$3548.TW: possibly delisted; no timezone found
+$3615.TW: possibly delisted; no timezone found
+$3551.TW: possibly delisted; no timezone found
+$3611.TW: possibly delisted; no timezone found
+$3581.TW: possibly delisted; no timezone found
+$3508.TW: possibly delisted; no timezone found
+$3663.TW: possibly delisted; no timezone found
+$3512.TW: possibly delisted; no timezone found
+$3609.TW: possibly delisted; no timezone found
+$3540.TW: possibly delisted; no timezone found
+$3628.TW: possibly delisted; no timezone found
+$3555.TW: possibly delisted; no timezone found
+$3492.TW: possibly delisted; no timezone found
+$3570.TW: possibly delisted; no timezone found
+$3594.TW: possibly delisted; no timezone found
+$3527.TW: possibly delisted; no timezone found
+$3564.TW: possibly delisted; no timezone found
 $3522.TW: possibly delisted; no timezone found
 $3580.TW: possibly delisted; no timezone found
-$3663.TW: possibly delisted; no timezone found
+$3632.TW: possibly delisted; no timezone found
+$3587.TW: possibly delisted; no timezone found
+$3552.TW: possibly delisted; no timezone found
+$3537.TW: possibly delisted; no timezone found
+$3498.TW: possibly delisted; no timezone found
+$3625.TW: possibly delisted; no timezone found
+$3529.TW: possibly delisted; no timezone found
+$3629.TW: possibly delisted; no timezone found
+$3623.TW: possibly delisted; no timezone found
+$3624.TW: possibly delisted; no timezone found
+$3646.TW: possibly delisted; no timezone found
+$3597.TW: possibly delisted; no timezone found
+$3577.TW: possibly delisted; no timezone found
+$3556.TW: possibly delisted; no timezone found
 $3531.TW: possibly delisted; no timezone found
-$3546.TW: possibly delisted; no timezone found
-$3541.TW: possibly delisted; no timezone found
+$3567.TW: possibly delisted; no timezone found
+$3558.TW: possibly delisted; no timezone found
+$3523.TW: possibly delisted; no timezone found
 
 50 Failed downloads:
-['3499.TW', '3540.TW', '3548.TW', '3556.TW', '3664.TW', '3623.TW', '3527.TW', '3511.TW', '3567.TW', '3630.TW', '3520.TW', '3628.TW', '3666.TW', '3564.TW', '3492.TW', '3611.TW', '3521.TW', '3594.TW', '3632.TW', '3552.TW', '3615.TW', '3581.TW', '3555.TW', '3597.TW', '3526.TW', '3512.TW', '3624.TW', '3491.TW', '3570.TW', '3629.TW', '3523.TW', '3558.TW', '3537.TW', '3587.TW', '3508.TW', '3529.TW', '3646.TW', '3498.TW', '3551.TW', '3631.TW', '3609.TW', '3577.TW', '3516.TW', '3625.TW', '3522.TW', '3580.TW', '3663.TW', '3531.TW', '3546.TW', '3541.TW']: possibly delisted; no timezone found
+['3631.TW', '3546.TW', '3516.TW', '3511.TW', '3520.TW', '3526.TW', '3630.TW', '3491.TW', '3541.TW', '3666.TW', '3664.TW', '3499.TW', '3521.TW', '3548.TW', '3615.TW', '3551.TW', '3611.TW', '3581.TW', '3508.TW', '3663.TW', '3512.TW', '3609.TW', '3540.TW', '3628.TW', '3555.TW', '3492.TW', '3570.TW', '3594.TW', '3527.TW', '3564.TW', '3522.TW', '3580.TW', '3632.TW', '3587.TW', '3552.TW', '3537.TW', '3498.TW', '3625.TW', '3529.TW', '3629.TW', '3623.TW', '3624.TW', '3646.TW', '3597.TW', '3577.TW', '3556.TW', '3531.TW', '3567.TW', '3558.TW', '3523.TW']: possibly delisted; no timezone found
   [1300/1962] 已收 971 檔
-$4105.TW: possibly delisted; no timezone found
-$3689.TW: possibly delisted; no timezone found
-$4173.TW: possibly delisted; no timezone found
+$3685.TW: possibly delisted; no timezone found
 $4171.TW: possibly delisted; no timezone found
-$3687.TW: possibly delisted; no timezone found
-$4121.TW: possibly delisted; no timezone found
-$3709.TW: possibly delisted; no timezone found
-$4126.TW: possibly delisted; no timezone found
-$4168.TW: possibly delisted; no timezone found
+$4120.TW: possibly delisted; no timezone found
 $4188.TW: possibly delisted; no timezone found
-$3713.TW: possibly delisted; no timezone found
+$4157.TW: possibly delisted; no timezone found
+$4127.TW: possibly delisted; no timezone found
+$4121.TW: possibly delisted; no timezone found
+$4123.TW: possibly delisted; no timezone found
+$4168.TW: possibly delisted; no timezone found
+$4153.TW: possibly delisted; no timezone found
+$3710.TW: possibly delisted; no timezone found
+$4163.TW: possibly delisted; no timezone found
 $4114.TW: possibly delisted; no timezone found
 $4160.TW: possibly delisted; no timezone found
-$4174.TW: possibly delisted; no timezone found
-$4147.TW: possibly delisted; no timezone found
-$4175.TW: possibly delisted; no timezone found
-$4107.TW: possibly delisted; no timezone found
-$4154.TW: possibly delisted; no timezone found
-$3707.TW: possibly delisted; no timezone found
-$4102.TW: possibly delisted; no timezone found
-$3684.TW: possibly delisted; no timezone found
-$4157.TW: possibly delisted; no timezone found
-$4109.TW: possibly delisted; no timezone found
-$4116.TW: possibly delisted; no timezone found
-$4128.TW: possibly delisted; no timezone found
-$4129.TW: possibly delisted; no timezone found
-$4131.TW: possibly delisted; no timezone found
-$4153.TW: possibly delisted; no timezone found
-$4163.TW: possibly delisted; no timezone found
-$4111.TW: possibly delisted; no timezone found
-$4183.TW: possibly delisted; no timezone found
-$4120.TW: possibly delisted; no timezone found
-$3680.TW: possibly delisted; no timezone found
-$4192.TW: possibly delisted; no timezone found
+$4126.TW: possibly delisted; no timezone found
 $3691.TW: possibly delisted; no timezone found
-$4138.TW: possibly delisted; no timezone found
-$3710.TW: possibly delisted; no timezone found
-$4113.TW: possibly delisted; no timezone found
-$3685.TW: possibly delisted; no timezone found
-$4127.TW: possibly delisted; no timezone found
-$4123.TW: possibly delisted; no timezone found
+$4161.TW: possibly delisted; no timezone found
+$4109.TW: possibly delisted; no timezone found
+$4102.TW: possibly delisted; no timezone found
+$4175.TW: possibly delisted; no timezone found
 $4166.TW: possibly delisted; no timezone found
+$4113.TW: possibly delisted; no timezone found
+$4128.TW: possibly delisted; no timezone found
+$4147.TW: possibly delisted; no timezone found
+$4130.TW: possibly delisted; no timezone found
+$3684.TW: possibly delisted; no timezone found
+$3687.TW: possibly delisted; no timezone found
+$4116.TW: possibly delisted; no timezone found
+$4173.TW: possibly delisted; no timezone found
+$4107.TW: possibly delisted; no timezone found
+$3707.TW: possibly delisted; no timezone found
+$3680.TW: possibly delisted; no timezone found
 $3672.TW: possibly delisted; no timezone found
-$4167.TW: possibly delisted; no timezone found
+$3689.TW: possibly delisted; no timezone found
+$4154.TW: possibly delisted; no timezone found
+$3709.TW: possibly delisted; no timezone found
 $3693.TW: possibly delisted; no timezone found
 $3675.TW: possibly delisted; no timezone found
+$4129.TW: possibly delisted; no timezone found
+$4138.TW: possibly delisted; no timezone found
+$4167.TW: possibly delisted; no timezone found
+$4183.TW: possibly delisted; no timezone found
+$3713.TW: possibly delisted; no timezone found
 $4162.TW: possibly delisted; no timezone found
-$4130.TW: possibly delisted; no timezone found
+$4131.TW: possibly delisted; no timezone found
+$4105.TW: possibly delisted; no timezone found
+$4174.TW: possibly delisted; no timezone found
+$4111.TW: possibly delisted; no timezone found
 $4139.TW: possibly delisted; no timezone found
-$4161.TW: possibly delisted; no timezone found
+$4192.TW: possibly delisted; no timezone found
 
 50 Failed downloads:
-['4105.TW', '3689.TW', '4173.TW', '4171.TW', '3687.TW', '4121.TW', '3709.TW', '4126.TW', '4168.TW', '4188.TW', '3713.TW', '4114.TW', '4160.TW', '4174.TW', '4147.TW', '4175.TW', '4107.TW', '4154.TW', '3707.TW', '4102.TW', '3684.TW', '4157.TW', '4109.TW', '4116.TW', '4128.TW', '4129.TW', '4131.TW', '4153.TW', '4163.TW', '4111.TW', '4183.TW', '4120.TW', '3680.TW', '4192.TW', '3691.TW', '4138.TW', '3710.TW', '4113.TW', '3685.TW', '4127.TW', '4123.TW', '4166.TW', '3672.TW', '4167.TW', '3693.TW', '3675.TW', '4162.TW', '4130.TW', '4139.TW', '4161.TW']: possibly delisted; no timezone found
-$4542.TW: possibly delisted; no timezone found
-$4563.TW: possibly delisted; no timezone found
-$4535.TW: possibly delisted; no timezone found
-$4506.TW: possibly delisted; no timezone found
-$4609.TW: possibly delisted; no timezone found
-$4523.TW: possibly delisted; no timezone found
-$4419.TW: possibly delisted; no timezone found
-$4543.TW: possibly delisted; no timezone found
-$4207.TW: possibly delisted; no timezone found
-$4416.TW: possibly delisted; no timezone found
-$4510.TW: possibly delisted; no timezone found
-$4580.TW: possibly delisted; no timezone found
-$4304.TW: possibly delisted; no timezone found
-$4561.TW: possibly delisted; no timezone found
-$4205.TW: possibly delisted; no timezone found
-$4528.TW: possibly delisted; no timezone found
-$4706.TW: possibly delisted; no timezone found
-$4550.TW: possibly delisted; no timezone found
-$4442.TW: possibly delisted; no timezone found
-$4433.TW: possibly delisted; no timezone found
-$4577.TW: possibly delisted; no timezone found
-$4541.TW: possibly delisted; no timezone found
-$4513.TW: possibly delisted; no timezone found
-$4303.TW: possibly delisted; no timezone found
-$4584.TW: possibly delisted; no timezone found
-$4556.TW: possibly delisted; no timezone found
-$4568.TW: possibly delisted; no timezone found
-$4534.TW: possibly delisted; no timezone found
-$4430.TW: possibly delisted; no timezone found
-$4549.TW: possibly delisted; no timezone found
-$4533.TW: possibly delisted; no timezone found
-$4502.TW: possibly delisted; no timezone found
-$4198.TW: possibly delisted; no timezone found
-$4554.TW: possibly delisted; no timezone found
-$4413.TW: possibly delisted; no timezone found
-$4401.TW: possibly delisted; no timezone found
-$4558.TW: possibly delisted; no timezone found
-$4702.TW: possibly delisted; no timezone found
-$4417.TW: possibly delisted; no timezone found
-$4538.TW: possibly delisted; no timezone found
-$4529.TW: possibly delisted; no timezone found
-$4402.TW: possibly delisted; no timezone found
-$4420.TW: possibly delisted; no timezone found
+['3685.TW', '4171.TW', '4120.TW', '4188.TW', '4157.TW', '4127.TW', '4121.TW', '4123.TW', '4168.TW', '4153.TW', '3710.TW', '4163.TW', '4114.TW', '4160.TW', '4126.TW', '3691.TW', '4161.TW', '4109.TW', '4102.TW', '4175.TW', '4166.TW', '4113.TW', '4128.TW', '4147.TW', '4130.TW', '3684.TW', '3687.TW', '4116.TW', '4173.TW', '4107.TW', '3707.TW', '3680.TW', '3672.TW', '3689.TW', '4154.TW', '3709.TW', '3693.TW', '3675.TW', '4129.TW', '4138.TW', '4167.TW', '4183.TW', '3713.TW', '4162.TW', '4131.TW', '4105.TW', '4174.TW', '4111.TW', '4139.TW', '4192.TW']: possibly delisted; no timezone found
 $4530.TW: possibly delisted; no timezone found
-$4527.TW: possibly delisted; no timezone found
-$4305.TW: possibly delisted; no timezone found
-$4707.TW: possibly delisted; no timezone found
+$4609.TW: possibly delisted; no timezone found
+$4402.TW: possibly delisted; no timezone found
 $4406.TW: possibly delisted; no timezone found
-$4503.TW: possibly delisted; no timezone found
+$4198.TW: possibly delisted; no timezone found
+$4401.TW: possibly delisted; no timezone found
+$4543.TW: possibly delisted; no timezone found
+$4420.TW: possibly delisted; no timezone found
+$4542.TW: possibly delisted; no timezone found
+$4584.TW: possibly delisted; no timezone found
+$4702.TW: possibly delisted; no timezone found
+$4510.TW: possibly delisted; no timezone found
+$4529.TW: possibly delisted; no timezone found
+$4205.TW: possibly delisted; no timezone found
+$4523.TW: possibly delisted; no timezone found
+$4304.TW: possibly delisted; no timezone found
+$4556.TW: possibly delisted; no timezone found
+$4550.TW: possibly delisted; no timezone found
+$4706.TW: possibly delisted; no timezone found
+$4558.TW: possibly delisted; no timezone found
+$4433.TW: possibly delisted; no timezone found
+$4563.TW: possibly delisted; no timezone found
+$4577.TW: possibly delisted; no timezone found
+$4533.TW: possibly delisted; no timezone found
+$4568.TW: possibly delisted; no timezone found
+$4506.TW: possibly delisted; no timezone found
+$4419.TW: possibly delisted; no timezone found
 $4432.TW: possibly delisted; no timezone found
+$4554.TW: possibly delisted; no timezone found
+$4527.TW: possibly delisted; no timezone found
+$4538.TW: possibly delisted; no timezone found
+$4707.TW: possibly delisted; no timezone found
+$4430.TW: possibly delisted; no timezone found
+$4303.TW: possibly delisted; no timezone found
+$4541.TW: possibly delisted; no timezone found
+$4502.TW: possibly delisted; no timezone found
+$4416.TW: possibly delisted; no timezone found
+$4528.TW: possibly delisted; no timezone found
+$4513.TW: possibly delisted; no timezone found
+$4305.TW: possibly delisted; no timezone found
+$4413.TW: possibly delisted; no timezone found
+$4549.TW: possibly delisted; no timezone found
+$4580.TW: possibly delisted; no timezone found
+$4561.TW: possibly delisted; no timezone found
+$4207.TW: possibly delisted; no timezone found
+$4534.TW: possibly delisted; no timezone found
+$4417.TW: possibly delisted; no timezone found
+$4535.TW: possibly delisted; no timezone found
+$4442.TW: possibly delisted; no timezone found
+$4503.TW: possibly delisted; no timezone found
 
 50 Failed downloads:
-['4542.TW', '4563.TW', '4535.TW', '4506.TW', '4609.TW', '4523.TW', '4419.TW', '4543.TW', '4207.TW', '4416.TW', '4510.TW', '4580.TW', '4304.TW', '4561.TW', '4205.TW', '4528.TW', '4706.TW', '4550.TW', '4442.TW', '4433.TW', '4577.TW', '4541.TW', '4513.TW', '4303.TW', '4584.TW', '4556.TW', '4568.TW', '4534.TW', '4430.TW', '4549.TW', '4533.TW', '4502.TW', '4198.TW', '4554.TW', '4413.TW', '4401.TW', '4558.TW', '4702.TW', '4417.TW', '4538.TW', '4529.TW', '4402.TW', '4420.TW', '4530.TW', '4527.TW', '4305.TW', '4707.TW', '4406.TW', '4503.TW', '4432.TW']: possibly delisted; no timezone found
-$4931.TW: possibly delisted; no timezone found
-$4979.TW: possibly delisted; no timezone found
-$4767.TW: possibly delisted; no timezone found
-$4729.TW: possibly delisted; no timezone found
-$4728.TW: possibly delisted; no timezone found
-$4951.TW: possibly delisted; no timezone found
-$4768.TW: possibly delisted; no timezone found
-$4745.TW: possibly delisted; no timezone found
-$4760.TW: possibly delisted; no timezone found
-$4946.TW: possibly delisted; no timezone found
-$4987.TW: possibly delisted; no timezone found
-$5009.TW: possibly delisted; no timezone found
-$4747.TW: possibly delisted; no timezone found
-$4971.TW: possibly delisted; no timezone found
-$4714.TW: possibly delisted; no timezone found
-$4903.TW: possibly delisted; no timezone found
-$4933.TW: possibly delisted; no timezone found
-$4950.TW: possibly delisted; no timezone found
-$4711.TW: possibly delisted; no timezone found
-$5013.TW: possibly delisted; no timezone found
-$4804.TW: possibly delisted; no timezone found
-$4972.TW: possibly delisted; no timezone found
-$4911.TW: possibly delisted; no timezone found
-$4744.TW: possibly delisted; no timezone found
-$4973.TW: possibly delisted; no timezone found
-$4726.TW: possibly delisted; no timezone found
-$4749.TW: possibly delisted; no timezone found
-$4953.TW: possibly delisted; no timezone found
-$4966.TW: possibly delisted; no timezone found
+['4530.TW', '4609.TW', '4402.TW', '4406.TW', '4198.TW', '4401.TW', '4543.TW', '4420.TW', '4542.TW', '4584.TW', '4702.TW', '4510.TW', '4529.TW', '4205.TW', '4523.TW', '4304.TW', '4556.TW', '4550.TW', '4706.TW', '4558.TW', '4433.TW', '4563.TW', '4577.TW', '4533.TW', '4568.TW', '4506.TW', '4419.TW', '4432.TW', '4554.TW', '4527.TW', '4538.TW', '4707.TW', '4430.TW', '4303.TW', '4541.TW', '4502.TW', '4416.TW', '4528.TW', '4513.TW', '4305.TW', '4413.TW', '4549.TW', '4580.TW', '4561.TW', '4207.TW', '4534.TW', '4417.TW', '4535.TW', '4442.TW', '4503.TW']: possibly delisted; no timezone found
 $5014.TW: possibly delisted; no timezone found
-$4743.TW: possibly delisted; no timezone found
-$4909.TW: possibly delisted; no timezone found
-$4716.TW: possibly delisted; no timezone found
-$4907.TW: possibly delisted; no timezone found
-$4735.TW: possibly delisted; no timezone found
-$4974.TW: possibly delisted; no timezone found
-$4991.TW: possibly delisted; no timezone found
-$4754.TW: possibly delisted; no timezone found
-$4741.TW: possibly delisted; no timezone found
-$4908.TW: possibly delisted; no timezone found
-$4995.TW: possibly delisted; no timezone found
-$4905.TW: possibly delisted; no timezone found
-$4721.TW: possibly delisted; no timezone found
-$4924.TW: possibly delisted; no timezone found
-$4939.TW: possibly delisted; no timezone found
-$4923.TW: possibly delisted; no timezone found
-$4806.TW: possibly delisted; no timezone found
 $5015.TW: possibly delisted; no timezone found
-$5011.TW: possibly delisted; no timezone found
+$4908.TW: possibly delisted; no timezone found
+$4973.TW: possibly delisted; no timezone found
+$4711.TW: possibly delisted; no timezone found
+$4747.TW: possibly delisted; no timezone found
+$4939.TW: possibly delisted; no timezone found
+$4953.TW: possibly delisted; no timezone found
+$4716.TW: possibly delisted; no timezone found
+$4987.TW: possibly delisted; no timezone found
+$4768.TW: possibly delisted; no timezone found
+$4911.TW: possibly delisted; no timezone found
+$4749.TW: possibly delisted; no timezone found
+$4741.TW: possibly delisted; no timezone found
 $4772.TW: possibly delisted; no timezone found
+$4735.TW: possibly delisted; no timezone found
+$4743.TW: possibly delisted; no timezone found
+$5009.TW: possibly delisted; no timezone found
+$4714.TW: possibly delisted; no timezone found
+$4995.TW: possibly delisted; no timezone found
+$4909.TW: possibly delisted; no timezone found
+$4728.TW: possibly delisted; no timezone found
+$4903.TW: possibly delisted; no timezone found
+$4946.TW: possibly delisted; no timezone found
+$4923.TW: possibly delisted; no timezone found
+$4950.TW: possibly delisted; no timezone found
+$4974.TW: possibly delisted; no timezone found
+$4951.TW: possibly delisted; no timezone found
+$4924.TW: possibly delisted; no timezone found
+$4806.TW: possibly delisted; no timezone found
+$4979.TW: possibly delisted; no timezone found
+$4931.TW: possibly delisted; no timezone found
+$4905.TW: possibly delisted; no timezone found
+$4933.TW: possibly delisted; no timezone found
+$5011.TW: possibly delisted; no timezone found
+$4991.TW: possibly delisted; no timezone found
+$4726.TW: possibly delisted; no timezone found
+$4760.TW: possibly delisted; no timezone found
+$4966.TW: possibly delisted; no timezone found
+$4721.TW: possibly delisted; no timezone found
+$4804.TW: possibly delisted; no timezone found
+$4754.TW: possibly delisted; no timezone found
+$4767.TW: possibly delisted; no timezone found
+$4971.TW: possibly delisted; no timezone found
+$4729.TW: possibly delisted; no timezone found
+$4744.TW: possibly delisted; no timezone found
+$4907.TW: possibly delisted; no timezone found
+$4745.TW: possibly delisted; no timezone found
+$4972.TW: possibly delisted; no timezone found
+$5013.TW: possibly delisted; no timezone found
 
 50 Failed downloads:
-['4931.TW', '4979.TW', '4767.TW', '4729.TW', '4728.TW', '4951.TW', '4768.TW', '4745.TW', '4760.TW', '4946.TW', '4987.TW', '5009.TW', '4747.TW', '4971.TW', '4714.TW', '4903.TW', '4933.TW', '4950.TW', '4711.TW', '5013.TW', '4804.TW', '4972.TW', '4911.TW', '4744.TW', '4973.TW', '4726.TW', '4749.TW', '4953.TW', '4966.TW', '5014.TW', '4743.TW', '4909.TW', '4716.TW', '4907.TW', '4735.TW', '4974.TW', '4991.TW', '4754.TW', '4741.TW', '4908.TW', '4995.TW', '4905.TW', '4721.TW', '4924.TW', '4939.TW', '4923.TW', '4806.TW', '5015.TW', '5011.TW', '4772.TW']: possibly delisted; no timezone found
-$5340.TW: possibly delisted; no timezone found
-$5220.TW: possibly delisted; no timezone found
-$5302.TW: possibly delisted; no timezone found
-$5245.TW: possibly delisted; no timezone found
-$5310.TW: possibly delisted; no timezone found
-$5328.TW: possibly delisted; no timezone found
-$5016.TW: possibly delisted; no timezone found
-$5315.TW: possibly delisted; no timezone found
-$5386.TW: possibly delisted; no timezone found
-$5206.TW: possibly delisted; no timezone found
+['5014.TW', '5015.TW', '4908.TW', '4973.TW', '4711.TW', '4747.TW', '4939.TW', '4953.TW', '4716.TW', '4987.TW', '4768.TW', '4911.TW', '4749.TW', '4741.TW', '4772.TW', '4735.TW', '4743.TW', '5009.TW', '4714.TW', '4995.TW', '4909.TW', '4728.TW', '4903.TW', '4946.TW', '4923.TW', '4950.TW', '4974.TW', '4951.TW', '4924.TW', '4806.TW', '4979.TW', '4931.TW', '4905.TW', '4933.TW', '5011.TW', '4991.TW', '4726.TW', '4760.TW', '4966.TW', '4721.TW', '4804.TW', '4754.TW', '4767.TW', '4971.TW', '4729.TW', '4744.TW', '4907.TW', '4745.TW', '4972.TW', '5013.TW']: possibly delisted; no timezone found
+$5209.TW: possibly delisted; no timezone found
+$5251.TW: possibly delisted; no timezone found
+$5301.TW: possibly delisted; no timezone found
+$5351.TW: possibly delisted; no timezone found
+$5278.TW: possibly delisted; no timezone found
 $5227.TW: possibly delisted; no timezone found
+$5236.TW: possibly delisted; no timezone found
+$5340.TW: possibly delisted; no timezone found
+$5289.TW: possibly delisted; no timezone found
+$5371.TW: possibly delisted; no timezone found
+$5309.TW: possibly delisted; no timezone found
+$5314.TW: possibly delisted; no timezone found
+$5381.TW: possibly delisted; no timezone found
+$5220.TW: possibly delisted; no timezone found
+$5230.TW: possibly delisted; no timezone found
+$5310.TW: possibly delisted; no timezone found
+$5291.TW: possibly delisted; no timezone found
+$5201.TW: possibly delisted; no timezone found
+$5287.TW: possibly delisted; no timezone found
+$5211.TW: possibly delisted; no timezone found
+$5356.TW: possibly delisted; no timezone found
+$5312.TW: possibly delisted; no timezone found
+$5345.TW: possibly delisted; no timezone found
+$5328.TW: possibly delisted; no timezone found
+$5272.TW: possibly delisted; no timezone found
+$5321.TW: possibly delisted; no timezone found
+$5386.TW: possibly delisted; no timezone found
+$5212.TW: possibly delisted; no timezone found
+$5274.TW: possibly delisted; no timezone found
+$5302.TW: possibly delisted; no timezone found
+$5347.TW: possibly delisted; no timezone found
+$5348.TW: possibly delisted; no timezone found
+$5206.TW: possibly delisted; no timezone found
+$5223.TW: possibly delisted; no timezone found
+$5228.TW: possibly delisted; no timezone found
+$5276.TW: possibly delisted; no timezone found
+$5245.TW: possibly delisted; no timezone found
+$5299.TW: possibly delisted; no timezone found
+$5213.TW: possibly delisted; no timezone found
+$5344.TW: possibly delisted; no timezone found
+$5355.TW: possibly delisted; no timezone found
+$5324.TW: possibly delisted; no timezone found
+$5210.TW: possibly delisted; no timezone found
+$5263.TW: possibly delisted; no timezone found
 $5364.TW: possibly delisted; no timezone found
 $5205.TW: possibly delisted; no timezone found
-$5314.TW: possibly delisted; no timezone found
-$5223.TW: possibly delisted; no timezone found
-$5381.TW: possibly delisted; no timezone found
-$5209.TW: possibly delisted; no timezone found
-$5321.TW: possibly delisted; no timezone found
-$5344.TW: possibly delisted; no timezone found
-$5236.TW: possibly delisted; no timezone found
-$5355.TW: possibly delisted; no timezone found
+$5016.TW: possibly delisted; no timezone found
+$5315.TW: possibly delisted; no timezone found
 $5202.TW: possibly delisted; no timezone found
 $5353.TW: possibly delisted; no timezone found
-$5371.TW: possibly delisted; no timezone found
-$5291.TW: possibly delisted; no timezone found
-$5274.TW: possibly delisted; no timezone found
-$5309.TW: possibly delisted; no timezone found
-$5210.TW: possibly delisted; no timezone found
-$5348.TW: possibly delisted; no timezone found
-$5278.TW: possibly delisted; no timezone found
-$5228.TW: possibly delisted; no timezone found
-$5251.TW: possibly delisted; no timezone found
-$5230.TW: possibly delisted; no timezone found
-$5287.TW: possibly delisted; no timezone found
-$5212.TW: possibly delisted; no timezone found
-$5301.TW: possibly delisted; no timezone found
-$5263.TW: possibly delisted; no timezone found
-$5351.TW: possibly delisted; no timezone found
-$5276.TW: possibly delisted; no timezone found
-$5201.TW: possibly delisted; no timezone found
-$5356.TW: possibly delisted; no timezone found
-$5299.TW: possibly delisted; no timezone found
-$5324.TW: possibly delisted; no timezone found
-$5312.TW: possibly delisted; no timezone found
-$5211.TW: possibly delisted; no timezone found
-$5289.TW: possibly delisted; no timezone found
-$5347.TW: possibly delisted; no timezone found
-$5272.TW: possibly delisted; no timezone found
-$5213.TW: possibly delisted; no timezone found
-$5345.TW: possibly delisted; no timezone found
 
 50 Failed downloads:
-['5340.TW', '5220.TW', '5302.TW', '5245.TW', '5310.TW', '5328.TW', '5016.TW', '5315.TW', '5386.TW', '5206.TW', '5227.TW', '5364.TW', '5205.TW', '5314.TW', '5223.TW', '5381.TW', '5209.TW', '5321.TW', '5344.TW', '5236.TW', '5355.TW', '5202.TW', '5353.TW', '5371.TW', '5291.TW', '5274.TW', '5309.TW', '5210.TW', '5348.TW', '5278.TW', '5228.TW', '5251.TW', '5230.TW', '5287.TW', '5212.TW', '5301.TW', '5263.TW', '5351.TW', '5276.TW', '5201.TW', '5356.TW', '5299.TW', '5324.TW', '5312.TW', '5211.TW', '5289.TW', '5347.TW', '5272.TW', '5213.TW', '5345.TW']: possibly delisted; no timezone found
-$5604.TW: possibly delisted; no timezone found
+['5209.TW', '5251.TW', '5301.TW', '5351.TW', '5278.TW', '5227.TW', '5236.TW', '5340.TW', '5289.TW', '5371.TW', '5309.TW', '5314.TW', '5381.TW', '5220.TW', '5230.TW', '5310.TW', '5291.TW', '5201.TW', '5287.TW', '5211.TW', '5356.TW', '5312.TW', '5345.TW', '5328.TW', '5272.TW', '5321.TW', '5386.TW', '5212.TW', '5274.TW', '5302.TW', '5347.TW', '5348.TW', '5206.TW', '5223.TW', '5228.TW', '5276.TW', '5245.TW', '5299.TW', '5213.TW', '5344.TW', '5355.TW', '5324.TW', '5210.TW', '5263.TW', '5364.TW', '5205.TW', '5016.TW', '5315.TW', '5202.TW', '5353.TW']: possibly delisted; no timezone found
+$5609.TW: possibly delisted; no timezone found
 $5450.TW: possibly delisted; no timezone found
-$5483.TW: possibly delisted; no timezone found
-$5536.TW: possibly delisted; no timezone found
-$5392.TW: possibly delisted; no timezone found
-$5523.TW: possibly delisted; no timezone found
-$5511.TW: possibly delisted; no timezone found
-$5489.TW: possibly delisted; no timezone found
+$5425.TW: possibly delisted; no timezone found
+$5438.TW: possibly delisted; no timezone found
+$5529.TW: possibly delisted; no timezone found
+$5426.TW: possibly delisted; no timezone found
+$5520.TW: possibly delisted; no timezone found
+$5468.TW: possibly delisted; no timezone found
 $5487.TW: possibly delisted; no timezone found
+$5603.TW: possibly delisted; no timezone found
+$5488.TW: possibly delisted; no timezone found
+$5604.TW: possibly delisted; no timezone found
+$5512.TW: possibly delisted; no timezone found
+$5493.TW: possibly delisted; no timezone found
+$5460.TW: possibly delisted; no timezone found
+$5703.TW: possibly delisted; no timezone found
+$5398.TW: possibly delisted; no timezone found
+$5514.TW: possibly delisted; no timezone found
+$5489.TW: possibly delisted; no timezone found
+$5523.TW: possibly delisted; no timezone found
+$5601.TW: possibly delisted; no timezone found
+$5536.TW: possibly delisted; no timezone found
+$5516.TW: possibly delisted; no timezone found
+$5475.TW: possibly delisted; no timezone found
+$5543.TW: possibly delisted; no timezone found
+$5701.TW: possibly delisted; no timezone found
+$5474.TW: possibly delisted; no timezone found
+$5508.TW: possibly delisted; no timezone found
+$5511.TW: possibly delisted; no timezone found
+$5392.TW: possibly delisted; no timezone found
+$5704.TW: possibly delisted; no timezone found
 $5481.TW: possibly delisted; no timezone found
 $5465.TW: possibly delisted; no timezone found
-$5457.TW: possibly delisted; no timezone found
+$5478.TW: possibly delisted; no timezone found
 $5455.TW: possibly delisted; no timezone found
-$5548.TW: possibly delisted; no timezone found
-$5488.TW: possibly delisted; no timezone found
-$5493.TW: possibly delisted; no timezone found
-$5443.TW: possibly delisted; no timezone found
-$5432.TW: possibly delisted; no timezone found
-$5398.TW: possibly delisted; no timezone found
-$5425.TW: possibly delisted; no timezone found
-$5426.TW: possibly delisted; no timezone found
-$5547.TW: possibly delisted; no timezone found
-$5704.TW: possibly delisted; no timezone found
-$5520.TW: possibly delisted; no timezone found
-$5475.TW: possibly delisted; no timezone found
-$5468.TW: possibly delisted; no timezone found
-$5516.TW: possibly delisted; no timezone found
-$5609.TW: possibly delisted; no timezone found
-$5410.TW: possibly delisted; no timezone found
-$5438.TW: possibly delisted; no timezone found
-$5498.TW: possibly delisted; no timezone found
-$5460.TW: possibly delisted; no timezone found
-$5514.TW: possibly delisted; no timezone found
-$5603.TW: possibly delisted; no timezone found
-$5543.TW: possibly delisted; no timezone found
-$5529.TW: possibly delisted; no timezone found
-$5490.TW: possibly delisted; no timezone found
-$5864.TW: possibly delisted; no timezone found
-$5512.TW: possibly delisted; no timezone found
-$5474.TW: possibly delisted; no timezone found
-$5703.TW: possibly delisted; no timezone found
 $5452.TW: possibly delisted; no timezone found
-$5508.TW: possibly delisted; no timezone found
-$5701.TW: possibly delisted; no timezone found
+$5547.TW: possibly delisted; no timezone found
+$5864.TW: possibly delisted; no timezone found
+$5483.TW: possibly delisted; no timezone found
+$5548.TW: possibly delisted; no timezone found
+$5432.TW: possibly delisted; no timezone found
+$5498.TW: possibly delisted; no timezone found
+$5490.TW: possibly delisted; no timezone found
 $5464.TW: possibly delisted; no timezone found
-$5601.TW: possibly delisted; no timezone found
 $5439.TW: possibly delisted; no timezone found
+$5410.TW: possibly delisted; no timezone found
 $5530.TW: possibly delisted; no timezone found
 $5403.TW: possibly delisted; no timezone found
-$5478.TW: possibly delisted; no timezone found
+$5457.TW: possibly delisted; no timezone found
+$5443.TW: possibly delisted; no timezone found
 
 50 Failed downloads:
-['5604.TW', '5450.TW', '5483.TW', '5536.TW', '5392.TW', '5523.TW', '5511.TW', '5489.TW', '5487.TW', '5481.TW', '5465.TW', '5457.TW', '5455.TW', '5548.TW', '5488.TW', '5493.TW', '5443.TW', '5432.TW', '5398.TW', '5425.TW', '5426.TW', '5547.TW', '5704.TW', '5520.TW', '5475.TW', '5468.TW', '5516.TW', '5609.TW', '5410.TW', '5438.TW', '5498.TW', '5460.TW', '5514.TW', '5603.TW', '5543.TW', '5529.TW', '5490.TW', '5864.TW', '5512.TW', '5474.TW', '5703.TW', '5452.TW', '5508.TW', '5701.TW', '5464.TW', '5601.TW', '5439.TW', '5530.TW', '5403.TW', '5478.TW']: possibly delisted; no timezone found
+['5609.TW', '5450.TW', '5425.TW', '5438.TW', '5529.TW', '5426.TW', '5520.TW', '5468.TW', '5487.TW', '5603.TW', '5488.TW', '5604.TW', '5512.TW', '5493.TW', '5460.TW', '5703.TW', '5398.TW', '5514.TW', '5489.TW', '5523.TW', '5601.TW', '5536.TW', '5516.TW', '5475.TW', '5543.TW', '5701.TW', '5474.TW', '5508.TW', '5511.TW', '5392.TW', '5704.TW', '5481.TW', '5465.TW', '5478.TW', '5455.TW', '5452.TW', '5547.TW', '5864.TW', '5483.TW', '5548.TW', '5432.TW', '5498.TW', '5490.TW', '5464.TW', '5439.TW', '5410.TW', '5530.TW', '5403.TW', '5457.TW', '5443.TW']: possibly delisted; no timezone found
   [1550/1962] 已收 971 檔
-$6104.TW: possibly delisted; no timezone found
-$6161.TW: possibly delisted; no timezone found
-$6163.TW: possibly delisted; no timezone found
-$6156.TW: possibly delisted; no timezone found
-$6124.TW: possibly delisted; no timezone found
-$6129.TW: possibly delisted; no timezone found
-$6111.TW: possibly delisted; no timezone found
-$6130.TW: possibly delisted; no timezone found
-$6169.TW: possibly delisted; no timezone found
-$5878.TW: possibly delisted; no timezone found
-$6023.TW: possibly delisted; no timezone found
-$6016.TW: possibly delisted; no timezone found
-$6144.TW: possibly delisted; no timezone found
-$6171.TW: possibly delisted; no timezone found
-$6134.TW: possibly delisted; no timezone found
-$6140.TW: possibly delisted; no timezone found
-$5905.TW: possibly delisted; no timezone found
-$6126.TW: possibly delisted; no timezone found
-$5902.TW: possibly delisted; no timezone found
-$6114.TW: possibly delisted; no timezone found
-$6015.TW: possibly delisted; no timezone found
-$6020.TW: possibly delisted; no timezone found
-$6143.TW: possibly delisted; no timezone found
-$6150.TW: possibly delisted; no timezone found
-$6103.TW: possibly delisted; no timezone found
-$6101.TW: possibly delisted; no timezone found
-$6118.TW: possibly delisted; no timezone found
-$5904.TW: possibly delisted; no timezone found
-$6028.TW: possibly delisted; no timezone found
-$6026.TW: possibly delisted; no timezone found
-$6167.TW: possibly delisted; no timezone found
 $6113.TW: possibly delisted; no timezone found
-$6146.TW: possibly delisted; no timezone found
-$6147.TW: possibly delisted; no timezone found
-$5903.TW: possibly delisted; no timezone found
-$6138.TW: possibly delisted; no timezone found
-$6123.TW: possibly delisted; no timezone found
-$6170.TW: possibly delisted; no timezone found
-$6158.TW: possibly delisted; no timezone found
-$6154.TW: possibly delisted; no timezone found
-$6127.TW: possibly delisted; no timezone found
-$6121.TW: possibly delisted; no timezone found
-$6148.TW: possibly delisted; no timezone found
-$6173.TW: possibly delisted; no timezone found
-$6122.TW: possibly delisted; no timezone found
-$6109.TW: possibly delisted; no timezone found
-$6160.TW: possibly delisted; no timezone found
-$6125.TW: possibly delisted; no timezone found
-$6021.TW: possibly delisted; no timezone found
+$6130.TW: possibly delisted; no timezone found
+$6171.TW: possibly delisted; no timezone found
+$6126.TW: possibly delisted; no timezone found
+$6026.TW: possibly delisted; no timezone found
 $6151.TW: possibly delisted; no timezone found
+$6173.TW: possibly delisted; no timezone found
+$6028.TW: possibly delisted; no timezone found
+$6104.TW: possibly delisted; no timezone found
+$6167.TW: possibly delisted; no timezone found
+$5878.TW: possibly delisted; no timezone found
+$6140.TW: possibly delisted; no timezone found
+$6127.TW: possibly delisted; no timezone found
+$6101.TW: possibly delisted; no timezone found
+$6121.TW: possibly delisted; no timezone found
+$6122.TW: possibly delisted; no timezone found
+$6150.TW: possibly delisted; no timezone found
+$6144.TW: possibly delisted; no timezone found
+$6124.TW: possibly delisted; no timezone found
+$6138.TW: possibly delisted; no timezone found
+$6160.TW: possibly delisted; no timezone found
+$6109.TW: possibly delisted; no timezone found
+$6103.TW: possibly delisted; no timezone found
+$6023.TW: possibly delisted; no timezone found
+$6020.TW: possibly delisted; no timezone found
+$6148.TW: possibly delisted; no timezone found
+$6114.TW: possibly delisted; no timezone found
+$6163.TW: possibly delisted; no timezone found
+$6111.TW: possibly delisted; no timezone found
+$6125.TW: possibly delisted; no timezone found
+$6158.TW: possibly delisted; no timezone found
+$5903.TW: possibly delisted; no timezone found
+$6156.TW: possibly delisted; no timezone found
+$6154.TW: possibly delisted; no timezone found
+$6123.TW: possibly delisted; no timezone found
+$6015.TW: possibly delisted; no timezone found
+$5902.TW: possibly delisted; no timezone found
+$6146.TW: possibly delisted; no timezone found
+$6021.TW: possibly delisted; no timezone found
+$6143.TW: possibly delisted; no timezone found
+$6134.TW: possibly delisted; no timezone found
+$5904.TW: possibly delisted; no timezone found
+$6147.TW: possibly delisted; no timezone found
+$6170.TW: possibly delisted; no timezone found
+$6169.TW: possibly delisted; no timezone found
+$6118.TW: possibly delisted; no timezone found
+$6161.TW: possibly delisted; no timezone found
+$5905.TW: possibly delisted; no timezone found
+$6129.TW: possibly delisted; no timezone found
+$6016.TW: possibly delisted; no timezone found
 
 50 Failed downloads:
-['6104.TW', '6161.TW', '6163.TW', '6156.TW', '6124.TW', '6129.TW', '6111.TW', '6130.TW', '6169.TW', '5878.TW', '6023.TW', '6016.TW', '6144.TW', '6171.TW', '6134.TW', '6140.TW', '5905.TW', '6126.TW', '5902.TW', '6114.TW', '6015.TW', '6020.TW', '6143.TW', '6150.TW', '6103.TW', '6101.TW', '6118.TW', '5904.TW', '6028.TW', '6026.TW', '6167.TW', '6113.TW', '6146.TW', '6147.TW', '5903.TW', '6138.TW', '6123.TW', '6170.TW', '6158.TW', '6154.TW', '6127.TW', '6121.TW', '6148.TW', '6173.TW', '6122.TW', '6109.TW', '6160.TW', '6125.TW', '6021.TW', '6151.TW']: possibly delisted; no timezone found
+['6113.TW', '6130.TW', '6171.TW', '6126.TW', '6026.TW', '6151.TW', '6173.TW', '6028.TW', '6104.TW', '6167.TW', '5878.TW', '6140.TW', '6127.TW', '6101.TW', '6121.TW', '6122.TW', '6150.TW', '6144.TW', '6124.TW', '6138.TW', '6160.TW', '6109.TW', '6103.TW', '6023.TW', '6020.TW', '6148.TW', '6114.TW', '6163.TW', '6111.TW', '6125.TW', '6158.TW', '5903.TW', '6156.TW', '6154.TW', '6123.TW', '6015.TW', '5902.TW', '6146.TW', '6021.TW', '6143.TW', '6134.TW', '5904.TW', '6147.TW', '6170.TW', '6169.TW', '6118.TW', '6161.TW', '5905.TW', '6129.TW', '6016.TW']: possibly delisted; no timezone found
 $6194.TW: possibly delisted; no timezone found
-$6236.TW: possibly delisted; no timezone found
-$6221.TW: possibly delisted; no timezone found
-$6241.TW: possibly delisted; no timezone found
-$6274.TW: possibly delisted; no timezone found
-$6208.TW: possibly delisted; no timezone found
-$6212.TW: possibly delisted; no timezone found
+$6207.TW: possibly delisted; no timezone found
 $6227.TW: possibly delisted; no timezone found
-$6248.TW: possibly delisted; no timezone found
-$6180.TW: possibly delisted; no timezone found
-$6231.TW: possibly delisted; no timezone found
-$6259.TW: possibly delisted; no timezone found
-$6198.TW: possibly delisted; no timezone found
-$6199.TW: possibly delisted; no timezone found
-$6210.TW: possibly delisted; no timezone found
-$6219.TW: possibly delisted; no timezone found
-$6220.TW: possibly delisted; no timezone found
-$6233.TW: possibly delisted; no timezone found
-$6263.TW: possibly delisted; no timezone found
-$6264.TW: possibly delisted; no timezone found
-$6240.TW: possibly delisted; no timezone found
-$6188.TW: possibly delisted; no timezone found
-$6265.TW: possibly delisted; no timezone found
-$6246.TW: possibly delisted; no timezone found
-$6245.TW: possibly delisted; no timezone found
-$6270.TW: possibly delisted; no timezone found
-$6186.TW: possibly delisted; no timezone found
-$6242.TW: possibly delisted; no timezone found
-$6195.TW: possibly delisted; no timezone found
-$6203.TW: possibly delisted; no timezone found
-$6185.TW: possibly delisted; no timezone found
-$6174.TW: possibly delisted; no timezone found
-$6229.TW: possibly delisted; no timezone found
-$6204.TW: possibly delisted; no timezone found
-$6237.TW: possibly delisted; no timezone found
-$6244.TW: possibly delisted; no timezone found
-$6187.TW: possibly delisted; no timezone found
-$6175.TW: possibly delisted; no timezone found
-$6228.TW: possibly delisted; no timezone found
-$6222.TW: possibly delisted; no timezone found
+$6218.TW: possibly delisted; no timezone found
 $6182.TW: possibly delisted; no timezone found
 $6179.TW: possibly delisted; no timezone found
-$6223.TW: possibly delisted; no timezone found
-$6190.TW: possibly delisted; no timezone found
-$6261.TW: possibly delisted; no timezone found
-$6234.TW: possibly delisted; no timezone found
-$6266.TW: possibly delisted; no timezone found
-$6218.TW: possibly delisted; no timezone found
-$6207.TW: possibly delisted; no timezone found
+$6219.TW: possibly delisted; no timezone found
+$6229.TW: possibly delisted; no timezone found
+$6198.TW: possibly delisted; no timezone found
+$6228.TW: possibly delisted; no timezone found
+$6242.TW: possibly delisted; no timezone found
+$6199.TW: possibly delisted; no timezone found
+$6259.TW: possibly delisted; no timezone found
+$6221.TW: possibly delisted; no timezone found
+$6220.TW: possibly delisted; no timezone found
+$6245.TW: possibly delisted; no timezone found
+$6246.TW: possibly delisted; no timezone found
+$6231.TW: possibly delisted; no timezone found
+$6274.TW: possibly delisted; no timezone found
+$6233.TW: possibly delisted; no timezone found
+$6264.TW: possibly delisted; no timezone found
+$6188.TW: possibly delisted; no timezone found
+$6263.TW: possibly delisted; no timezone found
 $6217.TW: possibly delisted; no timezone found
+$6240.TW: possibly delisted; no timezone found
+$6204.TW: possibly delisted; no timezone found
+$6241.TW: possibly delisted; no timezone found
+$6244.TW: possibly delisted; no timezone found
+$6203.TW: possibly delisted; no timezone found
+$6261.TW: possibly delisted; no timezone found
+$6270.TW: possibly delisted; no timezone found
+$6223.TW: possibly delisted; no timezone found
+$6185.TW: possibly delisted; no timezone found
+$6236.TW: possibly delisted; no timezone found
+$6175.TW: possibly delisted; no timezone found
+$6180.TW: possibly delisted; no timezone found
+$6174.TW: possibly delisted; no timezone found
+$6210.TW: possibly delisted; no timezone found
+$6212.TW: possibly delisted; no timezone found
+$6248.TW: possibly delisted; no timezone found
+$6237.TW: possibly delisted; no timezone found
+$6234.TW: possibly delisted; no timezone found
+$6187.TW: possibly delisted; no timezone found
+$6190.TW: possibly delisted; no timezone found
+$6195.TW: possibly delisted; no timezone found
+$6265.TW: possibly delisted; no timezone found
+$6266.TW: possibly delisted; no timezone found
+$6208.TW: possibly delisted; no timezone found
+$6186.TW: possibly delisted; no timezone found
+$6222.TW: possibly delisted; no timezone found
 
 50 Failed downloads:
-['6194.TW', '6236.TW', '6221.TW', '6241.TW', '6274.TW', '6208.TW', '6212.TW', '6227.TW', '6248.TW', '6180.TW', '6231.TW', '6259.TW', '6198.TW', '6199.TW', '6210.TW', '6219.TW', '6220.TW', '6233.TW', '6263.TW', '6264.TW', '6240.TW', '6188.TW', '6265.TW', '6246.TW', '6245.TW', '6270.TW', '6186.TW', '6242.TW', '6195.TW', '6203.TW', '6185.TW', '6174.TW', '6229.TW', '6204.TW', '6237.TW', '6244.TW', '6187.TW', '6175.TW', '6228.TW', '6222.TW', '6182.TW', '6179.TW', '6223.TW', '6190.TW', '6261.TW', '6234.TW', '6266.TW', '6218.TW', '6207.TW', '6217.TW']: possibly delisted; no timezone found
-$6292.TW: possibly delisted; no timezone found
-$6482.TW: possibly delisted; no timezone found
-$6441.TW: possibly delisted; no timezone found
-$6538.TW: possibly delisted; no timezone found
-$6517.TW: possibly delisted; no timezone found
-$6432.TW: possibly delisted; no timezone found
-$6523.TW: possibly delisted; no timezone found
-$6556.TW: possibly delisted; no timezone found
-$6492.TW: possibly delisted; no timezone found
-$6494.TW: possibly delisted; no timezone found
-$6488.TW: possibly delisted; no timezone found
-$6425.TW: possibly delisted; no timezone found
-$6506.TW: possibly delisted; no timezone found
-$6290.TW: possibly delisted; no timezone found
-$6294.TW: possibly delisted; no timezone found
-$6548.TW: possibly delisted; no timezone found
-$6435.TW: possibly delisted; no timezone found
-$6469.TW: possibly delisted; no timezone found
-$6510.TW: possibly delisted; no timezone found
+['6194.TW', '6207.TW', '6227.TW', '6218.TW', '6182.TW', '6179.TW', '6219.TW', '6229.TW', '6198.TW', '6228.TW', '6242.TW', '6199.TW', '6259.TW', '6221.TW', '6220.TW', '6245.TW', '6246.TW', '6231.TW', '6274.TW', '6233.TW', '6264.TW', '6188.TW', '6263.TW', '6217.TW', '6240.TW', '6204.TW', '6241.TW', '6244.TW', '6203.TW', '6261.TW', '6270.TW', '6223.TW', '6185.TW', '6236.TW', '6175.TW', '6180.TW', '6174.TW', '6210.TW', '6212.TW', '6248.TW', '6237.TW', '6234.TW', '6187.TW', '6190.TW', '6195.TW', '6265.TW', '6266.TW', '6208.TW', '6186.TW', '6222.TW']: possibly delisted; no timezone found
 $6535.TW: possibly delisted; no timezone found
+$6432.TW: possibly delisted; no timezone found
+$6512.TW: possibly delisted; no timezone found
+$6469.TW: possibly delisted; no timezone found
 $6279.TW: possibly delisted; no timezone found
+$6276.TW: possibly delisted; no timezone found
+$6485.TW: possibly delisted; no timezone found
+$6510.TW: possibly delisted; no timezone found
+$6474.TW: possibly delisted; no timezone found
 $6291.TW: possibly delisted; no timezone found
-$6461.TW: possibly delisted; no timezone found
-$6411.TW: possibly delisted; no timezone found
-$6508.TW: possibly delisted; no timezone found
-$6470.TW: possibly delisted; no timezone found
-$6418.TW: possibly delisted; no timezone found
-$6423.TW: possibly delisted; no timezone found
-$6532.TW: possibly delisted; no timezone found
-$6498.TW: possibly delisted; no timezone found
+$6425.TW: possibly delisted; no timezone found
+$6538.TW: possibly delisted; no timezone found
+$6499.TW: possibly delisted; no timezone found
+$6527.TW: possibly delisted; no timezone found
 $6509.TW: possibly delisted; no timezone found
 $6275.TW: possibly delisted; no timezone found
-$6546.TW: possibly delisted; no timezone found
-$6474.TW: possibly delisted; no timezone found
-$6516.TW: possibly delisted; no timezone found
-$6512.TW: possibly delisted; no timezone found
+$6423.TW: possibly delisted; no timezone found
+$6494.TW: possibly delisted; no timezone found
+$6418.TW: possibly delisted; no timezone found
 $6284.TW: possibly delisted; no timezone found
-$6542.TW: possibly delisted; no timezone found
-$6276.TW: possibly delisted; no timezone found
-$6465.TW: possibly delisted; no timezone found
-$6485.TW: possibly delisted; no timezone found
-$6419.TW: possibly delisted; no timezone found
-$6499.TW: possibly delisted; no timezone found
-$6496.TW: possibly delisted; no timezone found
-$6462.TW: possibly delisted; no timezone found
-$6417.TW: possibly delisted; no timezone found
-$6530.TW: possibly delisted; no timezone found
-$6527.TW: possibly delisted; no timezone found
+$6441.TW: possibly delisted; no timezone found
+$6556.TW: possibly delisted; no timezone found
 $6486.TW: possibly delisted; no timezone found
+$6492.TW: possibly delisted; no timezone found
+$6548.TW: possibly delisted; no timezone found
+$6470.TW: possibly delisted; no timezone found
+$6506.TW: possibly delisted; no timezone found
 $6547.TW: possibly delisted; no timezone found
+$6411.TW: possibly delisted; no timezone found
+$6465.TW: possibly delisted; no timezone found
+$6290.TW: possibly delisted; no timezone found
+$6419.TW: possibly delisted; no timezone found
+$6435.TW: possibly delisted; no timezone found
+$6482.TW: possibly delisted; no timezone found
+$6462.TW: possibly delisted; no timezone found
+$6461.TW: possibly delisted; no timezone found
+$6498.TW: possibly delisted; no timezone found
+$6532.TW: possibly delisted; no timezone found
+$6516.TW: possibly delisted; no timezone found
+$6523.TW: possibly delisted; no timezone found
+$6294.TW: possibly delisted; no timezone found
+$6488.TW: possibly delisted; no timezone found
+$6496.TW: possibly delisted; no timezone found
+$6530.TW: possibly delisted; no timezone found
+$6546.TW: possibly delisted; no timezone found
+$6542.TW: possibly delisted; no timezone found
+$6508.TW: possibly delisted; no timezone found
+$6292.TW: possibly delisted; no timezone found
+$6417.TW: possibly delisted; no timezone found
+$6517.TW: possibly delisted; no timezone found
 
 50 Failed downloads:
-['6292.TW', '6482.TW', '6441.TW', '6538.TW', '6517.TW', '6432.TW', '6523.TW', '6556.TW', '6492.TW', '6494.TW', '6488.TW', '6425.TW', '6506.TW', '6290.TW', '6294.TW', '6548.TW', '6435.TW', '6469.TW', '6510.TW', '6535.TW', '6279.TW', '6291.TW', '6461.TW', '6411.TW', '6508.TW', '6470.TW', '6418.TW', '6423.TW', '6532.TW', '6498.TW', '6509.TW', '6275.TW', '6546.TW', '6474.TW', '6516.TW', '6512.TW', '6284.TW', '6542.TW', '6276.TW', '6465.TW', '6485.TW', '6419.TW', '6499.TW', '6496.TW', '6462.TW', '6417.TW', '6530.TW', '6527.TW', '6486.TW', '6547.TW']: possibly delisted; no timezone found
-$6712.TW: possibly delisted; no timezone found
-$6616.TW: possibly delisted; no timezone found
-$6684.TW: possibly delisted; no timezone found
-$6697.TW: possibly delisted; no timezone found
-$6693.TW: possibly delisted; no timezone found
-$6570.TW: possibly delisted; no timezone found
-$6649.TW: possibly delisted; no timezone found
-$6620.TW: possibly delisted; no timezone found
-$6609.TW: possibly delisted; no timezone found
-$6597.TW: possibly delisted; no timezone found
+['6535.TW', '6432.TW', '6512.TW', '6469.TW', '6279.TW', '6276.TW', '6485.TW', '6510.TW', '6474.TW', '6291.TW', '6425.TW', '6538.TW', '6499.TW', '6527.TW', '6509.TW', '6275.TW', '6423.TW', '6494.TW', '6418.TW', '6284.TW', '6441.TW', '6556.TW', '6486.TW', '6492.TW', '6548.TW', '6470.TW', '6506.TW', '6547.TW', '6411.TW', '6465.TW', '6290.TW', '6419.TW', '6435.TW', '6482.TW', '6462.TW', '6461.TW', '6498.TW', '6532.TW', '6516.TW', '6523.TW', '6294.TW', '6488.TW', '6496.TW', '6530.TW', '6546.TW', '6542.TW', '6508.TW', '6292.TW', '6417.TW', '6517.TW']: possibly delisted; no timezone found
 $6612.TW: possibly delisted; no timezone found
+$6693.TW: possibly delisted; no timezone found
+$6643.TW: possibly delisted; no timezone found
+$6560.TW: possibly delisted; no timezone found
+$6624.TW: possibly delisted; no timezone found
+$6616.TW: possibly delisted; no timezone found
+$6642.TW: possibly delisted; no timezone found
+$6684.TW: possibly delisted; no timezone found
+$6569.TW: possibly delisted; no timezone found
+$6576.TW: possibly delisted; no timezone found
+$6667.TW: possibly delisted; no timezone found
+$6574.TW: possibly delisted; no timezone found
+$6593.TW: possibly delisted; no timezone found
+$6609.TW: possibly delisted; no timezone found
+$6620.TW: possibly delisted; no timezone found
+$6692.TW: possibly delisted; no timezone found
+$6664.TW: possibly delisted; no timezone found
 $6708.TW: possibly delisted; no timezone found
 $6596.TW: possibly delisted; no timezone found
-$6613.TW: possibly delisted; no timezone found
-$6569.TW: possibly delisted; no timezone found
-$6617.TW: possibly delisted; no timezone found
-$6640.TW: possibly delisted; no timezone found
-$6629.TW: possibly delisted; no timezone found
-$6643.TW: possibly delisted; no timezone found
-$6692.TW: possibly delisted; no timezone found
-$6667.TW: possibly delisted; no timezone found
-$6721.TW: possibly delisted; no timezone found
-$6664.TW: possibly delisted; no timezone found
-$6574.TW: possibly delisted; no timezone found
-$6568.TW: possibly delisted; no timezone found
-$6590.TW: possibly delisted; no timezone found
-$6577.TW: possibly delisted; no timezone found
 $6662.TW: possibly delisted; no timezone found
-$6703.TW: possibly delisted; no timezone found
-$6560.TW: possibly delisted; no timezone found
-$6716.TW: possibly delisted; no timezone found
-$6603.TW: possibly delisted; no timezone found
-$6615.TW: possibly delisted; no timezone found
-$6690.TW: possibly delisted; no timezone found
-$6561.TW: possibly delisted; no timezone found
-$6624.TW: possibly delisted; no timezone found
+$6597.TW: possibly delisted; no timezone found
+$6629.TW: possibly delisted; no timezone found
 $6584.TW: possibly delisted; no timezone found
-$6588.TW: possibly delisted; no timezone found
-$6651.TW: possibly delisted; no timezone found
-$6661.TW: possibly delisted; no timezone found
-$6720.TW: possibly delisted; no timezone found
-$6593.TW: possibly delisted; no timezone found
-$6576.TW: possibly delisted; no timezone found
-$6680.TW: possibly delisted; no timezone found
-$6578.TW: possibly delisted; no timezone found
-$6642.TW: possibly delisted; no timezone found
-$6679.TW: possibly delisted; no timezone found
-$6654.TW: possibly delisted; no timezone found
 $6683.TW: possibly delisted; no timezone found
+$6680.TW: possibly delisted; no timezone found
+$6661.TW: possibly delisted; no timezone found
+$6603.TW: possibly delisted; no timezone found
+$6651.TW: possibly delisted; no timezone found
 $6637.TW: possibly delisted; no timezone found
+$6703.TW: possibly delisted; no timezone found
+$6679.TW: possibly delisted; no timezone found
+$6720.TW: possibly delisted; no timezone found
+$6721.TW: possibly delisted; no timezone found
+$6588.TW: possibly delisted; no timezone found
+$6578.TW: possibly delisted; no timezone found
+$6654.TW: possibly delisted; no timezone found
+$6570.TW: possibly delisted; no timezone found
+$6617.TW: possibly delisted; no timezone found
+$6697.TW: possibly delisted; no timezone found
+$6568.TW: possibly delisted; no timezone found
+$6615.TW: possibly delisted; no timezone found
+$6613.TW: possibly delisted; no timezone found
+$6640.TW: possibly delisted; no timezone found
+$6712.TW: possibly delisted; no timezone found
+$6577.TW: possibly delisted; no timezone found
+$6690.TW: possibly delisted; no timezone found
+$6649.TW: possibly delisted; no timezone found
+$6561.TW: possibly delisted; no timezone found
+$6590.TW: possibly delisted; no timezone found
+$6716.TW: possibly delisted; no timezone found
 
 50 Failed downloads:
-['6712.TW', '6616.TW', '6684.TW', '6697.TW', '6693.TW', '6570.TW', '6649.TW', '6620.TW', '6609.TW', '6597.TW', '6612.TW', '6708.TW', '6596.TW', '6613.TW', '6569.TW', '6617.TW', '6640.TW', '6629.TW', '6643.TW', '6692.TW', '6667.TW', '6721.TW', '6664.TW', '6574.TW', '6568.TW', '6590.TW', '6577.TW', '6662.TW', '6703.TW', '6560.TW', '6716.TW', '6603.TW', '6615.TW', '6690.TW', '6561.TW', '6624.TW', '6584.TW', '6588.TW', '6651.TW', '6661.TW', '6720.TW', '6593.TW', '6576.TW', '6680.TW', '6578.TW', '6642.TW', '6679.TW', '6654.TW', '6683.TW', '6637.TW']: possibly delisted; no timezone found
-$6903.TW: possibly delisted; no timezone found
-$6788.TW: possibly delisted; no timezone found
-$6870.TW: possibly delisted; no timezone found
-$6844.TW: possibly delisted; no timezone found
-$6899.TW: possibly delisted; no timezone found
-$6761.TW: possibly delisted; no timezone found
-$6894.TW: possibly delisted; no timezone found
-$6904.TW: possibly delisted; no timezone found
-$6767.TW: possibly delisted; no timezone found
-$6733.TW: possibly delisted; no timezone found
-$6907.TW: possibly delisted; no timezone found
-$6846.TW: possibly delisted; no timezone found
-$6728.TW: possibly delisted; no timezone found
-$6804.TW: possibly delisted; no timezone found
-$6763.TW: possibly delisted; no timezone found
-$6732.TW: possibly delisted; no timezone found
-$6762.TW: possibly delisted; no timezone found
+['6612.TW', '6693.TW', '6643.TW', '6560.TW', '6624.TW', '6616.TW', '6642.TW', '6684.TW', '6569.TW', '6576.TW', '6667.TW', '6574.TW', '6593.TW', '6609.TW', '6620.TW', '6692.TW', '6664.TW', '6708.TW', '6596.TW', '6662.TW', '6597.TW', '6629.TW', '6584.TW', '6683.TW', '6680.TW', '6661.TW', '6603.TW', '6651.TW', '6637.TW', '6703.TW', '6679.TW', '6720.TW', '6721.TW', '6588.TW', '6578.TW', '6654.TW', '6570.TW', '6617.TW', '6697.TW', '6568.TW', '6615.TW', '6613.TW', '6640.TW', '6712.TW', '6577.TW', '6690.TW', '6649.TW', '6561.TW', '6590.TW', '6716.TW']: possibly delisted; no timezone found
 $6739.TW: possibly delisted; no timezone found
-$6855.TW: possibly delisted; no timezone found
-$6823.TW: possibly delisted; no timezone found
-$6875.TW: possibly delisted; no timezone found
-$6913.TW: possibly delisted; no timezone found
-$6803.TW: possibly delisted; no timezone found
-$6751.TW: possibly delisted; no timezone found
-$6922.TW: possibly delisted; no timezone found
-$6872.TW: possibly delisted; no timezone found
-$6877.TW: possibly delisted; no timezone found
+$6763.TW: possibly delisted; no timezone found
+$6804.TW: possibly delisted; no timezone found
+$6840.TW: possibly delisted; no timezone found
+$6907.TW: possibly delisted; no timezone found
+$6725.TW: possibly delisted; no timezone found
+$6732.TW: possibly delisted; no timezone found
+$6791.TW: possibly delisted; no timezone found
+$6925.TW: possibly delisted; no timezone found
 $6881.TW: possibly delisted; no timezone found
-$6829.TW: possibly delisted; no timezone found
+$6811.TW: possibly delisted; no timezone found
+$6877.TW: possibly delisted; no timezone found
+$6728.TW: possibly delisted; no timezone found
+$6922.TW: possibly delisted; no timezone found
+$6841.TW: possibly delisted; no timezone found
+$6870.TW: possibly delisted; no timezone found
+$6741.TW: possibly delisted; no timezone found
+$6855.TW: possibly delisted; no timezone found
+$6761.TW: possibly delisted; no timezone found
+$6752.TW: possibly delisted; no timezone found
+$6910.TW: possibly delisted; no timezone found
+$6735.TW: possibly delisted; no timezone found
+$6803.TW: possibly delisted; no timezone found
+$6872.TW: possibly delisted; no timezone found
+$6884.TW: possibly delisted; no timezone found
+$6727.TW: possibly delisted; no timezone found
+$6844.TW: possibly delisted; no timezone found
+$6865.TW: possibly delisted; no timezone found
+$6785.TW: possibly delisted; no timezone found
+$6767.TW: possibly delisted; no timezone found
 $6821.TW: possibly delisted; no timezone found
 $6730.TW: possibly delisted; no timezone found
-$6841.TW: possibly delisted; no timezone found
-$6874.TW: possibly delisted; no timezone found
-$6791.TW: possibly delisted; no timezone found
-$6895.TW: possibly delisted; no timezone found
-$6925.TW: possibly delisted; no timezone found
-$6856.TW: possibly delisted; no timezone found
-$6910.TW: possibly delisted; no timezone found
-$6725.TW: possibly delisted; no timezone found
-$6884.TW: possibly delisted; no timezone found
-$6865.TW: possibly delisted; no timezone found
-$6840.TW: possibly delisted; no timezone found
-$6785.TW: possibly delisted; no timezone found
-$6741.TW: possibly delisted; no timezone found
-$6735.TW: possibly delisted; no timezone found
+$6829.TW: possibly delisted; no timezone found
+$6823.TW: possibly delisted; no timezone found
 $6859.TW: possibly delisted; no timezone found
-$6727.TW: possibly delisted; no timezone found
+$6899.TW: possibly delisted; no timezone found
+$6856.TW: possibly delisted; no timezone found
+$6913.TW: possibly delisted; no timezone found
+$6751.TW: possibly delisted; no timezone found
 $6843.TW: possibly delisted; no timezone found
-$6811.TW: possibly delisted; no timezone found
-$6752.TW: possibly delisted; no timezone found
+$6904.TW: possibly delisted; no timezone found
+$6733.TW: possibly delisted; no timezone found
+$6894.TW: possibly delisted; no timezone found
+$6846.TW: possibly delisted; no timezone found
+$6788.TW: possibly delisted; no timezone found
+$6895.TW: possibly delisted; no timezone found
+$6874.TW: possibly delisted; no timezone found
+$6903.TW: possibly delisted; no timezone found
+$6762.TW: possibly delisted; no timezone found
+$6875.TW: possibly delisted; no timezone found
 
 50 Failed downloads:
-['6903.TW', '6788.TW', '6870.TW', '6844.TW', '6899.TW', '6761.TW', '6894.TW', '6904.TW', '6767.TW', '6733.TW', '6907.TW', '6846.TW', '6728.TW', '6804.TW', '6763.TW', '6732.TW', '6762.TW', '6739.TW', '6855.TW', '6823.TW', '6875.TW', '6913.TW', '6803.TW', '6751.TW', '6922.TW', '6872.TW', '6877.TW', '6881.TW', '6829.TW', '6821.TW', '6730.TW', '6841.TW', '6874.TW', '6791.TW', '6895.TW', '6925.TW', '6856.TW', '6910.TW', '6725.TW', '6884.TW', '6865.TW', '6840.TW', '6785.TW', '6741.TW', '6735.TW', '6859.TW', '6727.TW', '6843.TW', '6811.TW', '6752.TW']: possibly delisted; no timezone found
+['6739.TW', '6763.TW', '6804.TW', '6840.TW', '6907.TW', '6725.TW', '6732.TW', '6791.TW', '6925.TW', '6881.TW', '6811.TW', '6877.TW', '6728.TW', '6922.TW', '6841.TW', '6870.TW', '6741.TW', '6855.TW', '6761.TW', '6752.TW', '6910.TW', '6735.TW', '6803.TW', '6872.TW', '6884.TW', '6727.TW', '6844.TW', '6865.TW', '6785.TW', '6767.TW', '6821.TW', '6730.TW', '6829.TW', '6823.TW', '6859.TW', '6899.TW', '6856.TW', '6913.TW', '6751.TW', '6843.TW', '6904.TW', '6733.TW', '6894.TW', '6846.TW', '6788.TW', '6895.TW', '6874.TW', '6903.TW', '6762.TW', '6875.TW']: possibly delisted; no timezone found
   [1800/1962] 已收 971 檔
-$7743.TW: possibly delisted; no timezone found
-$7751.TW: possibly delisted; no timezone found
-$7753.TW: possibly delisted; no timezone found
-$7712.TW: possibly delisted; no timezone found
-$7828.TW: possibly delisted; no timezone found
-$7703.TW: possibly delisted; no timezone found
-$8027.TW: possibly delisted; no timezone found
-$7777.TW: possibly delisted; no timezone found
-$7744.TW: possibly delisted; no timezone found
-$7820.TW: possibly delisted; no timezone found
-$6996.TW: possibly delisted; no timezone found
-$7402.TW: possibly delisted; no timezone found
-$7716.TW: possibly delisted; no timezone found
-$7757.TW: possibly delisted; no timezone found
-$7713.TW: possibly delisted; no timezone found
-$7715.TW: possibly delisted; no timezone found
-$7767.TW: possibly delisted; no timezone found
-$7556.TW: possibly delisted; no timezone found
-$7717.TW: possibly delisted; no timezone found
-$7747.TW: possibly delisted; no timezone found
-$6929.TW: possibly delisted; no timezone found
-$7714.TW: possibly delisted; no timezone found
-$7642.TW: possibly delisted; no timezone found
-$6967.TW: possibly delisted; no timezone found
-$7709.TW: possibly delisted; no timezone found
-$7792.TW: possibly delisted; no timezone found
-$6997.TW: possibly delisted; no timezone found
-$7810.TW: possibly delisted; no timezone found
-$8024.TW: possibly delisted; no timezone found
-$8032.TW: possibly delisted; no timezone found
-$7770.TW: possibly delisted; no timezone found
-$7728.TW: possibly delisted; no timezone found
 $6971.TW: possibly delisted; no timezone found
-$7811.TW: possibly delisted; no timezone found
-$7794.TW: possibly delisted; no timezone found
-$7708.TW: possibly delisted; no timezone found
-$8034.TW: possibly delisted; no timezone found
-$7738.TW: possibly delisted; no timezone found
-$6961.TW: possibly delisted; no timezone found
-$7782.TW: possibly delisted; no timezone found
-$7805.TW: possibly delisted; no timezone found
-$7547.TW: possibly delisted; no timezone found
-$7704.TW: possibly delisted; no timezone found
 $6968.TW: possibly delisted; no timezone found
+$7744.TW: possibly delisted; no timezone found
 $7718.TW: possibly delisted; no timezone found
-$6953.TW: possibly delisted; no timezone found
-$6982.TW: possibly delisted; no timezone found
-$7584.TW: possibly delisted; no timezone found
+$7708.TW: possibly delisted; no timezone found
 $7723.TW: possibly delisted; no timezone found
+$7810.TW: possibly delisted; no timezone found
+$7738.TW: possibly delisted; no timezone found
+$7794.TW: possibly delisted; no timezone found
+$7728.TW: possibly delisted; no timezone found
+$7743.TW: possibly delisted; no timezone found
+$7715.TW: possibly delisted; no timezone found
+$7805.TW: possibly delisted; no timezone found
+$7716.TW: possibly delisted; no timezone found
+$7704.TW: possibly delisted; no timezone found
+$7828.TW: possibly delisted; no timezone found
+$8034.TW: possibly delisted; no timezone found
+$7792.TW: possibly delisted; no timezone found
+$8024.TW: possibly delisted; no timezone found
+$7782.TW: possibly delisted; no timezone found
+$7547.TW: possibly delisted; no timezone found
+$7709.TW: possibly delisted; no timezone found
+$7584.TW: possibly delisted; no timezone found
+$7402.TW: possibly delisted; no timezone found
+$7751.TW: possibly delisted; no timezone found
+$7642.TW: possibly delisted; no timezone found
+$8032.TW: possibly delisted; no timezone found
+$7712.TW: possibly delisted; no timezone found
+$6982.TW: possibly delisted; no timezone found
 $7734.TW: possibly delisted; no timezone found
+$7753.TW: possibly delisted; no timezone found
+$6996.TW: possibly delisted; no timezone found
+$7747.TW: possibly delisted; no timezone found
+$7767.TW: possibly delisted; no timezone found
+$6961.TW: possibly delisted; no timezone found
+$7717.TW: possibly delisted; no timezone found
+$7820.TW: possibly delisted; no timezone found
+$7811.TW: possibly delisted; no timezone found
+$7757.TW: possibly delisted; no timezone found
+$6967.TW: possibly delisted; no timezone found
+$6997.TW: possibly delisted; no timezone found
+$7703.TW: possibly delisted; no timezone found
+$7770.TW: possibly delisted; no timezone found
+$7777.TW: possibly delisted; no timezone found
+$6929.TW: possibly delisted; no timezone found
+$7713.TW: possibly delisted; no timezone found
+$7556.TW: possibly delisted; no timezone found
+$7714.TW: possibly delisted; no timezone found
+$8027.TW: possibly delisted; no timezone found
+$6953.TW: possibly delisted; no timezone found
 
 50 Failed downloads:
-['7743.TW', '7751.TW', '7753.TW', '7712.TW', '7828.TW', '7703.TW', '8027.TW', '7777.TW', '7744.TW', '7820.TW', '6996.TW', '7402.TW', '7716.TW', '7757.TW', '7713.TW', '7715.TW', '7767.TW', '7556.TW', '7717.TW', '7747.TW', '6929.TW', '7714.TW', '7642.TW', '6967.TW', '7709.TW', '7792.TW', '6997.TW', '7810.TW', '8024.TW', '8032.TW', '7770.TW', '7728.TW', '6971.TW', '7811.TW', '7794.TW', '7708.TW', '8034.TW', '7738.TW', '6961.TW', '7782.TW', '7805.TW', '7547.TW', '7704.TW', '6968.TW', '7718.TW', '6953.TW', '6982.TW', '7584.TW', '7723.TW', '7734.TW']: possibly delisted; no timezone found
-$8038.TW: possibly delisted; no timezone found
-$8111.TW: possibly delisted; no timezone found
-$8077.TW: possibly delisted; no timezone found
-$8044.TW: possibly delisted; no timezone found
-$8097.TW: possibly delisted; no timezone found
-$8121.TW: possibly delisted; no timezone found
-$8093.TW: possibly delisted; no timezone found
-$8147.TW: possibly delisted; no timezone found
-$8074.TW: possibly delisted; no timezone found
-$8099.TW: possibly delisted; no timezone found
-$8064.TW: possibly delisted; no timezone found
-$8050.TW: possibly delisted; no timezone found
-$8182.TW: possibly delisted; no timezone found
-$8084.TW: possibly delisted; no timezone found
+['6971.TW', '6968.TW', '7744.TW', '7718.TW', '7708.TW', '7723.TW', '7810.TW', '7738.TW', '7794.TW', '7728.TW', '7743.TW', '7715.TW', '7805.TW', '7716.TW', '7704.TW', '7828.TW', '8034.TW', '7792.TW', '8024.TW', '7782.TW', '7547.TW', '7709.TW', '7584.TW', '7402.TW', '7751.TW', '7642.TW', '8032.TW', '7712.TW', '6982.TW', '7734.TW', '7753.TW', '6996.TW', '7747.TW', '7767.TW', '6961.TW', '7717.TW', '7820.TW', '7811.TW', '7757.TW', '6967.TW', '6997.TW', '7703.TW', '7770.TW', '7777.TW', '6929.TW', '7713.TW', '7556.TW', '7714.TW', '8027.TW', '6953.TW']: possibly delisted; no timezone found
 $8092.TW: possibly delisted; no timezone found
-$8083.TW: possibly delisted; no timezone found
-$8069.TW: possibly delisted; no timezone found
-$8054.TW: possibly delisted; no timezone found
-$8227.TW: possibly delisted; no timezone found
-$8086.TW: possibly delisted; no timezone found
-$8272.TW: possibly delisted; no timezone found
-$8048.TW: possibly delisted; no timezone found
-$8088.TW: possibly delisted; no timezone found
-$8240.TW: possibly delisted; no timezone found
-$8089.TW: possibly delisted; no timezone found
-$8087.TW: possibly delisted; no timezone found
-$8067.TW: possibly delisted; no timezone found
-$8042.TW: possibly delisted; no timezone found
-$8066.TW: possibly delisted; no timezone found
-$8091.TW: possibly delisted; no timezone found
-$8183.TW: possibly delisted; no timezone found
-$8071.TW: possibly delisted; no timezone found
-$8076.TW: possibly delisted; no timezone found
-$8059.TW: possibly delisted; no timezone found
-$8109.TW: possibly delisted; no timezone found
-$8047.TW: possibly delisted; no timezone found
-$8155.TW: possibly delisted; no timezone found
-$8096.TW: possibly delisted; no timezone found
-$8040.TW: possibly delisted; no timezone found
-$8085.TW: possibly delisted; no timezone found
-$8107.TW: possibly delisted; no timezone found
-$8102.TW: possibly delisted; no timezone found
-$8176.TW: possibly delisted; no timezone found
+$8121.TW: possibly delisted; no timezone found
+$8099.TW: possibly delisted; no timezone found
 $8234.TW: possibly delisted; no timezone found
-$8255.TW: possibly delisted; no timezone found
-$8171.TW: possibly delisted; no timezone found
-$8049.TW: possibly delisted; no timezone found
-$8043.TW: possibly delisted; no timezone found
 $8068.TW: possibly delisted; no timezone found
+$8089.TW: possibly delisted; no timezone found
+$8111.TW: possibly delisted; no timezone found
+$8047.TW: possibly delisted; no timezone found
+$8096.TW: possibly delisted; no timezone found
+$8084.TW: possibly delisted; no timezone found
+$8176.TW: possibly delisted; no timezone found
+$8091.TW: possibly delisted; no timezone found
+$8102.TW: possibly delisted; no timezone found
+$8147.TW: possibly delisted; no timezone found
+$8050.TW: possibly delisted; no timezone found
+$8183.TW: possibly delisted; no timezone found
+$8227.TW: possibly delisted; no timezone found
+$8083.TW: possibly delisted; no timezone found
+$8048.TW: possibly delisted; no timezone found
+$8109.TW: possibly delisted; no timezone found
+$8064.TW: possibly delisted; no timezone found
+$8040.TW: possibly delisted; no timezone found
+$8071.TW: possibly delisted; no timezone found
+$8049.TW: possibly delisted; no timezone found
+$8093.TW: possibly delisted; no timezone found
+$8074.TW: possibly delisted; no timezone found
 $8080.TW: possibly delisted; no timezone found
+$8086.TW: possibly delisted; no timezone found
+$8171.TW: possibly delisted; no timezone found
+$8038.TW: possibly delisted; no timezone found
+$8255.TW: possibly delisted; no timezone found
+$8240.TW: possibly delisted; no timezone found
+$8272.TW: possibly delisted; no timezone found
+$8054.TW: possibly delisted; no timezone found
+$8088.TW: possibly delisted; no timezone found
+$8087.TW: possibly delisted; no timezone found
+$8107.TW: possibly delisted; no timezone found
+$8042.TW: possibly delisted; no timezone found
+$8076.TW: possibly delisted; no timezone found
+$8155.TW: possibly delisted; no timezone found
+$8066.TW: possibly delisted; no timezone found
+$8044.TW: possibly delisted; no timezone found
+$8043.TW: possibly delisted; no timezone found
+$8069.TW: possibly delisted; no timezone found
+$8077.TW: possibly delisted; no timezone found
+$8067.TW: possibly delisted; no timezone found
+$8097.TW: possibly delisted; no timezone found
+$8085.TW: possibly delisted; no timezone found
+$8182.TW: possibly delisted; no timezone found
+$8059.TW: possibly delisted; no timezone found
 
 50 Failed downloads:
-['8038.TW', '8111.TW', '8077.TW', '8044.TW', '8097.TW', '8121.TW', '8093.TW', '8147.TW', '8074.TW', '8099.TW', '8064.TW', '8050.TW', '8182.TW', '8084.TW', '8092.TW', '8083.TW', '8069.TW', '8054.TW', '8227.TW', '8086.TW', '8272.TW', '8048.TW', '8088.TW', '8240.TW', '8089.TW', '8087.TW', '8067.TW', '8042.TW', '8066.TW', '8091.TW', '8183.TW', '8071.TW', '8076.TW', '8059.TW', '8109.TW', '8047.TW', '8155.TW', '8096.TW', '8040.TW', '8085.TW', '8107.TW', '8102.TW', '8176.TW', '8234.TW', '8255.TW', '8171.TW', '8049.TW', '8043.TW', '8068.TW', '8080.TW']: possibly delisted; no timezone found
-$8930.TW: possibly delisted; no timezone found
-$8342.TW: possibly delisted; no timezone found
-$8299.TW: possibly delisted; no timezone found
-$8358.TW: possibly delisted; no timezone found
-$8279.TW: possibly delisted; no timezone found
-$8435.TW: possibly delisted; no timezone found
-$8401.TW: possibly delisted; no timezone found
-$8905.TW: possibly delisted; no timezone found
-$8440.TW: possibly delisted; no timezone found
-$8489.TW: possibly delisted; no timezone found
-$8277.TW: possibly delisted; no timezone found
-$8433.TW: possibly delisted; no timezone found
-$8291.TW: possibly delisted; no timezone found
-$8450.TW: possibly delisted; no timezone found
-$8928.TW: possibly delisted; no timezone found
-$8421.TW: possibly delisted; no timezone found
-$8409.TW: possibly delisted; no timezone found
-$8437.TW: possibly delisted; no timezone found
-$8410.TW: possibly delisted; no timezone found
-$8289.TW: possibly delisted; no timezone found
-$8403.TW: possibly delisted; no timezone found
-$8931.TW: possibly delisted; no timezone found
-$8431.TW: possibly delisted; no timezone found
-$8436.TW: possibly delisted; no timezone found
-$8924.TW: possibly delisted; no timezone found
-$8923.TW: possibly delisted; no timezone found
-$8423.TW: possibly delisted; no timezone found
-$8424.TW: possibly delisted; no timezone found
-$8906.TW: possibly delisted; no timezone found
-$8349.TW: possibly delisted; no timezone found
-$8917.TW: possibly delisted; no timezone found
-$8415.TW: possibly delisted; no timezone found
-$8927.TW: possibly delisted; no timezone found
-$8284.TW: possibly delisted; no timezone found
-$8908.TW: possibly delisted; no timezone found
+['8092.TW', '8121.TW', '8099.TW', '8234.TW', '8068.TW', '8089.TW', '8111.TW', '8047.TW', '8096.TW', '8084.TW', '8176.TW', '8091.TW', '8102.TW', '8147.TW', '8050.TW', '8183.TW', '8227.TW', '8083.TW', '8048.TW', '8109.TW', '8064.TW', '8040.TW', '8071.TW', '8049.TW', '8093.TW', '8074.TW', '8080.TW', '8086.TW', '8171.TW', '8038.TW', '8255.TW', '8240.TW', '8272.TW', '8054.TW', '8088.TW', '8087.TW', '8107.TW', '8042.TW', '8076.TW', '8155.TW', '8066.TW', '8044.TW', '8043.TW', '8069.TW', '8077.TW', '8067.TW', '8097.TW', '8085.TW', '8182.TW', '8059.TW']: possibly delisted; no timezone found
 $8354.TW: possibly delisted; no timezone found
-$8446.TW: possibly delisted; no timezone found
 $8390.TW: possibly delisted; no timezone found
-$8416.TW: possibly delisted; no timezone found
-$8932.TW: possibly delisted; no timezone found
-$8916.TW: possibly delisted; no timezone found
 $8455.TW: possibly delisted; no timezone found
-$8472.TW: possibly delisted; no timezone found
+$8416.TW: possibly delisted; no timezone found
+$8423.TW: possibly delisted; no timezone found
+$8908.TW: possibly delisted; no timezone found
+$8916.TW: possibly delisted; no timezone found
 $8477.TW: possibly delisted; no timezone found
-$8929.TW: possibly delisted; no timezone found
-$8444.TW: possibly delisted; no timezone found
+$8930.TW: possibly delisted; no timezone found
+$8415.TW: possibly delisted; no timezone found
+$8291.TW: possibly delisted; no timezone found
+$8437.TW: possibly delisted; no timezone found
+$8489.TW: possibly delisted; no timezone found
 $8383.TW: possibly delisted; no timezone found
-$8921.TW: possibly delisted; no timezone found
+$8421.TW: possibly delisted; no timezone found
+$8342.TW: possibly delisted; no timezone found
+$8279.TW: possibly delisted; no timezone found
+$8424.TW: possibly delisted; no timezone found
 $8432.TW: possibly delisted; no timezone found
+$8401.TW: possibly delisted; no timezone found
+$8924.TW: possibly delisted; no timezone found
+$8431.TW: possibly delisted; no timezone found
+$8472.TW: possibly delisted; no timezone found
 $8426.TW: possibly delisted; no timezone found
+$8410.TW: possibly delisted; no timezone found
+$8928.TW: possibly delisted; no timezone found
+$8931.TW: possibly delisted; no timezone found
+$8277.TW: possibly delisted; no timezone found
+$8906.TW: possibly delisted; no timezone found
+$8299.TW: possibly delisted; no timezone found
+$8403.TW: possibly delisted; no timezone found
+$8435.TW: possibly delisted; no timezone found
+$8446.TW: possibly delisted; no timezone found
+$8905.TW: possibly delisted; no timezone found
+$8929.TW: possibly delisted; no timezone found
+$8923.TW: possibly delisted; no timezone found
+$8284.TW: possibly delisted; no timezone found
+$8440.TW: possibly delisted; no timezone found
+$8433.TW: possibly delisted; no timezone found
+$8289.TW: possibly delisted; no timezone found
+$8917.TW: possibly delisted; no timezone found
+$8349.TW: possibly delisted; no timezone found
+$8927.TW: possibly delisted; no timezone found
+$8444.TW: possibly delisted; no timezone found
+$8409.TW: possibly delisted; no timezone found
+$8921.TW: possibly delisted; no timezone found
+$8436.TW: possibly delisted; no timezone found
+$8450.TW: possibly delisted; no timezone found
+$8358.TW: possibly delisted; no timezone found
+$8932.TW: possibly delisted; no timezone found
 
 50 Failed downloads:
-['8930.TW', '8342.TW', '8299.TW', '8358.TW', '8279.TW', '8435.TW', '8401.TW', '8905.TW', '8440.TW', '8489.TW', '8277.TW', '8433.TW', '8291.TW', '8450.TW', '8928.TW', '8421.TW', '8409.TW', '8437.TW', '8410.TW', '8289.TW', '8403.TW', '8931.TW', '8431.TW', '8436.TW', '8924.TW', '8923.TW', '8423.TW', '8424.TW', '8906.TW', '8349.TW', '8917.TW', '8415.TW', '8927.TW', '8284.TW', '8908.TW', '8354.TW', '8446.TW', '8390.TW', '8416.TW', '8932.TW', '8916.TW', '8455.TW', '8472.TW', '8477.TW', '8929.TW', '8444.TW', '8383.TW', '8921.TW', '8432.TW', '8426.TW']: possibly delisted; no timezone found
-$9960.TW: possibly delisted; no timezone found
-$9962.TW: possibly delisted; no timezone found
-$8937.TW: possibly delisted; no timezone found
-$8936.TW: possibly delisted; no timezone found
+['8354.TW', '8390.TW', '8455.TW', '8416.TW', '8423.TW', '8908.TW', '8916.TW', '8477.TW', '8930.TW', '8415.TW', '8291.TW', '8437.TW', '8489.TW', '8383.TW', '8421.TW', '8342.TW', '8279.TW', '8424.TW', '8432.TW', '8401.TW', '8924.TW', '8431.TW', '8472.TW', '8426.TW', '8410.TW', '8928.TW', '8931.TW', '8277.TW', '8906.TW', '8299.TW', '8403.TW', '8435.TW', '8446.TW', '8905.TW', '8929.TW', '8923.TW', '8284.TW', '8440.TW', '8433.TW', '8289.TW', '8917.TW', '8349.TW', '8927.TW', '8444.TW', '8409.TW', '8921.TW', '8436.TW', '8450.TW', '8358.TW', '8932.TW']: possibly delisted; no timezone found
+$8941.TW: possibly delisted; no timezone found
+$8938.TW: possibly delisted; no timezone found
 $8942.TW: possibly delisted; no timezone found
+$9962.TW: possibly delisted; no timezone found
 $9950.TW: possibly delisted; no timezone found
 $9951.TW: possibly delisted; no timezone found
-$8941.TW: possibly delisted; no timezone found
 $8933.TW: possibly delisted; no timezone found
-$8935.TW: possibly delisted; no timezone found
-$8938.TW: possibly delisted; no timezone found
+$9960.TW: possibly delisted; no timezone found
 $9949.TW: possibly delisted; no timezone found
+$8935.TW: possibly delisted; no timezone found
+$8936.TW: possibly delisted; no timezone found
+$8937.TW: possibly delisted; no timezone found
 
 12 Failed downloads:
-['9960.TW', '9962.TW', '8937.TW', '8936.TW', '8942.TW', '9950.TW', '9951.TW', '8941.TW', '8933.TW', '8935.TW', '8938.TW', '9949.TW']: possibly delisted; no timezone found
+['8941.TW', '8938.TW', '8942.TW', '9962.TW', '9950.TW', '9951.TW', '8933.TW', '9960.TW', '9949.TW', '8935.TW', '8936.TW', '8937.TW']: possibly delisted; no timezone found
 [fetch] 完成 971 檔
-      歷史 971 檔, 耗時 143s
+      歷史 971 檔, 耗時 218s
 [4/4] 開始回測...
 [v2] 回測 1220 個交易日
   [200/1220] 2018-10-29 持倉 0 累計 0 筆
@@ -1110,54 +1110,53 @@ $9949.TW: possibly delisted; no timezone found
   [550/1220] 2020-04-15 持倉 0 累計 0 筆
   [600/1220] 2020-06-29 持倉 0 累計 0 筆
   [650/1220] 2020-09-07 持倉 0 累計 0 筆
-  [700/1220] 2020-11-19 持倉 4 累計 1 筆
-  [750/1220] 2021-01-29 持倉 4 累計 11 筆
-  [800/1220] 2021-04-26 持倉 5 累計 19 筆
-  [850/1220] 2021-07-07 持倉 5 累計 31 筆
-  [900/1220] 2021-09-15 持倉 2 累計 39 筆
-  [950/1220] 2021-11-29 持倉 2 累計 43 筆
-  [1000/1220] 2022-02-17 持倉 2 累計 51 筆
-  [1050/1220] 2022-05-04 持倉 0 累計 54 筆
-  [1100/1220] 2022-07-14 持倉 0 累計 54 筆
-  [1150/1220] 2022-09-23 持倉 0 累計 54 筆
-  [1200/1220] 2022-12-05 持倉 0 累計 54 筆
-      耗時 175s
+  [700/1220] 2020-11-19 持倉 2 累計 0 筆
+  [750/1220] 2021-01-29 持倉 5 累計 8 筆
+  [800/1220] 2021-04-26 持倉 5 累計 17 筆
+  [850/1220] 2021-07-07 持倉 5 累計 29 筆
+  [900/1220] 2021-09-15 持倉 1 累計 37 筆
+  [950/1220] 2021-11-29 持倉 1 累計 39 筆
+  [1000/1220] 2022-02-17 持倉 2 累計 44 筆
+  [1050/1220] 2022-05-04 持倉 0 累計 47 筆
+  [1100/1220] 2022-07-14 持倉 0 累計 47 筆
+  [1150/1220] 2022-09-23 持倉 0 累計 47 筆
+  [1200/1220] 2022-12-05 持倉 0 累計 47 筆
+      耗時 138s
 
 ============================================================
 📊 v2 (真版) 回測結果
 ============================================================
-總報酬 +52.3%  CAGR +8.8%
-實際交易期 2020-11-10 ~ 2022-04-12 (1.4年)
-CAGR(實際) +34.5%
-交易 54 筆, 勝率 44%, PF 2.29
-平均賺 +24.73%, 平均賠 -8.63%, 盈虧比 2.87
-平均持倉 28 天
+總報酬 +7.0%  CAGR +1.4%
+實際交易期 2020-11-12 ~ 2022-04-12 (1.4年)
+CAGR(實際) +4.9%
+交易 47 筆, 勝率 43%, PF 1.28
+平均賺 +15.94%, 平均賠 -9.23%, 盈虧比 1.73
+平均持倉 25 天
 
 族群獲利 Top 8:
-  電子零組件       19筆  勝9/19(47%)  總 +154.3%
-  半導體         22筆  勝10/22(45%)  總 +136.8%
-  其他           3筆  勝2/3(67%)  總 +53.0%
-  光電           2筆  勝1/2(50%)  總 +46.7%
+  電子零組件       17筆  勝8/17(47%)  總 +59.7%
+  光電           3筆  勝2/3(67%)  總 +53.0%
+  其他           2筆  勝1/2(50%)  總 +24.5%
   金融保險         2筆  勝1/2(50%)  總 -0.5%
   電腦及週邊        3筆  勝1/3(33%)  總 -5.5%
-  建材營造         1筆  勝0/1(0%)  總 -5.9%
   食品           1筆  勝0/1(0%)  總 -9.8%
+  半導體         18筆  勝7/18(39%)  總 -17.5%
+  鋼鐵           1筆  勝0/1(0%)  總 -34.5%
 
 📅 每月族群分散度:
-  2020-11 (6筆,2族群): 半導體:4, 電子零組件:2
-  2020-12 (6筆,3族群): 半導體:3, 電子零組件:2, 其他:1
-  2021-01 (3筆,3族群): 半導體:1, 電腦及週邊:1, 電子零組件:1
-  2021-02 (3筆,2族群): 半導體:2, 光電:1
-  2021-03 (5筆,2族群): 半導體:3, 電子零組件:2
-  2021-04 (2筆,2族群): 電子零組件:1, 光電:1
+  2020-11 (4筆,2族群): 半導體:3, 電子零組件:1
+  2020-12 (5筆,3族群): 電子零組件:2, 半導體:2, 其他:1
+  2021-01 (4筆,2族群): 電子零組件:3, 電腦及週邊:1
+  2021-02 (2筆,1族群): 半導體:2
+  2021-03 (3筆,2族群): 光電:2, 半導體:1
+  2021-04 (5筆,3族群): 電子零組件:2, 半導體:2, 光電:1
   2021-05 (4筆,4族群): 電子零組件:1, 鋼鐵:1, 食品:1, 半導體:1
-  2021-06 (6筆,2族群): 電子零組件:4, 半導體:2
+  2021-06 (6筆,2族群): 半導體:3, 電子零組件:3
   2021-07 (3筆,2族群): 半導體:2, 電子零組件:1
-  2021-08 (2筆,1族群): 其他:2
-  2021-09 (2筆,2族群): 建材營造:1, 電腦及週邊:1
-  2021-10 (1筆,1族群): 半導體:1
-  2021-11 (2筆,2族群): 半導體:1, 電子零組件:1
-  2021-12 (4筆,2族群): 電子零組件:2, 半導體:2
+  2021-08 (1筆,1族群): 其他:1
+  2021-09 (2筆,2族群): 半導體:1, 電腦及週邊:1
+  2021-11 (1筆,1族群): 電子零組件:1
+  2021-12 (2筆,2族群): 電子零組件:1, 半導體:1
   2022-01 (4筆,3族群): 金融保險:2, 電子零組件:1, 電腦及週邊:1
   2022-03 (1筆,1族群): 電子零組件:1
 
@@ -1167,6 +1166,6 @@ CAGR(實際) +34.5%
   V4 (5年): +226.8% / 24.8% CAGR / PF 3.40 / 勝率 46%
   v1 (前次ATH bug,實0.9年): +126.3% / 142.9% CAGR實 / PF 3.91 / 勝率 52%
   v1.5 (族群持續性,實2.2年): +90.2% / 34.1% CAGR實 / PF 1.59 / 勝率 43%
-  v2 (真版,實1.4年): +52.3% / +34.5% CAGR實 / PF 2.29 / 勝率 44%
+  v2 (真版,實1.4年): +7.0% / +4.9% CAGR實 / PF 1.28 / 勝率 43%
 
 💾 已輸出 backtest_v2_oos.json

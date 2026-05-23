@@ -79,10 +79,10 @@ def pick_v2_from_report(report):
     return picks[:MAX_PICKS], top_inds
 
 
-def build_message(picks, top_inds, date):
-    lines = [f"📡 {date[5:]} V2 推薦", ""]
+def build_message(picks, top_inds, date, active_capital=450_000):
+    """訊息格式: 開盤掛單可執行版"""
+    lines = [f"📡 {date[5:]} 開盤掛單", ""]
 
-    # 推薦族群
     if top_inds:
         ind_summary = " / ".join(
             f"{s['industry']}({s['bullish_count']}多頭)"
@@ -90,24 +90,50 @@ def build_message(picks, top_inds, date):
         )
         lines.append(f"🔥 強族群: {ind_summary}")
     else:
-        lines.append("😐 無強族群（多頭排列檔數不足）")
+        lines.append("😐 今日無強族群")
     lines.append("")
 
-    # 個股
-    if picks:
-        lines.append(f"🎯 {len(picks)} 檔個股（V2 嚴選）：")
-        for i, p in enumerate(picks, 1):
-            price = p["today"]
-            stop = round(price * 0.93, 1)
-            tag_parts = []
-            if p.get("long_red"): tag_parts.append("長紅")
-            if p.get("gap_up"): tag_parts.append("跳空")
-            tag = "/".join(tag_parts) if tag_parts else ""
-            lines.append(f"  {i}. {p['ticker']} {p['name']} ({p['industry']})")
-            lines.append(f"     進${price} 停${stop} 量{p['vol_ratio']:.1f}x RSI{p['rsi']:.0f} {tag}")
-    else:
-        lines.append("📭 今日無符合 V2 條件的個股")
-        lines.append("（嚴格過濾：ATH+多頭+快多頭+量1.5x+長紅/跳空+RSI55-75+收高+市值100億）")
+    if not picks:
+        lines.append("📭 今日無 V2 訊號 → 空手")
+        lines.append("（不要硬找，等明天）")
+        return "\n".join(lines)
+
+    # 部位分配：總主動 / 檔數 (1-3 檔)
+    n_picks = min(len(picks), 3)
+    per_stock = active_capital / max(n_picks, 1)
+
+    lines.append(f"🎯 {n_picks} 檔開盤掛單（每檔 {per_stock/10000:.0f} 萬）：")
+    lines.append("")
+    for i, p in enumerate(picks[:n_picks], 1):
+        price = p["today"]
+        # 限價單建議：今日收盤 +0.8%（給跳空空間）
+        limit_low = round(price * 1.008, 1)
+        limit_high = round(price * 1.02, 1)
+        stop = round(price * 0.93, 1)
+        # 部位 → 股數 (千股單位)
+        shares = int(per_stock / limit_low / 1000) * 1000
+        if shares < 1000:
+            shares = 1000
+        actual_cost = shares * limit_low
+
+        tag_parts = []
+        if p.get("long_red"): tag_parts.append("長紅")
+        if p.get("gap_up"): tag_parts.append("跳空")
+        tag = "/".join(tag_parts) or ""
+
+        lines.append(f"{i}. {p['ticker']} {p['name']} ({p['industry']})")
+        lines.append(f"   📍 限價 ${limit_low}-${limit_high}")
+        lines.append(f"   💰 {shares}股 ≈ ${actual_cost:,.0f}")
+        lines.append(f"   🛑 停損 ${stop} (-7%)")
+        lines.append(f"   📊 量{p['vol_ratio']:.1f}x RSI{p['rsi']:.0f} {tag}")
+        lines.append("")
+
+    lines.append("━━━━━━━━━━━━━━━━━━━━")
+    lines.append("💡 操作:")
+    lines.append("  9:00前掛限價低點")
+    lines.append("  9:05沒成交→改限價高點")
+    lines.append("  9:10仍無→放棄")
+    lines.append("  跳空+3%以上→不追")
 
     return "\n".join(lines)
 

@@ -1,0 +1,41 @@
+name: Weekly V2 Review
+
+on:
+  schedule:
+    # 每週六台北時間 10:00 = UTC 週六 02:00
+    - cron: '0 2 * * 6'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 100   # 需要 git log 撈過去 daily_v2_signal.json 歷史
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run V2 weekly review
+        env:
+          LINE_TOKEN:   ${{ secrets.LINE_TOKEN }}
+          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
+        run: python weekly_v2_review.py
+
+      - name: Commit review
+        if: success()
+        run: |
+          git config user.name  "github-actions"
+          git config user.email "github-actions@github.com"
+          git add weekly_v2_review.json || true
+          git diff --staged --quiet || git commit -m "feat: weekly v2 review $(date -u +%Y-%m-%d)"
+          git push

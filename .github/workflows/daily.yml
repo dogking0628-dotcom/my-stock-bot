@@ -49,6 +49,9 @@ jobs:
           LINE_USER_ID:         ${{ secrets.LINE_USER_ID }}
         run: python daily_v2_picker.py || echo "daily v2 picker failed (non-fatal)"
 
+      - name: Run Daily Review - 累積 top5_history (週檢討需要)
+        run: python daily_review.py || echo "daily review failed (non-fatal)"
+
       - name: Commit state
         run: |
           git config user.name  "github-actions"

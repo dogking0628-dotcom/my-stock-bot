@@ -229,6 +229,102 @@
           "vol_ratio_at_rec": 0.4810349316063318
         }
       ]
+    },
+    {
+      "date": "2026-05-25",
+      "industry": "半導體",
+      "picks": [
+        {
+          "ticker": "8261",
+          "name": "富鼎",
+          "industry": "半導體",
+          "rec_close": 176.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "QQQ+0.4%",
+            "SMH+1.5%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 83.2258064516129,
+          "change_pct_at_rec": 10.000000000000009,
+          "vol_ratio_at_rec": 0.689901423820911
+        },
+        {
+          "ticker": "3711",
+          "name": "日月光投控",
+          "industry": "半導體",
+          "rec_close": 617.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "QQQ+0.4%",
+            "SMH+1.5%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 65.59485530546624,
+          "change_pct_at_rec": 9.982174688057043,
+          "vol_ratio_at_rec": 1.0446034242019548
+        },
+        {
+          "ticker": "2454",
+          "name": "聯發科",
+          "industry": "半導體",
+          "rec_close": 4245.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "QQQ+0.4%",
+            "SMH+1.5%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 69.19014084507043,
+          "change_pct_at_rec": 9.974093264248696,
+          "vol_ratio_at_rec": 0.39732175227104877
+        },
+        {
+          "ticker": "6415",
+          "name": "矽力*-KY",
+          "industry": "半導體",
+          "rec_close": 618.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "QQQ+0.4%",
+            "SMH+1.5%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 75.41899441340783,
+          "change_pct_at_rec": 9.964412811387891,
+          "vol_ratio_at_rec": 1.0583061932761113
+        },
+        {
+          "ticker": "6451",
+          "name": "訊芯-KY",
+          "industry": "半導體",
+          "rec_close": 576.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "QQQ+0.4%",
+            "SMH+1.5%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 56.45539906103286,
+          "change_pct_at_rec": 9.92366412213741,
+          "vol_ratio_at_rec": 0.7093316064022868
+        }
+      ]
     }
   ]
 }

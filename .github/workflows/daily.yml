@@ -2,7 +2,8 @@ name: Daily ATH Scan
 
 on:
   schedule:
-    - cron: '30 21 * * 1-5'
+    # 台灣 08:00 盤前 (UTC+8) → UTC 00:00，週一~週五
+    - cron: '0 0 * * 1-5'
   workflow_dispatch:
 
 permissions:

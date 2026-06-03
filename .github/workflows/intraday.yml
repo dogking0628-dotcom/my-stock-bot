@@ -2,8 +2,11 @@ name: Intraday Scan (TW market hours)
 
 on:
   schedule:
-    # 台北 09:00-13:30 = UTC 01:00-05:30，週一至週五，每 30 分鐘
-    - cron: '0,30 1-5 * * 1-5'
+    # 以台灣時間為準，盤中每 30 分掃描，最後一次不超過 13:00 (UTC+8)
+    # 台灣 09:00-12:30 = UTC 01:00-04:30
+    - cron: '0,30 1-4 * * 1-5'
+    # 台灣 13:00 = UTC 05:00 (最後一次)
+    - cron: '0 5 * * 1-5'
   workflow_dispatch:
 
 permissions:

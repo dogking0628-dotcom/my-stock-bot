@@ -1872,7 +1872,7 @@
       "ma5": 235.4,
       "ma20": 220.425,
       "ma60": 180.27818552652994,
-      "ma200": 163.89947776794435,
+      "ma200": 163.8994776916504,
       "gap_up": true,
       "close_near_high": true,
       "long_red": true,
@@ -3365,7 +3365,7 @@
       "ma5": 2362.0,
       "ma20": 2282.5,
       "ma60": 2076.1432230631513,
-      "ma200": 1650.8284777832032,
+      "ma200": 1650.8284771728515,
       "gap_up": false,
       "close_near_high": false,
       "long_red": false,
@@ -4024,7 +4024,7 @@
       "ma5": 164.5,
       "ma20": 155.375,
       "ma60": 140.56963500976562,
-      "ma200": 126.33565689086915,
+      "ma200": 126.3356572341919,
       "gap_up": false,
       "close_near_high": false,
       "long_red": false,
@@ -7016,7 +7016,5 @@
     "ext_pct": 54.1557004095321,
     "in_stage2": true
   },
-  "v4_blocked": false,
-  "intraday_updated": "2026-06-03 06:03",
-  "is_intraday": true
+  "v4_blocked": false
 }

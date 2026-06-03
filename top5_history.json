@@ -325,6 +325,97 @@
           "vol_ratio_at_rec": 0.7093316064022868
         }
       ]
+    },
+    {
+      "date": "2026-06-03",
+      "industry": "半導體",
+      "picks": [
+        {
+          "ticker": "6451",
+          "name": "訊芯-KY",
+          "industry": "半導體",
+          "rec_close": 724.0,
+          "momentum_score": 95,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "QQQ+0.5%",
+            "SMH+4.0%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 69.47162426614481,
+          "change_pct_at_rec": 9.863429438543236,
+          "vol_ratio_at_rec": 0.5596640648924025
+        },
+        {
+          "ticker": "3711",
+          "name": "日月光投控",
+          "industry": "半導體",
+          "rec_close": 618.0,
+          "momentum_score": 90,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+0.5%",
+            "SMH+4.0%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 60.35502958579882,
+          "change_pct_at_rec": 4.745762711864399,
+          "vol_ratio_at_rec": 1.0857081237227522
+        },
+        {
+          "ticker": "6116",
+          "name": "彩晶",
+          "industry": "光電",
+          "rec_close": 22.700000762939453,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "QQQ+0.5%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 95.22059117427739,
+          "change_pct_at_rec": 9.92736650014081,
+          "vol_ratio_at_rec": 0.6628642377242383
+        },
+        {
+          "ticker": "2324",
+          "name": "仁寶",
+          "industry": "電腦及週邊",
+          "rec_close": 47.04999923706055,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步",
+            "QQQ+0.5%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 84.14634203074026,
+          "change_pct_at_rec": 6.087938795567149,
+          "vol_ratio_at_rec": 2.5381673560886853
+        },
+        {
+          "ticker": "3149",
+          "name": "正達",
+          "industry": "光電",
+          "rec_close": 90.80000305175781,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步",
+            "QQQ+0.5%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 88.35759116056101,
+          "change_pct_at_rec": 5.458774286795598,
+          "vol_ratio_at_rec": 1.8043183474923186
+        }
+      ]
     }
   ]
 }

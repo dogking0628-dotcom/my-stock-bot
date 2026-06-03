@@ -38,6 +38,8 @@ jobs:
         run: |
           git config user.name  "github-actions"
           git config user.email "github-actions@github.com"
-          git add weekly_review.json review_output.txt || true
+          for f in weekly_review.json review_output.txt; do
+            [ -f "$f" ] && git add "$f" || true
+          done
           git diff --staged --quiet || git commit -m "chore: post-close review $(date -u +%Y-%m-%d)"
           git push

@@ -30,6 +30,8 @@ jobs:
         run: |
           git config user.name  "github-actions"
           git config user.email "github-actions@github.com"
-          git add ath_industry_report.json scan_output.txt || true
+          for f in ath_industry_report.json scan_output.txt; do
+            [ -f "$f" ] && git add "$f" || true
+          done
           git diff --staged --quiet || git commit -m "chore: industry ATH scan $(date -u +%Y-%m-%d)"
           git push

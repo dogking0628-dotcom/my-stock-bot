@@ -1,19 +1,19 @@
 {
-  "last_run": "2026-06-02",
+  "last_run": "2026-06-03",
   "cash": 9770.297054562754,
   "positions": [
     {
       "ticker": "INTC",
       "entry_date": "2026-05-01",
       "entry_price": 99.62,
-      "peak_price": 107.93000030517578,
+      "peak_price": 112.70999908447266,
       "shares": 100.381447
     },
     {
       "ticker": "MU",
       "entry_date": "2026-05-01",
       "entry_price": 542.21,
-      "peak_price": 1064.0999755859375,
+      "peak_price": 1079.5699462890625,
       "shares": 18.443038
     },
     {

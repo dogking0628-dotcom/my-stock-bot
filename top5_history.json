@@ -416,6 +416,42 @@
           "vol_ratio_at_rec": 1.8043183474923186
         }
       ]
+    },
+    {
+      "date": "2026-06-04",
+      "industry": "半導體",
+      "picks": [
+        {
+          "ticker": "3049",
+          "name": "精金",
+          "industry": "光電",
+          "rec_close": 17.0,
+          "momentum_score": 80,
+          "momentum_notes": [
+            "量爆價揚",
+            "ATH"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 86.36363045243311,
+          "change_pct_at_rec": 7.594935409993342,
+          "vol_ratio_at_rec": 3.9407693674394704
+        },
+        {
+          "ticker": "8070",
+          "name": "長華*",
+          "industry": "電子通路",
+          "rec_close": 64.19999694824219,
+          "momentum_score": 80,
+          "momentum_notes": [
+            "量爆價揚",
+            "ATH"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 89.60498762642035,
+          "change_pct_at_rec": 6.999994913736973,
+          "vol_ratio_at_rec": 3.7538323057890866
+        }
+      ]
     }
   ]
 }

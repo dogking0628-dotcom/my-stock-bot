@@ -1,51 +1,19 @@
 {
-  "timestamp": "2026-06-04",
+  "timestamp": "2026-06-05",
   "strategy": "V2 原版 (MIN_MCAP=100, OOS PF 2.29 / MDD -9.7%)",
   "top_industries": [
     {
-      "industry": "半導體",
-      "count": 38,
-      "bullish_count": 32
+      "industry": "電子零組件",
+      "count": 41,
+      "bullish_count": 30
     },
     {
-      "industry": "電子零組件",
-      "count": 35,
-      "bullish_count": 24
+      "industry": "半導體",
+      "count": 32,
+      "bullish_count": 25
     }
   ],
-  "picks": [
-    {
-      "today": 177.5,
-      "monthly_max_2y": 167.2206573486328,
-      "ratio": 1.061471727323354,
-      "from_high_pct": 6.147172732335404,
-      "bullish": true,
-      "bullish_fast": true,
-      "change_pct": 9.90712074303406,
-      "vol_ratio": 2.2966105273046153,
-      "rsi": 70.5,
-      "ma5": 159.8,
-      "ma20": 144.625,
-      "ma60": 128.125,
-      "ma200": 116.19248683929443,
-      "gap_up": false,
-      "close_near_high": true,
-      "long_red": true,
-      "ticker": "2493",
-      "name": "揚博",
-      "industry": "電子零組件",
-      "industry_strong": false,
-      "market_cap_billions": 248.53200896,
-      "mcap_pass": true,
-      "momentum_score": 30,
-      "momentum_notes": [
-        "ATH"
-      ],
-      "tier": "⭐",
-      "next_day_prob": "<70%",
-      "_score": 113.28
-    }
-  ],
+  "picks": [],
   "params": {
     "top_industries": 2,
     "vol_ratio_min": 1.5,

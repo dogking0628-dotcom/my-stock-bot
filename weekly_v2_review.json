@@ -1,8 +1,28 @@
 {
-  "period": "2026-05-27 ~ 2026-06-03",
-  "total_picks": 0,
-  "wins": 0,
-  "avg_return": 0,
-  "picks": [],
-  "by_industry": {}
+  "period": "2026-05-30 ~ 2026-06-06",
+  "total_picks": 1,
+  "wins": 1,
+  "avg_return": 0.56,
+  "picks": [
+    {
+      "ticker": "2493",
+      "actual_entry": 177.0,
+      "current": 178.0,
+      "ret_pct": 0.56,
+      "peak_pct": 7.63,
+      "low_pct": -3.39,
+      "status": "持有中",
+      "triggered": null,
+      "days_held": 1,
+      "signal_date": "2026-06-04",
+      "name": "揚博",
+      "industry": "電子零組件",
+      "system_entry": 177.5
+    }
+  ],
+  "by_industry": {
+    "電子零組件": [
+      "2493"
+    ]
+  }
 }

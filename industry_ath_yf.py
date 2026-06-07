@@ -25,6 +25,12 @@ ALLOWED_INDUSTRIES = {
 }
 MIN_MCAP_BILLIONS = 100  # 市值 ≥ 100 億 NT$ — 砍小型股雜訊
 
+# 🆕 V4.1: 重複虧損股 blacklist 視窗（天）
+# 回測證實：V5 多樣化反而放大回撤，過熱門檻 5 年內 0 觸發
+# 只保留有效的 7 日黑名單（避免 3443 連續虧損案例）
+RECENT_LOSER_WINDOW = 7
+SCORE_THRESHOLD = 80  # 動能門檻（V4 原始邏輯，不再依過熱調整）
+
 # 美股族群連動加分（昨日漲，TW 對應族群隔日加分）
 US_SECTOR_BOOST = {
     "QQQ": {"industries": list(ALLOWED_INDUSTRIES), "threshold": 0.0, "bonus": 5},
@@ -46,6 +52,53 @@ def load_mcap():
             return json.load(f)
     except Exception:
         return {}
+
+
+def get_recent_losers():
+    """V5: 從 top5_history + 即時報價找出 7 日內進場且虧損的股票"""
+    history_path = os.path.join(os.path.dirname(__file__), "top5_history.json")
+    if not os.path.exists(history_path):
+        return set()
+    try:
+        with open(history_path, encoding="utf-8") as f:
+            h = json.load(f)
+    except Exception:
+        return set()
+    cutoff = dt.date.today() - dt.timedelta(days=RECENT_LOSER_WINDOW)
+    recent_picks = []
+    for r in h.get("records", []):
+        try:
+            d = dt.date.fromisoformat(r["date"])
+            if d < cutoff: continue
+            for p in r.get("picks", []):
+                recent_picks.append((p["ticker"], p.get("rec_close", 0)))
+        except Exception: continue
+    if not recent_picks: return set()
+    # 抓現價判斷虧損
+    tickers = list(set(t for t, _ in recent_picks))
+    losers = set()
+    try:
+        codes_str = " ".join(f"{t}.TW" for t in tickers)
+        df = yf.download(codes_str, period="3d", auto_adjust=True,
+                         progress=False, threads=True, group_by="ticker")
+        latest = {}
+        for t in tickers:
+            try:
+                sub = df[f"{t}.TW"] if len(tickers) > 1 else df
+                cl = sub["Close"].dropna()
+                if len(cl) > 0: latest[t] = float(cl.iloc[-1])
+            except Exception: continue
+        for t, rec_close in recent_picks:
+            cur = latest.get(t)
+            if cur is None or rec_close <= 0: continue
+            ret = (cur / rec_close - 1) * 100
+            if ret < 0: losers.add(t)
+    except Exception as e:
+        print(f"  [losers] fetch fail: {e}", file=sys.stderr)
+    if losers:
+        print(f"  🚫 V5 排除 {len(losers)} 檔 7 日內虧損股: {sorted(losers)[:10]}",
+              file=sys.stderr)
+    return losers
 
 
 def get_market_regime():
@@ -269,12 +322,14 @@ def main():
         n_up = sum(1 for x in lst if x.get("change_pct", 0) > 0)
         industry_up_ratio[ind] = n_up / len(lst)
 
-    # 🆕 V4: 大盤體制 + V3 市值 + 美股加分
+    # V4.1: V4 + 7 日內虧損股黑名單（族群多樣化、過熱門檻已棄用）
     mcap = load_mcap()
-    print(f"\n[3/3] 載入市值 {len(mcap)} 檔，檢查 0050 體制 + 美股連動...",
+    print(f"\n[3/3] 載入市值 {len(mcap)} 檔，檢查 0050 體制 + 美股連動 + V4.1 黑名單...",
           file=sys.stderr)
     in_stage2, regime_info = get_market_regime()
     us_chg = get_us_sector_change()
+    recent_losers = get_recent_losers()  # 🆕 V4.1: 7 日內虧損股黑名單
+    score_threshold = SCORE_THRESHOLD  # 固定門檻 80（過熱動態提升棄用，5y 從未觸發）
 
     # 對 ATH 股算動能確認分數（含 V3 美股加分 + 市值標記）
     for r in exact:
@@ -322,26 +377,36 @@ def main():
         print("  ⛔ V4: 0050 跌破 MA200 → 禁止進場（熊市段）", file=sys.stderr)
         tomorrow_top5 = []
     elif strongest_industry:
+        # V4.1 過濾條件：黑名單 + 動能門檻
+        def _pass(r):
+            if r["ticker"] in recent_losers: return False
+            if r.get("momentum_score", 0) < score_threshold: return False
+            return True
+
+        # 從最強族群挑前 5 檔（V4 原版邏輯，不再多樣化）
         in_industry = sorted(
-            by_ind_for_pick[strongest_industry],
+            [r for r in by_ind_for_pick[strongest_industry] if _pass(r)],
             key=lambda x: (-x.get("momentum_score", 0),
                            -x.get("change_pct", 0),
                            -x.get("vol_ratio", 0)))
-        high_only = [r for r in in_industry if r.get("momentum_score", 0) >= 80]
-        tomorrow_top5 = high_only[:5]
-        # 若不足 3 檔，補科技族群其他高分股
+        tomorrow_top5 = in_industry[:5]
+
+        # 若不足 3 檔，從其他科技族群補
         if len(tomorrow_top5) < 3:
+            existing = {x["ticker"] for x in tomorrow_top5}
             extra_pool = [r for r in exact
                           if r.get("industry") in ALLOWED_INDUSTRIES
-                          and r.get("mcap_pass")
-                          and r.get("momentum_score", 0) >= 80
-                          and r["ticker"] not in {x["ticker"] for x in tomorrow_top5}]
+                          and r.get("mcap_pass") and _pass(r)
+                          and r["ticker"] not in existing]
             extra_pool.sort(key=lambda x: -x.get("momentum_score", 0))
             tomorrow_top5 += extra_pool[: 5-len(tomorrow_top5)]
     else:
-        # fallback：科技族群 + 市值合格的任一動能排序
+        # fallback：科技族群 + 市值合格 + V5 過濾
         tech_pool = [r for r in exact
-                     if r.get("industry") in ALLOWED_INDUSTRIES and r.get("mcap_pass")]
+                     if r.get("industry") in ALLOWED_INDUSTRIES
+                     and r.get("mcap_pass")
+                     and r["ticker"] not in recent_losers
+                     and r.get("momentum_score", 0) >= score_threshold]
         tomorrow_top5 = sorted(tech_pool,
                                key=lambda x: -x.get("momentum_score", 0))[:5]
 

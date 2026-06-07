@@ -231,98 +231,256 @@
       ]
     },
     {
-      "date": "2026-05-25",
+      "date": "2026-05-12",
       "industry": "半導體",
       "picks": [
         {
-          "ticker": "8261",
-          "name": "富鼎",
+          "ticker": "3450",
+          "name": "聯鈞",
           "industry": "半導體",
-          "rec_close": 176.0,
-          "momentum_score": 100,
+          "rec_close": 470.5,
+          "momentum_score": 95,
           "momentum_notes": [
             "漲停鎖死",
             "ATH",
-            "族群同步",
-            "QQQ+0.4%",
-            "SMH+1.5%"
+            "QQQ+0.3%",
+            "SMH+1.7%"
           ],
           "tier": "⭐⭐⭐",
-          "rsi": 83.2258064516129,
+          "rsi": 65.21008403361344,
+          "change_pct_at_rec": 9.929906542056077,
+          "vol_ratio_at_rec": 0.8103272061909544
+        },
+        {
+          "ticker": "3135",
+          "name": "凌航",
+          "industry": "半導體",
+          "rec_close": 213.5,
+          "momentum_score": 95,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "QQQ+0.3%",
+            "SMH+1.7%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 91.2442396313364,
+          "change_pct_at_rec": 9.768637532133685,
+          "vol_ratio_at_rec": 0.7876676530032202
+        },
+        {
+          "ticker": "3583",
+          "name": "辛耘",
+          "industry": "半導體",
+          "rec_close": 952.0,
+          "momentum_score": 90,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+0.3%",
+            "SMH+1.7%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 67.30038022813687,
+          "change_pct_at_rec": 9.930715935334877,
+          "vol_ratio_at_rec": 2.169820296320145
+        },
+        {
+          "ticker": "6531",
+          "name": "愛普*",
+          "industry": "半導體",
+          "rec_close": 1055.0,
+          "momentum_score": 90,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+0.3%",
+            "SMH+1.7%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 77.96327212020033,
+          "change_pct_at_rec": 9.667359667359676,
+          "vol_ratio_at_rec": 1.3119822866184883
+        },
+        {
+          "ticker": "7769",
+          "name": "鴻勁",
+          "industry": "半導體",
+          "rec_close": 6870.0,
+          "momentum_score": 90,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+0.3%",
+            "SMH+1.7%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 87.75510204081633,
+          "change_pct_at_rec": 7.68025078369905,
+          "vol_ratio_at_rec": 1.4496268617821546
+        }
+      ]
+    },
+    {
+      "date": "2026-05-19",
+      "industry": "半導體",
+      "picks": [
+        {
+          "ticker": "6285",
+          "name": "啟",
+          "industry": "通信網路",
+          "rec_close": 292.0,
+          "momentum_score": 85,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "IGV+1.2%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 75.77854671280276,
+          "change_pct_at_rec": 2.0979020979021046,
+          "vol_ratio_at_rec": 1.7627912033878008
+        },
+        {
+          "ticker": "1582",
+          "name": "信錦",
+          "industry": "電子零組件",
+          "rec_close": 117.0,
+          "momentum_score": 80,
+          "momentum_notes": [
+            "量爆價揚",
+            "ATH"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 81.09340187624043,
+          "change_pct_at_rec": 9.859154929577475,
+          "vol_ratio_at_rec": 3.889914420275065
+        },
+        {
+          "ticker": "5243",
+          "name": "乙盛-KY",
+          "industry": "光電",
+          "rec_close": 114.5,
+          "momentum_score": 80,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 70.58823277989943,
+          "change_pct_at_rec": 9.569377990430628,
+          "vol_ratio_at_rec": 0.9245933133418324
+        },
+        {
+          "ticker": "6209",
+          "name": "今國光",
+          "industry": "光電",
+          "rec_close": 71.80000305175781,
+          "momentum_score": 80,
+          "momentum_notes": [
+            "量爆價揚",
+            "ATH"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 60.504200333769944,
+          "change_pct_at_rec": 5.588239781996784,
+          "vol_ratio_at_rec": 3.2162325582766074
+        }
+      ]
+    },
+    {
+      "date": "2026-05-21",
+      "industry": "半導體",
+      "picks": [
+        {
+          "ticker": "4919",
+          "name": "新唐",
+          "industry": "半導體",
+          "rec_close": 181.5,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步",
+            "QQQ+1.7%",
+            "SMH+3.8%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 62.87878787878788,
           "change_pct_at_rec": 10.000000000000009,
-          "vol_ratio_at_rec": 0.689901423820911
+          "vol_ratio_at_rec": 2.751698403265388
         },
         {
-          "ticker": "3711",
-          "name": "日月光投控",
+          "ticker": "3016",
+          "name": "嘉晶",
           "industry": "半導體",
-          "rec_close": 617.0,
+          "rec_close": 115.5,
           "momentum_score": 100,
           "momentum_notes": [
             "漲停鎖死",
             "ATH",
             "族群同步",
-            "QQQ+0.4%",
-            "SMH+1.5%"
+            "QQQ+1.7%",
+            "SMH+3.8%"
           ],
           "tier": "⭐⭐⭐",
-          "rsi": 65.59485530546624,
-          "change_pct_at_rec": 9.982174688057043,
-          "vol_ratio_at_rec": 1.0446034242019548
+          "rsi": 65.2122654028743,
+          "change_pct_at_rec": 10.000000000000009,
+          "vol_ratio_at_rec": 0.21422193096077052
         },
         {
-          "ticker": "2454",
-          "name": "聯發科",
+          "ticker": "3532",
+          "name": "台勝科",
           "industry": "半導體",
-          "rec_close": 4245.0,
+          "rec_close": 226.0,
           "momentum_score": 100,
           "momentum_notes": [
             "漲停鎖死",
             "ATH",
             "族群同步",
-            "QQQ+0.4%",
-            "SMH+1.5%"
+            "QQQ+1.7%",
+            "SMH+3.8%"
           ],
           "tier": "⭐⭐⭐",
-          "rsi": 69.19014084507043,
-          "change_pct_at_rec": 9.974093264248696,
-          "vol_ratio_at_rec": 0.39732175227104877
+          "rsi": 60.27777777777778,
+          "change_pct_at_rec": 9.97566909975669,
+          "vol_ratio_at_rec": 0.23445638073466687
         },
         {
-          "ticker": "6415",
-          "name": "矽力*-KY",
+          "ticker": "7769",
+          "name": "鴻勁",
           "industry": "半導體",
-          "rec_close": 618.0,
+          "rec_close": 7675.0,
           "momentum_score": 100,
           "momentum_notes": [
             "漲停鎖死",
             "ATH",
             "族群同步",
-            "QQQ+0.4%",
-            "SMH+1.5%"
+            "QQQ+1.7%",
+            "SMH+3.8%"
           ],
           "tier": "⭐⭐⭐",
-          "rsi": 75.41899441340783,
-          "change_pct_at_rec": 9.964412811387891,
-          "vol_ratio_at_rec": 1.0583061932761113
+          "rsi": 78.91949152542372,
+          "change_pct_at_rec": 9.957020057306586,
+          "vol_ratio_at_rec": 0.2650595059065804
         },
         {
-          "ticker": "6451",
-          "name": "訊芯-KY",
+          "ticker": "3189",
+          "name": "景碩",
           "industry": "半導體",
-          "rec_close": 576.0,
+          "rec_close": 554.0,
           "momentum_score": 100,
           "momentum_notes": [
             "漲停鎖死",
             "ATH",
             "族群同步",
-            "QQQ+0.4%",
-            "SMH+1.5%"
+            "QQQ+1.7%",
+            "SMH+3.8%"
           ],
           "tier": "⭐⭐⭐",
-          "rsi": 56.45539906103286,
-          "change_pct_at_rec": 9.92366412213741,
-          "vol_ratio_at_rec": 0.7093316064022868
+          "rsi": 54.33333333333332,
+          "change_pct_at_rec": 9.92063492063493,
+          "vol_ratio_at_rec": 1.0300585655088457
         }
       ]
     },

@@ -610,6 +610,27 @@
           "vol_ratio_at_rec": 3.7538323057890866
         }
       ]
+    },
+    {
+      "date": "2026-06-08",
+      "industry": "電子零組件",
+      "picks": [
+        {
+          "ticker": "2059",
+          "name": "川湖",
+          "industry": "電子零組件",
+          "rec_close": 6180.0,
+          "momentum_score": 80,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 79.82758620689656,
+          "change_pct_at_rec": 9.964412811387891,
+          "vol_ratio_at_rec": 1.1489946806212183
+        }
+      ]
     }
   ]
 }

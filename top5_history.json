@@ -631,6 +631,97 @@
           "vol_ratio_at_rec": 1.1489946806212183
         }
       ]
+    },
+    {
+      "date": "2026-06-09",
+      "industry": "電子零組件",
+      "picks": [
+        {
+          "ticker": "2327",
+          "name": "國巨*",
+          "industry": "電子零組件",
+          "rec_close": 826.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "QQQ+1.6%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 74.83766233766234,
+          "change_pct_at_rec": 9.986684420772306,
+          "vol_ratio_at_rec": 1.066511787363519
+        },
+        {
+          "ticker": "2478",
+          "name": "大毅",
+          "industry": "電子零組件",
+          "rec_close": 167.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步",
+            "QQQ+1.6%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 83.24324324324324,
+          "change_pct_at_rec": 9.868421052631572,
+          "vol_ratio_at_rec": 2.7156700808155927
+        },
+        {
+          "ticker": "2368",
+          "name": "金像電",
+          "industry": "電子零組件",
+          "rec_close": 1480.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步",
+            "QQQ+1.6%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 66.01307189542484,
+          "change_pct_at_rec": 8.823529411764696,
+          "vol_ratio_at_rec": 1.2739590159265994
+        },
+        {
+          "ticker": "2059",
+          "name": "川湖",
+          "industry": "電子零組件",
+          "rec_close": 6685.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "量爆價揚",
+            "ATH",
+            "族群同步",
+            "QQQ+1.6%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 82.56333830104322,
+          "change_pct_at_rec": 8.171521035598705,
+          "vol_ratio_at_rec": 3.2324813299212614
+        },
+        {
+          "ticker": "3026",
+          "name": "禾伸堂",
+          "industry": "電子零組件",
+          "rec_close": 649.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步",
+            "QQQ+1.6%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 80.9987819732034,
+          "change_pct_at_rec": 7.98668885191347,
+          "vol_ratio_at_rec": 0.32483845337194517
+        }
+      ]
     }
   ]
 }

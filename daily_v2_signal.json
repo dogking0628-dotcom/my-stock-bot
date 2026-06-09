@@ -1,51 +1,19 @@
 {
-  "timestamp": "2026-06-08",
+  "timestamp": "2026-06-09",
   "strategy": "V2 原版 (MIN_MCAP=100, OOS PF 2.29 / MDD -9.7%)",
   "top_industries": [
     {
-      "industry": "金融保險",
-      "count": 22,
-      "bullish_count": 14
+      "industry": "電子零組件",
+      "count": 34,
+      "bullish_count": 29
     },
     {
-      "industry": "電子零組件",
-      "count": 18,
-      "bullish_count": 13
+      "industry": "金融保險",
+      "count": 25,
+      "bullish_count": 16
     }
   ],
-  "picks": [
-    {
-      "today": 242.0,
-      "monthly_max_2y": 196.5,
-      "ratio": 1.2315521628498727,
-      "from_high_pct": 23.15521628498727,
-      "bullish": true,
-      "bullish_fast": true,
-      "change_pct": 8.03571428571428,
-      "vol_ratio": 2.7835508042774655,
-      "rsi": 64.08163265306123,
-      "ma5": 210.1,
-      "ma20": 197.825,
-      "ma60": 169.35833333333332,
-      "ma200": 148.87,
-      "gap_up": false,
-      "close_near_high": true,
-      "long_red": true,
-      "ticker": "7788",
-      "name": "松川精密",
-      "industry": "電子零組件",
-      "industry_strong": false,
-      "market_cap_billions": 130.78342656,
-      "mcap_pass": true,
-      "momentum_score": 30,
-      "momentum_notes": [
-        "ATH"
-      ],
-      "tier": "⭐",
-      "next_day_prob": "<70%",
-      "_score": 107.99
-    }
-  ],
+  "picks": [],
   "params": {
     "top_industries": 2,
     "vol_ratio_min": 1.5,

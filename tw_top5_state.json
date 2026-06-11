@@ -1,4 +1,35 @@
 {
-  "date": "2026-06-10",
-  "stocks": {}
+  "date": "2026-06-11",
+  "stocks": {
+    "7788": {
+      "name": "松川精密",
+      "score": 67,
+      "close": 273.0,
+      "category": "high"
+    },
+    "2414": {
+      "name": "精技",
+      "score": 60,
+      "close": 60.900001525878906,
+      "category": "medium"
+    },
+    "1714": {
+      "name": "和桐",
+      "score": 57,
+      "close": 14.149999618530273,
+      "category": "high"
+    },
+    "6155": {
+      "name": "鈞寶",
+      "score": 55,
+      "close": 81.80000305175781,
+      "category": "medium"
+    },
+    "3008": {
+      "name": "大立光",
+      "score": 30,
+      "close": 4090.0,
+      "category": "medium"
+    }
+  }
 }

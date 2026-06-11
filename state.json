@@ -1,6 +1,6 @@
 {
-  "last_run": "2026-06-09",
-  "cash": 9018.089539234672,
+  "last_run": "2026-06-10",
+  "cash": 8234.394287485437,
   "positions": [
     {
       "ticker": "INTC",
@@ -59,18 +59,18 @@
       "shares": 18.847807
     },
     {
-      "ticker": "AVGO",
-      "entry_date": "2026-06-02",
-      "entry_price": 481.57,
-      "peak_price": 481.57,
-      "shares": 16.707728
-    },
-    {
       "ticker": "MAR",
       "entry_date": "2026-06-05",
       "entry_price": 392.51,
       "peak_price": 393.6099853515625,
       "shares": 17.877591
+    },
+    {
+      "ticker": "CASY",
+      "entry_date": "2026-06-10",
+      "entry_price": 915.6,
+      "peak_price": 915.6,
+      "shares": 7.64596
     }
   ],
   "running_ath": {}

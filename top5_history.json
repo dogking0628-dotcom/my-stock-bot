@@ -788,6 +788,97 @@
           "vol_ratio_at_rec": 0.4211328813134183
         }
       ]
+    },
+    {
+      "date": "2026-06-12",
+      "industry": "電子零組件",
+      "picks": [
+        {
+          "ticker": "3026",
+          "name": "禾伸堂",
+          "industry": "電子零組件",
+          "rec_close": 764.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "QQQ+3.4%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 77.70114942528735,
+          "change_pct_at_rec": 9.928057553956826,
+          "vol_ratio_at_rec": 0.9618255160361705
+        },
+        {
+          "ticker": "6449",
+          "name": "鈺邦",
+          "industry": "電子零組件",
+          "rec_close": 421.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "QQQ+3.4%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 68.03571428571428,
+          "change_pct_at_rec": 9.921671018276768,
+          "vol_ratio_at_rec": 0.43311587337570234
+        },
+        {
+          "ticker": "3090",
+          "name": "日電貿",
+          "industry": "電子零組件",
+          "rec_close": 256.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步",
+            "QQQ+3.4%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 55.61959654178674,
+          "change_pct_at_rec": 9.871244635193133,
+          "vol_ratio_at_rec": 2.243886140570912
+        },
+        {
+          "ticker": "2493",
+          "name": "揚博",
+          "industry": "電子零組件",
+          "rec_close": 207.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "QQQ+3.4%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 72.48062015503876,
+          "change_pct_at_rec": 9.814323607427067,
+          "vol_ratio_at_rec": 0.3415820693464913
+        },
+        {
+          "ticker": "2428",
+          "name": "興勤",
+          "industry": "電子零組件",
+          "rec_close": 295.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步",
+            "QQQ+3.4%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 68.05555555555556,
+          "change_pct_at_rec": 4.982206405693956,
+          "vol_ratio_at_rec": 0.5306446028912691
+        }
+      ]
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
-  "last_run": "2026-06-10",
+  "last_run": "2026-06-11",
   "cash": 8234.394287485437,
   "positions": [
     {
       "ticker": "INTC",
       "entry_date": "2026-05-01",
       "entry_price": 99.62,
-      "peak_price": 112.70999908447266,
+      "peak_price": 116.95999908447266,
       "shares": 100.381447
     },
     {
@@ -62,14 +62,14 @@
       "ticker": "MAR",
       "entry_date": "2026-06-05",
       "entry_price": 392.51,
-      "peak_price": 393.6099853515625,
+      "peak_price": 396.8900146484375,
       "shares": 17.877591
     },
     {
       "ticker": "CASY",
       "entry_date": "2026-06-10",
       "entry_price": 915.6,
-      "peak_price": 915.6,
+      "peak_price": 916.280029296875,
       "shares": 7.64596
     }
   ],

@@ -1,28 +1,44 @@
 {
-  "period": "2026-05-30 ~ 2026-06-06",
-  "total_picks": 1,
-  "wins": 1,
-  "avg_return": 0.56,
+  "period": "2026-06-06 ~ 2026-06-13",
+  "total_picks": 2,
+  "wins": 2,
+  "avg_return": 4.915,
   "picks": [
     {
-      "ticker": "2493",
-      "actual_entry": 177.0,
-      "current": 178.0,
-      "ret_pct": 0.56,
-      "peak_pct": 7.63,
-      "low_pct": -3.39,
+      "ticker": "7788",
+      "actual_entry": 250.0,
+      "current": 266.0,
+      "ret_pct": 6.4,
+      "peak_pct": 14.4,
+      "low_pct": -8.4,
+      "status": "持有中",
+      "triggered": null,
+      "days_held": 4,
+      "signal_date": "2026-06-08",
+      "name": "松川精密",
+      "industry": "電子零組件",
+      "system_entry": 242.0
+    },
+    {
+      "ticker": "3090",
+      "actual_entry": 247.5,
+      "current": 256.0,
+      "ret_pct": 3.43,
+      "peak_pct": 3.43,
+      "low_pct": -2.63,
       "status": "持有中",
       "triggered": null,
       "days_held": 1,
-      "signal_date": "2026-06-04",
-      "name": "揚博",
+      "signal_date": "2026-06-12",
+      "name": "日電貿",
       "industry": "電子零組件",
-      "system_entry": 177.5
+      "system_entry": 256.0
     }
   ],
   "by_industry": {
     "電子零組件": [
-      "2493"
+      "7788",
+      "3090"
     ]
   }
 }

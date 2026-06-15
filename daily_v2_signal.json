@@ -1,54 +1,19 @@
 {
-  "timestamp": "2026-06-12",
+  "timestamp": "2026-06-15",
   "strategy": "V2 原版 (MIN_MCAP=100, OOS PF 2.29 / MDD -9.7%)",
   "top_industries": [
     {
       "industry": "電子零組件",
-      "count": 34,
-      "bullish_count": 30
+      "count": 36,
+      "bullish_count": 32
     },
     {
-      "industry": "金融保險",
-      "count": 27,
-      "bullish_count": 19
+      "industry": "半導體",
+      "count": 30,
+      "bullish_count": 27
     }
   ],
-  "picks": [
-    {
-      "today": 256.0,
-      "monthly_max_2y": 229.0,
-      "ratio": 1.1179039301310043,
-      "from_high_pct": 11.79039301310043,
-      "bullish": true,
-      "bullish_fast": true,
-      "change_pct": 9.871244635193133,
-      "vol_ratio": 2.243886140570912,
-      "rsi": 55.61959654178674,
-      "ma5": 228.1,
-      "ma20": 214.35,
-      "ma60": 140.3833335876465,
-      "ma200": 102.80549995422363,
-      "gap_up": true,
-      "close_near_high": true,
-      "long_red": false,
-      "ticker": "3090",
-      "name": "日電貿",
-      "industry": "電子零組件",
-      "industry_strong": true,
-      "market_cap_billions": 303.38318336,
-      "mcap_pass": true,
-      "momentum_score": 100,
-      "momentum_notes": [
-        "跳空缺口",
-        "ATH",
-        "族群同步",
-        "QQQ+3.4%"
-      ],
-      "tier": "⭐⭐⭐",
-      "next_day_prob": "≥85%",
-      "_score": 97.8
-    }
-  ],
+  "picks": [],
   "params": {
     "top_industries": 2,
     "vol_ratio_min": 1.5,

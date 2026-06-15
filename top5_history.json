@@ -879,6 +879,97 @@
           "vol_ratio_at_rec": 0.5306446028912691
         }
       ]
+    },
+    {
+      "date": "2026-06-15",
+      "industry": "電子零組件",
+      "picks": [
+        {
+          "ticker": "3090",
+          "name": "日電貿",
+          "industry": "電子零組件",
+          "rec_close": 281.5,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "QQQ+0.6%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 62.724935732647815,
+          "change_pct_at_rec": 9.9609375,
+          "vol_ratio_at_rec": 1.0386696188897897
+        },
+        {
+          "ticker": "3026",
+          "name": "禾伸堂",
+          "industry": "電子零組件",
+          "rec_close": 840.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "QQQ+0.6%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 79.09482758620689,
+          "change_pct_at_rec": 9.947643979057585,
+          "vol_ratio_at_rec": 1.1278939924246634
+        },
+        {
+          "ticker": "2327",
+          "name": "國巨*",
+          "industry": "電子零組件",
+          "rec_close": 940.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "QQQ+0.6%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 75.98885411374962,
+          "change_pct_at_rec": 9.941520467836252,
+          "vol_ratio_at_rec": 0.8570140659519256
+        },
+        {
+          "ticker": "2478",
+          "name": "大毅",
+          "industry": "電子零組件",
+          "rec_close": 188.5,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "QQQ+0.6%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 86.38743455497382,
+          "change_pct_at_rec": 9.912536443148689,
+          "vol_ratio_at_rec": 0.9256162983318245
+        },
+        {
+          "ticker": "2493",
+          "name": "揚博",
+          "industry": "電子零組件",
+          "rec_close": 227.5,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "QQQ+0.6%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 73.7037037037037,
+          "change_pct_at_rec": 9.903381642512077,
+          "vol_ratio_at_rec": 0.09626548615962381
+        }
+      ]
     }
   ]
 }

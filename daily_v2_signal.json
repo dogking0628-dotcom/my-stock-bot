@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-15",
+  "timestamp": "2026-06-16",
   "strategy": "V2 原版 (MIN_MCAP=100, OOS PF 2.29 / MDD -9.7%)",
   "top_industries": [
     {
       "industry": "電子零組件",
-      "count": 36,
-      "bullish_count": 32
+      "count": 38,
+      "bullish_count": 30
     },
     {
       "industry": "半導體",
-      "count": 30,
-      "bullish_count": 27
+      "count": 33,
+      "bullish_count": 26
     }
   ],
   "picks": [],

@@ -970,6 +970,92 @@
           "vol_ratio_at_rec": 0.09626548615962381
         }
       ]
+    },
+    {
+      "date": "2026-06-16",
+      "industry": "電子零組件",
+      "picks": [
+        {
+          "ticker": "2492",
+          "name": "華新科",
+          "industry": "電子零組件",
+          "rec_close": 494.0,
+          "momentum_score": 85,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "QQQ+3.1%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 67.73333333333333,
+          "change_pct_at_rec": 9.899888765294772,
+          "vol_ratio_at_rec": 0.7945815816818383
+        },
+        {
+          "ticker": "2493",
+          "name": "揚博",
+          "industry": "電子零組件",
+          "rec_close": 250.0,
+          "momentum_score": 85,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "QQQ+3.1%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 80.26315789473685,
+          "change_pct_at_rec": 9.8901098901099,
+          "vol_ratio_at_rec": 1.1053049945526445
+        },
+        {
+          "ticker": "2478",
+          "name": "大毅",
+          "industry": "電子零組件",
+          "rec_close": 207.0,
+          "momentum_score": 80,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+3.1%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 88.49557522123894,
+          "change_pct_at_rec": 9.814323607427067,
+          "vol_ratio_at_rec": 1.25828461661315
+        },
+        {
+          "ticker": "3044",
+          "name": "健鼎",
+          "industry": "電子零組件",
+          "rec_close": 546.0,
+          "momentum_score": 80,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+3.1%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 55.02283105022831,
+          "change_pct_at_rec": 5.000000000000004,
+          "vol_ratio_at_rec": 1.1470695783931513
+        },
+        {
+          "ticker": "2327",
+          "name": "國巨*",
+          "industry": "電子零組件",
+          "rec_close": 972.0,
+          "momentum_score": 80,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+3.1%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 75.64460199844653,
+          "change_pct_at_rec": 3.404255319148941,
+          "vol_ratio_at_rec": 1.2629299034437724
+        }
+      ]
     }
   ]
 }

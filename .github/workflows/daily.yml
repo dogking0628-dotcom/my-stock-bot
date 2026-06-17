@@ -2,8 +2,12 @@ name: Daily ATH Scan
 
 on:
   schedule:
-    # 台灣 08:00 盤前 (UTC+8) → UTC 00:00，週一~週五
-    - cron: '0 0 * * 1-5'
+    # ⚠️ GitHub schedule 在整點 :00 排隊嚴重，實測延遲 ~3 小時。
+    # 為趕台股 9:00 開盤前發出「開盤掛單」，cron 提早到前一晚 UTC 20:33
+    # （避開整點降低排隊）。週日~週四 UTC 20:33 = 週一~週五 越南 03:33 排隊，
+    # +~3h 延遲後約 越南 06:30 發出，台股開盤(越南 08:00)前 1.5h。
+    # workflow 用前一交易日收盤資料（此時台股尚未開盤）。
+    - cron: '33 20 * * 0-4'
   workflow_dispatch:
 
 permissions:

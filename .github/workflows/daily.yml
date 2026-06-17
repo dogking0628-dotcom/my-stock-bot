@@ -27,34 +27,26 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run industry ATH scan (yfinance) - 先跑，daily scan 會讀
+      # ── V2 唯一上線策略（2026-06-17 起精簡為 V2-only）──
+      - name: Run industry ATH scan (yfinance) — V2 選股的 ATH 池來源（必須先跑）
         run: python industry_ath_yf.py || echo "industry scan failed (non-fatal)"
 
-      - name: Run US-TW sector sync scan - V5c 資訊參考
-        run: python us_tw_sector_sync.py || echo "sync scan failed (non-fatal)"
-
-      - name: Run daily scan (V4 完整日報 — 計算但 LINE 暫停，僅 hot_money_radar 推播)
+      - name: Run daily scan — 僅更新 Streamlit App 的 dashboard（LINE 已停，不影響 V2）
         env:
           LINE_TOKEN:           ${{ secrets.LINE_TOKEN }}
           LINE_USER_ID:         ${{ secrets.LINE_USER_ID }}
-          LINE_PAUSED:          "1"   # ← 暫停 V4 LINE 推（state 仍會更新）
-          # SHIOAJI 暫停（帳戶 ca_required，歷史 K 抓不到）— 設 FORCE_SHIOAJI=1 才會啟用
+          LINE_PAUSED:          "1"
           SHIOAJI_API_KEY:      ${{ secrets.SHIOAJI_API_KEY }}
           SHIOAJI_SECRET_KEY:   ${{ secrets.SHIOAJI_SECRET_KEY }}
-        run: python daily_scan.py
+        run: python daily_scan.py || echo "daily scan failed (non-fatal)"
 
-      - name: Run Hot Money Radar - 內部訊號 (不推 LINE)
-        env:
-          LINE_PAUSED:          "1"
-        run: python hot_money_radar.py || echo "hot money radar failed (non-fatal)"
-
-      - name: Run Daily V2 Picker - 每日推播 (V2 原版策略)
+      - name: Run Daily V2 Picker — 每日 LINE 推播（V2，唯一上線推播策略）
         env:
           LINE_TOKEN:           ${{ secrets.LINE_TOKEN }}
           LINE_USER_ID:         ${{ secrets.LINE_USER_ID }}
         run: python daily_v2_picker.py || echo "daily v2 picker failed (non-fatal)"
 
-      - name: Run Daily Review - 累積 top5_history (週檢討需要)
+      - name: Run Daily Review — 累積 top5_history（週檢討用）
         run: python daily_review.py || echo "daily review failed (non-fatal)"
 
       - name: Commit state
@@ -62,7 +54,7 @@ jobs:
           git config user.name  "github-actions"
           git config user.email "github-actions@github.com"
           # 逐檔 add：缺檔(如 daily_review.py 失敗沒產出)只略過自己，不拖累整批
-          for f in state.json dashboard_data.json tw_top5_state.json capital_cache.json sp500_universe.json tw_universe.json ath_industry_report.json scan_output.txt marketcap_cache.json top5_history.json daily_review.json us_tw_sync_report.json industry_heat_history.json hot_money_signal.json daily_v2_signal.json; do
+          for f in state.json dashboard_data.json tw_top5_state.json capital_cache.json sp500_universe.json tw_universe.json ath_industry_report.json scan_output.txt marketcap_cache.json top5_history.json daily_review.json daily_v2_signal.json; do
             [ -f "$f" ] && git add "$f" || true
           done
           git diff --staged --quiet || git commit -m "chore: update state $(date -u +%Y-%m-%d)"

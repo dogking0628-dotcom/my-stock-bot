@@ -383,6 +383,14 @@ def main():
         json.dump(out, f, ensure_ascii=False, indent=2, default=str)
     print("\n💾 已輸出 backtest_hot_money_v2.json")
 
+    # 🛡️ 黑天鵝壓力測試（每次回測必跑）
+    if n > 0:
+        try:
+            from stress_test_lib import run_stress_test
+            run_stress_test(trades, label="V2 真版")
+        except Exception as e:
+            print(f"⚠️ 壓力測試失敗: {e}")
+
 
 if __name__ == "__main__":
     main()

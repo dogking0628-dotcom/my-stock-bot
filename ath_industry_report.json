@@ -2763,9 +2763,9 @@
     },
     {
       "today": 9.5,
-      "monthly_max_2y": 8.931139945983887,
-      "ratio": 1.063694002944374,
-      "from_high_pct": 6.3694002944373995,
+      "monthly_max_2y": 8.931140899658203,
+      "ratio": 1.0636938893622838,
+      "from_high_pct": 6.369388936228382,
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -0.5235621961910741,
@@ -4127,7 +4127,7 @@
       "ma5": 2344.0,
       "ma20": 2320.37294921875,
       "ma60": 2149.2871541341146,
-      "ma200": 1705.0528137207032,
+      "ma200": 1705.0528125,
       "gap_up": false,
       "close_near_high": true,
       "long_red": true,
@@ -4238,9 +4238,9 @@
     },
     {
       "today": 64.69999694824219,
-      "monthly_max_2y": 63.95448303222656,
-      "ratio": 1.011656945387862,
-      "from_high_pct": 1.1656945387862105,
+      "monthly_max_2y": 63.9544792175293,
+      "ratio": 1.0116570057302343,
+      "from_high_pct": 1.1657005730234316,
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -0.6144416824186538,
@@ -5986,6 +5986,6 @@
     "in_stage2": true
   },
   "v4_blocked": false,
-  "intraday_updated": "2026-06-17 06:12",
+  "intraday_updated": "2026-06-17 09:29",
   "is_intraday": true
 }

@@ -81,7 +81,7 @@ def pick_v2_from_report(report):
 
 def build_message(picks, top_inds, date, active_capital=450_000):
     """訊息格式: 開盤掛單可執行版"""
-    lines = [f"📡 {date[5:]} 開盤掛單", ""]
+    lines = [f"📡 V2 開盤掛單 {date[5:]}", ""]
 
     if top_inds:
         ind_summary = " / ".join(
@@ -159,7 +159,7 @@ def main():
     # 輸出 signal JSON
     signal = {
         "timestamp": date,
-        "strategy": "V2 原版 (MIN_MCAP=100, OOS PF 2.29 / MDD -9.7%)",
+        "strategy": "V2 原版 (實測 OOS PF 1.83 / 主回測 PF 1.69, 抗崩盤強·常空手)",
         "top_industries": top_inds,
         "picks": picks,
         "params": {

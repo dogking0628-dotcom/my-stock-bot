@@ -40,11 +40,17 @@ jobs:
           SHIOAJI_SECRET_KEY:   ${{ secrets.SHIOAJI_SECRET_KEY }}
         run: python daily_scan.py || echo "daily scan failed (non-fatal)"
 
-      - name: Run Daily V2 Picker — 每日 LINE 推播（V2，唯一上線推播策略）
+      - name: Run Daily V2 Picker — LINE 推播（V2，與 V4.1 並行比較）
         env:
           LINE_TOKEN:           ${{ secrets.LINE_TOKEN }}
           LINE_USER_ID:         ${{ secrets.LINE_USER_ID }}
         run: python daily_v2_picker.py || echo "daily v2 picker failed (non-fatal)"
+
+      - name: Run Daily V4.1 Picker — LINE 推播（V4.1，與 V2 並行比較）
+        env:
+          LINE_TOKEN:           ${{ secrets.LINE_TOKEN }}
+          LINE_USER_ID:         ${{ secrets.LINE_USER_ID }}
+        run: python daily_v41_picker.py || echo "daily v41 picker failed (non-fatal)"
 
       - name: Run Daily Review — 累積 top5_history（週檢討用）
         run: python daily_review.py || echo "daily review failed (non-fatal)"
@@ -54,7 +60,7 @@ jobs:
           git config user.name  "github-actions"
           git config user.email "github-actions@github.com"
           # 逐檔 add：缺檔(如 daily_review.py 失敗沒產出)只略過自己，不拖累整批
-          for f in state.json dashboard_data.json tw_top5_state.json capital_cache.json sp500_universe.json tw_universe.json ath_industry_report.json scan_output.txt marketcap_cache.json top5_history.json daily_review.json daily_v2_signal.json; do
+          for f in state.json dashboard_data.json tw_top5_state.json capital_cache.json sp500_universe.json tw_universe.json ath_industry_report.json scan_output.txt marketcap_cache.json top5_history.json daily_review.json daily_v2_signal.json daily_v41_signal.json; do
             [ -f "$f" ] && git add "$f" || true
           done
           git diff --staged --quiet || git commit -m "chore: update state $(date -u +%Y-%m-%d)"

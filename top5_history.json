@@ -1056,6 +1056,92 @@
           "vol_ratio_at_rec": 1.2629299034437724
         }
       ]
+    },
+    {
+      "date": "2026-06-17",
+      "industry": "電子零組件",
+      "picks": [
+        {
+          "ticker": "3026",
+          "name": "禾伸堂",
+          "industry": "電子零組件",
+          "rec_close": 885.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "量爆價揚",
+            "ATH",
+            "族群同步"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 77.02702702702703,
+          "change_pct_at_rec": 8.588957055214719,
+          "vol_ratio_at_rec": 3.5290167034158655
+        },
+        {
+          "ticker": "2409",
+          "name": "友達",
+          "industry": "光電",
+          "rec_close": 26.25,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 63.98891814546952,
+          "change_pct_at_rec": 9.832637736310733,
+          "vol_ratio_at_rec": 0.8464377492469888
+        },
+        {
+          "ticker": "6116",
+          "name": "彩晶",
+          "industry": "光電",
+          "rec_close": 18.25,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 56.85279079693714,
+          "change_pct_at_rec": 9.939756509717546,
+          "vol_ratio_at_rec": 0.11701898447448111
+        },
+        {
+          "ticker": "3673",
+          "name": "TPK-KY",
+          "industry": "光電",
+          "rec_close": 86.5999984741211,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 56.03448091590878,
+          "change_pct_at_rec": 9.898470964829853,
+          "vol_ratio_at_rec": 0.7551091216394765
+        },
+        {
+          "ticker": "3008",
+          "name": "大立光",
+          "industry": "光電",
+          "rec_close": 5285.0,
+          "momentum_score": 95,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 80.49180327868852,
+          "change_pct_at_rec": 8.744855967078191,
+          "vol_ratio_at_rec": 1.7331444580727813
+        }
+      ]
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "timestamp": "2026-06-17",
-  "strategy": "V2 原版 (MIN_MCAP=100, OOS PF 2.29 / MDD -9.7%)",
+  "strategy": "V2 原版 (實測 OOS PF 1.83 / 主回測 PF 1.69, 抗崩盤強·常空手)",
   "top_industries": [
     {
       "industry": "電子零組件",
@@ -9,43 +9,11 @@
     },
     {
       "industry": "半導體",
-      "count": 32,
-      "bullish_count": 27
+      "count": 33,
+      "bullish_count": 26
     }
   ],
   "picks": [
-    {
-      "today": 420.0,
-      "monthly_max_2y": 319.0,
-      "ratio": 1.316614420062696,
-      "from_high_pct": 31.661442006269592,
-      "bullish": true,
-      "bullish_fast": true,
-      "change_pct": 6.4638783269961975,
-      "vol_ratio": 3.1802779163809287,
-      "rsi": 69.23076923076923,
-      "ma5": 359.4,
-      "ma20": 306.05,
-      "ma60": 226.35833333333332,
-      "ma200": 143.38299987792968,
-      "gap_up": false,
-      "close_near_high": true,
-      "long_red": true,
-      "ticker": "3532",
-      "name": "台勝科",
-      "industry": "半導體",
-      "industry_strong": false,
-      "market_cap_billions": 971.55997696,
-      "mcap_pass": true,
-      "momentum_score": 80,
-      "momentum_notes": [
-        "量爆價揚",
-        "ATH"
-      ],
-      "tier": "⭐⭐⭐",
-      "next_day_prob": "≥85%",
-      "_score": 113.96
-    },
     {
       "today": 302.5,
       "monthly_max_2y": 229.0,
@@ -54,7 +22,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 10.000000000000009,
-      "vol_ratio": 1.6329541004412162,
+      "vol_ratio": 1.9149408077956362,
       "rsi": 72.92682926829268,
       "ma5": 269.6,
       "ma20": 232.85,
@@ -76,7 +44,39 @@
       ],
       "tier": "⭐",
       "next_day_prob": "<70%",
-      "_score": 109.26
+      "_score": 112.08
+    },
+    {
+      "today": 187.0,
+      "monthly_max_2y": 168.5,
+      "ratio": 1.1097922848664687,
+      "from_high_pct": 10.979228486646875,
+      "bullish": true,
+      "bullish_fast": true,
+      "change_pct": 10.000000000000009,
+      "vol_ratio": 1.5489949456046863,
+      "rsi": 61.49068322981366,
+      "ma5": 167.6,
+      "ma20": 165.0,
+      "ma60": 131.35166664123534,
+      "ma200": 109.73250003814697,
+      "gap_up": false,
+      "close_near_high": true,
+      "long_red": true,
+      "ticker": "2316",
+      "name": "楠梓電",
+      "industry": "電子零組件",
+      "industry_strong": true,
+      "market_cap_billions": 212.27896832,
+      "mcap_pass": true,
+      "momentum_score": 50,
+      "momentum_notes": [
+        "ATH",
+        "族群同步"
+      ],
+      "tier": "⭐",
+      "next_day_prob": "<70%",
+      "_score": 96.98
     }
   ],
   "params": {

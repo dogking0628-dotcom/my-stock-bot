@@ -1,34 +1,34 @@
 {
-  "timestamp": "2026-06-17",
+  "timestamp": "2026-06-18",
   "strategy": "V2 原版 (實測 OOS PF 1.83 / 主回測 PF 1.69, 抗崩盤強·常空手)",
   "top_industries": [
     {
-      "industry": "電子零組件",
-      "count": 39,
-      "bullish_count": 32
+      "industry": "半導體",
+      "count": 44,
+      "bullish_count": 40
     },
     {
-      "industry": "半導體",
-      "count": 33,
-      "bullish_count": 26
+      "industry": "電子零組件",
+      "count": 41,
+      "bullish_count": 34
     }
   ],
   "picks": [
     {
-      "today": 302.5,
+      "today": 332.5,
       "monthly_max_2y": 229.0,
-      "ratio": 1.3209606986899562,
-      "from_high_pct": 32.09606986899563,
+      "ratio": 1.4519650655021834,
+      "from_high_pct": 45.19650655021834,
       "bullish": true,
       "bullish_fast": true,
-      "change_pct": 10.000000000000009,
-      "vol_ratio": 1.9149408077956362,
-      "rsi": 72.92682926829268,
-      "ma5": 269.6,
-      "ma20": 232.85,
-      "ma60": 149.79666684468586,
-      "ma200": 106.05699996948242,
-      "gap_up": false,
+      "change_pct": 9.917355371900815,
+      "vol_ratio": 2.042847901515162,
+      "rsi": 74.12587412587413,
+      "ma5": 289.5,
+      "ma20": 239.675,
+      "ma60": 153.78833351135253,
+      "ma200": 107.37399997711182,
+      "gap_up": true,
       "close_near_high": true,
       "long_red": true,
       "ticker": "3090",
@@ -37,46 +37,51 @@
       "industry_strong": true,
       "market_cap_billions": 303.38318336,
       "mcap_pass": true,
-      "momentum_score": 50,
+      "momentum_score": 100,
       "momentum_notes": [
+        "跳空缺口",
         "ATH",
-        "族群同步"
+        "族群同步",
+        "QQQ+2.5%"
       ],
-      "tier": "⭐",
-      "next_day_prob": "<70%",
-      "_score": 112.08
+      "tier": "⭐⭐⭐",
+      "next_day_prob": "≥85%",
+      "_score": 114.39
     },
     {
-      "today": 187.0,
-      "monthly_max_2y": 168.5,
-      "ratio": 1.1097922848664687,
-      "from_high_pct": 10.979228486646875,
+      "today": 143.0,
+      "monthly_max_2y": 117.85355377197266,
+      "ratio": 1.2133702839091438,
+      "from_high_pct": 21.33702839091438,
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 10.000000000000009,
-      "vol_ratio": 1.5489949456046863,
-      "rsi": 61.49068322981366,
-      "ma5": 167.6,
-      "ma20": 165.0,
-      "ma60": 131.35166664123534,
-      "ma200": 109.73250003814697,
-      "gap_up": false,
+      "vol_ratio": 1.5793914139024219,
+      "rsi": 72.52792859073239,
+      "ma5": 131.4,
+      "ma20": 121.08409881591797,
+      "ma60": 100.36447461446126,
+      "ma200": 82.92546043395996,
+      "gap_up": true,
       "close_near_high": true,
       "long_red": true,
-      "ticker": "2316",
-      "name": "楠梓電",
-      "industry": "電子零組件",
+      "ticker": "6525",
+      "name": "捷敏-KY",
+      "industry": "半導體",
       "industry_strong": true,
-      "market_cap_billions": 212.27896832,
+      "market_cap_billions": 132.91840512,
       "mcap_pass": true,
-      "momentum_score": 50,
+      "momentum_score": 100,
       "momentum_notes": [
+        "跳空缺口",
         "ATH",
-        "族群同步"
+        "族群同步",
+        "QQQ+2.5%",
+        "SMH+5.8%"
       ],
-      "tier": "⭐",
-      "next_day_prob": "<70%",
-      "_score": 96.98
+      "tier": "⭐⭐⭐",
+      "next_day_prob": "≥85%",
+      "_score": 108.32
     }
   ],
   "params": {

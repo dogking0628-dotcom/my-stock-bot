@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-18",
+  "timestamp": "2026-06-19",
   "basis": "yfinance 2y monthly + 動能確認分數（最強族群挑 5）",
   "total_analyzed": 1077,
   "exact_ath": [
@@ -90,10 +90,9 @@
       "industry_strong": false,
       "market_cap_billions": 15.62252288,
       "mcap_pass": false,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -121,11 +120,10 @@
       "industry_strong": true,
       "market_cap_billions": 109.47493888,
       "mcap_pass": true,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -157,8 +155,7 @@
       "momentum_notes": [
         "漲停鎖死",
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -221,8 +218,7 @@
       "momentum_notes": [
         "漲停鎖死",
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -281,11 +277,10 @@
       "industry_strong": true,
       "market_cap_billions": 25.2429952,
       "mcap_pass": false,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -313,11 +308,10 @@
       "industry_strong": true,
       "market_cap_billions": 130.78342656,
       "mcap_pass": true,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -345,10 +339,9 @@
       "industry_strong": false,
       "market_cap_billions": 3296.11476992,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -376,12 +369,11 @@
       "industry_strong": true,
       "market_cap_billions": 6963.5801088,
       "mcap_pass": true,
-      "momentum_score": 100,
+      "momentum_score": 95,
       "momentum_notes": [
         "跳空缺口",
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -409,12 +401,11 @@
       "industry_strong": true,
       "market_cap_billions": 303.38318336,
       "mcap_pass": true,
-      "momentum_score": 100,
+      "momentum_score": 95,
       "momentum_notes": [
         "跳空缺口",
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -446,8 +437,7 @@
       "momentum_notes": [
         "漲停鎖死",
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -475,11 +465,10 @@
       "industry_strong": true,
       "market_cap_billions": 712.66304,
       "mcap_pass": true,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -538,11 +527,10 @@
       "industry_strong": false,
       "market_cap_billions": 34.159296,
       "mcap_pass": false,
-      "momentum_score": 85,
+      "momentum_score": 80,
       "momentum_notes": [
         "漲停鎖死",
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -575,8 +563,7 @@
         "漲停鎖死",
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -604,11 +591,10 @@
       "industry_strong": true,
       "market_cap_billions": 452.8805888,
       "mcap_pass": true,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -641,8 +627,7 @@
         "跳空缺口",
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -734,8 +719,7 @@
       "momentum_notes": [
         "漲停鎖死",
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -763,11 +747,10 @@
       "industry_strong": true,
       "market_cap_billions": 4193.06799104,
       "mcap_pass": true,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -825,10 +808,9 @@
       "industry_strong": false,
       "market_cap_billions": 111.98563328,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -861,8 +843,7 @@
         "跳空缺口",
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -926,8 +907,7 @@
       "momentum_notes": [
         "漲停鎖死",
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -955,11 +935,10 @@
       "industry_strong": true,
       "market_cap_billions": 65.04377856,
       "mcap_pass": false,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -987,14 +966,13 @@
       "industry_strong": false,
       "market_cap_billions": 2242.67583488,
       "mcap_pass": true,
-      "momentum_score": 80,
+      "momentum_score": 75,
       "momentum_notes": [
         "跳空缺口",
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
-      "tier": "⭐⭐⭐",
-      "next_day_prob": "≥85%"
+      "tier": "⭐⭐",
+      "next_day_prob": "70-85%"
     },
     {
       "today": 55.20000076293945,
@@ -1024,8 +1002,7 @@
         "跳空缺口",
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -1114,11 +1091,10 @@
       "industry_strong": true,
       "market_cap_billions": 4408.98093056,
       "mcap_pass": true,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1181,17 +1157,16 @@
         "跳空缺口",
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
     },
     {
       "today": 753.0,
-      "monthly_max_2y": 605.1868286132812,
-      "ratio": 1.2442438671796878,
-      "from_high_pct": 24.424386717968783,
+      "monthly_max_2y": 605.186767578125,
+      "ratio": 1.2442439926659392,
+      "from_high_pct": 24.424399266593923,
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 4.293628808864258,
@@ -1210,10 +1185,9 @@
       "industry_strong": false,
       "market_cap_billions": 580.626432,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1273,12 +1247,11 @@
       "industry_strong": true,
       "market_cap_billions": 77.63328,
       "mcap_pass": false,
-      "momentum_score": 100,
+      "momentum_score": 95,
       "momentum_notes": [
         "跳空缺口",
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -1306,14 +1279,13 @@
       "industry_strong": false,
       "market_cap_billions": 1362.2513664,
       "mcap_pass": true,
-      "momentum_score": 80,
+      "momentum_score": 75,
       "momentum_notes": [
         "跳空缺口",
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
-      "tier": "⭐⭐⭐",
-      "next_day_prob": "≥85%"
+      "tier": "⭐⭐",
+      "next_day_prob": "70-85%"
     },
     {
       "today": 390.0,
@@ -1338,12 +1310,11 @@
       "industry_strong": true,
       "market_cap_billions": 971.55997696,
       "mcap_pass": true,
-      "momentum_score": 65,
+      "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -1375,8 +1346,7 @@
       "momentum_notes": [
         "漲停鎖死",
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -1409,8 +1379,7 @@
         "跳空缺口",
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -1438,12 +1407,11 @@
       "industry_strong": true,
       "market_cap_billions": 614.98003456,
       "mcap_pass": true,
-      "momentum_score": 65,
+      "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -1563,10 +1531,9 @@
       "industry_strong": false,
       "market_cap_billions": 119.48571648,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1629,8 +1596,7 @@
         "漲停鎖死",
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -1749,10 +1715,9 @@
       "industry_strong": false,
       "market_cap_billions": 172.87286784,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1780,10 +1745,9 @@
       "industry_strong": false,
       "market_cap_billions": 74.13885952,
       "mcap_pass": false,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1811,11 +1775,10 @@
       "industry_strong": true,
       "market_cap_billions": 286.29143552,
       "mcap_pass": true,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1873,10 +1836,9 @@
       "industry_strong": false,
       "market_cap_billions": 103.05836032,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1965,12 +1927,11 @@
       "industry_strong": true,
       "market_cap_billions": 500.41421824,
       "mcap_pass": true,
-      "momentum_score": 65,
+      "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -1998,10 +1959,9 @@
       "industry_strong": false,
       "market_cap_billions": 3430.9275648,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2150,12 +2110,11 @@
       "industry_strong": true,
       "market_cap_billions": 227.07054592,
       "mcap_pass": true,
-      "momentum_score": 65,
+      "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -2183,12 +2142,11 @@
       "industry_strong": true,
       "market_cap_billions": 25.22604032,
       "mcap_pass": false,
-      "momentum_score": 65,
+      "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -2216,12 +2174,11 @@
       "industry_strong": true,
       "market_cap_billions": 73.69800192,
       "mcap_pass": false,
-      "momentum_score": 65,
+      "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -2309,12 +2266,11 @@
       "industry_strong": true,
       "market_cap_billions": 864.5373952,
       "mcap_pass": true,
-      "momentum_score": 65,
+      "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -2342,10 +2298,9 @@
       "industry_strong": false,
       "market_cap_billions": 13355.90518784,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2373,11 +2328,10 @@
       "industry_strong": true,
       "market_cap_billions": 453.34945792,
       "mcap_pass": true,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2496,10 +2450,9 @@
       "industry_strong": false,
       "market_cap_billions": 59.16701184,
       "mcap_pass": false,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2527,12 +2480,11 @@
       "industry_strong": true,
       "market_cap_billions": 153.22807296,
       "mcap_pass": true,
-      "momentum_score": 100,
+      "momentum_score": 95,
       "momentum_notes": [
         "跳空缺口",
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -2560,10 +2512,9 @@
       "industry_strong": false,
       "market_cap_billions": 508.41411584,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2591,11 +2542,10 @@
       "industry_strong": true,
       "market_cap_billions": 2564.95730688,
       "mcap_pass": true,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2623,10 +2573,9 @@
       "industry_strong": false,
       "market_cap_billions": 244.41499648,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2684,11 +2633,10 @@
       "industry_strong": true,
       "market_cap_billions": 155.4150912,
       "mcap_pass": true,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2716,12 +2664,11 @@
       "industry_strong": true,
       "market_cap_billions": 17736.88848384,
       "mcap_pass": true,
-      "momentum_score": 100,
+      "momentum_score": 95,
       "momentum_notes": [
         "跳空缺口",
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -2779,12 +2726,11 @@
       "industry_strong": true,
       "market_cap_billions": 36.27465472,
       "mcap_pass": false,
-      "momentum_score": 65,
+      "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -2812,11 +2758,10 @@
       "industry_strong": true,
       "market_cap_billions": 1409.41524992,
       "mcap_pass": true,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2844,12 +2789,11 @@
       "industry_strong": true,
       "market_cap_billions": 307.2310272,
       "mcap_pass": true,
-      "momentum_score": 100,
+      "momentum_score": 95,
       "momentum_notes": [
         "跳空缺口",
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -2907,11 +2851,10 @@
       "industry_strong": true,
       "market_cap_billions": 237.00905984,
       "mcap_pass": true,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2939,11 +2882,10 @@
       "industry_strong": true,
       "market_cap_billions": 287.27619584,
       "mcap_pass": true,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -3031,14 +2973,13 @@
       "industry_strong": false,
       "market_cap_billions": 38.72403968,
       "mcap_pass": false,
-      "momentum_score": 80,
+      "momentum_score": 75,
       "momentum_notes": [
         "跳空缺口",
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
-      "tier": "⭐⭐⭐",
-      "next_day_prob": "≥85%"
+      "tier": "⭐⭐",
+      "next_day_prob": "70-85%"
     },
     {
       "today": 45.5,
@@ -3093,12 +3034,11 @@
       "industry_strong": true,
       "market_cap_billions": 130.8819456,
       "mcap_pass": true,
-      "momentum_score": 65,
+      "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -3186,10 +3126,9 @@
       "industry_strong": false,
       "market_cap_billions": 3326.9612544,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -3222,8 +3161,7 @@
         "量爆價揚",
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -3341,12 +3279,11 @@
       "industry_strong": true,
       "market_cap_billions": 816.44167168,
       "mcap_pass": true,
-      "momentum_score": 65,
+      "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -3374,10 +3311,9 @@
       "industry_strong": false,
       "market_cap_billions": 10550.12749312,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -3405,12 +3341,11 @@
       "industry_strong": true,
       "market_cap_billions": 1682.60943872,
       "mcap_pass": true,
-      "momentum_score": 65,
+      "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -3438,11 +3373,10 @@
       "industry_strong": true,
       "market_cap_billions": 817.5087616,
       "mcap_pass": true,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -3505,8 +3439,7 @@
         "漲停鎖死",
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -3564,11 +3497,10 @@
       "industry_strong": true,
       "market_cap_billions": 24.48,
       "mcap_pass": false,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -3596,12 +3528,11 @@
       "industry_strong": true,
       "market_cap_billions": 6640.2451456,
       "mcap_pass": true,
-      "momentum_score": 65,
+      "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -3629,10 +3560,9 @@
       "industry_strong": false,
       "market_cap_billions": 107.90597632,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -3660,10 +3590,9 @@
       "industry_strong": false,
       "market_cap_billions": 379.85308672,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -3691,10 +3620,9 @@
       "industry_strong": false,
       "market_cap_billions": 141.992448,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -3787,8 +3715,7 @@
         "跳空缺口",
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -3876,11 +3803,10 @@
       "industry_strong": true,
       "market_cap_billions": 733.41083648,
       "mcap_pass": true,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -3908,12 +3834,11 @@
       "industry_strong": true,
       "market_cap_billions": 1036.15225856,
       "mcap_pass": true,
-      "momentum_score": 100,
+      "momentum_score": 95,
       "momentum_notes": [
         "跳空缺口",
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -3941,10 +3866,9 @@
       "industry_strong": false,
       "market_cap_billions": 4671.96215296,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -4003,11 +3927,10 @@
       "industry_strong": true,
       "market_cap_billions": 118.01095168,
       "mcap_pass": true,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -4035,12 +3958,11 @@
       "industry_strong": true,
       "market_cap_billions": 974.31994368,
       "mcap_pass": true,
-      "momentum_score": 65,
+      "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -4158,10 +4080,9 @@
       "industry_strong": false,
       "market_cap_billions": 1272.2819072,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -4189,12 +4110,11 @@
       "industry_strong": true,
       "market_cap_billions": 1858.6451968,
       "mcap_pass": true,
-      "momentum_score": 65,
+      "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -4252,12 +4172,11 @@
       "industry_strong": true,
       "market_cap_billions": 675.82164992,
       "mcap_pass": true,
-      "momentum_score": 65,
+      "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -4275,7 +4194,7 @@
       "ma5": 2376.0,
       "ma20": 2329.66962890625,
       "ma60": 2159.3674194335936,
-      "ma200": 1711.2557501220704,
+      "ma200": 1711.2557507324218,
       "gap_up": false,
       "close_near_high": true,
       "long_red": false,
@@ -4285,12 +4204,11 @@
       "industry_strong": true,
       "market_cap_billions": 583469.96498432,
       "mcap_pass": true,
-      "momentum_score": 65,
+      "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -4318,12 +4236,11 @@
       "industry_strong": true,
       "market_cap_billions": 645.0579456,
       "mcap_pass": true,
-      "momentum_score": 65,
+      "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -4351,11 +4268,10 @@
       "industry_strong": true,
       "market_cap_billions": 248.61233152,
       "mcap_pass": true,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -4383,11 +4299,10 @@
       "industry_strong": false,
       "market_cap_billions": 662.28195328,
       "mcap_pass": true,
-      "momentum_score": 85,
+      "momentum_score": 80,
       "momentum_notes": [
         "漲停鎖死",
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -4415,11 +4330,10 @@
       "industry_strong": true,
       "market_cap_billions": 528.86663168,
       "mcap_pass": true,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -4452,8 +4366,7 @@
         "跳空缺口",
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -4481,12 +4394,11 @@
       "industry_strong": true,
       "market_cap_billions": 285.70898432,
       "mcap_pass": true,
-      "momentum_score": 65,
+      "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -4514,11 +4426,10 @@
       "industry_strong": true,
       "market_cap_billions": 511.68944128,
       "mcap_pass": true,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -4576,11 +4487,10 @@
       "industry_strong": true,
       "market_cap_billions": 111.16987392,
       "mcap_pass": true,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -4608,10 +4518,9 @@
       "industry_strong": false,
       "market_cap_billions": 4659.30354688,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -4639,12 +4548,11 @@
       "industry_strong": true,
       "market_cap_billions": 54746.27878912,
       "mcap_pass": true,
-      "momentum_score": 65,
+      "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -4672,12 +4580,11 @@
       "industry_strong": true,
       "market_cap_billions": 40.79949056,
       "mcap_pass": false,
-      "momentum_score": 65,
+      "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -4736,12 +4643,11 @@
       "industry_strong": true,
       "market_cap_billions": 3318.09685504,
       "mcap_pass": true,
-      "momentum_score": 65,
+      "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -4769,10 +4675,9 @@
       "industry_strong": false,
       "market_cap_billions": 55.96721152,
       "mcap_pass": false,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -4800,10 +4705,9 @@
       "industry_strong": false,
       "market_cap_billions": 116.66971648,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -4831,10 +4735,9 @@
       "industry_strong": false,
       "market_cap_billions": 227.9118848,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -4866,8 +4769,7 @@
       "momentum_notes": [
         "漲停鎖死",
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -4895,10 +4797,9 @@
       "industry_strong": false,
       "market_cap_billions": 114.21989888,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -4987,20 +4888,19 @@
       "industry_strong": false,
       "market_cap_billions": 229.07318272,
       "mcap_pass": true,
-      "momentum_score": 80,
+      "momentum_score": 75,
       "momentum_notes": [
         "跳空缺口",
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
-      "tier": "⭐⭐⭐",
-      "next_day_prob": "≥85%"
+      "tier": "⭐⭐",
+      "next_day_prob": "70-85%"
     },
     {
       "today": 64.4000015258789,
-      "monthly_max_2y": 63.95448303222656,
-      "ratio": 1.0069661808293853,
-      "from_high_pct": 0.6966180829385271,
+      "monthly_max_2y": 63.9544792175293,
+      "ratio": 1.006966240891967,
+      "from_high_pct": 0.6966240891967068,
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -0.46367146292645156,
@@ -5019,12 +4919,11 @@
       "industry_strong": true,
       "market_cap_billions": 70.43252736,
       "mcap_pass": false,
-      "momentum_score": 65,
+      "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -5052,12 +4951,11 @@
       "industry_strong": true,
       "market_cap_billions": 11495.36436224,
       "mcap_pass": true,
-      "momentum_score": 65,
+      "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -5235,12 +5133,11 @@
       "industry_strong": true,
       "market_cap_billions": 22992.55324672,
       "mcap_pass": true,
-      "momentum_score": 65,
+      "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -5268,10 +5165,9 @@
       "industry_strong": false,
       "market_cap_billions": 79.7888,
       "mcap_pass": false,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -5299,10 +5195,9 @@
       "industry_strong": false,
       "market_cap_billions": 13888.86491136,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -5452,10 +5347,9 @@
       "industry_strong": false,
       "market_cap_billions": 6.51910016,
       "mcap_pass": false,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -5483,10 +5377,9 @@
       "industry_strong": false,
       "market_cap_billions": 1660.47858688,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -5580,10 +5473,9 @@
       "industry_strong": false,
       "market_cap_billions": 15.62252288,
       "mcap_pass": false,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -5611,11 +5503,10 @@
       "industry_strong": true,
       "market_cap_billions": 109.47493888,
       "mcap_pass": true,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -5647,8 +5538,7 @@
       "momentum_notes": [
         "漲停鎖死",
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -5711,8 +5601,7 @@
       "momentum_notes": [
         "漲停鎖死",
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -5771,11 +5660,10 @@
       "industry_strong": true,
       "market_cap_billions": 25.2429952,
       "mcap_pass": false,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -5803,11 +5691,10 @@
       "industry_strong": true,
       "market_cap_billions": 130.78342656,
       "mcap_pass": true,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -5835,10 +5722,9 @@
       "industry_strong": false,
       "market_cap_billions": 3296.11476992,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -5866,12 +5752,11 @@
       "industry_strong": true,
       "market_cap_billions": 6963.5801088,
       "mcap_pass": true,
-      "momentum_score": 100,
+      "momentum_score": 95,
       "momentum_notes": [
         "跳空缺口",
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -5899,12 +5784,11 @@
       "industry_strong": true,
       "market_cap_billions": 303.38318336,
       "mcap_pass": true,
-      "momentum_score": 100,
+      "momentum_score": 95,
       "momentum_notes": [
         "跳空缺口",
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -5936,8 +5820,7 @@
       "momentum_notes": [
         "漲停鎖死",
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -5965,11 +5848,10 @@
       "industry_strong": true,
       "market_cap_billions": 712.66304,
       "mcap_pass": true,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -6028,11 +5910,10 @@
       "industry_strong": false,
       "market_cap_billions": 34.159296,
       "mcap_pass": false,
-      "momentum_score": 85,
+      "momentum_score": 80,
       "momentum_notes": [
         "漲停鎖死",
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -6065,8 +5946,7 @@
         "漲停鎖死",
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -6094,11 +5974,10 @@
       "industry_strong": true,
       "market_cap_billions": 452.8805888,
       "mcap_pass": true,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -6131,8 +6010,7 @@
         "跳空缺口",
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -6224,8 +6102,7 @@
       "momentum_notes": [
         "漲停鎖死",
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -6253,11 +6130,10 @@
       "industry_strong": true,
       "market_cap_billions": 4193.06799104,
       "mcap_pass": true,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -6315,10 +6191,9 @@
       "industry_strong": false,
       "market_cap_billions": 111.98563328,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+2.5%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -6351,8 +6226,7 @@
         "跳空缺口",
         "ATH",
         "族群同步",
-        "QQQ+2.5%",
-        "SMH+5.8%"
+        "SMH+1.3%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -6416,8 +6290,7 @@
       "momentum_notes": [
         "漲停鎖死",
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -6445,83 +6318,16 @@
       "industry_strong": true,
       "market_cap_billions": 65.04377856,
       "mcap_pass": false,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
     }
   ],
   "tomorrow_top5": [
-    {
-      "today": 402.0,
-      "monthly_max_2y": 371.0,
-      "ratio": 1.0835579514824798,
-      "from_high_pct": 8.35579514824798,
-      "bullish": true,
-      "bullish_fast": true,
-      "change_pct": 9.986320109439117,
-      "vol_ratio": 1.9084133296632504,
-      "rsi": 54.92063492063493,
-      "ma5": 374.5,
-      "ma20": 352.0,
-      "ma60": 236.89166666666668,
-      "ma200": 143.1925,
-      "gap_up": true,
-      "close_near_high": true,
-      "long_red": true,
-      "ticker": "2472",
-      "name": "立隆電",
-      "industry": "電子零組件",
-      "industry_strong": true,
-      "market_cap_billions": 307.2310272,
-      "mcap_pass": true,
-      "momentum_score": 100,
-      "momentum_notes": [
-        "跳空缺口",
-        "ATH",
-        "族群同步",
-        "QQQ+2.5%"
-      ],
-      "tier": "⭐⭐⭐",
-      "next_day_prob": "≥85%"
-    },
-    {
-      "today": 332.5,
-      "monthly_max_2y": 229.0,
-      "ratio": 1.4519650655021834,
-      "from_high_pct": 45.19650655021834,
-      "bullish": true,
-      "bullish_fast": true,
-      "change_pct": 9.917355371900815,
-      "vol_ratio": 2.042847901515162,
-      "rsi": 74.12587412587413,
-      "ma5": 289.5,
-      "ma20": 239.675,
-      "ma60": 153.78833351135253,
-      "ma200": 107.37399997711182,
-      "gap_up": true,
-      "close_near_high": true,
-      "long_red": true,
-      "ticker": "3090",
-      "name": "日電貿",
-      "industry": "電子零組件",
-      "industry_strong": true,
-      "market_cap_billions": 303.38318336,
-      "mcap_pass": true,
-      "momentum_score": 100,
-      "momentum_notes": [
-        "跳空缺口",
-        "ATH",
-        "族群同步",
-        "QQQ+2.5%"
-      ],
-      "tier": "⭐⭐⭐",
-      "next_day_prob": "≥85%"
-    },
     {
       "today": 205.5,
       "monthly_max_2y": 168.5,
@@ -6549,8 +6355,7 @@
       "momentum_notes": [
         "漲停鎖死",
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -6582,8 +6387,71 @@
       "momentum_notes": [
         "漲停鎖死",
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
+      ],
+      "tier": "⭐⭐⭐",
+      "next_day_prob": "≥85%"
+    },
+    {
+      "today": 402.0,
+      "monthly_max_2y": 371.0,
+      "ratio": 1.0835579514824798,
+      "from_high_pct": 8.35579514824798,
+      "bullish": true,
+      "bullish_fast": true,
+      "change_pct": 9.986320109439117,
+      "vol_ratio": 1.9084133296632504,
+      "rsi": 54.92063492063493,
+      "ma5": 374.5,
+      "ma20": 352.0,
+      "ma60": 236.89166666666668,
+      "ma200": 143.1925,
+      "gap_up": true,
+      "close_near_high": true,
+      "long_red": true,
+      "ticker": "2472",
+      "name": "立隆電",
+      "industry": "電子零組件",
+      "industry_strong": true,
+      "market_cap_billions": 307.2310272,
+      "mcap_pass": true,
+      "momentum_score": 95,
+      "momentum_notes": [
+        "跳空缺口",
+        "ATH",
+        "族群同步"
+      ],
+      "tier": "⭐⭐⭐",
+      "next_day_prob": "≥85%"
+    },
+    {
+      "today": 332.5,
+      "monthly_max_2y": 229.0,
+      "ratio": 1.4519650655021834,
+      "from_high_pct": 45.19650655021834,
+      "bullish": true,
+      "bullish_fast": true,
+      "change_pct": 9.917355371900815,
+      "vol_ratio": 2.042847901515162,
+      "rsi": 74.12587412587413,
+      "ma5": 289.5,
+      "ma20": 239.675,
+      "ma60": 153.78833351135253,
+      "ma200": 107.37399997711182,
+      "gap_up": true,
+      "close_near_high": true,
+      "long_red": true,
+      "ticker": "3090",
+      "name": "日電貿",
+      "industry": "電子零組件",
+      "industry_strong": true,
+      "market_cap_billions": 303.38318336,
+      "mcap_pass": true,
+      "momentum_score": 95,
+      "momentum_notes": [
+        "跳空缺口",
+        "ATH",
+        "族群同步"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -6611,19 +6479,18 @@
       "industry_strong": true,
       "market_cap_billions": 6963.5801088,
       "mcap_pass": true,
-      "momentum_score": 100,
+      "momentum_score": 95,
       "momentum_notes": [
         "跳空缺口",
         "ATH",
-        "族群同步",
-        "QQQ+2.5%"
+        "族群同步"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
     }
   ],
   "tomorrow_top5_industry": "電子零組件",
-  "high_prob_count": 37,
+  "high_prob_count": 33,
   "industry_stats": [
     {
       "industry": "半導體",
@@ -6773,10 +6640,12 @@
   ],
   "top_industry": "半導體",
   "market_regime": {
-    "today": 106.0,
-    "ma200": 72.37541604995728,
-    "ext_pct": 46.458570858968585,
+    "today": 107.30000305175781,
+    "ma200": 72.64961820602417,
+    "ext_pct": 47.69520570289851,
     "in_stage2": true
   },
-  "v4_blocked": false
+  "v4_blocked": false,
+  "intraday_updated": "2026-06-19 06:19",
+  "is_intraday": true
 }

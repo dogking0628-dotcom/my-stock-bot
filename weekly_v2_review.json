@@ -1,44 +1,78 @@
 {
-  "period": "2026-06-06 ~ 2026-06-13",
-  "total_picks": 2,
-  "wins": 2,
-  "avg_return": 4.915,
+  "period": "2026-06-13 ~ 2026-06-20",
+  "total_picks": 4,
+  "wins": 4,
+  "avg_return": 5.0,
   "picks": [
     {
-      "ticker": "7788",
-      "actual_entry": 250.0,
-      "current": 266.0,
-      "ret_pct": 6.4,
-      "peak_pct": 14.4,
-      "low_pct": -8.4,
-      "status": "持有中",
-      "triggered": null,
-      "days_held": 4,
-      "signal_date": "2026-06-08",
-      "name": "松川精密",
-      "industry": "電子零組件",
-      "system_entry": 242.0
-    },
-    {
       "ticker": "3090",
-      "actual_entry": 247.5,
-      "current": 256.0,
-      "ret_pct": 3.43,
-      "peak_pct": 3.43,
-      "low_pct": -2.63,
+      "actual_entry": 320.0,
+      "current": 332.5,
+      "ret_pct": 3.91,
+      "peak_pct": 3.91,
+      "low_pct": -1.25,
       "status": "持有中",
       "triggered": null,
       "days_held": 1,
-      "signal_date": "2026-06-12",
+      "signal_date": "2026-06-17",
       "name": "日電貿",
       "industry": "電子零組件",
-      "system_entry": 256.0
+      "system_entry": 302.5
+    },
+    {
+      "ticker": "2316",
+      "actual_entry": 192.0,
+      "current": 205.5,
+      "ret_pct": 7.03,
+      "peak_pct": 7.03,
+      "low_pct": 0.0,
+      "status": "持有中",
+      "triggered": null,
+      "days_held": 1,
+      "signal_date": "2026-06-17",
+      "name": "楠梓電",
+      "industry": "電子零組件",
+      "system_entry": 187.0
+    },
+    {
+      "ticker": "3090",
+      "actual_entry": 320.0,
+      "current": 332.5,
+      "ret_pct": 3.91,
+      "peak_pct": 3.91,
+      "low_pct": -1.25,
+      "status": "持有中",
+      "triggered": null,
+      "days_held": 1,
+      "signal_date": "2026-06-18",
+      "name": "日電貿",
+      "industry": "電子零組件",
+      "system_entry": 332.5
+    },
+    {
+      "ticker": "6525",
+      "actual_entry": 136.0,
+      "current": 143.0,
+      "ret_pct": 5.15,
+      "peak_pct": 5.15,
+      "low_pct": -0.74,
+      "status": "持有中",
+      "triggered": null,
+      "days_held": 1,
+      "signal_date": "2026-06-18",
+      "name": "捷敏-KY",
+      "industry": "半導體",
+      "system_entry": 143.0
     }
   ],
   "by_industry": {
     "電子零組件": [
-      "7788",
+      "3090",
+      "2316",
       "3090"
+    ],
+    "半導體": [
+      "6525"
     ]
   }
 }

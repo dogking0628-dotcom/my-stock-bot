@@ -1201,6 +1201,97 @@
           "vol_ratio_at_rec": 1.8444635934599947
         }
       ]
+    },
+    {
+      "date": "2026-06-21",
+      "industry": "電子零組件",
+      "picks": [
+        {
+          "ticker": "2472",
+          "name": "立隆電",
+          "industry": "電子零組件",
+          "rec_close": 402.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步",
+            "QQQ+2.5%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 54.92063492063493,
+          "change_pct_at_rec": 9.986320109439117,
+          "vol_ratio_at_rec": 1.9084133296632504
+        },
+        {
+          "ticker": "3090",
+          "name": "日電貿",
+          "industry": "電子零組件",
+          "rec_close": 332.5,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步",
+            "QQQ+2.5%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 74.12587412587413,
+          "change_pct_at_rec": 9.917355371900815,
+          "vol_ratio_at_rec": 2.042847901515162
+        },
+        {
+          "ticker": "2316",
+          "name": "楠梓電",
+          "industry": "電子零組件",
+          "rec_close": 205.5,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "QQQ+2.5%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 68.68686868686868,
+          "change_pct_at_rec": 9.89304812834224,
+          "vol_ratio_at_rec": 0.771132811253345
+        },
+        {
+          "ticker": "2493",
+          "name": "揚博",
+          "industry": "電子零組件",
+          "rec_close": 273.5,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "QQQ+2.5%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 83.48082595870207,
+          "change_pct_at_rec": 9.839357429718865,
+          "vol_ratio_at_rec": 0.38470856054106906
+        },
+        {
+          "ticker": "2327",
+          "name": "國巨*",
+          "industry": "電子零組件",
+          "rec_close": 1080.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步",
+            "QQQ+2.5%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 78.869149252818,
+          "change_pct_at_rec": 9.756097560975618,
+          "vol_ratio_at_rec": 1.8444635934599947
+        }
+      ]
     }
   ]
 }

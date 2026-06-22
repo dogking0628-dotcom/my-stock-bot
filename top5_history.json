@@ -1292,6 +1292,97 @@
           "vol_ratio_at_rec": 1.8444635934599947
         }
       ]
+    },
+    {
+      "date": "2026-06-22",
+      "industry": "半導體",
+      "picks": [
+        {
+          "ticker": "2351",
+          "name": "順德",
+          "industry": "半導體",
+          "rec_close": 214.5,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "SMH+1.4%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 55.06072874493927,
+          "change_pct_at_rec": 10.000000000000009,
+          "vol_ratio_at_rec": 1.1843160152385384
+        },
+        {
+          "ticker": "8261",
+          "name": "富鼎",
+          "industry": "半導體",
+          "rec_close": 236.5,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "SMH+1.4%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 71.04377104377105,
+          "change_pct_at_rec": 10.000000000000009,
+          "vol_ratio_at_rec": 0.13445126101967128
+        },
+        {
+          "ticker": "2481",
+          "name": "強茂",
+          "industry": "半導體",
+          "rec_close": 176.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "SMH+1.4%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 58.63636363636363,
+          "change_pct_at_rec": 10.000000000000009,
+          "vol_ratio_at_rec": 0.09784930053129548
+        },
+        {
+          "ticker": "6202",
+          "name": "盛群",
+          "industry": "半導體",
+          "rec_close": 73.69999694824219,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "SMH+1.4%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 69.0243919231865,
+          "change_pct_at_rec": 9.99999544513759,
+          "vol_ratio_at_rec": 1.0548010630416438
+        },
+        {
+          "ticker": "6451",
+          "name": "訊芯-KY",
+          "industry": "半導體",
+          "rec_close": 617.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "SMH+1.4%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 48.9648033126294,
+          "change_pct_at_rec": 9.982174688057043,
+          "vol_ratio_at_rec": 1.1540334439661755
+        }
+      ]
     }
   ]
 }

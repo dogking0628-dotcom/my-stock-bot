@@ -1383,6 +1383,57 @@
           "vol_ratio_at_rec": 1.1540334439661755
         }
       ]
+    },
+    {
+      "date": "2026-06-23",
+      "industry": "半導體",
+      "picks": [
+        {
+          "ticker": "6525",
+          "name": "捷敏-KY",
+          "industry": "半導體",
+          "rec_close": 170.5,
+          "momentum_score": 80,
+          "momentum_notes": [
+            "量爆價揚",
+            "ATH"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 85.0183144031703,
+          "change_pct_at_rec": 10.000000000000009,
+          "vol_ratio_at_rec": 3.1451256374179852
+        },
+        {
+          "ticker": "3016",
+          "name": "嘉晶",
+          "industry": "半導體",
+          "rec_close": 152.5,
+          "momentum_score": 80,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 68.47826086956522,
+          "change_pct_at_rec": 9.712230215827343,
+          "vol_ratio_at_rec": 0.7235419741612718
+        },
+        {
+          "ticker": "6715",
+          "name": "嘉基",
+          "industry": "電子零組件",
+          "rec_close": 569.0,
+          "momentum_score": 80,
+          "momentum_notes": [
+            "量爆價揚",
+            "ATH"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 68.23855755894591,
+          "change_pct_at_rec": 9.845559845559837,
+          "vol_ratio_at_rec": 3.405607398761691
+        }
+      ]
     }
   ]
 }

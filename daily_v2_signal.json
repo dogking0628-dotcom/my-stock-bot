@@ -1,51 +1,19 @@
 {
-  "timestamp": "2026-06-23",
+  "timestamp": "2026-06-24",
   "strategy": "V2 原版 (實測 OOS PF 1.83 / 主回測 PF 1.69, 抗崩盤強·常空手)",
   "top_industries": [
     {
       "industry": "半導體",
-      "count": 52,
-      "bullish_count": 48
+      "count": 53,
+      "bullish_count": 46
     },
     {
       "industry": "電子零組件",
-      "count": 36,
-      "bullish_count": 32
+      "count": 37,
+      "bullish_count": 33
     }
   ],
-  "picks": [
-    {
-      "today": 612.0,
-      "monthly_max_2y": 489.51800537109375,
-      "ratio": 1.250209375926949,
-      "from_high_pct": 25.020937592694903,
-      "bullish": true,
-      "bullish_fast": true,
-      "change_pct": 9.874326750448837,
-      "vol_ratio": 1.5413357166027928,
-      "rsi": 58.59934253046755,
-      "ma5": 549.3,
-      "ma20": 512.5223495483399,
-      "ma60": 402.5592844645182,
-      "ma200": 298.13697982788085,
-      "gap_up": false,
-      "close_near_high": true,
-      "long_red": true,
-      "ticker": "3450",
-      "name": "聯鈞",
-      "industry": "半導體",
-      "industry_strong": false,
-      "market_cap_billions": 500.41421824,
-      "mcap_pass": true,
-      "momentum_score": 30,
-      "momentum_notes": [
-        "ATH"
-      ],
-      "tier": "⭐",
-      "next_day_prob": "<70%",
-      "_score": 93.76
-    }
-  ],
+  "picks": [],
   "params": {
     "top_industries": 2,
     "vol_ratio_min": 1.5,

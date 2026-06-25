@@ -1455,6 +1455,95 @@
           "vol_ratio_at_rec": 4.075812956080766
         }
       ]
+    },
+    {
+      "date": "2026-06-25",
+      "industry": "半導體",
+      "picks": [
+        {
+          "ticker": "6271",
+          "name": "同欣電",
+          "industry": "半導體",
+          "rec_close": 271.5,
+          "momentum_score": 95,
+          "momentum_notes": [
+            "量爆價揚",
+            "ATH",
+            "QQQ+0.8%",
+            "SMH+2.9%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 57.63050294379725,
+          "change_pct_at_rec": 7.9522862823061535,
+          "vol_ratio_at_rec": 3.243740938247457
+        },
+        {
+          "ticker": "2458",
+          "name": "義隆",
+          "industry": "半導體",
+          "rec_close": 180.0,
+          "momentum_score": 90,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+0.8%",
+            "SMH+2.9%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 60.22727272727273,
+          "change_pct_at_rec": 9.756097560975618,
+          "vol_ratio_at_rec": 2.6884295733148664
+        },
+        {
+          "ticker": "6691",
+          "name": "洋基工程",
+          "industry": "其他電子",
+          "rec_close": 797.0,
+          "momentum_score": 90,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+0.8%",
+            "SMH+2.9%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 72.37569060773481,
+          "change_pct_at_rec": 5.145118733509224,
+          "vol_ratio_at_rec": 1.7930035513315934
+        },
+        {
+          "ticker": "2493",
+          "name": "揚博",
+          "industry": "電子零組件",
+          "rec_close": 288.5,
+          "momentum_score": 80,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+0.8%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 85.12658227848101,
+          "change_pct_at_rec": 8.867924528301895,
+          "vol_ratio_at_rec": 0.24871372069062045
+        },
+        {
+          "ticker": "3008",
+          "name": "大立光",
+          "industry": "光電",
+          "rec_close": 5165.0,
+          "momentum_score": 80,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+0.8%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 73.92857142857143,
+          "change_pct_at_rec": 5.408163265306132,
+          "vol_ratio_at_rec": 1.2118607886433554
+        }
+      ]
     }
   ]
 }

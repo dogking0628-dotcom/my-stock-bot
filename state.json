@@ -1,6 +1,6 @@
 {
-  "last_run": "2026-06-25",
-  "cash": 8234.394287485437,
+  "last_run": "2026-06-26",
+  "cash": 6969.235016505577,
   "positions": [
     {
       "ticker": "INTC",
@@ -38,13 +38,6 @@
       "shares": 25.927558
     },
     {
-      "ticker": "HPE",
-      "entry_date": "2026-06-02",
-      "entry_price": 56.15,
-      "peak_price": 56.15,
-      "shares": 143.293684
-    },
-    {
       "ticker": "CSCO",
       "entry_date": "2026-06-02",
       "entry_price": 128.0,
@@ -71,6 +64,13 @@
       "entry_price": 915.6,
       "peak_price": 916.280029296875,
       "shares": 7.64596
+    },
+    {
+      "ticker": "LLY",
+      "entry_date": "2026-06-26",
+      "entry_price": 1208.12,
+      "peak_price": 1208.12,
+      "shares": 6.231605
     }
   ],
   "running_ath": {}

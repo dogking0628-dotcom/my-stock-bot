@@ -1,7 +1,72 @@
 {
-  "timestamp": "2026-06-28",
+  "timestamp": "2026-06-29",
   "strategy": "V4.1 (科技7族群+市值100億+美股加分+0050體制+7日黑名單)",
   "strongest_industry": "電子零組件",
   "v4_blocked": false,
-  "picks": []
+  "picks": [
+    {
+      "today": 506.0,
+      "monthly_max_2y": 446.70703125,
+      "ratio": 1.1327334575058807,
+      "from_high_pct": 13.273345750588073,
+      "bullish": true,
+      "bullish_fast": true,
+      "change_pct": 9.880564603691644,
+      "vol_ratio": 1.7993401386648227,
+      "rsi": 73.26732673267327,
+      "ma5": 445.4,
+      "ma20": 403.0,
+      "ma60": 389.117431640625,
+      "ma200": 306.8593067169189,
+      "gap_up": true,
+      "close_near_high": true,
+      "long_red": true,
+      "ticker": "7795",
+      "name": "長廣",
+      "industry": "電子零組件",
+      "industry_strong": false,
+      "market_cap_billions": 296.39514112,
+      "mcap_pass": true,
+      "momentum_score": 80,
+      "momentum_notes": [
+        "跳空缺口",
+        "ATH",
+        "QQQ+2.5%"
+      ],
+      "tier": "⭐⭐⭐",
+      "next_day_prob": "≥85%"
+    },
+    {
+      "today": 38.0,
+      "monthly_max_2y": 34.54999923706055,
+      "ratio": 1.0998553064869176,
+      "from_high_pct": 9.985530648691764,
+      "bullish": true,
+      "bullish_fast": false,
+      "change_pct": 9.985530648691764,
+      "vol_ratio": 0.6648430936070315,
+      "rsi": 63.27433269822579,
+      "ma5": 35.22999954223633,
+      "ma20": 36.017499923706055,
+      "ma60": 33.53666667938232,
+      "ma200": 27.826750106811524,
+      "gap_up": true,
+      "close_near_high": true,
+      "long_red": true,
+      "ticker": "2406",
+      "name": "國碩",
+      "industry": "光電",
+      "industry_strong": false,
+      "market_cap_billions": 114.21989888,
+      "mcap_pass": true,
+      "momentum_score": 85,
+      "momentum_notes": [
+        "漲停鎖死",
+        "ATH",
+        "QQQ+2.5%"
+      ],
+      "tier": "⭐⭐⭐",
+      "next_day_prob": "≥85%"
+    }
+  ]
 }

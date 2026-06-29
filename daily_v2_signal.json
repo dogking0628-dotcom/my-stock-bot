@@ -1,34 +1,34 @@
 {
-  "timestamp": "2026-06-28",
+  "timestamp": "2026-06-29",
   "strategy": "V2 原版 (實測 OOS PF 1.83 / 主回測 PF 1.69, 抗崩盤強·常空手)",
   "top_industries": [
     {
       "industry": "半導體",
-      "count": 33,
-      "bullish_count": 30
+      "count": 37,
+      "bullish_count": 32
     },
     {
       "industry": "電子零組件",
-      "count": 32,
-      "bullish_count": 27
+      "count": 30,
+      "bullish_count": 28
     }
   ],
   "picks": [
     {
-      "today": 460.5,
+      "today": 506.0,
       "monthly_max_2y": 446.70703125,
-      "ratio": 1.03087699047719,
-      "from_high_pct": 3.0876990477189947,
+      "ratio": 1.1327334575058807,
+      "from_high_pct": 13.273345750588073,
       "bullish": true,
       "bullish_fast": true,
-      "change_pct": 9.904534606205239,
-      "vol_ratio": 2.5277481621948863,
-      "rsi": 64.77064220183487,
-      "ma5": 434.4,
-      "ma20": 398.075,
-      "ma60": 386.2803721110026,
-      "ma200": 305.21973609924316,
-      "gap_up": false,
+      "change_pct": 9.880564603691644,
+      "vol_ratio": 1.7993401386648227,
+      "rsi": 73.26732673267327,
+      "ma5": 445.4,
+      "ma20": 403.0,
+      "ma60": 389.117431640625,
+      "ma200": 306.8593067169189,
+      "gap_up": true,
       "close_near_high": true,
       "long_red": true,
       "ticker": "7795",
@@ -37,13 +37,15 @@
       "industry_strong": false,
       "market_cap_billions": 296.39514112,
       "mcap_pass": true,
-      "momentum_score": 30,
+      "momentum_score": 80,
       "momentum_notes": [
-        "ATH"
+        "跳空缺口",
+        "ATH",
+        "QQQ+2.5%"
       ],
-      "tier": "⭐",
-      "next_day_prob": "<70%",
-      "_score": 109.86
+      "tier": "⭐⭐⭐",
+      "next_day_prob": "≥85%",
+      "_score": 111.02
     }
   ],
   "params": {

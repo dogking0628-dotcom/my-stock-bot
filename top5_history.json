@@ -1544,6 +1544,44 @@
           "vol_ratio_at_rec": 1.2118607886433554
         }
       ]
+    },
+    {
+      "date": "2026-06-29",
+      "industry": "電子零組件",
+      "picks": [
+        {
+          "ticker": "7795",
+          "name": "長廣",
+          "industry": "電子零組件",
+          "rec_close": 506.0,
+          "momentum_score": 80,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+2.5%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 73.26732673267327,
+          "change_pct_at_rec": 9.880564603691644,
+          "vol_ratio_at_rec": 1.7993401386648227
+        },
+        {
+          "ticker": "2406",
+          "name": "國碩",
+          "industry": "光電",
+          "rec_close": 38.0,
+          "momentum_score": 85,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "QQQ+2.5%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 63.27433269822579,
+          "change_pct_at_rec": 9.985530648691764,
+          "vol_ratio_at_rec": 0.6648430936070315
+        }
+      ]
     }
   ]
 }

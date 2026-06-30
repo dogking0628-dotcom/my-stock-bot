@@ -1,51 +1,86 @@
 {
-  "timestamp": "2026-06-29",
+  "timestamp": "2026-06-30",
   "strategy": "V2 原版 (實測 OOS PF 1.83 / 主回測 PF 1.69, 抗崩盤強·常空手)",
   "top_industries": [
     {
       "industry": "半導體",
-      "count": 37,
-      "bullish_count": 32
+      "count": 44,
+      "bullish_count": 41
     },
     {
       "industry": "電子零組件",
-      "count": 30,
-      "bullish_count": 28
+      "count": 35,
+      "bullish_count": 32
     }
   ],
   "picks": [
     {
-      "today": 506.0,
-      "monthly_max_2y": 446.70703125,
-      "ratio": 1.1327334575058807,
-      "from_high_pct": 13.273345750588073,
+      "today": 453.5,
+      "monthly_max_2y": 371.0,
+      "ratio": 1.2223719676549865,
+      "from_high_pct": 22.237196765498645,
       "bullish": true,
       "bullish_fast": true,
-      "change_pct": 9.880564603691644,
-      "vol_ratio": 1.7993401386648227,
-      "rsi": 73.26732673267327,
-      "ma5": 445.4,
-      "ma20": 403.0,
-      "ma60": 389.117431640625,
-      "ma200": 306.8593067169189,
+      "change_pct": 9.939393939393938,
+      "vol_ratio": 2.8150453056566995,
+      "rsi": 61.37640449438202,
+      "ma5": 400.0,
+      "ma20": 373.925,
+      "ma60": 267.89166666666665,
+      "ma200": 154.0329999923706,
       "gap_up": true,
       "close_near_high": true,
-      "long_red": true,
-      "ticker": "7795",
-      "name": "長廣",
+      "long_red": false,
+      "ticker": "2472",
+      "name": "立隆電",
       "industry": "電子零組件",
-      "industry_strong": false,
-      "market_cap_billions": 296.39514112,
+      "industry_strong": true,
+      "market_cap_billions": 307.2310272,
       "mcap_pass": true,
-      "momentum_score": 80,
+      "momentum_score": 100,
       "momentum_notes": [
         "跳空缺口",
         "ATH",
-        "QQQ+2.5%"
+        "族群同步",
+        "QQQ+1.7%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%",
-      "_score": 111.02
+      "_score": 109.41
+    },
+    {
+      "today": 267.0,
+      "monthly_max_2y": 243.91250610351562,
+      "ratio": 1.0946548180956581,
+      "from_high_pct": 9.465481809565812,
+      "bullish": true,
+      "bullish_fast": true,
+      "change_pct": 9.876543209876543,
+      "vol_ratio": 1.66481406538727,
+      "rsi": 57.14285714285714,
+      "ma5": 257.6,
+      "ma20": 241.77625045776367,
+      "ma60": 205.9881273905436,
+      "ma200": 152.57237770080567,
+      "gap_up": false,
+      "close_near_high": true,
+      "long_red": true,
+      "ticker": "6271",
+      "name": "同欣電",
+      "industry": "半導體",
+      "industry_strong": true,
+      "market_cap_billions": 375.259136,
+      "mcap_pass": true,
+      "momentum_score": 65,
+      "momentum_notes": [
+        "ATH",
+        "族群同步",
+        "QQQ+1.7%",
+        "SMH+3.8%"
+      ],
+      "tier": "⭐⭐",
+      "next_day_prob": "70-85%",
+      "_score": 93.54
     }
   ],
   "params": {

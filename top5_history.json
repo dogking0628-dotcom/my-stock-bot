@@ -1582,6 +1582,102 @@
           "vol_ratio_at_rec": 0.6648430936070315
         }
       ]
+    },
+    {
+      "date": "2026-06-30",
+      "industry": "半導體",
+      "picks": [
+        {
+          "ticker": "3189",
+          "name": "景碩",
+          "industry": "半導體",
+          "rec_close": 891.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步",
+            "QQQ+1.7%",
+            "SMH+3.8%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 65.02546689303905,
+          "change_pct_at_rec": 10.000000000000009,
+          "vol_ratio_at_rec": 1.3602559936037586
+        },
+        {
+          "ticker": "3532",
+          "name": "台勝科",
+          "industry": "半導體",
+          "rec_close": 364.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "QQQ+1.7%",
+            "SMH+3.8%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 65.80516898608349,
+          "change_pct_at_rec": 9.969788519637458,
+          "vol_ratio_at_rec": 0.12725594135020502
+        },
+        {
+          "ticker": "8261",
+          "name": "富鼎",
+          "industry": "半導體",
+          "rec_close": 270.5,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "QQQ+1.7%",
+            "SMH+3.8%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 78.19148936170212,
+          "change_pct_at_rec": 9.959349593495936,
+          "vol_ratio_at_rec": 0.6174282628464631
+        },
+        {
+          "ticker": "2481",
+          "name": "強茂",
+          "industry": "半導體",
+          "rec_close": 182.5,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "QQQ+1.7%",
+            "SMH+3.8%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 64.5418326693227,
+          "change_pct_at_rec": 9.939759036144569,
+          "vol_ratio_at_rec": 0.13887322452889428
+        },
+        {
+          "ticker": "3443",
+          "name": "創意",
+          "industry": "半導體",
+          "rec_close": 4845.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "QQQ+1.7%",
+            "SMH+3.8%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 59.81651376146789,
+          "change_pct_at_rec": 9.615384615384626,
+          "vol_ratio_at_rec": 0.8568338745489911
+        }
+      ]
     }
   ]
 }

@@ -1678,6 +1678,57 @@
           "vol_ratio_at_rec": 0.8568338745489911
         }
       ]
+    },
+    {
+      "date": "2026-07-01",
+      "industry": "半導體",
+      "picks": [
+        {
+          "ticker": "8261",
+          "name": "富鼎",
+          "industry": "半導體",
+          "rec_close": 297.5,
+          "momentum_score": 80,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 84.05797101449275,
+          "change_pct_at_rec": 9.981515711645095,
+          "vol_ratio_at_rec": 1.05815759762193
+        },
+        {
+          "ticker": "3532",
+          "name": "台勝科",
+          "industry": "半導體",
+          "rec_close": 400.0,
+          "momentum_score": 80,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 73.80952380952381,
+          "change_pct_at_rec": 9.8901098901099,
+          "vol_ratio_at_rec": 0.6828870607625652
+        },
+        {
+          "ticker": "6271",
+          "name": "同欣電",
+          "industry": "半導體",
+          "rec_close": 287.5,
+          "momentum_score": 80,
+          "momentum_notes": [
+            "量爆價揚",
+            "ATH"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 64.30205949656751,
+          "change_pct_at_rec": 7.677902621722854,
+          "vol_ratio_at_rec": 3.437025138211333
+        }
+      ]
     }
   ]
 }

@@ -1,52 +1,19 @@
 {
-  "timestamp": "2026-07-01",
+  "timestamp": "2026-07-02",
   "strategy": "V2 原版 (實測 OOS PF 1.83 / 主回測 PF 1.69, 抗崩盤強·常空手)",
   "top_industries": [
     {
       "industry": "半導體",
-      "count": 43,
-      "bullish_count": 38
+      "count": 45,
+      "bullish_count": 42
     },
     {
       "industry": "電子零組件",
-      "count": 41,
-      "bullish_count": 30
+      "count": 35,
+      "bullish_count": 28
     }
   ],
-  "picks": [
-    {
-      "today": 297.0,
-      "monthly_max_2y": 270.0,
-      "ratio": 1.1,
-      "from_high_pct": 10.000000000000009,
-      "bullish": true,
-      "bullish_fast": true,
-      "change_pct": 10.000000000000009,
-      "vol_ratio": 1.9083252313567307,
-      "rsi": 73.33333333333334,
-      "ma5": 278.0,
-      "ma20": 251.65,
-      "ma60": 214.65,
-      "ma200": 198.2125,
-      "gap_up": true,
-      "close_near_high": true,
-      "long_red": true,
-      "ticker": "6719",
-      "name": "力智",
-      "industry": "半導體",
-      "industry_strong": false,
-      "market_cap_billions": 198.30992896,
-      "mcap_pass": true,
-      "momentum_score": 75,
-      "momentum_notes": [
-        "跳空缺口",
-        "ATH"
-      ],
-      "tier": "⭐⭐",
-      "next_day_prob": "70-85%",
-      "_score": 112.42
-    }
-  ],
+  "picks": [],
   "params": {
     "top_industries": 2,
     "vol_ratio_min": 1.5,

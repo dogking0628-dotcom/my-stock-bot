@@ -1729,6 +1729,60 @@
           "vol_ratio_at_rec": 3.437025138211333
         }
       ]
+    },
+    {
+      "date": "2026-07-02",
+      "industry": "半導體",
+      "picks": [
+        {
+          "ticker": "6525",
+          "name": "捷敏-KY",
+          "industry": "半導體",
+          "rec_close": 166.5,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 71.9298245614035,
+          "change_pct_at_rec": 9.90099009900991,
+          "vol_ratio_at_rec": 0.9241627242195836
+        },
+        {
+          "ticker": "2481",
+          "name": "強茂",
+          "industry": "半導體",
+          "rec_close": 213.5,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 76.47058823529412,
+          "change_pct_at_rec": 9.768637532133685,
+          "vol_ratio_at_rec": 0.37756818288853505
+        },
+        {
+          "ticker": "3605",
+          "name": "宏致",
+          "industry": "電子零組件",
+          "rec_close": 90.0999984741211,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "量爆價揚",
+            "ATH",
+            "族群同步"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 73.88889477576988,
+          "change_pct_at_rec": 5.257009439504201,
+          "vol_ratio_at_rec": 6.714501637159551
+        }
+      ]
     }
   ]
 }

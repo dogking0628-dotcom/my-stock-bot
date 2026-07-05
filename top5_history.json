@@ -1783,6 +1783,60 @@
           "vol_ratio_at_rec": 6.714501637159551
         }
       ]
+    },
+    {
+      "date": "2026-07-05",
+      "industry": "半導體",
+      "picks": [
+        {
+          "ticker": "3026",
+          "name": "禾伸堂",
+          "industry": "電子零組件",
+          "rec_close": 988.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "量爆價揚",
+            "ATH",
+            "族群同步"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 68.6231629233853,
+          "change_pct_at_rec": 9.899888765294772,
+          "vol_ratio_at_rec": 3.5989385239865057
+        },
+        {
+          "ticker": "6715",
+          "name": "嘉基",
+          "industry": "電子零組件",
+          "rec_close": 489.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 62.56162995336671,
+          "change_pct_at_rec": 9.887640449438194,
+          "vol_ratio_at_rec": 0.33964122491371673
+        },
+        {
+          "ticker": "3042",
+          "name": "晶技",
+          "industry": "電子零組件",
+          "rec_close": 249.0,
+          "momentum_score": 95,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 59.816857810482134,
+          "change_pct_at_rec": 9.933774834437092,
+          "vol_ratio_at_rec": 2.300981108612914
+        }
+      ]
     }
   ]
 }

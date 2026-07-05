@@ -1,19 +1,116 @@
 {
-  "timestamp": "2026-07-02",
+  "timestamp": "2026-07-05",
   "strategy": "V2 原版 (實測 OOS PF 1.83 / 主回測 PF 1.69, 抗崩盤強·常空手)",
   "top_industries": [
     {
       "industry": "半導體",
       "count": 45,
-      "bullish_count": 42
+      "bullish_count": 39
     },
     {
       "industry": "電子零組件",
-      "count": 35,
-      "bullish_count": 28
+      "count": 40,
+      "bullish_count": 32
     }
   ],
-  "picks": [],
+  "picks": [
+    {
+      "today": 988.0,
+      "monthly_max_2y": 842.0,
+      "ratio": 1.173396674584323,
+      "from_high_pct": 17.339667458432295,
+      "bullish": true,
+      "bullish_fast": true,
+      "change_pct": 9.899888765294772,
+      "vol_ratio": 3.5989385239865057,
+      "rsi": 68.6231629233853,
+      "ma5": 878.8,
+      "ma20": 789.4573425292969,
+      "ma60": 498.30559056599935,
+      "ma200": 224.05213916778564,
+      "gap_up": false,
+      "close_near_high": true,
+      "long_red": true,
+      "ticker": "3026",
+      "name": "禾伸堂",
+      "industry": "電子零組件",
+      "industry_strong": true,
+      "market_cap_billions": 452.8805888,
+      "mcap_pass": true,
+      "momentum_score": 100,
+      "momentum_notes": [
+        "量爆價揚",
+        "ATH",
+        "族群同步"
+      ],
+      "tier": "⭐⭐⭐",
+      "next_day_prob": "≥85%",
+      "_score": 124.41
+    },
+    {
+      "today": 183.0,
+      "monthly_max_2y": 151.0,
+      "ratio": 1.2119205298013245,
+      "from_high_pct": 21.19205298013245,
+      "bullish": true,
+      "bullish_fast": true,
+      "change_pct": 9.90990990990992,
+      "vol_ratio": 2.3805929541529136,
+      "rsi": 73.66255144032922,
+      "ma5": 159.0,
+      "ma20": 141.65,
+      "ma60": 113.80392405192057,
+      "ma200": 87.31995845794678,
+      "gap_up": false,
+      "close_near_high": true,
+      "long_red": true,
+      "ticker": "6525",
+      "name": "捷敏-KY",
+      "industry": "半導體",
+      "industry_strong": false,
+      "market_cap_billions": 132.91840512,
+      "mcap_pass": true,
+      "momentum_score": 30,
+      "momentum_notes": [
+        "ATH"
+      ],
+      "tier": "⭐",
+      "next_day_prob": "<70%",
+      "_score": 117.29
+    },
+    {
+      "today": 342.0,
+      "monthly_max_2y": 315.0,
+      "ratio": 1.0857142857142856,
+      "from_high_pct": 8.571428571428562,
+      "bullish": true,
+      "bullish_fast": true,
+      "change_pct": 9.967845659163977,
+      "vol_ratio": 1.5639403923759034,
+      "rsi": 63.78378378378379,
+      "ma5": 314.0,
+      "ma20": 299.925,
+      "ma60": 239.24166666666667,
+      "ma200": 192.91,
+      "gap_up": false,
+      "close_near_high": true,
+      "long_red": true,
+      "ticker": "2428",
+      "name": "興勤",
+      "industry": "電子零組件",
+      "industry_strong": true,
+      "market_cap_billions": 237.00905984,
+      "mcap_pass": true,
+      "momentum_score": 50,
+      "momentum_notes": [
+        "ATH",
+        "族群同步"
+      ],
+      "tier": "⭐",
+      "next_day_prob": "<70%",
+      "_score": 99.36
+    }
+  ],
   "params": {
     "top_industries": 2,
     "vol_ratio_min": 1.5,

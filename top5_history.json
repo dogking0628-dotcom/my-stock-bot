@@ -1837,6 +1837,97 @@
           "vol_ratio_at_rec": 2.300981108612914
         }
       ]
+    },
+    {
+      "date": "2026-07-06",
+      "industry": "半導體",
+      "picks": [
+        {
+          "ticker": "8150",
+          "name": "南茂",
+          "industry": "半導體",
+          "rec_close": 115.5,
+          "momentum_score": 95,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "QQQ+1.4%",
+            "SMH+2.0%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 63.43212639155499,
+          "change_pct_at_rec": 10.000000000000009,
+          "vol_ratio_at_rec": 0.8828914272674794
+        },
+        {
+          "ticker": "8261",
+          "name": "富鼎",
+          "industry": "半導體",
+          "rec_close": 352.0,
+          "momentum_score": 95,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "QQQ+1.4%",
+            "SMH+2.0%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 83.73983739837398,
+          "change_pct_at_rec": 10.000000000000009,
+          "vol_ratio_at_rec": 0.22802287738707933
+        },
+        {
+          "ticker": "2369",
+          "name": "菱生",
+          "industry": "半導體",
+          "rec_close": 43.20000076293945,
+          "momentum_score": 95,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "QQQ+1.4%",
+            "SMH+2.0%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 64.4660144697699,
+          "change_pct_at_rec": 9.923668197431269,
+          "vol_ratio_at_rec": 1.1656623881952104
+        },
+        {
+          "ticker": "2481",
+          "name": "強茂",
+          "industry": "半導體",
+          "rec_close": 227.5,
+          "momentum_score": 95,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "QQQ+1.4%",
+            "SMH+2.0%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 76.3975155279503,
+          "change_pct_at_rec": 9.903381642512077,
+          "vol_ratio_at_rec": 0.33831059318762446
+        },
+        {
+          "ticker": "6525",
+          "name": "捷敏-KY",
+          "industry": "半導體",
+          "rec_close": 201.0,
+          "momentum_score": 95,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "QQQ+1.4%",
+            "SMH+2.0%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 76.02996254681648,
+          "change_pct_at_rec": 9.836065573770503,
+          "vol_ratio_at_rec": 0.6482247657010605
+        }
+      ]
     }
   ]
 }

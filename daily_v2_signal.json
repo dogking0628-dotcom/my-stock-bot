@@ -1,87 +1,19 @@
 {
-  "timestamp": "2026-07-06",
+  "timestamp": "2026-07-07",
   "strategy": "V2 原版 (實測 OOS PF 1.83 / 主回測 PF 1.69, 抗崩盤強·常空手)",
   "top_industries": [
     {
       "industry": "半導體",
-      "count": 44,
-      "bullish_count": 38
+      "count": 32,
+      "bullish_count": 28
     },
     {
-      "industry": "電子零組件",
-      "count": 37,
-      "bullish_count": 31
+      "industry": "金融保險",
+      "count": 29,
+      "bullish_count": 22
     }
   ],
-  "picks": [
-    {
-      "today": 82.19999694824219,
-      "monthly_max_2y": 79.0,
-      "ratio": 1.0405062904840783,
-      "from_high_pct": 4.050629048407828,
-      "bullish": true,
-      "bullish_fast": true,
-      "change_pct": 9.893039564936856,
-      "vol_ratio": 2.822518403325193,
-      "rsi": 59.93883884804064,
-      "ma5": 73.74000091552735,
-      "ma20": 72.85000019073486,
-      "ma60": 67.86000010172526,
-      "ma200": 56.359750051498416,
-      "gap_up": false,
-      "close_near_high": true,
-      "long_red": true,
-      "ticker": "8131",
-      "name": "福懋科",
-      "industry": "半導體",
-      "industry_strong": false,
-      "market_cap_billions": 321.93777664,
-      "mcap_pass": true,
-      "momentum_score": 45,
-      "momentum_notes": [
-        "ATH",
-        "QQQ+1.4%",
-        "SMH+2.0%"
-      ],
-      "tier": "⭐",
-      "next_day_prob": "<70%",
-      "_score": 107.95
-    },
-    {
-      "today": 228.0,
-      "monthly_max_2y": 212.5,
-      "ratio": 1.0729411764705883,
-      "from_high_pct": 7.294117647058829,
-      "bullish": true,
-      "bullish_fast": true,
-      "change_pct": 9.879518072289152,
-      "vol_ratio": 1.846174841512942,
-      "rsi": 63.75,
-      "ma5": 213.3,
-      "ma20": 197.4,
-      "ma60": 179.775,
-      "ma200": 112.93300003051758,
-      "gap_up": true,
-      "close_near_high": true,
-      "long_red": true,
-      "ticker": "2351",
-      "name": "順德",
-      "industry": "半導體",
-      "industry_strong": false,
-      "market_cap_billions": 285.04909824,
-      "mcap_pass": true,
-      "momentum_score": 90,
-      "momentum_notes": [
-        "跳空缺口",
-        "ATH",
-        "QQQ+1.4%",
-        "SMH+2.0%"
-      ],
-      "tier": "⭐⭐⭐",
-      "next_day_prob": "≥85%",
-      "_score": 101.97
-    }
-  ],
+  "picks": [],
   "params": {
     "top_industries": 2,
     "vol_ratio_min": 1.5,

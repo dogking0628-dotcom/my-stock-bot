@@ -1928,6 +1928,27 @@
           "vol_ratio_at_rec": 0.6482247657010605
         }
       ]
+    },
+    {
+      "date": "2026-07-07",
+      "industry": "半導體",
+      "picks": [
+        {
+          "ticker": "6579",
+          "name": "研揚",
+          "industry": "電腦及週邊",
+          "rec_close": 179.0,
+          "momentum_score": 80,
+          "momentum_notes": [
+            "量爆價揚",
+            "ATH"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 65.63876651982379,
+          "change_pct_at_rec": 8.814589665653493,
+          "vol_ratio_at_rec": 6.554291912818312
+        }
+      ]
     }
   ]
 }

@@ -1,21 +1,7 @@
 {
-  "last_run": "2026-07-06",
-  "cash": 6178.519229106625,
+  "last_run": "2026-07-07",
+  "cash": 20708.734411650687,
   "positions": [
-    {
-      "ticker": "INTC",
-      "entry_date": "2026-05-01",
-      "entry_price": 99.62,
-      "peak_price": 140.94000244140625,
-      "shares": 100.381447
-    },
-    {
-      "ticker": "MU",
-      "entry_date": "2026-05-01",
-      "entry_price": 542.21,
-      "peak_price": 1213.56005859375,
-      "shares": 18.443038
-    },
     {
       "ticker": "AMD",
       "entry_date": "2026-05-01",
@@ -62,7 +48,7 @@
       "ticker": "LLY",
       "entry_date": "2026-06-26",
       "entry_price": 1208.12,
-      "peak_price": 1229.9300537109375,
+      "peak_price": 1235.56005859375,
       "shares": 6.231605
     },
     {
@@ -71,6 +57,20 @@
       "entry_price": 234.91,
       "peak_price": 235.7100067138672,
       "shares": 30.112896
+    },
+    {
+      "ticker": "STT",
+      "entry_date": "2026-07-07",
+      "entry_price": 179.94,
+      "peak_price": 179.94,
+      "shares": 38.505809
+    },
+    {
+      "ticker": "BNY",
+      "entry_date": "2026-07-07",
+      "entry_price": 152.91,
+      "peak_price": 152.91,
+      "shares": 45.312506
     }
   ],
   "running_ath": {}

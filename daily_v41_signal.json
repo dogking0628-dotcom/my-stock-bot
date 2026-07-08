@@ -1,39 +1,7 @@
 {
-  "timestamp": "2026-07-07",
+  "timestamp": "2026-07-08",
   "strategy": "V4.1 (科技7族群+市值100億+美股加分+0050體制+7日黑名單)",
   "strongest_industry": "半導體",
   "v4_blocked": false,
-  "picks": [
-    {
-      "today": 179.0,
-      "monthly_max_2y": 166.13636779785156,
-      "ratio": 1.0774281535864587,
-      "from_high_pct": 7.7428153586458714,
-      "bullish": true,
-      "bullish_fast": false,
-      "change_pct": 8.814589665653493,
-      "vol_ratio": 6.554291912818312,
-      "rsi": 65.63876651982379,
-      "ma5": 165.4,
-      "ma20": 161.15681915283204,
-      "ma60": 145.32197240193685,
-      "ma200": 123.42022975921631,
-      "gap_up": true,
-      "close_near_high": false,
-      "long_red": true,
-      "ticker": "6579",
-      "name": "研揚",
-      "industry": "電腦及週邊",
-      "industry_strong": false,
-      "market_cap_billions": 227.9118848,
-      "mcap_pass": true,
-      "momentum_score": 80,
-      "momentum_notes": [
-        "量爆價揚",
-        "ATH"
-      ],
-      "tier": "⭐⭐⭐",
-      "next_day_prob": "≥85%"
-    }
-  ]
+  "picks": []
 }

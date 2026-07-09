@@ -1949,6 +1949,80 @@
           "vol_ratio_at_rec": 6.554291912818312
         }
       ]
+    },
+    {
+      "date": "2026-07-09",
+      "industry": "半導體",
+      "picks": [
+        {
+          "ticker": "8150",
+          "name": "南茂",
+          "industry": "半導體",
+          "rec_close": 117.0,
+          "momentum_score": 95,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "QQQ+1.7%",
+            "SMH+2.5%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 58.282613656111934,
+          "change_pct_at_rec": 9.859154929577475,
+          "vol_ratio_at_rec": 1.0758871650548356
+        },
+        {
+          "ticker": "6202",
+          "name": "盛群",
+          "industry": "半導體",
+          "rec_close": 73.30000305175781,
+          "momentum_score": 90,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+1.7%",
+            "SMH+2.5%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 57.07865754156479,
+          "change_pct_at_rec": 7.794122134937953,
+          "vol_ratio_at_rec": 2.785292471134861
+        },
+        {
+          "ticker": "2441",
+          "name": "超豐",
+          "industry": "半導體",
+          "rec_close": 144.5,
+          "momentum_score": 90,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+1.7%",
+            "SMH+2.5%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 57.03703703703704,
+          "change_pct_at_rec": 4.710144927536231,
+          "vol_ratio_at_rec": 1.2195628937222032
+        },
+        {
+          "ticker": "8016",
+          "name": "矽創",
+          "industry": "半導體",
+          "rec_close": 363.0,
+          "momentum_score": 90,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+1.7%",
+            "SMH+2.5%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 72.40143369175627,
+          "change_pct_at_rec": 3.125,
+          "vol_ratio_at_rec": 1.0501575301640123
+        }
+      ]
     }
   ]
 }

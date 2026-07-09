@@ -11,7 +11,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 9.91150172410813,
-      "vol_ratio": 1.1590071115161962,
+      "vol_ratio": 1.1542408886641737,
       "rsi": 71.91329124054829,
       "ma5": 56.4,
       "ma20": 44.76499996185303,
@@ -30,26 +30,26 @@
       "momentum_notes": [
         "漲停鎖死",
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
     },
     {
-      "today": 158.0,
-      "monthly_max_2y": 116.0,
-      "ratio": 1.3620689655172413,
-      "from_high_pct": 36.206896551724135,
+      "today": 157.5,
+      "monthly_max_2y": 115.6329116821289,
+      "ratio": 1.362068962104512,
+      "from_high_pct": 36.20689621045119,
       "bullish": true,
       "bullish_fast": false,
-      "change_pct": -6.231454005934722,
-      "vol_ratio": 0.4484836944659048,
-      "rsi": 78.56532980257198,
-      "ma5": 163.1,
-      "ma20": 114.5400001525879,
-      "ma60": 101.08833338419596,
-      "ma200": 75.23850009918213,
+      "change_pct": -6.231459289448427,
+      "vol_ratio": 0.43819901187607874,
+      "rsi": 78.565329582561,
+      "ma5": 162.5838653564453,
+      "ma20": 114.17753410339355,
+      "ma60": 100.76843592325847,
+      "ma200": 75.00040559768676,
       "gap_up": false,
       "close_near_high": false,
       "long_red": false,
@@ -62,7 +62,7 @@
       "momentum_score": 35,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -75,7 +75,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": -0.219780219780219,
-      "vol_ratio": 0.5936598785493482,
+      "vol_ratio": 0.5759494094636043,
       "rsi": 85.97785977859779,
       "ma5": 217.6,
       "ma20": 162.65,
@@ -105,7 +105,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 0.2512562814070307,
-      "vol_ratio": 1.4791623325050245,
+      "vol_ratio": 1.4632199615869166,
       "rsi": 68.16720257234726,
       "ma5": 200.7,
       "ma20": 159.025,
@@ -123,8 +123,8 @@
       "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -137,7 +137,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 1.9108280254777066,
-      "vol_ratio": 3.317019263066299,
+      "vol_ratio": 3.2851604497382865,
       "rsi": 75.17985611510791,
       "ma5": 228.9,
       "ma20": 188.825,
@@ -168,7 +168,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 1.4519112049223626,
-      "vol_ratio": 1.4030890562615266,
+      "vol_ratio": 1.3954507301178347,
       "rsi": 77.01148951537218,
       "ma5": 26.65,
       "ma20": 20.447500038146973,
@@ -186,8 +186,8 @@
       "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -200,7 +200,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -1.7334843451938031,
-      "vol_ratio": 0.9079615615135191,
+      "vol_ratio": 0.9060876093133586,
       "rsi": 63.37448111762115,
       "ma5": 92.46000061035156,
       "ma20": 76.46500034332276,
@@ -218,7 +218,7 @@
       "momentum_score": 35,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -231,7 +231,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": -3.2258064516129004,
-      "vol_ratio": 1.5931686023036913,
+      "vol_ratio": 1.5552154366706472,
       "rsi": 82.90322580645162,
       "ma5": 256.6,
       "ma20": 199.4,
@@ -261,7 +261,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -5.247813411078717,
-      "vol_ratio": 0.21179907755077476,
+      "vol_ratio": 0.19989361318711057,
       "rsi": 74.38502179034886,
       "ma5": 333.4862060546875,
       "ma20": 255.33972702026367,
@@ -279,8 +279,8 @@
       "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -293,7 +293,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 5.346536164236548,
-      "vol_ratio": 0.5821878248655378,
+      "vol_ratio": 0.5794290056268475,
       "rsi": 83.33333631822958,
       "ma5": 24.510000228881836,
       "ma20": 18.244999980926515,
@@ -312,7 +312,7 @@
       "momentum_notes": [
         "跳空缺口",
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -325,7 +325,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 0.2849002849002913,
-      "vol_ratio": 0.5136342152547494,
+      "vol_ratio": 0.5069061111129008,
       "rsi": 81.6,
       "ma5": 180.8,
       "ma20": 150.725,
@@ -355,7 +355,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 5.456453305351516,
-      "vol_ratio": 2.5819830324957236,
+      "vol_ratio": 2.541663971760834,
       "rsi": 57.92079133130137,
       "ma5": 955.2,
       "ma20": 853.1707550048828,
@@ -374,7 +374,7 @@
       "momentum_notes": [
         "跳空缺口",
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -387,7 +387,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 6.5830733748657,
-      "vol_ratio": 0.2468039601190044,
+      "vol_ratio": 0.24331283796044204,
       "rsi": 80.64865205484784,
       "ma5": 66.87999954223633,
       "ma20": 51.23499984741211,
@@ -405,7 +405,7 @@
       "momentum_score": 35,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -418,7 +418,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 6.639839034205242,
-      "vol_ratio": 1.9435169542864066,
+      "vol_ratio": 1.7880974729766277,
       "rsi": 60.50156739811912,
       "ma5": 2526.0,
       "ma20": 2233.25,
@@ -448,7 +448,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 0.7092198581560183,
-      "vol_ratio": 0.23179926719057778,
+      "vol_ratio": 0.22263377373868842,
       "rsi": 66.98717948717949,
       "ma5": 215.0,
       "ma20": 181.65,
@@ -466,8 +466,8 @@
       "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -480,7 +480,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 3.418803418803429,
-      "vol_ratio": 2.0162820172873426,
+      "vol_ratio": 1.9919429228926189,
       "rsi": 55.99284436493739,
       "ma5": 412.4,
       "ma20": 377.55,
@@ -498,8 +498,8 @@
       "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -512,7 +512,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 3.750000000000009,
-      "vol_ratio": 2.032740100282129,
+      "vol_ratio": 2.018449647248378,
       "rsi": 63.86137922048,
       "ma5": 78.94000091552735,
       "ma20": 76.47999992370606,
@@ -542,7 +542,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 7.794122134937953,
-      "vol_ratio": 2.799165414991202,
+      "vol_ratio": 2.785292471134861,
       "rsi": 57.07865754156479,
       "ma5": 68.44000091552735,
       "ma20": 66.39500045776367,
@@ -561,8 +561,8 @@
       "momentum_notes": [
         "跳空缺口",
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -575,7 +575,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 1.914762198888198,
-      "vol_ratio": 1.1760488635742739,
+      "vol_ratio": 1.1426575570076318,
       "rsi": 70.82706766917293,
       "ma5": 8078.0,
       "ma20": 7381.75,
@@ -593,7 +593,7 @@
       "momentum_score": 35,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -606,7 +606,7 @@
       "bullish": false,
       "bullish_fast": true,
       "change_pct": 1.6511851898101115,
-      "vol_ratio": 0.5323857196469182,
+      "vol_ratio": 0.5280350316845418,
       "rsi": 94.16057672642513,
       "ma5": 93.8,
       "ma20": 65.85,
@@ -625,7 +625,7 @@
       "momentum_notes": [
         "跳空缺口",
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -638,7 +638,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 2.7894003976649095,
-      "vol_ratio": 1.3302705293146286,
+      "vol_ratio": 1.3290301700202751,
       "rsi": 81.42855507986886,
       "ma5": 35.20999984741211,
       "ma20": 32.804999923706056,
@@ -669,7 +669,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -2.0000012715657545,
-      "vol_ratio": 0.5623333234356602,
+      "vol_ratio": 0.5562146992289094,
       "rsi": 68.64034838220049,
       "ma5": 60.24000015258789,
       "ma20": 52.9875,
@@ -699,7 +699,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 6.329113924050622,
-      "vol_ratio": 2.2012285760081136,
+      "vol_ratio": 2.1711679713951053,
       "rsi": 49.31129476584022,
       "ma5": 311.4,
       "ma20": 304.075,
@@ -729,7 +729,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -7.264292380109428,
-      "vol_ratio": 1.178556559524301,
+      "vol_ratio": 1.1702826314617956,
       "rsi": 57.53652095348122,
       "ma5": 64.71999893188476,
       "ma20": 56.69749984741211,
@@ -759,7 +759,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 7.47217302738612,
-      "vol_ratio": 2.3376483050364207,
+      "vol_ratio": 2.3253744119882174,
       "rsi": 62.00716561641693,
       "ma5": 63.57999954223633,
       "ma20": 60.74499988555908,
@@ -778,8 +778,8 @@
       "momentum_notes": [
         "跳空缺口",
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -792,7 +792,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -2.4539892136902886,
-      "vol_ratio": 1.672007175393535,
+      "vol_ratio": 1.6705936608527407,
       "rsi": 69.45812159895489,
       "ma5": 23.870000457763673,
       "ma20": 21.24250011444092,
@@ -822,7 +822,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -0.27472527472527375,
-      "vol_ratio": 1.7217728994123995,
+      "vol_ratio": 1.7145380804518533,
       "rsi": 67.867803533608,
       "ma5": 181.87291259765624,
       "ma20": 153.1931350708008,
@@ -852,7 +852,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 3.125,
-      "vol_ratio": 1.0694829024793482,
+      "vol_ratio": 1.0501575301640123,
       "rsi": 72.40143369175627,
       "ma5": 346.6,
       "ma20": 317.10595855712893,
@@ -871,8 +871,8 @@
       "momentum_notes": [
         "跳空缺口",
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -885,7 +885,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 2.7667984189723382,
-      "vol_ratio": 0.20100922327057547,
+      "vol_ratio": 0.19770599184937843,
       "rsi": 66.10169491525424,
       "ma5": 127.0,
       "ma20": 112.07000007629395,
@@ -903,7 +903,7 @@
       "momentum_score": 35,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -916,7 +916,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": -1.098901098901095,
-      "vol_ratio": 2.3894473317738014,
+      "vol_ratio": 2.356946953529279,
       "rsi": 61.05769230769231,
       "ma5": 523.7,
       "ma20": 493.825,
@@ -931,10 +931,11 @@
       "industry_strong": false,
       "market_cap_billions": 3555.500032,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%",
+        "IGV+1.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -947,7 +948,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 5.498281786941583,
-      "vol_ratio": 1.7422257302394477,
+      "vol_ratio": 1.7189545831743447,
       "rsi": 62.837837837837846,
       "ma5": 151.0,
       "ma20": 137.625,
@@ -977,7 +978,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 6.296296296296289,
-      "vol_ratio": 2.480525567423363,
+      "vol_ratio": 2.4428074071653594,
       "rsi": 59.80636793266959,
       "ma5": 136.3,
       "ma20": 133.95691528320313,
@@ -1008,7 +1009,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": -2.4752475247524774,
-      "vol_ratio": 1.213215883594699,
+      "vol_ratio": 1.1853084391139224,
       "rsi": 56.707317073170735,
       "ma5": 391.5,
       "ma20": 376.3188186645508,
@@ -1023,10 +1024,11 @@
       "industry_strong": false,
       "market_cap_billions": 508.41411584,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%",
+        "IGV+1.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1039,7 +1041,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -6.734403490088436,
-      "vol_ratio": 2.009050926329461,
+      "vol_ratio": 1.8808800326132018,
       "rsi": 78.09672682881111,
       "ma5": 1313.302294921875,
       "ma20": 1092.006005859375,
@@ -1069,7 +1071,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 0.0,
-      "vol_ratio": 0.7667528405156195,
+      "vol_ratio": 0.7650912621668445,
       "rsi": 54.47760397354482,
       "ma5": 8.749999809265137,
       "ma20": 8.541999864578248,
@@ -1099,7 +1101,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": -3.645833333333337,
-      "vol_ratio": 0.7698062704810739,
+      "vol_ratio": 0.7569331747700736,
       "rsi": 51.90217391304348,
       "ma5": 922.4,
       "ma20": 861.8,
@@ -1129,7 +1131,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -0.3508785314727203,
-      "vol_ratio": 0.1955573006468767,
+      "vol_ratio": 0.1950723928601736,
       "rsi": 72.371133047585,
       "ma5": 14.70999984741211,
       "ma20": 11.55999984741211,
@@ -1159,7 +1161,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": -0.46838585331604454,
-      "vol_ratio": 1.3972808541668542,
+      "vol_ratio": 1.393802447660655,
       "rsi": 61.23259991087417,
       "ma5": 41.85,
       "ma20": 39.230000019073486,
@@ -1177,8 +1179,8 @@
       "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1191,7 +1193,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 0.15527713004930277,
-      "vol_ratio": 0.9263594628338312,
+      "vol_ratio": 0.9108067571472472,
       "rsi": 67.60563758648888,
       "ma5": 63.12000045776367,
       "ma20": 61.91500015258789,
@@ -1221,7 +1223,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -3.643730761455255,
-      "vol_ratio": 1.2643516705483495,
+      "vol_ratio": 1.2506834502791107,
       "rsi": 60.19416432970234,
       "ma5": 23.9,
       "ma20": 22.764999866485596,
@@ -1251,7 +1253,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 9.859154929577475,
-      "vol_ratio": 1.0865621511505397,
+      "vol_ratio": 1.0758871650548356,
       "rsi": 58.282613656111934,
       "ma5": 110.6,
       "ma20": 102.25583877563477,
@@ -1270,8 +1272,8 @@
       "momentum_notes": [
         "漲停鎖死",
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -1284,7 +1286,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 0.0,
-      "vol_ratio": 0.5216518182672443,
+      "vol_ratio": 0.5139484893172394,
       "rsi": 55.77560306629051,
       "ma5": 250.0577178955078,
       "ma20": 232.50145797729493,
@@ -1302,8 +1304,8 @@
       "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1316,7 +1318,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -2.1601016518424387,
-      "vol_ratio": 1.279525526378076,
+      "vol_ratio": 1.270715661897031,
       "rsi": 72.5805264899476,
       "ma5": 389.5,
       "ma20": 324.93896713256834,
@@ -1334,7 +1336,7 @@
       "momentum_score": 35,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1347,7 +1349,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 0.44052189762193716,
-      "vol_ratio": 3.302883554116136,
+      "vol_ratio": 3.2869423943994307,
       "rsi": 64.81994412999308,
       "ma5": 88.55999908447265,
       "ma20": 80.59999961853028,
@@ -1365,7 +1367,7 @@
       "momentum_score": 35,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1378,7 +1380,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": -2.117268761320612,
-      "vol_ratio": 0.44913708412262826,
+      "vol_ratio": 0.4480970570525586,
       "rsi": 52.509787827450225,
       "ma5": 29.660000228881835,
       "ma20": 28.808933544158936,
@@ -1408,7 +1410,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -1.3037810166730668,
-      "vol_ratio": 0.47544355461568755,
+      "vol_ratio": 0.47254980599075663,
       "rsi": 56.737742083923315,
       "ma5": 38.449999237060545,
       "ma20": 36.74117813110352,
@@ -1438,7 +1440,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -2.8455284552845517,
-      "vol_ratio": 0.8547721568940861,
+      "vol_ratio": 0.8223285035650327,
       "rsi": 56.86015513515598,
       "ma5": 366.5,
       "ma20": 346.0054458618164,
@@ -1456,7 +1458,7 @@
       "momentum_score": 35,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1469,7 +1471,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 2.8151774785801775,
-      "vol_ratio": 1.1801205314640693,
+      "vol_ratio": 1.152218957099613,
       "rsi": 52.17391304347826,
       "ma5": 797.0,
       "ma20": 774.15,
@@ -1487,8 +1489,8 @@
       "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1501,7 +1503,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -4.475520207331729,
-      "vol_ratio": 1.0074482093425527,
+      "vol_ratio": 0.9935532462331886,
       "rsi": 51.03449328192349,
       "ma5": 69.04000091552734,
       "ma20": 66.76000022888184,
@@ -1531,7 +1533,7 @@
       "bullish": false,
       "bullish_fast": false,
       "change_pct": -0.1326239682989505,
-      "vol_ratio": 0.6628031570301405,
+      "vol_ratio": 0.6615496500186233,
       "rsi": 25.855521911444498,
       "ma5": 38.220000457763675,
       "ma20": 39.954999923706055,
@@ -1561,7 +1563,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 1.878909566830389,
-      "vol_ratio": 1.5358236475811629,
+      "vol_ratio": 1.5294596613308051,
       "rsi": 74.80314511257711,
       "ma5": 24.280000305175783,
       "ma20": 22.2,
@@ -1591,7 +1593,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 0.0,
-      "vol_ratio": 0.7324116288390272,
+      "vol_ratio": 0.7307280238483185,
       "rsi": 58.68068152806331,
       "ma5": 34.43000030517578,
       "ma20": 33.738987350463866,
@@ -1621,7 +1623,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 7.973421926910307,
-      "vol_ratio": 1.3668261129444843,
+      "vol_ratio": 1.3343433026342328,
       "rsi": 52.67857142857143,
       "ma5": 324.2,
       "ma20": 307.35,
@@ -1639,7 +1641,7 @@
       "momentum_score": 35,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1652,7 +1654,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": -1.4662757254357506,
-      "vol_ratio": 0.28210171635866627,
+      "vol_ratio": 0.28075327219969526,
       "rsi": 57.692307692307686,
       "ma5": 33.289999389648436,
       "ma20": 32.48249959945679,
@@ -1682,7 +1684,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -2.187898346218209,
-      "vol_ratio": 1.153438656274175,
+      "vol_ratio": 1.1469001729664372,
       "rsi": 48.56300500817064,
       "ma5": 77.63999938964844,
       "ma20": 75.62627410888672,
@@ -1713,7 +1715,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 9.954751131221728,
-      "vol_ratio": 1.2471330061435677,
+      "vol_ratio": 1.211505590872847,
       "rsi": 70.33905172756542,
       "ma5": 1122.0,
       "ma20": 1011.1753814697265,
@@ -1731,7 +1733,7 @@
       "momentum_score": 35,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1744,7 +1746,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -5.058827119715071,
-      "vol_ratio": 0.5069615338149667,
+      "vol_ratio": 0.5049396267837541,
       "rsi": 53.68916575620957,
       "ma5": 40.85,
       "ma20": 39.12882375717163,
@@ -1762,8 +1764,8 @@
       "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1776,7 +1778,7 @@
       "bullish": false,
       "bullish_fast": false,
       "change_pct": 0.8982035928143617,
-      "vol_ratio": 0.2652089509752784,
+      "vol_ratio": 0.25673631754668685,
       "rsi": 36.61971830985915,
       "ma5": 168.7,
       "ma20": 172.40605773925782,
@@ -1806,7 +1808,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -3.885483571761006,
-      "vol_ratio": 0.6158206290768827,
+      "vol_ratio": 0.6115051351574438,
       "rsi": 73.39742715855871,
       "ma5": 24.770000457763672,
       "ma20": 19.435000133514404,
@@ -1836,7 +1838,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 0.8183306260012069,
-      "vol_ratio": 0.35292008596683266,
+      "vol_ratio": 0.3496178266209022,
       "rsi": 44.82758393894381,
       "ma5": 61.439999389648435,
       "ma20": 60.95999965667725,
@@ -1854,7 +1856,7 @@
       "momentum_score": 35,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1867,7 +1869,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 6.05738575982997,
-      "vol_ratio": 0.987121149151677,
+      "vol_ratio": 0.9190043431864183,
       "rsi": 42.586750788643535,
       "ma5": 976.2,
       "ma20": 996.2,
@@ -1897,7 +1899,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 1.726421473674744,
-      "vol_ratio": 0.6796019266715576,
+      "vol_ratio": 0.6760493213388103,
       "rsi": 72.91066405977313,
       "ma5": 38.630001068115234,
       "ma20": 33.90500030517578,
@@ -1915,7 +1917,7 @@
       "momentum_score": 35,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1928,7 +1930,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 4.710144927536231,
-      "vol_ratio": 1.2313428949837164,
+      "vol_ratio": 1.2195628937222032,
       "rsi": 57.03703703703704,
       "ma5": 140.6,
       "ma20": 135.1,
@@ -1947,8 +1949,8 @@
       "momentum_notes": [
         "跳空缺口",
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -1961,7 +1963,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 0.6912424574032849,
-      "vol_ratio": 0.987076025429762,
+      "vol_ratio": 0.9767388921529095,
       "rsi": 78.37834494064035,
       "ma5": 21.520000457763672,
       "ma20": 21.183203506469727,
@@ -1991,7 +1993,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -2.431620105332022,
-      "vol_ratio": 0.44432789309478526,
+      "vol_ratio": 0.4412034116053609,
       "rsi": 54.26355863237134,
       "ma5": 68.04000091552734,
       "ma20": 62.91863079071045,
@@ -2009,7 +2011,7 @@
       "momentum_score": 35,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2022,7 +2024,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -6.707317073170726,
-      "vol_ratio": 0.9530056113986245,
+      "vol_ratio": 0.9419388115040256,
       "rsi": 52.42424242424242,
       "ma5": 255.3,
       "ma20": 222.725,
@@ -2052,7 +2054,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 9.946238406063657,
-      "vol_ratio": 0.6423013245217305,
+      "vol_ratio": 0.6337879160258348,
       "rsi": 37.5000101454698,
       "ma5": 77.28000030517578,
       "ma20": 81.725,
@@ -2071,7 +2073,7 @@
       "momentum_notes": [
         "漲停鎖死",
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -2084,12 +2086,12 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -0.1773090179305603,
-      "vol_ratio": 0.6524725666377459,
+      "vol_ratio": 0.6456955591559691,
       "rsi": 50.0,
       "ma5": 56.62000045776367,
       "ma20": 55.61159400939941,
       "ma60": 51.433041381835935,
-      "ma200": 47.58322938919068,
+      "ma200": 47.58322931289673,
       "gap_up": false,
       "close_near_high": false,
       "long_red": false,
@@ -2114,7 +2116,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": -2.1410636586482124,
-      "vol_ratio": 0.33699976738215726,
+      "vol_ratio": 0.3347286098523961,
       "rsi": 52.52525213603748,
       "ma5": 38.68000030517578,
       "ma20": 37.564999961853026,
@@ -2144,7 +2146,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 2.5390609720489232,
-      "vol_ratio": 1.6575666064341026,
+      "vol_ratio": 1.6514620800486686,
       "rsi": 51.58730783460198,
       "ma5": 51.75999984741211,
       "ma20": 51.312499618530275,
@@ -2159,10 +2161,11 @@
       "industry_strong": false,
       "market_cap_billions": 116.66971648,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%",
+        "IGV+1.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2175,7 +2178,7 @@
       "bullish": false,
       "bullish_fast": false,
       "change_pct": -9.230771839109241,
-      "vol_ratio": 1.499481987469436,
+      "vol_ratio": 1.4951252146585843,
       "rsi": 52.51989081264079,
       "ma5": 29.75,
       "ma20": 27.419999980926512,
@@ -2205,7 +2208,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -1.1594247126924806,
-      "vol_ratio": 0.746038209021607,
+      "vol_ratio": 0.7450951501122227,
       "rsi": 54.137990610328636,
       "ma5": 17.1,
       "ma20": 16.909999942779542,
@@ -2235,7 +2238,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 3.125,
-      "vol_ratio": 0.7541650841048773,
+      "vol_ratio": 0.7512218229642076,
       "rsi": 52.16138300017216,
       "ma5": 32.48000030517578,
       "ma20": 32.06500005722046,
@@ -2253,8 +2256,8 @@
       "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2267,7 +2270,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -1.884062393851904,
-      "vol_ratio": 0.9245466092036732,
+      "vol_ratio": 0.920891143135179,
       "rsi": 50.0,
       "ma5": 69.73999938964843,
       "ma20": 65.46999931335449,
@@ -2297,7 +2300,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -0.9283819628647216,
-      "vol_ratio": 0.779429910260512,
+      "vol_ratio": 0.7681030138550708,
       "rsi": 47.78761061946903,
       "ma5": 375.7,
       "ma20": 371.6,
@@ -2312,10 +2315,11 @@
       "industry_strong": false,
       "market_cap_billions": 13355.90518784,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%",
+        "IGV+1.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2328,7 +2332,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -3.4606222198915293,
-      "vol_ratio": 0.4505617445897457,
+      "vol_ratio": 0.44623950788146555,
       "rsi": 54.8872283964852,
       "ma5": 40.83000030517578,
       "ma20": 38.76750011444092,
@@ -2358,7 +2362,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -0.6006029054705375,
-      "vol_ratio": 0.5092427723495393,
+      "vol_ratio": 0.4998189780321241,
       "rsi": 65.38463231378003,
       "ma5": 33.48999938964844,
       "ma20": 32.4274998664856,
@@ -2388,7 +2392,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -0.865809635055137,
-      "vol_ratio": 0.5811142724630322,
+      "vol_ratio": 0.5785392651527369,
       "rsi": 59.37497764825465,
       "ma5": 34.8,
       "ma20": 33.57321748733521,
@@ -2411,19 +2415,19 @@
       "next_day_prob": "<70%"
     },
     {
-      "today": 542.0,
-      "monthly_max_2y": 535.0,
-      "ratio": 1.0130841121495326,
-      "from_high_pct": 1.3084112149532645,
+      "today": 519.0,
+      "monthly_max_2y": 512.2970581054688,
+      "ratio": 1.013084092107262,
+      "from_high_pct": 1.3084092107261913,
       "bullish": true,
       "bullish_fast": true,
-      "change_pct": -0.3676470588235281,
-      "vol_ratio": 1.0676141835986426,
-      "rsi": 56.43564356435643,
-      "ma5": 538.6,
-      "ma20": 527.825,
-      "ma60": 481.73333333333335,
-      "ma200": 419.455,
+      "change_pct": -0.3676531757393464,
+      "vol_ratio": 1.0568474771486784,
+      "rsi": 56.43564075257366,
+      "ma5": 515.744287109375,
+      "ma20": 505.426530456543,
+      "ma60": 461.29078267415366,
+      "ma200": 401.6552558898926,
       "gap_up": false,
       "close_near_high": false,
       "long_red": false,
@@ -2436,8 +2440,8 @@
       "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2450,7 +2454,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": -0.2136719567335077,
-      "vol_ratio": 0.32104052572144215,
+      "vol_ratio": 0.319277074668992,
       "rsi": 58.95521835698348,
       "ma5": 46.41999969482422,
       "ma20": 45.48750019073486,
@@ -2480,7 +2484,7 @@
       "bullish": false,
       "bullish_fast": true,
       "change_pct": 0.19920014462413427,
-      "vol_ratio": 0.7443912119294372,
+      "vol_ratio": 0.743320480833178,
       "rsi": 57.40740348282007,
       "ma5": 24.940000152587892,
       "ma20": 24.657500076293946,
@@ -2510,7 +2514,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -1.6438314359482065,
-      "vol_ratio": 0.6261576735891643,
+      "vol_ratio": 0.6235764189394297,
       "rsi": 60.97565287293866,
       "ma5": 18.050000381469726,
       "ma20": 17.70249996185303,
@@ -2540,7 +2544,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -2.608695652173909,
-      "vol_ratio": 0.9407346112197408,
+      "vol_ratio": 0.9223636261125802,
       "rsi": 50.0,
       "ma5": 169.9,
       "ma20": 162.22784118652345,
@@ -2555,10 +2559,11 @@
       "industry_strong": false,
       "market_cap_billions": 227.9118848,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%",
+        "IGV+1.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2571,7 +2576,7 @@
       "bullish": false,
       "bullish_fast": true,
       "change_pct": 1.3496913792896859,
-      "vol_ratio": 2.9857066440595714,
+      "vol_ratio": 2.969666281921705,
       "rsi": 68.5714036590656,
       "ma5": 40.89999923706055,
       "ma20": 40.687499809265134,
@@ -2601,7 +2606,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 3.770956194381214,
-      "vol_ratio": 0.927455133441776,
+      "vol_ratio": 0.9263932147733704,
       "rsi": 48.110831815141935,
       "ma5": 36.45999984741211,
       "ma20": 36.16499996185303,
@@ -2616,10 +2621,11 @@
       "industry_strong": false,
       "market_cap_billions": 38.72403968,
       "mcap_pass": false,
-      "momentum_score": 35,
+      "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%",
+        "IGV+1.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2632,7 +2638,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -0.4716998956176499,
-      "vol_ratio": 0.9142804342350221,
+      "vol_ratio": 0.9127399472133207,
       "rsi": 53.33334181042759,
       "ma5": 10.560000228881837,
       "ma20": 10.52750005722046,
@@ -2662,7 +2668,7 @@
       "bullish": false,
       "bullish_fast": false,
       "change_pct": -0.377359930074439,
-      "vol_ratio": 0.25793579084542995,
+      "vol_ratio": 0.25708168857945135,
       "rsi": 59.25924356094322,
       "ma5": 13.219999885559082,
       "ma20": 13.055000066757202,
@@ -2692,7 +2698,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 0.0,
-      "vol_ratio": 0.3879404923674948,
+      "vol_ratio": 0.3863932918912463,
       "rsi": 51.63945126194811,
       "ma5": 51.20000076293945,
       "ma20": 50.15218105316162,
@@ -2722,7 +2728,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 0.638569579198478,
-      "vol_ratio": 0.9091637986460421,
+      "vol_ratio": 0.9077485415506765,
       "rsi": 55.000009536724974,
       "ma5": 78.42000274658203,
       "ma20": 78.41500053405761,
@@ -2752,7 +2758,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 0.18691303574036588,
-      "vol_ratio": 0.310877906900343,
+      "vol_ratio": 0.30676289263627354,
       "rsi": 57.89470514106663,
       "ma5": 26.809999847412108,
       "ma20": 26.479490089416505,
@@ -2782,7 +2788,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -1.7123287671232834,
-      "vol_ratio": 0.38209561088506333,
+      "vol_ratio": 0.3762152533740344,
       "rsi": 53.06122448979592,
       "ma5": 145.2,
       "ma20": 142.47590408325195,
@@ -2812,7 +2818,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 0.2234602773655725,
-      "vol_ratio": 0.49835725357845245,
+      "vol_ratio": 0.4609286175214332,
       "rsi": 56.140327394894996,
       "ma5": 90.03999938964844,
       "ma20": 89.3849998474121,
@@ -2842,7 +2848,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 0.6968601054850199,
-      "vol_ratio": 1.0523770910916057,
+      "vol_ratio": 1.0461366053213748,
       "rsi": 51.74002609037876,
       "ma5": 58.1,
       "ma20": 56.743707466125485,
@@ -2860,8 +2866,8 @@
       "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2874,7 +2880,7 @@
       "bullish": false,
       "bullish_fast": false,
       "change_pct": 0.4110934058980442,
-      "vol_ratio": 0.3164444050577819,
+      "vol_ratio": 0.3174681455517287,
       "rsi": 51.30293096873351,
       "ma5": 50.4,
       "ma20": 50.09250011444092,
@@ -2889,10 +2895,11 @@
       "industry_strong": false,
       "market_cap_billions": 79.7888,
       "mcap_pass": false,
-      "momentum_score": 35,
+      "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%",
+        "IGV+1.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2905,7 +2912,7 @@
       "bullish": false,
       "bullish_fast": false,
       "change_pct": -3.2530083713761315,
-      "vol_ratio": 0.4797074123673347,
+      "vol_ratio": 0.4749431747285721,
       "rsi": 77.24665796409968,
       "ma5": 41.03000030517578,
       "ma20": 31.475000190734864,
@@ -2935,7 +2942,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 8.319999999999993,
-      "vol_ratio": 1.195954808500634,
+      "vol_ratio": 1.1615691459339694,
       "rsi": 59.83679237823479,
       "ma5": 662.8,
       "ma20": 637.5372589111328,
@@ -2953,8 +2960,8 @@
       "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2967,7 +2974,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 0.4184100418409997,
-      "vol_ratio": 0.7933806903150874,
+      "vol_ratio": 0.784589705805721,
       "rsi": 57.14285714285714,
       "ma5": 119.2,
       "ma20": 118.375,
@@ -2997,7 +3004,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 0.12121027166194231,
-      "vol_ratio": 0.2259222005835313,
+      "vol_ratio": 0.21413658345081105,
       "rsi": 49.20275259547478,
       "ma5": 41.630000305175784,
       "ma20": 41.29364070892334,
@@ -3027,7 +3034,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 0.6276134766712405,
-      "vol_ratio": 0.6443072297318304,
+      "vol_ratio": 0.6464121933272958,
       "rsi": 67.64702417449755,
       "ma5": 23.649999618530273,
       "ma20": 23.252499961853026,
@@ -3057,7 +3064,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 9.931030273437491,
-      "vol_ratio": 2.2469025518993804,
+      "vol_ratio": 2.199622662337988,
       "rsi": 58.44558403298126,
       "ma5": 75.25999908447265,
       "ma20": 74.73484306335449,
@@ -3076,8 +3083,8 @@
       "momentum_notes": [
         "跳空缺口",
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -3090,12 +3097,12 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -2.0283975659229236,
-      "vol_ratio": 0.936465532800259,
+      "vol_ratio": 0.8414447825003527,
       "rsi": 50.413223140495866,
       "ma5": 2445.0,
       "ma20": 2411.25,
       "ma60": 2289.9517069498697,
-      "ma200": 1801.4015045166016,
+      "ma200": 1801.4015014648437,
       "gap_up": false,
       "close_near_high": false,
       "long_red": false,
@@ -3108,8 +3115,8 @@
       "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -3122,7 +3129,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -0.19492880235533194,
-      "vol_ratio": 0.5593960752512434,
+      "vol_ratio": 0.5550614630086269,
       "rsi": 54.54547030866092,
       "ma5": 25.70999984741211,
       "ma20": 25.504087924957275,
@@ -3152,7 +3159,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -5.303028934695919,
-      "vol_ratio": 0.8727671403190423,
+      "vol_ratio": 0.8701451023349339,
       "rsi": 56.84930835751812,
       "ma5": 13.320000076293946,
       "ma20": 12.173448276519775,
@@ -3182,7 +3189,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 0.0,
-      "vol_ratio": 1.0755891457490214,
+      "vol_ratio": 1.0540081588038959,
       "rsi": 74.6344321485854,
       "ma5": 51.24000015258789,
       "ma20": 50.53499889373779,
@@ -3212,7 +3219,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 0.1272245242524006,
-      "vol_ratio": 1.2957518068879914,
+      "vol_ratio": 1.2628705436207956,
       "rsi": 49.20630115022149,
       "ma5": 78.93999938964843,
       "ma20": 78.35999984741211,
@@ -3244,7 +3251,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 9.91150172410813,
-      "vol_ratio": 1.1590071115161962,
+      "vol_ratio": 1.1542408886641737,
       "rsi": 71.91329124054829,
       "ma5": 56.4,
       "ma20": 44.76499996185303,
@@ -3263,26 +3270,26 @@
       "momentum_notes": [
         "漲停鎖死",
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
     },
     {
-      "today": 158.0,
-      "monthly_max_2y": 116.0,
-      "ratio": 1.3620689655172413,
-      "from_high_pct": 36.206896551724135,
+      "today": 157.5,
+      "monthly_max_2y": 115.6329116821289,
+      "ratio": 1.362068962104512,
+      "from_high_pct": 36.20689621045119,
       "bullish": true,
       "bullish_fast": false,
-      "change_pct": -6.231454005934722,
-      "vol_ratio": 0.4484836944659048,
-      "rsi": 78.56532980257198,
-      "ma5": 163.1,
-      "ma20": 114.5400001525879,
-      "ma60": 101.08833338419596,
-      "ma200": 75.23850009918213,
+      "change_pct": -6.231459289448427,
+      "vol_ratio": 0.43819901187607874,
+      "rsi": 78.565329582561,
+      "ma5": 162.5838653564453,
+      "ma20": 114.17753410339355,
+      "ma60": 100.76843592325847,
+      "ma200": 75.00040559768676,
       "gap_up": false,
       "close_near_high": false,
       "long_red": false,
@@ -3295,7 +3302,7 @@
       "momentum_score": 35,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -3308,7 +3315,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": -0.219780219780219,
-      "vol_ratio": 0.5936598785493482,
+      "vol_ratio": 0.5759494094636043,
       "rsi": 85.97785977859779,
       "ma5": 217.6,
       "ma20": 162.65,
@@ -3338,7 +3345,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 0.2512562814070307,
-      "vol_ratio": 1.4791623325050245,
+      "vol_ratio": 1.4632199615869166,
       "rsi": 68.16720257234726,
       "ma5": 200.7,
       "ma20": 159.025,
@@ -3356,8 +3363,8 @@
       "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -3370,7 +3377,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 1.9108280254777066,
-      "vol_ratio": 3.317019263066299,
+      "vol_ratio": 3.2851604497382865,
       "rsi": 75.17985611510791,
       "ma5": 228.9,
       "ma20": 188.825,
@@ -3401,7 +3408,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 1.4519112049223626,
-      "vol_ratio": 1.4030890562615266,
+      "vol_ratio": 1.3954507301178347,
       "rsi": 77.01148951537218,
       "ma5": 26.65,
       "ma20": 20.447500038146973,
@@ -3419,8 +3426,8 @@
       "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -3433,7 +3440,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -1.7334843451938031,
-      "vol_ratio": 0.9079615615135191,
+      "vol_ratio": 0.9060876093133586,
       "rsi": 63.37448111762115,
       "ma5": 92.46000061035156,
       "ma20": 76.46500034332276,
@@ -3451,7 +3458,7 @@
       "momentum_score": 35,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -3464,7 +3471,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": -3.2258064516129004,
-      "vol_ratio": 1.5931686023036913,
+      "vol_ratio": 1.5552154366706472,
       "rsi": 82.90322580645162,
       "ma5": 256.6,
       "ma20": 199.4,
@@ -3494,7 +3501,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -5.247813411078717,
-      "vol_ratio": 0.21179907755077476,
+      "vol_ratio": 0.19989361318711057,
       "rsi": 74.38502179034886,
       "ma5": 333.4862060546875,
       "ma20": 255.33972702026367,
@@ -3512,8 +3519,8 @@
       "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -3526,7 +3533,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 5.346536164236548,
-      "vol_ratio": 0.5821878248655378,
+      "vol_ratio": 0.5794290056268475,
       "rsi": 83.33333631822958,
       "ma5": 24.510000228881836,
       "ma20": 18.244999980926515,
@@ -3545,7 +3552,7 @@
       "momentum_notes": [
         "跳空缺口",
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -3558,7 +3565,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 0.2849002849002913,
-      "vol_ratio": 0.5136342152547494,
+      "vol_ratio": 0.5069061111129008,
       "rsi": 81.6,
       "ma5": 180.8,
       "ma20": 150.725,
@@ -3588,7 +3595,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 5.456453305351516,
-      "vol_ratio": 2.5819830324957236,
+      "vol_ratio": 2.541663971760834,
       "rsi": 57.92079133130137,
       "ma5": 955.2,
       "ma20": 853.1707550048828,
@@ -3607,7 +3614,7 @@
       "momentum_notes": [
         "跳空缺口",
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -3620,7 +3627,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 6.5830733748657,
-      "vol_ratio": 0.2468039601190044,
+      "vol_ratio": 0.24331283796044204,
       "rsi": 80.64865205484784,
       "ma5": 66.87999954223633,
       "ma20": 51.23499984741211,
@@ -3638,7 +3645,7 @@
       "momentum_score": 35,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -3651,7 +3658,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 6.639839034205242,
-      "vol_ratio": 1.9435169542864066,
+      "vol_ratio": 1.7880974729766277,
       "rsi": 60.50156739811912,
       "ma5": 2526.0,
       "ma20": 2233.25,
@@ -3681,7 +3688,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 0.7092198581560183,
-      "vol_ratio": 0.23179926719057778,
+      "vol_ratio": 0.22263377373868842,
       "rsi": 66.98717948717949,
       "ma5": 215.0,
       "ma20": 181.65,
@@ -3699,8 +3706,8 @@
       "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -3713,7 +3720,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 3.418803418803429,
-      "vol_ratio": 2.0162820172873426,
+      "vol_ratio": 1.9919429228926189,
       "rsi": 55.99284436493739,
       "ma5": 412.4,
       "ma20": 377.55,
@@ -3731,8 +3738,8 @@
       "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -3745,7 +3752,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 3.750000000000009,
-      "vol_ratio": 2.032740100282129,
+      "vol_ratio": 2.018449647248378,
       "rsi": 63.86137922048,
       "ma5": 78.94000091552735,
       "ma20": 76.47999992370606,
@@ -3775,7 +3782,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 7.794122134937953,
-      "vol_ratio": 2.799165414991202,
+      "vol_ratio": 2.785292471134861,
       "rsi": 57.07865754156479,
       "ma5": 68.44000091552735,
       "ma20": 66.39500045776367,
@@ -3794,8 +3801,8 @@
       "momentum_notes": [
         "跳空缺口",
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -3808,7 +3815,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 1.914762198888198,
-      "vol_ratio": 1.1760488635742739,
+      "vol_ratio": 1.1426575570076318,
       "rsi": 70.82706766917293,
       "ma5": 8078.0,
       "ma20": 7381.75,
@@ -3826,7 +3833,7 @@
       "momentum_score": 35,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -3839,7 +3846,7 @@
       "bullish": false,
       "bullish_fast": true,
       "change_pct": 1.6511851898101115,
-      "vol_ratio": 0.5323857196469182,
+      "vol_ratio": 0.5280350316845418,
       "rsi": 94.16057672642513,
       "ma5": 93.8,
       "ma20": 65.85,
@@ -3858,7 +3865,7 @@
       "momentum_notes": [
         "跳空缺口",
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -3871,7 +3878,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 2.7894003976649095,
-      "vol_ratio": 1.3302705293146286,
+      "vol_ratio": 1.3290301700202751,
       "rsi": 81.42855507986886,
       "ma5": 35.20999984741211,
       "ma20": 32.804999923706056,
@@ -3902,7 +3909,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -2.0000012715657545,
-      "vol_ratio": 0.5623333234356602,
+      "vol_ratio": 0.5562146992289094,
       "rsi": 68.64034838220049,
       "ma5": 60.24000015258789,
       "ma20": 52.9875,
@@ -3932,7 +3939,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 6.329113924050622,
-      "vol_ratio": 2.2012285760081136,
+      "vol_ratio": 2.1711679713951053,
       "rsi": 49.31129476584022,
       "ma5": 311.4,
       "ma20": 304.075,
@@ -3962,7 +3969,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -7.264292380109428,
-      "vol_ratio": 1.178556559524301,
+      "vol_ratio": 1.1702826314617956,
       "rsi": 57.53652095348122,
       "ma5": 64.71999893188476,
       "ma20": 56.69749984741211,
@@ -3992,7 +3999,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 7.47217302738612,
-      "vol_ratio": 2.3376483050364207,
+      "vol_ratio": 2.3253744119882174,
       "rsi": 62.00716561641693,
       "ma5": 63.57999954223633,
       "ma20": 60.74499988555908,
@@ -4011,8 +4018,8 @@
       "momentum_notes": [
         "跳空缺口",
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -4025,7 +4032,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -2.4539892136902886,
-      "vol_ratio": 1.672007175393535,
+      "vol_ratio": 1.6705936608527407,
       "rsi": 69.45812159895489,
       "ma5": 23.870000457763673,
       "ma20": 21.24250011444092,
@@ -4055,7 +4062,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -0.27472527472527375,
-      "vol_ratio": 1.7217728994123995,
+      "vol_ratio": 1.7145380804518533,
       "rsi": 67.867803533608,
       "ma5": 181.87291259765624,
       "ma20": 153.1931350708008,
@@ -4085,7 +4092,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 3.125,
-      "vol_ratio": 1.0694829024793482,
+      "vol_ratio": 1.0501575301640123,
       "rsi": 72.40143369175627,
       "ma5": 346.6,
       "ma20": 317.10595855712893,
@@ -4104,8 +4111,8 @@
       "momentum_notes": [
         "跳空缺口",
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -4118,7 +4125,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 2.7667984189723382,
-      "vol_ratio": 0.20100922327057547,
+      "vol_ratio": 0.19770599184937843,
       "rsi": 66.10169491525424,
       "ma5": 127.0,
       "ma20": 112.07000007629395,
@@ -4136,7 +4143,7 @@
       "momentum_score": 35,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -4149,7 +4156,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": -1.098901098901095,
-      "vol_ratio": 2.3894473317738014,
+      "vol_ratio": 2.356946953529279,
       "rsi": 61.05769230769231,
       "ma5": 523.7,
       "ma20": 493.825,
@@ -4164,10 +4171,11 @@
       "industry_strong": false,
       "market_cap_billions": 3555.500032,
       "mcap_pass": true,
-      "momentum_score": 35,
+      "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "QQQ+0.3%"
+        "QQQ+1.7%",
+        "IGV+1.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -4182,7 +4190,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 9.859154929577475,
-      "vol_ratio": 1.0865621511505397,
+      "vol_ratio": 1.0758871650548356,
       "rsi": 58.282613656111934,
       "ma5": 110.6,
       "ma20": 102.25583877563477,
@@ -4201,8 +4209,8 @@
       "momentum_notes": [
         "漲停鎖死",
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -4215,7 +4223,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 7.794122134937953,
-      "vol_ratio": 2.799165414991202,
+      "vol_ratio": 2.785292471134861,
       "rsi": 57.07865754156479,
       "ma5": 68.44000091552735,
       "ma20": 66.39500045776367,
@@ -4234,8 +4242,8 @@
       "momentum_notes": [
         "跳空缺口",
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -4248,7 +4256,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 4.710144927536231,
-      "vol_ratio": 1.2313428949837164,
+      "vol_ratio": 1.2195628937222032,
       "rsi": 57.03703703703704,
       "ma5": 140.6,
       "ma20": 135.1,
@@ -4267,8 +4275,8 @@
       "momentum_notes": [
         "跳空缺口",
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -4281,7 +4289,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 3.125,
-      "vol_ratio": 1.0694829024793482,
+      "vol_ratio": 1.0501575301640123,
       "rsi": 72.40143369175627,
       "ma5": 346.6,
       "ma20": 317.10595855712893,
@@ -4300,8 +4308,8 @@
       "momentum_notes": [
         "跳空缺口",
         "ATH",
-        "QQQ+0.3%",
-        "SMH+2.0%"
+        "QQQ+1.7%",
+        "SMH+2.5%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -4463,12 +4471,10 @@
   ],
   "top_industry": "半導體",
   "market_regime": {
-    "today": 105.80000305175781,
-    "ma200": 76.55265153884888,
-    "ext_pct": 38.2055368755797,
+    "today": 106.05000305175781,
+    "ma200": 76.28668891906739,
+    "ext_pct": 39.01508186345111,
     "in_stage2": true
   },
-  "v4_blocked": false,
-  "intraday_updated": "2026-07-09 08:23",
-  "is_intraday": true
+  "v4_blocked": false
 }

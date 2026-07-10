@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-09",
+  "timestamp": "2026-07-10",
   "basis": "yfinance 2y monthly + 動能確認分數（最強族群挑 5）",
   "total_analyzed": 1076,
   "exact_ath": [
@@ -4471,10 +4471,12 @@
   ],
   "top_industry": "半導體",
   "market_regime": {
-    "today": 106.05000305175781,
-    "ma200": 76.28668891906739,
-    "ext_pct": 39.01508186345111,
+    "today": 105.80000305175781,
+    "ma200": 76.55265153884888,
+    "ext_pct": 38.2055368755797,
     "in_stage2": true
   },
-  "v4_blocked": false
+  "v4_blocked": false,
+  "intraday_updated": "2026-07-10 04:53",
+  "is_intraday": true
 }

@@ -1,7 +1,7 @@
 {
   "timestamp": "2026-07-10",
   "basis": "yfinance 2y monthly + 動能確認分數（最強族群挑 5）",
-  "total_analyzed": 1076,
+  "total_analyzed": 1075,
   "exact_ath": [
     {
       "today": 62.099998474121094,
@@ -3102,7 +3102,7 @@
       "ma5": 2445.0,
       "ma20": 2411.25,
       "ma60": 2289.9517069498697,
-      "ma200": 1801.4015014648437,
+      "ma200": 1801.4014996337892,
       "gap_up": false,
       "close_near_high": false,
       "long_red": false,
@@ -4477,6 +4477,6 @@
     "in_stage2": true
   },
   "v4_blocked": false,
-  "intraday_updated": "2026-07-10 04:53",
+  "intraday_updated": "2026-07-10 08:19",
   "is_intraday": true
 }

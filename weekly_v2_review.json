@@ -1,102 +1,110 @@
 {
-  "period": "2026-06-27 ~ 2026-07-04",
+  "period": "2026-07-04 ~ 2026-07-11",
   "total_picks": 5,
-  "wins": 3,
-  "avg_return": 7.18,
+  "wins": 0,
+  "avg_return": -7.0,
   "picks": [
     {
-      "ticker": "7795",
-      "actual_entry": 470.0,
-      "current": 626.0,
-      "ret_pct": 33.19,
-      "peak_pct": 41.49,
-      "low_pct": -1.91,
-      "status": "🥇 Stage 3 鎖利 (+28.7%)",
-      "triggered": [
-        "Stage3",
-        "07/01",
-        28.72340425531914
-      ],
-      "days_held": 5,
-      "signal_date": "2026-06-28",
-      "name": "長廣",
-      "industry": "電子零組件",
-      "system_entry": 460.5
-    },
-    {
-      "ticker": "7795",
-      "actual_entry": 556.0,
-      "current": 626.0,
-      "ret_pct": 12.59,
-      "peak_pct": 19.6,
-      "low_pct": -0.9,
-      "status": "持有中",
-      "triggered": null,
-      "days_held": 4,
-      "signal_date": "2026-06-29",
-      "name": "長廣",
-      "industry": "電子零組件",
-      "system_entry": 506.0
-    },
-    {
-      "ticker": "2472",
-      "actual_entry": 461.5,
-      "current": 425.0,
-      "ret_pct": -7.91,
-      "peak_pct": 5.74,
-      "low_pct": -10.83,
-      "status": "❌ 停損出場 (-7.9%)",
+      "ticker": "3026",
+      "actual_entry": 1015.0,
+      "current": 1005.0,
+      "ret_pct": -0.99,
+      "peak_pct": 2.96,
+      "low_pct": -18.52,
+      "status": "❌ 停損出場 (-14.6%)",
       "triggered": [
         "停損",
-        "07/01",
-        -7.908992416034666
+        "07/07",
+        -14.581280788177342
       ],
-      "days_held": 3,
-      "signal_date": "2026-06-30",
-      "name": "立隆電",
+      "days_held": 5,
+      "signal_date": "2026-07-05",
+      "name": "禾伸堂",
       "industry": "電子零組件",
-      "system_entry": 453.5
+      "system_entry": 988.0
     },
     {
-      "ticker": "6271",
-      "actual_entry": 277.0,
-      "current": 279.0,
-      "ret_pct": 0.72,
-      "peak_pct": 5.96,
-      "low_pct": -6.14,
+      "ticker": "6525",
+      "actual_entry": 200.0,
+      "current": 199.5,
+      "ret_pct": -0.25,
+      "peak_pct": 10.5,
+      "low_pct": -3.0,
       "status": "持有中",
       "triggered": null,
-      "days_held": 3,
-      "signal_date": "2026-06-30",
-      "name": "同欣電",
+      "days_held": 5,
+      "signal_date": "2026-07-05",
+      "name": "捷敏-KY",
       "industry": "半導體",
-      "system_entry": 267.0
+      "system_entry": 183.0
     },
     {
-      "ticker": "6719",
-      "actual_entry": 297.0,
-      "current": 289.0,
-      "ret_pct": -2.69,
-      "peak_pct": 9.93,
-      "low_pct": -3.54,
-      "status": "持有中",
-      "triggered": null,
-      "days_held": 2,
-      "signal_date": "2026-07-01",
-      "name": "力智",
+      "ticker": "2428",
+      "actual_entry": 351.0,
+      "current": 325.0,
+      "ret_pct": -7.41,
+      "peak_pct": 3.56,
+      "low_pct": -16.52,
+      "status": "❌ 停損出場 (-11.8%)",
+      "triggered": [
+        "停損",
+        "07/07",
+        -11.823361823361822
+      ],
+      "days_held": 5,
+      "signal_date": "2026-07-05",
+      "name": "興勤",
+      "industry": "電子零組件",
+      "system_entry": 342.0
+    },
+    {
+      "ticker": "8131",
+      "actual_entry": 87.0999984741211,
+      "current": 76.0,
+      "ret_pct": -12.74,
+      "peak_pct": 0.0,
+      "low_pct": -14.7,
+      "status": "❌ 停損出場 (-9.3%)",
+      "triggered": [
+        "停損",
+        "07/07",
+        -9.29965397935999
+      ],
+      "days_held": 4,
+      "signal_date": "2026-07-06",
+      "name": "福懋科",
       "industry": "半導體",
-      "system_entry": 297.0
+      "system_entry": 82.19999694824219
+    },
+    {
+      "ticker": "2351",
+      "actual_entry": 231.5,
+      "current": 200.0,
+      "ret_pct": -13.61,
+      "peak_pct": 0.65,
+      "low_pct": -14.47,
+      "status": "❌ 停損出場 (-7.8%)",
+      "triggered": [
+        "停損",
+        "07/07",
+        -7.77537796976242
+      ],
+      "days_held": 4,
+      "signal_date": "2026-07-06",
+      "name": "順德",
+      "industry": "半導體",
+      "system_entry": 228.0
     }
   ],
   "by_industry": {
     "電子零組件": [
-      "7795",
-      "7795",
-      "2472"
+      "3026",
+      "2428"
     ],
     "半導體": [
-      "6271",
-      "6719"
+      "6525",
+      "8131",
+      "2351"
     ]
   }
 }

@@ -28,7 +28,7 @@
 - 📡 **開盤掛單（V2 / V4.1 選股系統）**：與每日 LINE 推播同源，含限價區間、股數、停損價，主動資金可調（電腦版選股系統完整搬到手機）
 - 🔄 **資金輪動雷達**：升溫/降溫族群 + 輪動候選 + 假突破風險（hot_money_signal.json）
 - 📝 **V2 週檢討**：本週訊號實際表現、勝率、族群分布（weekly_v2_review.json）
-- 🧭 **鄭大策略**：大盤位階 × 族群輪動 × CB picks + 累積勝率（讀 private repo invest-bot，需 GITHUB_TOKEN 授權該 repo）
+- 🧭 **鄭大策略**：大盤位階 × 族群輪動 × CB picks + 累積勝率（讀 `zheng_tracker/` 公開鏡像，每天 21:55 自動從 invest-bot 同步，免 token）
 - 🇹🇼 台股 200+ 檔每日掃描
 - 🇺🇸 美股 40+ 檔追蹤
 - 🟢🟡🔴 三色動能分類
@@ -36,10 +36,10 @@
 - 📈 大盤體制即時顯示
 - 🔄 一鍵清除快取重新掃描
 
-### 🧭 鄭大策略分頁的 Token 設定
-invest-bot 是 private repo，App 用 `GITHUB_TOKEN` 走 GitHub API 讀取。
-若分頁顯示 HTTP 404/403，請到 GitHub → Settings → Developer settings → Personal access tokens，
-把 token 的授權範圍加上 `dogking0628-dotcom/invest-bot`（Contents: Read）。
+### 🧭 鄭大策略資料來源
+主要來源：repo 根目錄 `zheng_tracker/` 公開鏡像（每天 21:55 台北自動從 private repo invest-bot 同步，App 免 token 直讀）。
+後備來源：若鏡像讀取失敗，App 會嘗試用 `GITHUB_TOKEN` 走 GitHub API 直讀 invest-bot
+（需該 token 有 invest-bot 的 Contents: Read 權限）。
 
 ## 🚀 手動觸發 Workflow（手機一鍵）
 

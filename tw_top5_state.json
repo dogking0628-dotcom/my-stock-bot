@@ -1,4 +1,35 @@
 {
-  "date": "2026-07-12",
-  "stocks": {}
+  "date": "2026-07-13",
+  "stocks": {
+    "8039": {
+      "name": "台虹",
+      "score": 90,
+      "close": 169.0,
+      "category": "limit_up"
+    },
+    "3532": {
+      "name": "台勝科",
+      "score": 72,
+      "close": 465.5,
+      "category": "medium"
+    },
+    "1709": {
+      "name": "和益",
+      "score": 70,
+      "close": 26.149999618530273,
+      "category": "medium"
+    },
+    "3704": {
+      "name": "合勤控",
+      "score": 65,
+      "close": 49.849998474121094,
+      "category": "high"
+    },
+    "2414": {
+      "name": "精技",
+      "score": 62,
+      "close": 63.400001525878906,
+      "category": "high"
+    }
+  }
 }

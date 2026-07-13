@@ -2023,6 +2023,94 @@
           "vol_ratio_at_rec": 1.0501575301640123
         }
       ]
+    },
+    {
+      "date": "2026-07-13",
+      "industry": "半導體",
+      "picks": [
+        {
+          "ticker": "3532",
+          "name": "台勝科",
+          "industry": "半導體",
+          "rec_close": 465.5,
+          "momentum_score": 95,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "QQQ+0.3%",
+            "SMH+0.5%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 65.1888341543514,
+          "change_pct_at_rec": 9.917355371900815,
+          "vol_ratio_at_rec": 0.23715176084623513
+        },
+        {
+          "ticker": "2351",
+          "name": "順德",
+          "industry": "半導體",
+          "rec_close": 214.0,
+          "momentum_score": 90,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+0.3%",
+            "SMH+0.5%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 55.75539568345323,
+          "change_pct_at_rec": 7.000000000000006,
+          "vol_ratio_at_rec": 0.5295630354422617
+        },
+        {
+          "ticker": "8039",
+          "name": "台虹",
+          "industry": "電子零組件",
+          "rec_close": 169.0,
+          "momentum_score": 85,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "QQQ+0.3%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 67.00376338780686,
+          "change_pct_at_rec": 9.740259740259738,
+          "vol_ratio_at_rec": 0.9389252085381659
+        },
+        {
+          "ticker": "3008",
+          "name": "大立光",
+          "industry": "光電",
+          "rec_close": 4345.0,
+          "momentum_score": 85,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "QQQ+0.3%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 34.94252873563218,
+          "change_pct_at_rec": 10.000000000000009,
+          "vol_ratio_at_rec": 0.3227068667519227
+        },
+        {
+          "ticker": "8046",
+          "name": "南電",
+          "industry": "電子零組件",
+          "rec_close": 1315.0,
+          "momentum_score": 80,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+0.3%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 72.97004127331496,
+          "change_pct_at_rec": 8.230452674897126,
+          "vol_ratio_at_rec": 0.7239357380255749
+        }
+      ]
     }
   ]
 }

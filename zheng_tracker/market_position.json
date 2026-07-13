@@ -1,0 +1,38 @@
+{
+  "date": "2026-07-11 14:35",
+  "stage": "BULL_MID",
+  "label": "⚡ 多頭中段",
+  "desc": "強勢但動能轉鈍",
+  "notes": [
+    "距 MA200 +34.7%（領先牛市）"
+  ],
+  "indicators": {
+    "price": 45354.61,
+    "ma60": 42878.07,
+    "ma120": 37882.65,
+    "ma200": 33675.28,
+    "ma87_zheng": 39999.22,
+    "ma284_zheng": 30479.91,
+    "bias_87_pct": 13.39,
+    "bias_284_pct": 48.8,
+    "zheng_da_signal": "🟢 鄭大兩線多頭排列（87MA 上 284MA 上）",
+    "dist_ma60_pct": 5.78,
+    "dist_ma120_pct": 19.72,
+    "dist_ma200_pct": 34.68,
+    "ret_5d": -2.97,
+    "ret_20d": 4.93,
+    "ret_60d": 24.96,
+    "rsi_daily": 44.2,
+    "weekly_K": 76.6,
+    "monthly_K": 90.0,
+    "monthly_D": 90.2,
+    "vol_ratio_20": 0.79,
+    "vol_avg_20": 7278180.0
+  },
+  "playbook": {
+    "sector_focus": "取 5 日 TOP 3 強勢族群",
+    "cb_filter": "族群中找有 CB 的個股",
+    "action": "⚡ 健康牛市：可分批進場強勢族群有 CB 的個股",
+    "risk_advice": "滿倉持有，逢回加碼"
+  }
+}

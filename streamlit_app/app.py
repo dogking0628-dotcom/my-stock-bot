@@ -401,7 +401,12 @@ INVEST_REPO = "dogking0628-dotcom/invest-bot"
 
 @st.cache_data(ttl=300)
 def load_invest_json(path):
-    """從 private repo invest-bot 用 GitHub API 讀 JSON（需 token 有 invest-bot 的 Contents:Read）"""
+    """鄭大策略資料：優先讀 my-stock-bot 的公開鏡像 zheng_tracker/（每日自動同步，免 token），
+    鏡像讀不到才走 GitHub API 讀 private repo invest-bot（需 token 有 invest-bot 的 Contents:Read）"""
+    fname = path.split("/")[-1]
+    mirror = load_raw_json(f"zheng_tracker/{fname}")
+    if mirror is not None:
+        return mirror, None
     token = _gh_token()
     if not token:
         return None, "no_token"
@@ -421,20 +426,13 @@ def load_invest_json(path):
 
 with tab_zheng:
     st.markdown("### 🧭 鄭大策略（invest-bot）")
-    st.caption("位階 × 族群 × CB 三層分析，資料來自 private repo invest-bot（每天 21:30 更新）")
+    st.caption("位階 × 族群 × CB 三層分析 ｜ invest-bot 每天 21:30 產出 → 21:55 自動同步到 zheng_tracker/ 鏡像")
 
     mp, err = load_invest_json("zheng-tracker/market_position.json")
     if mp is None:
-        if err == "no_token":
-            st.warning("需要 `GITHUB_TOKEN` 才能讀取 private repo invest-bot。"
-                       "到 Streamlit Cloud → App settings → Secrets 設定。")
-        elif err in ("HTTP 404", "HTTP 403", "HTTP 401"):
-            st.warning(f"讀取 invest-bot 失敗（{err}）。"
-                       "你的 GITHUB_TOKEN 可能只授權了 my-stock-bot——"
-                       "請到 GitHub → Settings → Developer settings → Personal access tokens，"
-                       "把 invest-bot 也加入授權（Contents: Read）。")
-        else:
-            st.error(f"讀取失敗：{err}")
+        st.warning(f"讀不到鄭大資料（{err or '鏡像尚未同步'}）。"
+                   "正常情況 zheng_tracker/ 鏡像每天 21:55 自動更新，不需要 token；"
+                   "若持續失敗，可設定有 invest-bot Contents:Read 權限的 GITHUB_TOKEN 作為後備。")
     else:
         # ── 1️⃣ 大盤位階 ──
         stage = mp.get("stage", "?")

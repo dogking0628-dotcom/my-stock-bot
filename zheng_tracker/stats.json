@@ -1,0 +1,84 @@
+{
+  "total": 446,
+  "open_count": 446,
+  "closed_count": 0,
+  "win_rate": 55.4,
+  "big_win_rate": 20.0,
+  "big_loss_rate": 13.5,
+  "avg_return": 13.93,
+  "median_return": 2.71,
+  "by_stage": {
+    "BULL_LATE": {
+      "n": 379,
+      "win_rate": 54.6,
+      "avg_ret": 14.62
+    },
+    "BULL_MID": {
+      "n": 55,
+      "win_rate": 60.0,
+      "avg_ret": 11.31
+    },
+    "BULL_ACCEL": {
+      "n": 12,
+      "win_rate": 58.3,
+      "avg_ret": 4.05
+    }
+  },
+  "by_sector": {
+    "半導體_封測設備": {
+      "n": 31,
+      "win_rate": 77.4,
+      "avg_ret": 11.5
+    },
+    "半導體_IC設計": {
+      "n": 56,
+      "win_rate": 82.1,
+      "avg_ret": 10.21
+    },
+    "被動元件_載板": {
+      "n": 130,
+      "win_rate": 66.9,
+      "avg_ret": 22.78
+    },
+    "記憶體_DRAM_NAND": {
+      "n": 130,
+      "win_rate": 40.8,
+      "avg_ret": 18.71
+    },
+    "觀光電商": {
+      "n": 31,
+      "win_rate": 12.9,
+      "avg_ret": -11.48
+    },
+    "金融": {
+      "n": 3,
+      "win_rate": 0.0,
+      "avg_ret": -4.15
+    },
+    "光學_鏡頭": {
+      "n": 3,
+      "win_rate": 66.7,
+      "avg_ret": -5.62
+    },
+    "機構_散熱": {
+      "n": 30,
+      "win_rate": 73.3,
+      "avg_ret": 6.62
+    },
+    "AI_伺服器": {
+      "n": 5,
+      "win_rate": 40.0,
+      "avg_ret": 1.43
+    },
+    "軍工_航太": {
+      "n": 15,
+      "win_rate": 40.0,
+      "avg_ret": 4.62
+    },
+    "半導體_晶圓代工": {
+      "n": 12,
+      "win_rate": 8.3,
+      "avg_ret": -0.01
+    }
+  }
+}

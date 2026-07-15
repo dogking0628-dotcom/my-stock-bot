@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-07-14",
+  "last_run": "2026-07-15",
   "cash": 20708.734411650687,
   "positions": [
     {
@@ -62,14 +62,14 @@
       "ticker": "STT",
       "entry_date": "2026-07-07",
       "entry_price": 179.94,
-      "peak_price": 183.64999389648438,
+      "peak_price": 186.58999633789062,
       "shares": 38.505809
     },
     {
       "ticker": "BNY",
       "entry_date": "2026-07-07",
       "entry_price": 152.91,
-      "peak_price": 154.5,
+      "peak_price": 162.35000610351562,
       "shares": 45.312506
     }
   ],

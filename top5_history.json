@@ -1,102 +1,6 @@
 {
   "records": [
     {
-      "date": "2026-05-11",
-      "industry": "半導體",
-      "picks": [
-        {
-          "ticker": "7769",
-          "name": "鴻勁",
-          "industry": "半導體",
-          "rec_close": 6380.0,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "漲停鎖死",
-            "ATH",
-            "族群同步",
-            "QQQ+2.3%",
-            "SMH+4.9%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 85.6353591160221,
-          "change_pct_at_rec": 10.000000000000009,
-          "vol_ratio_at_rec": 1.0811150248054693
-        },
-        {
-          "ticker": "3443",
-          "name": "創意",
-          "industry": "半導體",
-          "rec_close": 5730.0,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "漲停鎖死",
-            "ATH",
-            "族群同步",
-            "QQQ+2.3%",
-            "SMH+4.9%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 85.24590163934427,
-          "change_pct_at_rec": 9.98080614203456,
-          "vol_ratio_at_rec": 1.1207766238451589
-        },
-        {
-          "ticker": "6531",
-          "name": "愛普*",
-          "industry": "半導體",
-          "rec_close": 962.0,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "漲停鎖死",
-            "ATH",
-            "族群同步",
-            "QQQ+2.3%",
-            "SMH+4.9%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 75.73529411764706,
-          "change_pct_at_rec": 9.942857142857143,
-          "vol_ratio_at_rec": 0.40588309243298576
-        },
-        {
-          "ticker": "2451",
-          "name": "創見",
-          "industry": "半導體",
-          "rec_close": 343.5,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "族群同步",
-            "QQQ+2.3%",
-            "SMH+4.9%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 79.0625,
-          "change_pct_at_rec": 9.919999999999995,
-          "vol_ratio_at_rec": 1.2835993349743728
-        },
-        {
-          "ticker": "3661",
-          "name": "世芯-KY",
-          "industry": "半導體",
-          "rec_close": 5375.0,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "漲停鎖死",
-            "ATH",
-            "族群同步",
-            "QQQ+2.3%",
-            "SMH+4.9%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 84.31372549019608,
-          "change_pct_at_rec": 9.918200408997958,
-          "vol_ratio_at_rec": 0.4810349316063318
-        }
-      ]
-    },
-    {
       "date": "2026-05-12",
       "industry": "半導體",
       "picks": [
@@ -2086,6 +1990,76 @@
           "rsi": 72.1877487164948,
           "change_pct_at_rec": 9.763313609467449,
           "vol_ratio_at_rec": 4.145380786893622
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "industry": "半導體",
+      "picks": [
+        {
+          "ticker": "2303",
+          "name": "聯電",
+          "industry": "半導體",
+          "rec_close": 166.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 44.09246001589739,
+          "change_pct_at_rec": 9.933774834437092,
+          "vol_ratio_at_rec": 0.46135283545130734
+        },
+        {
+          "ticker": "2408",
+          "name": "南亞科",
+          "industry": "半導體",
+          "rec_close": 481.0,
+          "momentum_score": 95,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 51.23198762102277,
+          "change_pct_at_rec": 7.366071428571419,
+          "vol_ratio_at_rec": 0.8593432461037293
+        },
+        {
+          "ticker": "3033",
+          "name": "威健",
+          "industry": "電子通路",
+          "rec_close": 55.599998474121094,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "量爆價揚",
+            "ATH",
+            "族群同步"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 82.23347481914087,
+          "change_pct_at_rec": 9.881423222882525,
+          "vol_ratio_at_rec": 5.413561892965438
+        },
+        {
+          "ticker": "2059",
+          "name": "川湖",
+          "industry": "電子零組件",
+          "rec_close": 8500.0,
+          "momentum_score": 95,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 69.08212560386474,
+          "change_pct_at_rec": 6.316447779862422,
+          "vol_ratio_at_rec": 1.390174608781117
         }
       ]
     }

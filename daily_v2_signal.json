@@ -1,84 +1,19 @@
 {
-  "timestamp": "2026-07-15",
+  "timestamp": "2026-07-16",
   "strategy": "V2 原版 (實測 OOS PF 1.83 / 主回測 PF 1.69, 抗崩盤強·常空手)",
   "top_industries": [
     {
       "industry": "金融保險",
       "count": 27,
-      "bullish_count": 15
+      "bullish_count": 18
     },
     {
-      "industry": "電子零組件",
-      "count": 13,
-      "bullish_count": 9
+      "industry": "半導體",
+      "count": 26,
+      "bullish_count": 16
     }
   ],
-  "picks": [
-    {
-      "today": 185.5,
-      "monthly_max_2y": 159.65147399902344,
-      "ratio": 1.1619059652473656,
-      "from_high_pct": 16.190596524736556,
-      "bullish": true,
-      "bullish_fast": true,
-      "change_pct": 9.763313609467449,
-      "vol_ratio": 4.145380786893622,
-      "rsi": 72.1877487164948,
-      "ma5": 160.5,
-      "ma20": 148.28413772583008,
-      "ma60": 142.98512166341146,
-      "ma200": 102.56527341842651,
-      "gap_up": true,
-      "close_near_high": true,
-      "long_red": true,
-      "ticker": "8039",
-      "name": "台虹",
-      "industry": "電子零組件",
-      "industry_strong": false,
-      "market_cap_billions": 356.26610688,
-      "mcap_pass": true,
-      "momentum_score": 80,
-      "momentum_notes": [
-        "量爆價揚",
-        "ATH"
-      ],
-      "tier": "⭐⭐⭐",
-      "next_day_prob": "≥85%",
-      "_score": 133.17
-    },
-    {
-      "today": 14.600000381469727,
-      "monthly_max_2y": 14.360734939575195,
-      "ratio": 1.0166610861422674,
-      "from_high_pct": 1.6661086142267356,
-      "bullish": true,
-      "bullish_fast": true,
-      "change_pct": 3.253189615821661,
-      "vol_ratio": 2.0635218653651415,
-      "rsi": 60.02992189641634,
-      "ma5": 14.164437103271485,
-      "ma20": 14.073720455169678,
-      "ma60": 13.544424549738567,
-      "ma200": 13.036436314582824,
-      "gap_up": true,
-      "close_near_high": true,
-      "long_red": false,
-      "ticker": "2849",
-      "name": "安泰銀",
-      "industry": "金融保險",
-      "industry_strong": false,
-      "market_cap_billions": 273.08650496,
-      "mcap_pass": true,
-      "momentum_score": 75,
-      "momentum_notes": [
-        "跳空缺口",
-        "ATH"
-      ],
-      "tier": "⭐⭐",
-      "next_day_prob": "70-85%",
-      "_score": 87.17
-    }
-  ],
+  "picks": [],
   "params": {
     "top_industries": 2,
     "vol_ratio_min": 1.5,

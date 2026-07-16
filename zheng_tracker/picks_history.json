@@ -9087,6 +9087,152 @@
       "current_price": 291.5,
       "current_return": 0.0,
       "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-15",
+      "ticker": "6488.TWO",
+      "name": "環球晶",
+      "sector": "半導體_封測設備",
+      "pick_price": 1480.0,
+      "stage": "BULL_ACCEL",
+      "reason": "半導體_封測設備 強勢(+13.1) + 個股 5d+20.3% + 有 CB",
+      "cb_codes": [
+        "648810",
+        "648811"
+      ],
+      "max_price": 1480.0,
+      "current_price": 1480.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-15",
+      "ticker": "8033.TW",
+      "name": "雷虎",
+      "sector": "軍工_航太",
+      "pick_price": 269.5,
+      "stage": "BULL_ACCEL",
+      "reason": "軍工_航太 強勢(+64.9) + 個股 5d+18.5% + 有 CB",
+      "cb_codes": [
+        "803307"
+      ],
+      "max_price": 269.5,
+      "current_price": 269.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-15",
+      "ticker": "2634.TW",
+      "name": "漢翔",
+      "sector": "軍工_航太",
+      "pick_price": 68.3,
+      "stage": "BULL_ACCEL",
+      "reason": "軍工_航太 強勢(+64.9) + 個股 5d+14.6% + 有 CB",
+      "cb_codes": [
+        "263406"
+      ],
+      "max_price": 68.3,
+      "current_price": 68.3,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-15",
+      "ticker": "6196.TW",
+      "name": "帆宣",
+      "sector": "半導體_封測設備",
+      "pick_price": 585.0,
+      "stage": "BULL_ACCEL",
+      "reason": "半導體_封測設備 強勢(+13.1) + 個股 5d+7.1% + 有 CB",
+      "cb_codes": [
+        "619608",
+        "619609"
+      ],
+      "max_price": 585.0,
+      "current_price": 585.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-15",
+      "ticker": "2059.TW",
+      "name": "川湖",
+      "sector": "機構_散熱",
+      "pick_price": 8500.0,
+      "stage": "BULL_ACCEL",
+      "reason": "機構_散熱 強勢(+12.7) + 個股 5d+5.0% + 有 CB",
+      "cb_codes": [
+        "205905"
+      ],
+      "max_price": 8500.0,
+      "current_price": 8500.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-15",
+      "ticker": "6147.TWO",
+      "name": "頎邦",
+      "sector": "半導體_封測設備",
+      "pick_price": 204.5,
+      "stage": "BULL_ACCEL",
+      "reason": "半導體_封測設備 強勢(+13.1) + 個股 5d+2.5% + 有 CB",
+      "cb_codes": [
+        "614706"
+      ],
+      "max_price": 204.5,
+      "current_price": 204.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-15",
+      "ticker": "6753.TW",
+      "name": "龍德造船",
+      "sector": "軍工_航太",
+      "pick_price": 156.0,
+      "stage": "BULL_ACCEL",
+      "reason": "軍工_航太 強勢(+64.9) + 個股 5d+1.3% + 有 CB",
+      "cb_codes": [
+        "675305"
+      ],
+      "max_price": 156.0,
+      "current_price": 156.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-15",
+      "ticker": "2449.TW",
+      "name": "京元電子",
+      "sector": "半導體_封測設備",
+      "pick_price": 307.0,
+      "stage": "BULL_ACCEL",
+      "reason": "半導體_封測設備 強勢(+13.1) + 個股 5d+0.5% + 有 CB",
+      "cb_codes": [
+        "244907"
+      ],
+      "max_price": 307.0,
+      "current_price": 307.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-15",
+      "ticker": "2421.TW",
+      "name": "建準",
+      "sector": "機構_散熱",
+      "pick_price": 139.0,
+      "stage": "BULL_ACCEL",
+      "reason": "機構_散熱 強勢(+12.7) + 個股 5d-3.1% + 有 CB",
+      "cb_codes": [
+        "242106"
+      ],
+      "max_price": 139.0,
+      "current_price": 139.0,
+      "current_return": 0.0,
+      "days_held": 0
     }
   ],
   "closed_picks": []

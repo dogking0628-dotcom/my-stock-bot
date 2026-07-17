@@ -9233,6 +9233,135 @@
       "current_price": 139.0,
       "current_return": 0.0,
       "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-16",
+      "ticker": "2634.TW",
+      "name": "漢翔",
+      "sector": "軍工_航太",
+      "pick_price": 64.5,
+      "stage": "BULL_ACCEL",
+      "reason": "軍工_航太 強勢(+50.6) + 個股 5d+11.2% + 有 CB",
+      "cb_codes": [
+        "263406"
+      ],
+      "max_price": 64.5,
+      "current_price": 64.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-16",
+      "ticker": "5347.TWO",
+      "name": "世界先進",
+      "sector": "半導體_晶圓代工",
+      "pick_price": 187.5,
+      "stage": "BULL_ACCEL",
+      "reason": "半導體_晶圓代工 強勢(+11.7) + 個股 5d+8.4% + 有 CB",
+      "cb_codes": [
+        "534709"
+      ],
+      "max_price": 187.5,
+      "current_price": 187.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-16",
+      "ticker": "8033.TW",
+      "name": "雷虎",
+      "sector": "軍工_航太",
+      "pick_price": 243.0,
+      "stage": "BULL_ACCEL",
+      "reason": "軍工_航太 強勢(+50.6) + 個股 5d+7.0% + 有 CB",
+      "cb_codes": [
+        "803307"
+      ],
+      "max_price": 243.0,
+      "current_price": 243.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-16",
+      "ticker": "2059.TW",
+      "name": "川湖",
+      "sector": "機構_散熱",
+      "pick_price": 8655.0,
+      "stage": "BULL_ACCEL",
+      "reason": "機構_散熱 強勢(+12.1) + 個股 5d+4.9% + 有 CB",
+      "cb_codes": [
+        "205905"
+      ],
+      "max_price": 8655.0,
+      "current_price": 8655.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-16",
+      "ticker": "2303.TW",
+      "name": "聯電",
+      "sector": "半導體_晶圓代工",
+      "pick_price": 160.0,
+      "stage": "BULL_ACCEL",
+      "reason": "半導體_晶圓代工 強勢(+11.7) + 個股 5d+2.6% + 有 CB",
+      "cb_codes": [
+        "230306"
+      ],
+      "max_price": 160.0,
+      "current_price": 160.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-16",
+      "ticker": "2330.TW",
+      "name": "台積電",
+      "sector": "半導體_晶圓代工",
+      "pick_price": 2470.0,
+      "stage": "BULL_ACCEL",
+      "reason": "半導體_晶圓代工 強勢(+11.7) + 個股 5d+2.3% + 有 CB",
+      "cb_codes": [
+        "233027",
+        "233028"
+      ],
+      "max_price": 2470.0,
+      "current_price": 2470.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-16",
+      "ticker": "6753.TW",
+      "name": "龍德造船",
+      "sector": "軍工_航太",
+      "pick_price": 146.0,
+      "stage": "BULL_ACCEL",
+      "reason": "軍工_航太 強勢(+50.6) + 個股 5d-1.4% + 有 CB",
+      "cb_codes": [
+        "675305"
+      ],
+      "max_price": 146.0,
+      "current_price": 146.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-16",
+      "ticker": "2421.TW",
+      "name": "建準",
+      "sector": "機構_散熱",
+      "pick_price": 135.0,
+      "stage": "BULL_ACCEL",
+      "reason": "機構_散熱 強勢(+12.1) + 個股 5d-5.3% + 有 CB",
+      "cb_codes": [
+        "242106"
+      ],
+      "max_price": 135.0,
+      "current_price": 135.0,
+      "current_return": 0.0,
+      "days_held": 0
     }
   ],
   "closed_picks": []

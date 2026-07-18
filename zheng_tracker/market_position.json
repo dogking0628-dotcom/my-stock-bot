@@ -1,39 +1,38 @@
 {
-  "date": "2026-07-16 15:17",
-  "stage": "BULL_ACCEL",
-  "label": "🚀 多頭加速段",
-  "desc": "強勢突破，鄭大「最強族群+CB」階段",
+  "date": "2026-07-17 14:56",
+  "stage": "BEAR_START",
+  "label": "❌ 空頭起跌",
+  "desc": "剛跌破 MA60，注意進一步下殺",
   "notes": [
-    "距 MA200 +33.9%（領先牛市）",
-    "月 K 90 多頭"
+    "跌破 MA60(-2.0%) + 5 日跌 -5.9%"
   ],
   "indicators": {
-    "price": 45624.98,
-    "ma60": 43440.69,
-    "ma120": 38380.34,
-    "ma200": 34078.46,
-    "ma87_zheng": 40564.97,
-    "ma284_zheng": 30813.31,
-    "bias_87_pct": 12.47,
-    "bias_284_pct": 48.07,
+    "price": 42671.27,
+    "ma60": 43525.13,
+    "ma120": 38480.04,
+    "ma200": 34165.04,
+    "ma87_zheng": 40663.33,
+    "ma284_zheng": 30887.78,
+    "bias_87_pct": 4.94,
+    "bias_284_pct": 38.15,
     "zheng_da_signal": "🟢 鄭大兩線多頭排列（87MA 上 284MA 上）",
-    "dist_ma60_pct": 5.03,
-    "dist_ma120_pct": 18.88,
-    "dist_ma200_pct": 33.88,
-    "ret_5d": -0.24,
-    "ret_20d": -0.4,
-    "ret_60d": 23.45,
-    "rsi_daily": 46.0,
-    "weekly_K": 73.9,
-    "monthly_K": 90.4,
-    "monthly_D": 90.3,
+    "dist_ma60_pct": -1.96,
+    "dist_ma120_pct": 10.89,
+    "dist_ma200_pct": 24.9,
+    "ret_5d": -5.92,
+    "ret_20d": -6.99,
+    "ret_60d": 13.47,
+    "rsi_daily": 39.7,
+    "weekly_K": 62.0,
+    "monthly_K": 85.9,
+    "monthly_D": 88.8,
     "vol_ratio_20": null,
-    "vol_avg_20": 6881700.0
+    "vol_avg_20": 6795435.0
   },
   "playbook": {
-    "sector_focus": "取最強族群 TOP 3",
-    "cb_filter": "從族群中過濾「有 CB」的個股",
-    "action": "🚀 鄭大波段大行情階段：強勢族群 + 有 CB → 通常有大波段",
-    "risk_advice": "滿手持倉但留 10-20% 機動資金，鎖移動停利"
+    "sector_focus": "觀察族群輪動（誰先跌透）",
+    "cb_filter": "暫緩進場，等位階轉穩",
+    "action": "❌ 空頭起跌：減碼至 50%，停利強勢族群",
+    "risk_advice": "不要逆勢攤平，等月 K 翻低"
   }
 }

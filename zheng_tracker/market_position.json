@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-17 14:56",
+  "date": "2026-07-18 14:34",
   "stage": "BEAR_START",
   "label": "❌ 空頭起跌",
   "desc": "剛跌破 MA60，注意進一步下殺",
@@ -26,8 +26,8 @@
     "weekly_K": 62.0,
     "monthly_K": 85.9,
     "monthly_D": 88.8,
-    "vol_ratio_20": null,
-    "vol_avg_20": 6795435.0
+    "vol_ratio_20": 0.9,
+    "vol_avg_20": 7114690.0
   },
   "playbook": {
     "sector_focus": "觀察族群輪動（誰先跌透）",

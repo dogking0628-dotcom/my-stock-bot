@@ -1,19 +1,82 @@
 {
-  "timestamp": "2026-07-16",
+  "timestamp": "2026-07-19",
   "strategy": "V2 原版 (實測 OOS PF 1.83 / 主回測 PF 1.69, 抗崩盤強·常空手)",
   "top_industries": [
     {
       "industry": "金融保險",
       "count": 27,
-      "bullish_count": 18
+      "bullish_count": 14
     },
     {
-      "industry": "半導體",
-      "count": 26,
-      "bullish_count": 16
+      "industry": "其他",
+      "count": 8,
+      "bullish_count": 5
     }
   ],
-  "picks": [],
+  "picks": [
+    {
+      "today": 14.949999809265137,
+      "monthly_max_2y": 14.360734939575195,
+      "ratio": 1.0410330579994238,
+      "from_high_pct": 4.1033057999423805,
+      "bullish": true,
+      "bullish_fast": true,
+      "change_pct": 0.33557175848972776,
+      "vol_ratio": 1.536463441139519,
+      "rsi": 74.2163190292205,
+      "ma5": 14.677999877929688,
+      "ma20": 14.197285175323486,
+      "ma60": 13.608938201268513,
+      "ma200": 13.067131357192993,
+      "gap_up": false,
+      "close_near_high": true,
+      "long_red": true,
+      "ticker": "2849",
+      "name": "安泰銀",
+      "industry": "金融保險",
+      "industry_strong": false,
+      "market_cap_billions": 273.08650496,
+      "mcap_pass": true,
+      "momentum_score": 30,
+      "momentum_notes": [
+        "ATH"
+      ],
+      "tier": "⭐",
+      "next_day_prob": "<70%",
+      "_score": 90.25
+    },
+    {
+      "today": 40.150001525878906,
+      "monthly_max_2y": 38.099998474121094,
+      "ratio": 1.0538058565317332,
+      "from_high_pct": 5.38058565317332,
+      "bullish": true,
+      "bullish_fast": true,
+      "change_pct": 1.9035532257717813,
+      "vol_ratio": 1.5802407843256356,
+      "rsi": 67.48464879331722,
+      "ma5": 39.33000030517578,
+      "ma20": 38.22749996185303,
+      "ma60": 35.14666662216187,
+      "ma200": 32.87449999809265,
+      "gap_up": false,
+      "close_near_high": true,
+      "long_red": true,
+      "ticker": "2880",
+      "name": "華南金",
+      "industry": "金融保險",
+      "industry_strong": false,
+      "market_cap_billions": 4550.8476928,
+      "mcap_pass": true,
+      "momentum_score": 30,
+      "momentum_notes": [
+        "ATH"
+      ],
+      "tier": "⭐",
+      "next_day_prob": "<70%",
+      "_score": 87.09
+    }
+  ],
   "params": {
     "top_industries": 2,
     "vol_ratio_min": 1.5,

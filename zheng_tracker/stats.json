@@ -1,84 +1,89 @@
 {
-  "total": 513,
-  "open_count": 513,
+  "total": 549,
+  "open_count": 549,
   "closed_count": 0,
-  "win_rate": 40.4,
-  "big_win_rate": 13.5,
-  "big_loss_rate": 24.0,
-  "avg_return": 6.57,
-  "median_return": -1.71,
+  "win_rate": 22.2,
+  "big_win_rate": 8.0,
+  "big_loss_rate": 45.9,
+  "avg_return": -5.98,
+  "median_return": -8.55,
   "by_stage": {
     "BULL_LATE": {
       "n": 396,
-      "win_rate": 42.2,
-      "avg_ret": 7.76
+      "win_rate": 23.5,
+      "avg_ret": -5.64
     },
     "BULL_MID": {
-      "n": 85,
-      "win_rate": 29.4,
-      "avg_ret": 2.98
+      "n": 104,
+      "win_rate": 19.2,
+      "avg_ret": -7.11
     },
     "BULL_ACCEL": {
-      "n": 32,
-      "win_rate": 46.9,
-      "avg_ret": 1.35
+      "n": 49,
+      "win_rate": 18.4,
+      "avg_ret": -6.39
     }
   },
   "by_sector": {
     "半導體_封測設備": {
-      "n": 55,
-      "win_rate": 50.9,
-      "avg_ret": 6.35
+      "n": 67,
+      "win_rate": 26.9,
+      "avg_ret": -3.63
     },
     "半導體_IC設計": {
       "n": 56,
-      "win_rate": 71.4,
-      "avg_ret": 4.24
+      "win_rate": 7.1,
+      "avg_ret": -10.4
     },
     "被動元件_載板": {
       "n": 130,
-      "win_rate": 35.4,
-      "avg_ret": 7.35
+      "win_rate": 17.7,
+      "avg_ret": -10.37
     },
     "記憶體_DRAM_NAND": {
       "n": 130,
-      "win_rate": 41.5,
-      "avg_ret": 18.0
+      "win_rate": 30.8,
+      "avg_ret": 1.8
     },
     "觀光電商": {
       "n": 31,
-      "win_rate": 9.7,
-      "avg_ret": -19.03
+      "win_rate": 3.2,
+      "avg_ret": -23.26
     },
     "金融": {
       "n": 3,
       "win_rate": 0.0,
-      "avg_ret": -8.55
+      "avg_ret": -17.09
     },
     "光學_鏡頭": {
       "n": 3,
       "win_rate": 0.0,
-      "avg_ret": -9.81
+      "avg_ret": -13.25
     },
     "機構_散熱": {
-      "n": 34,
-      "win_rate": 67.6,
-      "avg_ret": 5.38
+      "n": 38,
+      "win_rate": 34.2,
+      "avg_ret": -2.99
     },
     "AI_伺服器": {
       "n": 5,
-      "win_rate": 40.0,
-      "avg_ret": -1.8
+      "win_rate": 20.0,
+      "avg_ret": -7.53
     },
     "軍工_航太": {
-      "n": 36,
-      "win_rate": 30.6,
-      "avg_ret": 2.1
+      "n": 48,
+      "win_rate": 41.7,
+      "avg_ret": -1.64
     },
     "半導體_晶圓代工": {
-      "n": 30,
+      "n": 36,
       "win_rate": 0.0,
-      "avg_ret": -3.87
+      "avg_ret": -8.46
+    },
+    "食品民生": {
+      "n": 2,
+      "win_rate": 100.0,
+      "avg_ret": 1.16
     }
   }
 }

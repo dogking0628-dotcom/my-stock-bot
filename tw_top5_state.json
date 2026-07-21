@@ -1,4 +1,35 @@
 {
-  "date": "2026-07-20",
-  "stocks": {}
+  "date": "2026-07-21",
+  "stocks": {
+    "4169": {
+      "name": "泰宗",
+      "score": 90,
+      "close": 280.5,
+      "category": "limit_up"
+    },
+    "2910": {
+      "name": "統領",
+      "score": 77,
+      "close": 28.299999237060547,
+      "category": "high"
+    },
+    "6414": {
+      "name": "樺漢",
+      "score": 77,
+      "close": 445.5,
+      "category": "medium"
+    },
+    "1709": {
+      "name": "和益",
+      "score": 72,
+      "close": 28.100000381469727,
+      "category": "high"
+    },
+    "2395": {
+      "name": "研華",
+      "score": 65,
+      "close": 567.0,
+      "category": "medium"
+    }
+  }
 }

@@ -1,7 +1,74 @@
 {
-  "timestamp": "2026-07-20",
+  "timestamp": "2026-07-21",
   "strategy": "V4.1 (科技7族群+市值100億+美股加分+0050體制+7日黑名單)",
-  "strongest_industry": "半導體",
+  "strongest_industry": "通信網路",
   "v4_blocked": false,
-  "picks": []
+  "picks": [
+    {
+      "today": 212.0,
+      "monthly_max_2y": 159.65147399902344,
+      "ratio": 1.3278925317112749,
+      "from_high_pct": 32.789253171127484,
+      "bullish": true,
+      "bullish_fast": true,
+      "change_pct": 9.844559585492219,
+      "vol_ratio": 0.7835573644886242,
+      "rsi": 80.09049773755656,
+      "ma5": 195.7,
+      "ma20": 161.16436996459962,
+      "ma60": 147.24568201700848,
+      "ma200": 105.83859212875366,
+      "gap_up": false,
+      "close_near_high": true,
+      "long_red": true,
+      "ticker": "8039",
+      "name": "台虹",
+      "industry": "電子零組件",
+      "industry_strong": true,
+      "market_cap_billions": 356.26610688,
+      "mcap_pass": true,
+      "momentum_score": 100,
+      "momentum_notes": [
+        "漲停鎖死",
+        "ATH",
+        "族群同步",
+        "QQQ+1.9%"
+      ],
+      "tier": "⭐⭐⭐",
+      "next_day_prob": "≥85%"
+    },
+    {
+      "today": 567.0,
+      "monthly_max_2y": 484.5783386230469,
+      "ratio": 1.1700894464477267,
+      "from_high_pct": 17.008944644772672,
+      "bullish": true,
+      "bullish_fast": true,
+      "change_pct": 9.883720930232553,
+      "vol_ratio": 1.4458947356162968,
+      "rsi": 71.50818698094386,
+      "ma5": 527.3239501953125,
+      "ma20": 504.3199966430664,
+      "ma60": 471.8899719238281,
+      "ma200": 354.85488388061526,
+      "gap_up": true,
+      "close_near_high": true,
+      "long_red": true,
+      "ticker": "2395",
+      "name": "研華",
+      "industry": "電腦及週邊",
+      "industry_strong": true,
+      "market_cap_billions": 3555.500032,
+      "mcap_pass": true,
+      "momentum_score": 100,
+      "momentum_notes": [
+        "跳空缺口",
+        "ATH",
+        "族群同步",
+        "QQQ+1.9%"
+      ],
+      "tier": "⭐⭐⭐",
+      "next_day_prob": "≥85%"
+    }
+  ]
 }

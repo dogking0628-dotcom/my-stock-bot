@@ -1,73 +1,6 @@
 {
   "records": [
     {
-      "date": "2026-05-19",
-      "industry": "半導體",
-      "picks": [
-        {
-          "ticker": "6285",
-          "name": "啟",
-          "industry": "通信網路",
-          "rec_close": 292.0,
-          "momentum_score": 85,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "IGV+1.2%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 75.77854671280276,
-          "change_pct_at_rec": 2.0979020979021046,
-          "vol_ratio_at_rec": 1.7627912033878008
-        },
-        {
-          "ticker": "1582",
-          "name": "信錦",
-          "industry": "電子零組件",
-          "rec_close": 117.0,
-          "momentum_score": 80,
-          "momentum_notes": [
-            "量爆價揚",
-            "ATH"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 81.09340187624043,
-          "change_pct_at_rec": 9.859154929577475,
-          "vol_ratio_at_rec": 3.889914420275065
-        },
-        {
-          "ticker": "5243",
-          "name": "乙盛-KY",
-          "industry": "光電",
-          "rec_close": 114.5,
-          "momentum_score": 80,
-          "momentum_notes": [
-            "漲停鎖死",
-            "ATH"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 70.58823277989943,
-          "change_pct_at_rec": 9.569377990430628,
-          "vol_ratio_at_rec": 0.9245933133418324
-        },
-        {
-          "ticker": "6209",
-          "name": "今國光",
-          "industry": "光電",
-          "rec_close": 71.80000305175781,
-          "momentum_score": 80,
-          "momentum_notes": [
-            "量爆價揚",
-            "ATH"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 60.504200333769944,
-          "change_pct_at_rec": 5.588239781996784,
-          "vol_ratio_at_rec": 3.2162325582766074
-        }
-      ]
-    },
-    {
       "date": "2026-05-21",
       "industry": "半導體",
       "picks": [
@@ -2009,6 +1942,92 @@
           "rsi": 71.50818698094386,
           "change_pct_at_rec": 9.883720930232553,
           "vol_ratio_at_rec": 1.4458947356162968
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "industry": "電腦及週邊",
+      "picks": [
+        {
+          "ticker": "6669",
+          "name": "緯穎",
+          "industry": "電腦及週邊",
+          "rec_close": 5500.0,
+          "momentum_score": 95,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 57.21153846153846,
+          "change_pct_at_rec": 10.000000000000009,
+          "vol_ratio_at_rec": 2.248706248756179
+        },
+        {
+          "ticker": "6414",
+          "name": "樺漢",
+          "industry": "電腦及週邊",
+          "rec_close": 490.0,
+          "momentum_score": 95,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 82.45125348189416,
+          "change_pct_at_rec": 9.988776655443331,
+          "vol_ratio_at_rec": 2.604257672037812
+        },
+        {
+          "ticker": "6166",
+          "name": "凌華",
+          "industry": "電腦及週邊",
+          "rec_close": 145.0,
+          "momentum_score": 95,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 60.35009463466056,
+          "change_pct_at_rec": 9.84848484848484,
+          "vol_ratio_at_rec": 1.6121352317874786
+        },
+        {
+          "ticker": "3231",
+          "name": "緯創",
+          "industry": "電腦及週邊",
+          "rec_close": 164.0,
+          "momentum_score": 95,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 61.60388902740519,
+          "change_pct_at_rec": 9.698996655518389,
+          "vol_ratio_at_rec": 2.695688004763278
+        },
+        {
+          "ticker": "2395",
+          "name": "研華",
+          "industry": "電腦及週邊",
+          "rec_close": 596.0,
+          "momentum_score": 95,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 74.7351339558058,
+          "change_pct_at_rec": 5.1146384479717755,
+          "vol_ratio_at_rec": 2.8586700836166496
         }
       ]
     }

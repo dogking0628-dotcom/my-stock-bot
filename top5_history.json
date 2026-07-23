@@ -1,102 +1,6 @@
 {
   "records": [
     {
-      "date": "2026-05-21",
-      "industry": "半導體",
-      "picks": [
-        {
-          "ticker": "4919",
-          "name": "新唐",
-          "industry": "半導體",
-          "rec_close": 181.5,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "族群同步",
-            "QQQ+1.7%",
-            "SMH+3.8%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 62.87878787878788,
-          "change_pct_at_rec": 10.000000000000009,
-          "vol_ratio_at_rec": 2.751698403265388
-        },
-        {
-          "ticker": "3016",
-          "name": "嘉晶",
-          "industry": "半導體",
-          "rec_close": 115.5,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "漲停鎖死",
-            "ATH",
-            "族群同步",
-            "QQQ+1.7%",
-            "SMH+3.8%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 65.2122654028743,
-          "change_pct_at_rec": 10.000000000000009,
-          "vol_ratio_at_rec": 0.21422193096077052
-        },
-        {
-          "ticker": "3532",
-          "name": "台勝科",
-          "industry": "半導體",
-          "rec_close": 226.0,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "漲停鎖死",
-            "ATH",
-            "族群同步",
-            "QQQ+1.7%",
-            "SMH+3.8%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 60.27777777777778,
-          "change_pct_at_rec": 9.97566909975669,
-          "vol_ratio_at_rec": 0.23445638073466687
-        },
-        {
-          "ticker": "7769",
-          "name": "鴻勁",
-          "industry": "半導體",
-          "rec_close": 7675.0,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "漲停鎖死",
-            "ATH",
-            "族群同步",
-            "QQQ+1.7%",
-            "SMH+3.8%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 78.91949152542372,
-          "change_pct_at_rec": 9.957020057306586,
-          "vol_ratio_at_rec": 0.2650595059065804
-        },
-        {
-          "ticker": "3189",
-          "name": "景碩",
-          "industry": "半導體",
-          "rec_close": 554.0,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "漲停鎖死",
-            "ATH",
-            "族群同步",
-            "QQQ+1.7%",
-            "SMH+3.8%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 54.33333333333332,
-          "change_pct_at_rec": 9.92063492063493,
-          "vol_ratio_at_rec": 1.0300585655088457
-        }
-      ]
-    },
-    {
       "date": "2026-06-03",
       "industry": "半導體",
       "picks": [
@@ -2028,6 +1932,42 @@
           "rsi": 74.7351339558058,
           "change_pct_at_rec": 5.1146384479717755,
           "vol_ratio_at_rec": 2.8586700836166496
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "industry": "電腦及週邊",
+      "picks": [
+        {
+          "ticker": "6166",
+          "name": "凌華",
+          "industry": "電腦及週邊",
+          "rec_close": 159.5,
+          "momentum_score": 80,
+          "momentum_notes": [
+            "量爆價揚",
+            "ATH"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 69.74134840450509,
+          "change_pct_at_rec": 10.000000000000009,
+          "vol_ratio_at_rec": 3.849119472092862
+        },
+        {
+          "ticker": "3231",
+          "name": "緯創",
+          "industry": "電腦及週邊",
+          "rec_close": 173.5,
+          "momentum_score": 80,
+          "momentum_notes": [
+            "量爆價揚",
+            "ATH"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 67.69163574473018,
+          "change_pct_at_rec": 5.792682926829262,
+          "vol_ratio_at_rec": 4.99098086902546
         }
       ]
     }

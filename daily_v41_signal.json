@@ -1,40 +1,7 @@
 {
-  "timestamp": "2026-07-26",
+  "timestamp": "2026-07-27",
   "strategy": "V4.1 (科技7族群+市值100億+美股加分+0050體制+7日黑名單)",
   "strongest_industry": "電腦及週邊",
   "v4_blocked": false,
-  "picks": [
-    {
-      "today": 166.5,
-      "monthly_max_2y": 138.265625,
-      "ratio": 1.2042038648434852,
-      "from_high_pct": 20.42038648434852,
-      "bullish": true,
-      "bullish_fast": true,
-      "change_pct": 4.3887147335423204,
-      "vol_ratio": 6.632457616233047,
-      "rsi": 76.12139815717124,
-      "ma5": 144.6,
-      "ma20": 134.92571525573732,
-      "ma60": 125.87466697692871,
-      "ma200": 81.25164545059204,
-      "gap_up": true,
-      "close_near_high": false,
-      "long_red": false,
-      "ticker": "6166",
-      "name": "凌華",
-      "industry": "電腦及週邊",
-      "industry_strong": false,
-      "market_cap_billions": 172.87286784,
-      "mcap_pass": true,
-      "momentum_score": 85,
-      "momentum_notes": [
-        "跳空缺口",
-        "ATH",
-        "IGV+1.0%"
-      ],
-      "tier": "⭐⭐⭐",
-      "next_day_prob": "≥85%"
-    }
-  ]
+  "picks": []
 }

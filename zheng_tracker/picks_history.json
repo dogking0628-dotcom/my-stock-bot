@@ -10567,6 +10567,198 @@
       "current_price": 187.0,
       "current_return": 0.0,
       "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-27",
+      "ticker": "3231.TW",
+      "name": "緯創",
+      "sector": "AI_伺服器",
+      "pick_price": 177.0,
+      "stage": "BULL_MID",
+      "reason": "AI_伺服器 強勢(+9.9) + 個股 5d+23.3% + 有 CB",
+      "cb_codes": [
+        "323110"
+      ],
+      "max_price": 177.0,
+      "current_price": 177.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-27",
+      "ticker": "6669.TW",
+      "name": "緯穎",
+      "sector": "AI_伺服器",
+      "pick_price": 5745.0,
+      "stage": "BULL_MID",
+      "reason": "AI_伺服器 強勢(+9.9) + 個股 5d+22.6% + 有 CB",
+      "cb_codes": [
+        "666905"
+      ],
+      "max_price": 5745.0,
+      "current_price": 5745.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-27",
+      "ticker": "4938.TW",
+      "name": "和碩",
+      "sector": "AI_伺服器",
+      "pick_price": 87.4,
+      "stage": "BULL_MID",
+      "reason": "AI_伺服器 強勢(+9.9) + 個股 5d+9.2% + 有 CB",
+      "cb_codes": [
+        "493806"
+      ],
+      "max_price": 87.4,
+      "current_price": 87.4,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-27",
+      "ticker": "2376.TW",
+      "name": "技嘉",
+      "sector": "AI_伺服器",
+      "pick_price": 349.5,
+      "stage": "BULL_MID",
+      "reason": "AI_伺服器 強勢(+9.9) + 個股 5d+5.6% + 有 CB",
+      "cb_codes": [
+        "237606"
+      ],
+      "max_price": 349.5,
+      "current_price": 349.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-27",
+      "ticker": "2615.TW",
+      "name": "萬海",
+      "sector": "海運_航運",
+      "pick_price": 84.0,
+      "stage": "BULL_MID",
+      "reason": "海運_航運 強勢(+6.3) + 個股 5d+4.3% + 有 CB",
+      "cb_codes": [
+        "261505"
+      ],
+      "max_price": 84.0,
+      "current_price": 84.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-27",
+      "ticker": "2609.TW",
+      "name": "陽明",
+      "sector": "海運_航運",
+      "pick_price": 51.1,
+      "stage": "BULL_MID",
+      "reason": "海運_航運 強勢(+6.3) + 個股 5d+4.3% + 有 CB",
+      "cb_codes": [
+        "260905"
+      ],
+      "max_price": 51.1,
+      "current_price": 51.1,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-27",
+      "ticker": "2603.TW",
+      "name": "長榮",
+      "sector": "海運_航運",
+      "pick_price": 203.5,
+      "stage": "BULL_MID",
+      "reason": "海運_航運 強勢(+6.3) + 個股 5d+3.8% + 有 CB",
+      "cb_codes": [
+        "260305"
+      ],
+      "max_price": 203.5,
+      "current_price": 203.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-27",
+      "ticker": "2382.TW",
+      "name": "廣達",
+      "sector": "AI_伺服器",
+      "pick_price": 322.0,
+      "stage": "BULL_MID",
+      "reason": "AI_伺服器 強勢(+9.9) + 個股 5d+1.9% + 有 CB",
+      "cb_codes": [
+        "238208"
+      ],
+      "max_price": 322.0,
+      "current_price": 322.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-27",
+      "ticker": "2618.TW",
+      "name": "長榮航",
+      "sector": "海運_航運",
+      "pick_price": 41.95,
+      "stage": "BULL_MID",
+      "reason": "海運_航運 強勢(+6.3) + 個股 5d+1.8% + 有 CB",
+      "cb_codes": [
+        "261805"
+      ],
+      "max_price": 41.95,
+      "current_price": 41.95,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-27",
+      "ticker": "6753.TW",
+      "name": "龍德造船",
+      "sector": "軍工_航太",
+      "pick_price": 138.0,
+      "stage": "BULL_MID",
+      "reason": "軍工_航太 強勢(+16.1) + 個股 5d-1.1% + 有 CB",
+      "cb_codes": [
+        "675305"
+      ],
+      "max_price": 138.0,
+      "current_price": 138.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-27",
+      "ticker": "2634.TW",
+      "name": "漢翔",
+      "sector": "軍工_航太",
+      "pick_price": 61.8,
+      "stage": "BULL_MID",
+      "reason": "軍工_航太 強勢(+16.1) + 個股 5d-4.9% + 有 CB",
+      "cb_codes": [
+        "263406"
+      ],
+      "max_price": 61.8,
+      "current_price": 61.8,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-07-27",
+      "ticker": "8033.TW",
+      "name": "雷虎",
+      "sector": "軍工_航太",
+      "pick_price": 186.0,
+      "stage": "BULL_MID",
+      "reason": "軍工_航太 強勢(+16.1) + 個股 5d-9.1% + 有 CB",
+      "cb_codes": [
+        "803307"
+      ],
+      "max_price": 186.0,
+      "current_price": 186.0,
+      "current_return": 0.0,
+      "days_held": 0
     }
   ],
   "closed_picks": []

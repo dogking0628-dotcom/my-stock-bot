@@ -1557,7 +1557,7 @@
       "ma5": 77.7000015258789,
       "ma20": 73.32204818725586,
       "ma60": 71.96738942464192,
-      "ma200": 63.88785533905029,
+      "ma200": 63.88785531997681,
       "gap_up": false,
       "close_near_high": false,
       "long_red": false,
@@ -2934,11 +2934,11 @@
   "top_industry": "金融保險",
   "market_regime": {
     "today": 93.69999694824219,
-    "ma200": 79.34369541168213,
-    "ext_pct": 18.093815094029896,
+    "ma200": 79.34369554519654,
+    "ext_pct": 18.093814895309322,
     "in_stage2": true
   },
   "v4_blocked": false,
-  "intraday_updated": "2026-07-29 07:22",
+  "intraday_updated": "2026-07-29 07:40",
   "is_intraday": true
 }

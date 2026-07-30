@@ -1,4 +1,35 @@
 {
-  "date": "2026-07-29",
-  "stocks": {}
+  "date": "2026-07-30",
+  "stocks": {
+    "8462": {
+      "name": "柏文",
+      "score": 70,
+      "close": 172.0,
+      "category": "high"
+    },
+    "2850": {
+      "name": "新產",
+      "score": 55,
+      "close": 157.0,
+      "category": "medium"
+    },
+    "2801": {
+      "name": "彰銀",
+      "score": 40,
+      "close": 24.799999237060547,
+      "category": "medium"
+    },
+    "2546": {
+      "name": "根基",
+      "score": 40,
+      "close": 98.5,
+      "category": "medium"
+    },
+    "9925": {
+      "name": "新保",
+      "score": 40,
+      "close": 40.599998474121094,
+      "category": "medium"
+    }
+  }
 }

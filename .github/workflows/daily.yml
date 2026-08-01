@@ -66,6 +66,12 @@ jobs:
           LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
         run: python sector_flow_line.py || echo "sector flow failed (non-fatal)"
 
+      - name: Run Phison Tripwire — 群聯跑道保險線 1490(收盤跌破→LINE警報)
+        env:
+          LINE_TOKEN:   ${{ secrets.LINE_TOKEN }}
+          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
+        run: python phison_tripwire.py || echo "tripwire failed (non-fatal)"
+
       - name: Commit state
         run: |
           git config user.name  "github-actions"

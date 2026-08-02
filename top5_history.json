@@ -1,42 +1,6 @@
 {
   "records": [
     {
-      "date": "2026-06-04",
-      "industry": "半導體",
-      "picks": [
-        {
-          "ticker": "3049",
-          "name": "精金",
-          "industry": "光電",
-          "rec_close": 17.0,
-          "momentum_score": 80,
-          "momentum_notes": [
-            "量爆價揚",
-            "ATH"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 86.36363045243311,
-          "change_pct_at_rec": 7.594935409993342,
-          "vol_ratio_at_rec": 3.9407693674394704
-        },
-        {
-          "ticker": "8070",
-          "name": "長華*",
-          "industry": "電子通路",
-          "rec_close": 64.19999694824219,
-          "momentum_score": 80,
-          "momentum_notes": [
-            "量爆價揚",
-            "ATH"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 89.60498762642035,
-          "change_pct_at_rec": 6.999994913736973,
-          "vol_ratio_at_rec": 3.7538323057890866
-        }
-      ]
-    },
-    {
       "date": "2026-06-08",
       "industry": "電子零組件",
       "picks": [
@@ -1899,6 +1863,104 @@
           "rsi": 76.12139815717124,
           "change_pct_at_rec": 4.3887147335423204,
           "vol_ratio_at_rec": 6.632457616233047
+        }
+      ]
+    },
+    {
+      "date": "2026-08-02",
+      "industry": "電腦及週邊",
+      "picks": [
+        {
+          "ticker": "6669",
+          "name": "緯穎",
+          "industry": "電腦及週邊",
+          "rec_close": 5390.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "QQQ+0.6%",
+            "IGV+1.4%",
+            "投信+466張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 56.55487804878049,
+          "change_pct_at_rec": 10.000000000000009,
+          "vol_ratio_at_rec": 0.8755486840831843
+        },
+        {
+          "ticker": "2357",
+          "name": "華碩",
+          "industry": "電腦及週邊",
+          "rec_close": 810.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步",
+            "QQQ+0.6%",
+            "IGV+1.4%",
+            "投信+157張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 68.79432624113475,
+          "change_pct_at_rec": 9.905020352781557,
+          "vol_ratio_at_rec": 2.1240658052248635
+        },
+        {
+          "ticker": "2059",
+          "name": "川湖",
+          "industry": "電子零組件",
+          "rec_close": 7850.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "QQQ+0.6%",
+            "投信+47張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 47.676767676767675,
+          "change_pct_at_rec": 9.943977591036424,
+          "vol_ratio_at_rec": 0.361855303093187
+        },
+        {
+          "ticker": "2330",
+          "name": "台積電",
+          "industry": "半導體",
+          "rec_close": 2425.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步",
+            "QQQ+0.6%",
+            "投信+7,064張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 49.079754601226995,
+          "change_pct_at_rec": 9.977324263038545,
+          "vol_ratio_at_rec": 1.7201592790498257
+        },
+        {
+          "ticker": "2347",
+          "name": "聯強",
+          "industry": "電子通路",
+          "rec_close": 93.69999694824219,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步",
+            "QQQ+0.6%",
+            "投信+75張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 72.400007568364,
+          "change_pct_at_rec": 8.826943796526798,
+          "vol_ratio_at_rec": 1.4540562607609842
         }
       ]
     }

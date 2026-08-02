@@ -6,7 +6,9 @@ V4.1 回測：V4 + 7 日內虧損股黑名單
 （多樣化、過熱門檻已證實會放大回撤，棄用）
 """
 import sys, os, json, datetime as dt, time, io
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', line_buffering=True)
+if not isinstance(sys.stdout, io.TextIOWrapper) or (sys.stdout.encoding or '').lower() != 'utf-8':
+    try: sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', line_buffering=True)
+    except Exception: pass
 sys.path.insert(0, os.path.dirname(__file__))
 
 import numpy as np

@@ -25,6 +25,34 @@ except Exception:
 ROOT = os.path.dirname(os.path.abspath(__file__))
 REPORT_PATH = os.path.join(ROOT, "ath_industry_report.json")
 SIGNAL_PATH = os.path.join(ROOT, "daily_v2_signal.json")
+INST_PATH = os.path.join(ROOT, "institutional_signal.json")
+
+
+def load_inst():
+    """讀法人籌碼 signal（investment trust + 主動 ETF），失敗回空"""
+    try:
+        with open(INST_PATH, encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
+def inst_tag(ticker, inst):
+    """產生單檔法人標籤字串，無資料回 None"""
+    parts = []
+    sitc = (inst.get("sitc_net") or {}).get(ticker, 0)
+    if sitc > 0:
+        parts.append(f"投信+{sitc/1000:,.0f}張")
+    e = (inst.get("etf_stock") or {}).get(ticker)
+    if e:
+        ids = "·".join(f"{k}{v:.1f}%" for k, v in sorted(e["etfs"].items()))
+        parts.append(f"ETF:{ids}")
+    for etf, c in (inst.get("etf_changes") or {}).items():
+        if any(x.get("code") == ticker for x in c.get("new", [])):
+            parts.append(f"🆕{etf}新增")
+        elif any(x.get("code") == ticker for x in c.get("added", [])):
+            parts.append(f"➕{etf}加碼")
+    return " ".join(parts) if parts else None
 
 # ── 策略參數（與 backtest_hot_money_v2.py 一致）──
 TOP_INDUSTRIES = 2
@@ -79,8 +107,9 @@ def pick_v2_from_report(report):
     return picks[:MAX_PICKS], top_inds
 
 
-def build_message(picks, top_inds, date, active_capital=450_000):
+def build_message(picks, top_inds, date, active_capital=450_000, inst=None):
     """訊息格式: 開盤掛單可執行版"""
+    inst = inst or {}
     lines = [f"📡 V2 開盤掛單 {date[5:]}", ""]
 
     if top_inds:
@@ -126,6 +155,9 @@ def build_message(picks, top_inds, date, active_capital=450_000):
         lines.append(f"   💰 {shares}股 ≈ ${actual_cost:,.0f}")
         lines.append(f"   🛑 停損 ${stop} (-7%)")
         lines.append(f"   📊 量{p['vol_ratio']:.1f}x RSI{p['rsi']:.0f} {tag}")
+        itag = inst_tag(p["ticker"], inst)
+        if itag:
+            lines.append(f"   🏦 {itag}")
         lines.append("")
 
     lines.append("━━━━━━━━━━━━━━━━━━━━")
@@ -173,7 +205,7 @@ def main():
         json.dump(signal, f, ensure_ascii=False, indent=2)
     print(f"[3/3] 已輸出 {SIGNAL_PATH}")
 
-    msg = build_message(picks, top_inds, date)
+    msg = build_message(picks, top_inds, date, inst=load_inst())
     print("\n" + "=" * 60)
     print("LINE 訊息預覽：")
     print("=" * 60)

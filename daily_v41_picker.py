@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Daily V4.1 Picker — 每日 LINE 推播（V4.1 策略，與 V2 並行）
+Daily V4.2 Picker — 每日 LINE 推播（V4.2 = V4.1 + 投信買超加分，與 V2 並行）
 ═════════════════════════════════════════════════
-V4.1 邏輯（在 industry_ath_yf.py 算好，這裡只讀 tomorrow_top5 推播）：
+V4.2 邏輯（在 industry_ath_yf.py 算好，這裡只讀 tomorrow_top5 推播）：
   ① 創 2y 月線 ATH  ② 多頭排列  ③ 科技 7 族群  ④ 市值 ≥ 100 億
   ⑤ 動能評分 ≥ 80   ⑥ 美股族群加分  ⑦ 0050 > MA200 才進場
   ⑧ 最強族群挑 5    ⑨ 7 日內虧損股黑名單
@@ -20,13 +20,53 @@ except Exception:
 ROOT = os.path.dirname(os.path.abspath(__file__))
 REPORT_PATH = os.path.join(ROOT, "ath_industry_report.json")
 SIGNAL_PATH = os.path.join(ROOT, "daily_v41_signal.json")
+INST_PATH = os.path.join(ROOT, "institutional_signal.json")
 
 ACTIVE_CAPITAL = 450_000
 MAX_PUSH = 3   # LINE 推前 3 檔（與 V2 一致，方便並行比較）
 
 
-def build_message(picks, strongest, regime, blocked, date):
-    lines = [f"🎯 V4.1 開盤掛單 {date[5:]}", ""]
+def load_inst():
+    try:
+        with open(INST_PATH, encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
+def inst_tag(ticker, inst):
+    parts = []
+    sitc = (inst.get("sitc_net") or {}).get(ticker, 0)
+    if sitc > 0:
+        parts.append(f"投信+{sitc/1000:,.0f}張")
+    e = (inst.get("etf_stock") or {}).get(ticker)
+    if e:
+        ids = "·".join(f"{k}{v:.1f}%" for k, v in sorted(e["etfs"].items()))
+        parts.append(f"ETF:{ids}")
+    for etf, c in (inst.get("etf_changes") or {}).items():
+        if any(x.get("code") == ticker for x in c.get("new", [])):
+            parts.append(f"🆕{etf}新增")
+        elif any(x.get("code") == ticker for x in c.get("added", [])):
+            parts.append(f"➕{etf}加碼")
+    return " ".join(parts) if parts else None
+
+
+def etf_changes_block(inst, max_lines=4):
+    """主動 ETF 昨日異動摘要（只列新增/剔除）"""
+    lines = []
+    for etf, c in (inst.get("etf_changes") or {}).items():
+        news = [x["name"] for x in c.get("new", [])][:3]
+        rems = [x["name"] for x in c.get("removed", [])][:3]
+        if news:
+            lines.append(f"  🆕 {etf} 新增: {'、'.join(news)}")
+        if rems:
+            lines.append(f"  ❌ {etf} 剔除: {'、'.join(rems)}")
+    return lines[:max_lines]
+
+
+def build_message(picks, strongest, regime, blocked, date, inst=None):
+    inst = inst or {}
+    lines = [f"🎯 V4.2 開盤掛單 {date[5:]}", ""]
 
     # 大盤體制
     if regime:
@@ -36,7 +76,7 @@ def build_message(picks, strongest, regime, blocked, date):
 
     if blocked:
         lines.append("")
-        lines.append("⛔ 0050 跌破 MA200 → V4.1 today 空手")
+        lines.append("⛔ 0050 跌破 MA200 → V4.2 今日空手")
         lines.append("（熊市段，嚴禁追價）")
         return "\n".join(lines)
 
@@ -45,7 +85,7 @@ def build_message(picks, strongest, regime, blocked, date):
     lines.append("")
 
     if not picks:
-        lines.append("📭 今日無 V4.1 訊號（動能<80 或黑名單）→ 空手")
+        lines.append("📭 今日無 V4.2 訊號（動能<80 或黑名單）→ 空手")
         return "\n".join(lines)
 
     n = min(len(picks), MAX_PUSH)
@@ -70,6 +110,15 @@ def build_message(picks, strongest, regime, blocked, date):
         lines.append(f"   🛑 停損 跌破20MA ${ma20:.1f}")
         lines.append(f"   📊 量{p.get('vol_ratio',0):.1f}x RSI{p.get('rsi',0):.0f}"
                      f" {notes}")
+        itag = inst_tag(p["ticker"], inst)
+        if itag:
+            lines.append(f"   🏦 {itag}")
+        lines.append("")
+
+    chg_lines = etf_changes_block(inst)
+    if chg_lines:
+        lines.append("🏦 主動ETF昨日異動:")
+        lines.extend(chg_lines)
         lines.append("")
 
     lines.append("━━━━━━━━━━━━━━━━━━━━")
@@ -94,13 +143,13 @@ def main():
     regime = report.get("market_regime")
     blocked = report.get("v4_blocked", False)
 
-    print(f"[V4.1] 載入 ath_industry_report ({date})")
+    print(f"[V4.2] 載入 ath_industry_report ({date})")
     print(f"       tomorrow_top5: {len(picks)} 檔 / 最強族群: {strongest}")
     print(f"       0050 體制: {'空手' if blocked else '可進場'}")
 
     signal = {
         "timestamp": date,
-        "strategy": "V4.1 (科技7族群+市值100億+美股加分+0050體制+7日黑名單)",
+        "strategy": "V4.2 (V4.1 + 投信買超+10分 + 主動ETF標籤)",
         "strongest_industry": strongest,
         "v4_blocked": blocked,
         "picks": picks[:MAX_PUSH],
@@ -108,7 +157,7 @@ def main():
     with open(SIGNAL_PATH, "w", encoding="utf-8") as f:
         json.dump(signal, f, ensure_ascii=False, indent=2)
 
-    msg = build_message(picks, strongest, regime, blocked, date)
+    msg = build_message(picks, strongest, regime, blocked, date, inst=load_inst())
     print("\n" + "=" * 60)
     print("LINE 訊息預覽：")
     print("=" * 60)

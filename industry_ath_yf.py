@@ -331,6 +331,17 @@ def main():
     recent_losers = get_recent_losers()  # 🆕 V4.1: 7 日內虧損股黑名單
     score_threshold = SCORE_THRESHOLD  # 固定門檻 80（過熱動態提升棄用，5y 從未觸發）
 
+    # 🆕 V4.2: 投信買超加分（讀 institutional_tracker.py 產的 signal）
+    sitc_net = {}
+    try:
+        inst_path = os.path.join(os.path.dirname(__file__), "institutional_signal.json")
+        if os.path.exists(inst_path):
+            with open(inst_path, encoding="utf-8") as f:
+                sitc_net = json.load(f).get("sitc_net", {})
+            print(f"  [V4.2] 投信買賣超 {len(sitc_net)} 檔載入", file=sys.stderr)
+    except Exception as e:
+        print(f"  [V4.2] institutional_signal 載入失敗: {e}", file=sys.stderr)
+
     # 對 ATH 股算動能確認分數（含 V3 美股加分 + 市值標記）
     for r in exact:
         ind = r.get("industry") or "未分類"
@@ -346,6 +357,12 @@ def main():
             us_b, us_notes = us_bonus_for(ind, us_chg)
             score = min(score + us_b, 100)
             notes = notes + us_notes
+        # V4.2: 投信買超 → +10 分
+        sitc = sitc_net.get(r["ticker"], 0)
+        r["sitc_net_shares"] = sitc
+        if sitc > 0:
+            score = min(score + 10, 100)
+            notes = notes + [f"投信+{sitc/1000:,.0f}張"]
         r["momentum_score"] = score
         r["momentum_notes"] = notes
         if score >= 80:

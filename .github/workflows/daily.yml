@@ -27,7 +27,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      # ── V2 + V4.2 並行推播（2026-08-01 起加入法人籌碼層）──
+      # ── V2 + V4.3 並行推播（2026-08-03 起 V4.3 = V4.2 + 硬停損-7%）──
       - name: Run Institutional Tracker — T86 投信買超 + 3 檔主動 ETF 持股（最先跑）
         run: python institutional_tracker.py || echo "institutional tracker failed (non-fatal)"
 
@@ -49,7 +49,7 @@ jobs:
           LINE_USER_ID:         ${{ secrets.LINE_USER_ID }}
         run: python daily_v2_picker.py || echo "daily v2 picker failed (non-fatal)"
 
-      - name: Run Daily V4.2 Picker — LINE 推播（V4.2 = V4.1+投信加分，與 V2 並行）
+      - name: Run Daily V4.3 Picker — LINE 推播（V4.3 = 投信加分+硬停損-7%，與 V2 並行）
         env:
           LINE_TOKEN:           ${{ secrets.LINE_TOKEN }}
           LINE_USER_ID:         ${{ secrets.LINE_USER_ID }}

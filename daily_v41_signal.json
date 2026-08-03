@@ -1,6 +1,6 @@
 {
   "timestamp": "2026-08-02",
-  "strategy": "V4.2 (V4.1 + 投信買超+10分 + 主動ETF標籤)",
+  "strategy": "V4.3 (V4.2 + 硬停損-7%樓地板; 2y回測 +107.6%/CAGR 28.4%/PF 3.94/MDD -14%)",
   "strongest_industry": "電腦及週邊",
   "v4_blocked": false,
   "picks": [

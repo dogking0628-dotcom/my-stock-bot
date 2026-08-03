@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Daily V4.2 Picker — 每日 LINE 推播（V4.2 = V4.1 + 投信買超加分，與 V2 並行）
+Daily V4.3 Picker — 每日 LINE 推播（V4.3 = V4.2 + 硬停損-7%樓地板，與 V2 並行）
 ═════════════════════════════════════════════════
-V4.2 邏輯（在 industry_ath_yf.py 算好，這裡只讀 tomorrow_top5 推播）：
+V4.3 邏輯（在 industry_ath_yf.py 算好，這裡只讀 tomorrow_top5 推播）：
   ① 創 2y 月線 ATH  ② 多頭排列  ③ 科技 7 族群  ④ 市值 ≥ 100 億
   ⑤ 動能評分 ≥ 80   ⑥ 美股族群加分  ⑦ 0050 > MA200 才進場
   ⑧ 最強族群挑 5    ⑨ 7 日內虧損股黑名單
-出場：跌破 20MA / 從峰值 -30%
+出場：跌破 20MA 或 進場價-7%（先到先出）/ 從峰值 -30%
 
 每日 cron（接在 industry_ath_yf.py 之後，與 daily_v2_picker.py 並行）
 """
@@ -66,7 +66,7 @@ def etf_changes_block(inst, max_lines=4):
 
 def build_message(picks, strongest, regime, blocked, date, inst=None):
     inst = inst or {}
-    lines = [f"🎯 V4.2 開盤掛單 {date[5:]}", ""]
+    lines = [f"🎯 V4.3 開盤掛單 {date[5:]}", ""]
 
     # 大盤體制
     if regime:
@@ -76,7 +76,7 @@ def build_message(picks, strongest, regime, blocked, date, inst=None):
 
     if blocked:
         lines.append("")
-        lines.append("⛔ 0050 跌破 MA200 → V4.2 今日空手")
+        lines.append("⛔ 0050 跌破 MA200 → V4.3 今日空手")
         lines.append("（熊市段，嚴禁追價）")
         return "\n".join(lines)
 
@@ -85,7 +85,7 @@ def build_message(picks, strongest, regime, blocked, date, inst=None):
     lines.append("")
 
     if not picks:
-        lines.append("📭 今日無 V4.2 訊號（動能<80 或黑名單）→ 空手")
+        lines.append("📭 今日無 V4.3 訊號（動能<80 或黑名單）→ 空手")
         return "\n".join(lines)
 
     n = min(len(picks), MAX_PUSH)
@@ -97,6 +97,9 @@ def build_message(picks, strongest, regime, blocked, date, inst=None):
         limit_low = round(price * 1.008, 1)
         limit_high = round(price * 1.02, 1)
         ma20 = p.get("ma20", price * 0.95)
+        floor = round(limit_low * 0.93, 1)          # V4.3 硬停損 -7%
+        stop_eff = max(ma20, floor)
+        which = "20MA" if ma20 >= floor else "-7%樓地板"
         shares = int(per / limit_low / 1000) * 1000
         if shares < 1000:
             shares = 1000
@@ -107,7 +110,7 @@ def build_message(picks, strongest, regime, blocked, date, inst=None):
                      f" {p.get('next_day_prob','')}")
         lines.append(f"   📍 限價 ${limit_low}-${limit_high}")
         lines.append(f"   💰 {shares}股 ≈ ${cost:,.0f}")
-        lines.append(f"   🛑 停損 跌破20MA ${ma20:.1f}")
+        lines.append(f"   🛑 停損 ${stop_eff:.1f} ({which}; 20MA ${ma20:.1f} / -7% ${floor})")
         lines.append(f"   📊 量{p.get('vol_ratio',0):.1f}x RSI{p.get('rsi',0):.0f}"
                      f" {notes}")
         itag = inst_tag(p["ticker"], inst)
@@ -126,7 +129,7 @@ def build_message(picks, strongest, regime, blocked, date, inst=None):
     lines.append("  9:00前掛限價低點")
     lines.append("  9:05沒成交→改限價高點")
     lines.append("  9:10仍無→放棄")
-    lines.append("  出場: 跌破20MA 隔日開盤賣")
+    lines.append("  出場: 收盤跌破20MA 或 進場-7% → 隔日開盤賣")
     return "\n".join(lines)
 
 
@@ -143,13 +146,13 @@ def main():
     regime = report.get("market_regime")
     blocked = report.get("v4_blocked", False)
 
-    print(f"[V4.2] 載入 ath_industry_report ({date})")
+    print(f"[V4.3] 載入 ath_industry_report ({date})")
     print(f"       tomorrow_top5: {len(picks)} 檔 / 最強族群: {strongest}")
     print(f"       0050 體制: {'空手' if blocked else '可進場'}")
 
     signal = {
         "timestamp": date,
-        "strategy": "V4.2 (V4.1 + 投信買超+10分 + 主動ETF標籤)",
+        "strategy": "V4.3 (V4.2 + 硬停損-7%樓地板; 2y回測 +107.6%/CAGR 28.4%/PF 3.94/MDD -14%)",
         "strongest_industry": strongest,
         "v4_blocked": blocked,
         "picks": picks[:MAX_PUSH],

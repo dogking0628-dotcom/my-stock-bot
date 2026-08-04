@@ -1,35 +1,4 @@
 {
-  "date": "2026-08-03",
-  "stocks": {
-    "6214": {
-      "name": "精誠",
-      "score": 72,
-      "close": 154.0,
-      "category": "high"
-    },
-    "2883": {
-      "name": "凱基金",
-      "score": 40,
-      "close": 30.850000381469727,
-      "category": "medium"
-    },
-    "2801": {
-      "name": "彰銀",
-      "score": 40,
-      "close": 25.200000762939453,
-      "category": "medium"
-    },
-    "2834": {
-      "name": "臺企銀",
-      "score": 40,
-      "close": 18.200000762939453,
-      "category": "medium"
-    },
-    "2546": {
-      "name": "根基",
-      "score": 35,
-      "close": 101.5,
-      "category": "medium"
-    }
-  }
+  "date": "2026-08-04",
+  "stocks": {}
 }

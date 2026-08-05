@@ -124,6 +124,14 @@ def build_message(picks, strongest, regime, blocked, date, inst=None):
         lines.extend(chg_lines)
         lines.append("")
 
+    try:
+        from market_thermometer import build_block as _thermo
+        tb = _thermo()
+        if tb:
+            lines.append(tb)
+            lines.append("")
+    except Exception:
+        pass
     lines.append("━━━━━━━━━━━━━━━━━━━━")
     lines.append("💡 操作:")
     lines.append("  9:00前掛限價低點")

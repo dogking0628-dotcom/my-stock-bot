@@ -160,6 +160,14 @@ def build_message(picks, top_inds, date, active_capital=450_000, inst=None):
             lines.append(f"   🏦 {itag}")
         lines.append("")
 
+    try:
+        from market_thermometer import build_block as _thermo
+        tb = _thermo()
+        if tb:
+            lines.append(tb)
+            lines.append("")
+    except Exception:
+        pass
     lines.append("━━━━━━━━━━━━━━━━━━━━")
     lines.append("💡 操作:")
     lines.append("  9:00前掛限價低點")

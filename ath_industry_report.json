@@ -644,9 +644,9 @@
     },
     {
       "today": 148.0,
-      "monthly_max_2y": 139.07101440429688,
-      "ratio": 1.0642045046838118,
-      "from_high_pct": 6.420450468381178,
+      "monthly_max_2y": 139.0709991455078,
+      "ratio": 1.0642046214477103,
+      "from_high_pct": 6.420462144771033,
       "bullish": false,
       "bullish_fast": true,
       "change_pct": 5.714285714285716,
@@ -2307,9 +2307,9 @@
     },
     {
       "today": 148.0,
-      "monthly_max_2y": 139.07101440429688,
-      "ratio": 1.0642045046838118,
-      "from_high_pct": 6.420450468381178,
+      "monthly_max_2y": 139.0709991455078,
+      "ratio": 1.0642046214477103,
+      "from_high_pct": 6.420462144771033,
       "bullish": false,
       "bullish_fast": true,
       "change_pct": 5.714285714285716,
@@ -2721,9 +2721,9 @@
     },
     {
       "today": 148.0,
-      "monthly_max_2y": 139.07101440429688,
-      "ratio": 1.0642045046838118,
-      "from_high_pct": 6.420450468381178,
+      "monthly_max_2y": 139.0709991455078,
+      "ratio": 1.0642046214477103,
+      "from_high_pct": 6.420462144771033,
       "bullish": false,
       "bullish_fast": true,
       "change_pct": 5.714285714285716,
@@ -3021,6 +3021,6 @@
     "in_stage2": true
   },
   "v4_blocked": false,
-  "intraday_updated": "2026-08-05 06:37",
+  "intraday_updated": "2026-08-05 07:36",
   "is_intraday": true
 }

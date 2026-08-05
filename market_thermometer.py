@@ -21,8 +21,10 @@ if not isinstance(sys.stdout, io.TextIOWrapper) or (sys.stdout.encoding or '').l
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT_PATH = os.path.join(ROOT, "market_thermometer.json")
 
-SKY_THRESHOLD = 1.5e12      # 合計 1.5 兆天險
-OTC_RATIO = 1.18            # 合計 ≈ 上市 × 1.18（上櫃歷史占比估算）
+SKY_THRESHOLD = 1.5e12      # 集中市場(上市) 1.5 兆天險
+# 實證(2026/6): 上市≥1.5兆 3個月僅8次、全聚在6月頂部，之後加權-15%
+# → 天險用上市原始金額判定(官方數字,不估算); 合計僅供參考顯示
+OTC_RATIO = 1.18            # 合計 ≈ 上市 × 1.18（上櫃歷史占比估算,僅顯示用）
 MA_LEN = 87
 UA = {"User-Agent": "Mozilla/5.0"}
 
@@ -70,7 +72,7 @@ def main():
     print("[1/2] 上市成交金額（TWSE 官方）...")
     tdate, twse_amt = fetch_twse_turnover()
     combined = twse_amt * OTC_RATIO if twse_amt else None
-    sky = bool(combined and combined >= SKY_THRESHOLD)
+    sky = bool(twse_amt and twse_amt >= SKY_THRESHOLD)   # 以上市原始金額判定
     if twse_amt:
         print(f"  {tdate} 上市 {twse_amt/1e12:.3f} 兆"
               f" → 估合計 {combined/1e12:.3f} 兆"
@@ -134,10 +136,10 @@ def build_block(data=None):
         amt = t["twse_amount"] / 1e12
         comb = (t.get("combined_est") or 0) / 1e12
         if t.get("sky_alert"):
-            lines.append(f"  🌋 量能天險! 合計約{comb:.2f}兆(≥1.5兆)")
-            lines.append("  ⚠️ 歷史高檔訊號→不追高/分批鎖利")
+            lines.append(f"  🌋 量能天險! 上市{amt:.2f}兆(≥1.5兆)")
+            lines.append("  ⚠️ 6月實證:天險群聚後加權-15%→不追高/分批鎖利")
         else:
-            lines.append(f"  量能: 上市{amt:.2f}兆 合計約{comb:.2f}兆 (天險1.5兆)")
+            lines.append(f"  量能: 上市{amt:.2f}兆 (天險1.5兆; 合計約{comb:.2f}兆)")
     m = data.get("ma87") or {}
     twii, twoii = m.get("twii"), m.get("twoii")
     if twii and twoii:

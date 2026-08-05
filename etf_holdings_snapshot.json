@@ -1,5 +1,5 @@
 {
- "date": "2026-08-04",
+ "date": "2026-08-05",
  "etfs": {
   "00981A": {
    "2330": {
@@ -197,15 +197,30 @@
     "shares": 0.0,
     "weight": 12.61
    },
+   "0050": {
+    "name": "0050",
+    "shares": 103.8,
+    "weight": 3.13
+   },
    "00981A": {
     "name": "00981A",
-    "shares": 27.58,
-    "weight": 1.73
+    "shares": 28.46,
+    "weight": 3.19
+   },
+   "009826": {
+    "name": "009826",
+    "shares": 10.29,
+    "weight": 1.08
+   },
+   "00878": {
+    "name": "00878",
+    "shares": 33.15,
+    "weight": 1.78
    },
    "0056": {
     "name": "0056",
-    "shares": 50.6,
-    "weight": 1.57
+    "shares": 51.45,
+    "weight": 1.68
    }
   },
   "00980A": {
@@ -449,15 +464,30 @@
     "shares": 0.0,
     "weight": 11.73
    },
+   "0050": {
+    "name": "0050",
+    "shares": 103.8,
+    "weight": 3.13
+   },
    "00981A": {
     "name": "00981A",
-    "shares": 27.58,
-    "weight": 1.73
+    "shares": 28.46,
+    "weight": 3.19
+   },
+   "009826": {
+    "name": "009826",
+    "shares": 10.29,
+    "weight": 1.08
+   },
+   "00878": {
+    "name": "00878",
+    "shares": 33.15,
+    "weight": 1.78
    },
    "0056": {
     "name": "0056",
-    "shares": 50.6,
-    "weight": 1.57
+    "shares": 51.45,
+    "weight": 1.68
    }
   },
   "00982A": {
@@ -501,14 +531,14 @@
     "shares": 823.0,
     "weight": 3.34
    },
-   "3105": {
-    "name": "穩懋",
-    "shares": 4149.0,
-    "weight": 3.32
-   },
    "2383": {
     "name": "台光電",
     "shares": 328.0,
+    "weight": 3.32
+   },
+   "3105": {
+    "name": "穩懋",
+    "shares": 4149.0,
     "weight": 3.32
    },
    "2303": {
@@ -546,14 +576,14 @@
     "shares": 2360.0,
     "weight": 2.01
    },
-   "3264": {
-    "name": "欣銓",
-    "shares": 4628.0,
-    "weight": 1.93
-   },
    "3017": {
     "name": "奇鋐",
     "shares": 407.0,
+    "weight": 1.93
+   },
+   "3264": {
+    "name": "欣銓",
+    "shares": 4628.0,
     "weight": 1.93
    },
    "3583": {
@@ -671,14 +701,14 @@
     "shares": 9.0,
     "weight": 0.28
    },
-   "2885": {
-    "name": "元大金",
-    "shares": 2107.0,
-    "weight": 0.26
-   },
    "2451": {
     "name": "創見",
     "shares": 519.0,
+    "weight": 0.26
+   },
+   "2885": {
+    "name": "元大金",
+    "shares": 2107.0,
     "weight": 0.26
    },
    "6187": {
@@ -706,57 +736,108 @@
     "shares": 0.0,
     "weight": 26.62
    },
+   "0050": {
+    "name": "0050",
+    "shares": 103.8,
+    "weight": 3.13
+   },
    "00981A": {
     "name": "00981A",
-    "shares": 27.58,
-    "weight": 1.73
+    "shares": 28.46,
+    "weight": 3.19
+   },
+   "009826": {
+    "name": "009826",
+    "shares": 10.29,
+    "weight": 1.08
+   },
+   "00878": {
+    "name": "00878",
+    "shares": 33.15,
+    "weight": 1.78
    },
    "0056": {
     "name": "0056",
-    "shares": 50.6,
-    "weight": 1.57
+    "shares": 51.45,
+    "weight": 1.68
    }
   }
  },
  "changes": {
   "00981A": {
-   "new": [],
-   "added": [],
-   "reduced": [],
-   "removed": [
+   "new": [
+    {
+     "code": "0050",
+     "name": "0050",
+     "shares": 103.8,
+     "weight": 3.13
+    },
+    {
+     "code": "009826",
+     "name": "009826",
+     "shares": 10.29,
+     "weight": 1.08
+    },
     {
      "code": "00878",
      "name": "00878",
-     "shares": 32.57,
-     "weight": 0.43
+     "shares": 33.15,
+     "weight": 1.78
     }
-   ]
+   ],
+   "added": [],
+   "reduced": [],
+   "removed": []
   },
   "00980A": {
-   "new": [],
-   "added": [],
-   "reduced": [],
-   "removed": [
+   "new": [
+    {
+     "code": "0050",
+     "name": "0050",
+     "shares": 103.8,
+     "weight": 3.13
+    },
+    {
+     "code": "009826",
+     "name": "009826",
+     "shares": 10.29,
+     "weight": 1.08
+    },
     {
      "code": "00878",
      "name": "00878",
-     "shares": 32.57,
-     "weight": 0.43
+     "shares": 33.15,
+     "weight": 1.78
     }
-   ]
+   ],
+   "added": [],
+   "reduced": [],
+   "removed": []
   },
   "00982A": {
-   "new": [],
-   "added": [],
-   "reduced": [],
-   "removed": [
+   "new": [
+    {
+     "code": "0050",
+     "name": "0050",
+     "shares": 103.8,
+     "weight": 3.13
+    },
+    {
+     "code": "009826",
+     "name": "009826",
+     "shares": 10.29,
+     "weight": 1.08
+    },
     {
      "code": "00878",
      "name": "00878",
-     "shares": 32.57,
-     "weight": 0.43
+     "shares": 33.15,
+     "weight": 1.78
     }
-   ]
+   ],
+   "added": [],
+   "reduced": [],
+   "removed": []
   }
  }
 }

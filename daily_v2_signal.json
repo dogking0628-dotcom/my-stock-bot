@@ -1,56 +1,19 @@
 {
-  "timestamp": "2026-08-04",
+  "timestamp": "2026-08-05",
   "strategy": "V2 原版 (實測 OOS PF 1.83 / 主回測 PF 1.69, 抗崩盤強·常空手)",
   "top_industries": [
     {
       "industry": "金融保險",
       "count": 27,
-      "bullish_count": 22
+      "bullish_count": 20
     },
     {
       "industry": "電腦及週邊",
-      "count": 12,
-      "bullish_count": 9
+      "count": 19,
+      "bullish_count": 14
     }
   ],
-  "picks": [
-    {
-      "today": 186.0,
-      "monthly_max_2y": 176.0,
-      "ratio": 1.0568181818181819,
-      "from_high_pct": 5.681818181818188,
-      "bullish": true,
-      "bullish_fast": true,
-      "change_pct": 5.681818181818188,
-      "vol_ratio": 1.757322284932167,
-      "rsi": 72.53886010362694,
-      "ma5": 172.3,
-      "ma20": 157.52496871948242,
-      "ma60": 152.29890263875325,
-      "ma200": 139.66355407714843,
-      "gap_up": false,
-      "close_near_high": true,
-      "long_red": true,
-      "ticker": "3231",
-      "name": "緯創",
-      "industry": "電腦及週邊",
-      "industry_strong": true,
-      "market_cap_billions": 4659.30354688,
-      "mcap_pass": true,
-      "sitc_net_shares": 5570000,
-      "momentum_score": 75,
-      "momentum_notes": [
-        "ATH",
-        "族群同步",
-        "QQQ+3.4%",
-        "IGV+4.7%",
-        "投信+5,570張"
-      ],
-      "tier": "⭐⭐",
-      "next_day_prob": "70-85%",
-      "_score": 101.48
-    }
-  ],
+  "picks": [],
   "params": {
     "top_industries": 2,
     "vol_ratio_min": 1.5,

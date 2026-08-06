@@ -856,9 +856,9 @@
     },
     {
       "today": 144.5,
-      "monthly_max_2y": 139.0709991455078,
-      "ratio": 1.0390376202648253,
-      "from_high_pct": 3.903762026482527,
+      "monthly_max_2y": 139.07101440429688,
+      "ratio": 1.039037506262235,
+      "from_high_pct": 3.903750626223501,
       "bullish": false,
       "bullish_fast": true,
       "change_pct": -2.3648648648648685,
@@ -2774,9 +2774,9 @@
     },
     {
       "today": 144.5,
-      "monthly_max_2y": 139.0709991455078,
-      "ratio": 1.0390376202648253,
-      "from_high_pct": 3.903762026482527,
+      "monthly_max_2y": 139.07101440429688,
+      "ratio": 1.039037506262235,
+      "from_high_pct": 3.903750626223501,
       "bullish": false,
       "bullish_fast": true,
       "change_pct": -2.3648648648648685,
@@ -3061,11 +3061,11 @@
   "top_industry": "金融保險",
   "market_regime": {
     "today": 103.30000305175781,
-    "ma200": 80.619784450531,
-    "ext_pct": 28.132323542918414,
+    "ma200": 80.6197843170166,
+    "ext_pct": 28.132323755118314,
     "in_stage2": true
   },
   "v4_blocked": false,
-  "intraday_updated": "2026-08-06 07:17",
+  "intraday_updated": "2026-08-06 07:37",
   "is_intraday": true
 }

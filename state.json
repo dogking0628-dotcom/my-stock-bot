@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-08-10",
+  "last_run": "2026-08-11",
   "cash": 19521.346362568816,
   "positions": [
     {
@@ -55,7 +55,7 @@
       "ticker": "STT",
       "entry_date": "2026-07-07",
       "entry_price": 179.94,
-      "peak_price": 187.0500030517578,
+      "peak_price": 187.22000122070312,
       "shares": 38.505809
     },
     {
@@ -69,7 +69,7 @@
       "ticker": "CRL",
       "entry_date": "2026-08-05",
       "entry_price": 260.72,
-      "peak_price": 277.0,
+      "peak_price": 282.0,
       "shares": 26.347769
     }
   ],

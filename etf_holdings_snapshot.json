@@ -1,5 +1,5 @@
 {
- "date": "2026-08-10",
+ "date": "2026-08-11",
  "etfs": {
   "00981A": {
    "2330": {
@@ -199,28 +199,23 @@
    },
    "0050": {
     "name": "0050",
-    "shares": 104.25,
-    "weight": 1.36
+    "shares": 104.6,
+    "weight": 0.34
    },
    "00981A": {
     "name": "00981A",
-    "shares": 28.53,
-    "weight": 1.78
+    "shares": 28.73,
+    "weight": 0.7
+   },
+   "009816": {
+    "name": "009816",
+    "shares": 15.16,
+    "weight": 0.26
    },
    "00878": {
     "name": "00878",
-    "shares": 33.4,
-    "weight": 1.8
-   },
-   "0056": {
-    "name": "0056",
-    "shares": 52.45,
-    "weight": 2.74
-   },
-   "00919": {
-    "name": "00919",
-    "shares": 30.03,
-    "weight": 0.98
+    "shares": 33.47,
+    "weight": 0.21
    }
   },
   "00980A": {
@@ -466,28 +461,23 @@
    },
    "0050": {
     "name": "0050",
-    "shares": 104.25,
-    "weight": 1.36
+    "shares": 104.6,
+    "weight": 0.34
    },
    "00981A": {
     "name": "00981A",
-    "shares": 28.53,
-    "weight": 1.78
+    "shares": 28.73,
+    "weight": 0.7
+   },
+   "009816": {
+    "name": "009816",
+    "shares": 15.16,
+    "weight": 0.26
    },
    "00878": {
     "name": "00878",
-    "shares": 33.4,
-    "weight": 1.8
-   },
-   "0056": {
-    "name": "0056",
-    "shares": 52.45,
-    "weight": 2.74
-   },
-   "00919": {
-    "name": "00919",
-    "shares": 30.03,
-    "weight": 0.98
+    "shares": 33.47,
+    "weight": 0.21
    }
   },
   "00982A": {
@@ -531,14 +521,14 @@
     "shares": 823.0,
     "weight": 3.34
    },
-   "3105": {
-    "name": "穩懋",
-    "shares": 4149.0,
-    "weight": 3.32
-   },
    "2383": {
     "name": "台光電",
     "shares": 328.0,
+    "weight": 3.32
+   },
+   "3105": {
+    "name": "穩懋",
+    "shares": 4149.0,
     "weight": 3.32
    },
    "2303": {
@@ -738,28 +728,23 @@
    },
    "0050": {
     "name": "0050",
-    "shares": 104.25,
-    "weight": 1.36
+    "shares": 104.6,
+    "weight": 0.34
    },
    "00981A": {
     "name": "00981A",
-    "shares": 28.53,
-    "weight": 1.78
+    "shares": 28.73,
+    "weight": 0.7
+   },
+   "009816": {
+    "name": "009816",
+    "shares": 15.16,
+    "weight": 0.26
    },
    "00878": {
     "name": "00878",
-    "shares": 33.4,
-    "weight": 1.8
-   },
-   "0056": {
-    "name": "0056",
-    "shares": 52.45,
-    "weight": 2.74
-   },
-   "00919": {
-    "name": "00919",
-    "shares": 30.03,
-    "weight": 0.98
+    "shares": 33.47,
+    "weight": 0.21
    }
   }
  },
@@ -767,95 +752,80 @@
   "00981A": {
    "new": [
     {
-     "code": "0050",
-     "name": "0050",
-     "shares": 104.25,
-     "weight": 1.36
-    },
-    {
-     "code": "00981A",
-     "name": "00981A",
-     "shares": 28.53,
-     "weight": 1.78
-    },
-    {
-     "code": "00878",
-     "name": "00878",
-     "shares": 33.4,
-     "weight": 1.8
-    },
+     "code": "009816",
+     "name": "009816",
+     "shares": 15.16,
+     "weight": 0.26
+    }
+   ],
+   "added": [],
+   "reduced": [],
+   "removed": [
     {
      "code": "0056",
      "name": "0056",
      "shares": 52.45,
      "weight": 2.74
+    },
+    {
+     "code": "00919",
+     "name": "00919",
+     "shares": 30.03,
+     "weight": 0.98
     }
-   ],
-   "added": [],
-   "reduced": [],
-   "removed": []
+   ]
   },
   "00980A": {
    "new": [
     {
-     "code": "0050",
-     "name": "0050",
-     "shares": 104.25,
-     "weight": 1.36
-    },
-    {
-     "code": "00981A",
-     "name": "00981A",
-     "shares": 28.53,
-     "weight": 1.78
-    },
-    {
-     "code": "00878",
-     "name": "00878",
-     "shares": 33.4,
-     "weight": 1.8
-    },
+     "code": "009816",
+     "name": "009816",
+     "shares": 15.16,
+     "weight": 0.26
+    }
+   ],
+   "added": [],
+   "reduced": [],
+   "removed": [
     {
      "code": "0056",
      "name": "0056",
      "shares": 52.45,
      "weight": 2.74
+    },
+    {
+     "code": "00919",
+     "name": "00919",
+     "shares": 30.03,
+     "weight": 0.98
     }
-   ],
-   "added": [],
-   "reduced": [],
-   "removed": []
+   ]
   },
   "00982A": {
    "new": [
     {
-     "code": "0050",
-     "name": "0050",
-     "shares": 104.25,
-     "weight": 1.36
-    },
-    {
-     "code": "00981A",
-     "name": "00981A",
-     "shares": 28.53,
-     "weight": 1.78
-    },
-    {
-     "code": "00878",
-     "name": "00878",
-     "shares": 33.4,
-     "weight": 1.8
-    },
+     "code": "009816",
+     "name": "009816",
+     "shares": 15.16,
+     "weight": 0.26
+    }
+   ],
+   "added": [],
+   "reduced": [],
+   "removed": [
     {
      "code": "0056",
      "name": "0056",
      "shares": 52.45,
      "weight": 2.74
+    },
+    {
+     "code": "00919",
+     "name": "00919",
+     "shares": 30.03,
+     "weight": 0.98
     }
-   ],
-   "added": [],
-   "reduced": [],
-   "removed": []
+   ]
   }
  }
 }

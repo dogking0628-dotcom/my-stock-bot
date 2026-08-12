@@ -1,4 +1,35 @@
 {
-  "date": "2026-08-11",
-  "stocks": {}
+  "date": "2026-08-12",
+  "stocks": {
+    "3229": {
+      "name": "晟鈦",
+      "score": 80,
+      "close": 55.900001525878906,
+      "category": "high"
+    },
+    "5515": {
+      "name": "建國",
+      "score": 72,
+      "close": 45.900001525878906,
+      "category": "high"
+    },
+    "8462": {
+      "name": "柏文",
+      "score": 64,
+      "close": 179.0,
+      "category": "high"
+    },
+    "2395": {
+      "name": "研華",
+      "score": 45,
+      "close": 686.0,
+      "category": "medium"
+    },
+    "2546": {
+      "name": "根基",
+      "score": 30,
+      "close": 99.5999984741211,
+      "category": "medium"
+    }
+  }
 }

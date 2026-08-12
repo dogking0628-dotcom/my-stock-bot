@@ -1,21 +1,16 @@
 {
- "date": "2026-08-11",
+ "date": "2026-08-12",
  "turnover": {
-  "twse_date_roc": "115/08/11",
-  "twse_amount": 902052207533.0,
-  "combined_est": 1064421604888.94,
+  "twse_date_roc": "115/08/12",
+  "twse_amount": 892659784922.0,
+  "combined_est": 1053338546207.96,
   "sky_alert": false,
   "threshold": 1500000000000.0,
   "note": "合計=上市×1.18 估算(TPEX API 擋外部連線)"
  },
  "ma87": {
   "twii": null,
-  "twoii": {
-   "close": 378.44000244140625,
-   "ma87": 393.29206900761045,
-   "above": false,
-   "gap_pct": -3.77634530075327
-  },
+  "twoii": null,
   "strength": null
  }
 }

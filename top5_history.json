@@ -1,97 +1,6 @@
 {
   "records": [
     {
-      "date": "2026-06-21",
-      "industry": "電子零組件",
-      "picks": [
-        {
-          "ticker": "2472",
-          "name": "立隆電",
-          "industry": "電子零組件",
-          "rec_close": 402.0,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "族群同步",
-            "QQQ+2.5%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 54.92063492063493,
-          "change_pct_at_rec": 9.986320109439117,
-          "vol_ratio_at_rec": 1.9084133296632504
-        },
-        {
-          "ticker": "3090",
-          "name": "日電貿",
-          "industry": "電子零組件",
-          "rec_close": 332.5,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "族群同步",
-            "QQQ+2.5%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 74.12587412587413,
-          "change_pct_at_rec": 9.917355371900815,
-          "vol_ratio_at_rec": 2.042847901515162
-        },
-        {
-          "ticker": "2316",
-          "name": "楠梓電",
-          "industry": "電子零組件",
-          "rec_close": 205.5,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "漲停鎖死",
-            "ATH",
-            "族群同步",
-            "QQQ+2.5%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 68.68686868686868,
-          "change_pct_at_rec": 9.89304812834224,
-          "vol_ratio_at_rec": 0.771132811253345
-        },
-        {
-          "ticker": "2493",
-          "name": "揚博",
-          "industry": "電子零組件",
-          "rec_close": 273.5,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "漲停鎖死",
-            "ATH",
-            "族群同步",
-            "QQQ+2.5%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 83.48082595870207,
-          "change_pct_at_rec": 9.839357429718865,
-          "vol_ratio_at_rec": 0.38470856054106906
-        },
-        {
-          "ticker": "2327",
-          "name": "國巨*",
-          "industry": "電子零組件",
-          "rec_close": 1080.0,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "族群同步",
-            "QQQ+2.5%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 78.869149252818,
-          "change_pct_at_rec": 9.756097560975618,
-          "vol_ratio_at_rec": 1.8444635934599947
-        }
-      ]
-    },
-    {
       "date": "2026-06-22",
       "industry": "半導體",
       "picks": [
@@ -1805,6 +1714,103 @@
           "rsi": 65.86666547309052,
           "change_pct_at_rec": 8.225106437896024,
           "vol_ratio_at_rec": 1.8862269754797312
+        }
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "industry": "電腦及週邊",
+      "picks": [
+        {
+          "ticker": "7711",
+          "name": "永擎",
+          "industry": "電腦及週邊",
+          "rec_close": 447.5,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "量爆價揚",
+            "ATH",
+            "族群同步",
+            "QQQ+1.2%",
+            "IGV+3.1%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 84.13461538461539,
+          "change_pct_at_rec": 9.950859950859957,
+          "vol_ratio_at_rec": 3.292957645646395
+        },
+        {
+          "ticker": "2324",
+          "name": "仁寶",
+          "industry": "電腦及週邊",
+          "rec_close": 39.900001525878906,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "量爆價揚",
+            "ATH",
+            "族群同步",
+            "QQQ+1.2%",
+            "IGV+3.1%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 62.65061163859825,
+          "change_pct_at_rec": 9.917361885624864,
+          "vol_ratio_at_rec": 3.310927416151264
+        },
+        {
+          "ticker": "6213",
+          "name": "聯茂",
+          "industry": "電子零組件",
+          "rec_close": 464.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步",
+            "QQQ+1.2%",
+            "投信+2張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 68.34094368340944,
+          "change_pct_at_rec": 2.6548672566371723,
+          "vol_ratio_at_rec": 0.34837175784351326
+        },
+        {
+          "ticker": "8046",
+          "name": "南電",
+          "industry": "電子零組件",
+          "rec_close": 1265.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步",
+            "QQQ+1.2%",
+            "投信+703張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 52.009184845005734,
+          "change_pct_at_rec": 10.000000000000009,
+          "vol_ratio_at_rec": 1.5789679622100228
+        },
+        {
+          "ticker": "3443",
+          "name": "創意",
+          "industry": "半導體",
+          "rec_close": 5130.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步",
+            "QQQ+1.2%",
+            "SMH+0.7%",
+            "投信+151張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 62.37623762376238,
+          "change_pct_at_rec": 3.5317860746720386,
+          "vol_ratio_at_rec": 1.4567528808985775
         }
       ]
     }

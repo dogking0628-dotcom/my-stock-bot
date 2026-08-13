@@ -1,19 +1,56 @@
 {
-  "timestamp": "2026-08-12",
+  "timestamp": "2026-08-13",
   "strategy": "V2 原版 (實測 OOS PF 1.83 / 主回測 PF 1.69, 抗崩盤強·常空手)",
   "top_industries": [
     {
       "industry": "電腦及週邊",
       "count": 21,
-      "bullish_count": 16
+      "bullish_count": 15
     },
     {
       "industry": "金融保險",
-      "count": 22,
-      "bullish_count": 14
+      "count": 24,
+      "bullish_count": 13
     }
   ],
-  "picks": [],
+  "picks": [
+    {
+      "today": 375.5,
+      "monthly_max_2y": 356.80535888671875,
+      "ratio": 1.052394507671104,
+      "from_high_pct": 5.23945076711041,
+      "bullish": true,
+      "bullish_fast": true,
+      "change_pct": 7.132667617689026,
+      "vol_ratio": 2.184253867499705,
+      "rsi": 66.31925384703295,
+      "ma5": 352.7,
+      "ma20": 333.0893020629883,
+      "ma60": 331.59815419514973,
+      "ma200": 270.9292378997803,
+      "gap_up": false,
+      "close_near_high": true,
+      "long_red": true,
+      "ticker": "2376",
+      "name": "技嘉",
+      "industry": "電腦及週邊",
+      "industry_strong": true,
+      "market_cap_billions": 2016.36560896,
+      "mcap_pass": true,
+      "sitc_net_shares": 90093,
+      "momentum_score": 75,
+      "momentum_notes": [
+        "ATH",
+        "族群同步",
+        "QQQ+1.2%",
+        "IGV+3.1%",
+        "投信+90張"
+      ],
+      "tier": "⭐⭐",
+      "next_day_prob": "70-85%",
+      "_score": 102.43
+    }
+  ],
   "params": {
     "top_industries": 2,
     "vol_ratio_min": 1.5,

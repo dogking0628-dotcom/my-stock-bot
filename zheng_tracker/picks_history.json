@@ -12769,6 +12769,150 @@
       "current_price": 6025.0,
       "current_return": 0.0,
       "days_held": 0
+    },
+    {
+      "pick_date": "2026-08-14",
+      "ticker": "3017.TW",
+      "name": "奇鋐",
+      "sector": "AI_散熱電源",
+      "pick_price": 3235.0,
+      "stage": "BULL_MID",
+      "reason": "AI_散熱電源 強勢(+27.7) + 個股 5d+16.2% + 有 CB",
+      "cb_codes": [
+        "301708"
+      ],
+      "max_price": 3235.0,
+      "current_price": 3235.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-08-14",
+      "ticker": "2376.TW",
+      "name": "技嘉",
+      "sector": "AI_伺服器",
+      "pick_price": 397.5,
+      "stage": "BULL_MID",
+      "reason": "AI_伺服器 強勢(+24.2) + 個股 5d+15.6% + 有 CB",
+      "cb_codes": [
+        "237606"
+      ],
+      "max_price": 397.5,
+      "current_price": 397.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-08-14",
+      "ticker": "2308.TW",
+      "name": "台達電",
+      "sector": "AI_散熱電源",
+      "pick_price": 1885.0,
+      "stage": "BULL_MID",
+      "reason": "AI_散熱電源 強勢(+27.7) + 個股 5d+14.2% + 有 CB",
+      "cb_codes": [
+        "230806"
+      ],
+      "max_price": 1885.0,
+      "current_price": 1885.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-08-14",
+      "ticker": "2059.TW",
+      "name": "川湖",
+      "sector": "機構_散熱",
+      "pick_price": 12500.0,
+      "stage": "BULL_MID",
+      "reason": "機構_散熱 強勢(+36.7) + 個股 5d+12.5% + 有 CB",
+      "cb_codes": [
+        "205905"
+      ],
+      "max_price": 12500.0,
+      "current_price": 12500.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-08-14",
+      "ticker": "2382.TW",
+      "name": "廣達",
+      "sector": "AI_伺服器",
+      "pick_price": 327.5,
+      "stage": "BULL_MID",
+      "reason": "AI_伺服器 強勢(+24.2) + 個股 5d+9.9% + 有 CB",
+      "cb_codes": [
+        "238208"
+      ],
+      "max_price": 327.5,
+      "current_price": 327.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-08-14",
+      "ticker": "4938.TW",
+      "name": "和碩",
+      "sector": "AI_伺服器",
+      "pick_price": 94.8,
+      "stage": "BULL_MID",
+      "reason": "AI_伺服器 強勢(+24.2) + 個股 5d+8.8% + 有 CB",
+      "cb_codes": [
+        "493806"
+      ],
+      "max_price": 94.8,
+      "current_price": 94.8,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-08-14",
+      "ticker": "6669.TW",
+      "name": "緯穎",
+      "sector": "AI_伺服器",
+      "pick_price": 6435.0,
+      "stage": "BULL_MID",
+      "reason": "AI_伺服器 強勢(+24.2) + 個股 5d+5.5% + 有 CB",
+      "cb_codes": [
+        "666905"
+      ],
+      "max_price": 6435.0,
+      "current_price": 6435.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-08-14",
+      "ticker": "3231.TW",
+      "name": "緯創",
+      "sector": "AI_伺服器",
+      "pick_price": 193.5,
+      "stage": "BULL_MID",
+      "reason": "AI_伺服器 強勢(+24.2) + 個股 5d+5.5% + 有 CB",
+      "cb_codes": [
+        "323110"
+      ],
+      "max_price": 193.5,
+      "current_price": 193.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-08-14",
+      "ticker": "2421.TW",
+      "name": "建準",
+      "sector": "機構_散熱",
+      "pick_price": 146.0,
+      "stage": "BULL_MID",
+      "reason": "機構_散熱 強勢(+36.7) + 個股 5d-3.6% + 有 CB",
+      "cb_codes": [
+        "242106"
+      ],
+      "max_price": 146.0,
+      "current_price": 146.0,
+      "current_return": 0.0,
+      "days_held": 0
     }
   ],
   "closed_picks": []

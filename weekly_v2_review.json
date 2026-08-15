@@ -1,82 +1,28 @@
 {
-  "period": "2026-08-01 ~ 2026-08-08",
-  "total_picks": 4,
+  "period": "2026-08-08 ~ 2026-08-15",
+  "total_picks": 1,
   "wins": 1,
-  "avg_return": -1.5850000000000002,
+  "avg_return": 1.92,
   "picks": [
     {
-      "ticker": "2357",
-      "actual_entry": 790.0,
-      "current": 817.0,
-      "ret_pct": 3.42,
-      "peak_pct": 8.73,
-      "low_pct": -1.14,
+      "ticker": "2376",
+      "actual_entry": 390.0,
+      "current": 397.5,
+      "ret_pct": 1.92,
+      "peak_pct": 3.08,
+      "low_pct": -0.9,
       "status": "持有中",
       "triggered": null,
-      "days_held": 5,
-      "signal_date": "2026-08-02",
-      "name": "華碩",
+      "days_held": 1,
+      "signal_date": "2026-08-13",
+      "name": "技嘉",
       "industry": "電腦及週邊",
-      "system_entry": 810.0
-    },
-    {
-      "ticker": "2832",
-      "actual_entry": 59.400001525878906,
-      "current": 58.599998474121094,
-      "ret_pct": -1.35,
-      "peak_pct": 1.68,
-      "low_pct": -2.86,
-      "status": "持有中",
-      "triggered": null,
-      "days_held": 5,
-      "signal_date": "2026-08-02",
-      "name": "台產",
-      "industry": "金融保險",
-      "system_entry": 59.400001525878906
-    },
-    {
-      "ticker": "2882",
-      "actual_entry": 100.5,
-      "current": 99.4000015258789,
-      "ret_pct": -1.09,
-      "peak_pct": 1.49,
-      "low_pct": -2.99,
-      "status": "持有中",
-      "triggered": null,
-      "days_held": 5,
-      "signal_date": "2026-08-02",
-      "name": "國泰金",
-      "industry": "金融保險",
-      "system_entry": 101.5
-    },
-    {
-      "ticker": "3231",
-      "actual_entry": 198.0,
-      "current": 183.5,
-      "ret_pct": -7.32,
-      "peak_pct": 2.27,
-      "low_pct": -8.84,
-      "status": "❌ 停損出場 (-7.3%)",
-      "triggered": [
-        "停損",
-        "08/07",
-        -7.32323232323232
-      ],
-      "days_held": 3,
-      "signal_date": "2026-08-04",
-      "name": "緯創",
-      "industry": "電腦及週邊",
-      "system_entry": 186.0
+      "system_entry": 375.5
     }
   ],
   "by_industry": {
     "電腦及週邊": [
-      "2357",
-      "3231"
-    ],
-    "金融保險": [
-      "2832",
-      "2882"
+      "2376"
     ]
   }
 }

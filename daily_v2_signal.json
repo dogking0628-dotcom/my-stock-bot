@@ -1,54 +1,52 @@
 {
-  "timestamp": "2026-08-13",
+  "timestamp": "2026-08-16",
   "strategy": "V2 原版 (實測 OOS PF 1.83 / 主回測 PF 1.69, 抗崩盤強·常空手)",
   "top_industries": [
     {
       "industry": "電腦及週邊",
-      "count": 21,
+      "count": 19,
       "bullish_count": 15
     },
     {
       "industry": "金融保險",
-      "count": 24,
-      "bullish_count": 13
+      "count": 21,
+      "bullish_count": 14
     }
   ],
   "picks": [
     {
-      "today": 375.5,
-      "monthly_max_2y": 356.80535888671875,
-      "ratio": 1.052394507671104,
-      "from_high_pct": 5.23945076711041,
+      "today": 37.75,
+      "monthly_max_2y": 35.95000076293945,
+      "ratio": 1.050069518744382,
+      "from_high_pct": 5.0069518744382036,
       "bullish": true,
       "bullish_fast": true,
-      "change_pct": 7.132667617689026,
-      "vol_ratio": 2.184253867499705,
-      "rsi": 66.31925384703295,
-      "ma5": 352.7,
-      "ma20": 333.0893020629883,
-      "ma60": 331.59815419514973,
-      "ma200": 270.9292378997803,
-      "gap_up": false,
+      "change_pct": 4.2817657579924395,
+      "vol_ratio": 1.6306192761601521,
+      "rsi": 61.76468985423064,
+      "ma5": 36.210000610351564,
+      "ma20": 34.980099296569826,
+      "ma60": 31.44917739232381,
+      "ma200": 24.266033182144167,
+      "gap_up": true,
       "close_near_high": true,
       "long_red": true,
-      "ticker": "2376",
-      "name": "技嘉",
-      "industry": "電腦及週邊",
-      "industry_strong": true,
-      "market_cap_billions": 2016.36560896,
+      "ticker": "2887",
+      "name": "台新新光金",
+      "industry": "金融保險",
+      "industry_strong": false,
+      "market_cap_billions": 5955.47389952,
       "mcap_pass": true,
-      "sitc_net_shares": 90093,
-      "momentum_score": 75,
+      "sitc_net_shares": 25041136,
+      "momentum_score": 85,
       "momentum_notes": [
+        "跳空缺口",
         "ATH",
-        "族群同步",
-        "QQQ+1.2%",
-        "IGV+3.1%",
-        "投信+90張"
+        "投信+25,041張"
       ],
-      "tier": "⭐⭐",
-      "next_day_prob": "70-85%",
-      "_score": 102.43
+      "tier": "⭐⭐⭐",
+      "next_day_prob": "≥85%",
+      "_score": 86.63
     }
   ],
   "params": {

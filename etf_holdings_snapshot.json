@@ -1,493 +1,493 @@
 {
- "date": "2026-08-13",
+ "date": "2026-08-16",
  "etfs": {
   "00981A": {
    "2330": {
     "name": "台積電",
-    "shares": 11961.0,
-    "weight": 9.93
-   },
-   "2327": {
-    "name": "國巨*",
-    "shares": 25107.0,
-    "weight": 9.86
+    "shares": 10736.0,
+    "weight": 9.04
    },
    "2383": {
     "name": "台光電",
-    "shares": 4486.0,
-    "weight": 8.33
+    "shares": 4716.0,
+    "weight": 7.77
    },
    "2454": {
     "name": "聯發科",
-    "shares": 5040.0,
-    "weight": 7.37
+    "shares": 5201.0,
+    "weight": 6.42
    },
    "3037": {
     "name": "欣興",
-    "shares": 15193.0,
-    "weight": 5.6
-   },
-   "2345": {
-    "name": "智邦",
-    "shares": 6329.0,
-    "weight": 5.44
-   },
-   "6223": {
-    "name": "旺矽",
-    "shares": 2383.0,
-    "weight": 5.0
-   },
-   "2303": {
-    "name": "聯電",
-    "shares": 86469.0,
-    "weight": 4.9
-   },
-   "3017": {
-    "name": "奇鋐",
-    "shares": 5196.0,
-    "weight": 4.52
+    "shares": 17821.0,
+    "weight": 4.87
    },
    "6669": {
     "name": "緯穎",
-    "shares": 2418.0,
-    "weight": 3.86
+    "shares": 2565.0,
+    "weight": 4.8
    },
-   "2308": {
-    "name": "台達電",
-    "shares": 5612.0,
-    "weight": 3.77
+   "2345": {
+    "name": "智邦",
+    "shares": 6424.0,
+    "weight": 4.74
    },
-   "8046": {
-    "name": "南電",
-    "shares": 8941.0,
-    "weight": 3.65
+   "3017": {
+    "name": "奇鋐",
+    "shares": 5661.0,
+    "weight": 4.56
    },
-   "2368": {
-    "name": "金像電",
-    "shares": 8322.0,
-    "weight": 3.44
+   "6223": {
+    "name": "旺矽",
+    "shares": 2444.0,
+    "weight": 4.48
+   },
+   "2327": {
+    "name": "國巨*",
+    "shares": 25415.0,
+    "weight": 4.43
    },
    "3665": {
     "name": "貿聯-KY",
-    "shares": 4836.0,
-    "weight": 3.19
+    "shares": 5129.0,
+    "weight": 3.74
+   },
+   "2303": {
+    "name": "聯電",
+    "shares": 87827.0,
+    "weight": 3.69
+   },
+   "2308": {
+    "name": "台達電",
+    "shares": 5936.0,
+    "weight": 3.38
    },
    "3711": {
     "name": "日月光投控",
-    "shares": 12721.0,
-    "weight": 2.98
+    "shares": 16346.0,
+    "weight": 3.15
    },
-   "6274": {
-    "name": "台燿",
-    "shares": 5063.0,
-    "weight": 2.93
+   "8046": {
+    "name": "南電",
+    "shares": 9516.0,
+    "weight": 3.04
    },
    "3653": {
     "name": "健策",
-    "shares": 2268.0,
-    "weight": 2.68
+    "shares": 2374.0,
+    "weight": 2.84
    },
    "5274": {
     "name": "信驊",
-    "shares": 378.0,
-    "weight": 2.15
+    "shares": 454.0,
+    "weight": 2.29
+   },
+   "2368": {
+    "name": "金像電",
+    "shares": 7590.0,
+    "weight": 2.09
+   },
+   "6274": {
+    "name": "台燿",
+    "shares": 5241.0,
+    "weight": 2.02
    },
    "6805": {
     "name": "富世達",
-    "shares": 1814.0,
-    "weight": 1.05
+    "shares": 1963.0,
+    "weight": 0.92
    },
    "8210": {
     "name": "勤誠",
-    "shares": 2259.0,
-    "weight": 1.0
-   },
-   "6515": {
-    "name": "穎崴",
-    "shares": 251.0,
-    "weight": 0.7
-   },
-   "6510": {
-    "name": "精測",
-    "shares": 631.0,
-    "weight": 0.66
+    "shares": 2287.0,
+    "weight": 0.83
    },
    "2449": {
     "name": "京元電子",
-    "shares": 4473.0,
-    "weight": 0.52
-   },
-   "3533": {
-    "name": "嘉澤",
-    "shares": 647.0,
-    "weight": 0.47
-   },
-   "6147": {
-    "name": "頎邦",
-    "shares": 6314.0,
-    "weight": 0.46
+    "shares": 7603.0,
+    "weight": 0.59
    },
    "6187": {
     "name": "萬潤",
-    "shares": 1338.0,
-    "weight": 0.46
+    "shares": 1333.0,
+    "weight": 0.43
    },
-   "2317": {
-    "name": "鴻海",
-    "shares": 5089.0,
-    "weight": 0.44
+   "2360": {
+    "name": "致茂",
+    "shares": 343.0,
+    "weight": 0.25
    },
-   "5439": {
-    "name": "高技",
-    "shares": 3553.0,
-    "weight": 0.38
-   },
-   "6278": {
-    "name": "台表科",
-    "shares": 4361.0,
-    "weight": 0.32
-   },
-   "6271": {
-    "name": "同欣電",
-    "shares": 2936.0,
-    "weight": 0.27
+   "4979": {
+    "name": "華星光",
+    "shares": 1868.0,
+    "weight": 0.24
    },
    "1590": {
     "name": "亞德客-KY",
     "shares": 522.0,
     "weight": 0.24
    },
-   "8358": {
-    "name": "金居",
-    "shares": 968.0,
-    "weight": 0.2
+   "4958": {
+    "name": "臻鼎-KY",
+    "shares": 1672.0,
+    "weight": 0.24
+   },
+   "6510": {
+    "name": "精測",
+    "shares": 265.0,
+    "weight": 0.23
+   },
+   "6515": {
+    "name": "穎崴",
+    "shares": 94.0,
+    "weight": 0.19
+   },
+   "6278": {
+    "name": "台表科",
+    "shares": 3291.0,
+    "weight": 0.16
+   },
+   "2408": {
+    "name": "南亞科",
+    "shares": 959.0,
+    "weight": 0.12
+   },
+   "6271": {
+    "name": "同欣電",
+    "shares": 2160.0,
+    "weight": 0.12
    },
    "6191": {
     "name": "精成科",
-    "shares": 4089.0,
-    "weight": 0.15
-   },
-   "4966": {
-    "name": "譜瑞-KY",
-    "shares": 646.0,
-    "weight": 0.14
-   },
-   "3264": {
-    "name": "欣銓",
-    "shares": 1569.0,
-    "weight": 0.12
+    "shares": 3882.0,
+    "weight": 0.11
    },
    "3376": {
     "name": "新日興",
-    "shares": 1750.0,
-    "weight": 0.12
+    "shares": 1684.0,
+    "weight": 0.1
    },
-   "6488": {
-    "name": "環球晶",
-    "shares": 347.0,
-    "weight": 0.12
+   "3264": {
+    "name": "欣銓",
+    "shares": 1464.0,
+    "weight": 0.09
+   },
+   "6147": {
+    "name": "頎邦",
+    "shares": 1772.0,
+    "weight": 0.08
+   },
+   "4966": {
+    "name": "譜瑞-KY",
+    "shares": 154.0,
+    "weight": 0.03
    },
    "2002": {
     "name": "中鋼",
-    "shares": 4632.0,
+    "shares": 4559.0,
     "weight": 0.03
    },
-   "84.85": {
-    "name": "84.85",
+   "72.47": {
+    "name": "72.47",
     "shares": 0.0,
-    "weight": 12.61
-   },
-   "0050": {
-    "name": "0050",
-    "shares": 106.7,
-    "weight": 1.43
+    "weight": 9.89
    },
    "00981A": {
     "name": "00981A",
-    "shares": 29.95,
-    "weight": 2.08
+    "shares": 30.22,
+    "weight": 0.9
    },
    "00878": {
     "name": "00878",
-    "shares": 33.78,
-    "weight": 0.78
+    "shares": 33.87,
+    "weight": 0.27
    },
    "0056": {
     "name": "0056",
-    "shares": 53.0,
-    "weight": 0.57
+    "shares": 53.4,
+    "weight": 0.75
    },
    "00919": {
     "name": "00919",
-    "shares": 30.41,
-    "weight": 0.73
+    "shares": 30.57,
+    "weight": 0.53
    }
   },
   "00980A": {
    "2330": {
     "name": "台積電",
-    "shares": 634.0,
-    "weight": 8.78
+    "shares": 663.0,
+    "weight": 9.63
    },
    "2454": {
     "name": "聯發科",
-    "shares": 269.0,
-    "weight": 6.56
-   },
-   "2308": {
-    "name": "台達電",
-    "shares": 475.0,
-    "weight": 5.32
-   },
-   "2059": {
-    "name": "川湖",
-    "shares": 110.0,
-    "weight": 4.65
+    "shares": 279.0,
+    "weight": 5.94
    },
    "2383": {
     "name": "台光電",
-    "shares": 134.0,
-    "weight": 4.15
+    "shares": 152.0,
+    "weight": 4.32
    },
-   "3037": {
-    "name": "欣興",
-    "shares": 563.0,
-    "weight": 3.46
+   "2059": {
+    "name": "川湖",
+    "shares": 91.0,
+    "weight": 4.28
+   },
+   "2308": {
+    "name": "台達電",
+    "shares": 404.0,
+    "weight": 3.97
    },
    "7769": {
     "name": "鴻勁",
-    "shares": 93.0,
-    "weight": 3.46
+    "shares": 73.0,
+    "weight": 2.7
    },
-   "3653": {
-    "name": "健策",
-    "shares": 151.0,
-    "weight": 2.98
-   },
-   "2368": {
-    "name": "金像電",
-    "shares": 393.0,
-    "weight": 2.71
+   "3037": {
+    "name": "欣興",
+    "shares": 564.0,
+    "weight": 2.66
    },
    "6223": {
     "name": "旺矽",
     "shares": 76.0,
-    "weight": 2.66
+    "weight": 2.4
+   },
+   "2317": {
+    "name": "鴻海",
+    "shares": 1572.0,
+    "weight": 2.36
+   },
+   "3081": {
+    "name": "聯亞",
+    "shares": 238.0,
+    "weight": 2.32
+   },
+   "2408": {
+    "name": "南亞科",
+    "shares": 1037.0,
+    "weight": 2.24
    },
    "6515": {
     "name": "穎崴",
     "shares": 55.0,
-    "weight": 2.56
-   },
-   "3081": {
-    "name": "聯亞",
-    "shares": 216.0,
-    "weight": 2.51
-   },
-   "2327": {
-    "name": "國巨*",
-    "shares": 345.0,
-    "weight": 2.26
-   },
-   "8996": {
-    "name": "高力",
-    "shares": 221.0,
-    "weight": 1.97
-   },
-   "3443": {
-    "name": "創意",
-    "shares": 70.0,
-    "weight": 1.95
-   },
-   "3017": {
-    "name": "奇鋐",
-    "shares": 131.0,
-    "weight": 1.9
+    "weight": 1.92
    },
    "2345": {
     "name": "智邦",
-    "shares": 130.0,
-    "weight": 1.86
+    "shares": 147.0,
+    "weight": 1.87
    },
-   "2317": {
-    "name": "鴻海",
-    "shares": 1283.0,
-    "weight": 1.85
+   "2368": {
+    "name": "金像電",
+    "shares": 393.0,
+    "weight": 1.87
    },
    "2360": {
     "name": "致茂",
-    "shares": 143.0,
-    "weight": 1.78
+    "shares": 148.0,
+    "weight": 1.86
    },
-   "4958": {
-    "name": "臻鼎-KY",
-    "shares": 436.0,
-    "weight": 1.58
+   "3017": {
+    "name": "奇鋐",
+    "shares": 134.0,
+    "weight": 1.86
    },
-   "3711": {
-    "name": "日月光投控",
-    "shares": 399.0,
-    "weight": 1.56
+   "6669": {
+    "name": "緯穎",
+    "shares": 47.0,
+    "weight": 1.52
    },
-   "8046": {
-    "name": "南電",
-    "shares": 219.0,
-    "weight": 1.49
+   "1303": {
+    "name": "南亞",
+    "shares": 1538.0,
+    "weight": 1.47
    },
-   "2408": {
-    "name": "南亞科",
-    "shares": 569.0,
-    "weight": 1.48
+   "2891": {
+    "name": "中信金",
+    "shares": 3702.0,
+    "weight": 1.44
    },
-   "2344": {
-    "name": "華邦電",
-    "shares": 1149.0,
-    "weight": 1.37
-   },
-   "3036": {
-    "name": "文曄",
-    "shares": 1065.0,
-    "weight": 1.31
-   },
-   "6274": {
-    "name": "台燿",
-    "shares": 131.0,
-    "weight": 1.26
+   "3653": {
+    "name": "健策",
+    "shares": 69.0,
+    "weight": 1.42
    },
    "5274": {
     "name": "信驊",
-    "shares": 13.0,
-    "weight": 1.23
+    "shares": 16.0,
+    "weight": 1.42
+   },
+   "2376": {
+    "name": "技嘉",
+    "shares": 694.0,
+    "weight": 1.4
+   },
+   "3036": {
+    "name": "文曄",
+    "shares": 1146.0,
+    "weight": 1.35
+   },
+   "3443": {
+    "name": "創意",
+    "shares": 59.0,
+    "weight": 1.35
    },
    "5904": {
     "name": "寶雅*",
     "shares": 313.0,
-    "weight": 1.2
+    "weight": 1.35
    },
-   "2891": {
-    "name": "中信金",
-    "shares": 2843.0,
-    "weight": 1.16
+   "3711": {
+    "name": "日月光投控",
+    "shares": 400.0,
+    "weight": 1.33
    },
    "2382": {
     "name": "廣達",
-    "shares": 530.0,
-    "weight": 1.12
+    "shares": 721.0,
+    "weight": 1.26
+   },
+   "6274": {
+    "name": "台燿",
+    "shares": 186.0,
+    "weight": 1.24
    },
    "8299": {
     "name": "群聯",
-    "shares": 79.0,
-    "weight": 1.08
-   },
-   "6669": {
-    "name": "緯穎",
-    "shares": 39.0,
-    "weight": 1.04
-   },
-   "3529": {
-    "name": "力旺",
-    "shares": 60.0,
-    "weight": 1.01
-   },
-   "3008": {
-    "name": "大立光",
-    "shares": 35.0,
-    "weight": 0.86
-   },
-   "2376": {
-    "name": "技嘉",
-    "shares": 425.0,
-    "weight": 0.84
-   },
-   "8210": {
-    "name": "勤誠",
-    "shares": 112.0,
-    "weight": 0.83
-   },
-   "2884": {
-    "name": "玉山金",
-    "shares": 3889.0,
-    "weight": 0.77
-   },
-   "3189": {
-    "name": "景碩",
-    "shares": 139.0,
-    "weight": 0.71
-   },
-   "3231": {
-    "name": "緯創",
-    "shares": 703.0,
-    "weight": 0.64
-   },
-   "3665": {
-    "name": "貿聯-KY",
-    "shares": 54.0,
-    "weight": 0.59
+    "shares": 120.0,
+    "weight": 1.18
    },
    "3293": {
     "name": "鈊象",
-    "shares": 124.0,
-    "weight": 0.56
+    "shares": 252.0,
+    "weight": 1.17
+   },
+   "8046": {
+    "name": "南電",
+    "shares": 203.0,
+    "weight": 1.12
+   },
+   "3231": {
+    "name": "緯創",
+    "shares": 1043.0,
+    "weight": 1.1
+   },
+   "2327": {
+    "name": "國巨*",
+    "shares": 346.0,
+    "weight": 1.04
+   },
+   "2884": {
+    "name": "玉山金",
+    "shares": 4361.0,
+    "weight": 1.01
+   },
+   "3529": {
+    "name": "力旺",
+    "shares": 65.0,
+    "weight": 0.96
+   },
+   "8996": {
+    "name": "高力",
+    "shares": 182.0,
+    "weight": 0.93
+   },
+   "2344": {
+    "name": "華邦電",
+    "shares": 1155.0,
+    "weight": 0.9
+   },
+   "3008": {
+    "name": "大立光",
+    "shares": 36.0,
+    "weight": 0.87
+   },
+   "8210": {
+    "name": "勤誠",
+    "shares": 139.0,
+    "weight": 0.87
+   },
+   "4958": {
+    "name": "臻鼎-KY",
+    "shares": 335.0,
+    "weight": 0.83
+   },
+   "6213": {
+    "name": "聯茂",
+    "shares": 482.0,
+    "weight": 0.76
+   },
+   "3189": {
+    "name": "景碩",
+    "shares": 184.0,
+    "weight": 0.7
    },
    "6805": {
     "name": "富世達",
     "shares": 54.0,
-    "weight": 0.52
+    "weight": 0.44
+   },
+   "3665": {
+    "name": "貿聯-KY",
+    "shares": 33.0,
+    "weight": 0.41
+   },
+   "3026": {
+    "name": "禾伸堂",
+    "shares": 133.0,
+    "weight": 0.36
    },
    "3044": {
     "name": "健鼎",
-    "shares": 165.0,
-    "weight": 0.49
-   },
-   "6831": {
-    "name": "邁科",
-    "shares": 84.0,
-    "weight": 0.42
-   },
-   "6442": {
-    "name": "光聖",
-    "shares": 37.0,
-    "weight": 0.35
+    "shares": 163.0,
+    "weight": 0.36
    },
    "3264": {
     "name": "欣銓",
-    "shares": 172.0,
-    "weight": 0.22
+    "shares": 321.0,
+    "weight": 0.34
+   },
+   "6831": {
+    "name": "邁科",
+    "shares": 92.0,
+    "weight": 0.29
+   },
+   "6442": {
+    "name": "光聖",
+    "shares": 38.0,
+    "weight": 0.26
    },
    "3533": {
     "name": "嘉澤",
     "shares": 13.0,
-    "weight": 0.16
+    "weight": 0.14
    },
-   "77.48": {
-    "name": "77.48",
+   "72.43": {
+    "name": "72.43",
     "shares": 0.0,
-    "weight": 11.73
-   },
-   "0050": {
-    "name": "0050",
-    "shares": 106.7,
-    "weight": 1.43
+    "weight": 12.39
    },
    "00981A": {
     "name": "00981A",
-    "shares": 29.95,
-    "weight": 2.08
+    "shares": 30.22,
+    "weight": 0.9
    },
    "00878": {
     "name": "00878",
-    "shares": 33.78,
-    "weight": 0.78
+    "shares": 33.87,
+    "weight": 0.27
    },
    "0056": {
     "name": "0056",
-    "shares": 53.0,
-    "weight": 0.57
+    "shares": 53.4,
+    "weight": 0.75
    },
    "00919": {
     "name": "00919",
-    "shares": 30.41,
-    "weight": 0.73
+    "shares": 30.57,
+    "weight": 0.53
    }
   },
   "00982A": {
@@ -731,35 +731,30 @@
     "shares": 1.0,
     "weight": 0.01
    },
-   "71.50": {
-    "name": "71.50",
+   "71.34": {
+    "name": "71.34",
     "shares": 0.0,
-    "weight": 26.62
-   },
-   "0050": {
-    "name": "0050",
-    "shares": 106.7,
-    "weight": 1.43
+    "weight": 23.38
    },
    "00981A": {
     "name": "00981A",
-    "shares": 29.95,
-    "weight": 2.08
+    "shares": 30.22,
+    "weight": 0.9
    },
    "00878": {
     "name": "00878",
-    "shares": 33.78,
-    "weight": 0.78
+    "shares": 33.87,
+    "weight": 0.27
    },
    "0056": {
     "name": "0056",
-    "shares": 53.0,
-    "weight": 0.57
+    "shares": 53.4,
+    "weight": 0.75
    },
    "00919": {
     "name": "00919",
-    "shares": 30.41,
-    "weight": 0.73
+    "shares": 30.57,
+    "weight": 0.53
    }
   }
  },
@@ -767,60 +762,413 @@
   "00981A": {
    "new": [
     {
-     "code": "00919",
-     "name": "00919",
-     "shares": 30.41,
-     "weight": 0.73
+     "code": "2360",
+     "name": "致茂",
+     "shares": 343.0,
+     "weight": 0.25
+    },
+    {
+     "code": "4979",
+     "name": "華星光",
+     "shares": 1868.0,
+     "weight": 0.24
+    },
+    {
+     "code": "4958",
+     "name": "臻鼎-KY",
+     "shares": 1672.0,
+     "weight": 0.24
+    },
+    {
+     "code": "2408",
+     "name": "南亞科",
+     "shares": 959.0,
+     "weight": 0.12
+    },
+    {
+     "code": "72.47",
+     "name": "72.47",
+     "shares": 0.0,
+     "weight": 9.89
     }
    ],
-   "added": [],
-   "reduced": [],
+   "added": [
+    {
+     "code": "3037",
+     "name": "欣興",
+     "shares": 17821.0,
+     "weight": 4.87,
+     "chg_pct": 17.3
+    },
+    {
+     "code": "3711",
+     "name": "日月光投控",
+     "shares": 16346.0,
+     "weight": 3.15,
+     "chg_pct": 28.5
+    },
+    {
+     "code": "5274",
+     "name": "信驊",
+     "shares": 454.0,
+     "weight": 2.29,
+     "chg_pct": 20.1
+    },
+    {
+     "code": "2449",
+     "name": "京元電子",
+     "shares": 7603.0,
+     "weight": 0.59,
+     "chg_pct": 70.0
+    }
+   ],
+   "reduced": [
+    {
+     "code": "2330",
+     "name": "台積電",
+     "shares": 10736.0,
+     "weight": 9.04,
+     "chg_pct": -10.2
+    },
+    {
+     "code": "6510",
+     "name": "精測",
+     "shares": 265.0,
+     "weight": 0.23,
+     "chg_pct": -58.0
+    },
+    {
+     "code": "6515",
+     "name": "穎崴",
+     "shares": 94.0,
+     "weight": 0.19,
+     "chg_pct": -62.5
+    },
+    {
+     "code": "6278",
+     "name": "台表科",
+     "shares": 3291.0,
+     "weight": 0.16,
+     "chg_pct": -24.5
+    },
+    {
+     "code": "6271",
+     "name": "同欣電",
+     "shares": 2160.0,
+     "weight": 0.12,
+     "chg_pct": -26.4
+    },
+    {
+     "code": "6147",
+     "name": "頎邦",
+     "shares": 1772.0,
+     "weight": 0.08,
+     "chg_pct": -71.9
+    },
+    {
+     "code": "4966",
+     "name": "譜瑞-KY",
+     "shares": 154.0,
+     "weight": 0.03,
+     "chg_pct": -76.2
+    }
+   ],
    "removed": [
     {
-     "code": "009816",
-     "name": "009816",
-     "shares": 15.26,
-     "weight": 0.66
+     "code": "3533",
+     "name": "嘉澤",
+     "shares": 647.0,
+     "weight": 0.47
+    },
+    {
+     "code": "2317",
+     "name": "鴻海",
+     "shares": 5089.0,
+     "weight": 0.44
+    },
+    {
+     "code": "5439",
+     "name": "高技",
+     "shares": 3553.0,
+     "weight": 0.38
+    },
+    {
+     "code": "8358",
+     "name": "金居",
+     "shares": 968.0,
+     "weight": 0.2
+    },
+    {
+     "code": "6488",
+     "name": "環球晶",
+     "shares": 347.0,
+     "weight": 0.12
+    },
+    {
+     "code": "84.85",
+     "name": "84.85",
+     "shares": 0.0,
+     "weight": 12.61
+    },
+    {
+     "code": "0050",
+     "name": "0050",
+     "shares": 106.7,
+     "weight": 1.43
     }
    ]
   },
   "00980A": {
    "new": [
     {
-     "code": "00919",
-     "name": "00919",
-     "shares": 30.41,
-     "weight": 0.73
+     "code": "1303",
+     "name": "南亞",
+     "shares": 1538.0,
+     "weight": 1.47
+    },
+    {
+     "code": "6213",
+     "name": "聯茂",
+     "shares": 482.0,
+     "weight": 0.76
+    },
+    {
+     "code": "3026",
+     "name": "禾伸堂",
+     "shares": 133.0,
+     "weight": 0.36
+    },
+    {
+     "code": "72.43",
+     "name": "72.43",
+     "shares": 0.0,
+     "weight": 12.39
     }
    ],
-   "added": [],
-   "reduced": [],
+   "added": [
+    {
+     "code": "2383",
+     "name": "台光電",
+     "shares": 152.0,
+     "weight": 4.32,
+     "chg_pct": 13.4
+    },
+    {
+     "code": "2317",
+     "name": "鴻海",
+     "shares": 1572.0,
+     "weight": 2.36,
+     "chg_pct": 22.5
+    },
+    {
+     "code": "3081",
+     "name": "聯亞",
+     "shares": 238.0,
+     "weight": 2.32,
+     "chg_pct": 10.2
+    },
+    {
+     "code": "2408",
+     "name": "南亞科",
+     "shares": 1037.0,
+     "weight": 2.24,
+     "chg_pct": 82.2
+    },
+    {
+     "code": "2345",
+     "name": "智邦",
+     "shares": 147.0,
+     "weight": 1.87,
+     "chg_pct": 13.1
+    },
+    {
+     "code": "6669",
+     "name": "緯穎",
+     "shares": 47.0,
+     "weight": 1.52,
+     "chg_pct": 20.5
+    },
+    {
+     "code": "2891",
+     "name": "中信金",
+     "shares": 3702.0,
+     "weight": 1.44,
+     "chg_pct": 30.2
+    },
+    {
+     "code": "5274",
+     "name": "信驊",
+     "shares": 16.0,
+     "weight": 1.42,
+     "chg_pct": 23.1
+    },
+    {
+     "code": "2376",
+     "name": "技嘉",
+     "shares": 694.0,
+     "weight": 1.4,
+     "chg_pct": 63.3
+    },
+    {
+     "code": "2382",
+     "name": "廣達",
+     "shares": 721.0,
+     "weight": 1.26,
+     "chg_pct": 36.0
+    },
+    {
+     "code": "6274",
+     "name": "台燿",
+     "shares": 186.0,
+     "weight": 1.24,
+     "chg_pct": 42.0
+    },
+    {
+     "code": "8299",
+     "name": "群聯",
+     "shares": 120.0,
+     "weight": 1.18,
+     "chg_pct": 51.9
+    },
+    {
+     "code": "3293",
+     "name": "鈊象",
+     "shares": 252.0,
+     "weight": 1.17,
+     "chg_pct": 103.2
+    },
+    {
+     "code": "3231",
+     "name": "緯創",
+     "shares": 1043.0,
+     "weight": 1.1,
+     "chg_pct": 48.4
+    },
+    {
+     "code": "2884",
+     "name": "玉山金",
+     "shares": 4361.0,
+     "weight": 1.01,
+     "chg_pct": 12.1
+    },
+    {
+     "code": "8210",
+     "name": "勤誠",
+     "shares": 139.0,
+     "weight": 0.87,
+     "chg_pct": 24.1
+    },
+    {
+     "code": "3189",
+     "name": "景碩",
+     "shares": 184.0,
+     "weight": 0.7,
+     "chg_pct": 32.4
+    },
+    {
+     "code": "3264",
+     "name": "欣銓",
+     "shares": 321.0,
+     "weight": 0.34,
+     "chg_pct": 86.6
+    }
+   ],
+   "reduced": [
+    {
+     "code": "2059",
+     "name": "川湖",
+     "shares": 91.0,
+     "weight": 4.28,
+     "chg_pct": -17.3
+    },
+    {
+     "code": "2308",
+     "name": "台達電",
+     "shares": 404.0,
+     "weight": 3.97,
+     "chg_pct": -14.9
+    },
+    {
+     "code": "7769",
+     "name": "鴻勁",
+     "shares": 73.0,
+     "weight": 2.7,
+     "chg_pct": -21.5
+    },
+    {
+     "code": "3653",
+     "name": "健策",
+     "shares": 69.0,
+     "weight": 1.42,
+     "chg_pct": -54.3
+    },
+    {
+     "code": "3443",
+     "name": "創意",
+     "shares": 59.0,
+     "weight": 1.35,
+     "chg_pct": -15.7
+    },
+    {
+     "code": "8996",
+     "name": "高力",
+     "shares": 182.0,
+     "weight": 0.93,
+     "chg_pct": -17.6
+    },
+    {
+     "code": "4958",
+     "name": "臻鼎-KY",
+     "shares": 335.0,
+     "weight": 0.83,
+     "chg_pct": -23.2
+    },
+    {
+     "code": "3665",
+     "name": "貿聯-KY",
+     "shares": 33.0,
+     "weight": 0.41,
+     "chg_pct": -38.9
+    }
+   ],
    "removed": [
     {
-     "code": "009816",
-     "name": "009816",
-     "shares": 15.26,
-     "weight": 0.66
+     "code": "77.48",
+     "name": "77.48",
+     "shares": 0.0,
+     "weight": 11.73
+    },
+    {
+     "code": "0050",
+     "name": "0050",
+     "shares": 106.7,
+     "weight": 1.43
     }
    ]
   },
   "00982A": {
    "new": [
     {
-     "code": "00919",
-     "name": "00919",
-     "shares": 30.41,
-     "weight": 0.73
+     "code": "71.34",
+     "name": "71.34",
+     "shares": 0.0,
+     "weight": 23.38
     }
    ],
    "added": [],
    "reduced": [],
    "removed": [
     {
-     "code": "009816",
-     "name": "009816",
-     "shares": 15.26,
-     "weight": 0.66
+     "code": "71.50",
+     "name": "71.50",
+     "shares": 0.0,
+     "weight": 26.62
+    },
+    {
+     "code": "0050",
+     "name": "0050",
+     "shares": 106.7,
+     "weight": 1.43
     }
    ]
   }

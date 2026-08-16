@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-15 13:51",
+  "date": "2026-08-16 13:52",
   "market_position": "BULL_MID",
   "sector_results": {
     "半導體_晶圓代工": {
@@ -365,8 +365,8 @@
       },
       "top_member": "2615.TW",
       "rs_rank_5d": 16,
-      "rs_rank_20d": 13,
-      "rs_momentum": -3
+      "rs_rank_20d": 14,
+      "rs_momentum": -2
     },
     "金融": {
       "avg_5d": 1.36,
@@ -490,45 +490,45 @@
       "rs_momentum": -7
     },
     "ETF_大盤": {
-      "avg_5d": 2.21,
-      "avg_20d": 3.64,
+      "avg_5d": 2.61,
+      "avg_20d": 6.65,
       "member_count": 7,
       "members": {
         "0050.TW": {
-          "price": 106.7,
-          "ret_5d": 3.29,
-          "ret_20d": 0.89,
-          "vol_avg": 161040914.0
+          "price": 106.4,
+          "ret_5d": 3.45,
+          "ret_20d": 6.89,
+          "vol_avg": 160830843.0
         },
         "0056.TW": {
-          "price": 53.0,
-          "ret_5d": 3.31,
-          "ret_20d": 3.46,
-          "vol_avg": 58829774.0
+          "price": 53.4,
+          "ret_5d": 4.6,
+          "ret_20d": 8.14,
+          "vol_avg": 58788328.0
         },
         "00646.TW": {
-          "price": 78.45,
-          "ret_5d": 0.0,
-          "ret_20d": 2.08,
-          "vol_avg": 2996539.0
+          "price": 78.6,
+          "ret_5d": 0.45,
+          "ret_20d": 3.35,
+          "vol_avg": 2993598.0
         },
         "00885.TW": {
-          "price": 18.48,
-          "ret_5d": 0.76,
-          "ret_20d": 2.5,
-          "vol_avg": 3305275.0
+          "price": 17.83,
+          "ret_5d": -2.14,
+          "ret_20d": -2.09,
+          "vol_avg": 3301650.0
         },
         "00940.TW": {
-          "price": 12.56,
-          "ret_5d": 1.29,
-          "ret_20d": 2.69,
-          "vol_avg": 16986436.0
+          "price": 12.49,
+          "ret_5d": 1.13,
+          "ret_20d": 5.56,
+          "vol_avg": 16983874.0
         },
         "00981A.TW": {
-          "price": 29.95,
-          "ret_5d": 3.85,
-          "ret_20d": 3.45,
-          "vol_avg": 280491046.0
+          "price": 30.22,
+          "ret_5d": 7.81,
+          "ret_20d": 14.34,
+          "vol_avg": 280414811.0
         },
         "2885.TW": {
           "price": 69.7,
@@ -539,8 +539,8 @@
       },
       "top_member": "00981A.TW",
       "rs_rank_5d": 13,
-      "rs_rank_20d": 14,
-      "rs_momentum": 1
+      "rs_rank_20d": 13,
+      "rs_momentum": 0
     },
     "美股_AI晶片": {
       "avg_5d": -2.03,

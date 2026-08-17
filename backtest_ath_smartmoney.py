@@ -36,6 +36,7 @@ RECENT_LOSER_WINDOW = 7
 HARD_FLOOR = 0.93
 FLOW_WINDOW = 5
 E8 = 1e8
+TRADE_START = "2024-08-05"   # 與 V4.3 2y 回測同窗
 
 VARIANTS = {
     "A_base":   {"desc": "純技術(無籌碼)"},
@@ -48,9 +49,9 @@ VARIANTS = {
 
 
 def load_flow():
-    p = "t86_3party_5y.json"
+    p = "t86_3party_2y.json"
     if not os.path.exists(p):
-        print("❌ 缺 t86_3party_5y.json，請先跑 fetch_t86_3party_5y.py"); sys.exit(1)
+        print("❌ 缺 t86_3party_5y.json，請先跑 fetch_t86_3party_5y.py（現為 2y 模式）"); sys.exit(1)
     h = json.load(io.open(p, encoding="utf-8"))
     return {k: v for k, v in h.items() if v}   # {yyyymmdd: {code:[f,i]}}
 
@@ -78,6 +79,7 @@ def run_variant(name, history, mcap, us_chg, regime, flow_amt, df_idx, all_dates
     for di, d in enumerate(all_dates):
         if di < 200: continue
         d_str = d.strftime("%Y-%m-%d")
+        if d_str < TRADE_START: continue
         prev_str = all_dates[di-1].strftime("%Y-%m-%d")
         if not regime.get(d_str, False):
             in_stage2 = False
@@ -180,7 +182,7 @@ def run_variant(name, history, mcap, us_chg, regime, flow_amt, df_idx, all_dates
 
 
 def main():
-    bs.START_DATE = "2021-01-01"; bs.END_DATE = dt.date.today().isoformat()
+    bs.START_DATE = "2023-09-01"   # 2y 窗需前推 200 日暖機; bs.END_DATE = dt.date.today().isoformat()
     codes = bs.load_universe(); mcap = v41.load_mcap()
     flow = load_flow()
     print(f"universe {len(codes)} / mcap {len(mcap)} / T86 {len(flow)} 交易日 ({min(flow)}~{max(flow)})")
@@ -200,9 +202,9 @@ def main():
         results[name] = {"desc": cfg["desc"], "final_cash": cash, "n": len(trades), "trades": trades}
 
     # 匯總表 + 對 A 的增益 + 每檔黑天鵝只跑一次最佳版
-    print("\n" + "="*72); print("📊 匯總（5y）"); print("="*72)
+    print("\n" + "="*72); print("📊 匯總（2y 同 V4.3 窗）"); print("="*72)
     print(f"{'變體':<10}{'說明':<26}{'總報酬':>9}{'CAGR':>8}{'筆':>5}{'勝率':>7}{'期望':>8}{'PF':>6}")
-    yrs = (pd.Timestamp(bs.END_DATE)-pd.Timestamp(bs.START_DATE)).days/365.25
+    yrs = (pd.Timestamp(bs.END_DATE)-pd.Timestamp(TRADE_START)).days/365.25
     for name, r in results.items():
         t = r["trades"]; n = len(t)
         if n == 0: print(f"{name:<10}{r['desc']:<26}{'-':>9}"); continue

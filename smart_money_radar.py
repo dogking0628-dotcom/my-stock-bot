@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Smart Money Radar — 三方法人資金流向雷達（外資／投信／自營）
+Smart Money Radar — 雙主力資金流向雷達（外資／投信；自營因權證避險+隔日沖雜訊已剔除）
 ═════════════════════════════════════════════════
 資料：證交所 T86 三大法人買賣超（官方，T+0 收盤後 15:00）
 維度：
   ① 大類族群（證交所 30 類）× 三方 5 日 vs 20 日 → 加速/減速
   ② 子族群（記憶體/光通訊/ABF-CCL/矽光子/散熱/IC設計/晶圓）
-  ③ 三方共識：三方同買 🔥 / 兩方買 🟢 / 分歧 🟡 / 三方賣 🔴
-  ④ 個股：三方合計買超/賣超 Top 10
+  ③ 雙方共識：外資投信同買 🔥 / 外資獨買 🟢 / 投信獨買 🟡 / 雙賣 🔴
+  ④ 個股：外資+投信合計買超/賣超 Top 10
 輸出：smart_money_radar.json + LINE 區塊
 每日 cron（接在 institutional_tracker 之後）；週一另做完整週報
 """
@@ -27,8 +27,8 @@ CACHE_PATH = os.path.join(ROOT, "t86_3party_cache.json")
 OUT_PATH = os.path.join(ROOT, "smart_money_radar.json")
 UA = {"User-Agent": "Mozilla/5.0"}
 COLS = {"外資": "外陸資買賣超股數(不含外資自營商)",
-        "投信": "投信買賣超股數",
-        "自營": "自營商買賣超股數"}
+        "投信": "投信買賣超股數"}
+# 自營商已剔除：混入權證發行商避險買盤 + 隔日沖自營，屬雜訊非方向
 WINDOW_LONG = 20
 
 # 子族群人工清單（證交所大類太粗；可持續擴充）
@@ -108,12 +108,11 @@ def agg(days, window):
     return tot
 
 
-def consensus(f, s, p):
-    n = sum(1 for x in (f, s, p) if x > 0)
-    if n == 3: return "🔥三方買"
-    if n == 2: return "🟢兩方買"
-    if n == 1: return "🟡分歧"
-    return "🔴三方賣"
+def consensus(f, s):
+    if f > 0 and s > 0: return "🔥雙買"
+    if f > 0 and s <= 0: return "🟢外資獨買"
+    if f <= 0 and s > 0: return "🟡投信獨買"
+    return "🔴雙賣"
 
 
 def main():
@@ -143,16 +142,16 @@ def main():
     s5, s20 = sector_table(t5), sector_table(t20)
     sectors = []
     for ind in set(s5) | set(s20):
-        f5, i5, p5 = (s5[ind][k]/1000 for k in COLS)
-        f20, i20, p20 = (s20[ind][k]/1000 for k in COLS)
-        tot5, tot20 = f5+i5+p5, f20+i20+p20
+        f5, i5 = (s5[ind][k]/1000 for k in COLS)
+        f20, i20 = (s20[ind][k]/1000 for k in COLS)
+        tot5, tot20 = f5+i5, f20+i20
         # 加速判定：5日已達20日的 50%+ 且同向 → 加速
         if tot5 > 0 and tot5 >= abs(tot20)*0.5: mom = "⏫加速買"
         elif tot5 < 0 and -tot5 >= abs(tot20)*0.5: mom = "⏬加速賣"
         elif (tot5 > 0) != (tot20 > 0) and abs(tot5) > 5000: mom = "🔄反轉"
         else: mom = "➡️持平"
-        sectors.append({"industry": ind, "f5": f5, "i5": i5, "p5": p5, "tot5": tot5,
-                        "tot20": tot20, "consensus": consensus(f5, i5, p5), "mom": mom})
+        sectors.append({"industry": ind, "f5": f5, "i5": i5, "tot5": tot5,
+                        "tot20": tot20, "consensus": consensus(f5, i5), "mom": mom})
     sectors.sort(key=lambda x: -x["tot5"])
 
     # ② 子族群
@@ -160,15 +159,14 @@ def main():
     for g, codes in SUB_GROUPS.items():
         f5 = sum(t5[c]["外資"] for c in codes if c in t5)/1000
         i5 = sum(t5[c]["投信"] for c in codes if c in t5)/1000
-        p5 = sum(t5[c]["自營"] for c in codes if c in t5)/1000
         tot20 = sum(sum(t20[c].values()) for c in codes if c in t20)/1000
-        tot5 = f5+i5+p5
+        tot5 = f5+i5
         if tot5 > 0 and tot5 >= abs(tot20)*0.5: mom = "⏫加速買"
         elif tot5 < 0 and -tot5 >= abs(tot20)*0.5: mom = "⏬加速賣"
         elif (tot5 > 0) != (tot20 > 0) and abs(tot5) > 2000: mom = "🔄反轉"
         else: mom = "➡️持平"
-        subs.append({"group": g, "f5": f5, "i5": i5, "p5": p5, "tot5": tot5,
-                     "tot20": tot20, "consensus": consensus(f5, i5, p5), "mom": mom})
+        subs.append({"group": g, "f5": f5, "i5": i5, "tot5": tot5,
+                     "tot20": tot20, "consensus": consensus(f5, i5), "mom": mom})
     subs.sort(key=lambda x: -x["tot5"])
 
     # ④ 個股 Top（排除 ETF：00 開頭；只留 4 碼上市個股）
@@ -179,36 +177,35 @@ def main():
     top_sell = sorted(stock_tot.items(), key=lambda x: x[1])[:10]
     def sk(c, v):
         return {"code": c, "name": names.get(c, ""), "industry": get_industry(c),
-                "tot": v/1000, "f": t5[c]["外資"]/1000, "i": t5[c]["投信"]/1000,
-                "p": t5[c]["自營"]/1000}
+                "tot": v/1000, "f": t5[c]["外資"]/1000, "i": t5[c]["投信"]/1000}
 
     # 列印
-    print(f"\n=== 近5日 大類 × 三方（張） [{d5[0][0]}~{d5[-1][0]}] ===")
-    print(f"{'族群':<9}{'外資':>9}{'投信':>9}{'自營':>9}{'5日合計':>10}{'20日合計':>10}  共識/動能")
+    print(f"\n=== 近5日 大類 × 外資/投信（張） [{d5[0][0]}~{d5[-1][0]}] ===")
+    print(f"{'族群':<9}{'外資':>10}{'投信':>10}{'5日合計':>10}{'20日合計':>10}  共識/動能")
     for s in sectors[:12]:
-        print(f"{s['industry']:<9}{s['f5']:>+9,.0f}{s['i5']:>+9,.0f}{s['p5']:>+9,.0f}"
+        print(f"{s['industry']:<9}{s['f5']:>+10,.0f}{s['i5']:>+10,.0f}"
               f"{s['tot5']:>+10,.0f}{s['tot20']:>+10,.0f}  {s['consensus']} {s['mom']}")
     print("  ...")
     for s in sectors[-4:]:
-        print(f"{s['industry']:<9}{s['f5']:>+9,.0f}{s['i5']:>+9,.0f}{s['p5']:>+9,.0f}"
+        print(f"{s['industry']:<9}{s['f5']:>+10,.0f}{s['i5']:>+10,.0f}"
               f"{s['tot5']:>+10,.0f}{s['tot20']:>+10,.0f}  {s['consensus']} {s['mom']}")
 
-    print(f"\n=== 近5日 子族群 × 三方（張）===")
-    print(f"{'子族群':<12}{'外資':>9}{'投信':>9}{'自營':>9}{'5日合計':>10}{'20日合計':>10}  共識/動能")
+    print(f"\n=== 近5日 子族群 × 外資/投信（張）===")
+    print(f"{'子族群':<12}{'外資':>10}{'投信':>10}{'5日合計':>10}{'20日合計':>10}  共識/動能")
     for s in subs:
-        print(f"{s['group']:<12}{s['f5']:>+9,.0f}{s['i5']:>+9,.0f}{s['p5']:>+9,.0f}"
+        print(f"{s['group']:<12}{s['f5']:>+10,.0f}{s['i5']:>+10,.0f}"
               f"{s['tot5']:>+10,.0f}{s['tot20']:>+10,.0f}  {s['consensus']} {s['mom']}")
 
-    print(f"\n=== 近5日 三方合計 買超 Top10 ===")
+    print(f"\n=== 近5日 外資+投信 買超 Top10 ===")
     for c, v in top_buy:
         k = sk(c, v)
         print(f"  {c} {k['name']:<7}({(k['industry'] or '?')[:5]:<5}) 合計{k['tot']:>+8,.0f}"
-              f"  外{k['f']:>+7,.0f} 投{k['i']:>+7,.0f} 自{k['p']:>+6,.0f}")
-    print(f"=== 近5日 三方合計 賣超 Top10 ===")
+              f"  外{k['f']:>+8,.0f} 投{k['i']:>+8,.0f}")
+    print(f"=== 近5日 外資+投信 賣超 Top10 ===")
     for c, v in top_sell:
         k = sk(c, v)
         print(f"  {c} {k['name']:<7}({(k['industry'] or '?')[:5]:<5}) 合計{k['tot']:>+8,.0f}"
-              f"  外{k['f']:>+7,.0f} 投{k['i']:>+7,.0f} 自{k['p']:>+6,.0f}")
+              f"  外{k['f']:>+8,.0f} 投{k['i']:>+8,.0f}")
 
     out = {"date": dt.date.today().isoformat(),
            "window5": [d5[0][0], d5[-1][0]], "window20": [d20[0][0], d20[-1][0]],
@@ -226,13 +223,13 @@ def build_block(data=None, max_rows=4):
         try:
             with io.open(OUT_PATH, encoding="utf-8") as f: data = json.load(f)
         except Exception: return None
-    L = ["💸 法人資金流向(5日)"]
-    fire = [s for s in data["sectors"] if s["consensus"] == "🔥三方買"][:3]
-    dump = [s for s in data["sectors"] if s["consensus"] == "🔴三方賣"][:2]
+    L = ["💸 外資+投信資金流向(5日)"]
+    fire = [s for s in data["sectors"] if s["consensus"] == "🔥雙買"][:3]
+    dump = [s for s in data["sectors"] if s["consensus"] == "🔴雙賣"][:2]
     if fire:
-        L.append("  🔥三方買: " + "、".join(f"{s['industry']}{s['tot5']:+,.0f}" for s in fire))
+        L.append("  🔥雙買: " + "、".join(f"{s['industry']}{s['tot5']:+,.0f}" for s in fire))
     if dump:
-        L.append("  🔴三方賣: " + "、".join(f"{s['industry']}{s['tot5']:+,.0f}" for s in dump))
+        L.append("  🔴雙賣: " + "、".join(f"{s['industry']}{s['tot5']:+,.0f}" for s in dump))
     hot = [s for s in data["subgroups"] if s["mom"] in ("⏫加速買", "🔄反轉") and s["tot5"] > 0][:3]
     cold = [s for s in data["subgroups"] if s["mom"] in ("⏬加速賣", "🔄反轉") and s["tot5"] < 0][:3]
     if hot:  L.append("  ⏫子族群加速買: " + "、".join(f"{s['group']}" for s in hot))

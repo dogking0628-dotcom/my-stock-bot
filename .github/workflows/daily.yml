@@ -34,6 +34,9 @@ jobs:
       - name: Run Smart Money Radar — 三方法人(外資/投信/自營)資金流向 5日vs20日
         run: python smart_money_radar.py || echo "smart money radar failed (non-fatal)"
 
+      - name: Run SITC Product Flow — 投信×產品細類每日金額流向
+        run: python sitc_product_flow.py || echo "sitc product flow failed (non-fatal)"
+
       - name: Run industry ATH scan (yfinance) — ATH 池 + V4.2 評分（含投信+10分）
         run: python industry_ath_yf.py || echo "industry scan failed (non-fatal)"
 
@@ -86,7 +89,7 @@ jobs:
           git config user.name  "github-actions"
           git config user.email "github-actions@github.com"
           # 逐檔 add：缺檔(如 daily_review.py 失敗沒產出)只略過自己，不拖累整批
-          for f in state.json dashboard_data.json tw_top5_state.json capital_cache.json sp500_universe.json tw_universe.json ath_industry_report.json scan_output.txt marketcap_cache.json top5_history.json daily_review.json daily_v2_signal.json daily_v41_signal.json hot_money_signal.json industry_heat_history.json institutional_signal.json etf_holdings_snapshot.json market_thermometer.json smart_money_radar.json t86_3party_cache.json; do
+          for f in state.json dashboard_data.json tw_top5_state.json capital_cache.json sp500_universe.json tw_universe.json ath_industry_report.json scan_output.txt marketcap_cache.json top5_history.json daily_review.json daily_v2_signal.json daily_v41_signal.json hot_money_signal.json industry_heat_history.json institutional_signal.json etf_holdings_snapshot.json market_thermometer.json smart_money_radar.json t86_3party_cache.json sitc_product_flow.json; do
             [ -f "$f" ] && git add "$f" || true
           done
           git diff --staged --quiet || git commit -m "chore: update state $(date -u +%Y-%m-%d)"

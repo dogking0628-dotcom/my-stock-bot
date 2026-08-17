@@ -140,6 +140,14 @@ def build_message(picks, strongest, regime, blocked, date, inst=None):
             lines.append("")
     except Exception:
         pass
+    try:
+        from sitc_product_flow import build_block as _spf
+        pb = _spf()
+        if pb:
+            lines.append(pb)
+            lines.append("")
+    except Exception:
+        pass
     lines.append("━━━━━━━━━━━━━━━━━━━━")
     lines.append("💡 操作:")
     lines.append("  9:00前掛限價低點")

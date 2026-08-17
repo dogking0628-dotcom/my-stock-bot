@@ -1,9 +1,9 @@
 {
- "date": "2026-08-16",
+ "date": "2026-08-17",
  "turnover": {
-  "twse_date_roc": "115/08/14",
-  "twse_amount": 1109746702006.0,
-  "combined_est": 1309501108367.0798,
+  "twse_date_roc": "115/08/17",
+  "twse_amount": 981055134845.0,
+  "combined_est": 1157645059117.0999,
   "sky_alert": false,
   "threshold": 1500000000000.0,
   "note": "合計=上市×1.18 估算(TPEX API 擋外部連線)"

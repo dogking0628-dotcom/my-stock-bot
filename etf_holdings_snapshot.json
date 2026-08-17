@@ -1,5 +1,5 @@
 {
- "date": "2026-08-16",
+ "date": "2026-08-17",
  "etfs": {
   "00981A": {
    "2330": {
@@ -117,11 +117,6 @@
     "shares": 343.0,
     "weight": 0.25
    },
-   "4979": {
-    "name": "華星光",
-    "shares": 1868.0,
-    "weight": 0.24
-   },
    "1590": {
     "name": "亞德客-KY",
     "shares": 522.0,
@@ -130,6 +125,11 @@
    "4958": {
     "name": "臻鼎-KY",
     "shares": 1672.0,
+    "weight": 0.24
+   },
+   "4979": {
+    "name": "華星光",
+    "shares": 1868.0,
     "weight": 0.24
    },
    "6510": {
@@ -192,25 +192,15 @@
     "shares": 0.0,
     "weight": 9.89
    },
+   "0050": {
+    "name": "0050",
+    "shares": 106.45,
+    "weight": 0.05
+   },
    "00981A": {
     "name": "00981A",
-    "shares": 30.22,
-    "weight": 0.9
-   },
-   "00878": {
-    "name": "00878",
-    "shares": 33.87,
-    "weight": 0.27
-   },
-   "0056": {
-    "name": "0056",
-    "shares": 53.4,
-    "weight": 0.75
-   },
-   "00919": {
-    "name": "00919",
-    "shares": 30.57,
-    "weight": 0.53
+    "shares": 30.39,
+    "weight": 0.56
    }
   },
   "00980A": {
@@ -274,14 +264,14 @@
     "shares": 55.0,
     "weight": 1.92
    },
-   "2345": {
-    "name": "智邦",
-    "shares": 147.0,
-    "weight": 1.87
-   },
    "2368": {
     "name": "金像電",
     "shares": 393.0,
+    "weight": 1.87
+   },
+   "2345": {
+    "name": "智邦",
+    "shares": 147.0,
     "weight": 1.87
    },
    "2360": {
@@ -324,14 +314,14 @@
     "shares": 694.0,
     "weight": 1.4
    },
-   "3036": {
-    "name": "文曄",
-    "shares": 1146.0,
-    "weight": 1.35
-   },
    "3443": {
     "name": "創意",
     "shares": 59.0,
+    "weight": 1.35
+   },
+   "3036": {
+    "name": "文曄",
+    "shares": 1146.0,
     "weight": 1.35
    },
    "5904": {
@@ -434,14 +424,14 @@
     "shares": 33.0,
     "weight": 0.41
    },
-   "3026": {
-    "name": "禾伸堂",
-    "shares": 133.0,
-    "weight": 0.36
-   },
    "3044": {
     "name": "健鼎",
     "shares": 163.0,
+    "weight": 0.36
+   },
+   "3026": {
+    "name": "禾伸堂",
+    "shares": 133.0,
     "weight": 0.36
    },
    "3264": {
@@ -469,25 +459,15 @@
     "shares": 0.0,
     "weight": 12.39
    },
+   "0050": {
+    "name": "0050",
+    "shares": 106.45,
+    "weight": 0.05
+   },
    "00981A": {
     "name": "00981A",
-    "shares": 30.22,
-    "weight": 0.9
-   },
-   "00878": {
-    "name": "00878",
-    "shares": 33.87,
-    "weight": 0.27
-   },
-   "0056": {
-    "name": "0056",
-    "shares": 53.4,
-    "weight": 0.75
-   },
-   "00919": {
-    "name": "00919",
-    "shares": 30.57,
-    "weight": 0.53
+    "shares": 30.39,
+    "weight": 0.56
    }
   },
   "00982A": {
@@ -701,14 +681,14 @@
     "shares": 9.0,
     "weight": 0.28
    },
-   "2451": {
-    "name": "創見",
-    "shares": 519.0,
-    "weight": 0.26
-   },
    "2885": {
     "name": "元大金",
     "shares": 2107.0,
+    "weight": 0.26
+   },
+   "2451": {
+    "name": "創見",
+    "shares": 519.0,
     "weight": 0.26
    },
    "6187": {
@@ -736,25 +716,15 @@
     "shares": 0.0,
     "weight": 23.38
    },
+   "0050": {
+    "name": "0050",
+    "shares": 106.45,
+    "weight": 0.05
+   },
    "00981A": {
     "name": "00981A",
-    "shares": 30.22,
-    "weight": 0.9
-   },
-   "00878": {
-    "name": "00878",
-    "shares": 33.87,
-    "weight": 0.27
-   },
-   "0056": {
-    "name": "0056",
-    "shares": 53.4,
-    "weight": 0.75
-   },
-   "00919": {
-    "name": "00919",
-    "shares": 30.57,
-    "weight": 0.53
+    "shares": 30.39,
+    "weight": 0.56
    }
   }
  },
@@ -762,413 +732,96 @@
   "00981A": {
    "new": [
     {
-     "code": "2360",
-     "name": "致茂",
-     "shares": 343.0,
-     "weight": 0.25
-    },
-    {
-     "code": "4979",
-     "name": "華星光",
-     "shares": 1868.0,
-     "weight": 0.24
-    },
-    {
-     "code": "4958",
-     "name": "臻鼎-KY",
-     "shares": 1672.0,
-     "weight": 0.24
-    },
-    {
-     "code": "2408",
-     "name": "南亞科",
-     "shares": 959.0,
-     "weight": 0.12
-    },
-    {
-     "code": "72.47",
-     "name": "72.47",
-     "shares": 0.0,
-     "weight": 9.89
-    }
-   ],
-   "added": [
-    {
-     "code": "3037",
-     "name": "欣興",
-     "shares": 17821.0,
-     "weight": 4.87,
-     "chg_pct": 17.3
-    },
-    {
-     "code": "3711",
-     "name": "日月光投控",
-     "shares": 16346.0,
-     "weight": 3.15,
-     "chg_pct": 28.5
-    },
-    {
-     "code": "5274",
-     "name": "信驊",
-     "shares": 454.0,
-     "weight": 2.29,
-     "chg_pct": 20.1
-    },
-    {
-     "code": "2449",
-     "name": "京元電子",
-     "shares": 7603.0,
-     "weight": 0.59,
-     "chg_pct": 70.0
-    }
-   ],
-   "reduced": [
-    {
-     "code": "2330",
-     "name": "台積電",
-     "shares": 10736.0,
-     "weight": 9.04,
-     "chg_pct": -10.2
-    },
-    {
-     "code": "6510",
-     "name": "精測",
-     "shares": 265.0,
-     "weight": 0.23,
-     "chg_pct": -58.0
-    },
-    {
-     "code": "6515",
-     "name": "穎崴",
-     "shares": 94.0,
-     "weight": 0.19,
-     "chg_pct": -62.5
-    },
-    {
-     "code": "6278",
-     "name": "台表科",
-     "shares": 3291.0,
-     "weight": 0.16,
-     "chg_pct": -24.5
-    },
-    {
-     "code": "6271",
-     "name": "同欣電",
-     "shares": 2160.0,
-     "weight": 0.12,
-     "chg_pct": -26.4
-    },
-    {
-     "code": "6147",
-     "name": "頎邦",
-     "shares": 1772.0,
-     "weight": 0.08,
-     "chg_pct": -71.9
-    },
-    {
-     "code": "4966",
-     "name": "譜瑞-KY",
-     "shares": 154.0,
-     "weight": 0.03,
-     "chg_pct": -76.2
-    }
-   ],
-   "removed": [
-    {
-     "code": "3533",
-     "name": "嘉澤",
-     "shares": 647.0,
-     "weight": 0.47
-    },
-    {
-     "code": "2317",
-     "name": "鴻海",
-     "shares": 5089.0,
-     "weight": 0.44
-    },
-    {
-     "code": "5439",
-     "name": "高技",
-     "shares": 3553.0,
-     "weight": 0.38
-    },
-    {
-     "code": "8358",
-     "name": "金居",
-     "shares": 968.0,
-     "weight": 0.2
-    },
-    {
-     "code": "6488",
-     "name": "環球晶",
-     "shares": 347.0,
-     "weight": 0.12
-    },
-    {
-     "code": "84.85",
-     "name": "84.85",
-     "shares": 0.0,
-     "weight": 12.61
-    },
-    {
      "code": "0050",
      "name": "0050",
-     "shares": 106.7,
-     "weight": 1.43
-    }
-   ]
-  },
-  "00980A": {
-   "new": [
-    {
-     "code": "1303",
-     "name": "南亞",
-     "shares": 1538.0,
-     "weight": 1.47
-    },
-    {
-     "code": "6213",
-     "name": "聯茂",
-     "shares": 482.0,
-     "weight": 0.76
-    },
-    {
-     "code": "3026",
-     "name": "禾伸堂",
-     "shares": 133.0,
-     "weight": 0.36
-    },
-    {
-     "code": "72.43",
-     "name": "72.43",
-     "shares": 0.0,
-     "weight": 12.39
-    }
-   ],
-   "added": [
-    {
-     "code": "2383",
-     "name": "台光電",
-     "shares": 152.0,
-     "weight": 4.32,
-     "chg_pct": 13.4
-    },
-    {
-     "code": "2317",
-     "name": "鴻海",
-     "shares": 1572.0,
-     "weight": 2.36,
-     "chg_pct": 22.5
-    },
-    {
-     "code": "3081",
-     "name": "聯亞",
-     "shares": 238.0,
-     "weight": 2.32,
-     "chg_pct": 10.2
-    },
-    {
-     "code": "2408",
-     "name": "南亞科",
-     "shares": 1037.0,
-     "weight": 2.24,
-     "chg_pct": 82.2
-    },
-    {
-     "code": "2345",
-     "name": "智邦",
-     "shares": 147.0,
-     "weight": 1.87,
-     "chg_pct": 13.1
-    },
-    {
-     "code": "6669",
-     "name": "緯穎",
-     "shares": 47.0,
-     "weight": 1.52,
-     "chg_pct": 20.5
-    },
-    {
-     "code": "2891",
-     "name": "中信金",
-     "shares": 3702.0,
-     "weight": 1.44,
-     "chg_pct": 30.2
-    },
-    {
-     "code": "5274",
-     "name": "信驊",
-     "shares": 16.0,
-     "weight": 1.42,
-     "chg_pct": 23.1
-    },
-    {
-     "code": "2376",
-     "name": "技嘉",
-     "shares": 694.0,
-     "weight": 1.4,
-     "chg_pct": 63.3
-    },
-    {
-     "code": "2382",
-     "name": "廣達",
-     "shares": 721.0,
-     "weight": 1.26,
-     "chg_pct": 36.0
-    },
-    {
-     "code": "6274",
-     "name": "台燿",
-     "shares": 186.0,
-     "weight": 1.24,
-     "chg_pct": 42.0
-    },
-    {
-     "code": "8299",
-     "name": "群聯",
-     "shares": 120.0,
-     "weight": 1.18,
-     "chg_pct": 51.9
-    },
-    {
-     "code": "3293",
-     "name": "鈊象",
-     "shares": 252.0,
-     "weight": 1.17,
-     "chg_pct": 103.2
-    },
-    {
-     "code": "3231",
-     "name": "緯創",
-     "shares": 1043.0,
-     "weight": 1.1,
-     "chg_pct": 48.4
-    },
-    {
-     "code": "2884",
-     "name": "玉山金",
-     "shares": 4361.0,
-     "weight": 1.01,
-     "chg_pct": 12.1
-    },
-    {
-     "code": "8210",
-     "name": "勤誠",
-     "shares": 139.0,
-     "weight": 0.87,
-     "chg_pct": 24.1
-    },
-    {
-     "code": "3189",
-     "name": "景碩",
-     "shares": 184.0,
-     "weight": 0.7,
-     "chg_pct": 32.4
-    },
-    {
-     "code": "3264",
-     "name": "欣銓",
-     "shares": 321.0,
-     "weight": 0.34,
-     "chg_pct": 86.6
-    }
-   ],
-   "reduced": [
-    {
-     "code": "2059",
-     "name": "川湖",
-     "shares": 91.0,
-     "weight": 4.28,
-     "chg_pct": -17.3
-    },
-    {
-     "code": "2308",
-     "name": "台達電",
-     "shares": 404.0,
-     "weight": 3.97,
-     "chg_pct": -14.9
-    },
-    {
-     "code": "7769",
-     "name": "鴻勁",
-     "shares": 73.0,
-     "weight": 2.7,
-     "chg_pct": -21.5
-    },
-    {
-     "code": "3653",
-     "name": "健策",
-     "shares": 69.0,
-     "weight": 1.42,
-     "chg_pct": -54.3
-    },
-    {
-     "code": "3443",
-     "name": "創意",
-     "shares": 59.0,
-     "weight": 1.35,
-     "chg_pct": -15.7
-    },
-    {
-     "code": "8996",
-     "name": "高力",
-     "shares": 182.0,
-     "weight": 0.93,
-     "chg_pct": -17.6
-    },
-    {
-     "code": "4958",
-     "name": "臻鼎-KY",
-     "shares": 335.0,
-     "weight": 0.83,
-     "chg_pct": -23.2
-    },
-    {
-     "code": "3665",
-     "name": "貿聯-KY",
-     "shares": 33.0,
-     "weight": 0.41,
-     "chg_pct": -38.9
-    }
-   ],
-   "removed": [
-    {
-     "code": "77.48",
-     "name": "77.48",
-     "shares": 0.0,
-     "weight": 11.73
-    },
-    {
-     "code": "0050",
-     "name": "0050",
-     "shares": 106.7,
-     "weight": 1.43
-    }
-   ]
-  },
-  "00982A": {
-   "new": [
-    {
-     "code": "71.34",
-     "name": "71.34",
-     "shares": 0.0,
-     "weight": 23.38
+     "shares": 106.45,
+     "weight": 0.05
     }
    ],
    "added": [],
    "reduced": [],
    "removed": [
     {
-     "code": "71.50",
-     "name": "71.50",
-     "shares": 0.0,
-     "weight": 26.62
+     "code": "00878",
+     "name": "00878",
+     "shares": 33.87,
+     "weight": 0.27
     },
+    {
+     "code": "0056",
+     "name": "0056",
+     "shares": 53.4,
+     "weight": 0.75
+    },
+    {
+     "code": "00919",
+     "name": "00919",
+     "shares": 30.57,
+     "weight": 0.53
+    }
+   ]
+  },
+  "00980A": {
+   "new": [
     {
      "code": "0050",
      "name": "0050",
-     "shares": 106.7,
-     "weight": 1.43
+     "shares": 106.45,
+     "weight": 0.05
+    }
+   ],
+   "added": [],
+   "reduced": [],
+   "removed": [
+    {
+     "code": "00878",
+     "name": "00878",
+     "shares": 33.87,
+     "weight": 0.27
+    },
+    {
+     "code": "0056",
+     "name": "0056",
+     "shares": 53.4,
+     "weight": 0.75
+    },
+    {
+     "code": "00919",
+     "name": "00919",
+     "shares": 30.57,
+     "weight": 0.53
+    }
+   ]
+  },
+  "00982A": {
+   "new": [
+    {
+     "code": "0050",
+     "name": "0050",
+     "shares": 106.45,
+     "weight": 0.05
+    }
+   ],
+   "added": [],
+   "reduced": [],
+   "removed": [
+    {
+     "code": "00878",
+     "name": "00878",
+     "shares": 33.87,
+     "weight": 0.27
+    },
+    {
+     "code": "0056",
+     "name": "0056",
+     "shares": 53.4,
+     "weight": 0.75
+    },
+    {
+     "code": "00919",
+     "name": "00919",
+     "shares": 30.57,
+     "weight": 0.53
     }
    ]
   }

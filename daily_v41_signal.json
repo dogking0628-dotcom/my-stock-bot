@@ -1,41 +1,9 @@
 {
-  "timestamp": "2026-08-16",
+  "timestamp": "2026-08-17",
   "strategy": "V4.3 (V4.2 + 硬停損-7%樓地板; 2y回測 +107.6%/CAGR 28.4%/PF 3.94/MDD -14%)",
   "strongest_industry": "電腦及週邊",
   "v4_blocked": false,
   "picks": [
-    {
-      "today": 43.20000076293945,
-      "monthly_max_2y": 36.70000076293945,
-      "ratio": 1.1771117129393593,
-      "from_high_pct": 17.711171293935934,
-      "bullish": false,
-      "bullish_fast": true,
-      "change_pct": 9.923668197431269,
-      "vol_ratio": 5.081595085055183,
-      "rsi": 68.38905457892353,
-      "ma5": 39.0,
-      "ma20": 36.80750007629395,
-      "ma60": 36.823333231608075,
-      "ma200": 31.973008642196657,
-      "gap_up": false,
-      "close_near_high": true,
-      "long_red": true,
-      "ticker": "2324",
-      "name": "仁寶",
-      "industry": "電腦及週邊",
-      "industry_strong": false,
-      "market_cap_billions": 1272.2819072,
-      "mcap_pass": true,
-      "sitc_net_shares": -46924,
-      "momentum_score": 80,
-      "momentum_notes": [
-        "量爆價揚",
-        "ATH"
-      ],
-      "tier": "⭐⭐⭐",
-      "next_day_prob": "≥85%"
-    },
     {
       "today": 996.0,
       "monthly_max_2y": 810.0,
@@ -44,7 +12,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 6.296691568836721,
-      "vol_ratio": 3.2071384212611185,
+      "vol_ratio": 1.1367212174062273,
       "rsi": 79.64824120603015,
       "ma5": 888.4,
       "ma20": 802.2,
@@ -59,11 +27,12 @@
       "industry_strong": false,
       "market_cap_billions": 4671.96215296,
       "mcap_pass": true,
-      "sitc_net_shares": -217917,
-      "momentum_score": 80,
+      "sitc_net_shares": 420487,
+      "momentum_score": 85,
       "momentum_notes": [
-        "量爆價揚",
-        "ATH"
+        "跳空缺口",
+        "ATH",
+        "投信+420張"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-16",
+  "timestamp": "2026-08-17",
   "strategy": "V2 原版 (實測 OOS PF 1.83 / 主回測 PF 1.69, 抗崩盤強·常空手)",
   "top_industries": [
     {
@@ -13,42 +13,7 @@
       "bullish_count": 14
     }
   ],
-  "picks": [
-    {
-      "today": 37.75,
-      "monthly_max_2y": 35.95000076293945,
-      "ratio": 1.050069518744382,
-      "from_high_pct": 5.0069518744382036,
-      "bullish": true,
-      "bullish_fast": true,
-      "change_pct": 4.2817657579924395,
-      "vol_ratio": 1.6306192761601521,
-      "rsi": 61.76468985423064,
-      "ma5": 36.210000610351564,
-      "ma20": 34.980099296569826,
-      "ma60": 31.44917739232381,
-      "ma200": 24.266033182144167,
-      "gap_up": true,
-      "close_near_high": true,
-      "long_red": true,
-      "ticker": "2887",
-      "name": "台新新光金",
-      "industry": "金融保險",
-      "industry_strong": false,
-      "market_cap_billions": 5955.47389952,
-      "mcap_pass": true,
-      "sitc_net_shares": 25041136,
-      "momentum_score": 85,
-      "momentum_notes": [
-        "跳空缺口",
-        "ATH",
-        "投信+25,041張"
-      ],
-      "tier": "⭐⭐⭐",
-      "next_day_prob": "≥85%",
-      "_score": 86.63
-    }
-  ],
+  "picks": [],
   "params": {
     "top_industries": 2,
     "vol_ratio_min": 1.5,

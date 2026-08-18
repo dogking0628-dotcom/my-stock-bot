@@ -13259,6 +13259,119 @@
       "current_price": 146.0,
       "current_return": 0.0,
       "days_held": 0
+    },
+    {
+      "pick_date": "2026-08-17",
+      "ticker": "2059.TW",
+      "name": "川湖",
+      "sector": "機構_散熱",
+      "pick_price": 13750.0,
+      "stage": "BULL_MID",
+      "reason": "機構_散熱 強勢(+47.7) + 個股 5d+15.5% + 有 CB",
+      "cb_codes": [
+        "205905"
+      ],
+      "max_price": 13750.0,
+      "current_price": 13750.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-08-17",
+      "ticker": "3017.TW",
+      "name": "奇鋐",
+      "sector": "AI_散熱電源",
+      "pick_price": 3150.0,
+      "stage": "BULL_MID",
+      "reason": "AI_散熱電源 強勢(+29.1) + 個股 5d+13.9% + 有 CB",
+      "cb_codes": [
+        "301708"
+      ],
+      "max_price": 3150.0,
+      "current_price": 3150.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-08-17",
+      "ticker": "2408.TW",
+      "name": "南亞科",
+      "sector": "記憶體_DRAM_NAND",
+      "pick_price": 524.0,
+      "stage": "BULL_MID",
+      "reason": "記憶體_DRAM_NAND 強勢(+26.0) + 個股 5d+4.4% + 有 CB",
+      "cb_codes": [
+        "240807"
+      ],
+      "max_price": 524.0,
+      "current_price": 524.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-08-17",
+      "ticker": "2308.TW",
+      "name": "台達電",
+      "sector": "AI_散熱電源",
+      "pick_price": 1885.0,
+      "stage": "BULL_MID",
+      "reason": "AI_散熱電源 強勢(+29.1) + 個股 5d+3.9% + 有 CB",
+      "cb_codes": [
+        "230806"
+      ],
+      "max_price": 1885.0,
+      "current_price": 1885.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-08-17",
+      "ticker": "8299.TWO",
+      "name": "群聯",
+      "sector": "記憶體_DRAM_NAND",
+      "pick_price": 2085.0,
+      "stage": "BULL_MID",
+      "reason": "記憶體_DRAM_NAND 強勢(+26.0) + 個股 5d+2.2% + 有 CB",
+      "cb_codes": [
+        "829902"
+      ],
+      "max_price": 2085.0,
+      "current_price": 2085.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-08-17",
+      "ticker": "2344.TW",
+      "name": "華邦電",
+      "sector": "記憶體_DRAM_NAND",
+      "pick_price": 181.5,
+      "stage": "BULL_MID",
+      "reason": "記憶體_DRAM_NAND 強勢(+26.0) + 個股 5d+1.1% + 有 CB",
+      "cb_codes": [
+        "234410",
+        "234411"
+      ],
+      "max_price": 181.5,
+      "current_price": 181.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-08-17",
+      "ticker": "2421.TW",
+      "name": "建準",
+      "sector": "機構_散熱",
+      "pick_price": 148.0,
+      "stage": "BULL_MID",
+      "reason": "機構_散熱 強勢(+47.7) + 個股 5d-1.0% + 有 CB",
+      "cb_codes": [
+        "242106"
+      ],
+      "max_price": 148.0,
+      "current_price": 148.0,
+      "current_return": 0.0,
+      "days_held": 0
     }
   ],
   "closed_picks": []

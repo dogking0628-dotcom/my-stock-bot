@@ -1,487 +1,487 @@
 {
-  "date": "2026-08-16 13:52",
+  "date": "2026-08-17 14:01",
   "market_position": "BULL_MID",
   "sector_results": {
     "半導體_晶圓代工": {
-      "avg_5d": 5.74,
-      "avg_20d": -5.47,
+      "avg_5d": 0.83,
+      "avg_20d": 1.05,
       "member_count": 3,
       "members": {
         "2330.TW": {
-          "price": 2395.0,
-          "ret_5d": 1.05,
-          "ret_20d": 4.59,
-          "vol_avg": 30099730.0
+          "price": 2400.0,
+          "ret_5d": 0.84,
+          "ret_20d": 3.45,
+          "vol_avg": 28508366.0
         },
         "2303.TW": {
-          "price": 121.0,
-          "ret_5d": 4.31,
-          "ret_20d": -15.97,
-          "vol_avg": 191710374.0
+          "price": 121.5,
+          "ret_5d": -1.22,
+          "ret_20d": -6.54,
+          "vol_avg": 180401218.0
         },
         "5347.TWO": {
-          "price": 160.5,
-          "ret_5d": 11.85,
-          "ret_20d": -5.03,
-          "vol_avg": 26070549.0
+          "price": 162.0,
+          "ret_5d": 2.86,
+          "ret_20d": 6.23,
+          "vol_avg": 24736309.0
         }
       },
       "top_member": "5347.TWO",
-      "rs_rank_5d": 11,
-      "rs_rank_20d": 20,
-      "rs_momentum": 9
+      "rs_rank_5d": 12,
+      "rs_rank_20d": 17,
+      "rs_momentum": 5
     },
     "半導體_IC設計": {
-      "avg_5d": 5.88,
-      "avg_20d": 18.23,
+      "avg_5d": 6.11,
+      "avg_20d": 21.4,
       "member_count": 4,
       "members": {
         "2454.TW": {
-          "price": 4210.0,
-          "ret_5d": 7.95,
-          "ret_20d": 24.93,
-          "vol_avg": 9004936.0
+          "price": 4050.0,
+          "ret_5d": 2.27,
+          "ret_20d": 21.26,
+          "vol_avg": 9101965.0
         },
         "3034.TW": {
-          "price": 512.0,
-          "ret_5d": -5.54,
-          "ret_20d": 11.18,
-          "vol_avg": 4224689.0
+          "price": 509.0,
+          "ret_5d": -6.43,
+          "ret_20d": 11.14,
+          "vol_avg": 4178099.0
         },
         "3035.TW": {
-          "price": 173.5,
-          "ret_5d": 0.87,
-          "ret_20d": -5.71,
-          "vol_avg": 5637643.0
+          "price": 177.0,
+          "ret_5d": -0.56,
+          "ret_20d": -3.01,
+          "vol_avg": 5485809.0
         },
         "3443.TW": {
-          "price": 5465.0,
-          "ret_5d": 20.24,
-          "ret_20d": 42.5,
-          "vol_avg": 2054205.0
+          "price": 5850.0,
+          "ret_5d": 29.14,
+          "ret_20d": 56.21,
+          "vol_avg": 2128409.0
         }
       },
       "top_member": "3443.TW",
-      "rs_rank_5d": 10,
+      "rs_rank_5d": 9,
       "rs_rank_20d": 5,
-      "rs_momentum": -5
+      "rs_momentum": -4
     },
     "半導體_封測設備": {
-      "avg_5d": 7.19,
-      "avg_20d": -11.34,
+      "avg_5d": 7.41,
+      "avg_20d": -5.29,
       "member_count": 4,
       "members": {
         "2449.TW": {
-          "price": 247.0,
-          "ret_5d": 2.07,
-          "ret_20d": -9.13,
-          "vol_avg": 21580017.0
+          "price": 248.5,
+          "ret_5d": 0.0,
+          "ret_20d": -3.17,
+          "vol_avg": 20721316.0
         },
         "6488.TWO": {
-          "price": 1010.0,
-          "ret_5d": 15.83,
-          "ret_20d": -18.55,
-          "vol_avg": 10943365.0
+          "price": 1020.0,
+          "ret_5d": 19.44,
+          "ret_20d": -19.37,
+          "vol_avg": 10898318.0
         },
         "6196.TW": {
-          "price": 510.0,
-          "ret_5d": 3.34,
-          "ret_20d": -5.9,
-          "vol_avg": 1506450.0
+          "price": 511.0,
+          "ret_5d": 0.79,
+          "ret_20d": -1.35,
+          "vol_avg": 1465161.0
         },
         "6147.TWO": {
-          "price": 157.5,
-          "ret_5d": 7.51,
-          "ret_20d": -11.76,
-          "vol_avg": 29403846.0
+          "price": 168.5,
+          "ret_5d": 9.42,
+          "ret_20d": 2.74,
+          "vol_avg": 29483277.0
         }
       },
       "top_member": "6488.TWO",
-      "rs_rank_5d": 6,
-      "rs_rank_20d": 22,
-      "rs_momentum": 16
+      "rs_rank_5d": 5,
+      "rs_rank_20d": 19,
+      "rs_momentum": 14
     },
     "記憶體_DRAM_NAND": {
-      "avg_5d": 9.08,
-      "avg_20d": 21.46,
+      "avg_5d": 2.57,
+      "avg_20d": 25.97,
       "member_count": 3,
       "members": {
         "2408.TW": {
-          "price": 512.0,
-          "ret_5d": 12.04,
-          "ret_20d": 29.46,
-          "vol_avg": 85462476.0
+          "price": 524.0,
+          "ret_5d": 4.38,
+          "ret_20d": 37.53,
+          "vol_avg": 84950908.0
         },
         "2344.TW": {
-          "price": 183.5,
-          "ret_5d": 12.23,
-          "ret_20d": 18.39,
-          "vol_avg": 143588874.0
+          "price": 181.5,
+          "ret_5d": 1.11,
+          "ret_20d": 20.2,
+          "vol_avg": 144694388.0
         },
         "8299.TWO": {
-          "price": 2080.0,
-          "ret_5d": 2.97,
-          "ret_20d": 16.53,
-          "vol_avg": 5196422.0
+          "price": 2085.0,
+          "ret_5d": 2.21,
+          "ret_20d": 20.17,
+          "vol_avg": 5204098.0
         }
       },
-      "top_member": "2344.TW",
-      "rs_rank_5d": 4,
-      "rs_rank_20d": 4,
-      "rs_momentum": 0
+      "top_member": "2408.TW",
+      "rs_rank_5d": 11,
+      "rs_rank_20d": 3,
+      "rs_momentum": -8
     },
     "AI_伺服器": {
-      "avg_5d": 9.05,
-      "avg_20d": 24.25,
+      "avg_5d": 3.35,
+      "avg_20d": 20.44,
       "member_count": 5,
       "members": {
         "2382.TW": {
-          "price": 327.5,
-          "ret_5d": 9.9,
-          "ret_20d": 0.61,
-          "vol_avg": 25551506.0
+          "price": 333.5,
+          "ret_5d": 6.38,
+          "ret_20d": 5.54,
+          "vol_avg": 25265525.0
         },
         "2376.TW": {
-          "price": 397.5,
-          "ret_5d": 15.55,
-          "ret_20d": 26.83,
-          "vol_avg": 8705094.0
+          "price": 358.0,
+          "ret_5d": 2.43,
+          "ret_20d": 12.16,
+          "vol_avg": 9485107.0
         },
         "3231.TW": {
-          "price": 193.5,
-          "ret_5d": 5.45,
-          "ret_20d": 39.21,
-          "vol_avg": 105304904.0
+          "price": 187.0,
+          "ret_5d": -3.11,
+          "ret_20d": 30.31,
+          "vol_avg": 105334962.0
         },
         "6669.TW": {
-          "price": 6435.0,
-          "ret_5d": 5.49,
-          "ret_20d": 39.29,
-          "vol_avg": 1924646.0
+          "price": 6620.0,
+          "ret_5d": 10.15,
+          "ret_20d": 41.3,
+          "vol_avg": 1931743.0
         },
         "4938.TW": {
-          "price": 94.8,
-          "ret_5d": 8.84,
-          "ret_20d": 15.33,
-          "vol_avg": 15901787.0
+          "price": 90.3,
+          "ret_5d": 0.89,
+          "ret_20d": 12.88,
+          "vol_avg": 16474941.0
         }
       },
-      "top_member": "2376.TW",
-      "rs_rank_5d": 5,
-      "rs_rank_20d": 3,
-      "rs_momentum": -2
+      "top_member": "6669.TW",
+      "rs_rank_5d": 10,
+      "rs_rank_20d": 6,
+      "rs_momentum": -4
     },
     "AI_散熱電源": {
-      "avg_5d": 15.2,
-      "avg_20d": 27.69,
+      "avg_5d": 8.89,
+      "avg_20d": 29.05,
       "member_count": 2,
       "members": {
         "3017.TW": {
-          "price": 3235.0,
-          "ret_5d": 16.16,
-          "ret_20d": 47.05,
-          "vol_avg": 4696757.0
+          "price": 3150.0,
+          "ret_5d": 13.92,
+          "ret_20d": 47.54,
+          "vol_avg": 4644020.0
         },
         "2308.TW": {
           "price": 1885.0,
-          "ret_5d": 14.24,
-          "ret_20d": 8.33,
-          "vol_avg": 13489897.0
+          "ret_5d": 3.86,
+          "ret_20d": 10.56,
+          "vol_avg": 13609869.0
         }
       },
       "top_member": "3017.TW",
-      "rs_rank_5d": 2,
+      "rs_rank_5d": 3,
       "rs_rank_20d": 2,
-      "rs_momentum": 0
+      "rs_momentum": -1
     },
     "被動元件_載板": {
-      "avg_5d": 6.54,
-      "avg_20d": 1.23,
+      "avg_5d": -3.09,
+      "avg_20d": 4.01,
       "member_count": 3,
       "members": {
         "2492.TW": {
-          "price": 302.5,
-          "ret_5d": 20.52,
-          "ret_20d": -1.63,
-          "vol_avg": 18678382.0
+          "price": 291.5,
+          "ret_5d": 6.58,
+          "ret_20d": 5.23,
+          "vol_avg": 19957896.0
         },
         "3702.TW": {
-          "price": 115.0,
-          "ret_5d": -6.12,
-          "ret_20d": 5.02,
-          "vol_avg": 11319682.0
+          "price": 111.0,
+          "ret_5d": -14.62,
+          "ret_20d": 4.23,
+          "vol_avg": 11292084.0
         },
         "6658.TW": {
-          "price": 161.0,
-          "ret_5d": 5.23,
-          "ret_20d": 0.31,
-          "vol_avg": 433610.0
+          "price": 159.5,
+          "ret_5d": -1.24,
+          "ret_20d": 2.57,
+          "vol_avg": 408292.0
         }
       },
       "top_member": "2492.TW",
-      "rs_rank_5d": 7,
-      "rs_rank_20d": 16,
-      "rs_momentum": 9
+      "rs_rank_5d": 21,
+      "rs_rank_20d": 14,
+      "rs_momentum": -7
     },
     "光學_鏡頭": {
-      "avg_5d": 5.93,
-      "avg_20d": 8.49,
+      "avg_5d": 8.33,
+      "avg_20d": 15.24,
       "member_count": 3,
       "members": {
         "3008.TW": {
-          "price": 4610.0,
-          "ret_5d": 6.09,
-          "ret_20d": 16.01,
-          "vol_avg": 2058935.0
+          "price": 5070.0,
+          "ret_5d": 16.28,
+          "ret_20d": 32.03,
+          "vol_avg": 2157531.0
         },
         "3019.TW": {
-          "price": 137.0,
-          "ret_5d": 5.79,
-          "ret_20d": 4.58,
-          "vol_avg": 2949460.0
+          "price": 141.0,
+          "ret_5d": 4.83,
+          "ret_20d": 9.3,
+          "vol_avg": 3045730.0
         },
         "2385.TW": {
-          "price": 107.5,
-          "ret_5d": 5.91,
-          "ret_20d": 4.88,
-          "vol_avg": 4142544.0
+          "price": 107.0,
+          "ret_5d": 3.88,
+          "ret_20d": 4.39,
+          "vol_avg": 3935115.0
         }
       },
       "top_member": "3008.TW",
-      "rs_rank_5d": 9,
-      "rs_rank_20d": 9,
-      "rs_momentum": 0
+      "rs_rank_5d": 4,
+      "rs_rank_20d": 7,
+      "rs_momentum": 3
     },
     "機構_散熱": {
-      "avg_5d": 4.44,
-      "avg_20d": 36.7,
+      "avg_5d": 7.25,
+      "avg_20d": 47.67,
       "member_count": 2,
       "members": {
         "2421.TW": {
-          "price": 146.0,
-          "ret_5d": -3.63,
-          "ret_20d": 14.96,
-          "vol_avg": 2665728.0
+          "price": 148.0,
+          "ret_5d": -1.0,
+          "ret_20d": 17.93,
+          "vol_avg": 2663238.0
         },
         "2059.TW": {
-          "price": 12500.0,
-          "ret_5d": 12.51,
-          "ret_20d": 58.43,
-          "vol_avg": 556799.0
+          "price": 13750.0,
+          "ret_5d": 15.5,
+          "ret_20d": 77.42,
+          "vol_avg": 530894.0
         }
       },
       "top_member": "2059.TW",
-      "rs_rank_5d": 12,
+      "rs_rank_5d": 6,
       "rs_rank_20d": 1,
-      "rs_momentum": -11
+      "rs_momentum": -5
     },
     "軍工_航太": {
-      "avg_5d": 13.46,
-      "avg_20d": 7.01,
+      "avg_5d": 10.42,
+      "avg_20d": 2.75,
       "member_count": 3,
       "members": {
         "2634.TW": {
-          "price": 70.6,
-          "ret_5d": 14.42,
-          "ret_20d": 15.36,
-          "vol_avg": 49653387.0
+          "price": 71.0,
+          "ret_5d": 16.39,
+          "ret_20d": 9.23,
+          "vol_avg": 52042187.0
         },
         "6753.TW": {
-          "price": 158.0,
-          "ret_5d": 17.04,
-          "ret_20d": 13.67,
-          "vol_avg": 2714749.0
+          "price": 147.0,
+          "ret_5d": 3.52,
+          "ret_20d": 5.38,
+          "vol_avg": 2800566.0
         },
         "8033.TW": {
-          "price": 201.5,
-          "ret_5d": 8.92,
-          "ret_20d": -7.99,
-          "vol_avg": 8511962.0
+          "price": 191.5,
+          "ret_5d": 11.34,
+          "ret_20d": -6.36,
+          "vol_avg": 8746171.0
         }
       },
-      "top_member": "6753.TW",
-      "rs_rank_5d": 3,
-      "rs_rank_20d": 12,
-      "rs_momentum": 9
+      "top_member": "2634.TW",
+      "rs_rank_5d": 2,
+      "rs_rank_20d": 16,
+      "rs_momentum": 14
     },
     "重電_電網": {
-      "avg_5d": 6.42,
-      "avg_20d": 11.12,
+      "avg_5d": 6.2,
+      "avg_20d": 11.13,
       "member_count": 3,
       "members": {
         "1513.TW": {
-          "price": 170.0,
-          "ret_5d": 7.94,
-          "ret_20d": 7.26,
-          "vol_avg": 3795384.0
+          "price": 171.0,
+          "ret_5d": 7.21,
+          "ret_20d": 8.57,
+          "vol_avg": 3756721.0
         },
         "1519.TW": {
-          "price": 710.0,
-          "ret_5d": 8.73,
-          "ret_20d": 21.3,
-          "vol_avg": 1402542.0
+          "price": 720.0,
+          "ret_5d": 7.3,
+          "ret_20d": 20.61,
+          "vol_avg": 1332848.0
         },
         "1503.TW": {
-          "price": 198.5,
-          "ret_5d": 2.58,
-          "ret_20d": 4.8,
-          "vol_avg": 1516503.0
+          "price": 203.5,
+          "ret_5d": 4.09,
+          "ret_20d": 4.21,
+          "vol_avg": 1474127.0
         }
       },
       "top_member": "1519.TW",
       "rs_rank_5d": 8,
-      "rs_rank_20d": 8,
-      "rs_momentum": 0
+      "rs_rank_20d": 9,
+      "rs_momentum": 1
     },
     "海運_航運": {
-      "avg_5d": 1.07,
-      "avg_20d": 6.57,
+      "avg_5d": 6.51,
+      "avg_20d": 13.73,
       "member_count": 4,
       "members": {
         "2603.TW": {
-          "price": 219.0,
-          "ret_5d": 5.54,
-          "ret_20d": 10.61,
-          "vol_avg": 8715995.0
+          "price": 231.5,
+          "ret_5d": 8.18,
+          "ret_20d": 18.11,
+          "vol_avg": 10135930.0
         },
         "2615.TW": {
-          "price": 90.6,
-          "ret_5d": 6.71,
-          "ret_20d": 13.96,
-          "vol_avg": 11983972.0
+          "price": 99.6,
+          "ret_5d": 13.83,
+          "ret_20d": 23.73,
+          "vol_avg": 13832359.0
         },
         "2609.TW": {
-          "price": 51.6,
-          "ret_5d": 2.18,
-          "ret_20d": 4.88,
-          "vol_avg": 16692750.0
+          "price": 54.7,
+          "ret_5d": 6.01,
+          "ret_20d": 11.63,
+          "vol_avg": 20666846.0
         },
         "2618.TW": {
-          "price": 39.9,
-          "ret_5d": -10.14,
-          "ret_20d": -3.16,
-          "vol_avg": 42367872.0
+          "price": 41.8,
+          "ret_5d": -1.99,
+          "ret_20d": 1.46,
+          "vol_avg": 42798953.0
         }
       },
       "top_member": "2615.TW",
-      "rs_rank_5d": 16,
-      "rs_rank_20d": 14,
-      "rs_momentum": -2
+      "rs_rank_5d": 7,
+      "rs_rank_20d": 8,
+      "rs_momentum": 1
     },
     "金融": {
-      "avg_5d": 1.36,
-      "avg_20d": 8.34,
+      "avg_5d": 0.83,
+      "avg_20d": 9.03,
       "member_count": 4,
       "members": {
         "2885.TW": {
-          "price": 69.7,
-          "ret_5d": 2.95,
-          "ret_20d": 10.39,
-          "vol_avg": 29629493.0
+          "price": 68.3,
+          "ret_5d": 0.15,
+          "ret_20d": 11.78,
+          "vol_avg": 28231596.0
         },
         "2891.TW": {
-          "price": 65.8,
-          "ret_5d": 0.3,
-          "ret_20d": 5.96,
-          "vol_avg": 35594290.0
+          "price": 65.6,
+          "ret_5d": -1.35,
+          "ret_20d": 6.67,
+          "vol_avg": 33459398.0
         },
         "2850.TW": {
-          "price": 159.0,
-          "ret_5d": -2.45,
-          "ret_20d": 9.66,
-          "vol_avg": 413422.0
+          "price": 163.0,
+          "ret_5d": 0.93,
+          "ret_20d": 10.88,
+          "vol_avg": 415360.0
         },
         "6005.TW": {
-          "price": 30.9,
-          "ret_5d": 4.64,
-          "ret_20d": 7.34,
-          "vol_avg": 10803101.0
+          "price": 30.55,
+          "ret_5d": 3.61,
+          "ret_20d": 6.77,
+          "vol_avg": 10379061.0
         }
       },
       "top_member": "6005.TW",
-      "rs_rank_5d": 15,
-      "rs_rank_20d": 10,
-      "rs_momentum": -5
+      "rs_rank_5d": 13,
+      "rs_rank_20d": 11,
+      "rs_momentum": -2
     },
     "生技": {
-      "avg_5d": 1.54,
-      "avg_20d": -4.87,
+      "avg_5d": -1.33,
+      "avg_20d": -8.14,
       "member_count": 1,
       "members": {
         "4174.TWO": {
-          "price": 26.35,
-          "ret_5d": 1.54,
-          "ret_20d": -4.87,
-          "vol_avg": 315105.0
+          "price": 25.95,
+          "ret_5d": -1.33,
+          "ret_20d": -8.14,
+          "vol_avg": 313135.0
         }
       },
       "top_member": "4174.TWO",
-      "rs_rank_5d": 14,
-      "rs_rank_20d": 18,
+      "rs_rank_5d": 18,
+      "rs_rank_20d": 22,
       "rs_momentum": 4
     },
     "景氣循環": {
-      "avg_5d": -0.39,
-      "avg_20d": -2.31,
+      "avg_5d": -2.4,
+      "avg_20d": -1.25,
       "member_count": 3,
       "members": {
         "2002.TW": {
-          "price": 19.0,
-          "ret_5d": -0.26,
-          "ret_20d": 2.68,
-          "vol_avg": 46999149.0
+          "price": 18.85,
+          "ret_5d": -4.07,
+          "ret_20d": 2.42,
+          "vol_avg": 46262608.0
         },
         "1308.TW": {
-          "price": 13.35,
-          "ret_5d": -0.37,
-          "ret_20d": -5.68,
-          "vol_avg": 2165336.0
+          "price": 13.4,
+          "ret_5d": -1.83,
+          "ret_20d": -3.3,
+          "vol_avg": 2144760.0
         },
         "1722.TW": {
-          "price": 45.25,
-          "ret_5d": -0.55,
-          "ret_20d": -3.93,
-          "vol_avg": 2569470.0
+          "price": 45.5,
+          "ret_5d": -1.3,
+          "ret_20d": -2.88,
+          "vol_avg": 2541747.0
         }
       },
-      "top_member": "2002.TW",
-      "rs_rank_5d": 18,
-      "rs_rank_20d": 17,
-      "rs_momentum": -1
+      "top_member": "1722.TW",
+      "rs_rank_5d": 20,
+      "rs_rank_20d": 18,
+      "rs_momentum": -2
     },
     "食品民生": {
-      "avg_5d": -1.41,
-      "avg_20d": -4.89,
+      "avg_5d": -1.68,
+      "avg_20d": -5.88,
       "member_count": 2,
       "members": {
         "1216.TW": {
-          "price": 75.8,
-          "ret_5d": 0.13,
-          "ret_20d": -1.47,
-          "vol_avg": 20184734.0
+          "price": 75.2,
+          "ret_5d": -0.4,
+          "ret_20d": -2.62,
+          "vol_avg": 19141861.0
         },
         "2912.TW": {
-          "price": 214.5,
-          "ret_5d": -2.94,
-          "ret_20d": -8.3,
-          "vol_avg": 3631914.0
+          "price": 213.0,
+          "ret_5d": -2.96,
+          "ret_20d": -9.13,
+          "vol_avg": 3481330.0
         }
       },
       "top_member": "1216.TW",
-      "rs_rank_5d": 20,
-      "rs_rank_20d": 19,
-      "rs_momentum": -1
+      "rs_rank_5d": 19,
+      "rs_rank_20d": 21,
+      "rs_momentum": 2
     },
     "觀光電商": {
-      "avg_5d": -7.41,
+      "avg_5d": -4.55,
       "avg_20d": 3.35,
       "member_count": 1,
       "members": {
         "8454.TW": {
-          "price": 262.5,
-          "ret_5d": -7.41,
+          "price": 262.0,
+          "ret_5d": -4.55,
           "ret_20d": 3.35,
-          "vol_avg": 929011.0
+          "vol_avg": 907816.0
         }
       },
       "top_member": "8454.TW",
@@ -490,161 +490,161 @@
       "rs_momentum": -7
     },
     "ETF_大盤": {
-      "avg_5d": 2.61,
-      "avg_20d": 6.65,
+      "avg_5d": 0.72,
+      "avg_20d": 7.57,
       "member_count": 7,
       "members": {
         "0050.TW": {
-          "price": 106.4,
-          "ret_5d": 3.45,
-          "ret_20d": 6.89,
-          "vol_avg": 160830843.0
+          "price": 106.45,
+          "ret_5d": 2.11,
+          "ret_20d": 7.96,
+          "vol_avg": 146939787.0
         },
         "0056.TW": {
-          "price": 53.4,
-          "ret_5d": 4.6,
-          "ret_20d": 8.14,
-          "vol_avg": 58788328.0
+          "price": 53.0,
+          "ret_5d": 1.05,
+          "ret_20d": 9.05,
+          "vol_avg": 52153310.0
         },
         "00646.TW": {
-          "price": 78.6,
-          "ret_5d": 0.45,
-          "ret_20d": 3.35,
-          "vol_avg": 2993598.0
+          "price": 78.2,
+          "ret_5d": -0.64,
+          "ret_20d": 2.76,
+          "vol_avg": 2984856.0
         },
         "00885.TW": {
-          "price": 17.83,
-          "ret_5d": -2.14,
-          "ret_20d": -2.09,
-          "vol_avg": 3301650.0
+          "price": 17.49,
+          "ret_5d": -4.69,
+          "ret_20d": -2.35,
+          "vol_avg": 3337467.0
         },
         "00940.TW": {
-          "price": 12.49,
-          "ret_5d": 1.13,
-          "ret_20d": 5.56,
-          "vol_avg": 16983874.0
+          "price": 12.46,
+          "ret_5d": 0.56,
+          "ret_20d": 6.47,
+          "vol_avg": 16128426.0
         },
         "00981A.TW": {
-          "price": 30.22,
-          "ret_5d": 7.81,
-          "ret_20d": 14.34,
-          "vol_avg": 280414811.0
+          "price": 30.39,
+          "ret_5d": 6.52,
+          "ret_20d": 17.34,
+          "vol_avg": 277609863.0
         },
         "2885.TW": {
-          "price": 69.7,
-          "ret_5d": 2.95,
-          "ret_20d": 10.39,
-          "vol_avg": 29629493.0
+          "price": 68.3,
+          "ret_5d": 0.15,
+          "ret_20d": 11.78,
+          "vol_avg": 28231596.0
         }
       },
       "top_member": "00981A.TW",
-      "rs_rank_5d": 13,
-      "rs_rank_20d": 13,
-      "rs_momentum": 0
+      "rs_rank_5d": 14,
+      "rs_rank_20d": 12,
+      "rs_momentum": -2
     },
     "美股_AI晶片": {
-      "avg_5d": -2.03,
-      "avg_20d": 8.01,
+      "avg_5d": -0.23,
+      "avg_20d": 7.21,
       "member_count": 3,
       "members": {
         "NVDA": {
-          "price": 225.16,
-          "ret_5d": 0.54,
-          "ret_20d": 11.02,
-          "vol_avg": 120344650.0
+          "price": 226.06,
+          "ret_5d": 3.91,
+          "ret_20d": 11.21,
+          "vol_avg": 116595734.0
         },
         "AVGO": {
-          "price": 392.99,
-          "ret_5d": -8.13,
-          "ret_20d": 5.98,
-          "vol_avg": 18099325.0
+          "price": 393.39,
+          "ret_5d": -6.87,
+          "ret_20d": 4.03,
+          "vol_avg": 17540031.0
         },
         "TSM": {
-          "price": 426.35,
-          "ret_5d": 1.5,
-          "ret_20d": 7.02,
-          "vol_avg": 12736800.0
+          "price": 427.96,
+          "ret_5d": 2.27,
+          "ret_20d": 6.38,
+          "vol_avg": 12215530.0
         }
       },
-      "top_member": "TSM",
-      "rs_rank_5d": 21,
-      "rs_rank_20d": 11,
-      "rs_momentum": -10
+      "top_member": "NVDA",
+      "rs_rank_5d": 17,
+      "rs_rank_20d": 13,
+      "rs_momentum": -4
     },
     "美股_記憶體": {
-      "avg_5d": 23.05,
-      "avg_20d": 17.79,
+      "avg_5d": 31.02,
+      "avg_20d": 22.82,
       "member_count": 2,
       "members": {
         "MU": {
-          "price": 971.66,
-          "ret_5d": 10.72,
-          "ret_20d": 14.45,
-          "vol_avg": 41972495.0
+          "price": 1020.43,
+          "ret_5d": 18.52,
+          "ret_20d": 17.91,
+          "vol_avg": 40500180.0
         },
         "SNDK": {
-          "price": 1641.11,
-          "ret_5d": 35.38,
-          "ret_20d": 21.13,
-          "vol_avg": 16820820.0
+          "price": 1776.61,
+          "ret_5d": 43.52,
+          "ret_20d": 27.73,
+          "vol_avg": 16438156.0
         }
       },
       "top_member": "SNDK",
       "rs_rank_5d": 1,
-      "rs_rank_20d": 6,
-      "rs_momentum": 5
+      "rs_rank_20d": 4,
+      "rs_momentum": 3
     },
     "美股_電動車區塊鏈": {
-      "avg_5d": -1.4,
-      "avg_20d": -6.02,
+      "avg_5d": 0.1,
+      "avg_20d": -5.5,
       "member_count": 2,
       "members": {
         "TSLA": {
-          "price": 342.27,
-          "ret_5d": 4.17,
-          "ret_20d": -10.13,
-          "vol_avg": 39828150.0
+          "price": 338.95,
+          "ret_5d": 2.44,
+          "ret_20d": -8.29,
+          "vol_avg": 38364601.0
         },
         "MSTR": {
-          "price": 93.04,
-          "ret_5d": -6.97,
-          "ret_20d": -1.91,
-          "vol_avg": 15859630.0
+          "price": 95.16,
+          "ret_5d": -2.23,
+          "ret_20d": -2.72,
+          "vol_avg": 15252759.0
         }
       },
       "top_member": "TSLA",
-      "rs_rank_5d": 19,
-      "rs_rank_20d": 21,
-      "rs_momentum": 2
+      "rs_rank_5d": 16,
+      "rs_rank_20d": 20,
+      "rs_momentum": 4
     },
     "美股_其他": {
-      "avg_5d": -0.26,
-      "avg_20d": 12.86,
+      "avg_5d": 0.56,
+      "avg_20d": 11.07,
       "member_count": 3,
       "members": {
         "GOOG": {
-          "price": 343.54,
-          "ret_5d": -2.81,
-          "ret_20d": -0.75,
-          "vol_avg": 20653290.0
+          "price": 341.86,
+          "ret_5d": -3.93,
+          "ret_20d": -2.71,
+          "vol_avg": 20075959.0
         },
         "PLTR": {
-          "price": 174.04,
-          "ret_5d": 1.18,
-          "ret_20d": 31.47,
-          "vol_avg": 46955165.0
+          "price": 174.41,
+          "ret_5d": -0.47,
+          "ret_20d": 29.34,
+          "vol_avg": 45667351.0
         },
         "INTC": {
-          "price": 102.5,
-          "ret_5d": 0.84,
-          "ret_20d": 7.85,
-          "vol_avg": 119286250.0
+          "price": 103.44,
+          "ret_5d": 6.07,
+          "ret_20d": 6.57,
+          "vol_avg": 115618863.0
         }
       },
-      "top_member": "PLTR",
-      "rs_rank_5d": 17,
-      "rs_rank_20d": 7,
-      "rs_momentum": -10
+      "top_member": "INTC",
+      "rs_rank_5d": 15,
+      "rs_rank_20d": 10,
+      "rs_momentum": -5
     }
   },
   "selection": {
@@ -653,18 +653,18 @@
     "leaders": [
       [
         "機構_散熱",
-        36.7,
+        47.67,
         "2059.TW"
       ],
       [
         "AI_散熱電源",
-        27.69,
+        29.05,
         "3017.TW"
       ],
       [
-        "AI_伺服器",
-        24.25,
-        "2376.TW"
+        "記憶體_DRAM_NAND",
+        25.97,
+        "2408.TW"
       ]
     ]
   }

@@ -141,8 +141,10 @@ def build_message(picks, top_inds, date, active_capital=450_000, inst=None):
         stop = round(price * 0.93, 1)
         # 部位 → 股數 (千股單位)
         shares = int(per_stock / limit_low / 1000) * 1000
-        if shares < 1000:
-            shares = 1000
+        odd_note = None
+        if shares < 1000:                      # 1 張 > 每檔配置 → 零股
+            shares = int(per_stock / limit_low / 10) * 10
+            odd_note = f"（1張=${limit_low*1000/10000:.0f}萬 超配置 → 盤中零股）"
         actual_cost = shares * limit_low
 
         tag_parts = []
@@ -153,6 +155,8 @@ def build_message(picks, top_inds, date, active_capital=450_000, inst=None):
         lines.append(f"{i}. {p['ticker']} {p['name']} ({p['industry']})")
         lines.append(f"   📍 限價 ${limit_low}-${limit_high}")
         lines.append(f"   💰 {shares}股 ≈ ${actual_cost:,.0f}")
+        if odd_note:
+            lines.append(f"   ⚠️ 零股{odd_note}")
         lines.append(f"   🛑 停損 ${stop} (-7%)")
         lines.append(f"   📊 量{p['vol_ratio']:.1f}x RSI{p['rsi']:.0f} {tag}")
         itag = inst_tag(p["ticker"], inst)

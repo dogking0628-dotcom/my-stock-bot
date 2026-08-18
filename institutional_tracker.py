@@ -102,6 +102,9 @@ def fetch_etf_holdings(etf_id, name_map):
         if weight <= 0 or weight > 100:
             continue
         key = name.replace("*", "").replace(" ", "").strip()
+        # 頁面側欄「熱門ETF」表（0050/00878/0056… | 價格 | 漲跌%）會被誤判成持股 → 純數字代號列跳過
+        if re.fullmatch(r"\d{4,6}[A-Z]?", key):
+            continue
         code = name_map.get(key)
         holdings[code or name] = {"name": name.strip(), "shares": shares,
                                   "weight": weight}

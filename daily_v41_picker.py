@@ -101,8 +101,10 @@ def build_message(picks, strongest, regime, blocked, date, inst=None):
         stop_eff = max(ma20, floor)
         which = "20MA" if ma20 >= floor else "-7%樓地板"
         shares = int(per / limit_low / 1000) * 1000
-        if shares < 1000:
-            shares = 1000
+        odd_note = None
+        if shares < 1000:                      # 1 張 > 每檔配置（千金股）→ 改零股，不硬買 1 張
+            shares = int(per / limit_low / 10) * 10
+            odd_note = f"（1張=${limit_low*1000/10000:.0f}萬 超配置 → 盤中零股 9:10 起每分鐘撮合）"
         cost = shares * limit_low
         notes = "、".join(p.get("momentum_notes", [])[:3])
         lines.append(f"{i}. {p['ticker']} {p['name']} ({p['industry']})")
@@ -110,6 +112,8 @@ def build_message(picks, strongest, regime, blocked, date, inst=None):
                      f" {p.get('next_day_prob','')}")
         lines.append(f"   📍 限價 ${limit_low}-${limit_high}")
         lines.append(f"   💰 {shares}股 ≈ ${cost:,.0f}")
+        if odd_note:
+            lines.append(f"   ⚠️ 零股{odd_note}")
         lines.append(f"   🛑 停損 ${stop_eff:.1f} ({which}; 20MA ${ma20:.1f} / -7% ${floor})")
         lines.append(f"   📊 量{p.get('vol_ratio',0):.1f}x RSI{p.get('rsi',0):.0f}"
                      f" {notes}")

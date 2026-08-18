@@ -70,12 +70,16 @@ def load_cache():
 
 def ensure_days(cache, need=WINDOW_LONG + 5):
     """補抓缺的交易日（走回 45 天），寫回 cache"""
-    d = dt.date.today()
+    today = dt.date.today()
+    d = today
     fetched = 0
-    while (dt.date.today() - d).days < 45 and \
-            sum(1 for k in cache if k >= (dt.date.today()-dt.timedelta(days=45)).isoformat()) < need:
+    # 只數「有資料」的日子；空 dict（非交易日/當時未發布/被封鎖）不算，否則 25 個空鍵就永遠不補抓
+    while (today - d).days < 45 and \
+            sum(1 for k, v in cache.items() if v and k >= (today-dt.timedelta(days=45)).isoformat()) < need:
         key = d.isoformat()
-        if d.weekday() < 5 and key not in cache:
+        # 3 天內的空值可能只是「T86 15:00 才發布」→ 重試
+        stale_empty = key in cache and not cache[key] and (today - d).days <= 3
+        if d.weekday() < 5 and (key not in cache or stale_empty):
             r = fetch_day(d)
             cache[key] = r if r else {}   # 空 dict = 非交易日/抓不到，避免重抓
             if r: fetched += 1

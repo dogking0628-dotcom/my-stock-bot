@@ -26,6 +26,16 @@ ACTIVE_CAPITAL = 450_000
 MAX_PUSH = 3   # LINE 推前 3 檔（與 V2 一致，方便並行比較）
 
 
+def fresh_note(report):
+    """資料日期標示：資料=最後一根K棒；若落後證交所最新交易日 → ⚠️"""
+    dd, ref = report.get("data_date"), report.get("ref_trading_date")
+    if not dd:
+        return None
+    if ref and dd < ref:
+        return f"⚠️ 資料僅到 {dd[5:]} 收盤（最新交易日 {ref[5:]}，訊號落後）"
+    return f"📅 依 {dd[5:]} 收盤資料"
+
+
 def load_inst():
     try:
         with open(INST_PATH, encoding="utf-8") as f:
@@ -64,9 +74,12 @@ def etf_changes_block(inst, max_lines=4):
     return lines[:max_lines]
 
 
-def build_message(picks, strongest, regime, blocked, date, inst=None):
+def build_message(picks, strongest, regime, blocked, date, inst=None, data_note=None):
     inst = inst or {}
-    lines = [f"🎯 V4.3 開盤掛單 {date[5:]}", ""]
+    lines = [f"🎯 V4.3 開盤掛單 {date[5:]}"]
+    if data_note:
+        lines.append(data_note)
+    lines.append("")
 
     # 大盤體制
     if regime:
@@ -168,7 +181,8 @@ def main():
     with open(REPORT_PATH, "r", encoding="utf-8") as f:
         report = json.load(f)
 
-    date = report.get("timestamp", dt.date.today().isoformat())
+    date = report.get("trade_date") or report.get("timestamp", dt.date.today().isoformat())
+    data_note = fresh_note(report)
     picks = report.get("tomorrow_top5", [])
     strongest = report.get("tomorrow_top5_industry")
     regime = report.get("market_regime")
@@ -188,7 +202,7 @@ def main():
     with open(SIGNAL_PATH, "w", encoding="utf-8") as f:
         json.dump(signal, f, ensure_ascii=False, indent=2)
 
-    msg = build_message(picks, strongest, regime, blocked, date, inst=load_inst())
+    msg = build_message(picks, strongest, regime, blocked, date, inst=load_inst(), data_note=data_note)
     print("\n" + "=" * 60)
     print("LINE 訊息預覽：")
     print("=" * 60)

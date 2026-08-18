@@ -28,6 +28,15 @@ SIGNAL_PATH = os.path.join(ROOT, "daily_v2_signal.json")
 INST_PATH = os.path.join(ROOT, "institutional_signal.json")
 
 
+def fresh_note(report):
+    dd, ref = report.get("data_date"), report.get("ref_trading_date")
+    if not dd:
+        return None
+    if ref and dd < ref:
+        return f"⚠️ 資料僅到 {dd[5:]} 收盤（最新交易日 {ref[5:]}，訊號落後）"
+    return f"📅 依 {dd[5:]} 收盤資料"
+
+
 def load_inst():
     """讀法人籌碼 signal（investment trust + 主動 ETF），失敗回空"""
     try:
@@ -107,10 +116,13 @@ def pick_v2_from_report(report):
     return picks[:MAX_PICKS], top_inds
 
 
-def build_message(picks, top_inds, date, active_capital=450_000, inst=None):
+def build_message(picks, top_inds, date, active_capital=450_000, inst=None, data_note=None):
     """訊息格式: 開盤掛單可執行版"""
     inst = inst or {}
-    lines = [f"📡 V2 開盤掛單 {date[5:]}", ""]
+    lines = [f"📡 V2 開盤掛單 {date[5:]}"]
+    if data_note:
+        lines.append(data_note)
+    lines.append("")
 
     if top_inds:
         ind_summary = " / ".join(
@@ -190,7 +202,8 @@ def main():
     with open(REPORT_PATH, "r", encoding="utf-8") as f:
         report = json.load(f)
 
-    date = report.get("timestamp", dt.date.today().isoformat())
+    date = report.get("trade_date") or report.get("timestamp", dt.date.today().isoformat())
+    data_note = fresh_note(report)
     print(f"[1/3] 載入 ath_industry_report ({date})")
     print(f"      exact_ath: {len(report.get('exact_ath', []))} 檔")
     print(f"      industry_stats: {len(report.get('industry_stats', []))} 族群")
@@ -217,7 +230,7 @@ def main():
         json.dump(signal, f, ensure_ascii=False, indent=2)
     print(f"[3/3] 已輸出 {SIGNAL_PATH}")
 
-    msg = build_message(picks, top_inds, date, inst=load_inst())
+    msg = build_message(picks, top_inds, date, inst=load_inst(), data_note=data_note)
     print("\n" + "=" * 60)
     print("LINE 訊息預覽：")
     print("=" * 60)

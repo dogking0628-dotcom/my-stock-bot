@@ -1,21 +1,30 @@
 {
- "date": "2026-08-17",
+ "date": "2026-08-18",
  "turnover": {
-  "twse_date_roc": "115/08/17",
-  "twse_amount": 981055134845.0,
-  "combined_est": 1157645059117.0999,
+  "twse_date_roc": "115/08/18",
+  "twse_amount": 1007881760816.0,
+  "combined_est": 1189300477762.88,
   "sky_alert": false,
   "threshold": 1500000000000.0,
   "note": "合計=上市×1.18 估算(TPEX API 擋外部連線)"
  },
  "ma87": {
-  "twii": null,
-  "twoii": {
-   "close": 378.44000244140625,
-   "ma87": 393.29206900761045,
-   "above": false,
-   "gap_pct": -3.77634530075327
+  "twii": {
+   "close": 45308.68,
+   "ma87": 43260.01482758621,
+   "above": true,
+   "gap_pct": 4.735701503059575,
+   "date": "2026-08-18",
+   "src": "finmind"
   },
-  "strength": null
+  "twoii": {
+   "close": 390.83,
+   "ma87": 406.46379310344827,
+   "above": false,
+   "gap_pct": -3.8462941518309757,
+   "date": "2026-08-18",
+   "src": "finmind"
+  },
+  "strength": "🟡 大強小弱"
  }
 }

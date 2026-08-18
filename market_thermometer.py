@@ -52,20 +52,52 @@ def fetch_twse_turnover():
     return last[0], float(last[2].replace(",", ""))   # (ROC日期, 金額)
 
 
-def fetch_index_vs_ma(ticker):
-    """yfinance 指數 → (close, ma87, above)"""
-    import yfinance as yf
-    df = yf.download(ticker, period="7mo", auto_adjust=True,
-                     progress=False, threads=False, group_by="column")
-    if hasattr(df.columns, "levels"):
-        df.columns = [c[0] if isinstance(c, tuple) else c for c in df.columns]
-    cl = df["Close"].dropna()
-    if len(cl) < MA_LEN:
+FINMIND_IDS = {"^TWII": "TAIEX", "^TWOII": "TPEx"}
+
+
+def _finmind_index(ticker):
+    """FinMind TaiwanStockPrice（TAIEX / TPEx）→ 收盤序列（含當日）；失敗回 None"""
+    import urllib.request
+    did = FINMIND_IDS.get(ticker)
+    if not did:
         return None
-    close = float(cl.iloc[-1])
-    ma = float(cl.iloc[-MA_LEN:].mean())
+    start = (dt.date.today() - dt.timedelta(days=220)).isoformat()
+    url = (f"https://api.finmindtrade.com/api/v4/data?dataset=TaiwanStockPrice"
+           f"&data_id={did}&start_date={start}")
+    j = json.loads(urllib.request.urlopen(url, timeout=30).read())
+    rows = [r for r in j.get("data", []) if r.get("close")]
+    if len(rows) < MA_LEN:
+        return None
+    return [(r["date"], float(r["close"])) for r in rows]
+
+
+def fetch_index_vs_ma(ticker):
+    """指數 vs 87MA → dict(close, ma87, above, gap_pct, date, src)
+    來源優先 FinMind（官方指數、當日 15:00 後即有）；失敗才用 yfinance（^TWOII 曾停更一個月、^TWII 在 Actions 常抓不到）"""
+    series = None; src = "finmind"
+    try:
+        series = _finmind_index(ticker)
+    except Exception as e:
+        print(f"  FinMind {ticker} fail: {type(e).__name__}")
+    if not series:
+        src = "yfinance"
+        import yfinance as yf
+        df = yf.download(ticker, period="7mo", auto_adjust=True,
+                         progress=False, threads=False, group_by="column")
+        if hasattr(df.columns, "levels"):
+            df.columns = [c[0] if isinstance(c, tuple) else c for c in df.columns]
+        cl = df["Close"].dropna()
+        if len(cl) < MA_LEN:
+            return None
+        series = [(d.strftime("%Y-%m-%d"), float(v)) for d, v in cl.items()]
+    close = series[-1][1]
+    ma = sum(v for _, v in series[-MA_LEN:]) / MA_LEN
+    # 資料過舊（>7 天）視為無效，避免拿一個月前的櫃買判強弱
+    if (dt.date.today() - dt.date.fromisoformat(series[-1][0])).days > 7:
+        print(f"  {ticker} 資料過舊 {series[-1][0]}（{src}）→ 略過")
+        return None
     return {"close": close, "ma87": ma, "above": close > ma,
-            "gap_pct": (close / ma - 1) * 100}
+            "gap_pct": (close / ma - 1) * 100, "date": series[-1][0], "src": src}
 
 
 def main():

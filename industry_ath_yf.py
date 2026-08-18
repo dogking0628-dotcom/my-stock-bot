@@ -42,6 +42,100 @@ OUTPUT_PATH = os.path.join(os.path.dirname(__file__), "ath_industry_report.json"
 TXT_PATH = os.path.join(os.path.dirname(__file__), "scan_output.txt")
 MCAP_CACHE = os.path.join(os.path.dirname(__file__), "marketcap_cache.json")
 
+# ── 資料新鮮度守門（2026-08-18 起）─────────────────────────────
+# 稽核 8/2~8/17 共 12 次凌晨 cron：週二~五的 run（UTC 21:xx）yfinance 台股日 K
+# 有 7/9 次缺最新一根（落後 1 交易日）→ 開盤掛單其實用前天收盤算。
+# 修法：以證交所 MI_INDEX（官方、收盤後 ~15:00 即有）確認最新交易日，
+#      yfinance 缺那根就把官方 OHLCV 補上去；證交所抓不到則維持原樣並標示落後。
+TWSE_UA = {"User-Agent": "Mozilla/5.0"}
+_TWSE_DAY_CACHE = {}
+
+
+def tw_today():
+    """台灣日期（Actions 跑在 UTC，凌晨 05:00 台北 = 前一日 UTC）"""
+    return (dt.datetime.utcnow() + dt.timedelta(hours=8)).date()
+
+
+def trade_date():
+    """這份掛單要打的台股交易日：14:00 前 = 今天；收盤後跑 = 下一個平日"""
+    now = dt.datetime.utcnow() + dt.timedelta(hours=8)
+    d = now.date()
+    if now.hour >= 14:
+        d += dt.timedelta(days=1)
+    while d.weekday() >= 5:
+        d += dt.timedelta(days=1)
+    return d
+
+
+def fetch_twse_day(d):
+    """證交所 MI_INDEX 全市場當日 OHLCV → {code: dict(Open,High,Low,Close,Volume)}；非交易日/未出 → None"""
+    import urllib.request
+    ds = d.strftime("%Y%m%d")
+    if ds in _TWSE_DAY_CACHE:
+        return _TWSE_DAY_CACHE[ds]
+    url = (f"https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX"
+           f"?date={ds}&type=ALLBUT0999&response=json")
+    out = None
+    try:
+        j = json.loads(urllib.request.urlopen(
+            urllib.request.Request(url, headers=TWSE_UA), timeout=30).read())
+        if j.get("stat") == "OK":
+            tables = j.get("tables") or [j]
+            for t in tables:
+                f = t.get("fields") or []
+                if "證券代號" in f and "收盤價" in f:
+                    ix = {k: f.index(k) for k in ("證券代號", "成交股數", "開盤價", "最高價", "最低價", "收盤價")}
+                    out = {}
+                    for row in t.get("data", []):
+                        try:
+                            c = row[ix["證券代號"]].strip()
+                            vals = [float(row[ix[k]].replace(",", "")) for k in ("開盤價", "最高價", "最低價", "收盤價")]
+                            vol = float(row[ix["成交股數"]].replace(",", ""))
+                        except Exception:
+                            continue   # "--" 無成交
+                        out[c] = {"Open": vals[0], "High": vals[1], "Low": vals[2], "Close": vals[3], "Volume": vol}
+                    break
+    except Exception as e:
+        print(f"  [TWSE] MI_INDEX {ds} 抓取失敗: {type(e).__name__}", file=sys.stderr)
+    _TWSE_DAY_CACHE[ds] = out
+    return out
+
+
+def latest_trading_day():
+    """從台灣今日往回找最近一個證交所有資料的交易日（最多 7 天）；找不到回 (None, None)"""
+    d = tw_today()
+    for _ in range(7):
+        if d.weekday() < 5:
+            day = fetch_twse_day(d)
+            if day:
+                return d, day
+        d -= dt.timedelta(days=1)
+    return None, None
+
+
+def patch_last_bar(df_t, code, ref_date, ref_day):
+    """yfinance 單檔 df 最後一根若早於 ref_date，補上證交所那根；回傳 (df, patched:bool)"""
+    if ref_date is None or df_t is None or len(df_t) == 0:
+        return df_t, False
+    try:
+        last = df_t["Close"].dropna().index[-1]
+        last_d = last.date() if hasattr(last, "date") else last
+    except Exception:
+        return df_t, False
+    if last_d >= ref_date:
+        return df_t, False
+    rec = ref_day.get(code)
+    if not rec:
+        return df_t, False
+    import pandas as pd
+    row = {c: np.nan for c in df_t.columns}
+    for k, v in rec.items():
+        if k in row: row[k] = v
+    new = pd.DataFrame([row], index=[pd.Timestamp(ref_date)])
+    new.index.name = df_t.index.name
+    return pd.concat([df_t, new]), True
+
+
 
 def load_mcap():
     """讀取市值快取（億 NT$）"""
@@ -109,6 +203,12 @@ def get_market_regime():
         if hasattr(df.columns, "levels"):
             df.columns = [c[0] if isinstance(c, tuple) else c for c in df.columns]
         if "Close" not in df.columns: return True, None
+        try:
+            _rd, _rday = latest_trading_day()
+            df, _p = patch_last_bar(df, "0050", _rd, _rday)
+            if _p: print(f"  [0050] yfinance 落後，補證交所 {_rd} 收盤", file=sys.stderr)
+        except Exception:
+            pass
         cl = df["Close"].dropna().values
         if len(cl) < 200: return True, None
         today = float(cl[-1])
@@ -272,6 +372,10 @@ def analyze_stock(yfc, df_t):
 def main():
     universe = load_universe()
     print(f"[1/3] universe: {len(universe)} 檔")
+    ref_date, ref_day = latest_trading_day()
+    print(f"  [新鮮度] 證交所最新交易日 {ref_date}（{len(ref_day) if ref_day else 0} 檔）", file=sys.stderr)
+    n_patched = 0
+    data_dates = defaultdict(int)
 
     results = []
     for i in range(0, len(universe), BATCH):
@@ -291,7 +395,13 @@ def main():
             try:
                 if yfc not in df.columns.get_level_values(0):
                     continue
-                metrics = analyze_stock(yfc, df[yfc])
+                df_t, patched = patch_last_bar(df[yfc], code, ref_date, ref_day)
+                if patched: n_patched += 1
+                try:
+                    data_dates[str(df_t["Close"].dropna().index[-1].date())] += 1
+                except Exception:
+                    pass
+                metrics = analyze_stock(yfc, df_t)
                 if not metrics:
                     continue
                 metrics["ticker"] = code; metrics["name"] = name
@@ -305,6 +415,11 @@ def main():
         time.sleep(1)
 
     print(f"\n[2/3] 完成，共 {len(results)} 檔有效")
+    data_date = max(data_dates) if data_dates else None
+    if n_patched:
+        print(f"  ⚠️ yfinance 落後 → 以證交所 {ref_date} 補 {n_patched} 檔最新 K 棒", file=sys.stderr)
+    if ref_date and data_date and str(ref_date) != data_date:
+        print(f"  ⚠️ 資料日 {data_date} ≠ 最新交易日 {ref_date}（證交所補不到，訊號可能落後）", file=sys.stderr)
 
     # ATH 候選
     exact = sorted([r for r in results if r["ratio"] >= EXACT_THRESHOLD],
@@ -469,7 +584,11 @@ def main():
 
     out = {
         "timestamp": dt.date.today().isoformat(),
-        "basis": "yfinance 2y monthly + 動能確認分數（最強族群挑 5）",
+        "trade_date": str(trade_date()),              # 這份掛單要打的台股日期
+        "data_date": data_date,                       # 訊號所依據的最後一根 K 棒
+        "ref_trading_date": str(ref_date) if ref_date else None,
+        "patched_bars": n_patched,
+        "basis": "yfinance 2y monthly + 動能確認分數（最強族群挑 5）；最新K棒以證交所 MI_INDEX 校驗",
         "total_analyzed": len(results),
         "exact_ath": exact,
         "near_ath_top30": near[:30],

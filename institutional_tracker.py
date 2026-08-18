@@ -120,6 +120,9 @@ def diff_holdings(old, new):
     changes = {"new": [], "added": [], "reduced": [], "removed": []}
     if not old or not new:
         return changes
+    _junk = lambda k: str(k).startswith("00") or re.fullmatch(r"\d{4,6}[A-Z]?", str(k)) is not None
+    old = {k: v for k, v in old.items() if not _junk(k) and not re.fullmatch(r"\d{4,6}[A-Z]?", str(v.get("name", "")))}
+    new = {k: v for k, v in new.items() if not _junk(k) and not re.fullmatch(r"\d{4,6}[A-Z]?", str(v.get("name", "")))}
     for code, cur in new.items():
         prev = old.get(code)
         if prev is None:

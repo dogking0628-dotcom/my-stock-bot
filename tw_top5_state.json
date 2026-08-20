@@ -1,4 +1,29 @@
 {
-  "date": "2026-08-19",
-  "stocks": {}
+  "date": "2026-08-20",
+  "stocks": {
+    "2637": {
+      "name": "慧洋-KY",
+      "score": 50,
+      "close": 91.80000305175781,
+      "category": "medium"
+    },
+    "2546": {
+      "name": "根基",
+      "score": 42,
+      "close": 111.0,
+      "category": "medium"
+    },
+    "6214": {
+      "name": "精誠",
+      "score": 35,
+      "close": 178.5,
+      "category": "medium"
+    },
+    "2606": {
+      "name": "裕民",
+      "score": 32,
+      "close": 69.5,
+      "category": "medium"
+    }
+  }
 }

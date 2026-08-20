@@ -4,10 +4,11 @@ yfinance 全市場掃 2 年還原月線 ATH，按族群統計
 + 對 ATH 股獨立算動能確認分數，標記隔日續漲 ≥85% 的 Top 5
 """
 import sys, io, os, json, datetime as dt, time
-try:
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
-except Exception:
-    pass
+if not isinstance(sys.stdout, io.TextIOWrapper) or (sys.stdout.encoding or '').lower() != 'utf-8':
+    try:
+        sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+    except Exception:
+        pass
 
 import numpy as np
 import yfinance as yf

@@ -12,10 +12,11 @@ V4.3 邏輯（在 industry_ath_yf.py 算好，這裡只讀 tomorrow_top5 推播�
 每日 cron（接在 industry_ath_yf.py 之後，與 daily_v2_picker.py 並行）
 """
 import sys, io, os, json, datetime as dt
-try:
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
-except Exception:
-    pass
+if not isinstance(sys.stdout, io.TextIOWrapper) or (sys.stdout.encoding or '').lower() != 'utf-8':
+    try:
+        sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+    except Exception:
+        pass
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 REPORT_PATH = os.path.join(ROOT, "ath_industry_report.json")

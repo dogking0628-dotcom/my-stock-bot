@@ -17,10 +17,11 @@ Daily V2 Picker — 每日 LINE 推播（V2 原版策略）
 每日 5:30 cron（接在 industry_ath_yf.py 之後）
 """
 import sys, io, os, json, datetime as dt
-try:
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
-except Exception:
-    pass
+if not isinstance(sys.stdout, io.TextIOWrapper) or (sys.stdout.encoding or '').lower() != 'utf-8':
+    try:
+        sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+    except Exception:
+        pass
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 REPORT_PATH = os.path.join(ROOT, "ath_industry_report.json")

@@ -69,21 +69,30 @@ def load_cache():
 
 
 def ensure_days(cache, need=WINDOW_LONG + 5):
-    """補抓缺的交易日（走回 45 天），寫回 cache"""
+    """補抓缺的交易日並寫回 cache。
+    ① 最近 5 個平日必試（cache 再滿也要抓最新一天；3 天內空值重試——T86 15:00 才發布）
+    ② 不足 need 個有資料日 → 往回走 45 天補深度
+    2026-08-20 修：舊版只看「日數 < need」，cache 一滿 25 日就永遠不抓新的一天，
+    造成 8/19 T86 缺漏、雷達 5 日窗停在 8/18。"""
     today = dt.date.today()
-    d = today
     fetched = 0
-    # 只數「有資料」的日子；空 dict（非交易日/當時未發布/被封鎖）不算，否則 25 個空鍵就永遠不補抓
-    while (today - d).days < 45 and \
-            sum(1 for k, v in cache.items() if v and k >= (today-dt.timedelta(days=45)).isoformat()) < need:
-        key = d.isoformat()
-        # 3 天內的空值可能只是「T86 15:00 才發布」→ 重試
-        stale_empty = key in cache and not cache[key] and (today - d).days <= 3
-        if d.weekday() < 5 and (key not in cache or stale_empty):
-            r = fetch_day(d)
-            cache[key] = r if r else {}   # 空 dict = 非交易日/抓不到，避免重抓
-            if r: fetched += 1
+
+    def try_fetch(day):
+        nonlocal fetched
+        key = day.isoformat()
+        stale_empty = key in cache and not cache[key] and (today - day).days <= 3
+        if day.weekday() < 5 and (key not in cache or stale_empty):
+            r = fetch_day(day)
+            cache[key] = r if r else {}
+            if r:
+                fetched += 1
             time.sleep(1.3)
+
+    for i in range(5):
+        try_fetch(today - dt.timedelta(days=i))
+    d = today - dt.timedelta(days=5)
+    while (today - d).days < 45 and             sum(1 for k, v in cache.items() if v and k >= (today - dt.timedelta(days=45)).isoformat()) < need:
+        try_fetch(d)
         d -= dt.timedelta(days=1)
     if fetched:
         with io.open(CACHE_PATH, "w", encoding="utf-8") as f:

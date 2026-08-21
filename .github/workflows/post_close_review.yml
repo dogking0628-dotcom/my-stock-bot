@@ -20,6 +20,12 @@ jobs:
           python-version: '3.12'
       - name: Install dependencies
         run: pip install -r requirements.txt
+      - name: Run TW scan — 0050 訊號 + 大盤脈動（天險 + 鄭大87MA）
+        env:
+          LINE_TOKEN:    ${{ secrets.LINE_TOKEN }}
+          LINE_USER_ID:  ${{ secrets.LINE_USER_ID }}
+        run: python tw_only_scan.py || echo "tw scan failed (non-fatal)"
+
       - name: Run weekly review
         env:
           LINE_TOKEN:    ${{ secrets.LINE_TOKEN }}

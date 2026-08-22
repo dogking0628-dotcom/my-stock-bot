@@ -1,28 +1,28 @@
 {
-  "period": "2026-08-08 ~ 2026-08-15",
+  "period": "2026-08-15 ~ 2026-08-22",
   "total_picks": 1,
-  "wins": 1,
-  "avg_return": 1.92,
+  "wins": 0,
+  "avg_return": -1.19,
   "picks": [
     {
-      "ticker": "2376",
-      "actual_entry": 390.0,
-      "current": 397.5,
-      "ret_pct": 1.92,
-      "peak_pct": 3.08,
-      "low_pct": -0.9,
+      "ticker": "2887",
+      "actual_entry": 37.70000076293945,
+      "current": 37.25,
+      "ret_pct": -1.19,
+      "peak_pct": 0.0,
+      "low_pct": -5.31,
       "status": "持有中",
       "triggered": null,
-      "days_held": 1,
-      "signal_date": "2026-08-13",
-      "name": "技嘉",
-      "industry": "電腦及週邊",
-      "system_entry": 375.5
+      "days_held": 5,
+      "signal_date": "2026-08-16",
+      "name": "台新新光金",
+      "industry": "金融保險",
+      "system_entry": 37.75
     }
   ],
   "by_industry": {
-    "電腦及週邊": [
-      "2376"
+    "金融保險": [
+      "2887"
     ]
   }
 }

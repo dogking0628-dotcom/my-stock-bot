@@ -14250,6 +14250,151 @@
       "current_price": 142.5,
       "current_return": 0.0,
       "days_held": 0
+    },
+    {
+      "pick_date": "2026-08-24",
+      "ticker": "2615.TW",
+      "name": "萬海",
+      "sector": "海運_航運",
+      "pick_price": 124.5,
+      "stage": "BULL_MID",
+      "reason": "海運_航運 強勢(+24.8) + 個股 5d+25.0% + 有 CB",
+      "cb_codes": [
+        "261505"
+      ],
+      "max_price": 124.5,
+      "current_price": 124.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-08-24",
+      "ticker": "2609.TW",
+      "name": "陽明",
+      "sector": "海運_航運",
+      "pick_price": 64.5,
+      "stage": "BULL_MID",
+      "reason": "海運_航運 強勢(+24.8) + 個股 5d+17.9% + 有 CB",
+      "cb_codes": [
+        "260905"
+      ],
+      "max_price": 64.5,
+      "current_price": 64.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-08-24",
+      "ticker": "2603.TW",
+      "name": "長榮",
+      "sector": "海運_航運",
+      "pick_price": 250.5,
+      "stage": "BULL_MID",
+      "reason": "海運_航運 強勢(+24.8) + 個股 5d+8.2% + 有 CB",
+      "cb_codes": [
+        "260305"
+      ],
+      "max_price": 250.5,
+      "current_price": 250.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-08-24",
+      "ticker": "2059.TW",
+      "name": "川湖",
+      "sector": "機構_散熱",
+      "pick_price": 14410.0,
+      "stage": "BULL_MID",
+      "reason": "機構_散熱 強勢(+41.6) + 個股 5d+4.8% + 有 CB",
+      "cb_codes": [
+        "205905"
+      ],
+      "max_price": 14410.0,
+      "current_price": 14410.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-08-24",
+      "ticker": "8299.TWO",
+      "name": "群聯",
+      "sector": "記憶體_DRAM_NAND",
+      "pick_price": 2135.0,
+      "stage": "BULL_MID",
+      "reason": "記憶體_DRAM_NAND 強勢(+14.3) + 個股 5d+2.4% + 有 CB",
+      "cb_codes": [
+        "829902"
+      ],
+      "max_price": 2135.0,
+      "current_price": 2135.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-08-24",
+      "ticker": "2618.TW",
+      "name": "長榮航",
+      "sector": "海運_航運",
+      "pick_price": 42.65,
+      "stage": "BULL_MID",
+      "reason": "海運_航運 強勢(+24.8) + 個股 5d+2.0% + 有 CB",
+      "cb_codes": [
+        "261805"
+      ],
+      "max_price": 42.65,
+      "current_price": 42.65,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-08-24",
+      "ticker": "2344.TW",
+      "name": "華邦電",
+      "sector": "記憶體_DRAM_NAND",
+      "pick_price": 177.0,
+      "stage": "BULL_MID",
+      "reason": "記憶體_DRAM_NAND 強勢(+14.3) + 個股 5d-2.5% + 有 CB",
+      "cb_codes": [
+        "234410",
+        "234411"
+      ],
+      "max_price": 177.0,
+      "current_price": 177.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-08-24",
+      "ticker": "2421.TW",
+      "name": "建準",
+      "sector": "機構_散熱",
+      "pick_price": 143.5,
+      "stage": "BULL_MID",
+      "reason": "機構_散熱 強勢(+41.6) + 個股 5d-3.0% + 有 CB",
+      "cb_codes": [
+        "242106"
+      ],
+      "max_price": 143.5,
+      "current_price": 143.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-08-24",
+      "ticker": "2408.TW",
+      "name": "南亞科",
+      "sector": "記憶體_DRAM_NAND",
+      "pick_price": 501.0,
+      "stage": "BULL_MID",
+      "reason": "記憶體_DRAM_NAND 強勢(+14.3) + 個股 5d-4.4% + 有 CB",
+      "cb_codes": [
+        "240807"
+      ],
+      "max_price": 501.0,
+      "current_price": 501.0,
+      "current_return": 0.0,
+      "days_held": 0
     }
   ],
   "closed_picks": []

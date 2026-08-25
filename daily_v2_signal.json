@@ -1,19 +1,52 @@
 {
-  "timestamp": "2026-08-25",
+  "timestamp": "2026-08-26",
   "strategy": "V2 原版 (實測 OOS PF 1.83 / 主回測 PF 1.69, 抗崩盤強·常空手)",
   "top_industries": [
     {
       "industry": "金融保險",
       "count": 23,
-      "bullish_count": 17
+      "bullish_count": 19
     },
     {
       "industry": "電腦及週邊",
-      "count": 19,
+      "count": 18,
       "bullish_count": 11
     }
   ],
-  "picks": [],
+  "picks": [
+    {
+      "today": 141.5,
+      "monthly_max_2y": 130.0,
+      "ratio": 1.0884615384615384,
+      "from_high_pct": 8.846153846153836,
+      "bullish": true,
+      "bullish_fast": true,
+      "change_pct": 7.196969696969702,
+      "vol_ratio": 2.2261211128801803,
+      "rsi": 66.21621621621622,
+      "ma5": 132.8,
+      "ma20": 128.9,
+      "ma60": 125.56013437906901,
+      "ma200": 100.56239883422852,
+      "gap_up": false,
+      "close_near_high": true,
+      "long_red": true,
+      "ticker": "2881",
+      "name": "富邦金",
+      "industry": "金融保險",
+      "industry_strong": false,
+      "market_cap_billions": 12681.79140608,
+      "mcap_pass": true,
+      "sitc_net_shares": -8232,
+      "momentum_score": 30,
+      "momentum_notes": [
+        "ATH"
+      ],
+      "tier": "⭐",
+      "next_day_prob": "<70%",
+      "_score": 102.87
+    }
+  ],
   "params": {
     "top_industries": 2,
     "vol_ratio_min": 1.5,

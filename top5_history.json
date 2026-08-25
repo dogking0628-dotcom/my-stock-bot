@@ -1,60 +1,6 @@
 {
   "records": [
     {
-      "date": "2026-07-02",
-      "industry": "半導體",
-      "picks": [
-        {
-          "ticker": "6525",
-          "name": "捷敏-KY",
-          "industry": "半導體",
-          "rec_close": 166.5,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "漲停鎖死",
-            "ATH",
-            "族群同步"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 71.9298245614035,
-          "change_pct_at_rec": 9.90099009900991,
-          "vol_ratio_at_rec": 0.9241627242195836
-        },
-        {
-          "ticker": "2481",
-          "name": "強茂",
-          "industry": "半導體",
-          "rec_close": 213.5,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "漲停鎖死",
-            "ATH",
-            "族群同步"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 76.47058823529412,
-          "change_pct_at_rec": 9.768637532133685,
-          "vol_ratio_at_rec": 0.37756818288853505
-        },
-        {
-          "ticker": "3605",
-          "name": "宏致",
-          "industry": "電子零組件",
-          "rec_close": 90.0999984741211,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "量爆價揚",
-            "ATH",
-            "族群同步"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 73.88889477576988,
-          "change_pct_at_rec": 5.257009439504201,
-          "vol_ratio_at_rec": 6.714501637159551
-        }
-      ]
-    },
-    {
       "date": "2026-07-05",
       "industry": "半導體",
       "picks": [
@@ -1656,6 +1602,47 @@
           "rsi": 63.29479093257645,
           "change_pct_at_rec": 6.8035883421678545,
           "vol_ratio_at_rec": 1.3368999552055991
+        }
+      ]
+    },
+    {
+      "date": "2026-08-25",
+      "industry": "電腦及週邊",
+      "picks": [
+        {
+          "ticker": "3034",
+          "name": "聯詠",
+          "industry": "半導體",
+          "rec_close": 555.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+0.6%",
+            "SMH+1.6%",
+            "投信+4張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 52.17391304347826,
+          "change_pct_at_rec": 2.398523985239853,
+          "vol_ratio_at_rec": 1.472358040283484
+        },
+        {
+          "ticker": "2455",
+          "name": "全新",
+          "industry": "通信網路",
+          "rec_close": 419.5,
+          "momentum_score": 95,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "QQQ+0.6%",
+            "投信+4張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 56.953642384105954,
+          "change_pct_at_rec": 9.960681520314552,
+          "vol_ratio_at_rec": 0.39549804121687615
         }
       ]
     }

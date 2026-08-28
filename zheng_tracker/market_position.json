@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-26 14:10",
+  "date": "2026-08-27 23:00",
   "stage": "BULL_MID",
   "label": "⚡ 多頭中段",
   "desc": "強勢但動能轉鈍",
@@ -26,8 +26,8 @@
     "weekly_K": 67.1,
     "monthly_K": 87.3,
     "monthly_D": 88.6,
-    "vol_ratio_20": null,
-    "vol_avg_20": 4567330.0
+    "vol_ratio_20": 0.84,
+    "vol_avg_20": 4768660.0
   },
   "playbook": {
     "sector_focus": "取 5 日 TOP 3 強勢族群",

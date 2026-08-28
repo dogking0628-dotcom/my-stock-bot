@@ -1,97 +1,6 @@
 {
   "records": [
     {
-      "date": "2026-07-06",
-      "industry": "半導體",
-      "picks": [
-        {
-          "ticker": "8150",
-          "name": "南茂",
-          "industry": "半導體",
-          "rec_close": 115.5,
-          "momentum_score": 95,
-          "momentum_notes": [
-            "漲停鎖死",
-            "ATH",
-            "QQQ+1.4%",
-            "SMH+2.0%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 63.43212639155499,
-          "change_pct_at_rec": 10.000000000000009,
-          "vol_ratio_at_rec": 0.8828914272674794
-        },
-        {
-          "ticker": "8261",
-          "name": "富鼎",
-          "industry": "半導體",
-          "rec_close": 352.0,
-          "momentum_score": 95,
-          "momentum_notes": [
-            "漲停鎖死",
-            "ATH",
-            "QQQ+1.4%",
-            "SMH+2.0%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 83.73983739837398,
-          "change_pct_at_rec": 10.000000000000009,
-          "vol_ratio_at_rec": 0.22802287738707933
-        },
-        {
-          "ticker": "2369",
-          "name": "菱生",
-          "industry": "半導體",
-          "rec_close": 43.20000076293945,
-          "momentum_score": 95,
-          "momentum_notes": [
-            "漲停鎖死",
-            "ATH",
-            "QQQ+1.4%",
-            "SMH+2.0%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 64.4660144697699,
-          "change_pct_at_rec": 9.923668197431269,
-          "vol_ratio_at_rec": 1.1656623881952104
-        },
-        {
-          "ticker": "2481",
-          "name": "強茂",
-          "industry": "半導體",
-          "rec_close": 227.5,
-          "momentum_score": 95,
-          "momentum_notes": [
-            "漲停鎖死",
-            "ATH",
-            "QQQ+1.4%",
-            "SMH+2.0%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 76.3975155279503,
-          "change_pct_at_rec": 9.903381642512077,
-          "vol_ratio_at_rec": 0.33831059318762446
-        },
-        {
-          "ticker": "6525",
-          "name": "捷敏-KY",
-          "industry": "半導體",
-          "rec_close": 201.0,
-          "momentum_score": 95,
-          "momentum_notes": [
-            "漲停鎖死",
-            "ATH",
-            "QQQ+1.4%",
-            "SMH+2.0%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 76.02996254681648,
-          "change_pct_at_rec": 9.836065573770503,
-          "vol_ratio_at_rec": 0.6482247657010605
-        }
-      ]
-    },
-    {
       "date": "2026-07-07",
       "industry": "半導體",
       "picks": [
@@ -1666,6 +1575,78 @@
           "rsi": 64.3835616438356,
           "change_pct_at_rec": 6.930693069306937,
           "vol_ratio_at_rec": 3.3903693388674983
+        }
+      ]
+    },
+    {
+      "date": "2026-08-28",
+      "industry": "電子零組件",
+      "picks": [
+        {
+          "ticker": "6805",
+          "name": "富世達",
+          "industry": "電子零組件",
+          "rec_close": 2345.0,
+          "momentum_score": 90,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+1.4%",
+            "投信+673張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 73.90489369195583,
+          "change_pct_at_rec": 5.393258426966296,
+          "vol_ratio_at_rec": 1.6688321373447714
+        },
+        {
+          "ticker": "7788",
+          "name": "松川精密",
+          "industry": "電子零組件",
+          "rec_close": 327.5,
+          "momentum_score": 80,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+1.4%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 77.19298245614036,
+          "change_pct_at_rec": 9.899328859060397,
+          "vol_ratio_at_rec": 1.9454063100824415
+        },
+        {
+          "ticker": "3008",
+          "name": "大立光",
+          "industry": "光電",
+          "rec_close": 7065.0,
+          "momentum_score": 90,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+1.4%",
+            "投信+218張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 89.61360260701855,
+          "change_pct_at_rec": 2.1691973969631295,
+          "vol_ratio_at_rec": 1.9503542589387473
+        },
+        {
+          "ticker": "3406",
+          "name": "玉晶光",
+          "industry": "光電",
+          "rec_close": 917.0,
+          "momentum_score": 85,
+          "momentum_notes": [
+            "量爆價揚",
+            "ATH",
+            "QQQ+1.4%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 88.24742268041237,
+          "change_pct_at_rec": 9.95203836930456,
+          "vol_ratio_at_rec": 3.2822314042930794
         }
       ]
     }

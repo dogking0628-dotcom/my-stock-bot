@@ -1,28 +1,28 @@
 {
-  "period": "2026-08-15 ~ 2026-08-22",
+  "period": "2026-08-22 ~ 2026-08-29",
   "total_picks": 1,
-  "wins": 0,
-  "avg_return": -1.19,
+  "wins": 1,
+  "avg_return": 3.6,
   "picks": [
     {
-      "ticker": "2887",
-      "actual_entry": 37.70000076293945,
-      "current": 37.25,
-      "ret_pct": -1.19,
-      "peak_pct": 0.0,
-      "low_pct": -5.31,
+      "ticker": "2881",
+      "actual_entry": 139.0,
+      "current": 144.0,
+      "ret_pct": 3.6,
+      "peak_pct": 3.96,
+      "low_pct": -0.72,
       "status": "持有中",
       "triggered": null,
-      "days_held": 5,
-      "signal_date": "2026-08-16",
-      "name": "台新新光金",
+      "days_held": 2,
+      "signal_date": "2026-08-26",
+      "name": "富邦金",
       "industry": "金融保險",
-      "system_entry": 37.75
+      "system_entry": 141.5
     }
   ],
   "by_industry": {
     "金融保險": [
-      "2887"
+      "2881"
     ]
   }
 }

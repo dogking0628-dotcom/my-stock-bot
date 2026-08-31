@@ -4,7 +4,7 @@
   "top_industries": [
     {
       "industry": "金融保險",
-      "count": 25,
+      "count": 24,
       "bullish_count": 16
     },
     {
@@ -22,7 +22,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 9.623430962343104,
-      "vol_ratio": 1.5545370032171473,
+      "vol_ratio": 1.5434423780385333,
       "rsi": 64.79922746630453,
       "ma5": 118.9,
       "ma20": 113.58454055786133,
@@ -37,16 +37,15 @@
       "industry_strong": false,
       "market_cap_billions": 143.86814976,
       "mcap_pass": true,
-      "sitc_net_shares": 280000,
-      "momentum_score": 45,
+      "sitc_net_shares": 78000,
+      "momentum_score": 40,
       "momentum_notes": [
         "ATH",
-        "QQQ+1.4%",
-        "投信+280張"
+        "投信+78張"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%",
-      "_score": 99.59
+      "_score": 99.48
     }
   ],
   "params": {

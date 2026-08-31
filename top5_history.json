@@ -1,27 +1,6 @@
 {
   "records": [
     {
-      "date": "2026-07-07",
-      "industry": "半導體",
-      "picks": [
-        {
-          "ticker": "6579",
-          "name": "研揚",
-          "industry": "電腦及週邊",
-          "rec_close": 179.0,
-          "momentum_score": 80,
-          "momentum_notes": [
-            "量爆價揚",
-            "ATH"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 65.63876651982379,
-          "change_pct_at_rec": 8.814589665653493,
-          "vol_ratio_at_rec": 6.554291912818312
-        }
-      ]
-    },
-    {
       "date": "2026-07-09",
       "industry": "半導體",
       "picks": [
@@ -1647,6 +1626,60 @@
           "rsi": 88.24742268041237,
           "change_pct_at_rec": 9.95203836930456,
           "vol_ratio_at_rec": 3.2822314042930794
+        }
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "industry": "電子零組件",
+      "picks": [
+        {
+          "ticker": "6805",
+          "name": "富世達",
+          "industry": "電子零組件",
+          "rec_close": 2345.0,
+          "momentum_score": 85,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "投信+584張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 73.90489369195583,
+          "change_pct_at_rec": 5.393258426966296,
+          "vol_ratio_at_rec": 1.6148996772729738
+        },
+        {
+          "ticker": "3406",
+          "name": "玉晶光",
+          "industry": "光電",
+          "rec_close": 917.0,
+          "momentum_score": 90,
+          "momentum_notes": [
+            "量爆價揚",
+            "ATH",
+            "投信+1,343張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 88.24742268041237,
+          "change_pct_at_rec": 9.95203836930456,
+          "vol_ratio_at_rec": 3.2385939995641904
+        },
+        {
+          "ticker": "3008",
+          "name": "大立光",
+          "industry": "光電",
+          "rec_close": 7065.0,
+          "momentum_score": 85,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "投信+160張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 89.61360260701855,
+          "change_pct_at_rec": 2.1691973969631295,
+          "vol_ratio_at_rec": 1.8445007230170893
         }
       ]
     }

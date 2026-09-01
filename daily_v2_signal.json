@@ -1,53 +1,19 @@
 {
-  "timestamp": "2026-08-31",
+  "timestamp": "2026-09-01",
   "strategy": "V2 原版 (實測 OOS PF 1.83 / 主回測 PF 1.69, 抗崩盤強·常空手)",
   "top_industries": [
     {
       "industry": "金融保險",
-      "count": 24,
-      "bullish_count": 16
+      "count": 28,
+      "bullish_count": 18
     },
     {
       "industry": "電子零組件",
-      "count": 21,
-      "bullish_count": 15
+      "count": 18,
+      "bullish_count": 12
     }
   ],
-  "picks": [
-    {
-      "today": 131.0,
-      "monthly_max_2y": 85.86644744873047,
-      "ratio": 1.5256250129390538,
-      "from_high_pct": 52.562501293905385,
-      "bullish": true,
-      "bullish_fast": true,
-      "change_pct": 9.623430962343104,
-      "vol_ratio": 1.5434423780385333,
-      "rsi": 64.79922746630453,
-      "ma5": 118.9,
-      "ma20": 113.58454055786133,
-      "ma60": 91.6340207417806,
-      "ma200": 73.55416648864747,
-      "gap_up": false,
-      "close_near_high": true,
-      "long_red": true,
-      "ticker": "3605",
-      "name": "宏致",
-      "industry": "電子零組件",
-      "industry_strong": false,
-      "market_cap_billions": 143.86814976,
-      "mcap_pass": true,
-      "sitc_net_shares": 78000,
-      "momentum_score": 40,
-      "momentum_notes": [
-        "ATH",
-        "投信+78張"
-      ],
-      "tier": "⭐",
-      "next_day_prob": "<70%",
-      "_score": 99.48
-    }
-  ],
+  "picks": [],
   "params": {
     "top_industries": 2,
     "vol_ratio_min": 1.5,

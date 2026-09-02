@@ -15323,6 +15323,135 @@
       "current_price": 181.5,
       "current_return": 0.0,
       "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-01",
+      "ticker": "3008.TW",
+      "name": "大立光",
+      "sector": "光學_鏡頭",
+      "pick_price": 7650.0,
+      "stage": "BULL_MID",
+      "reason": "光學_鏡頭 強勢(+34.3) + 個股 5d+42.1% + 有 CB",
+      "cb_codes": [
+        "300806"
+      ],
+      "max_price": 7650.0,
+      "current_price": 7650.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-01",
+      "ticker": "2421.TW",
+      "name": "建準",
+      "sector": "機構_散熱",
+      "pick_price": 179.5,
+      "stage": "BULL_MID",
+      "reason": "機構_散熱 強勢(+48.1) + 個股 5d+25.1% + 有 CB",
+      "cb_codes": [
+        "242106"
+      ],
+      "max_price": 179.5,
+      "current_price": 179.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-01",
+      "ticker": "2408.TW",
+      "name": "南亞科",
+      "sector": "記憶體_DRAM_NAND",
+      "pick_price": 543.0,
+      "stage": "BULL_MID",
+      "reason": "記憶體_DRAM_NAND 強勢(+29.2) + 個股 5d+8.4% + 有 CB",
+      "cb_codes": [
+        "240807"
+      ],
+      "max_price": 543.0,
+      "current_price": 543.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-01",
+      "ticker": "3019.TW",
+      "name": "亞光",
+      "sector": "光學_鏡頭",
+      "pick_price": 143.0,
+      "stage": "BULL_MID",
+      "reason": "光學_鏡頭 強勢(+34.3) + 個股 5d+7.5% + 有 CB",
+      "cb_codes": [
+        "301907"
+      ],
+      "max_price": 143.0,
+      "current_price": 143.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-01",
+      "ticker": "2344.TW",
+      "name": "華邦電",
+      "sector": "記憶體_DRAM_NAND",
+      "pick_price": 182.5,
+      "stage": "BULL_MID",
+      "reason": "記憶體_DRAM_NAND 強勢(+29.2) + 個股 5d+3.1% + 有 CB",
+      "cb_codes": [
+        "234410",
+        "234411"
+      ],
+      "max_price": 182.5,
+      "current_price": 182.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-01",
+      "ticker": "8299.TWO",
+      "name": "群聯",
+      "sector": "記憶體_DRAM_NAND",
+      "pick_price": 2165.0,
+      "stage": "BULL_MID",
+      "reason": "記憶體_DRAM_NAND 強勢(+29.2) + 個股 5d+1.4% + 有 CB",
+      "cb_codes": [
+        "829902"
+      ],
+      "max_price": 2165.0,
+      "current_price": 2165.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-01",
+      "ticker": "2385.TW",
+      "name": "群光",
+      "sector": "光學_鏡頭",
+      "pick_price": 106.5,
+      "stage": "BULL_MID",
+      "reason": "光學_鏡頭 強勢(+34.3) + 個股 5d+0.9% + 有 CB",
+      "cb_codes": [
+        "238505"
+      ],
+      "max_price": 106.5,
+      "current_price": 106.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-01",
+      "ticker": "2059.TW",
+      "name": "川湖",
+      "sector": "機構_散熱",
+      "pick_price": 14180.0,
+      "stage": "BULL_MID",
+      "reason": "機構_散熱 強勢(+48.1) + 個股 5d-1.2% + 有 CB",
+      "cb_codes": [
+        "205905"
+      ],
+      "max_price": 14180.0,
+      "current_price": 14180.0,
+      "current_return": 0.0,
+      "days_held": 0
     }
   ],
   "closed_picks": []

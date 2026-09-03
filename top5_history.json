@@ -1,96 +1,6 @@
 {
   "records": [
     {
-      "date": "2026-07-14",
-      "industry": "半導體",
-      "picks": [
-        {
-          "ticker": "3532",
-          "name": "台勝科",
-          "industry": "半導體",
-          "rec_close": 464.5,
-          "momentum_score": 95,
-          "momentum_notes": [
-            "量爆價揚",
-            "ATH",
-            "QQQ+1.1%",
-            "SMH+2.5%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 65.18883293392605,
-          "change_pct_at_rec": 9.917351492554172,
-          "vol_ratio_at_rec": 4.0895697860072495
-        },
-        {
-          "ticker": "6526",
-          "name": "達發",
-          "industry": "半導體",
-          "rec_close": 682.0,
-          "momentum_score": 90,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "QQQ+1.1%",
-            "SMH+2.5%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 49.745113720079125,
-          "change_pct_at_rec": 4.601226993865026,
-          "vol_ratio_at_rec": 1.1533391191993725
-        },
-        {
-          "ticker": "3704",
-          "name": "合勤控",
-          "industry": "通信網路",
-          "rec_close": 49.849998474121094,
-          "momentum_score": 90,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "QQQ+1.1%",
-            "IGV+1.0%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 51.313994066087034,
-          "change_pct_at_rec": 9.922822825601463,
-          "vol_ratio_at_rec": 2.4286373841826325
-        },
-        {
-          "ticker": "2382",
-          "name": "廣達",
-          "industry": "電腦及週邊",
-          "rec_close": 378.0,
-          "momentum_score": 90,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "QQQ+1.1%",
-            "IGV+1.0%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 55.55555555555556,
-          "change_pct_at_rec": 1.2048192771084265,
-          "vol_ratio_at_rec": 1.482091333054566
-        },
-        {
-          "ticker": "8039",
-          "name": "台虹",
-          "industry": "電子零組件",
-          "rec_close": 169.0,
-          "momentum_score": 85,
-          "momentum_notes": [
-            "量爆價揚",
-            "ATH",
-            "QQQ+1.1%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 67.00376338780686,
-          "change_pct_at_rec": 9.740259740259738,
-          "vol_ratio_at_rec": 5.1840160501926045
-        }
-      ]
-    },
-    {
       "date": "2026-07-15",
       "industry": "半導體",
       "picks": [
@@ -1679,6 +1589,44 @@
           "rsi": 64.87603305785123,
           "change_pct_at_rec": 1.794453507340954,
           "vol_ratio_at_rec": 1.2366188417041455
+        }
+      ]
+    },
+    {
+      "date": "2026-09-03",
+      "industry": "電腦及週邊",
+      "picks": [
+        {
+          "ticker": "3231",
+          "name": "緯創",
+          "industry": "電腦及週邊",
+          "rec_close": 185.5,
+          "momentum_score": 85,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "投信+6,583張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 36.14457831325301,
+          "change_pct_at_rec": 1.9230769230769162,
+          "vol_ratio_at_rec": 1.7540330374266164
+        },
+        {
+          "ticker": "3023",
+          "name": "信邦",
+          "industry": "電子零組件",
+          "rec_close": 330.0,
+          "momentum_score": 85,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "投信+16張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 64.28571428571428,
+          "change_pct_at_rec": 3.125,
+          "vol_ratio_at_rec": 2.392132429672502
         }
       ]
     }

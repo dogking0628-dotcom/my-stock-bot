@@ -128,6 +128,15 @@ def patch_last_bar(df_t, code, ref_date, ref_day):
     rec = ref_day.get(code)
     if not rec:
         return df_t, False
+    # 除權息防呆（2026-09-04）：TWSE 是「未還原」價，yfinance auto_adjust 是還原價。
+    # 除權息日兩者會斷層（例：緯穎 25/8 配股 7000→2000）。台股漲跌停 ±10%，
+    # 補棒與前一根落差 >15% 只可能是除權息或資料異常 → 寧可不補、標記落後。
+    try:
+        prev_close = float(df_t["Close"].dropna().iloc[-1])
+        if prev_close > 0 and abs(rec["Close"] / prev_close - 1) > 0.15:
+            return df_t, False
+    except Exception:
+        pass
     import pandas as pd
     row = {c: np.nan for c in df_t.columns}
     for k, v in rec.items():

@@ -100,6 +100,28 @@ def fetch_index_vs_ma(ticker):
             "gap_pct": (close / ma - 1) * 100, "date": series[-1][0], "src": src}
 
 
+def fetch_top50_breadth():
+    """市值前50大：近10日內創2y還原月線新高的家數（影片洞察：權值創高廣度=弱中透強）"""
+    import yfinance as yf, json as _j
+    mc = _j.load(io.open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "marketcap_cache.json"), encoding="utf-8"))
+    top = sorted(((c, v) for c, v in mc.items() if isinstance(v, (int, float))), key=lambda x: -x[1])[:50]
+    codes = [c for c, _ in top]
+    df = yf.download(" ".join(f"{c}.TW" for c in codes), period="2y", auto_adjust=True,
+                     progress=False, threads=True, group_by="ticker")
+    hit = []
+    for c in codes:
+        try:
+            cl = df[f"{c}.TW"]["Close"].dropna()
+            if len(cl) < 100: continue
+            mmax = cl.resample("ME").max()
+            hist_max = float(mmax.iloc[:-1].max()) if len(mmax) > 1 else float(cl.max())
+            if float(cl.tail(10).max()) >= hist_max * 0.999:
+                hit.append(c)
+        except Exception:
+            continue
+    return {"count": len(hit), "total": len(codes), "codes": hit}
+
+
 def main():
     print("[1/2] 上市成交金額（TWSE 官方）...")
     tdate, twse_amt = fetch_twse_turnover()
@@ -137,8 +159,17 @@ def main():
                     "🔴 雙空頭")
         print(f"  強弱判定: {strength}")
 
+    breadth = None
+    try:
+        print("[3/3] 市值前50創高廣度...")
+        breadth = fetch_top50_breadth()
+        print(f"  近10日創2y新高 {breadth['count']}/{breadth['total']} 檔")
+    except Exception as e:
+        print(f"  breadth fail: {type(e).__name__}")
+
     out = {
         "date": dt.date.today().isoformat(),
+        "top50_breadth": breadth,
         "turnover": {
             "twse_date_roc": tdate,
             "twse_amount": twse_amt,
@@ -172,6 +203,11 @@ def build_block(data=None):
             lines.append("  ⚠️ 6月實證:天險群聚後加權-15%→不追高/分批鎖利")
         else:
             lines.append(f"  量能: 上市{amt:.2f}兆 (天險1.5兆; 合計約{comb:.2f}兆)")
+    b = data.get("top50_breadth")
+    if b and b.get("total"):
+        pc = b["count"] / b["total"] * 100
+        icon = "🟢" if pc >= 20 else ("🟡" if pc >= 10 else "🔴")
+        lines.append(f"  權值50創高廣度: {b['count']}/{b['total']} ({pc:.0f}%) {icon}")
     m = data.get("ma87") or {}
     twii, twoii = m.get("twii"), m.get("twoii")
     if twii and twoii:

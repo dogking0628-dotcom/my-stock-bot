@@ -1,27 +1,6 @@
 {
   "records": [
     {
-      "date": "2026-07-15",
-      "industry": "半導體",
-      "picks": [
-        {
-          "ticker": "8039",
-          "name": "台虹",
-          "industry": "電子零組件",
-          "rec_close": 185.5,
-          "momentum_score": 80,
-          "momentum_notes": [
-            "量爆價揚",
-            "ATH"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 72.1877487164948,
-          "change_pct_at_rec": 9.763313609467449,
-          "vol_ratio_at_rec": 4.145380786893622
-        }
-      ]
-    },
-    {
       "date": "2026-07-16",
       "industry": "半導體",
       "picks": [
@@ -1627,6 +1606,29 @@
           "rsi": 64.28571428571428,
           "change_pct_at_rec": 3.125,
           "vol_ratio_at_rec": 2.392132429672502
+        }
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "industry": "電腦及週邊",
+      "picks": [
+        {
+          "ticker": "2464",
+          "name": "盟立",
+          "industry": "其他電子",
+          "rec_close": 222.0,
+          "momentum_score": 95,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "QQQ+0.2%",
+            "SMH+1.0%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 61.98126149720949,
+          "change_pct_at_rec": 9.90099009900991,
+          "vol_ratio_at_rec": 0.9741015367184398
         }
       ]
     }

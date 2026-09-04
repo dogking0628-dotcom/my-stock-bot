@@ -369,6 +369,21 @@ def analyze_stock(yfc, df_t):
     close_near_high = candle_range > 0 and today_close >= (today_high - candle_range * 0.2)
     long_red = candle_range > 0 and (today_close - today_open) / candle_range >= 0.7
 
+    # 🌀 T2 糾結突破（2026-09-04 評估採納為資訊層測試軌道，非 V4.3 掛單）
+    # 昨日 MA5/10/20 帶寬<3% + 昨漲<3%(首根) + 今漲>=3% 量比>=2 + 收盤破糾結帶 + 距2y高<=15%
+    tangle = None
+    if len(cl) >= 23:
+        m5y = float(cl.iloc[-6:-1].mean()); m10y = float(cl.iloc[-11:-1].mean()); m20y = float(cl.iloc[-21:-1].mean())
+        prev_c = float(cl.iloc[-2]); prev2_c = float(cl.iloc[-3])
+        hi2y_prev = float(cl.iloc[:-1].max())
+        if prev_c > 0 and prev2_c > 0 and hi2y_prev > 0:
+            band = (max(m5y, m10y, m20y) - min(m5y, m10y, m20y)) / prev_c
+            prev_chg = (prev_c / prev2_c - 1) * 100
+            if (band < 0.03 and prev_chg < 3.0 and change_pct >= 3.0 and vol_ratio >= 2.0
+                    and today_close > max(m5y, m10y, m20y) and today_close >= hi2y_prev * 0.85):
+                tangle = {"band_pct": round(band * 100, 2),
+                          "dist_high_pct": round((today_close / hi2y_prev - 1) * 100, 1)}
+
     return {
         "today": today_close, "monthly_max_2y": mmax,
         "ratio": ratio, "from_high_pct": (ratio - 1) * 100,
@@ -376,6 +391,7 @@ def analyze_stock(yfc, df_t):
         "change_pct": change_pct, "vol_ratio": vol_ratio,
         "rsi": rsi_val, "ma5": ma5, "ma20": ma20, "ma60": ma60, "ma200": ma200,
         "gap_up": gap_up, "close_near_high": close_near_high, "long_red": long_red,
+        "tangle": tangle,
     }
 
 
@@ -592,8 +608,21 @@ def main():
     if ranked:
         p(f"\n🏆 族群最多：{ranked[0][0]}（{len(ranked[0][1])} 檔）")
 
+    tangle_list = sorted(
+        [r for r in results if r.get("tangle")
+         and r.get("industry") in ALLOWED_INDUSTRIES
+         and (mcap.get(r["ticker"]) or 0) >= MIN_MCAP_BILLIONS],
+        key=lambda x: -x.get("vol_ratio", 0))[:8]
+    if tangle_list:
+        print(f"  🌀 糾結突破(T2測試軌道): " +
+              "、".join(f"{r['ticker']}{r['name']}(量{r['vol_ratio']:.1f}x)" for r in tangle_list[:5]),
+              file=sys.stderr)
+
     out = {
         "timestamp": dt.date.today().isoformat(),
+        "tangle_breakout": [{k: r.get(k) for k in
+                             ("ticker", "name", "industry", "today", "change_pct",
+                              "vol_ratio", "ma20", "tangle")} for r in tangle_list],
         "trade_date": str(trade_date()),              # 這份掛單要打的台股日期
         "data_date": data_date,                       # 訊號所依據的最後一根 K 棒
         "ref_trading_date": str(ref_date) if ref_date else None,

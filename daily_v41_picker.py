@@ -75,7 +75,7 @@ def etf_changes_block(inst, max_lines=4):
     return lines[:max_lines]
 
 
-def build_message(picks, strongest, regime, blocked, date, inst=None, data_note=None):
+def build_message(picks, strongest, regime, blocked, date, inst=None, data_note=None, report_extra=None):
     inst = inst or {}
     lines = [f"🎯 V4.3 開盤掛單 {date[5:]}"]
     if data_note:
@@ -134,6 +134,17 @@ def build_message(picks, strongest, regime, blocked, date, inst=None, data_note=
         itag = inst_tag(p["ticker"], inst)
         if itag:
             lines.append(f"   🏦 {itag}")
+        lines.append("")
+
+    tg = (report_extra or {}).get("tangle_breakout") or []
+    if tg:
+        lines.append("🌀 糾結突破雷達(T2測試軌道,非掛單):")
+        for r in tg[:5]:
+            t = r.get("tangle") or {}
+            lines.append(f"  {r['ticker']} {r['name']} 收{r['today']:.0f}"
+                         f" +{r['change_pct']:.1f}% 量{r['vol_ratio']:.1f}x"
+                         f" 距高{t.get('dist_high_pct', 0):+.1f}%")
+        lines.append("  (糾結<3%首根放量突破;2y回測+81%/勝率34%/MDD-22%)")
         lines.append("")
 
     chg_lines = etf_changes_block(inst)
@@ -203,7 +214,7 @@ def main():
     with open(SIGNAL_PATH, "w", encoding="utf-8") as f:
         json.dump(signal, f, ensure_ascii=False, indent=2)
 
-    msg = build_message(picks, strongest, regime, blocked, date, inst=load_inst(), data_note=data_note)
+    msg = build_message(picks, strongest, regime, blocked, date, inst=load_inst(), data_note=data_note, report_extra=report)
     print("\n" + "=" * 60)
     print("LINE 訊息預覽：")
     print("=" * 60)

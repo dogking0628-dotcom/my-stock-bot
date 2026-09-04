@@ -87,7 +87,8 @@ def run_variant(name, history, mcap, us_chg, regime, df_idx, all_dates, ma20s, m
                 ret = (sp/pos["entry_price"]-1)*100
                 trades.append({"ticker": c, "industry": get_industry(c), "entry_date": pos["entry_date"],
                                "exit_date": str(nd.date()), "entry": pos["entry_price"], "exit": sp,
-                               "ret_pct": ret, "hold_days": (nd-pd.Timestamp(pos["entry_date"])).days})
+                               "ret_pct": ret, "reason": "exit",
+                               "hold_days": (nd-pd.Timestamp(pos["entry_date"])).days})
                 if ret < 0: losers.append((str(nd.date()), c))
                 del positions[c]
         if d_str < TRADE_START or not in_stage2: continue
@@ -158,6 +159,7 @@ def run_variant(name, history, mcap, us_chg, regime, df_idx, all_dates, ma20s, m
 
 def main():
     bs.START_DATE = "2023-09-01"
+    bs.END_DATE = dt.date.today().isoformat()   # backtest_strategy 寫死 2026-05-06，不設會少 4 個月資料
     codes = bs.load_universe(); mcap = v41.load_mcap()
     us_chg = v41.fetch_us_sectors(); regime = v41.fetch_0050()
     history = bs.fetch_history(codes)

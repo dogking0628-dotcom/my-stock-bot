@@ -15564,6 +15564,150 @@
       "current_price": 14150.0,
       "current_return": 0.0,
       "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-03",
+      "ticker": "3008.TW",
+      "name": "大立光",
+      "sector": "光學_鏡頭",
+      "pick_price": 7810.0,
+      "stage": "BULL_MID",
+      "reason": "光學_鏡頭 強勢(+31.7) + 個股 5d+24.2% + 有 CB",
+      "cb_codes": [
+        "300806"
+      ],
+      "max_price": 7810.0,
+      "current_price": 7810.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-03",
+      "ticker": "3019.TW",
+      "name": "亞光",
+      "sector": "光學_鏡頭",
+      "pick_price": 157.5,
+      "stage": "BULL_MID",
+      "reason": "光學_鏡頭 強勢(+31.7) + 個股 5d+15.8% + 有 CB",
+      "cb_codes": [
+        "301907"
+      ],
+      "max_price": 157.5,
+      "current_price": 157.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-03",
+      "ticker": "2421.TW",
+      "name": "建準",
+      "sector": "機構_散熱",
+      "pick_price": 168.0,
+      "stage": "BULL_MID",
+      "reason": "機構_散熱 強勢(+33.2) + 個股 5d+10.9% + 有 CB",
+      "cb_codes": [
+        "242106"
+      ],
+      "max_price": 168.0,
+      "current_price": 168.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-03",
+      "ticker": "2385.TW",
+      "name": "群光",
+      "sector": "光學_鏡頭",
+      "pick_price": 109.5,
+      "stage": "BULL_MID",
+      "reason": "光學_鏡頭 強勢(+31.7) + 個股 5d+2.3% + 有 CB",
+      "cb_codes": [
+        "238505"
+      ],
+      "max_price": 109.5,
+      "current_price": 109.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-03",
+      "ticker": "2603.TW",
+      "name": "長榮",
+      "sector": "海運_航運",
+      "pick_price": 234.5,
+      "stage": "BULL_MID",
+      "reason": "海運_航運 強勢(+13.8) + 個股 5d+1.5% + 有 CB",
+      "cb_codes": [
+        "260305"
+      ],
+      "max_price": 234.5,
+      "current_price": 234.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-03",
+      "ticker": "2609.TW",
+      "name": "陽明",
+      "sector": "海運_航運",
+      "pick_price": 57.5,
+      "stage": "BULL_MID",
+      "reason": "海運_航運 強勢(+13.8) + 個股 5d-0.2% + 有 CB",
+      "cb_codes": [
+        "260905"
+      ],
+      "max_price": 57.5,
+      "current_price": 57.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-03",
+      "ticker": "2618.TW",
+      "name": "長榮航",
+      "sector": "海運_航運",
+      "pick_price": 42.15,
+      "stage": "BULL_MID",
+      "reason": "海運_航運 強勢(+13.8) + 個股 5d-2.0% + 有 CB",
+      "cb_codes": [
+        "261805"
+      ],
+      "max_price": 42.15,
+      "current_price": 42.15,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-03",
+      "ticker": "2615.TW",
+      "name": "萬海",
+      "sector": "海運_航運",
+      "pick_price": 112.0,
+      "stage": "BULL_MID",
+      "reason": "海運_航運 強勢(+13.8) + 個股 5d-2.6% + 有 CB",
+      "cb_codes": [
+        "261505"
+      ],
+      "max_price": 112.0,
+      "current_price": 112.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-03",
+      "ticker": "2059.TW",
+      "name": "川湖",
+      "sector": "機構_散熱",
+      "pick_price": 13865.0,
+      "stage": "BULL_MID",
+      "reason": "機構_散熱 強勢(+33.2) + 個股 5d-4.1% + 有 CB",
+      "cb_codes": [
+        "205905"
+      ],
+      "max_price": 13865.0,
+      "current_price": 13865.0,
+      "current_return": 0.0,
+      "days_held": 0
     }
   ],
   "closed_picks": []

@@ -1,28 +1,32 @@
 {
-  "period": "2026-08-22 ~ 2026-08-29",
+  "period": "2026-08-29 ~ 2026-09-05",
   "total_picks": 1,
-  "wins": 1,
-  "avg_return": 3.6,
+  "wins": 0,
+  "avg_return": -8.17,
   "picks": [
     {
-      "ticker": "2881",
-      "actual_entry": 139.0,
-      "current": 144.0,
-      "ret_pct": 3.6,
-      "peak_pct": 3.96,
-      "low_pct": -0.72,
-      "status": "持有中",
-      "triggered": null,
-      "days_held": 2,
-      "signal_date": "2026-08-26",
-      "name": "富邦金",
-      "industry": "金融保險",
-      "system_entry": 141.5
+      "ticker": "3605",
+      "actual_entry": 128.5,
+      "current": 118.0,
+      "ret_pct": -8.17,
+      "peak_pct": 4.28,
+      "low_pct": -11.67,
+      "status": "❌ 停損出場 (-10.9%)",
+      "triggered": [
+        "停損",
+        "09/03",
+        -10.89494163424124
+      ],
+      "days_held": 4,
+      "signal_date": "2026-08-31",
+      "name": "宏致",
+      "industry": "電子零組件",
+      "system_entry": 131.0
     }
   ],
   "by_industry": {
-    "金融保險": [
-      "2881"
+    "電子零組件": [
+      "3605"
     ]
   }
 }

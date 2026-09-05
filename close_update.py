@@ -127,7 +127,7 @@ def main():
     # ── 今早掛單檢討 ──
     P("## 🔍 今早掛單檢討")
     any_pick = False
-    for label, sig, cap in (("V4.3", jload("daily_v41_signal.json") or {}, 450000),
+    for label, sig, cap in (("V4.4", jload("daily_v41_signal.json") or {}, 450000),
                             ("V2", jload("daily_v2_signal.json") or {}, 450000)):
         picks = sig.get("picks") or []
         if not picks:

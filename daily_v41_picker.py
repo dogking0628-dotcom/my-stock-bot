@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Daily V4.3 Picker — 每日 LINE 推播（V4.3 = V4.2 + 硬停損-7%樓地板，與 V2 並行）
+Daily V4.4 Picker — 每日 LINE 推播（V4.4 = V4.3 + 0050<20MA 暫停新倉減速器，與 V2 並行）
 ═════════════════════════════════════════════════
 V4.3 邏輯（在 industry_ath_yf.py 算好，這裡只讀 tomorrow_top5 推播）：
   ① 創 2y 月線 ATH  ② 多頭排列  ③ 科技 7 族群  ④ 市值 ≥ 100 億
   ⑤ 動能評分 ≥ 80   ⑥ 美股族群加分  ⑦ 0050 > MA200 才進場
-  ⑧ 最強族群挑 5    ⑨ 7 日內虧損股黑名單
+  ⑧ 最強族群挑 5    ⑨ 7 日內虧損股黑名單  ⑩ 0050<自身20MA → 暫停新倉(V4.4)
 出場：跌破 20MA 或 進場價-7%（先到先出）/ 從峰值 -30%
 
 每日 cron（接在 industry_ath_yf.py 之後，與 daily_v2_picker.py 並行）
@@ -91,9 +91,9 @@ def tangle_block(report_extra):
     return L
 
 
-def build_message(picks, strongest, regime, blocked, date, inst=None, data_note=None, report_extra=None):
+def build_message(picks, strongest, regime, blocked, date, inst=None, data_note=None, report_extra=None, paused=False):
     inst = inst or {}
-    lines = [f"🎯 V4.3 開盤掛單 {date[5:]}"]
+    lines = [f"🎯 V4.4 開盤掛單 {date[5:]}"]
     if data_note:
         lines.append(data_note)
     lines.append("")
@@ -106,8 +106,18 @@ def build_message(picks, strongest, regime, blocked, date, inst=None, data_note=
 
     if blocked:
         lines.append("")
-        lines.append("⛔ 0050 跌破 MA200 → V4.3 今日空手")
+        lines.append("⛔ 0050 跌破 MA200 → V4.4 今日空手")
         lines.append("（熊市段，嚴禁追價）")
+        return "\n".join(lines)
+
+    if paused:
+        lines.append("")
+        lines.append("⏸️ 0050 跌破自身 20MA（大盤短弱）→ 今日不開新倉")
+        lines.append("（V4.4 減速器；持倉照原出場規則管理）")
+        tb = tangle_block(report_extra)
+        if tb:
+            lines.append("")
+            lines.extend(tb)
         return "\n".join(lines)
 
     if strongest:
@@ -115,7 +125,7 @@ def build_message(picks, strongest, regime, blocked, date, inst=None, data_note=
     lines.append("")
 
     if not picks:
-        lines.append("📭 今日無 V4.3 訊號（動能<80 或黑名單）→ 空手")
+        lines.append("📭 今日無 V4.4 訊號（動能<80 或黑名單）→ 空手")
         tb = tangle_block(report_extra)
         if tb:
             lines.append("")
@@ -210,14 +220,15 @@ def main():
     strongest = report.get("tomorrow_top5_industry")
     regime = report.get("market_regime")
     blocked = report.get("v4_blocked", False)
+    paused = report.get("v44_paused", False)
 
-    print(f"[V4.3] 載入 ath_industry_report ({date})")
+    print(f"[V4.4] 載入 ath_industry_report ({date})")
     print(f"       tomorrow_top5: {len(picks)} 檔 / 最強族群: {strongest}")
     print(f"       0050 體制: {'空手' if blocked else '可進場'}")
 
     signal = {
         "timestamp": date,
-        "strategy": "V4.3 (V4.2 + 硬停損-7%樓地板; 2y回測 +107.6%/CAGR 28.4%/PF 3.94/MDD -14%)",
+        "strategy": "V4.4 (V4.3 + 0050<20MA暫停新倉; 5y回測 +247%/CAGR 27.7%/PF 3.51/MDD -19.8%)",
         "strongest_industry": strongest,
         "v4_blocked": blocked,
         "picks": picks[:MAX_PUSH],
@@ -225,7 +236,7 @@ def main():
     with open(SIGNAL_PATH, "w", encoding="utf-8") as f:
         json.dump(signal, f, ensure_ascii=False, indent=2)
 
-    msg = build_message(picks, strongest, regime, blocked, date, inst=load_inst(), data_note=data_note, report_extra=report)
+    msg = build_message(picks, strongest, regime, blocked, date, inst=load_inst(), data_note=data_note, report_extra=report, paused=paused)
     print("\n" + "=" * 60)
     print("LINE 訊息預覽：")
     print("=" * 60)

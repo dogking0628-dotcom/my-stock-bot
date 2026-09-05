@@ -223,13 +223,17 @@ def get_market_regime():
         if len(cl) < 200: return True, None
         today = float(cl[-1])
         ma200 = float(cl[-200:].mean())
+        ma20 = float(cl[-20:].mean())
         in_stage2 = today > ma200
+        below_ma20 = today < ma20      # V4.4 減速器：大盤短線轉弱 → 暫停新倉
         ext_pct = (today / ma200 - 1) * 100
-        print(f"  [0050] 今價 ${today:.1f} / MA200 ${ma200:.1f} "
-              f"→ {'🟢 Stage 2（可進場）' if in_stage2 else '🔴 Stage 4（禁止進場）'}"
+        print(f"  [0050] 今價 ${today:.1f} / MA200 ${ma200:.1f} / MA20 ${ma20:.1f} "
+              f"→ {'🟢 Stage 2' if in_stage2 else '🔴 Stage 4（禁止進場）'}"
+              f"{'｜⏸️ 破20MA 暫停新倉(V4.4)' if in_stage2 and below_ma20 else ''}"
               f" 偏離 {ext_pct:+.1f}%", file=sys.stderr)
-        return in_stage2, {"today": today, "ma200": ma200, "ext_pct": ext_pct,
-                           "in_stage2": in_stage2}
+        return in_stage2, {"today": today, "ma200": ma200, "ma20": ma20,
+                           "ext_pct": ext_pct, "in_stage2": in_stage2,
+                           "below_ma20": below_ma20}
     except Exception as e:
         print(f"  [0050] regime fail: {e}", file=sys.stderr)
         return True, None  # 抓不到資料時預設可進場
@@ -531,8 +535,14 @@ def main():
             break
 
     # 🚨 V4 大盤體制濾網：0050 < MA200（Stage 4 熊市）禁止進場
+    v44_paused = bool(in_stage2 and regime_info and regime_info.get("below_ma20"))
     if not in_stage2:
         print("  ⛔ V4: 0050 跌破 MA200 → 禁止進場（熊市段）", file=sys.stderr)
+        tomorrow_top5 = []
+    elif v44_paused:
+        # V4.4（2026-09-04 上線）：Stage 2 但 0050 < 自身 20MA → 暫停新倉（持倉出場照舊）
+        # 5y 回測：+247%/CAGR 27.7%/期望+10.5%/PF 3.51/MDD -19.8% vs V4.3 +186%/-28.3%
+        print("  ⏸️ V4.4: 0050 跌破自身 20MA → 大盤短弱，今日不開新倉", file=sys.stderr)
         tomorrow_top5 = []
     elif strongest_industry:
         # V4.1 過濾條件：黑名單 + 動能門檻
@@ -640,6 +650,7 @@ def main():
         "top_industry": ranked[0][0] if ranked else None,
         "market_regime": regime_info,  # 🆕 V4: 0050 體制資料
         "v4_blocked": (not in_stage2),  # 🆕 V4: 是否禁止進場
+        "v44_paused": v44_paused,       # 🆕 V4.4: Stage2 但 0050<20MA → 暫停新倉
     }
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)

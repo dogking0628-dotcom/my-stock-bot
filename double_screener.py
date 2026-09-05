@@ -27,10 +27,25 @@ SLEEP = 0.35
 quota_dead = False
 
 
+def _token():
+    """FinMind token：環境變數 FINMIND_TOKEN → finmind_token.txt（不進 git）→ 匿名"""
+    t = os.environ.get("FINMIND_TOKEN")
+    if t: return t.strip()
+    try:
+        return io.open(os.path.join(ROOT, "finmind_token.txt"), encoding="utf-8").read().strip()
+    except Exception:
+        return ""
+
+
+TOKEN = _token()
+
+
 def fm(dataset, sid, start):
     """FinMind 抓取；402/429 連續失敗視為額度用盡"""
     global quota_dead
     u = f"{API}?dataset={dataset}&data_id={sid}&start_date={start}"
+    if TOKEN:
+        u += f"&token={TOKEN}"
     for attempt in range(2):
         try:
             j = json.loads(urllib.request.urlopen(u, timeout=25).read())

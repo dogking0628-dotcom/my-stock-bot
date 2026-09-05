@@ -75,6 +75,22 @@ def etf_changes_block(inst, max_lines=4):
     return lines[:max_lines]
 
 
+def tangle_block(report_extra):
+    """🌀 糾結突破雷達（T2 測試軌道）— V4.3 空手日也要顯示（互補訊號源）"""
+    tg = (report_extra or {}).get("tangle_breakout") or []
+    if not tg:
+        return []
+    L = ["🌀 糾結突破雷達(T2測試軌道,非掛單):"]
+    for r in tg[:5]:
+        t = r.get("tangle") or {}
+        L.append(f"  {r['ticker']} {r['name']} 收{r['today']:.0f}"
+                 f" +{r['change_pct']:.1f}% 量{r['vol_ratio']:.1f}x"
+                 f" 距高{t.get('dist_high_pct', 0):+.1f}%")
+    L.append("  (糾結首根放量;回測勝率34%靠右尾;同樣-7%停損)")
+    L.append("")
+    return L
+
+
 def build_message(picks, strongest, regime, blocked, date, inst=None, data_note=None, report_extra=None):
     inst = inst or {}
     lines = [f"🎯 V4.3 開盤掛單 {date[5:]}"]
@@ -100,6 +116,10 @@ def build_message(picks, strongest, regime, blocked, date, inst=None, data_note=
 
     if not picks:
         lines.append("📭 今日無 V4.3 訊號（動能<80 或黑名單）→ 空手")
+        tb = tangle_block(report_extra)
+        if tb:
+            lines.append("")
+            lines.extend(tb)
         return "\n".join(lines)
 
     n = min(len(picks), MAX_PUSH)
@@ -136,16 +156,7 @@ def build_message(picks, strongest, regime, blocked, date, inst=None, data_note=
             lines.append(f"   🏦 {itag}")
         lines.append("")
 
-    tg = (report_extra or {}).get("tangle_breakout") or []
-    if tg:
-        lines.append("🌀 糾結突破雷達(T2測試軌道,非掛單):")
-        for r in tg[:5]:
-            t = r.get("tangle") or {}
-            lines.append(f"  {r['ticker']} {r['name']} 收{r['today']:.0f}"
-                         f" +{r['change_pct']:.1f}% 量{r['vol_ratio']:.1f}x"
-                         f" 距高{t.get('dist_high_pct', 0):+.1f}%")
-        lines.append("  (糾結<3%首根放量突破;2y回測+81%/勝率34%/MDD-22%)")
-        lines.append("")
+    lines.extend(tangle_block(report_extra))
 
     chg_lines = etf_changes_block(inst)
     if chg_lines:

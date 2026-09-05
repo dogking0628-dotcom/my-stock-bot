@@ -21,7 +21,8 @@
 | 📡 V2 | 8 條件嚴選（量比≥1.5+RSI55-75+前二強族群…），常空手，金融股常客 | OOS PF 1.83；頻率~每週1檔 |
 | 🎯 **V4.4**（9/4 上線）| 創2y月線ATH+動能≥80+科技7族群+市值≥100億+0050>MA200+7日黑名單＋**0050<自身20MA暫停新倉**；出場=收盤破20MA或進場-7%先到 | 5y +247%/CAGR27.7%/PF3.51/MDD-19.8%（vs V4.3 +186%/-28.3%；vs 0050 全持 +253%/-33.8%）|
 | 🌀 T2 糾結雷達 | 昨MA5/10/20帶寬<3%+首根漲≥3%量≥2x+距2y高≤15%——資訊層測試軌道非掛單 | 2y +81%/勝率34%；與V4.4僅2/178筆重疊（互補）|
-| 🔍 翻倍池 | double_screener.py 量化60分（月營收動能+Quality+估值）×ChatGPT質化40分 | 正式池見 `double_pool_final.md`：S級=智邦/勤誠/緯穎/金像電/貿聯/台積電 |
+| 🔍 翻倍池 v1 | double_screener.py 量化60分（月營收動能+Quality+估值）×ChatGPT質化40分 | 正式池見 `double_pool_final.md`：S級=智邦/勤誠/緯穎/金像電/貿聯/台積電 |
+| 🔍 **翻倍池 v2**（9/6 建）| `double_screener_v2.py` 100 分制：Quality25+Growth20+Structural20+Revision15+Valuation10+Rerating10；Cycle Pool 自動分流（Normalized EPS/PE）、Double-PE Test、Bear/Base/Bull；質化欄位讀 `double_inputs_v2.json`（缺→proxy＋標「待質化」）；checkpoint 在 `data/checkpoints/s1~s3.json`（schema 版號改了自動失效）；規格原文 `Downloads/3Y_DoubleBagger_APP_v2-2.md` | 輸出 `double_candidates_v2.md/.csv`、`double_screener_v2_result.json`；續跑 `_screener_v2_loop.sh`；Forward EPS 無法人資料時用 tanh 衰減 proxy（標 proxy EPS），`--strict-eps` 則留空（ChatGPT 版原則）；S 級硬性要求已驗證 eps_fy1/fy3，<65 分歸 WATCH；inputs 支援 ChatGPT 版別名 normal_pe / revision_breadth。**v3 研究層（v2.1）**：直接讀 ChatGPT `tw_doublebagger_screener_v3.zip`（Downloads）的四個 CSV（`data/qualitative_research.csv` 分數需附 source_1~3 否則作廢、`data/scenario_inputs.csv` 人工 Bear/Base/Bull EPS×PE、`forward_consensus.csv`、`structural_inputs.csv`）；`--research-pack 30` 產生研究模板（尾端 ref_* 參考欄）；S 級另需有來源質化＋人工 Bear case＋Base≥60%＋R/R≥1.5；**v4 決策層（v2.2）**：`data/evidence_ledger.csv` 證據帳本（一列一論點，需 URL＋180 天內才有效；有新鮮證據即視為有來源）；S 級另需證據覆蓋率≥50% 否則降 A；輸出 `double_dashboard.md`（Top10＋模型組合＋重查佇列）、`double_refresh_queue.csv`、`double_model_portfolio.csv`（單檔≤20%/產業≤35%，候選不足留現金；**排行榜≠投資組合**）。**v5 追蹤層（v2.3）**：`double_holdings.json` 實際持股（9/4 對帳：群聯 1000@1990，防守線 1850）強制納入評分；`data/thesis_updates.csv`（thesis_status BROKEN/FAIL/EXIT 或 governance_red_flag → EXIT）、`data/revision_updates.csv`（1M/3M 同時 <-5% → REDUCE）；Signal Engine 輸出 ADD/HOLD/WATCH/REDUCE/EXIT 到 `double_action_queue.csv` 與儀表板；**ADD 必須有新鮮證據帳本**（比 ChatGPT 版嚴）。API 用量改為跨執行滾動一小時統計（`data/checkpoints/api_usage.json`，上限 590），checkpoint 原子寫入。**v6 Horizon Guard（v2.4）**：`eps_2026~2029` 共識映射 T+1~T+3，2026 執行只有 2029E 才算 horizon_complete，只有 2028E → `verified-T+2`、判定加註「T+2代理」、不得進 S、入重查佇列。`data/consensus_pool.csv` = ChatGPT 2026-09-06 第一版真實候選池（10 檔；法人共識為 ChatGPT 檢索、未驗證；只有台積電有 2029E）。儀表板動作表加「GPT建議」欄供對照。ChatGPT 自家腳本已知問題：缺 forward_consensus.csv 會崩潰、華邦電/南亞科因 PE>10 不會進 CYCLE |
 | 已否決 | 拉回20MA買（+1% vs +73%）、純偏熱>25%停倉、外資金額加分 | 記錄在 STRATEGY.md 決策紀錄 |
 
 ## 3. 每日管線（daily.yml，cron UTC 22:33 週日~四 ≈ 越南 06:00 發）
@@ -59,7 +60,8 @@ institutional_tracker（T86投信+3主動ETF）→ smart_money_radar（外資/�
 - 回測框架：backtest_strategy.py(bs) + backtest_v4_1.py(v41) 為基底，參考 backtest_overheat_decel.py 樣板
 
 ## 8. 未完成待辦
-- [ ] double_screener v2：FCF_Margin、EPS_CAGR_3Y、Forward_PE proxy、Double_PE、成長持續性欄位（structural_vs_cyclical）、週期股 Normalized EPS 自動標記、S/A/B 自動分級＋排程（每月11日全篩）
+- [x] double_screener v2 主體（9/6）：FCF_Margin、ROIC、EPS_CAGR_3Y、Forward_PE、Double_PE、Structural 20 分、Cycle Pool/Normalized EPS、S/A/B 分級
+- [ ] v2 後續：把 `double_inputs_v2.json` 種子值（依 pool_final 暫定）逐檔用 ChatGPT/法人資料覆核；填 eps_fy1~fy3；排程每月 11 日全篩；marketcap_cache.json 仍是 5/7 舊值需刷新（群聯 8299 不在快取內）
 - [ ] 憲法 v1.1 翻倍池條款（等用戶說「同意」）
 - [ ] 帳務尾巴：環球晶買價、群聯舊倉2175/大立光原倉766出場明細
 - [ ] 9/30 復盤（凍結已解除但復盤保留）

@@ -1,0 +1,12 @@
+{
+  "_meta": {
+    "purpose": "double_screener_v2 v5 追蹤層的實際持股；持股一律強制納入評分與動作訊號（ADD/HOLD/WATCH/REDUCE/EXIT）。",
+    "source": "trade-journal/FREEZE_2026-09.md 部位基準（用戶 2026-09-04 對帳）；零股尾巴（~10.5 萬）不列。",
+    "fields": "ticker / name / shares / avg_cost / since / stop_line（缺則以成本 -7% 計）/ note",
+    "rule": "買賣仍受交易憲法 v1 約束（只買訊號股、單筆≤50萬、停損不凹）；本檔只做追蹤，不做下單。"
+  },
+  "tw": [
+    {"ticker": "8299", "name": "群聯", "shares": 1000, "avg_cost": 1990, "since": "2026-09-04", "stop_line": 1850,
+     "note": "凍結 Day1 計畫外買進；防守線 1,850 收盤跌破隔日出（憲法 v1 第 5 條）"}
+  ]
+}

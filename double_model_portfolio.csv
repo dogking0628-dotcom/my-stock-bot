@@ -1,0 +1,9 @@
+﻿ticker,name,industry,tier,score100,base_upside,reward_risk,scenario_source,rank_score,weight
+6782,視陽,生技醫療,B,69,171.0,9.9,auto,91.7,10.0
+2330,台積電,半導體,A,81.0,102.0,9.9,partial(無Bear),81.6,10.0
+2345,智邦,通信網路,B,70.7,91.0,9.9,partial(無Bear),72.7,10.0
+2368,金像電,電子零組件,B,70.3,64.0,8.08,partial(無Bear),65.7,10.0
+2421,建準,電子零組件,B,67,71.0,9.9,auto,65.4,10.0
+8210,勤誠,電腦及週邊,A,79.0,49.0,3.02,partial(無Bear),64.2,10.0
+6805,富世達,電子零組件,B,71.0,14.0,0.4,partial(無Bear),46.7,10.0
+2360,致茂,其他電子,B,65.7,5.0,0.13,partial(無Bear),40.9,10.0

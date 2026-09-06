@@ -3,3 +3,6 @@ __pycache__/
 .env
 .venv/
 finmind_token.txt
+data/checkpoints/api_usage.json
+*.tmp
+double_screener_v2_run.log

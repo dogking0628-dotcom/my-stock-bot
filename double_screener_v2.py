@@ -626,14 +626,16 @@ def double_pe(m, fe, cyc, rr, inp=None):
     elif inp.get("base_eps_3y") and inp.get("base_pe_3y"):       # 只有 Base（/Bull）人工、無 Bear → partial（v3 Hard Rule 4：不得進 S）
         base = float(inp["base_eps_3y"]) * float(inp["base_pe_3y"])
         bull = float(inp["bull_eps_3y"]) * float(inp["bull_pe_3y"]) if inp.get("bull_eps_3y") and inp.get("bull_pe_3y") else bull_a
-        bear = bear_a; out["scenario_source"] = "partial(無Bear)"
+        bear = base * 0.75 * 0.75                                   # Bear 由人工 Base 推：EPS -25% × PE -25%（不混用歷史 PE）
+        out["scenario_source"] = "partial(無Bear)"
     else:
         bear, base, bull = bear_a, base_a, bull_a; out["scenario_source"] = "auto"
+    bear = min(bear, base * 0.8); bull = max(bull, base)           # 情境單調：Bear ≤ 0.8×Base ≤ Bull
     if not inp.get("horizon_complete", True): out["double_verdict"] += "(T+2代理)"
     bear_r, base_r, bull_r = (bear / px - 1) * 100, (base / px - 1) * 100, (bull / px - 1) * 100
     out.update({"bear_target": round(bear, 0), "base_target": round(base, 0), "bull_target": round(bull, 0),
                 "bear_upside": round(bear_r, 0), "base_upside": round(base_r, 0), "bull_upside": round(bull_r, 0),
-                "reward_risk": round(max(base_r, 0) / max(-bear_r, 5), 2),        # v3：downside 至少以 5% 計
+                "reward_risk": round(min(max(base_r, 0) / max(-bear_r, 5), 9.9), 2),   # v3：downside 至少以 5% 計；顯示上限 9.9
                 "doublebagger_base": base_r >= 100, "doublebagger_bull": bull_r >= 100})
     if base > px and bear < px:
         out["down_up_ratio"] = round((px - bear) / (base - px), 2)
@@ -791,7 +793,8 @@ def action_signal(x, inp, held):
     cyc = bool(x.get("cycle_peak_risk"))
     reasons = []
     if broken: sig = "EXIT"; reasons.append("Thesis 破壞/治理紅旗")
-    elif rev_bad or (base is not None and base < 20 and (pp or 0) >= 95) or score < 60:
+    elif rev_bad or (base is not None and base < 20 and (pp or 0) >= 95) or (score < 60 and held):
+        # 「分數<60 → REDUCE」只對實際持股有意義；未持有的低分股歸 WATCH（否則全榜大半都是 REDUCE）
         sig = "REDUCE"
         if rev_bad: reasons.append("EPS 1M/3M 同步下修")
         if base is not None and base < 20 and (pp or 0) >= 95: reasons.append("Base<20% 且 PE 位階≥95%")

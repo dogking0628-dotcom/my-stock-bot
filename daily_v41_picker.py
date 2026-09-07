@@ -199,11 +199,12 @@ def build_message(picks, strongest, regime, blocked, date, inst=None, data_note=
     except Exception:
         pass
     lines.append("━━━━━━━━━━━━━━━━━━━━")
-    lines.append("💡 操作:")
-    lines.append("  9:00前掛限價低點")
-    lines.append("  9:05沒成交→改限價高點")
-    lines.append("  9:10仍無→放棄")
-    lines.append("  出場: 收盤跌破20MA 或 進場-7% → 隔日開盤賣")
+    lines.append("💡 操作(台北時間;越南-1hr):")
+    lines.append("  08:50-09:00 掛限價低點(越南07:50)")
+    lines.append("  09:05沒成交→改限價高點")
+    lines.append("  09:10仍無→撤單放棄,不追")
+    lines.append("  千金股→09:10起盤中零股同法")
+    lines.append("  出場: 收盤破20MA或進場-7% → 隔日開盤賣")
     return "\n".join(lines)
 
 

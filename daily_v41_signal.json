@@ -1,42 +1,7 @@
 {
-  "timestamp": "2026-09-04",
-  "strategy": "V4.3 (V4.2 + 硬停損-7%樓地板; 2y回測 +107.6%/CAGR 28.4%/PF 3.94/MDD -14%)",
+  "timestamp": "2026-09-07",
+  "strategy": "V4.4 (V4.3 + 0050<20MA暫停新倉; 5y回測 +247%/CAGR 27.7%/PF 3.51/MDD -19.8%)",
   "strongest_industry": "電腦及週邊",
   "v4_blocked": false,
-  "picks": [
-    {
-      "today": 222.0,
-      "monthly_max_2y": 184.02859497070312,
-      "ratio": 1.2063342657989744,
-      "from_high_pct": 20.63342657989744,
-      "bullish": true,
-      "bullish_fast": true,
-      "change_pct": 9.90099009900991,
-      "vol_ratio": 0.9741015367184398,
-      "rsi": 61.98126149720949,
-      "ma5": 195.4166473388672,
-      "ma20": 189.1946708679199,
-      "ma60": 168.2039042154948,
-      "ma200": 109.22713897705079,
-      "gap_up": true,
-      "close_near_high": true,
-      "long_red": true,
-      "ticker": "2464",
-      "name": "盟立",
-      "industry": "其他電子",
-      "industry_strong": false,
-      "market_cap_billions": 229.04987648,
-      "mcap_pass": true,
-      "sitc_net_shares": 0,
-      "momentum_score": 95,
-      "momentum_notes": [
-        "漲停鎖死",
-        "ATH",
-        "QQQ+0.2%",
-        "SMH+1.0%"
-      ],
-      "tier": "⭐⭐⭐",
-      "next_day_prob": "≥85%"
-    }
-  ]
+  "picks": []
 }

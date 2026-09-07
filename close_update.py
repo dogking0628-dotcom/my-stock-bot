@@ -229,6 +229,24 @@ def main():
     if not (dd and rt and dd == rt): warns.append("⚠️ 掃描資料可能落後，明早以正式日報「📅 依…收盤資料」為準")
     if warns:
         P("## ⚠️ 提醒"); [P(f"- {w}") for w in warns]
+
+    # 🧘 今日心法（情境觸發：停損日>過熱日>空手日>獲利日；同情境按日期輪換）
+    try:
+        import re as _re, hashlib as _hl
+        pb = io.open("playbook.md", encoding="utf-8").read()
+        secs = dict(_re.findall(r"## \[(.+?)\]\D*?\n((?:- .+\n?)+)", pb))
+        v41s = jload("daily_v41_signal.json") or {}
+        rg2 = report.get("market_regime") or {}
+        if any("🛑" in l for l in out): key = "停損日"
+        elif t.get("sky_alert") or (rg2.get("ext_pct") or 0) > 25: key = "創高過熱日"
+        elif not (v41s.get("picks") or []): key = "空手日"
+        else: key = "獲利日"
+        tips = [l[2:] for l in (secs.get(key) or "").strip().splitlines() if l.startswith("- ")]
+        if tips:
+            i = int(_hl.md5(dt.date.today().isoformat().encode()).hexdigest(), 16) % len(tips)
+            P(""); P(f"## 🧘 今日心法（{key}）"); P(f"> {tips[i]}")
+    except Exception:
+        pass
     print("\n".join(out))
 
 

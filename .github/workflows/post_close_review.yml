@@ -20,6 +20,9 @@ jobs:
           python-version: '3.12'
       - name: Install dependencies
         run: pip install -r requirements.txt
+      - name: Run Paper Track — V4.4 紙上跟單（自動化 Phase 0）
+        run: python paper_track.py || echo "paper track failed (non-fatal)"
+
       - name: Run TW scan — 0050 訊號 + 大盤脈動（天險 + 鄭大87MA）
         env:
           LINE_TOKEN:    ${{ secrets.LINE_TOKEN }}
@@ -44,7 +47,7 @@ jobs:
         run: |
           git config user.name  "github-actions"
           git config user.email "github-actions@github.com"
-          for f in weekly_review.json review_output.txt; do
+          for f in weekly_review.json review_output.txt paper_positions.json paper_ledger.json; do
             [ -f "$f" ] && git add "$f" || true
           done
           git diff --staged --quiet || git commit -m "chore: post-close review $(date -u +%Y-%m-%d)"

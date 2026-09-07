@@ -234,7 +234,7 @@ def main():
     try:
         import re as _re, hashlib as _hl
         pb = io.open("playbook.md", encoding="utf-8").read()
-        secs = dict(_re.findall(r"## \[(.+?)\]\D*?\n((?:- .+\n?)+)", pb))
+        secs = dict(_re.findall(r"## \[(.+?)\][^\n]*\n((?:- .+\n?)+)", pb))
         v41s = jload("daily_v41_signal.json") or {}
         rg2 = report.get("market_regime") or {}
         if any("🛑" in l for l in out): key = "停損日"

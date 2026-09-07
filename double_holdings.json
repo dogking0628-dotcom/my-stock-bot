@@ -1,12 +1,56 @@
 {
-  "_meta": {
-    "purpose": "double_screener_v2 v5 追蹤層的實際持股；持股一律強制納入評分與動作訊號（ADD/HOLD/WATCH/REDUCE/EXIT）。",
-    "source": "trade-journal/FREEZE_2026-09.md 部位基準（用戶 2026-09-04 對帳）；零股尾巴（~10.5 萬）不列。",
-    "fields": "ticker / name / shares / avg_cost / since / stop_line（缺則以成本 -7% 計）/ note",
-    "rule": "買賣仍受交易憲法 v1 約束（只買訊號股、單筆≤50萬、停損不凹）；本檔只做追蹤，不做下單。"
+ "_meta": {
+  "purpose": "double_screener_v2 v5 追蹤層的實際持股；持股一律強制納入評分與動作訊號（ADD/HOLD/WATCH/REDUCE/EXIT）。",
+  "source": "trade-journal/FREEZE_2026-09.md 部位基準（用戶 2026-09-04 對帳）；零股尾巴（~10.5 萬）不列。",
+  "fields": "ticker / name / shares / avg_cost / since / stop_line（缺則以成本 -7% 計）/ note",
+  "rule": "翻倍池持倉=thesis-based 管理（EPS連2季下修/市占下滑/治理紅旗→EXIT；不適用-7%動能停損）＋災難線=成本-15%暫定；群聯為動能舊倉照防守線1850",
+  "updated": "2026-09-07 解凍首批建倉；用戶宣告主力轉向3年翻倍池長線持有（噴高隔日修正的短線模式棄用）"
+ },
+ "tw": [
+  {
+   "ticker": "2330",
+   "name": "台積電",
+   "shares": 1000,
+   "avg_cost": 2457.86,
+   "since": "2026-09-07",
+   "stop_line": 2089,
+   "note": "S級核心 現股；災難線=成本-15%暫定；另有8股舊零股"
   },
-  "tw": [
-    {"ticker": "8299", "name": "群聯", "shares": 1000, "avg_cost": 1990, "since": "2026-09-04", "stop_line": 1850,
-     "note": "凍結 Day1 計畫外買進；防守線 1,850 收盤跌破隔日出（憲法 v1 第 5 條）"}
-  ]
+  {
+   "ticker": "2345",
+   "name": "智邦",
+   "shares": 500,
+   "avg_cost": 2108,
+   "since": "2026-09-07",
+   "stop_line": 1792,
+   "note": "S級質化No.1 買在距2y高-23%；災難線-15%暫定"
+  },
+  {
+   "ticker": "6669",
+   "name": "緯穎",
+   "shares": 208,
+   "avg_cost": 2448.48,
+   "since": "2026-09-07",
+   "stop_line": 2081,
+   "note": "S級；進場位距60MA+35%偏高，回撤容忍需大；災難線-15%暫定"
+  },
+  {
+   "ticker": "2368",
+   "name": "金像電",
+   "shares": 300,
+   "avg_cost": 1121.59,
+   "since": "2026-09-07",
+   "stop_line": 953,
+   "note": "S級 買在距2y高-30%；災難線-15%暫定"
+  },
+  {
+   "ticker": "8299",
+   "name": "群聯",
+   "shares": 1000,
+   "avg_cost": 1990,
+   "since": "2026-09-04",
+   "stop_line": 1850,
+   "note": "動能舊倉：防守線1850收盤跌破隔日出（憲法v1第5條）；若用戶改列翻倍週期池需先過Normalized EPS檢核"
+  }
+ ]
 }

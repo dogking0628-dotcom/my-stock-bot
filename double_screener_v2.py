@@ -371,6 +371,9 @@ def apply_horizon(inp):
     """v6：把 eps_<YYYY> 共識映射成 FY1~FY3（T+1~T+3）。只有 T+3 存在才算 horizon_complete；只有 T+2 → 代理、不得標三年翻倍。"""
     e = {y: inp.get(f"eps_{y}") for y in range(T3_YEAR - 3, T3_YEAR + 1)}
     t3, t2, t1 = e.get(T3_YEAR), e.get(T3_YEAR - 1), e.get(T3_YEAR - 2)
+    note = str(inp.get("scenario_notes") or "")
+    if ("T+2" in note or "2028E" in note) and not (t3 and t3 > 0):   # 情境檔自述為 T+2 代理 → 三年期不完整
+        inp["horizon_complete"] = False
     if inp.get("eps_fy1") and inp.get("eps_fy3"):          # 已直接給 FY 欄位者不動
         inp.setdefault("horizon_complete", True); return inp
     if t3 and t3 > 0:
@@ -421,7 +424,7 @@ def load_inputs():
     if os.path.exists(INPUTS):
         raw = json.load(io.open(INPUTS, encoding="utf-8"))
         d = {k: dict(v) for k, v in raw.items() if not k.startswith("_") and isinstance(v, dict)}
-    for fn in RESEARCH_CSVS:
+    for fn in [f for base in RESEARCH_CSVS for f in (base, base.replace(".csv", ".pending.csv"))]:   # .pending = 檔案被鎖時的暫存
         p = os.path.join("data", fn)
         if not os.path.exists(p): continue
         n = 0
@@ -799,7 +802,8 @@ def action_signal(x, inp, held):
         if rev_bad: reasons.append("EPS 1M/3M 同步下修")
         if base is not None and base < 20 and (pp or 0) >= 95: reasons.append("Base<20% 且 PE 位階≥95%")
         if score < 60: reasons.append("分數<60")
-    elif (score >= 75 and (base or 0) >= 50 and (rr or 0) >= 1.5 and rev_good and (pp is None or pp <= 80) and ev_fresh and not cyc):
+    elif (score >= 75 and (base or 0) >= 50 and (rr or 0) >= 1.5 and rev_good and (pp is None or pp <= 80) and ev_fresh and not cyc
+          and x.get("eps_confidence") != "proxy"):                 # ADD 不得建立在 proxy EPS 上（Base 報酬也是 proxy 推的）
         sig = "ADD"; reasons.append("分數/報酬/R/R/Revision/估值/證據全過")
     elif score >= 65 and (base or 0) >= 20 and (ev_fresh or not has_ledger):
         sig = "HOLD"
@@ -813,6 +817,8 @@ def action_signal(x, inp, held):
         if cyc: reasons.append("週期高峰")
     if score >= 75 and (base or 0) >= 50 and (rr or 0) >= 1.5 and not ev_fresh and sig not in ("EXIT", "REDUCE") and not cyc:
         reasons.append("量化達 ADD 門檻但缺新鮮證據→先補帳本")
+    elif sig == "HOLD" and ev_fresh and x.get("eps_confidence") == "proxy" and score >= 75 and (base or 0) >= 50:
+        reasons.append("量化達 ADD 門檻但 EPS 為 proxy→需法人/研究 FY EPS")
     note = ""
     if held:
         cost = held.get("avg_cost"); px = x.get("px")

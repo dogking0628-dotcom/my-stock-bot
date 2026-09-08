@@ -1,4 +1,4 @@
-ticker,claim_type,claim,source_url,source_name,published_at,research_date,confidence,direction,notes
+﻿ticker,claim_type,claim,source_url,source_name,published_at,research_date,confidence,direction,notes
 2330,next_platform,N2與先進製程量產/爬坡持續，AI/HPC為主要結構性需求來源。,https://pr.tsmc.com/chinese/news/3326,台積公司,2026-07-16,2026-09-07,0.95,positive,
 2330,new_product_mix,2026Q2 3nm/5nm營收占比高，產品組合持續向先進節點集中。,https://pr.tsmc.com/chinese/news/3326,台積公司,2026-07-16,2026-09-07,0.95,positive,
 2330,governance,官方IR持續完整揭露季度財務與技術節點進度。,https://investor.tsmc.com/english/quarterly-results/2026/q2,TSMC Investor Relations,2026-07-16,2026-09-07,0.9,neutral,
@@ -76,3 +76,88 @@ ticker,claim_type,claim,source_url,source_name,published_at,research_date,confid
 2308,next_platform,台達電展出CPO六軸光纖對位平台（開發1~2年，關鍵為對位演算法，仍在向客戶推介階段）；整線數位雙生、NVIDIA Cosmos瑕疵影像生成使AOI檢出率+17%；高精密電漿電源。,https://youtu.be/t3W5RYvu8TE,先探i投資《投資最錢線》SEMICON Taiwan 2026 展場直擊,2026-09-07,2026-09-08,0.6,positive,CPO尚未量產，屬期權性質；大立光/高明鐵亦為對位供應商
 3711,next_platform,日月光VIPack先進封裝平台整合RDL/扇出型/2.5D/3D堆疊，可將運算晶片＋HBM＋小晶片整合於同一封裝，鎖定AI/HPC異質整合，提供封裝到測試一站式方案。,https://youtu.be/t3W5RYvu8TE,先探i投資《投資最錢線》SEMICON Taiwan 2026 展場直擊,2026-09-07,2026-09-08,0.6,positive,展場說明
 4958,new_product_mix,臻鼎-KY展出800G/1.6T光模塊（XPO/NPO架構）與AI伺服器高階板：GPU板34層HDI、CPU板16+8不對稱壓合、Switch板30層PTH；SLP mSAP製程與埋孔技術。,https://youtu.be/t3W5RYvu8TE,先探i投資《投資最錢線》SEMICON Taiwan 2026 展場直擊,2026-09-07,2026-09-08,0.6,positive,不在v2候選池，先留證據
+1736,next_platform,Matrix 攜手醫療量測商 seca 推出 PACE 互聯健身系統，結合醫療級身體組成數據與 AI 教練；Vision 推商用場館數位方案，集團由硬體轉向數位健康解決方案。,https://www.ctee.com.tw/news/20260525701884-430503,工商時報,2026-05-25,2026-09-07,0.75,positive,
+1736,next_platform,法說會揭露高階商用 ONYX 系列已推出、BowFlex 可調啞鈴恢復出貨、自營通路開始販售 Peloton/Tonal；但未揭露 AI/醫療產品放量數據。,https://blog.fugle.tw/post/earnings-call-1736-2026-05-14,富果 Fugle 法說備忘錄,2026-05-14,2026-09-07,0.7,positive,
+1736,new_capacity,"越南二廠 JIV2 斥資 7,000 萬美元、8 月 6 日當週啟用，與一廠合計產能上看 6 億美元，關鍵零組件 100% 自製，股價一度觸及漲停。",https://m.cnyes.com/news/id/6561939,鉅亨網,2026-08-06,2026-09-07,0.85,positive,
+1736,new_capacity,股東會：越南二廠 19 公頃、合計 29 公頃為業界最大生產基地，已準備好千億營收產能；關稅差（越南 14.6% vs 中國 22.1%）形成商用市場優勢。,https://udn.com/news/story/7252/9586627,聯合新聞網,2026-06-24,2026-09-07,0.8,positive,
+1736,new_product_mix,Q2 毛利率 62.8%（去年同期 50.8%），上半年 57.4%；原中國產銷美產品移至越南生產降本，公司預期 2026 毛利率逐季提升約 1 個百分點。,https://money.udn.com/money/story/5710/9677949,經濟日報,2026-08-07,2026-09-07,0.8,positive,
+1736,order_visibility,股東會稱訂單能見度已達年底、下半年逐季成長；BowFlex 新品 6 月起貢獻、下半年放量；7 月營收 45.8 億年增 35.8%，法人預估 Q3 營收年增逾 20%。,https://udn.com/news/story/7252/9586627,聯合新聞網,2026-06-24,2026-09-07,0.7,positive,
+1736,tam,"全球健身會員數創新高（美國 8,100 萬人、年增 5.2%；歐洲 7,550 萬人），公司目標千億營收並擴大商用中階產品線與 AI 數位應用。",https://udn.com/news/story/7252/9498546,聯合新聞網,2026-05-12,2026-09-07,0.7,positive,
+1736,customer,Planet Fitness 約占營收 10%（2026 年展店 180-190 家）、Basic-Fit 約 5%、Smart Fit 3-4%；客戶集中度低。,https://blog.fugle.tw/post/earnings-call-1736-2026-05-14,富果 Fugle 法說備忘錄,2026-05-14,2026-09-07,0.75,neutral,
+1736,rerating,"喬山 2026 目標商用市占 52% 躍居全球龍頭、2028 挑戰 70%，新增 LEEJAM、Virgin Active、World Class 等連鎖客戶，並延伸按摩椅、助聽器新事業；申請 4,430 萬美元關稅退稅。",https://www.ctee.com.tw/news/20260624702111-430503,工商時報,2026-06-24,2026-09-07,0.7,positive,
+1736,eps_revision,宏遠證券給予看多評等、目標價 170 元，估 2026 營收 600 億、EPS 約 10 元；Q1 EPS 僅 0.08 元顯示獲利波動大，無公開共識修正數據。,https://readmo.cmoney.tw/article/06bfe6be-17d9-4c9f-bf06-566ac6a28d50,CMoney readmo（轉述宏遠證券）,2026-04-30,2026-09-07,0.5,positive,
+2421,next_platform,2026Q1 AI 伺服器占營收 22.6%（ASIC 占其中 63%），水冷板 Q1 完成首批出貨、CDU 具量產能力並通過驗證，預期 Q3 新液冷專案量產貢獻,https://vocus.cc/article/6a0f01d6fd8978000132f598,vocus 法說會整理 2026/05/21,2026-05-21,2026-09-07,0.8,positive,
+2421,next_platform,2026Q3 新一代 ASIC 水冷板與首創 800V 高壓直流大型 EC 風扇出貨，下半年營運迎跳躍性成長,https://blog.fugle.tw/post/sunonwealth-analysi,富果直送 個股分析,2026-06-17,2026-09-07,0.75,positive,
+2421,new_product_mix,水冷板 Q2 完善五股廠與惠州廠建置，Q3 完成整合向品牌廠小批量出貨，Q4 逐步放量；2026 水冷營收貢獻仍為低個位數，明年比重提升,https://vocus.cc/article/6a0015f8fd897800014508c8,vocus 法說會整理 2026/05/08,2026-05-08,2026-09-07,0.75,positive,
+2421,new_product_mix,率業界之先量產 800mm 大型 EC 風扇，切入資料中心基礎建設節能需求；EC 風扇 2027 年後帶來顯著營收貢獻,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a778c55a-9e33-4458-8649-738da89dc9bd,MoneyDJ,,2026-09-07,0.7,positive,
+2421,new_capacity,2026 資本支出逾 15 億元，約 12 億為菲律賓新廠建廠款，其餘投入惠州廠液冷設備與大陸廠設備更新,https://vocus.cc/article/6a0015f8fd897800014508c8,vocus 法說會整理 2026/05/08,2026-05-08,2026-09-07,0.75,positive,
+2421,order_visibility,Q1 AI 伺服器因記憶體/PCB/晶片供應不順遞延約 11 億元訂單至下半年；隨供應鏈恢復與 Q3 新 ASIC 平台專案量產，下半年可望迎 AI 伺服器訂單,https://finance.biggo.com.tw/news/TW_2421.TW_2026-05-21,BigGo 財經 法說會摘要,2026-05-21,2026-09-07,0.7,neutral,
+2421,order_visibility,"Q2 營收 54.18 億元(QoQ +7.95%, YoY +16.2%)，H1 營收 104.38 億元(+18.27%)，H1 EPS 4.78 元(+54% YoY)",https://readmo.cmoney.tw/article/43076558-7b08-47f6-9de3-9f677125f9f6,CMoney readmo,,2026-09-07,0.65,positive,
+2421,tam,摩根士丹利估 GB300 機櫃散熱價值量較 GB200 提升約 20%，後續 Vera Rubin 機櫃再增約 17%,https://vocus.cc/article/68e4dfc1fd89780001420fcb,vocus 法人報告整理 2025/09/30,2025-09-30,2026-09-07,0.6,positive,stale
+2421,rerating,多家法人上修 2026 EPS 至 10 元以上、目標價 175～200 元；大摩維持中立但連兩次調高目標價至 175 元，國內金控投顧上修至 200 元,https://wantrich.chinatimes.com/news/20251107900375-420101,旺得富理財網,2025-11-07,2026-09-07,0.7,positive,stale
+2421,rerating,散熱四強（奇鋐、雙鴻、建準、高力）中 3 家本益比仍在「1 字頭」，建準估值相對便宜,https://wantrich.chinatimes.com/news/20260106900306-420101,旺得富理財網,2026-01-06,2026-09-07,0.6,positive,
+2421,eps_revision,法人預估建準 2026 全年 EPS 約落在 9.33～11.79 元；提醒若股價已反映成長，後續成長趨緩恐引發估值修正,https://readmo.cmoney.tw/article/5c9c29c2-2900-4d70-991a-74124ff1e9e9,CMoney readmo,,2026-09-07,0.6,positive,
+2421,eps_revision,FactSet 6 位分析師目標價中位數由 151 元上修至 159 元（最高 168、最低 132），4 位樂觀 2 位中立 0 位保守；2025/11/06 收盤 153.5 元,https://news.cnyes.com/news/id/6223400,鉅亨網 FactSet 調查,2025-11-06,2026-09-07,0.7,positive,stale
+2421,risk,上半年 AI 伺服器受記憶體、PCB 及晶片等零組件供應不順影響，部分專案延後出貨；靠 CPU 推理需求與通用伺服器回升支撐成長,https://blog.fugle.tw/post/sunonwealth-analysi,富果直送 個股分析,2026-06-17,2026-09-07,0.7,negative,
+2421,risk,水冷 2026 營收貢獻僅低個位數百分比，液冷轉型仍在早期驗證階段,https://vocus.cc/article/6a2ab3c5fd897800013f7bf7,vocus 建準氣冷走進水冷分析,,2026-09-07,0.65,negative,
+3013,next_platform,完成 NVIDIA MGX 系列 2U/4U 機箱系統驗證，預計 2026Q1 量產；2026 成長動能為 Sidecar 水冷機櫃、Power 機櫃、Switch 機櫃與 MGX 新機箱,https://finance.technews.tw/2025/11/13/uneec/,TechNews 科技新報,2025-11-13,2026-09-07,0.85,positive,
+3013,next_platform,2025/11/13 法說：AI 伺服器占營收 47%、非 AI 41%、液冷 7%；NV 產品驗證中，2026Q1 有 MGX 或 GB300 機箱；Meta OEM 機箱持續出貨；ASIC 2026 有機會量產；已出貨超節點,https://www.threads.com/@efajosh8895/post/DT8T9d9EkKZ/,Threads 法說筆記（非官方）,2025-11-13,2026-09-07,0.6,positive,
+3013,next_platform,2026Q2 EPS 1.41 元（季增 3%、年增 161%），H1 累計 2.78 元；7 月營收 8.25 億元年增 32%，證實 AI 機櫃/機箱已進入量產貢獻,https://statementdog.com/analysis/3013/eps,財報狗,,2026-09-07,0.8,positive,
+3013,new_capacity,泰國廠（11.1 萬平方公尺）2026Q1 正式量產；兩岸加泰國共四廠，中壢廠新增 500 平方公尺廠房、上半年每月組裝逾 400 台 RPU,https://finance.technews.tw/2025/11/13/uneec/,TechNews 科技新報,2025-11-13,2026-09-07,0.85,positive,
+3013,new_capacity,"中壢廠擴產案投資約 9.7 億元建置 AI 智慧化產線，中壢二廠因應訂單擴建，2026 新產能預期倍增；董事會 4 月底通過增資泰國廠 2,000 萬美元擴充設備，泰國廠已於 2026Q1 量產出貨",https://www.moneyweekly.com.tw/ArticleData/Info/Article/230595,理財周刊（搜尋摘要，全文抓取失敗）,,2026-09-07,0.6,positive,
+3013,new_capacity,晟銘電擴產迎水冷機櫃需求，續拚製程自動化,https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=fe32d810-4265-4d17-9773-412d1e3fa8e8,MoneyDJ,,2026-09-07,0.6,positive,
+3013,new_product_mix,2025 前三季營收 74.99 億元（+11%），毛利率提升至 17.5%，稅後淨利 5.01 億元（+16%）；新產品含水冷岐管、不漏水系統、PSU、BBU，將與 Power rack 搭配,https://finance.technews.tw/2025/11/13/uneec/,TechNews 科技新報,2025-11-13,2026-09-07,0.8,positive,
+3013,order_visibility,晟銘電訂單看到 2026 年,https://money.udn.com/money/story/5710/9138168,經濟日報,,2026-09-07,0.6,positive,stale
+3013,order_visibility,Meta 大幅增加 GB300 冷卻機櫃需求，訂單上看 60 億元；GB300 機櫃功耗 140~150kW，單櫃需搭配 2~3 台 Sidecar,https://aigc-note.cmoney.tw/answer/%E6%99%9F%E9%8A%98%E9%9B%BB-20-3-12560346,CMoney AI 筆記（二手彙整）,,2026-09-07,0.4,positive,
+3013,customer,晟銘電為 Meta SideCar 主要供應商、市佔超過 5 成；Meta MTIA ASIC 機櫃採水冷、2026 放量；H100/H200 機殼出貨維持高檔,https://tw.stock.yahoo.com/news/%E6%AC%8A%E8%AD%89%E5%B8%82%E5%A0%B4%E7%84%A6%E9%BB%9E-%E6%99%9F%E9%8A%98%E9%9B%BB-%E7%87%9F%E6%94%B6%E9%A6%99%E5%88%B02026-201000853.html,Yahoo 股市 / 工商時報 權證市場焦點,,2026-09-07,0.7,neutral,stale
+3013,tam,2026 液冷滲透率直衝 76%，單櫃產值跳升 4 倍，晟銘電列為散熱獲利主升段受惠股,https://news.cnyes.com/news/id/6423986,鉅亨網,,2026-09-07,0.6,positive,
+3013,tam,AI 熱打破產業疆界，機殼廠晟銘電跨足機櫃與散熱,https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000757892_EQC76CLTLQXBGK1EIKN7Y,DIGITIMES,,2026-09-07,0.6,positive,
+3013,eps_revision,2025/11/14 兩家券商評等皆看多，目標價 175~200 元；法人預估 2026 營收 193.14 億元、EPS 7.47 元（2025 預估 EPS 3.64~3.73 元）,https://www.cmoney.tw/notes/note-detail.aspx?nid=1038244,CMoney 券商評等彙整,2025-11-14,2026-09-07,0.7,positive,stale
+3013,eps_revision,券商目標價 200 元對應 2026 EPS 7.47 元，隱含本益比約 25 倍；鉅亨網當頁僅顯示近四季 EPS 5.22、本益比 16.53、每股淨值 16.63，未取得 FactSet 年度預估,https://www.cnyes.com/twstock/3013/research/finirating,鉅亨網,,2026-09-07,0.5,neutral,
+3013,governance,2026/6/12 股東常會，董事任期屆滿全面改選；董事會決議現金增資泰國子公司；本次搜尋未見裁罰、內部人異常申讓或減資等負面事項（未查證公開資訊觀測站）,https://tw.stock.yahoo.com/quote/3013.TW/calendar,Yahoo 股市 行事曆,,2026-09-07,0.5,neutral,
+3013,rerating,市場已擺脫傳統低毛利機殼標籤，重新定價為 AI 基礎建設供應鏈；水冷機櫃與 Sidecar 自 2025 年底量產出貨，外資力挺股價創波段新高,https://www.moneyweekly.com.tw/ArticleData/Info/Article/230595,理財周刊（搜尋摘要）,,2026-09-07,0.55,positive,
+3013,risk,法人 2026 EPS 預估 7.47 元為 2025/11 數字，2026H1 實際僅 2.78 元（Q1 1.37、Q2 1.41），下半年需 4.69 元方能達標，預估存在下修風險；毛利率僅約 17.5%，仍屬代工結構,https://statementdog.com/analysis/3013/eps,財報狗（研究員推算）,,2026-09-07,0.7,negative,
+6139,next_platform,"亞翔拿下美系記憶體大廠新加坡新廠廠務統包工程，總金額新幣 200 億元（約新台幣近 5,000 億元），交期至 2029 年，董事長稱未來三年營運繁忙、因人力限制暫不跟進美國市場。",https://tw.stock.yahoo.com/news/%E4%BA%9E%E7%BF%94%E5%86%8D%E5%A5%AA%E6%96%B0%E5%8A%A0%E5%9D%A1%E5%8D%83%E5%84%84%E5%A4%A7%E5%96%AE-%E4%BB%8A%E5%B9%B4eps%E4%BC%B0%E8%A1%9D60-70%E5%85%83-024100157.html,MoneyDJ via Yahoo股市,2026-06-26,2026-09-07,0.85,positive,
+6139,new_capacity,"2026 上半年新簽約 3,037.37 億元、在手未施工訂單 4,400.73 億元均創歷史新高，地區分布東協 76%/台灣 22%/中國 2%；新加坡員工達 196 人，前五大客戶持續擴產，未來 3 年營運一年比一年好。",https://www.ctee.com.tw/news/20260727700491-430201,工商時報,2026-07-27,2026-09-07,0.9,positive,
+6139,new_product_mix,台灣客戶逐漸改採完整 EPC 統包模式，訂單規模明顯放大；Q1 毛利率改善來自各專案執行效益提升而非單一案件，增加的毛利將逐步反映。,https://news.nextapple.com/finance/20260724/FAA393CCC0AC1D201057DBBEC1C92CD9,壹蘋新聞網,2026-07-24,2026-09-07,0.8,positive,
+6139,new_product_mix,Q2'26 營收 256.36 億、歸屬母公司淨利 38.77 億、EPS 16.46 元；H1 EPS 25.91 元，H1 毛利率約 20.2%、營益率約 18.2%，較 2025 年明顯改善。,https://www.ftnn.com.tw/news/568485,FTNN 新聞網,2026-08-07,2026-09-07,0.85,positive,
+6139,order_visibility,新加坡大型晶圓廠工程第一階段預計 2027 年 Q1-Q2 完工，第二階段規模更大、執行期可能延至 3-4 年；台灣與新加坡工程能見度皆明確，台灣半導體客戶擴產需求更急更大。,https://news.nextapple.com/finance/20260724/FAA393CCC0AC1D201057DBBEC1C92CD9,壹蘋新聞網,2026-07-24,2026-09-07,0.8,positive,
+6139,tam,美光未來十年投資 240 億美元在新加坡擴充 NAND 產能並斥資 18 億美元收購力積電銅鑼廠，業界估亞翔從新廠累計訂單上千億元，為最大受惠者。,https://money.udn.com/money/story/5612/9292701,經濟日報,2026-01-28,2026-09-07,0.75,positive,stale
+6139,eps_revision,"群益證券預估亞翔 2026 年營收 1,381.28 億元、EPS 65.54 元，目標價 1,500 元。",https://readmo.cmoney.tw/article/c6d0ad1d-a1a8-4d39-8fb5-30f1acbc94db,CMoney 理財寶,2026-08-15,2026-09-07,0.6,positive,
+6139,eps_revision,法人機構平均預估 2026 年度稅後純益 132.02 億元、較上月上修 0.99%，預估 EPS 區間 47.92~65.54 元。,https://readmo.cmoney.tw/article/8c5d8a3a-561e-40ec-a542-07182a911827,CMoney 理財寶（轉述 Yahoo 股市法人預估）,2026-08-15,2026-09-07,0.55,positive,
+6139,customer,2025 年新簽約 97% 為半導體業務、東協占 84%；營收結構半導體 74%、公共工程約 17%；未揭露前五大客戶個別占比，公司自承工程管理人才短缺限制接單。,https://blog.fugle.tw/post/earnings-call-6139-2025-12-26,富果 Fugle 法說會備忘錄,2025-12-26,2026-09-07,0.8,neutral,stale
+6139,governance,2026/1/13-15 股價三日累計漲逾 20%，公司公告經自查及控股股東確認無重組、併購、增資、回購等未揭露重大資訊；未查到財報重編或內線裁罰。,https://www.cmoney.tw/notes/note-detail.aspx?nid=1083421,CMoney 即時新聞,2026-01-16,2026-09-07,0.6,neutral,stale
+6183,next_platform,關貿得標財政部關務署「數位海關再造委外服務採購案」，決標金額11.5億元，2025-09-01決標；為新一代海關通關平台建置案，屬已得標建置中,https://pcc.mlwmlw.org/merchants/97162640,開放政府標案（得標案件彙整）,2025-09-01,2026-09-07,0.75,positive,
+6183,order_visibility,2025年另得標「關港貿單一窗口及預報貨物資訊系統委外服務」6.92億元（2025-05-05）、「電子申報繳稅整體資訊作業第5期委外服務」3.07億元（2025-08-08）、「物聯網全時監控系統委外服務」0.98億元（2025-12-01），多年期委外合約支撐2026-2028能見度,https://pcc.mlwmlw.org/merchants/97162640,開放政府標案（得標案件彙整）,2025-12-01,2026-09-07,0.75,positive,
+6183,new_product_mix,2025年得標「服務型智慧政府2.0推動計畫–地方稅智慧線上服務」，及文化部文化禮金推動計畫（0.52億）、衛福部食藥署多項系統維運，顯示業務從報關延伸至稅務、文化、衛福等政府數位服務；2026年1月新增標案集中航運、能源、食藥領域,https://pcc.mlwmlw.org/merchants/97162640,開放政府標案（得標案件彙整）,2026-01-31,2026-09-07,0.6,positive,
+6183,eps_revision,2026 H1（1/1-6/30）合併營收13.59億元、本期淨利3.62億元、基本EPS 2.41元（2026-08-06提報Q2財報）；2026 Q1 EPS 1.07元，年增16.3%、季增21.6%；2025全年EPS 3.9元、營收27.53億元,https://tw.stock.yahoo.com/quote/6183.TW/announcement,Yahoo股市 個股公告（搜尋摘要）,2026-08-06,2026-09-07,0.6,positive,
+6183,rerating,鉅亨網顯示近四季EPS 4.50元、本益比20.54倍、市值138.75億元；上半年獲利年增雙位數但估值仍在20倍左右，重評等空間取決於數位海關再造等大案認列,https://www.cnyes.com/twstock/6183,鉅亨網 台股,2026-09-07,2026-09-07,0.6,neutral,
+6183,governance,2026-06-26董事會改選，張陸生因任期屆滿續任董事長，自2026-06-26生效；財政部持股36%，土地銀行、長榮海運、兆豐銀等持有其餘64%，屬準官股企業，經營穩定但保守,https://news.cnyes.com/news/id/6514212,鉅亨網 台股公告,2026-06-26,2026-09-07,0.8,neutral,
+6183,tam,關貿源自1990年財政部貨物通關自動化推動小組，1996年由財政部與民間合資15億元成立，為台灣最大ASP應用軟體服務商，提供通關、雲端、資安、電子發票服務；市場以台灣政府與進出口業者為主，TAM受限於國內政府資訊預算,https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000233540_NHL6B3F13EV5YI15X5NRY,DIGITIMES,2026-01-01,2026-09-07,0.5,neutral,stale
+6183,customer,得標案件高度集中財政部體系（關務署、財政資訊中心）及中央部會，客戶集中度高但具體營收占比未揭露,https://pcc.mlwmlw.org/merchants/97162640,開放政府標案（得標案件彙整）,2025-12-01,2026-09-07,0.6,negative,
+6183,risk,公司於2026-08-11召開法人說明會（證交所資訊展示中心），但法說內容（新平台、AI應用、海外輸出、在手訂單量化）在本次搜尋中未能取得；法人EPS預估查無，顯示券商覆蓋度低,https://tw.stock.yahoo.com/quote/6183.TW/announcement,Yahoo股市 個股公告,2026-08-11,2026-09-07,0.5,neutral,
+6782,next_platform,矽水膠彩拋為主力且供不應求，透明片需求穩定；散光片已有2-5家客戶採用，預期營收占比由低個位數升至中低個位數,https://money.udn.com/money/story/5612/9382329,經濟日報,2026-03-16,2026-09-07,0.85,positive,
+6782,new_capacity,"月產能約4,900萬片→2026Q3 5,500萬片→2027Q1 6,300萬片（馬來西亞廠，無塵室與設備需6-9個月）；另核准4.8億元台灣總部與土地（桃園），投資期2025H2-2027H1",https://money.udn.com/money/story/5612/9382329,經濟日報,2026-03-16,2026-09-07,0.85,positive,
+6782,new_capacity,"擴產提前一季：5,500萬片提前至2026Q2完成、6,300萬片提前至2026Q4完成；擴至6,300萬片後預期稼動率仍可維持9成",https://www.chinatimes.com/newspapers/20260516000303-260206,工商時報,2026-05-16,2026-09-07,0.6,positive,
+6782,new_product_mix,2025年營收42.23億元中彩拋占約三成，2026年彩拋占比一定高於三成；2025年毛利率45%（+6pp），單季毛利率提升至47%,https://blog.fugle.tw/post/earnings-call-6782-2026-03-13,富果直送 法說備忘錄,2026-03-13,2026-09-07,0.8,positive,
+6782,order_visibility,2026上半年訂單已排滿至6月，彩拋訂單延伸至Q3-Q4；稼動率逾9成、上半年滿載；Q2營收確定高於Q1,https://money.udn.com/money/story/5612/9382329,經濟日報,2026-03-16,2026-09-07,0.8,positive,
+6782,tam,亞洲占2025Q4營收87%，日本占亞洲5-6成、台灣+中國2-3成；日本2025年營收成長約20%（30+家OEM與關係客戶）、中國成長約40%；美國因關稅需求走軟、2026預期逐步回溫,https://blog.fugle.tw/post/earnings-call-6782-2026-03-13,富果直送 法說備忘錄,2026-03-13,2026-09-07,0.75,positive,
+6782,customer,前十大客戶各占營收3%-18%、合計約七成；其中日本4家、中國4家、歐美台各1家,https://www.genetinfo.com/investment/featured/item/87446.html,Genet 法說筆記,2025-05-23,2026-09-07,0.6,neutral,stale
+6782,governance,2026/5/26 董事全面改選（含獨立董事）並改組薪酬與審計委員會；董事長李重儀；未發現重大治理疑慮，但內部人申讓明細未查驗,https://goodinfo.tw/tw/BasicInfo.asp?STOCK_ID=6782,Goodinfo 公司基本資料,2026-05-26,2026-09-07,0.5,neutral,
+6782,eps_revision,群益證券預估2026年營收50.68億、EPS 17.05元、目標價215元；另有券商預估2026 EPS 16.57元、目標價232元,https://readmo.cmoney.tw/article/8dec6eea-b624-42c1-9087-3904d584573a,CMoney readmo,,2026-09-07,0.6,positive,
+6782,rerating,2026/9 股價229元、近四季EPS 16.49、本益比13.88倍、市值144.27億；2026 1-7月營收29.61億元(+22.38%)，H1 EPS 8.45（Q2 4.63，季增21.2%、年增56.4%）,https://www.cnyes.com/twstock/6782,鉅亨網,2026-09-07,2026-09-07,0.75,positive,
+6782,risk,2024Q4曾發生彩拋占比由三成降至兩成、馬幣升值（Q3 +4%、Q4 +5%）推升成本，顯示產品組合與匯率為毛利率波動來源,https://www.genetinfo.com/investment/featured/item/86830.html,Genet 法說筆記,2025-04-30,2026-09-07,0.6,negative,stale
+6782,risk,"美國市場2025年因關稅與客戶提前拉貨而需求走軟；擴產至6,300萬片後稼動率維持9成為公司說法、尚待驗證",https://money.udn.com/money/story/5612/9382329,經濟日報,2026-03-16,2026-09-07,0.7,negative,
+8462,new_capacity,2026 年規劃新展 10 處健身工廠據點，台北安和（2 月底）、台中烏日（5 月底）已開，下半年北中南再開 8 處,https://www.chinatimes.com/realtimenews/20260618002886-260410,時報資訊,2026-06-18,2026-09-07,0.85,positive,
+8462,new_capacity,截至 2026/6/22 共 91 據點（健身工廠 85 家）；2026 年至少新增 9 據點，第 100 家店預計 2027 年達標,https://news.cnyes.com/news/id/6572520,鉅亨網,2026-08-12,2026-09-07,0.85,positive,
+8462,next_platform,新品牌 SKlub 運動俱樂部主打羽球與匹克球（嘉義專業羽球會館）、自有服飾品牌 POWERWIND 上市、與全聯合作新據點（台中干城廠預售中）,https://news.cnyes.com/news/id/6572520,鉅亨網,2026-08-12,2026-09-07,0.75,positive,
+8462,new_product_mix,毛利率 2025 年 31.93%、2026Q1 升至 33.57%，營益率 16.17%；但私人教練課程占營收由 36.4%（2024）→35.3%（2025）→32.8%（2026Q1），會籍費占比升至 63.8%,https://udn.com/news/story/7251/9691199,聯合新聞網,2026-08-14,2026-09-07,0.85,neutral,
+8462,new_product_mix,2025 年會籍費成長 20.16%、教練課程僅成長 14.84%，教練課動能落後會籍,https://www.businesstoday.com.tw/article/category/183008/post/202608030037/,今周刊,2026-08-06,2026-09-07,0.8,negative,
+8462,order_visibility,會員人數自 2022 年 5 月起連續增加，黏著度提升；會籍費（經常性收入）占營收 63.8%；2026H1 營收 34.02 億元年增 20.2% 創新高,https://www.chinatimes.com/realtimenews/20260511002684-260410,時報資訊,2026-05-11,2026-09-07,0.7,positive,
+8462,order_visibility,新客獲取放緩：入會費收入年增率由 20.40% 降至 2.3%,https://www.businesstoday.com.tw/article/category/183008/post/202608030037/,今周刊,2026-08-06,2026-09-07,0.75,negative,
+8462,tam,"健身中心登記家數 1,127（2025）→1,161（2026 前 5 月），前 5 月銷售額 74.2 億元年增 12.65%，單店平均營收年增 5.6%；全真瑜珈、極限健身退場，統一 BEING 僅 10 家",https://udn.com/news/story/7251/9691199,聯合新聞網,2026-08-14,2026-09-07,0.8,positive,
+8462,governance,董監持股比例 35.98%；現金股利 7.277 元、殖利率約 5%；搜尋範圍內未見增資公告,https://www.cnyes.com/twstock/directorholder.aspx?code=8462,鉅亨網董監持股,,2026-09-07,0.5,neutral,
+8462,rerating,2026Q2 稅後純益 2.59 億元年增 66.5%、EPS 3.25 創單季新高；H1 稅後純益 4.54 億元年增 62.27%、EPS 5.68；7 月營收 6.26 億元年增 18.28%,https://news.cnyes.com/news/id/6572520,鉅亨網,2026-08-12,2026-09-07,0.9,positive,
+8462,rerating,本益比約 16.91 倍、股價淨值比 4.85 倍（財報狗頁面標題）,https://statementdog.com/analysis/8462/pe,財報狗,,2026-09-07,0.5,positive,
+8462,risk,"自營模式每店需投資 5,000 萬至 1.2 億元，相較同業海外加盟零資本支出，擴張為重資產",https://www.businesstoday.com.tw/article/category/183008/post/202608030037/,今周刊,2026-08-06,2026-09-07,0.75,negative,
+8462,eps_revision,2025 全年 EPS 8.49 元（實績）；2026Q1 EPS 2.42 年增 56%；FactSet/券商前瞻 EPS 預估未查得,https://udn.com/news/story/7252/9684988,聯合新聞網,,2026-09-07,0.6,neutral,

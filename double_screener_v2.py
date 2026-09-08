@@ -487,7 +487,7 @@ def forward_eps(m, cyc, inp):
         src = "partial:" + str(inp.get("eps_source", "T+1")) + "+proxy"; conf = "partial"
     elif inp.get("base_eps_3y"):                      # v3 scenario_inputs 的 Base EPS 3Y 亦視為已驗證 FY3
         fy3 = float(inp["base_eps_3y"]); fy1 = eps4 * (fy3 / eps4) ** (1 / 3) if eps4 > 0 else fy3; fy2 = fy1 * (fy3 / eps4) ** (1 / 3) if eps4 > 0 else fy3
-        src = "manual:scenario base_eps_3y"; conf = "verified"
+        src = "manual:scenario base_eps_3y"; conf = "verified" if inp.get("horizon_complete", True) else "verified-T+2"
     elif STRICT_EPS:
         fy1 = fy2 = fy3 = None; src = "none(strict)"; conf = "none"
     elif cyc["cycle_peak_risk"] and cyc.get("normalized_eps"):

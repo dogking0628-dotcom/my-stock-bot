@@ -1,76 +1,6 @@
 {
   "records": [
     {
-      "date": "2026-07-16",
-      "industry": "半導體",
-      "picks": [
-        {
-          "ticker": "2303",
-          "name": "聯電",
-          "industry": "半導體",
-          "rec_close": 166.0,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "漲停鎖死",
-            "ATH",
-            "族群同步"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 44.09246001589739,
-          "change_pct_at_rec": 9.933774834437092,
-          "vol_ratio_at_rec": 0.46135283545130734
-        },
-        {
-          "ticker": "2408",
-          "name": "南亞科",
-          "industry": "半導體",
-          "rec_close": 481.0,
-          "momentum_score": 95,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "族群同步"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 51.23198762102277,
-          "change_pct_at_rec": 7.366071428571419,
-          "vol_ratio_at_rec": 0.8593432461037293
-        },
-        {
-          "ticker": "3033",
-          "name": "威健",
-          "industry": "電子通路",
-          "rec_close": 55.599998474121094,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "量爆價揚",
-            "ATH",
-            "族群同步"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 82.23347481914087,
-          "change_pct_at_rec": 9.881423222882525,
-          "vol_ratio_at_rec": 5.413561892965438
-        },
-        {
-          "ticker": "2059",
-          "name": "川湖",
-          "industry": "電子零組件",
-          "rec_close": 8500.0,
-          "momentum_score": 95,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "族群同步"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 69.08212560386474,
-          "change_pct_at_rec": 6.316447779862422,
-          "vol_ratio_at_rec": 1.390174608781117
-        }
-      ]
-    },
-    {
       "date": "2026-07-21",
       "industry": "通信網路",
       "picks": [
@@ -1629,6 +1559,79 @@
           "rsi": 61.98126149720949,
           "change_pct_at_rec": 9.90099009900991,
           "vol_ratio_at_rec": 0.9741015367184398
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "industry": "電腦及週邊",
+      "picks": [
+        {
+          "ticker": "7711",
+          "name": "永擎",
+          "industry": "電腦及週邊",
+          "rec_close": 660.0,
+          "momentum_score": 80,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+0.2%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 72.70270270270271,
+          "change_pct_at_rec": 4.430379746835444,
+          "vol_ratio_at_rec": 1.7154671287894132
+        },
+        {
+          "ticker": "3034",
+          "name": "聯詠",
+          "industry": "半導體",
+          "rec_close": 540.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+0.2%",
+            "SMH+2.6%",
+            "投信+30張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 62.58992805755396,
+          "change_pct_at_rec": 3.053435114503822,
+          "vol_ratio_at_rec": 0.6542721981551903
+        },
+        {
+          "ticker": "2330",
+          "name": "台積電",
+          "industry": "半導體",
+          "rec_close": 2460.0,
+          "momentum_score": 90,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+0.2%",
+            "SMH+2.6%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 61.11111111111111,
+          "change_pct_at_rec": 2.0746887966804906,
+          "vol_ratio_at_rec": 1.3266008599948567
+        },
+        {
+          "ticker": "8039",
+          "name": "台虹",
+          "industry": "電子零組件",
+          "rec_close": 327.0,
+          "momentum_score": 85,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "QQQ+0.2%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 61.431870669745955,
+          "change_pct_at_rec": 9.915966386554631,
+          "vol_ratio_at_rec": 0.5673592801285412
         }
       ]
     }

@@ -6,3 +6,7 @@ finmind_token.txt
 data/checkpoints/api_usage.json
 *.tmp
 double_screener_v2_run.log
+
+# 逐字稿：cookies 與 whisper 音訊暫存不入庫
+cookies.txt
+data/transcripts/_audio/

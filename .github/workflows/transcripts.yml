@@ -1,0 +1,71 @@
+name: Fetch Video Transcripts
+
+on:
+  schedule:
+    # 台北 19:00 = UTC 11:00（越南 18:00）；每天掃追蹤頻道 + 佇列。
+    # 財經節目多在台股收盤後～傍晚上架，晚上抓一次剛好；GitHub cron 可能延遲 30 分～3h。
+    - cron: '0 11 * * *'
+  workflow_dispatch:
+    inputs:
+      url:
+        description: '要抓的 YouTube 網址或影片 ID（可留空，留空就只跑頻道+佇列）'
+        required: false
+        default: ''
+      whisper:
+        description: '無字幕時是否用 whisper 轉錄（慢，CPU 一支 30 分鐘影片約 10 分鐘）'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  transcripts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install yt-dlp
+        run: pip install -U yt-dlp
+
+      - name: Install faster-whisper（只在手動勾選 whisper 時）
+        if: ${{ github.event.inputs.whisper == 'true' }}
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install faster-whisper
+
+      # YouTube 對雲端 IP 常回「Sign in to confirm you're not a bot」。
+      # 遇到時：本機瀏覽器匯出 cookies.txt → base64 → 存成 Secret YT_COOKIES_B64。
+      - name: Write cookies（若有 Secret）
+        if: ${{ env.YT_COOKIES_B64 != '' }}
+        env:
+          YT_COOKIES_B64: ${{ secrets.YT_COOKIES_B64 }}
+        run: |
+          echo "$YT_COOKIES_B64" | base64 -d > cookies.txt
+          echo "YT_COOKIES_FILE=$PWD/cookies.txt" >> "$GITHUB_ENV"
+
+      - name: Fetch transcripts
+        env:
+          LINE_TOKEN:   ${{ secrets.LINE_TOKEN }}
+          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
+          YT_JS_RUNTIME: node
+        run: |
+          EXTRA=""
+          [ "${{ github.event.inputs.whisper }}" = "true" ] && EXTRA="--whisper"
+          python fetch_transcript.py --watch --queue --notify $EXTRA ${{ github.event.inputs.url }} \
+            || echo "transcript fetch failed (non-fatal)"
+
+      - name: Commit transcripts
+        run: |
+          rm -f cookies.txt
+          git config user.name  "github-actions"
+          git config user.email "github-actions@github.com"
+          git add data/transcripts data/video_queue.txt
+          git diff --staged --quiet || git commit -m "chore: transcripts $(date -u +%Y-%m-%d)"
+          git pull --rebase --autostash || true
+          git push

@@ -1,0 +1,17 @@
+{
+  "_說明": "fetch_transcript.py --watch 會逐一讀取 sources，抓每個頻道/播放清單最新 max_latest 支影片的字幕。url 可放頻道影片頁（https://www.youtube.com/@頻道代號/videos）或播放清單。enabled=false 的不掃。頻道代號請在 YouTube 頻道頁網址列確認後填入。",
+  "sources": [
+    {
+      "name": "理財達人秀",
+      "url": "https://www.youtube.com/@請填入頻道代號/videos",
+      "max_latest": 3,
+      "enabled": false
+    },
+    {
+      "name": "先探投資最錢線",
+      "url": "https://www.youtube.com/@請填入頻道代號/videos",
+      "max_latest": 2,
+      "enabled": false
+    }
+  ]
+}

@@ -56,6 +56,18 @@ cloud_bot/
     └── weekly_top30.yml   # 每週一 cron
 ```
 
+## 影片逐字稿自動下載（論點入庫用）
+```bash
+pip install yt-dlp                                   # 只裝這個就能抓字幕
+python fetch_transcript.py https://youtu.be/xxxx     # 單支影片
+python fetch_transcript.py --queue                   # 吃 data/video_queue.txt（一行一支）
+python fetch_transcript.py --watch                   # 掃 data/video_sources.json 追蹤頻道最新影片
+python fetch_transcript.py --whisper <網址>           # 無字幕才用 faster-whisper 轉錄（需另裝）
+```
+- 輸出 `data/transcripts/<上傳日>_<影片ID>.md`，每段開頭有 `[mm:ss]` 時間戳；`index.json` 記錄已抓過的影片，重跑不會重抓。
+- 排程 `transcripts.yml` 每天 UTC 11:00（台北 19:00）自動跑頻道＋佇列並 commit；也可在 Actions 頁手動 Run workflow 貼網址。
+- GitHub 雲端 IP 若被 YouTube 要求登入驗證，把瀏覽器匯出的 cookies.txt 做 base64 存成 Secret `YT_COOKIES_B64`。
+
 ## 限制
 - 用 yfinance 抓資料，與 moomoo 約 ±0.05% 微幅差異
 - GitHub Actions cron 可能延遲 5-15 分鐘（不影響日線策略）

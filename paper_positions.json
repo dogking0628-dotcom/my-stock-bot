@@ -1,26 +1,14 @@
 {
  "positions": [
   {
-   "ticker": "7711",
-   "name": "永擎",
-   "entry": 650.0,
-   "entry_date": "2026-09-08",
-   "shares": 230,
-   "peak": 650.0,
-   "exit_pending": true,
-   "exit_reason": "-7%樓地板",
-   "last_close": 594.0,
-   "unreal_pct": -8.62
-  },
-  {
    "ticker": "3034",
    "name": "聯詠",
    "entry": 543.0,
    "entry_date": "2026-09-08",
    "shares": 270,
    "peak": 543.0,
-   "last_close": 534.0,
-   "unreal_pct": -1.66
+   "last_close": 543.0,
+   "unreal_pct": 0.0
   },
   {
    "ticker": "2330",
@@ -29,9 +17,9 @@
    "entry_date": "2026-09-08",
    "shares": 60,
    "peak": 2470.0,
-   "last_close": 2470.0,
-   "unreal_pct": 0.2
+   "last_close": 2465.0,
+   "unreal_pct": 0.0
   }
  ],
- "last_run": "2026-09-08"
+ "last_run": "2026-09-09"
 }

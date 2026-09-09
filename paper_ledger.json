@@ -1,4 +1,16 @@
 {
- "trades": [],
+ "trades": [
+  {
+   "ticker": "7711",
+   "name": "永擎",
+   "entry": 650.0,
+   "entry_date": "2026-09-08",
+   "shares": 230,
+   "exit": 594.0,
+   "exit_date": "2026-09-09",
+   "ret_pct": -9.09,
+   "reason": "-7%樓地板"
+  }
+ ],
  "started": "2026-09-07"
 }

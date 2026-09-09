@@ -517,6 +517,7 @@ def main(argv=None):
     ap.add_argument("--since", default=None, help="只收上傳日 ≥ YYYYMMDD（回補用，配 --watch --scan）")
     ap.add_argument("--until", default=None, help="只收上傳日 ≤ YYYYMMDD")
     ap.add_argument("--scan", type=int, default=None, help="--watch 時每個頻道往回列幾支（回補 8 月建議 80~120）")
+    ap.add_argument("--abort-on-botcheck", type=int, default=5, help="連續 N 支被要求登入驗證就中止本輪（0=不中止）")
     args = ap.parse_args(argv)
     if args.since or args.until:
         args.max_new = max(args.max_new, 500)   # 回補模式：上限放寬，範圍外的不算
@@ -545,6 +546,7 @@ def main(argv=None):
     todo = todo[:args.max_new]
 
     new_entries, done_ids, n_err, n_skip = [], set(), 0, 0
+    consecutive_bot = 0
     for i, vid in enumerate(todo):
         status, entry = process_video(vid, index, langs, args.whisper, args.cookies, args.force, args.since, args.until)
         save_json(INDEX, index)  # 逐支落地，中途失敗不丟進度
@@ -556,6 +558,16 @@ def main(argv=None):
             n_err += 1
         elif status == "out_of_range":
             n_skip += 1
+        # 連續被 YouTube 要求登入驗證 → 這個 IP 整輪都過不了，別再一支支撞
+        if status == "error" and BOT_CHECK_RE.search(entry.get("error") or ""):
+            consecutive_bot += 1
+            if consecutive_bot >= args.abort_on_botcheck > 0:
+                log(f"連續 {consecutive_bot} 支被要求登入驗證，本輪中止（剩 {len(todo) - i - 1} 支下次再試）。"
+                    f"雲端請設 Secret YT_COOKIES_B64，或改在本機執行。")
+                n_err += len(todo) - i - 1
+                break
+        elif status != "out_of_range":
+            consecutive_bot = 0
         if i < len(todo) - 1 and args.sleep > 0:
             time.sleep(args.sleep)
 

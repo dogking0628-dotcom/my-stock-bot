@@ -1,1 +1,7 @@
-{}
+{
+  "feMzFS5gjhs": {
+    "status": "error",
+    "error": "ERROR: [youtube] feMzFS5gjhs: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-09-09T01:37"
+  }
+}

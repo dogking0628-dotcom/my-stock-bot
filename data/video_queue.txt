@@ -1,3 +1,4 @@
 # 影片佇列：一行一支（網址或 11 碼影片 ID），# 後面是註解。
 # 手動：python fetch_transcript.py --queue；排程（transcripts.yml）每天也會吃這個檔。
 # 抓成功或確認無字幕的行會自動移除；失敗的留著下次重試。
+https://youtu.be/feMzFS5gjhs  # 2026-09-09 用戶餵料，沙箱無法連 YouTube，排隊由本機或 Actions 抓

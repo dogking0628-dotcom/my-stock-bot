@@ -30,6 +30,9 @@ jobs:
   transcripts:
     runs-on: ubuntu-latest
     timeout-minutes: 180
+    env:
+      # step 的 if 不能直接讀 secrets；先在 job 層級轉成布林字串
+      HAS_COOKIES: ${{ secrets.YT_COOKIES_B64 != '' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -48,9 +51,8 @@ jobs:
 
       # YouTube 對雲端 IP 常回「Sign in to confirm you're not a bot」。
       # 遇到時：本機瀏覽器匯出 cookies.txt → base64 → 存成 Secret YT_COOKIES_B64。
-      # （條件要用 secrets 上下文；step 自己的 env 在 if 裡看不到）
       - name: Write cookies（若有 Secret）
-        if: ${{ secrets.YT_COOKIES_B64 != '' }}
+        if: ${{ env.HAS_COOKIES == 'true' }}
         env:
           YT_COOKIES_B64: ${{ secrets.YT_COOKIES_B64 }}
         run: |

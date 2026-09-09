@@ -5,12 +5,13 @@ on:
     # 台北 19:00 = UTC 11:00（越南 18:00）；每天掃追蹤頻道 + 佇列。
     # 財經節目多在台股收盤後～傍晚上架，晚上抓一次剛好；GitHub cron 可能延遲 30 分～3h。
     - cron: '0 11 * * *'
-  # 佇列檔被推上來就立刻抓（手機在 GitHub App 編輯 data/video_queue.txt 加一行即可）。
+  # 佇列檔/來源檔/回補請求被推上來就立刻跑（手機在 GitHub App 編輯即可）。
   # Actions 自己的 commit 用 GITHUB_TOKEN 推，不會再觸發本 workflow，不會無限迴圈。
   push:
     paths:
       - 'data/video_queue.txt'
       - 'data/video_sources.json'
+      - 'data/backfill_request.json'
   workflow_dispatch:
     inputs:
       url:
@@ -28,7 +29,7 @@ permissions:
 jobs:
   transcripts:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 180
     steps:
       - uses: actions/checkout@v4
 
@@ -47,32 +48,48 @@ jobs:
 
       # YouTube 對雲端 IP 常回「Sign in to confirm you're not a bot」。
       # 遇到時：本機瀏覽器匯出 cookies.txt → base64 → 存成 Secret YT_COOKIES_B64。
+      # （條件要用 secrets 上下文；step 自己的 env 在 if 裡看不到）
       - name: Write cookies（若有 Secret）
-        if: ${{ env.YT_COOKIES_B64 != '' }}
+        if: ${{ secrets.YT_COOKIES_B64 != '' }}
         env:
           YT_COOKIES_B64: ${{ secrets.YT_COOKIES_B64 }}
         run: |
           echo "$YT_COOKIES_B64" | base64 -d > cookies.txt
           echo "YT_COOKIES_FILE=$PWD/cookies.txt" >> "$GITHUB_ENV"
+          echo "cookies.txt 已寫入（$(wc -l < cookies.txt) 行）"
 
-      - name: Fetch transcripts
-        env:
-          LINE_TOKEN:   ${{ secrets.LINE_TOKEN }}
-          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
-          YT_JS_RUNTIME: node
-        run: |
-          EXTRA=""
-          [ "${{ github.event.inputs.whisper }}" = "true" ] && EXTRA="--whisper"
-          python fetch_transcript.py --watch --queue --notify $EXTRA ${{ github.event.inputs.url }} \
-            || echo "transcript fetch failed (non-fatal)"
-
-      # 逐字稿 → 論點入庫 analyst_claims.md + 操作檢討報告；沒設 ANTHROPIC_API_KEY 會自動略過
-      - name: Analyze transcripts（Claude：論點萃取 + 對照系統 + 操作檢討）
+      # 兩種模式：
+      #  A. data/backfill_request.json 存在 → 回補該日期範圍（每頻道往回列 120 支）+ Batch API 分析（五折）
+      #     回補完成（抓取無失敗且批次全收）才移除請求檔；否則下次 push/排程接著做
+      #  B. 平常 → 追蹤頻道最新 + 佇列 + 即時分析
+      - name: Fetch + analyze transcripts
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           LINE_TOKEN:   ${{ secrets.LINE_TOKEN }}
           LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
-        run: python analyze_transcript.py --new --notify || echo "analyze failed (non-fatal)"
+          YT_JS_RUNTIME: node
+        run: |
+          if [ -f data/backfill_request.json ]; then
+            SINCE=$(python -c "import json;print(json.load(open('data/backfill_request.json'))['since'])")
+            UNTIL=$(python -c "import json;print(json.load(open('data/backfill_request.json'))['until'])")
+            echo "== 回補模式 $SINCE ~ $UNTIL =="
+            python fetch_transcript.py --watch --scan 120 --since "$SINCE" --until "$UNTIL" --sleep 3 || echo "fetch failed (non-fatal)"
+            python analyze_transcript.py --batch --batch-wait 120 || echo "analyze failed (non-fatal)"
+            python - <<'PY'
+          import json, os
+          last = json.load(open("data/checkpoints/fetch_last.json")) if os.path.exists("data/checkpoints/fetch_last.json") else {}
+          pending = os.path.exists("data/checkpoints/analyze_batch.json")
+          if last.get("targets", 0) > 0 and last.get("error", 0) == 0 and not pending:
+              os.remove("data/backfill_request.json"); print("回補完成，移除 backfill_request.json")
+          else:
+              print(f"回補未完成（抓取 {last}，批次未收={pending}），保留請求檔，下次接著做")
+          PY
+          else
+            EXTRA=""
+            [ "${{ github.event.inputs.whisper }}" = "true" ] && EXTRA="--whisper"
+            python fetch_transcript.py --watch --queue --notify $EXTRA ${{ github.event.inputs.url }} || echo "fetch failed (non-fatal)"
+            python analyze_transcript.py --new --notify || echo "analyze failed (non-fatal)"
+          fi
 
       # 到期論點自動對帳（FinMind 日K）+ 講者命中率記分板；不依賴 YouTube，每天都能跑
       - name: Score claims（到期對帳 + 記分板）
@@ -87,8 +104,12 @@ jobs:
           rm -f cookies.txt
           git config user.name  "github-actions"
           git config user.email "github-actions@github.com"
-          git add data/transcripts data/video_queue.txt data/video_sources.json
-          for f in analyst_claims.md analyst_scorecard.md data/evidence_candidates.csv data/claims.jsonl data/checkpoints/price_cache.json; do [ -f "$f" ] && git add "$f" || true; done
+          git add -A data/transcripts data/video_queue.txt data/video_sources.json
+          for f in analyst_claims.md analyst_scorecard.md data/evidence_candidates.csv data/claims.jsonl \
+                   data/checkpoints/price_cache.json data/checkpoints/analyze_batch.json data/checkpoints/fetch_last.json \
+                   data/backfill_request.json; do
+            git add -A -- "$f" 2>/dev/null || true
+          done
           git diff --staged --quiet || git commit -m "chore: transcripts $(date -u +%Y-%m-%d)"
           git pull --rebase --autostash || true
           git push

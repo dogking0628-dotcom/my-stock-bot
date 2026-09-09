@@ -564,6 +564,11 @@ def main(argv=None):
     if args.notify:
         notify(new_entries)
     log(f"完成：新增 {len(new_entries)} / 無字幕 {len(done_ids) - len(new_entries)} / 失敗 {n_err}" + (f" / 範圍外 {n_skip}" if n_skip else ""))
+    # 給排程/回補流程判斷用的摘要
+    save_json(DATA_DIR / "checkpoints" / "fetch_last.json",
+              {"at": dt.datetime.now().isoformat(timespec="minutes"), "targets": len(targets), "todo": len(todo),
+               "new": len(new_entries), "no_subs": len(done_ids) - len(new_entries), "error": n_err, "out_of_range": n_skip,
+               "since": args.since, "until": args.until})
     return 0
 
 

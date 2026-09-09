@@ -1,6 +1,7 @@
 {
   "since": "20260801",
   "until": "20260831",
-  "requested_at": "2026-09-09",
-  "note": "8 月七頻道回補：抓字幕 → Batch 分析 → 對帳記分板。完成後由 workflow 自動移除本檔；本機 run_transcripts.bat backfill 20260801 20260831 也可做同一件事。"
+  "requested_at": "2026-09-09T08:20Z",
+  "note": "8 月七頻道回補：抓字幕 → Batch 分析 → 對帳記分板。完成後由 workflow 自動移除本檔；本機 run_transcripts.bat backfill 20260801 20260831 也可做同一件事。",
+  "attempt": 2
 }

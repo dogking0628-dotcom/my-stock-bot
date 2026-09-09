@@ -5,6 +5,12 @@ on:
     # 台北 19:00 = UTC 11:00（越南 18:00）；每天掃追蹤頻道 + 佇列。
     # 財經節目多在台股收盤後～傍晚上架，晚上抓一次剛好；GitHub cron 可能延遲 30 分～3h。
     - cron: '0 11 * * *'
+  # 佇列檔被推上來就立刻抓（手機在 GitHub App 編輯 data/video_queue.txt 加一行即可）。
+  # Actions 自己的 commit 用 GITHUB_TOKEN 推，不會再觸發本 workflow，不會無限迴圈。
+  push:
+    paths:
+      - 'data/video_queue.txt'
+      - 'data/video_sources.json'
   workflow_dispatch:
     inputs:
       url:

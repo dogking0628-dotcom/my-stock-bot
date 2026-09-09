@@ -396,6 +396,7 @@ def analyze_stock(yfc, df_t):
         "rsi": rsi_val, "ma5": ma5, "ma20": ma20, "ma60": ma60, "ma200": ma200,
         "gap_up": gap_up, "close_near_high": close_near_high, "long_red": long_red,
         "tangle": tangle,
+        "_closes91": [round(float(x), 2) for x in cl.iloc[-92:].tolist()],  # 警示股漲幅公式用
     }
 
 
@@ -627,6 +628,21 @@ def main():
         print(f"  🌀 糾結突破(T2測試軌道): " +
               "、".join(f"{r['ticker']}{r['name']}(量{r['vol_ratio']:.1f}x)" for r in tangle_list[:5]),
               file=sys.stderr)
+
+    # 🚨 警示股守門（2026-09-09）：處置/注意/接近注意線 → 附掛 alert 欄
+    try:
+        from alert_guard import load_alert_lists, classify
+        _lists = load_alert_lists()
+        for _r in (tomorrow_top5 or []) + (tangle_list or []):
+            _a = classify(_r.get("ticker"), _r.get("_closes91") or [], _lists)
+            if _a:
+                _r["alert"] = _a
+                print(f"  🚨 {_r.get('ticker')} {_r.get('name')}: {_a['msg']}", file=sys.stderr)
+    except Exception as _e:
+        print(f"  alert guard fail: {type(_e).__name__}", file=sys.stderr)
+    # 瘦身：_closes91 不進 report
+    for _r in results:
+        _r.pop("_closes91", None)
 
     out = {
         "timestamp": dt.date.today().isoformat(),

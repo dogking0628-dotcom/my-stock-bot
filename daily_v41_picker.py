@@ -85,7 +85,8 @@ def tangle_block(report_extra):
         t = r.get("tangle") or {}
         L.append(f"  {r['ticker']} {r['name']} 收{r['today']:.0f}"
                  f" +{r['change_pct']:.1f}% 量{r['vol_ratio']:.1f}x"
-                 f" 距高{t.get('dist_high_pct', 0):+.1f}%")
+                 f" 距高{t.get('dist_high_pct', 0):+.1f}%"
+                 + (f" {r['alert']['msg']}" if r.get('alert') else ""))
     L.append("  (糾結首根放量;回測勝率34%靠右尾;同樣-7%停損)")
     L.append("")
     return L
@@ -164,6 +165,9 @@ def build_message(picks, strongest, regime, blocked, date, inst=None, data_note=
         itag = inst_tag(p["ticker"], inst)
         if itag:
             lines.append(f"   🏦 {itag}")
+        al = p.get("alert")
+        if al:
+            lines.append(f"   {al['msg']}")
         lines.append("")
 
     lines.extend(tangle_block(report_extra))

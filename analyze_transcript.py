@@ -3,13 +3,16 @@
 逐字稿 → 論點萃取 → 對照系統狀態 → 操作檢討與建議（自動落檔）。
 
 接在 fetch_transcript.py 之後：
-  python analyze_transcript.py --new            # 分析 index.json 裡「抓到但還沒分析」的逐字稿
-  python analyze_transcript.py <影片ID> [...]    # 指定影片（可配 --force 重分析）
-  python analyze_transcript.py --new --notify   # 排程用：分析完把摘要推 LINE
+  python analyze_transcript.py --new                    # 即時模式：逐支串流分析（每日排程用）
+  python analyze_transcript.py <影片ID> [...]            # 指定影片（可配 --force 重分析）
+  python analyze_transcript.py --new --notify           # 分析完把摘要推 LINE
+  python analyze_transcript.py --batch --batch-wait 90  # 批次模式：Batch API 打五折（回補歷史用）；
+                                                        #   送出後最多等 90 分鐘，沒完成下次再跑同指令會接著收
 
 每支影片產出：
   data/transcripts/<影片ID>.analysis.md   完整報告（論點表、持倉影響、操作檢討、建議修正）
   analyst_claims.md                        尾端追加一節：論點驗證庫列（編號接續）＋ 到期對帳列
+  data/claims.jsonl                        機器可讀論點庫（score_claims.py 對帳用）
   data/evidence_candidates.csv             證據帳本「候選」（不直接寫 evidence_ledger.csv，入帳前不算）
   data/transcripts/index.json              標 analyzed_at / analysis 檔名
 
@@ -18,9 +21,9 @@
   任何「改策略」的建議都標 requires_backtest=true，要走 2y+5y 雙窗＋紅線（期望≥+8%/PF≥2.5/MDD≤-30%）才可能上線。
 
 需要環境變數 ANTHROPIC_API_KEY（GitHub Secret 同名）。沒有就印說明後 exit 0，不拖垮排程。
-模型 claude-opus-5、串流、effort high，並開啟 server-side fallbacks（遇安全拒答自動換模型續跑）。
+模型預設 claude-sonnet-5（ANALYZE_MODEL 可改）；系統提示與系統快照都掛 prompt cache，同一輪多支影片共用。
 """
-import sys, io, os, re, json, csv, argparse, datetime as dt
+import sys, io, os, re, json, csv, time, argparse, datetime as dt
 from pathlib import Path
 
 if not isinstance(sys.stdout, io.TextIOWrapper) or sys.stdout.encoding.lower() != "utf-8":
@@ -31,8 +34,11 @@ DATA = ROOT / "data"
 TDIR = DATA / "transcripts"
 INDEX = TDIR / "index.json"
 CLAIMS = ROOT / "analyst_claims.md"
+CLAIMS_JSONL = DATA / "claims.jsonl"
 EVIDENCE_CAND = DATA / "evidence_candidates.csv"
-MODEL = os.environ.get("ANALYZE_MODEL", "claude-opus-5")
+BATCH_STATE = DATA / "checkpoints" / "analyze_batch.json"
+MODEL = os.environ.get("ANALYZE_MODEL", "claude-sonnet-5")
+MAX_TOKENS = 32000
 
 def log(m): print(f"[analyze] {m}", flush=True)
 
@@ -143,35 +149,48 @@ verdict 用系統慣用標記：⏳ 待對帳 / 🧪 排入回測 / 📥 證據�
 line_summary ≤ 300 字，繁體中文，先講對持倉/系統最重要的一件事。"""
 
 
-def call_model(transcript_md, snap, meta=None):
-    import anthropic
-    client = anthropic.Anthropic()
+# ────────────────────────────────────────────────────────────────────────────
+# 請求組裝（即時與批次共用）：system = [固定提示(cache), 系統快照(cache)]；user = 日期 + 逐字稿
+# ────────────────────────────────────────────────────────────────────────────
+def build_request(transcript_md, snap_text, meta):
     up = (meta or {}).get("upload_date") or ""
     up_iso = f"{up[:4]}-{up[4:6]}-{up[6:]}" if len(up) == 8 else "未知"
+    system = [
+        {"type": "text", "text": SYSTEM_PROMPT, "cache_control": {"type": "ephemeral"}},
+        {"type": "text", "text": "【系統目前狀態（唯讀快照）】\n" + snap_text, "cache_control": {"type": "ephemeral"}},
+    ]
     user = (
-        "【系統目前狀態（唯讀快照）】\n" + json.dumps(snap, ensure_ascii=False, indent=1)
-        + "\n\n【今天】" + dt.date.today().isoformat()
-        + f"\n【影片上傳日（預測的時間基準）】{up_iso}　頻道：{(meta or {}).get('channel', '')}"
+        "【今天】" + dt.date.today().isoformat()
+        + f"\n【影片上傳日（預測的時間基準）】{up_iso}　頻道：{(meta or {}).get('channel', '')}　標題：{(meta or {}).get('title', '')}"
         + "\n\n【逐字稿】\n" + transcript_md
     )
-    with client.beta.messages.stream(
-        model=MODEL,
-        max_tokens=32000,
-        betas=["server-side-fallback-2026-07-01"],
-        fallbacks="default",
-        output_config={"effort": "high"},
-        system=[{"type": "text", "text": SYSTEM_PROMPT, "cache_control": {"type": "ephemeral"}}],
-        messages=[{"role": "user", "content": user}],
-    ) as stream:
-        msg = stream.get_final_message()
+    return system, [{"role": "user", "content": user}]
+
+
+def message_to_result(msg):
+    """Message 物件 → 解析後的 JSON；拒答/截斷丟例外或警告。"""
     if msg.stop_reason == "refusal":
         raise RuntimeError(f"模型拒答：{getattr(msg, 'stop_details', None)}")
     if msg.stop_reason == "max_tokens":
         log("  ⚠ 輸出被 max_tokens 截斷，JSON 可能不完整")
     text = "".join(b.text for b in msg.content if b.type == "text")
     u = msg.usage
-    log(f"  tokens in={u.input_tokens} cached={getattr(u, 'cache_read_input_tokens', 0)} out={u.output_tokens} model={msg.model}")
+    log(f"  tokens in={u.input_tokens} cached={getattr(u, 'cache_read_input_tokens', 0) or 0} out={u.output_tokens} model={msg.model}")
     return parse_json(text)
+
+
+def call_model(transcript_md, snap_text, meta=None):
+    """即時模式：串流呼叫，回傳解析後的 JSON。"""
+    import anthropic
+    client = anthropic.Anthropic()
+    system, messages = build_request(transcript_md, snap_text, meta)
+    with client.messages.stream(
+        model=MODEL, max_tokens=MAX_TOKENS,
+        output_config={"effort": "high"},
+        system=system, messages=messages,
+    ) as stream:
+        msg = stream.get_final_message()
+    return message_to_result(msg)
 
 
 def parse_json(text):
@@ -203,7 +222,9 @@ def append_claims(res, meta, vid):
     no = next_claim_no(); first = no
     v = res.get("video") or {}
     src_tag = f"[影片 {vid}]"
-    rows = ["", f"## 📺 {dt.date.today().isoformat()} {cell(meta.get('channel'))}《{cell(meta.get('title'))[:40]}》 {src_tag}",
+    up = meta.get("upload_date") or ""
+    up_iso = f"{up[:4]}-{up[4:6]}-{up[6:]}" if len(up) == 8 else "?"
+    rows = ["", f"## 📺 {up_iso} {cell(meta.get('channel'))}《{cell(meta.get('title'))[:40]}》 {src_tag}（入庫 {dt.date.today().isoformat()}）",
             f"> {cell(v.get('one_line'))}　來賓：{'、'.join(v.get('speakers') or [])}　風格：{cell(v.get('style'))}",
             "", "| # | 日期 | 來源/派別 | 主張 | 驗證方式 | 結果 | 裁決 |", "|---|---|---|---|---|---|---|"]
     due_rows = []
@@ -262,13 +283,12 @@ def write_report(res, meta, vid, first, last):
     out.write_text("\n".join(L), encoding="utf-8")
     return out.name
 
-CLAIMS_JSONL = DATA / "claims.jsonl"
-
 def append_claims_jsonl(res, meta, vid, first):
     """機器可讀的論點庫：score_claims.py 用它算命中率、彙整回測候選。一行一條。"""
     up = meta.get("upload_date") or ""
     up_iso = f"{up[:4]}-{up[4:6]}-{up[6:]}" if len(up) == 8 else None
     v = res.get("video") or {}
+    CLAIMS_JSONL.parent.mkdir(parents=True, exist_ok=True)
     with CLAIMS_JSONL.open("a", encoding="utf-8") as f:
         for i, c in enumerate(res.get("claims") or [], start=first):
             row = {"no": i, "video_id": vid, "video_date": up_iso, "channel": meta.get("channel"),
@@ -281,11 +301,11 @@ def append_claims_jsonl(res, meta, vid, first):
                    "created_at": dt.datetime.now().isoformat(timespec="minutes")}
             f.write(json.dumps(row, ensure_ascii=False) + "\n")
 
-
 def append_evidence_candidates(res, meta, vid):
     cands = res.get("evidence_candidates") or []
     if not cands: return 0
     new = not EVIDENCE_CAND.exists()
+    EVIDENCE_CAND.parent.mkdir(parents=True, exist_ok=True)
     with EVIDENCE_CAND.open("a", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
         if new:
@@ -299,74 +319,196 @@ def append_evidence_candidates(res, meta, vid):
     return len(cands)
 
 
-# ────────────────────────────────────────────────────────────────────────────
-def analyze_one(vid, index, force=False, dry=False):
-    meta = index.get(vid)
-    if not meta or meta.get("status") != "ok":
-        log(f"{vid}：index 無成功逐字稿，略過"); return None
-    if meta.get("analyzed_at") and not force:
-        log(f"{vid}：已分析（{meta['analyzed_at']}），略過"); return None
-    path = TDIR / meta["file"]
-    if not path.exists():
-        log(f"{vid}：找不到 {path.name}"); return None
-    text = path.read_text(encoding="utf-8")
-    log(f"▶ {vid} {cell(meta.get('title'))[:50]}（{len(text)} 字）")
-    snap = system_snapshot()
-    if dry:
-        log("  --dry：不呼叫模型"); return None
-    res = call_model(text, snap, meta)
+def finalize(vid, meta, res):
+    """模型結果 → 四處落檔 + 更新 index 條目。即時與批次共用。"""
     first, last = append_claims(res, meta, vid)
     rpt = write_report(res, meta, vid, first, last)
     n_ev = append_evidence_candidates(res, meta, vid)
     append_claims_jsonl(res, meta, vid, first)
     meta.update({"analyzed_at": dt.datetime.now().isoformat(timespec="minutes"), "analysis": rpt,
-                 "claims_range": [first, last], "evidence_candidates": n_ev})
-    log(f"  ✓ 論點 #{first}~#{last}、證據候選 {n_ev}、報告 {rpt}")
-    return res
+                 "claims_range": [first, last], "evidence_candidates": n_ev, "model": MODEL})
+    meta.pop("batch_id", None); meta.pop("analyze_error", None)
+    log(f"  ✓ {vid} 論點 #{first}~#{last}、證據候選 {n_ev}、報告 {rpt}")
+
+
+# ────────────────────────────────────────────────────────────────────────────
+# 目標挑選
+# ────────────────────────────────────────────────────────────────────────────
+def pick_targets(index, videos, new, force, limit):
+    targets = list(videos)
+    if new:
+        targets += [k for k, v in index.items() if v.get("status") == "ok" and (force or not v.get("analyzed_at"))]
+    targets = list(dict.fromkeys(targets))
+    out = []
+    for vid in targets:
+        meta = index.get(vid)
+        if not meta or meta.get("status") != "ok":
+            log(f"{vid}：index 無成功逐字稿，略過"); continue
+        if meta.get("analyzed_at") and not force:
+            log(f"{vid}：已分析（{meta['analyzed_at']}），略過"); continue
+        if not (TDIR / meta.get("file", "")).exists():
+            log(f"{vid}：找不到逐字稿檔"); continue
+        out.append(vid)
+    return out[:limit]
+
+
+# ────────────────────────────────────────────────────────────────────────────
+# 即時模式
+# ────────────────────────────────────────────────────────────────────────────
+def run_stream(targets, index, dry):
+    snap_text = json.dumps(system_snapshot(), ensure_ascii=False, indent=1)
+    done = []
+    for vid in targets:
+        meta = index[vid]
+        text = (TDIR / meta["file"]).read_text(encoding="utf-8")
+        log(f"▶ {vid} {cell(meta.get('title'))[:50]}（{len(text)} 字）")
+        if dry:
+            log("  --dry：不呼叫模型"); continue
+        try:
+            res = call_model(text, snap_text, meta)
+            finalize(vid, meta, res)
+            done.append((meta, res))
+        except Exception as e:
+            log(f"  ✗ {vid} 失敗：{str(e)[:300]}")
+            meta["analyze_error"] = str(e)[:300]
+        save_json(INDEX, index)
+    return done
+
+
+# ────────────────────────────────────────────────────────────────────────────
+# 批次模式（Batch API，五折；回補歷史用）
+# ────────────────────────────────────────────────────────────────────────────
+def batch_submit(targets, index, dry):
+    import anthropic
+    from anthropic.types.message_create_params import MessageCreateParamsNonStreaming
+    from anthropic.types.messages.batch_create_params import Request
+    snap_text = json.dumps(system_snapshot(), ensure_ascii=False, indent=1)
+    reqs = []
+    for vid in targets:
+        meta = index[vid]
+        text = (TDIR / meta["file"]).read_text(encoding="utf-8")
+        system, messages = build_request(text, snap_text, meta)
+        reqs.append(Request(custom_id=vid, params=MessageCreateParamsNonStreaming(
+            model=MODEL, max_tokens=MAX_TOKENS, output_config={"effort": "high"},
+            system=system, messages=messages)))
+        log(f"  排入 {vid} {cell(meta.get('title'))[:40]}（{len(text)} 字）")
+    if dry:
+        log(f"--dry：{len(reqs)} 支不送出"); return None
+    client = anthropic.Anthropic()
+    batch = client.messages.batches.create(requests=reqs)
+    state = {"batch_id": batch.id, "created_at": dt.datetime.now().isoformat(timespec="minutes"),
+             "videos": targets, "model": MODEL}
+    save_json(BATCH_STATE, state)
+    for vid in targets:
+        index[vid]["batch_id"] = batch.id
+    save_json(INDEX, index)
+    log(f"批次已送出：{batch.id}（{len(reqs)} 支，狀態 {batch.processing_status}）")
+    return state
+
+
+def batch_collect(state, index, wait_min):
+    """輪詢到完成（或超時）後收結果落檔。回傳 (done_list, finished_bool)。"""
+    import anthropic
+    client = anthropic.Anthropic()
+    bid = state["batch_id"]
+    deadline = time.time() + wait_min * 60
+    while True:
+        b = client.messages.batches.retrieve(bid)
+        rc = b.request_counts
+        if b.processing_status == "ended":
+            break
+        log(f"批次 {bid} 處理中：完成 {rc.succeeded} / 錯誤 {rc.errored} / 進行中 {rc.processing}")
+        if time.time() >= deadline:
+            log(f"等待逾時（{wait_min} 分）；下次再跑同指令會接著收"); return [], False
+        time.sleep(60)
+    log(f"批次 {bid} 完成：成功 {rc.succeeded} / 錯誤 {rc.errored} / 過期 {rc.expired} / 取消 {rc.canceled}")
+    done, n_fail = [], 0
+    for r in client.messages.batches.results(bid):
+        vid = r.custom_id
+        meta = index.get(vid)
+        if not meta:
+            log(f"  {vid}：index 無此影片，略過"); continue
+        try:
+            if r.result.type != "succeeded":
+                err = getattr(getattr(r.result, "error", None), "type", r.result.type)
+                raise RuntimeError(f"batch {r.result.type}: {err}")
+            res = message_to_result(r.result.message)
+            finalize(vid, meta, res)
+            done.append((meta, res))
+        except Exception as e:
+            n_fail += 1
+            log(f"  ✗ {vid} 失敗：{str(e)[:200]}")
+            meta["analyze_error"] = str(e)[:300]; meta.pop("batch_id", None)
+        save_json(INDEX, index)
+    if BATCH_STATE.exists():
+        BATCH_STATE.unlink()
+    log(f"批次收單：成功 {len(done)} / 失敗 {n_fail}（失敗的下次 --batch 會重送）")
+    return done, True
+
+
+def run_batch(targets, index, dry, wait_min):
+    state = load_json(BATCH_STATE, None)
+    done = []
+    if state and state.get("batch_id"):
+        log(f"發現未收的批次 {state['batch_id']}（{len(state.get('videos', []))} 支，{state.get('created_at')}）")
+        if dry:
+            log("--dry：不收單"); return []
+        d, finished = batch_collect(state, index, wait_min)
+        done += d
+        if not finished:
+            return done
+        # 剛收完的批次裡失敗的，這一輪不立刻重送（避免同一錯誤連環送），下次執行再排
+        just = set(state.get("videos") or [])
+        targets = [t for t in targets if not index.get(t, {}).get("analyzed_at") and t not in just]
+    if not targets:
+        log("沒有待送批次的逐字稿"); return done
+    state = batch_submit(targets, index, dry)
+    if state and wait_min > 0:
+        d, _ = batch_collect(state, index, wait_min)
+        done += d
+    return done
+
+
+# ────────────────────────────────────────────────────────────────────────────
+def notify(done):
+    if not done: return
+    try:
+        import notify_line
+        parts = []
+        for meta, res in done[:6]:
+            parts.append(f"📺 {cell(meta.get('channel'))[:10]}｜{cell(meta.get('title'))[:30]}\n{cell(res.get('line_summary'))}\n（#{meta['claims_range'][0]}~#{meta['claims_range'][1]} 已入 analyst_claims）")
+        if len(done) > 6: parts.append(f"…另有 {len(done) - 6} 支，見 analyst_claims.md")
+        notify_line.push("\n\n".join(parts))
+    except Exception as e:
+        log(f"LINE 失敗：{e}")
+
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description="逐字稿 → 論點入庫 + 操作檢討")
-    ap.add_argument("videos", nargs="*", help="影片 ID（省略則配 --new）")
-    ap.add_argument("--new", action="store_true", help="分析所有抓到但未分析的逐字稿")
+    ap.add_argument("videos", nargs="*", help="影片 ID（省略則配 --new / --batch）")
+    ap.add_argument("--new", action="store_true", help="分析所有抓到但未分析的逐字稿（即時串流）")
+    ap.add_argument("--batch", action="store_true", help="用 Batch API 分析所有未分析的逐字稿（五折，回補用）")
+    ap.add_argument("--batch-wait", type=int, default=60, help="批次送出後最多等幾分鐘收結果（0=送出即離開）")
     ap.add_argument("--force", action="store_true", help="已分析的也重分析（會再追加一節，請自行清理）")
-    ap.add_argument("--max", type=int, default=5, help="單次最多分析幾支")
+    ap.add_argument("--max", type=int, default=5, help="即時模式單次最多分析幾支（批次模式預設 300）")
     ap.add_argument("--notify", action="store_true", help="推 LINE 摘要")
     ap.add_argument("--dry", action="store_true", help="只列出會分析哪些，不呼叫模型")
     a = ap.parse_args(argv)
 
     index = load_json(INDEX, {})
-    targets = list(a.videos)
-    if a.new:
-        targets += [k for k, v in index.items() if v.get("status") == "ok" and (a.force or not v.get("analyzed_at"))]
-    targets = list(dict.fromkeys(targets))[:a.max]
-    if not targets:
+    limit = a.max if not a.batch or a.max != 5 else 300
+    targets = pick_targets(index, a.videos, a.new or a.batch, a.force, limit)
+    pending_batch = a.batch and BATCH_STATE.exists()
+    if not targets and not pending_batch:
         log("沒有待分析的逐字稿"); return 0
     if not os.environ.get("ANTHROPIC_API_KEY") and not a.dry:
         log("未設定 ANTHROPIC_API_KEY：本機 set ANTHROPIC_API_KEY=...；GitHub 在 Secrets 加 ANTHROPIC_API_KEY。這次略過分析。")
         return 0
-
-    summaries, n_ok = [], 0
-    for vid in targets:
-        try:
-            res = analyze_one(vid, index, a.force, a.dry)
-        except Exception as e:
-            log(f"  ✗ {vid} 失敗：{str(e)[:300]}")
-            index.setdefault(vid, {})["analyze_error"] = str(e)[:300]
-            res = None
-        save_json(INDEX, index)
-        if res:
-            n_ok += 1
-            summaries.append((index[vid], res))
-    if a.notify and summaries:
-        try:
-            import notify_line
-            parts = []
-            for meta, res in summaries:
-                parts.append(f"📺 {cell(meta.get('channel'))[:10]}｜{cell(meta.get('title'))[:30]}\n{cell(res.get('line_summary'))}\n（#{meta['claims_range'][0]}~#{meta['claims_range'][1]} 已入 analyst_claims）")
-            notify_line.push("\n\n".join(parts))
-        except Exception as e:
-            log(f"LINE 失敗：{e}")
-    log(f"完成：分析 {n_ok}/{len(targets)}")
+    log(f"模型 {MODEL}｜{'批次' if a.batch else '即時'}模式｜待分析 {len(targets)} 支")
+    done = run_batch(targets, index, a.dry, a.batch_wait) if a.batch else run_stream(targets, index, a.dry)
+    if a.notify:
+        notify(done)
+    log(f"完成：分析 {len(done)} 支")
     return 0
 
 if __name__ == "__main__":

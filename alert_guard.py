@@ -31,7 +31,12 @@ def load_alert_lists(max_age_hours=20):
             return c
     except Exception:
         pass
-    out = {"ts": time.time(), "notice": {}, "punish": {}}
+    old_hist = {}
+    try:
+        old_hist = (json.load(io.open(CACHE, encoding="utf-8")) or {}).get("history", {})
+    except Exception:
+        pass
+    out = {"ts": time.time(), "notice": {}, "punish": {}, "history": old_hist}
     try:
         j = json.loads(urllib.request.urlopen(urllib.request.Request(
             "https://www.twse.com.tw/rwd/zh/announcement/notice?response=json", headers=UA), timeout=20).read())
@@ -54,15 +59,21 @@ def load_alert_lists(max_age_hours=20):
             span = str(row[it]).strip()
             # 只留仍在處置期內的（起迄格式 115/09/05～115/09/18）
             try:
-                end_s = span.split("～")[-1].split("~")[-1].strip()
-                y, m, d2 = end_s.split("/")
-                end_d = dt.date(int(y) + 1911, int(m), int(d2))
+                parts = span.replace("~", "～").split("～")
+                def _roc(x):
+                    y, m, d2 = x.strip().split("/")
+                    return dt.date(int(y) + 1911, int(m), int(d2))
+                st_d, end_d = _roc(parts[0]), _roc(parts[-1])
                 if end_d >= dt.date.today():
-                    out["punish"][code] = span
+                    out["punish"][code] = {"start": st_d.isoformat(), "end": end_d.isoformat(), "span": span}
             except Exception:
-                out["punish"][code] = span
+                out["punish"][code] = {"span": span}
     except Exception:
         pass
+    # 累積每日注意名單（連續天數用），保留 30 天
+    today_s = dt.date.today().isoformat()
+    out["history"][today_s] = sorted(out["notice"].keys())
+    out["history"] = {k: v for k, v in sorted(out["history"].items())[-30:]}
     try:
         json.dump(out, io.open(CACHE, "w", encoding="utf-8"), ensure_ascii=False)
     except Exception:
@@ -80,12 +91,39 @@ def cum_returns(closes):
     return out
 
 
+def _workdays(a, b):
+    """a~b 平日數（近似營業日；含首尾）"""
+    n, d = 0, a
+    while d <= b:
+        if d.weekday() < 5: n += 1
+        d += dt.timedelta(days=1)
+    return n
+
+
+def _consec_notice_days(code, history):
+    """從累積 history 算連續列注意天數（含今日）"""
+    n = 0
+    for day in sorted(history.keys(), reverse=True):
+        if code in (history.get(day) or []): n += 1
+        else: break
+    return n
+
+
 def classify(code, closes, lists=None):
     """回傳 alert dict 或 None。
     level: PUNISH(處置中) / NOTICE(已列注意) / NEAR(距注意線<6pp) """
     lists = lists or {}
-    if code in (lists.get("punish") or {}):
-        return {"level": "PUNISH", "msg": f"🚫處置中({lists['punish'][code]})分盤交易,流動性差,勿新倉"}
+    pu = (lists.get("punish") or {}).get(code)
+    if pu:
+        if isinstance(pu, dict) and pu.get("start"):
+            st = dt.date.fromisoformat(pu["start"]); en = dt.date.fromisoformat(pu["end"])
+            today = dt.date.today()
+            day_n = _workdays(st, min(today, en)); total = _workdays(st, en)
+            left = _workdays(min(today + dt.timedelta(days=1), en), en) if today < en else 0
+            return {"level": "PUNISH",
+                    "msg": f"🚫處置第{day_n}/{total}天(至{en.strftime('%m/%d')}出關,剩{left}天)分盤,勿新倉"}
+        span = pu.get("span") if isinstance(pu, dict) else pu
+        return {"level": "PUNISH", "msg": f"🚫處置中({span})分盤交易,勿新倉"}
     cums = cum_returns(list(closes))
     hits, nears = [], []
     for win, th in THRESH:
@@ -95,8 +133,10 @@ def classify(code, closes, lists=None):
         elif v > th - NEAR_PP: nears.append(f"{win}日+{v:.0f}%(再{th - v:.1f}pp觸注意)")
     n_notice = (lists.get("notice") or {}).get(code, 0)
     if n_notice:
-        tail = "，再1次注意→處置" if n_notice >= 2 else ""
-        return {"level": "NOTICE", "msg": f"⚠️已列注意(累計{n_notice}次{tail})" + ("；" + hits[0] if hits else "")}
+        consec = _consec_notice_days(code, lists.get("history") or {})
+        cs = f"連{consec}日," if consec >= 2 else ""
+        tail = "，再1次→處置!" if n_notice >= 2 else "(10日內滿3次→處置)"
+        return {"level": "NOTICE", "msg": f"⚠️注意股第{max(n_notice,1)}次({cs}10日內){tail}" + ("；" + hits[0] if hits else "")}
     if hits:
         return {"level": "NOTICE_EST", "msg": "⚠️達注意標準(" + hits[0] + ")今晚恐公告"}
     if nears:

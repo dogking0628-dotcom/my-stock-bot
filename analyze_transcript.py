@@ -109,6 +109,18 @@ SYSTEM_PROMPT = """你是一個台股量化投資系統的「論點驗證庫」�
 「操作修正與建議」只能是：補證據帳本、掛對帳、排回測、thesis 覆核、併 playbook、參數檢討（一律 requires_backtest=true）。不得出現「買進/賣出/加碼/減碼」字眼作為建議。
 自動字幕/轉錄的數字可能有誤，涉及具體數字的主張要在 note 標「數字待核」。
 
+時間基準：預測一律以「影片上傳日」為起點（不是今天）。「明天」= 上傳日後第一個交易日，「本週」= 上傳日所在週的週五，「短線」預設 10 個交易日，「中期」預設 60 個交易日。影片若是過去的，到期日可能已經過了，照樣掛，評分程式會用歷史股價自動對帳。
+
+due_check 的論點必須附機器可讀的 check（評分程式直接用）：
+ {"ticker": "4 碼代號；加權指數用 TAIEX、櫃買用 TPEX", "metric": "close|high|low|pct_change|limit_up|new_high_250|new_low_250",
+  "op": ">|>=|<|<=", "value": number 或 null（limit_up/new_high 不需要）, "window": "on_due|any_day|all_days",
+  "base_date": "YYYY-MM-DD（pct_change 的基準收盤日，通常=影片上傳日）"}
+ 例：「國巨本週一根漲停」→ metric limit_up, window any_day, due_date 該週五。
+ 例：「台積電 9/30 前過 2510」→ metric close, op >, value 2510, window any_day。
+ 例：「明天噴」→ metric pct_change, op >=, value 5, window on_due, due_date 下一交易日。
+ 無法寫成 check 的預測改 route=unverifiable。
+backtest 的論點必須附 rule：{"entry": str, "exit": str, "universe": str, "params": {..}, "similar_to": "已有回測/論點編號或 null"}。
+
 只輸出一個 JSON 物件（不要 markdown code fence、不要前後說明），schema：
 {
  "video": {"program": str, "speakers": [str], "style": str, "one_line": str},
@@ -116,6 +128,7 @@ SYSTEM_PROMPT = """你是一個台股量化投資系統的「論點驗證庫」�
    {"speaker": str, "camp": str, "claim": str, "tickers": [str], "kind": "prediction|rule|fundamental|macro|mindset|placement|other",
     "route": "backtest|due_check|evidence|info_layer|playbook|reject|unverifiable",
     "verification": str, "due_date": "YYYY-MM-DD 或 null", "criteria": str,
+    "check": {…} 或 null, "rule": {…} 或 null,
     "system_check": str, "verdict": str, "note": str, "timestamp": "mm:ss 或 null"}
  ],
  "holdings_impact": [{"ticker": str, "name": str, "said": str, "thesis_effect": "支持|無關|挑戰", "action": str}],
@@ -130,12 +143,15 @@ verdict 用系統慣用標記：⏳ 待對帳 / 🧪 排入回測 / 📥 證據�
 line_summary ≤ 300 字，繁體中文，先講對持倉/系統最重要的一件事。"""
 
 
-def call_model(transcript_md, snap):
+def call_model(transcript_md, snap, meta=None):
     import anthropic
     client = anthropic.Anthropic()
+    up = (meta or {}).get("upload_date") or ""
+    up_iso = f"{up[:4]}-{up[4:6]}-{up[6:]}" if len(up) == 8 else "未知"
     user = (
         "【系統目前狀態（唯讀快照）】\n" + json.dumps(snap, ensure_ascii=False, indent=1)
         + "\n\n【今天】" + dt.date.today().isoformat()
+        + f"\n【影片上傳日（預測的時間基準）】{up_iso}　頻道：{(meta or {}).get('channel', '')}"
         + "\n\n【逐字稿】\n" + transcript_md
     )
     with client.beta.messages.stream(
@@ -246,6 +262,26 @@ def write_report(res, meta, vid, first, last):
     out.write_text("\n".join(L), encoding="utf-8")
     return out.name
 
+CLAIMS_JSONL = DATA / "claims.jsonl"
+
+def append_claims_jsonl(res, meta, vid, first):
+    """機器可讀的論點庫：score_claims.py 用它算命中率、彙整回測候選。一行一條。"""
+    up = meta.get("upload_date") or ""
+    up_iso = f"{up[:4]}-{up[4:6]}-{up[6:]}" if len(up) == 8 else None
+    v = res.get("video") or {}
+    with CLAIMS_JSONL.open("a", encoding="utf-8") as f:
+        for i, c in enumerate(res.get("claims") or [], start=first):
+            row = {"no": i, "video_id": vid, "video_date": up_iso, "channel": meta.get("channel"),
+                   "program": v.get("program"), "title": meta.get("title"),
+                   "speaker": c.get("speaker"), "camp": c.get("camp"), "kind": c.get("kind"), "route": c.get("route"),
+                   "claim": c.get("claim"), "tickers": c.get("tickers") or [], "due_date": c.get("due_date"),
+                   "criteria": c.get("criteria"), "check": c.get("check"), "rule": c.get("rule"),
+                   "verdict": c.get("verdict"), "note": c.get("note"), "timestamp": c.get("timestamp"),
+                   "status": "pending" if c.get("route") == "due_check" else "n/a",
+                   "created_at": dt.datetime.now().isoformat(timespec="minutes")}
+            f.write(json.dumps(row, ensure_ascii=False) + "\n")
+
+
 def append_evidence_candidates(res, meta, vid):
     cands = res.get("evidence_candidates") or []
     if not cands: return 0
@@ -278,10 +314,11 @@ def analyze_one(vid, index, force=False, dry=False):
     snap = system_snapshot()
     if dry:
         log("  --dry：不呼叫模型"); return None
-    res = call_model(text, snap)
+    res = call_model(text, snap, meta)
     first, last = append_claims(res, meta, vid)
     rpt = write_report(res, meta, vid, first, last)
     n_ev = append_evidence_candidates(res, meta, vid)
+    append_claims_jsonl(res, meta, vid, first)
     meta.update({"analyzed_at": dt.datetime.now().isoformat(timespec="minutes"), "analysis": rpt,
                  "claims_range": [first, last], "evidence_candidates": n_ev})
     log(f"  ✓ 論點 #{first}~#{last}、證據候選 {n_ev}、報告 {rpt}")

@@ -74,13 +74,21 @@ jobs:
           LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
         run: python analyze_transcript.py --new --notify || echo "analyze failed (non-fatal)"
 
+      # 到期論點自動對帳（FinMind 日K）+ 講者命中率記分板；不依賴 YouTube，每天都能跑
+      - name: Score claims（到期對帳 + 記分板）
+        env:
+          FINMIND_TOKEN: ${{ secrets.FINMIND_TOKEN }}
+          LINE_TOKEN:    ${{ secrets.LINE_TOKEN }}
+          LINE_USER_ID:  ${{ secrets.LINE_USER_ID }}
+        run: python score_claims.py --notify || echo "score failed (non-fatal)"
+
       - name: Commit transcripts
         run: |
           rm -f cookies.txt
           git config user.name  "github-actions"
           git config user.email "github-actions@github.com"
-          git add data/transcripts data/video_queue.txt
-          for f in analyst_claims.md data/evidence_candidates.csv; do [ -f "$f" ] && git add "$f" || true; done
+          git add data/transcripts data/video_queue.txt data/video_sources.json
+          for f in analyst_claims.md analyst_scorecard.md data/evidence_candidates.csv data/claims.jsonl data/checkpoints/price_cache.json; do [ -f "$f" ] && git add "$f" || true; done
           git diff --staged --quiet || git commit -m "chore: transcripts $(date -u +%Y-%m-%d)"
           git pull --rebase --autostash || true
           git push

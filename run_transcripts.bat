@@ -12,11 +12,20 @@ chcp 65001 >nul
 git pull --rebase --autostash
 if errorlevel 1 echo [WARN] git pull 失敗，繼續用本地版本
 
-python -X utf8 fetch_transcript.py --watch --queue --notify
-python -X utf8 analyze_transcript.py --new --notify
+:: 回補歷史（例：8 月）：run_transcripts.bat backfill 20260801 20260831
+if "%1"=="backfill" (
+  python -X utf8 fetch_transcript.py --watch --scan 120 --since %2 --until %3 --sleep 3
+  python -X utf8 analyze_transcript.py --new --max 200
+) else (
+  python -X utf8 fetch_transcript.py --watch --queue --notify
+  python -X utf8 analyze_transcript.py --new --notify
+)
+python -X utf8 score_claims.py --notify
 
-git add data\transcripts data\video_queue.txt analyst_claims.md
+git add data\transcripts data\video_queue.txt data\video_sources.json analyst_claims.md
 if exist data\evidence_candidates.csv git add data\evidence_candidates.csv
+if exist data\claims.jsonl git add data\claims.jsonl
+if exist analyst_scorecard.md git add analyst_scorecard.md
 git diff --staged --quiet || git commit -m "chore: transcripts %date:~0,10%"
 git push
 endlocal

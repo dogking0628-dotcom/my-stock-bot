@@ -303,10 +303,13 @@ def write_transcript(info, paragraphs, lang, source):
     return fname, upload_iso, title, channel
 
 
-def process_video(video_id, index, langs, use_whisper=False, cookies=None, force=False):
-    """回傳 (status, entry)。status ∈ ok / skip / no_subs / error"""
-    if not force and index.get(video_id, {}).get("status") == "ok":
-        return "skip", index[video_id]
+def process_video(video_id, index, langs, use_whisper=False, cookies=None, force=False, since=None, until=None):
+    """回傳 (status, entry)。status ∈ ok / skip / no_subs / error / out_of_range"""
+    prev = index.get(video_id, {})
+    if not force and prev.get("status") == "ok":
+        return "skip", prev
+    if not force and prev.get("status") == "out_of_range" and prev.get("range") == f"{since}-{until}":
+        return "skip", prev
     log(f"▶ {video_id}")
     try:
         info = fetch_info(video_id, cookies)
@@ -314,13 +317,19 @@ def process_video(video_id, index, langs, use_whisper=False, cookies=None, force
         msg = str(e).splitlines()[0][:200]
         log(f"  ✗ 讀取資訊失敗：{msg}")
         entry = {"status": "error", "error": msg, "fetched_at": dt.datetime.now().isoformat(timespec="minutes")}
-        index[video_id] = {**index.get(video_id, {}), **entry}
+        index[video_id] = {**prev, **entry}
         return "error", entry
     if info.get("_type") == "playlist":
         log("  這是播放清單/頻道，不是單支影片，略過（請放進 video_sources.json）")
         return "error", {}
 
     title = (info.get("title") or "")[:60]
+    up = info.get("upload_date") or ""
+    if (since and up and up < since) or (until and up and up > until):
+        log(f"  {title}｜上傳 {up} 不在 {since}~{until}，略過")
+        entry = {"status": "out_of_range", "title": info.get("title"), "upload_date": up, "range": f"{since}-{until}"}
+        index[video_id] = {**prev, **entry}
+        return "out_of_range", entry
     log(f"  {title}")
     cues, lang, source = None, None, None
 
@@ -438,12 +447,15 @@ def list_source_videos(src, cookies=None):
     return ids[:n]
 
 
-def watch_sources(cookies=None):
+def watch_sources(cookies=None, scan=None):
+    """scan=N 時每個頻道列最新 N 支（回補用），否則用各來源的 max_latest。"""
     cfg = load_json(SOURCES, {})
     out, changed = [], False
     for src in cfg.get("sources", []):
         if not src.get("enabled", True):
             continue
+        if scan:
+            src = {**src, "max_latest": scan}
         label = src.get("name") or src.get("url") or src.get("search") or "?"
         # 沒 url 只有 search（或 url 還是佔位符）→ 用搜尋解析頻道並回寫，之後就不用再搜
         if (not src.get("url") or "請填入" in src.get("url", "")) and src.get("search"):
@@ -502,7 +514,12 @@ def main(argv=None):
     ap.add_argument("--max-new", type=int, default=20, help="單次最多處理幾支新影片")
     ap.add_argument("--sleep", type=float, default=2.0, help="每支影片間隔秒數（避免被限流）")
     ap.add_argument("--notify", action="store_true", help="有新逐字稿時推 LINE（沿用 notify_line）")
+    ap.add_argument("--since", default=None, help="只收上傳日 ≥ YYYYMMDD（回補用，配 --watch --scan）")
+    ap.add_argument("--until", default=None, help="只收上傳日 ≤ YYYYMMDD")
+    ap.add_argument("--scan", type=int, default=None, help="--watch 時每個頻道往回列幾支（回補 8 月建議 80~120）")
     args = ap.parse_args(argv)
+    if args.since or args.until:
+        args.max_new = max(args.max_new, 500)   # 回補模式：上限放寬，範圍外的不算
 
     langs = [x.strip() for x in args.langs.split(",") if x.strip()]
     targets = []
@@ -515,7 +532,7 @@ def main(argv=None):
     queue_ids = read_queue() if args.queue else []
     targets += queue_ids
     if args.watch:
-        targets += watch_sources(args.cookies)
+        targets += watch_sources(args.cookies, args.scan)
     if not targets:
         ap.print_help()
         log("沒有任何目標。給網址、或加 --queue / --watch。")
@@ -527,9 +544,9 @@ def main(argv=None):
     log(f"目標 {len(targets)} 支 / 已有 {len(targets) - len(todo)} / 待抓 {len(todo)}（上限 {args.max_new}）")
     todo = todo[:args.max_new]
 
-    new_entries, done_ids, n_err = [], set(), 0
+    new_entries, done_ids, n_err, n_skip = [], set(), 0, 0
     for i, vid in enumerate(todo):
-        status, entry = process_video(vid, index, langs, args.whisper, args.cookies, args.force)
+        status, entry = process_video(vid, index, langs, args.whisper, args.cookies, args.force, args.since, args.until)
         save_json(INDEX, index)  # 逐支落地，中途失敗不丟進度
         if status == "ok":
             new_entries.append(entry)
@@ -537,6 +554,8 @@ def main(argv=None):
             done_ids.add(vid)
         elif status == "error":
             n_err += 1
+        elif status == "out_of_range":
+            n_skip += 1
         if i < len(todo) - 1 and args.sleep > 0:
             time.sleep(args.sleep)
 
@@ -544,7 +563,7 @@ def main(argv=None):
         rewrite_queue(done_ids & set(queue_ids))
     if args.notify:
         notify(new_entries)
-    log(f"完成：新增 {len(new_entries)} / 無字幕 {len(done_ids) - len(new_entries)} / 失敗 {n_err}")
+    log(f"完成：新增 {len(new_entries)} / 無字幕 {len(done_ids) - len(new_entries)} / 失敗 {n_err}" + (f" / 範圍外 {n_skip}" if n_skip else ""))
     return 0
 
 

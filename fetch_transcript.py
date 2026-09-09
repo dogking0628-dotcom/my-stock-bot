@@ -193,10 +193,35 @@ def pick_lang(available, priority):
     return None
 
 
+# 雲端 IP（GitHub Actions）常被要求登入驗證；換 player client 常可繞過，沒 cookies 也能抓字幕。
+# 第一組 None = yt-dlp 預設；之後依序輪流。可用 YT_PLAYER_CLIENTS="tv,mweb" 指定單一組。
+CLIENT_FALLBACKS = [None, "tv,web_embedded", "mweb", "android", "ios"]
+BOT_CHECK_RE = re.compile(r"Sign in to confirm|not a bot|HTTP Error 429|Precondition check failed", re.I)
+
+
 def fetch_info(video_id, cookies=None):
     import yt_dlp
-    with yt_dlp.YoutubeDL({**ydl_base_opts(cookies), "skip_download": True}) as ydl:
-        return ydl.extract_info(f"https://www.youtube.com/watch?v={video_id}", download=False)
+    url = f"https://www.youtube.com/watch?v={video_id}"
+    forced = os.environ.get("YT_PLAYER_CLIENTS", "").strip()
+    plans = [forced] if forced else CLIENT_FALLBACKS
+    last = None
+    for clients in plans:
+        opts = {**ydl_base_opts(cookies), "skip_download": True}
+        if clients:
+            opts["extractor_args"] = {"youtube": {"player_client": clients.split(",")}}
+        try:
+            with yt_dlp.YoutubeDL(opts) as ydl:
+                info = ydl.extract_info(url, download=False)
+            if info and clients:
+                log(f"  player_client={clients} 成功")
+            return info
+        except Exception as e:
+            last = e
+            msg = str(e).splitlines()[0]
+            if not BOT_CHECK_RE.search(msg):
+                raise                       # 不是驗證/限流問題，換客戶端也沒用
+            log(f"  {'預設客戶端' if not clients else 'player_client=' + clients} 被擋：{msg[:90]}…換下一組")
+    raise last
 
 
 def download_subtitle(info, lang, automatic, cookies=None):

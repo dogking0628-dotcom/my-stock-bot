@@ -537,6 +537,26 @@ def main():
 
     # 🚨 V4 大盤體制濾網：0050 < MA200（Stage 4 熊市）禁止進場
     v44_paused = bool(in_stage2 and regime_info and regime_info.get("below_ma20"))
+    # ★V4.5（2026-09-11 上線）：訊號日已觸任一注意股漲幅標準 → 不追
+    # 5y +250.6%/PF3.97/MDD-15.4%、2y +166.1%/PF4.68/MDD-14.3%（兩窗全過紅線）
+    # 事件研究：衝過頭才給訊號的股票左尾深（永擎案 30日+110% 隔日-8.6%）
+    v45_filtered = []
+
+    def _v45_hit_notice(r):
+        try:
+            from alert_guard import cum_returns, THRESH
+            cums = cum_returns(r.get("_closes91") or [])
+            for win, th in THRESH:
+                v = cums.get(win)
+                if v is not None and v > th:
+                    if r["ticker"] not in [x["ticker"] for x in v45_filtered]:
+                        v45_filtered.append({"ticker": r["ticker"], "name": r.get("name", ""),
+                                             "why": f"{win}日+{v:.0f}%>{th:.0f}%"})
+                    return True
+        except Exception:
+            pass
+        return False
+
     if not in_stage2:
         print("  ⛔ V4: 0050 跌破 MA200 → 禁止進場（熊市段）", file=sys.stderr)
         tomorrow_top5 = []
@@ -550,6 +570,7 @@ def main():
         def _pass(r):
             if r["ticker"] in recent_losers: return False
             if r.get("momentum_score", 0) < score_threshold: return False
+            if _v45_hit_notice(r): return False   # ★V4.5 警示過濾
             return True
 
         # 從最強族群挑前 5 檔（V4 原版邏輯，不再多樣化）
@@ -575,7 +596,8 @@ def main():
                      if r.get("industry") in ALLOWED_INDUSTRIES
                      and r.get("mcap_pass")
                      and r["ticker"] not in recent_losers
-                     and r.get("momentum_score", 0) >= score_threshold]
+                     and r.get("momentum_score", 0) >= score_threshold
+                     and not _v45_hit_notice(r)]
         tomorrow_top5 = sorted(tech_pool,
                                key=lambda x: -x.get("momentum_score", 0))[:5]
 
@@ -667,6 +689,7 @@ def main():
         "market_regime": regime_info,  # 🆕 V4: 0050 體制資料
         "v4_blocked": (not in_stage2),  # 🆕 V4: 是否禁止進場
         "v44_paused": v44_paused,       # 🆕 V4.4: Stage2 但 0050<20MA → 暫停新倉
+        "v45_filtered": v45_filtered,   # 🆕 V4.5: 已觸警示漲幅標準被濾除的訊號股
     }
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)

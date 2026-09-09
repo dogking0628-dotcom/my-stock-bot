@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Daily V4.4 Picker — 每日 LINE 推播（V4.4 = V4.3 + 0050<20MA 暫停新倉減速器，與 V2 並行）
+Daily V4.5 Picker — 每日 LINE 推播（V4.5 = V4.4 + 警示股不追，與 V2 並行）
 ═════════════════════════════════════════════════
 V4.3 邏輯（在 industry_ath_yf.py 算好，這裡只讀 tomorrow_top5 推播）：
   ① 創 2y 月線 ATH  ② 多頭排列  ③ 科技 7 族群  ④ 市值 ≥ 100 億
   ⑤ 動能評分 ≥ 80   ⑥ 美股族群加分  ⑦ 0050 > MA200 才進場
-  ⑧ 最強族群挑 5    ⑨ 7 日內虧損股黑名單  ⑩ 0050<自身20MA → 暫停新倉(V4.4)
+  ⑧ 最強族群挑 5    ⑨ 7 日黑名單  ⑩ 0050<20MA暫停新倉(V4.4)  ⑪ 已觸警示漲幅標準不追(V4.5)
 出場：跌破 20MA 或 進場價-7%（先到先出）/ 從峰值 -30%
 
 每日 cron（接在 industry_ath_yf.py 之後，與 daily_v2_picker.py 並行）
@@ -94,7 +94,7 @@ def tangle_block(report_extra):
 
 def build_message(picks, strongest, regime, blocked, date, inst=None, data_note=None, report_extra=None, paused=False):
     inst = inst or {}
-    lines = [f"🎯 V4.4 開盤掛單 {date[5:]}"]
+    lines = [f"🎯 V4.5 開盤掛單 {date[5:]}"]
     if data_note:
         lines.append(data_note)
     lines.append("")
@@ -107,7 +107,7 @@ def build_message(picks, strongest, regime, blocked, date, inst=None, data_note=
 
     if blocked:
         lines.append("")
-        lines.append("⛔ 0050 跌破 MA200 → V4.4 今日空手")
+        lines.append("⛔ 0050 跌破 MA200 → V4.5 今日空手")
         lines.append("（熊市段，嚴禁追價）")
         return "\n".join(lines)
 
@@ -126,7 +126,7 @@ def build_message(picks, strongest, regime, blocked, date, inst=None, data_note=
     lines.append("")
 
     if not picks:
-        lines.append("📭 今日無 V4.4 訊號（動能<80 或黑名單）→ 空手")
+        lines.append("📭 今日無 V4.5 訊號（動能<80/黑名單/警示濾除）→ 空手")
         tb = tangle_block(report_extra)
         if tb:
             lines.append("")
@@ -171,6 +171,11 @@ def build_message(picks, strongest, regime, blocked, date, inst=None, data_note=
         lines.append("")
 
     lines.extend(tangle_block(report_extra))
+
+    vf = (report_extra or {}).get("v45_filtered") or []
+    if vf:
+        lines.append("🚷 V4.5 警示濾除: " + "、".join(f"{x['ticker']}{x['name']}({x['why']})" for x in vf[:4]))
+        lines.append("")
 
     chg_lines = etf_changes_block(inst)
     if chg_lines:
@@ -227,13 +232,13 @@ def main():
     blocked = report.get("v4_blocked", False)
     paused = report.get("v44_paused", False)
 
-    print(f"[V4.4] 載入 ath_industry_report ({date})")
+    print(f"[V4.5] 載入 ath_industry_report ({date})")
     print(f"       tomorrow_top5: {len(picks)} 檔 / 最強族群: {strongest}")
     print(f"       0050 體制: {'空手' if blocked else '可進場'}")
 
     signal = {
         "timestamp": date,
-        "strategy": "V4.4 (V4.3 + 0050<20MA暫停新倉; 5y回測 +247%/CAGR 27.7%/PF 3.51/MDD -19.8%)",
+        "strategy": "V4.5 (V4.4 + 警示股不追; 5y +250.6%/PF 3.97/MDD -15.4%, 2y +166.1%/PF 4.68/MDD -14.3%)",
         "strongest_industry": strongest,
         "v4_blocked": blocked,
         "picks": picks[:MAX_PUSH],

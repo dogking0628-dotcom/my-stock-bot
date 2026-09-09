@@ -48,6 +48,14 @@
       "max_latest": 2,
       "enabled": true,
       "note": "廖婉婷總經理；#16~#18 來源"
+    },
+    {
+      "name": "MVP財經生活頻道",
+      "url": "https://www.youtube.com/channel/UCqULpqYsoBDTc_QswJOwMdQ/videos",
+      "search": "MVP財經生活頻道",
+      "max_latest": 3,
+      "enabled": true,
+      "note": "handle @mvp5888；阿格力/阮慕驊/杜金龍/吳嘉隆等，每日更新，技術+基本面+籌碼；另有 Podcast 財經慕HOUSE"
     }
   ]
 }

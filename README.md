@@ -65,6 +65,8 @@ python fetch_transcript.py --watch                   # 掃 data/video_sources.js
 python fetch_transcript.py --whisper <網址>           # 無字幕才用 faster-whisper 轉錄（需另裝）
 ```
 - 輸出 `data/transcripts/<上傳日>_<影片ID>.md`，每段開頭有 `[mm:ss]` 時間戳；`index.json` 記錄已抓過的影片，重跑不會重抓。
+- **自動分析**：`python analyze_transcript.py --new`（需 `ANTHROPIC_API_KEY`）→ 論點追加到 `analyst_claims.md`、報告 `data/transcripts/<影片ID>.analysis.md`、證據候選 `data/evidence_candidates.csv`，有 `--notify` 會推 LINE 摘要。模型只做分流與對照，不給買賣建議。
+- **本機全自動**：`run_transcripts.bat` 一鍵抓＋分析＋push；`setup_transcript_scheduler.bat` 建每日 19:30 排程。家用網路不會被 YouTube 要求登入驗證，比雲端穩。
 - 排程 `transcripts.yml` 每天 UTC 11:00（台北 19:00）自動跑頻道＋佇列並 commit；也可在 Actions 頁手動 Run workflow 貼網址。
 - GitHub 雲端 IP 若被 YouTube 要求登入驗證，把瀏覽器匯出的 cookies.txt 做 base64 存成 Secret `YT_COOKIES_B64`。
 

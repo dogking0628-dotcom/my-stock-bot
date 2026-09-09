@@ -36,8 +36,8 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install yt-dlp
-        run: pip install -U yt-dlp
+      - name: Install yt-dlp + anthropic
+        run: pip install -U yt-dlp anthropic
 
       - name: Install faster-whisper（只在手動勾選 whisper 時）
         if: ${{ github.event.inputs.whisper == 'true' }}
@@ -66,12 +66,21 @@ jobs:
           python fetch_transcript.py --watch --queue --notify $EXTRA ${{ github.event.inputs.url }} \
             || echo "transcript fetch failed (non-fatal)"
 
+      # 逐字稿 → 論點入庫 analyst_claims.md + 操作檢討報告；沒設 ANTHROPIC_API_KEY 會自動略過
+      - name: Analyze transcripts（Claude：論點萃取 + 對照系統 + 操作檢討）
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          LINE_TOKEN:   ${{ secrets.LINE_TOKEN }}
+          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
+        run: python analyze_transcript.py --new --notify || echo "analyze failed (non-fatal)"
+
       - name: Commit transcripts
         run: |
           rm -f cookies.txt
           git config user.name  "github-actions"
           git config user.email "github-actions@github.com"
           git add data/transcripts data/video_queue.txt
+          for f in analyst_claims.md data/evidence_candidates.csv; do [ -f "$f" ] && git add "$f" || true; done
           git diff --staged --quiet || git commit -m "chore: transcripts $(date -u +%Y-%m-%d)"
           git pull --rebase --autostash || true
           git push

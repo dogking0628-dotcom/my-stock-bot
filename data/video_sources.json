@@ -1,17 +1,53 @@
 {
-  "_說明": "fetch_transcript.py --watch 會逐一讀取 sources，抓每個頻道/播放清單最新 max_latest 支影片的字幕。url 可放頻道影片頁（https://www.youtube.com/@頻道代號/videos）或播放清單。enabled=false 的不掃。頻道代號請在 YouTube 頻道頁網址列確認後填入。",
+  "_說明": "fetch_transcript.py --watch 逐一讀取 sources，抓每個頻道/播放清單最新 max_latest 支影片的字幕。url 放頻道影片頁（/channel/UC.../videos 或 /@handle/videos）或播放清單；只給 search（頻道名稱）時，執行時用 ytsearch 解析成頻道網址並回寫。enabled=false 的不掃。2026-09-09 由網頁搜尋填入，頻道 ID 以 UC 開頭者較穩定；若某頻道長期抓不到，改填 search 讓程式重新解析。",
   "sources": [
     {
-      "name": "理財達人秀",
-      "url": "https://www.youtube.com/@請填入頻道代號/videos",
-      "max_latest": 3,
-      "enabled": false
+      "name": "理財達人秀 EBCmoneyshow",
+      "url": "https://www.youtube.com/channel/UCQvsuaih5lE0n_Ne54nNezg/videos",
+      "search": "理財達人秀",
+      "max_latest": 6,
+      "enabled": true,
+      "note": "東森財經，每日一集切 part1~5，max_latest 6 約等於一天份"
     },
     {
-      "name": "先探投資最錢線",
-      "url": "https://www.youtube.com/@請填入頻道代號/videos",
+      "name": "先探i投資",
+      "url": "https://www.youtube.com/channel/UCIq8cvi04DdnGA2qkEIJccA/videos",
+      "search": "先探i投資",
+      "max_latest": 3,
+      "enabled": true,
+      "note": "先探投資週刊官方（handle 疑為 @weekly.invest）；老謝在先探/乙哥話投資/懂產業看先探"
+    },
+    {
+      "name": "郭哲榮分析師-摩爾證券投顧",
+      "url": "https://www.youtube.com/channel/UChfl3auNxAxOR3wy8a8ysQQ/videos",
+      "search": "郭哲榮分析師",
       "max_latest": 2,
-      "enabled": false
+      "enabled": true,
+      "note": "handle @s178；跌深攤平＋題材派，論點只進資訊層/回測佇列"
+    },
+    {
+      "name": "鈔錢部署（華視優選）",
+      "url": "https://www.youtube.com/@CTSFeatured/videos",
+      "search": "鈔錢部署 盧燕俐",
+      "max_latest": 2,
+      "enabled": true,
+      "note": "節目名為《鈔錢部署》盧燕俐主持，每週二、四 20:00；頻道是華視優選，可能夾雜非財經影片"
+    },
+    {
+      "name": "尼可拉斯楊Live精",
+      "url": "https://www.youtube.com/@nicolasyounglive/videos",
+      "search": "尼可拉斯楊Live精",
+      "max_latest": 2,
+      "enabled": true,
+      "note": "主頻道另有 @NicolasYoung（科技/金融/古文明混合）；Live精是精華頻道"
+    },
+    {
+      "name": "統一投顧",
+      "url": "https://www.youtube.com/channel/UCsaU-82xFFTd1dZk8P53pAw/videos",
+      "search": "統一投顧",
+      "max_latest": 2,
+      "enabled": true,
+      "note": "廖婉婷總經理；#16~#18 來源"
     }
   ]
 }

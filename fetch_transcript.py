@@ -399,6 +399,27 @@ def rewrite_queue(done_ids):
     QUEUE.write_text("\n".join(keep).rstrip("\n") + "\n", encoding="utf-8")
 
 
+def resolve_channel_by_search(query, cookies=None):
+    """用 ytsearch 找頻道：取前 10 筆影片，挑上傳者名稱含關鍵字者的頻道網址；找不到回 None。"""
+    import yt_dlp
+    opts = {**ydl_base_opts(cookies), "extract_flat": "in_playlist", "skip_download": True}
+    with yt_dlp.YoutubeDL(opts) as ydl:
+        info = ydl.extract_info(f"ytsearch10:{query}", download=False)
+    tokens = [t.lower() for t in query.split() if len(t) >= 2]   # 任一關鍵詞命中上傳者名稱即算
+    best = None
+    for e in (info or {}).get("entries") or []:
+        if not e:
+            continue
+        who = re.sub(r"\s+", "", (e.get("channel") or e.get("uploader") or "")).lower()
+        url = e.get("channel_url") or e.get("uploader_url") or (f"https://www.youtube.com/channel/{e['channel_id']}" if e.get("channel_id") else None)
+        if not url:
+            continue
+        if any(t in who for t in tokens):
+            return url.rstrip("/") + "/videos", e.get("channel") or e.get("uploader")
+        best = best or (url.rstrip("/") + "/videos", e.get("channel") or e.get("uploader"))
+    return best
+
+
 def list_source_videos(src, cookies=None):
     """頻道/播放清單 → 最新 N 支影片 ID（flat 模式，不逐支解析）。"""
     import yt_dlp
@@ -419,16 +440,38 @@ def list_source_videos(src, cookies=None):
 
 def watch_sources(cookies=None):
     cfg = load_json(SOURCES, {})
-    out = []
+    out, changed = [], False
     for src in cfg.get("sources", []):
-        if not src.get("enabled", True) or not src.get("url"):
+        if not src.get("enabled", True):
+            continue
+        label = src.get("name") or src.get("url") or src.get("search") or "?"
+        # 沒 url 只有 search（或 url 還是佔位符）→ 用搜尋解析頻道並回寫，之後就不用再搜
+        if (not src.get("url") or "請填入" in src.get("url", "")) and src.get("search"):
+            try:
+                hit = resolve_channel_by_search(src["search"], cookies)
+                if hit:
+                    src["url"], src["resolved_channel"] = hit[0], hit[1]
+                    changed = True
+                    log(f"頻道「{label}」由搜尋解析為 {hit[1]} → {hit[0]}")
+                else:
+                    log(f"頻道「{label}」搜尋不到，略過"); continue
+            except Exception as e:
+                log(f"頻道「{label}」搜尋失敗：{str(e).splitlines()[0][:150]}"); continue
+        if not src.get("url"):
             continue
         try:
             ids = list_source_videos(src, cookies)
-            log(f"頻道「{src.get('name', src['url'])}」最新 {len(ids)} 支：{' '.join(ids)}")
+            log(f"頻道「{label}」最新 {len(ids)} 支：{' '.join(ids)}")
             out.extend(ids)
         except Exception as e:
-            log(f"頻道「{src.get('name', src['url'])}」讀取失敗：{str(e).splitlines()[0][:150]}")
+            msg = str(e).splitlines()[0][:150]
+            log(f"頻道「{label}」讀取失敗：{msg}")
+            # 頻道網址壞掉（404/不存在）且有 search → 清掉 url，下次改用搜尋解析
+            if src.get("search") and re.search(r"404|not exist|does not exist|Unable to recognize|not found", msg, re.I):
+                src["url"] = ""; changed = True
+                log(f"  已清除失效網址，下次用 search「{src['search']}」重新解析")
+    if changed:
+        save_json(SOURCES, cfg)
     return out
 
 

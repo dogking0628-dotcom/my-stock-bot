@@ -1,0 +1,74 @@
+{
+ "close_rule_5y": {
+  "total_pct": 314.7,
+  "cagr": 32.9,
+  "trades": 138,
+  "win_rate": 44.2,
+  "expectancy": 13.62,
+  "pf": 5.35,
+  "mdd": -13.0,
+  "avg_win": 37.9,
+  "avg_loss": -5.6,
+  "intraday_exits": 0
+ },
+ "close_rule_2y": {
+  "total_pct": 199.7,
+  "cagr": 73.1,
+  "trades": 64,
+  "win_rate": 40.6,
+  "expectancy": 17.93,
+  "pf": 6.31,
+  "mdd": -10.5,
+  "avg_win": 52.4,
+  "avg_loss": -5.7,
+  "intraday_exits": 0
+ },
+ "intraday_7_5y": {
+  "total_pct": 231.0,
+  "cagr": 27.0,
+  "trades": 159,
+  "win_rate": 35.8,
+  "expectancy": 8.87,
+  "pf": 3.41,
+  "mdd": -21.9,
+  "avg_win": 35.0,
+  "avg_loss": -5.7,
+  "intraday_exits": 66
+ },
+ "intraday_7_2y": {
+  "total_pct": 125.9,
+  "cagr": 50.3,
+  "trades": 75,
+  "win_rate": 32.0,
+  "expectancy": 9.83,
+  "pf": 3.37,
+  "mdd": -14.6,
+  "avg_win": 43.7,
+  "avg_loss": -6.1,
+  "intraday_exits": 36
+ },
+ "intraday_ma_5y": {
+  "total_pct": 136.2,
+  "cagr": 18.8,
+  "trades": 173,
+  "win_rate": 38.2,
+  "expectancy": 5.25,
+  "pf": 2.6,
+  "mdd": -19.0,
+  "avg_win": 22.4,
+  "avg_loss": -5.3,
+  "intraday_exits": 173
+ },
+ "intraday_ma_2y": {
+  "total_pct": 55.0,
+  "cagr": 24.5,
+  "trades": 78,
+  "win_rate": 29.5,
+  "expectancy": 4.76,
+  "pf": 2.28,
+  "mdd": -15.0,
+  "avg_win": 28.7,
+  "avg_loss": -5.3,
+  "intraday_exits": 78
+ }
+}

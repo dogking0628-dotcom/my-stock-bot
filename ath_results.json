@@ -1,0 +1,151 @@
+{
+  "date": "2026-08-02",
+  "passed": [
+    {
+      "code": "2347",
+      "name": "聯強",
+      "price": 93.7,
+      "chg_pct": 8.83,
+      "score": {
+        "ok": true,
+        "reason": "通過",
+        "avg_vol": 8071462,
+        "price": 93.69999694824219,
+        "pe": 16.3
+      }
+    },
+    {
+      "code": "2618",
+      "name": "長榮航",
+      "price": 43.3,
+      "chg_pct": 3.71,
+      "score": {
+        "ok": true,
+        "reason": "通過",
+        "avg_vol": 52454107,
+        "price": 43.29999923706055,
+        "pe": 8.3
+      }
+    },
+    {
+      "code": "2884",
+      "name": "玉山金",
+      "price": 38.65,
+      "chg_pct": 2.52,
+      "score": {
+        "ok": true,
+        "reason": "通過",
+        "avg_vol": 45862190,
+        "price": 38.650001525878906,
+        "pe": 18.2
+      }
+    },
+    {
+      "code": "2886",
+      "name": "兆豐金",
+      "price": 53.1,
+      "chg_pct": 3.11,
+      "score": {
+        "ok": true,
+        "reason": "通過",
+        "avg_vol": 30571788,
+        "price": 53.099998474121094,
+        "pe": 22.5
+      }
+    },
+    {
+      "code": "2890",
+      "name": "永豐金",
+      "price": 40.6,
+      "chg_pct": 4.5,
+      "score": {
+        "ok": true,
+        "reason": "通過",
+        "avg_vol": 40498018,
+        "price": 40.599998474121094,
+        "pe": 21.0
+      }
+    },
+    {
+      "code": "2897",
+      "name": "王道銀行",
+      "price": 10.25,
+      "chg_pct": 0.0,
+      "score": {
+        "ok": true,
+        "reason": "通過",
+        "avg_vol": 5776783,
+        "price": 10.25,
+        "pe": 18.3
+      }
+    },
+    {
+      "code": "5876",
+      "name": "上海商銀",
+      "price": 45.45,
+      "chg_pct": 1.45,
+      "score": {
+        "ok": true,
+        "reason": "通過",
+        "avg_vol": 15680953,
+        "price": 45.45000076293945,
+        "pe": 15.0
+      }
+    },
+    {
+      "code": "5880",
+      "name": "合庫金",
+      "price": 27.6,
+      "chg_pct": 2.22,
+      "score": {
+        "ok": true,
+        "reason": "通過",
+        "avg_vol": 23473314,
+        "price": 27.600000381469727,
+        "pe": 20.3
+      }
+    },
+    {
+      "code": "6024",
+      "name": "群益期",
+      "price": 58.3,
+      "chg_pct": 3.55,
+      "score": {
+        "ok": true,
+        "reason": "通過",
+        "avg_vol": 622078,
+        "price": 58.29999923706055,
+        "pe": 11.4
+      }
+    },
+    {
+      "code": "9925",
+      "name": "新保",
+      "price": 40.3,
+      "chg_pct": -0.74,
+      "score": {
+        "ok": true,
+        "reason": "通過",
+        "avg_vol": 554369,
+        "price": 40.29999923706055,
+        "pe": 16.8
+      }
+    }
+  ],
+  "filtered": [
+    {
+      "code": "2832",
+      "name": "台產",
+      "price": 59.4,
+      "chg_pct": 3.48,
+      "filter_reason": "量21萬<50萬"
+    },
+    {
+      "code": "2850",
+      "name": "新產",
+      "price": 161.0,
+      "chg_pct": 2.55,
+      "filter_reason": "量39萬<50萬"
+    }
+  ]
+}

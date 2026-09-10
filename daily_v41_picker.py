@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Daily V4.5 Picker — 每日 LINE 推播（V4.5 = V4.4 + 警示股不追，與 V2 並行）
+Daily V4.6 Picker — 每日 LINE 推播（V4.6 = V4.5 + 收盤前買進，與 V2 並行）
 ═════════════════════════════════════════════════
-V4.3 邏輯（在 industry_ath_yf.py 算好，這裡只讀 tomorrow_top5 推播）：
+V4.6 邏輯（在 industry_ath_yf.py 算好，這裡只讀 tomorrow_top5 推播）：
   ① 創 2y 月線 ATH  ② 多頭排列  ③ 科技 7 族群  ④ 市值 ≥ 100 億
   ⑤ 動能評分 ≥ 80   ⑥ 美股族群加分  ⑦ 0050 > MA200 才進場
   ⑧ 最強族群挑 5    ⑨ 7 日黑名單  ⑩ 0050<20MA暫停新倉(V4.4)  ⑪ 已觸警示漲幅標準不追(V4.5)
-出場：跌破 20MA 或 進場價-7%（先到先出）/ 從峰值 -30%
+進場（V4.6，2026-09-10 用戶拍板）：**當日收盤前買**，非開盤。
+  13:25 掛限價＝當時價×1.005（尾盤競價以收盤價成交）或 14:00-14:30 盤後定價交易。
+  依據：正式月線定義回測 CLOSE 5y +313.5%/PF5.27/MDD-13.9% vs OPEN +288.0%/4.16/-19.6%。
+  廢除舊協議（08:50 掛收盤×1.008→09:05 改高點→09:10 撤單）：競價價高於低點時必不成交。
+出場：跌破 20MA 或 成交價-7%（先到先出）/ 從峰值 -30% → 隔日 08:30-09:00 掛單參與競價賣出
 
 每日 cron（接在 industry_ath_yf.py 之後，與 daily_v2_picker.py 並行）
 """
@@ -94,7 +98,7 @@ def tangle_block(report_extra):
 
 def build_message(picks, strongest, regime, blocked, date, inst=None, data_note=None, report_extra=None, paused=False):
     inst = inst or {}
-    lines = [f"🎯 V4.5 開盤掛單 {date[5:]}"]
+    lines = [f"🎯 V4.6 收盤前買進 {date[5:]}"]
     if data_note:
         lines.append(data_note)
     lines.append("")
@@ -107,7 +111,7 @@ def build_message(picks, strongest, regime, blocked, date, inst=None, data_note=
 
     if blocked:
         lines.append("")
-        lines.append("⛔ 0050 跌破 MA200 → V4.5 今日空手")
+        lines.append("⛔ 0050 跌破 MA200 → V4.6 今日空手")
         lines.append("（熊市段，嚴禁追價）")
         return "\n".join(lines)
 
@@ -126,7 +130,7 @@ def build_message(picks, strongest, regime, blocked, date, inst=None, data_note=
     lines.append("")
 
     if not picks:
-        lines.append("📭 今日無 V4.5 訊號（動能<80/黑名單/警示濾除）→ 空手")
+        lines.append("📭 今日無 V4.6 訊號（動能<80/黑名單/警示濾除）→ 空手")
         tb = tangle_block(report_extra)
         if tb:
             lines.append("")
@@ -135,31 +139,30 @@ def build_message(picks, strongest, regime, blocked, date, inst=None, data_note=
 
     n = min(len(picks), MAX_PUSH)
     per = ACTIVE_CAPITAL / max(n, 1)
-    lines.append(f"🎯 {n} 檔開盤掛單（每檔 {per/10000:.0f} 萬）：")
+    lines.append(f"🎯 {n} 檔今日收盤前買（每檔 {per/10000:.0f} 萬）：")
     lines.append("")
     for i, p in enumerate(picks[:n], 1):
-        price = p["today"]
-        limit_low = round(price * 1.008, 1)
-        limit_high = round(price * 1.02, 1)
+        price = p["today"]                          # 訊號日收盤（僅供估算張數）
         ma20 = p.get("ma20", price * 0.95)
-        floor = round(limit_low * 0.93, 1)          # V4.3 硬停損 -7%
+        floor = round(price * 0.93, 1)              # 以訊號價估的樓地板；成交後改用實際成交價重算
         stop_eff = max(ma20, floor)
         which = "20MA" if ma20 >= floor else "-7%樓地板"
-        shares = int(per / limit_low / 1000) * 1000
+        shares = int(per / price / 1000) * 1000
         odd_note = None
         if shares < 1000:                      # 1 張 > 每檔配置（千金股）→ 改零股，不硬買 1 張
-            shares = int(per / limit_low / 10) * 10
-            odd_note = f"（1張=${limit_low*1000/10000:.0f}萬 超配置 → 盤中零股 9:10 起每分鐘撮合）"
-        cost = shares * limit_low
+            shares = int(per / price / 10) * 10
+            odd_note = f"（1張=${price*1000/10000:.0f}萬 超配置 → 零股，13:40-14:30 盤後零股撮合）"
+        cost = shares * price
         notes = "、".join(p.get("momentum_notes", [])[:3])
         lines.append(f"{i}. {p['ticker']} {p['name']} ({p['industry']})")
         lines.append(f"   {p.get('tier','⭐')} {p.get('momentum_score',0)}分"
                      f" {p.get('next_day_prob','')}")
-        lines.append(f"   📍 限價 ${limit_low}-${limit_high}")
-        lines.append(f"   💰 {shares}股 ≈ ${cost:,.0f}")
+        lines.append(f"   📍 訊號價 ${price}（收盤前以當時市價買，不設區間）")
+        lines.append(f"   💰 約 {shares}股 ≈ ${cost:,.0f}（依成交價微調）")
         if odd_note:
             lines.append(f"   ⚠️ 零股{odd_note}")
         lines.append(f"   🛑 停損 ${stop_eff:.1f} ({which}; 20MA ${ma20:.1f} / -7% ${floor})")
+        lines.append(f"      ↑ 樓地板成交後以實際成交價×0.93 重算")
         lines.append(f"   📊 量{p.get('vol_ratio',0):.1f}x RSI{p.get('rsi',0):.0f}"
                      f" {notes}")
         itag = inst_tag(p["ticker"], inst)
@@ -174,7 +177,7 @@ def build_message(picks, strongest, regime, blocked, date, inst=None, data_note=
 
     vf = (report_extra or {}).get("v45_filtered") or []
     if vf:
-        lines.append("🚷 V4.5 警示濾除: " + "、".join(f"{x['ticker']}{x['name']}({x['why']})" for x in vf[:4]))
+        lines.append("🚷 V4.5警示濾除: " + "、".join(f"{x['ticker']}{x['name']}({x['why']})" for x in vf[:4]))
         lines.append("")
 
     chg_lines = etf_changes_block(inst)
@@ -209,11 +212,14 @@ def build_message(picks, strongest, regime, blocked, date, inst=None, data_note=
         pass
     lines.append("━━━━━━━━━━━━━━━━━━━━")
     lines.append("💡 操作(台北時間;越南-1hr):")
-    lines.append("  08:50-09:00 掛限價低點(越南07:50)")
-    lines.append("  09:05沒成交→改限價高點")
-    lines.append("  09:10仍無→撤單放棄,不追")
-    lines.append("  千金股→09:10起盤中零股同法")
-    lines.append("  出場: 收盤破20MA或進場-7% → 隔日開盤賣")
+    lines.append("  ⚠️ 開盤到午盤全部不動作")
+    lines.append("  13:25 掛限價=當時價x1.005 (越南12:25)")
+    lines.append("     →尾盤集合競價以收盤價成交")
+    lines.append("  或 14:00-14:30 盤後定價 (越南13:00-13:30)")
+    lines.append("  🚫 絕不開盤買、絕不下市價單")
+    lines.append("     (開盤前15分最高比開盤均高+2.4%)")
+    lines.append("  出場: 收盤破20MA或成交價-7%")
+    lines.append("     →隔日08:30-09:00掛單參與開盤競價賣")
     return "\n".join(lines)
 
 
@@ -232,13 +238,14 @@ def main():
     blocked = report.get("v4_blocked", False)
     paused = report.get("v44_paused", False)
 
-    print(f"[V4.5] 載入 ath_industry_report ({date})")
+    print(f"[V4.6] 載入 ath_industry_report ({date})")
     print(f"       tomorrow_top5: {len(picks)} 檔 / 最強族群: {strongest}")
     print(f"       0050 體制: {'空手' if blocked else '可進場'}")
 
     signal = {
         "timestamp": date,
-        "strategy": "V4.5 (V4.4 + 警示股不追; 5y +250.6%/PF 3.97/MDD -15.4%, 2y +166.1%/PF 4.68/MDD -14.3%)",
+        "strategy": "V4.6 (V4.5 + 收盤前買進; 正式月線定義回測 5y +313.5%/PF 5.27/MDD -13.9%, 2y +199.7%/PF 6.31/MDD -10.5%)",
+        "entry_timing": "收盤前買（13:25 限價=當時價×1.005 或 14:00-14:30 盤後定價）",
         "strongest_industry": strongest,
         "v4_blocked": blocked,
         "picks": picks[:MAX_PUSH],

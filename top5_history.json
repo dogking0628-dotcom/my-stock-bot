@@ -1,46 +1,6 @@
 {
   "records": [
     {
-      "date": "2026-07-21",
-      "industry": "通信網路",
-      "picks": [
-        {
-          "ticker": "8039",
-          "name": "台虹",
-          "industry": "電子零組件",
-          "rec_close": 212.0,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "漲停鎖死",
-            "ATH",
-            "族群同步",
-            "QQQ+1.9%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 80.09049773755656,
-          "change_pct_at_rec": 9.844559585492219,
-          "vol_ratio_at_rec": 0.7835573644886242
-        },
-        {
-          "ticker": "2395",
-          "name": "研華",
-          "industry": "電腦及週邊",
-          "rec_close": 567.0,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "族群同步",
-            "QQQ+1.9%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 71.50818698094386,
-          "change_pct_at_rec": 9.883720930232553,
-          "vol_ratio_at_rec": 1.4458947356162968
-        }
-      ]
-    },
-    {
       "date": "2026-07-22",
       "industry": "電腦及週邊",
       "picks": [
@@ -1632,6 +1592,28 @@
           "rsi": 61.431870669745955,
           "change_pct_at_rec": 9.915966386554631,
           "vol_ratio_at_rec": 0.5673592801285412
+        }
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "industry": "半導體",
+      "picks": [
+        {
+          "ticker": "7788",
+          "name": "松川精密",
+          "industry": "電子零組件",
+          "rec_close": 320.5,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 66.08478802992519,
+          "change_pct_at_rec": 9.948542024013719,
+          "vol_ratio_at_rec": 1.0857865398643853
         }
       ]
     }

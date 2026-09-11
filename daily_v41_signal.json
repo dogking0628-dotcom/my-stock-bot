@@ -1,42 +1,8 @@
 {
-  "timestamp": "2026-09-10",
-  "strategy": "V4.5 (V4.4 + 警示股不追; 5y +250.6%/PF 3.97/MDD -15.4%, 2y +166.1%/PF 4.68/MDD -14.3%)",
+  "timestamp": "2026-09-11",
+  "strategy": "V4.6 (V4.5 + 收盤前買進; 正式月線定義回測 5y +313.5%/PF 5.27/MDD -13.9%, 2y +199.7%/PF 6.31/MDD -10.5%)",
+  "entry_timing": "收盤前買（13:25 限價=當時價×1.005 或 14:00-14:30 盤後定價）",
   "strongest_industry": "半導體",
   "v4_blocked": false,
-  "picks": [
-    {
-      "today": 320.5,
-      "monthly_max_2y": 316.0,
-      "ratio": 1.014240506329114,
-      "from_high_pct": 1.4240506329114,
-      "bullish": true,
-      "bullish_fast": true,
-      "change_pct": 9.948542024013719,
-      "vol_ratio": 1.0857865398643853,
-      "rsi": 66.08478802992519,
-      "ma5": 315.7,
-      "ma20": 291.075,
-      "ma60": 255.42478205362957,
-      "ma200": 187.4230417251587,
-      "gap_up": false,
-      "close_near_high": true,
-      "long_red": true,
-      "tangle": null,
-      "ticker": "7788",
-      "name": "松川精密",
-      "industry": "電子零組件",
-      "industry_strong": true,
-      "market_cap_billions": 130.78342656,
-      "mcap_pass": true,
-      "sitc_net_shares": 0,
-      "momentum_score": 100,
-      "momentum_notes": [
-        "漲停鎖死",
-        "ATH",
-        "族群同步"
-      ],
-      "tier": "⭐⭐⭐",
-      "next_day_prob": "≥85%"
-    }
-  ]
+  "picks": []
 }

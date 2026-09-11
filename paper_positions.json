@@ -6,9 +6,9 @@
    "entry": 543.0,
    "entry_date": "2026-09-08",
    "shares": 270,
-   "peak": 545.0,
-   "last_close": 545.0,
-   "unreal_pct": 0.37
+   "peak": 547.0,
+   "last_close": 547.0,
+   "unreal_pct": 0.74
   },
   {
    "ticker": "2330",
@@ -17,8 +17,10 @@
    "entry_date": "2026-09-08",
    "shares": 60,
    "peak": 2470.0,
-   "last_close": 2450.0,
-   "unreal_pct": -0.61
+   "last_close": 2410.0,
+   "unreal_pct": -2.23,
+   "exit_pending": true,
+   "exit_reason": "跌破20MA"
   },
   {
    "ticker": "7788",
@@ -27,9 +29,11 @@
    "entry_date": "2026-09-10",
    "shares": 480,
    "peak": 308.0,
-   "last_close": 308.0,
-   "unreal_pct": 0.0
+   "last_close": 286.5,
+   "unreal_pct": -6.98,
+   "exit_pending": true,
+   "exit_reason": "跌破20MA"
   }
  ],
- "last_run": "2026-09-10"
+ "last_run": "2026-09-11"
 }

@@ -1,32 +1,8 @@
 {
-  "period": "2026-08-29 ~ 2026-09-05",
-  "total_picks": 1,
+  "period": "2026-09-05 ~ 2026-09-12",
+  "total_picks": 0,
   "wins": 0,
-  "avg_return": -8.17,
-  "picks": [
-    {
-      "ticker": "3605",
-      "actual_entry": 128.5,
-      "current": 118.0,
-      "ret_pct": -8.17,
-      "peak_pct": 4.28,
-      "low_pct": -11.67,
-      "status": "❌ 停損出場 (-10.9%)",
-      "triggered": [
-        "停損",
-        "09/03",
-        -10.89494163424124
-      ],
-      "days_held": 4,
-      "signal_date": "2026-08-31",
-      "name": "宏致",
-      "industry": "電子零組件",
-      "system_entry": 131.0
-    }
-  ],
-  "by_industry": {
-    "電子零組件": [
-      "3605"
-    ]
-  }
+  "avg_return": 0,
+  "picks": [],
+  "by_industry": {}
 }

@@ -15,9 +15,10 @@ if errorlevel 1 echo [WARN] git pull 失敗，繼續用本地版本
 :: 回補歷史：run_transcripts.bat backfill 起日 迄日 [每頻道往回列幾支，預設 400]
 ::   例：run_transcripts.bat backfill 20260801 20260831
 ::       run_transcripts.bat backfill 20260101 20260913 1500   （理財達人秀一天五段，8 個月要 1500 才夠）
+:: （cmd 的 if 區塊內設定的變數同區塊讀不到，所以在區塊外先算好）
+set SCAN=%4
+if "%SCAN%"=="" set SCAN=400
 if "%1"=="backfill" (
-  set SCAN=%4
-  if "%SCAN%"=="" set SCAN=400
   python -X utf8 fetch_transcript.py --watch --scan %SCAN% --since %2 --until %3 --sleep 2
   :: Batch API 五折；送出後最多等 90 分鐘，沒收完再跑一次同指令會接著收
   python -X utf8 analyze_transcript.py --batch --batch-wait 90

@@ -74,8 +74,9 @@ jobs:
           if [ -f data/backfill_request.json ]; then
             SINCE=$(python -c "import json;print(json.load(open('data/backfill_request.json'))['since'])")
             UNTIL=$(python -c "import json;print(json.load(open('data/backfill_request.json'))['until'])")
-            echo "== 回補模式 $SINCE ~ $UNTIL =="
-            python fetch_transcript.py --watch --scan 120 --since "$SINCE" --until "$UNTIL" --sleep 3 || echo "fetch failed (non-fatal)"
+            SCAN=$(python -c "import json;print(json.load(open('data/backfill_request.json')).get('scan',400))")
+            echo "== 回補模式 $SINCE ~ $UNTIL（每頻道往回 $SCAN 支）=="
+            python fetch_transcript.py --watch --scan "$SCAN" --since "$SINCE" --until "$UNTIL" --sleep 2 || echo "fetch failed (non-fatal)"
             python analyze_transcript.py --batch --batch-wait 120 || echo "analyze failed (non-fatal)"
             python - <<'PY'
           import json, os

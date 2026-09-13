@@ -520,7 +520,7 @@ def main(argv=None):
     ap.add_argument("--abort-on-botcheck", type=int, default=5, help="連續 N 支被要求登入驗證就中止本輪（0=不中止）")
     args = ap.parse_args(argv)
     if args.since or args.until:
-        args.max_new = max(args.max_new, 500)   # 回補模式：上限放寬，範圍外的不算
+        args.max_new = max(args.max_new, 5000)  # 回補模式：上限放寬（大範圍回補可達數千支），範圍外的不算
 
     langs = [x.strip() for x in args.langs.split(",") if x.strip()]
     targets = []

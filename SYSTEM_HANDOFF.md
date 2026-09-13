@@ -69,8 +69,13 @@ institutional_tracker（T86投信+3主動ETF）→ smart_money_radar（外資/�
 - [ ] V4.4 上線後首週實際表現追蹤（9/8 週一首日報）
 
 ## 9. 影片/論點餵料 SOP（任何 session 收到用戶餵料時必守）
-1. YouTube 連結 → `yt-dlp --js-runtimes node --write-subs --write-auto-subs --sub-langs "zh-TW,zh-Hant,zh"` 抓字幕（已驗證可用）；純影片檔需先裝轉錄工具（whisper），成本高，建議用戶優先給連結
-2. 摘要論點 → **寫進 `analyst_claims.md`（論點驗證庫）並 commit+push**——落檔才算數，只在對話裡聊過=散失
+1. YouTube 連結 → `python fetch_transcript.py <網址>`（2026-09-08 起自動化；底層仍是 yt-dlp `--js-runtimes node`，語言序 zh-TW→zh-Hant→zh→zh-Hans→en，人工字幕優先）→ 逐字稿落在 `data/transcripts/<上傳日>_<影片ID>.md`（段首帶 [mm:ss] 時間戳供引用），`data/transcripts/index.json` 去重。無字幕影片預設只標 no_subs，加 `--whisper`（需 `pip install faster-whisper` + ffmpeg）才轉錄，成本高，建議用戶優先給有字幕的連結。
+   - 全自動路徑：`data/video_sources.json` 填追蹤頻道（`--watch` 抓最新 N 支）、`data/video_queue.txt` 一行一支佇列（`--queue`）；`.github/workflows/transcripts.yml` 每天 UTC 11:00 跑 `--watch --queue --notify`，手機也能在 Actions 頁 `Run workflow` 貼網址觸發。
+   - 已知限制：YouTube 對 GitHub Actions 的雲端 IP 常要求登入驗證（「Sign in to confirm you're not a bot」）；遇到時本機瀏覽器匯出 cookies.txt → base64 → Secret `YT_COOKIES_B64`，或改在本機排程跑 `--watch --queue`。
+   - 全自動分析（2026-09-09 起）：`analyze_transcript.py --new` 把新逐字稿丟給 Claude（**claude-sonnet-5**，用戶 9/9 為省費用拍板；`ANALYZE_MODEL` 可改回 opus；需 `ANTHROPIC_API_KEY`；系統提示＋系統快照掛 prompt cache）；回補歷史用 `--batch --batch-wait 90` 走 Batch API 五折，批次狀態在 `data/checkpoints/analyze_batch.json`，逾時未收完再跑同指令會接著收，失敗的下次自動重送，自動萃取論點 → 對照系統快照（溫度計/ATH 名單/V4.4 訊號/持股/翻倍池）→ 分流（回測候選/到期對帳/證據候選/資訊層/playbook/否決）→ **追加到 `analyst_claims.md` 尾端（編號接續）**、完整報告 `data/transcripts/<影片ID>.analysis.md`、證據候選 `data/evidence_candidates.csv`（不直接進 evidence_ledger，人工確認後才搬）。transcripts.yml 與本機 `run_transcripts.bat`（排程 `setup_transcript_scheduler.bat` 每日 19:30）都會接著跑。模型被 system prompt 鎖死只能分流，不能出現買賣建議；任何參數/策略調整一律標「需回測」。
+   - 機器可讀論點庫 `data/claims.jsonl`（一行一條，due_check 附 check 規格：ticker/metric/op/value/window/base_date；backtest 附 rule 規格）→ `score_claims.py` 用 FinMind 日K 自動對帳到期預測（hit/miss 寫回 jsonl），產 `analyst_scorecard.md`：講者×頻道×預測類型命中率、已對帳明細、回測候選規則彙整（關鍵詞聚類）。預測時間基準一律是**影片上傳日**，所以回補舊影片也能直接評分。
+   - 回補歷史：`run_transcripts.bat backfill 20260801 20260831`（= `fetch_transcript.py --watch --scan 120 --since --until` + `analyze_transcript.py --new --max 200` + `score_claims.py`）；範圍外影片在 index 標 out_of_range 不重抓。六頻道一個月約 150~200 支，分析費用估 30~60 美元。
+2. 摘要論點 → **寫進 `analyst_claims.md`（論點驗證庫）並 commit+push**——落檔才算數，只在對話裡聊過=散失；自動分析產出的列要在下次對話覆核（自動字幕數字可能有誤）
 3. 分流：技術規則→回測候選（雙窗+紅線）；籌碼→雷達資訊層；基本面→翻倍池質化/證據帳本；預測→掛到期日待對帳
 4. 鐵律：**論點永不直接變成買賣建議**，必須過流水線裁決；用戶「聽了想買」時提醒走進場計畫
 5. 心法類內容 → 併入 `playbook.md` 對應情境段

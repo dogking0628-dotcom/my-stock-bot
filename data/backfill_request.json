@@ -1,8 +1,0 @@
-{
-  "since": "20260801",
-  "until": "20260913",
-  "requested_at": "2026-09-13",
-  "note": "2026-08-01~09-13 七頻道回補，每頻道只列最新 30 支（用戶 9/13 拍板）。本機 run_transcripts.bat backfill 20260801 20260913 30；完成後 workflow 自動移除本檔。",
-  "attempt": 5,
-  "scan": 30
-}

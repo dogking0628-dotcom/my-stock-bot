@@ -23,13 +23,13 @@
   },
   "nWcXBfBynA4": {
     "status": "error",
-    "error": "\u001b[0;31mERROR:\u001b[0m [youtube] nWcXBfBynA4: This video is available to this channel's members on level: 先探金粉 (or any higher level). Join this channel to get access to members-only content and other exclu",
-    "fetched_at": "2026-09-13T15:00"
+    "error": "ERROR: [youtube] nWcXBfBynA4: This video is available to this channel's members on level: 先探金粉 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
+    "fetched_at": "2026-09-13T15:43"
   },
   "UiVvtiHKcaY": {
     "status": "error",
-    "error": "\u001b[0;31mERROR:\u001b[0m [youtube] UiVvtiHKcaY: This video is available to this channel's members on level: 先探金粉 (or any higher level). Join this channel to get access to members-only content and other exclu",
-    "fetched_at": "2026-09-13T15:01"
+    "error": "ERROR: [youtube] UiVvtiHKcaY: This video is available to this channel's members on level: 先探金粉 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
+    "fetched_at": "2026-09-13T15:44"
   },
   "3ps0zbYwjYo": {
     "status": "error",
@@ -1928,9 +1928,10 @@
     "upload_date": "20260910",
     "duration": 927,
     "url": "https://www.youtube.com/watch?v=LNnI1BxQH2c",
-    "fetched_at": "2026-09-13T15:09",
-    "status": "no_subs",
-    "available_langs": []
+    "fetched_at": "2026-09-13T15:44",
+    "status": "error",
+    "available_langs": [],
+    "error": "ERROR: [youtube] LNnI1BxQH2c: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-"
   },
   "NN9kjLIsAOw": {
     "title": "《投其所展》突破微縮極限！台灣材料廠如何攻克AI晶片散熱與翹曲難關  (純產業分享，非投資建議)",
@@ -1938,9 +1939,10 @@
     "upload_date": "20260907",
     "duration": 807,
     "url": "https://www.youtube.com/watch?v=NN9kjLIsAOw",
-    "fetched_at": "2026-09-13T15:10",
-    "status": "no_subs",
-    "available_langs": []
+    "fetched_at": "2026-09-13T15:44",
+    "status": "error",
+    "available_langs": [],
+    "error": "ERROR: [youtube] NN9kjLIsAOw: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-"
   },
   "YyR5SgUwwFA": {
     "title": "《華爾街劇透社》Q3利空狂炸是最後買點？美債殖利率飆升的真相公開區間震盪獲利密碼！",
@@ -2170,9 +2172,10 @@
     "upload_date": "20260911",
     "duration": 867,
     "url": "https://www.youtube.com/watch?v=QGmPNBzLgx4",
-    "fetched_at": "2026-09-13T15:11",
-    "status": "no_subs",
-    "available_langs": []
+    "fetched_at": "2026-09-13T15:44",
+    "status": "error",
+    "available_langs": [],
+    "error": "ERROR: [youtube] QGmPNBzLgx4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-"
   },
   "3Paqg15HpJE": {
     "title": "AAOI、Lumentum、Coherent領風騷！台廠有誰打入供應鏈？#大叔充電站-產業EP154#劉烱德",
@@ -2557,5 +2560,20 @@
     "title": "代理式AI崛起！台積電驚喜上修資本支出，不只GPU連CPU與ASIC都搶爆！台股四大供應鏈中，誰會是本波委外潮最大受惠者？《#王牌財經所129》| #王曈",
     "upload_date": "20260731",
     "range": "20260801-20260913"
+  },
+  "feMzFS5gjhs": {
+    "status": "error",
+    "error": "ERROR: [youtube] feMzFS5gjhs: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-09-13T15:43"
+  },
+  "1pqn4peYAgs": {
+    "status": "error",
+    "error": "ERROR: [youtube] 1pqn4peYAgs: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-09-13T15:43"
+  },
+  "HyvfSWsRGeU": {
+    "status": "error",
+    "error": "ERROR: [youtube] HyvfSWsRGeU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-09-13T15:44"
   }
 }

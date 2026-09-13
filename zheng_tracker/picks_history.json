@@ -16823,6 +16823,182 @@
       "current_price": 12600.0,
       "current_return": 0.0,
       "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-12",
+      "ticker": "3443.TW",
+      "name": "創意",
+      "sector": "半導體_IC設計",
+      "pick_price": 6120.0,
+      "stage": "BULL_MID",
+      "reason": "半導體_IC設計 強勢(+6.4) + 個股 5d+5.3% + 有 CB",
+      "cb_codes": [
+        "344308"
+      ],
+      "max_price": 6120.0,
+      "current_price": 6120.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-12",
+      "ticker": "3034.TW",
+      "name": "聯詠",
+      "sector": "半導體_IC設計",
+      "pick_price": 547.0,
+      "stage": "BULL_MID",
+      "reason": "半導體_IC設計 強勢(+6.4) + 個股 5d+4.4% + 有 CB",
+      "cb_codes": [
+        "303407"
+      ],
+      "max_price": 547.0,
+      "current_price": 547.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-12",
+      "ticker": "2454.TW",
+      "name": "聯發科",
+      "sector": "半導體_IC設計",
+      "pick_price": 4585.0,
+      "stage": "BULL_MID",
+      "reason": "半導體_IC設計 強勢(+6.4) + 個股 5d+3.9% + 有 CB",
+      "cb_codes": [
+        "245408"
+      ],
+      "max_price": 4585.0,
+      "current_price": 4585.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-12",
+      "ticker": "2609.TW",
+      "name": "陽明",
+      "sector": "海運_航運",
+      "pick_price": 59.4,
+      "stage": "BULL_MID",
+      "reason": "海運_航運 強勢(+13.0) + 個股 5d+2.1% + 有 CB",
+      "cb_codes": [
+        "260905"
+      ],
+      "max_price": 59.4,
+      "current_price": 59.4,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-12",
+      "ticker": "2603.TW",
+      "name": "長榮",
+      "sector": "海運_航運",
+      "pick_price": 234.5,
+      "stage": "BULL_MID",
+      "reason": "海運_航運 強勢(+13.0) + 個股 5d+0.6% + 有 CB",
+      "cb_codes": [
+        "260305"
+      ],
+      "max_price": 234.5,
+      "current_price": 234.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-12",
+      "ticker": "2618.TW",
+      "name": "長榮航",
+      "sector": "海運_航運",
+      "pick_price": 42.35,
+      "stage": "BULL_MID",
+      "reason": "海運_航運 強勢(+13.0) + 個股 5d-0.3% + 有 CB",
+      "cb_codes": [
+        "261805"
+      ],
+      "max_price": 42.35,
+      "current_price": 42.35,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-12",
+      "ticker": "2615.TW",
+      "name": "萬海",
+      "sector": "海運_航運",
+      "pick_price": 112.0,
+      "stage": "BULL_MID",
+      "reason": "海運_航運 強勢(+13.0) + 個股 5d-2.6% + 有 CB",
+      "cb_codes": [
+        "261505"
+      ],
+      "max_price": 112.0,
+      "current_price": 112.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-12",
+      "ticker": "3019.TW",
+      "name": "亞光",
+      "sector": "光學_鏡頭",
+      "pick_price": 137.5,
+      "stage": "BULL_MID",
+      "reason": "光學_鏡頭 強勢(+14.2) + 個股 5d-4.8% + 有 CB",
+      "cb_codes": [
+        "301907"
+      ],
+      "max_price": 137.5,
+      "current_price": 137.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-12",
+      "ticker": "2385.TW",
+      "name": "群光",
+      "sector": "光學_鏡頭",
+      "pick_price": 105.0,
+      "stage": "BULL_MID",
+      "reason": "光學_鏡頭 強勢(+14.2) + 個股 5d-5.0% + 有 CB",
+      "cb_codes": [
+        "238505"
+      ],
+      "max_price": 105.0,
+      "current_price": 105.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-12",
+      "ticker": "3035.TW",
+      "name": "智原",
+      "sector": "半導體_IC設計",
+      "pick_price": 169.5,
+      "stage": "BULL_MID",
+      "reason": "半導體_IC設計 強勢(+6.4) + 個股 5d-5.6% + 有 CB",
+      "cb_codes": [
+        "303505"
+      ],
+      "max_price": 169.5,
+      "current_price": 169.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-12",
+      "ticker": "3008.TW",
+      "name": "大立光",
+      "sector": "光學_鏡頭",
+      "pick_price": 6660.0,
+      "stage": "BULL_MID",
+      "reason": "光學_鏡頭 強勢(+14.2) + 個股 5d-10.0% + 有 CB",
+      "cb_codes": [
+        "300806"
+      ],
+      "max_price": 6660.0,
+      "current_price": 6660.0,
+      "current_return": 0.0,
+      "days_held": 0
     }
   ],
   "closed_picks": []

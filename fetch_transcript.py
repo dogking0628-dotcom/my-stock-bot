@@ -247,8 +247,26 @@ def download_subtitle(info, lang, automatic, cookies=None):
     return None
 
 
+_WHISPER_MODEL = None   # 同一次執行只載入一次（載入要好幾秒、記憶體 1~3GB）
+_OPENCC = None
+
+def _to_traditional(text):
+    """whisper 中文常吐簡體；有裝 opencc 就轉繁體（pip install opencc-python-reimplemented）。"""
+    global _OPENCC
+    if _OPENCC is None:
+        try:
+            from opencc import OpenCC
+            _OPENCC = OpenCC("s2twp")   # 簡→台灣繁體含用語
+        except Exception:
+            _OPENCC = False
+    return _OPENCC.convert(text) if _OPENCC else text
+
+
 def whisper_transcribe(video_id, cookies=None, model_size=None):
-    """無字幕的備援：下載音訊 + faster-whisper。沒裝套件就回 None（不裝也能跑主流程）。"""
+    """無字幕的備援：下載音訊 + faster-whisper。沒裝套件就回 None（不裝也能跑主流程）。
+    模型：--whisper-model 或環境變數 WHISPER_MODEL（預設 small；有 NVIDIA GPU 可用 medium/large-v3）。
+    CPU 上 small 約 3~6 倍速：40 分鐘影片約 7~13 分鐘。"""
+    global _WHISPER_MODEL
     try:
         from faster_whisper import WhisperModel
     except ImportError:
@@ -257,17 +275,33 @@ def whisper_transcribe(video_id, cookies=None, model_size=None):
     import yt_dlp
     AUDIO_DIR.mkdir(parents=True, exist_ok=True)
     out_tmpl = str(AUDIO_DIR / f"{video_id}.%(ext)s")
-    with yt_dlp.YoutubeDL({**ydl_base_opts(cookies), "format": "bestaudio/best",
+    with yt_dlp.YoutubeDL({**ydl_base_opts(cookies), "format": "bestaudio[ext=m4a]/bestaudio/best",
                            "outtmpl": out_tmpl}) as ydl:
         ydl.download([f"https://www.youtube.com/watch?v={video_id}"])
     files = sorted(AUDIO_DIR.glob(f"{video_id}.*"))
     if not files:
         return None
     size = model_size or os.environ.get("WHISPER_MODEL", "small")
-    log(f"  whisper({size}) 轉錄中…（無字幕影片，數字可能有誤）")
-    model = WhisperModel(size, device="auto", compute_type="int8")
-    segments, _ = model.transcribe(str(files[0]), language="zh", vad_filter=True)
-    cues = [(s.start, s.text.strip()) for s in segments if s.text.strip()]
+    if _WHISPER_MODEL is None:
+        try:
+            _WHISPER_MODEL = WhisperModel(size, device="auto", compute_type="int8")
+            log(f"  whisper 模型 {size} 已載入")
+        except Exception as e:
+            log(f"  GPU 初始化失敗（{str(e)[:60]}），改用 CPU")
+            _WHISPER_MODEL = WhisperModel(size, device="cpu", compute_type="int8")
+    t0 = time.time()
+    log(f"  whisper({size}) 轉錄中…（無字幕影片，數字與專有名詞可能有誤）")
+    segments, info = _WHISPER_MODEL.transcribe(
+        str(files[0]), language="zh", vad_filter=True, beam_size=5,
+        condition_on_previous_text=False,               # 防止長片後段整段重複
+        initial_prompt="以下是台灣財經節目的繁體中文逐字稿，內容包含台股、個股代號、法說會、營收與本益比。",
+    )
+    cues = []
+    for s in segments:
+        txt = _to_traditional(s.text.strip())
+        if txt:
+            cues.append((s.start, txt))
+    log(f"  轉錄完成：{len(cues)} 段，音訊 {getattr(info, 'duration', 0) / 60:.0f} 分，耗時 {(time.time() - t0) / 60:.1f} 分")
     for f in files:
         try: f.unlink()
         except Exception: pass
@@ -508,6 +542,8 @@ def main(argv=None):
     ap.add_argument("--queue", action="store_true", help="處理 data/video_queue.txt 佇列")
     ap.add_argument("--watch", action="store_true", help="掃 data/video_sources.json 追蹤頻道的最新影片")
     ap.add_argument("--whisper", action="store_true", help="無字幕時用 faster-whisper 轉錄（需自行安裝，慢）")
+    ap.add_argument("--whisper-model", default=None, help="whisper 模型：tiny/base/small/medium/large-v3（預設 small）")
+    ap.add_argument("--only-no-subs", action="store_true", help="只處理索引裡 no_subs 的影片（配 --whisper 補轉錄）")
     ap.add_argument("--force", action="store_true", help="已抓過的也重抓")
     ap.add_argument("--langs", default=",".join(LANG_PRIORITY), help="字幕語言優先序，逗號分隔")
     ap.add_argument("--cookies", default=None, help="cookies.txt 路徑（或設 YT_COOKIES_FILE）")
@@ -534,13 +570,17 @@ def main(argv=None):
     targets += queue_ids
     if args.watch:
         targets += watch_sources(args.cookies, args.scan)
+    index = load_json(INDEX, {})
+    if args.only_no_subs:
+        targets += [k for k, v in index.items() if v.get("status") == "no_subs"]
+    if args.whisper_model:
+        os.environ["WHISPER_MODEL"] = args.whisper_model
     if not targets:
         ap.print_help()
-        log("沒有任何目標。給網址、或加 --queue / --watch。")
+        log("沒有任何目標。給網址、或加 --queue / --watch / --only-no-subs。")
         return 0
 
     targets = list(dict.fromkeys(targets))  # 去重保序
-    index = load_json(INDEX, {})
     todo = [t for t in targets if args.force or index.get(t, {}).get("status") != "ok"]
     log(f"目標 {len(targets)} 支 / 已有 {len(targets) - len(todo)} / 待抓 {len(todo)}（上限 {args.max_new}）")
     todo = todo[:args.max_new]

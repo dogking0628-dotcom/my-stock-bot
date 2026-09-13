@@ -6,8 +6,8 @@
       "url": "https://www.youtube.com/channel/UCQvsuaih5lE0n_Ne54nNezg/videos",
       "search": "理財達人秀",
       "max_latest": 6,
-      "enabled": true,
-      "note": "東森財經，每日一集切 part1~5，max_latest 6 約等於一天份"
+      "enabled": false,
+      "note": "東森財經，每日一集切 part1~5，max_latest 6 約等於一天份；2026-09-13 用戶取消追蹤（每日五段量太大）"
     },
     {
       "name": "先探i投資",

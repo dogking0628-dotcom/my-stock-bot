@@ -175,7 +175,8 @@ def md_block(res):
 
 def load_positions():
     d = json.loads(HOLDINGS.read_text(encoding="utf-8"))
-    return [p for p in d.get("tw", []) if p.get("shares") and p.get("avg_cost") and p.get("since")]
+    return [p for p in d.get("tw", []) if p.get("shares") and p.get("avg_cost") and p.get("since")
+            and not p.get("exclude_from_benchmark") and str(p.get("ticker")) != BENCH]
 
 
 def run(write=True, price_fn=None):

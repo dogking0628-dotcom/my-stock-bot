@@ -1,0 +1,1243 @@
+[
+  {
+    "ticker": "BTC",
+    "price": 34.66,
+    "eps_ttm": null,
+    "eps_fwd": null,
+    "pe_ttm": null,
+    "pe_fwd": null,
+    "fy_end": null,
+    "currency": "USD",
+    "target": {
+      "low": null,
+      "mean": null,
+      "median": null,
+      "high": null,
+      "n": null
+    },
+    "rev_growth": null,
+    "eps_growth": null,
+    "gross_margin": null,
+    "op_margin": null
+  },
+  {
+    "ticker": "GLW",
+    "price": 147.7,
+    "eps_ttm": 2.16,
+    "eps_fwd": 4.35,
+    "pe_ttm": 68.38,
+    "pe_fwd": 33.96,
+    "fy_end": 1767139200,
+    "currency": "USD",
+    "target": {
+      "low": 129.0,
+      "mean": 194.31,
+      "median": 200.0,
+      "high": 238.0,
+      "n": 16.0
+    },
+    "rev_growth": 0.17,
+    "eps_growth": 0.18,
+    "gross_margin": 0.36,
+    "op_margin": 0.16,
+    "eps_est": {
+      "0q": {
+        "avg": 0.87,
+        "low": 0.85,
+        "high": 0.89,
+        "n": 11.0,
+        "yoy": 0.3
+      },
+      "+1q": {
+        "avg": 0.92,
+        "low": 0.87,
+        "high": 0.99,
+        "n": 11.0,
+        "yoy": 0.27
+      },
+      "0y": {
+        "avg": 3.28,
+        "low": 3.2,
+        "high": 3.36,
+        "n": 14.0,
+        "yoy": 0.3
+      },
+      "+1y": {
+        "avg": 4.35,
+        "low": 3.85,
+        "high": 4.99,
+        "n": 16.0,
+        "yoy": 0.33
+      }
+    },
+    "rev_est": {
+      "0q": {
+        "avg": 4999395500.0,
+        "yoy": 0.17
+      },
+      "+1q": {
+        "avg": 5122886150.0,
+        "yoy": 0.16
+      },
+      "0y": {
+        "avg": 19251109460.0,
+        "yoy": 0.17
+      },
+      "+1y": {
+        "avg": 22942368460.0,
+        "yoy": 0.19
+      }
+    },
+    "growth_est": {
+      "0q": 0.3,
+      "+1q": 0.27,
+      "0y": 0.3,
+      "+1y": 0.33,
+      "LTG": null
+    },
+    "pe_band_3y": {
+      "min": 64.8,
+      "max": 116.4,
+      "points": [
+        64.8,
+        116.4
+      ]
+    }
+  },
+  {
+    "ticker": "GOOG",
+    "price": 341.75,
+    "eps_ttm": 19.93,
+    "eps_fwd": 14.87,
+    "pe_ttm": 17.15,
+    "pe_fwd": 22.98,
+    "fy_end": 1767139200,
+    "currency": "USD",
+    "target": {
+      "low": 340.0,
+      "mean": 422.34,
+      "median": 430.0,
+      "high": 475.0,
+      "n": 15.0
+    },
+    "rev_growth": 0.24,
+    "eps_growth": 2.94,
+    "gross_margin": 0.61,
+    "op_margin": 0.34,
+    "eps_est": {
+      "0q": {
+        "avg": 3.01,
+        "low": 2.64,
+        "high": 3.68,
+        "n": 39.0,
+        "yoy": 0.05
+      },
+      "+1q": {
+        "avg": 3.34,
+        "low": 2.99,
+        "high": 4.09,
+        "n": 36.0,
+        "yoy": 0.19
+      },
+      "0y": {
+        "avg": 20.6,
+        "low": 19.7,
+        "high": 21.92,
+        "n": 49.0,
+        "yoy": 0.91
+      },
+      "+1y": {
+        "avg": 14.87,
+        "low": 13.67,
+        "high": 17.21,
+        "n": 50.0,
+        "yoy": -0.28
+      }
+    },
+    "rev_est": {
+      "0q": {
+        "avg": 127227149560.0,
+        "yoy": 0.24
+      },
+      "+1q": {
+        "avg": 141405365670.0,
+        "yoy": 0.24
+      },
+      "0y": {
+        "avg": 498401688800.0,
+        "yoy": 0.24
+      },
+      "+1y": {
+        "avg": 613374401270.0,
+        "yoy": 0.23
+      }
+    },
+    "growth_est": {
+      "0q": 0.05,
+      "+1q": 0.19,
+      "0y": 0.91,
+      "+1y": -0.28,
+      "LTG": null
+    },
+    "pe_band_3y": {
+      "min": 17.7,
+      "max": 21.9,
+      "points": [
+        21.9,
+        17.7
+      ]
+    }
+  },
+  {
+    "ticker": "HCA",
+    "price": 422.06,
+    "eps_ttm": 29.8,
+    "eps_fwd": 32.02,
+    "pe_ttm": 14.16,
+    "pe_fwd": 13.18,
+    "fy_end": 1767139200,
+    "currency": "USD",
+    "target": {
+      "low": 380.0,
+      "mean": 451.48,
+      "median": 435.0,
+      "high": 579.0,
+      "n": 21.0
+    },
+    "rev_growth": 0.09,
+    "eps_growth": 0.12,
+    "gross_margin": 0.43,
+    "op_margin": 0.15,
+    "eps_est": {
+      "0q": {
+        "avg": 6.7,
+        "low": 5.83,
+        "high": 7.35,
+        "n": 19.0,
+        "yoy": -0.04
+      },
+      "+1q": {
+        "avg": 8.01,
+        "low": 7.57,
+        "high": 8.61,
+        "n": 19.0,
+        "yoy": 0.0
+      },
+      "0y": {
+        "avg": 29.49,
+        "low": 28.62,
+        "high": 30.41,
+        "n": 22.0,
+        "yoy": 0.05
+      },
+      "+1y": {
+        "avg": 32.07,
+        "low": 30.3,
+        "high": 34.04,
+        "n": 22.0,
+        "yoy": 0.09
+      }
+    },
+    "rev_est": {
+      "0q": {
+        "avg": 19363382630.0,
+        "yoy": 0.01
+      },
+      "+1q": {
+        "avg": 19853487880.0,
+        "yoy": 0.02
+      },
+      "0y": {
+        "avg": 78512887970.0,
+        "yoy": 0.04
+      },
+      "+1y": {
+        "avg": 81631805040.0,
+        "yoy": 0.04
+      }
+    },
+    "growth_est": {
+      "0q": -0.04,
+      "+1q": 0.0,
+      "0y": 0.05,
+      "+1y": 0.09,
+      "LTG": null
+    },
+    "pe_band_3y": {
+      "min": 13.1,
+      "max": 16.2,
+      "points": [
+        16.2,
+        13.1
+      ]
+    }
+  },
+  {
+    "ticker": "INTC",
+    "price": 97.75,
+    "eps_ttm": -2.09,
+    "eps_fwd": 2.04,
+    "pe_ttm": null,
+    "pe_fwd": 47.8,
+    "fy_end": 1766793600,
+    "currency": "USD",
+    "target": {
+      "low": 75.0,
+      "mean": 115.74,
+      "median": 112.0,
+      "high": 200.0,
+      "n": 43.0
+    },
+    "rev_growth": 0.25,
+    "eps_growth": null,
+    "gross_margin": 0.39,
+    "op_margin": 0.12,
+    "eps_est": {
+      "0q": {
+        "avg": 0.39,
+        "low": 0.37,
+        "high": 0.45,
+        "n": 34.0,
+        "yoy": 0.69
+      },
+      "+1q": {
+        "avg": 0.43,
+        "low": 0.32,
+        "high": 0.53,
+        "n": 34.0,
+        "yoy": 1.85
+      },
+      "0y": {
+        "avg": 1.51,
+        "low": 1.12,
+        "high": 1.69,
+        "n": 39.0,
+        "yoy": 2.61
+      },
+      "+1y": {
+        "avg": 2.04,
+        "low": 1.15,
+        "high": 3.44,
+        "n": 45.0,
+        "yoy": 0.35
+      }
+    },
+    "rev_est": {
+      "0q": {
+        "avg": 16419696619.0,
+        "yoy": 0.2
+      },
+      "+1q": {
+        "avg": 16958264210.0,
+        "yoy": 0.24
+      },
+      "0y": {
+        "avg": 63045547670.0,
+        "yoy": 0.19
+      },
+      "+1y": {
+        "avg": 71847226580.0,
+        "yoy": 0.14
+      }
+    },
+    "growth_est": {
+      "0q": 0.69,
+      "+1q": 1.85,
+      "0y": 2.61,
+      "+1y": 0.35,
+      "LTG": null
+    }
+  },
+  {
+    "ticker": "ITOCY",
+    "price": 15.08,
+    "eps_ttm": 0.83,
+    "eps_fwd": null,
+    "pe_ttm": 18.17,
+    "pe_fwd": null,
+    "fy_end": 1774915200,
+    "currency": "USD",
+    "target": {
+      "low": null,
+      "mean": null,
+      "median": null,
+      "high": null,
+      "n": null
+    },
+    "rev_growth": 0.09,
+    "eps_growth": 0.05,
+    "gross_margin": 0.17,
+    "op_margin": 0.05,
+    "eps_est": {
+      "0q": {
+        "avg": null,
+        "low": null,
+        "high": null,
+        "n": null,
+        "yoy": null
+      },
+      "+1q": {
+        "avg": null,
+        "low": null,
+        "high": null,
+        "n": null,
+        "yoy": null
+      },
+      "0y": {
+        "avg": null,
+        "low": null,
+        "high": null,
+        "n": null,
+        "yoy": null
+      },
+      "+1y": {
+        "avg": null,
+        "low": null,
+        "high": null,
+        "n": null,
+        "yoy": null
+      }
+    },
+    "rev_est": {
+      "0q": {
+        "avg": 0.0,
+        "yoy": null
+      },
+      "+1q": {
+        "avg": 0.0,
+        "yoy": null
+      },
+      "0y": {
+        "avg": 15560197007800.0,
+        "yoy": 2.47
+      },
+      "+1y": {
+        "avg": 16104907268220.0,
+        "yoy": 0.04
+      }
+    },
+    "growth_est": {
+      "0q": null,
+      "+1q": null,
+      "0y": null,
+      "+1y": null,
+      "LTG": null
+    }
+  },
+  {
+    "ticker": "KMB",
+    "price": 100.31,
+    "eps_ttm": 5.06,
+    "eps_fwd": 7.49,
+    "pe_ttm": 19.82,
+    "pe_fwd": 13.39,
+    "fy_end": 1767139200,
+    "currency": "USD",
+    "target": {
+      "low": 90.0,
+      "mean": 117.8,
+      "median": 115.0,
+      "high": 162.0,
+      "n": 15.0
+    },
+    "rev_growth": 0.01,
+    "eps_growth": -0.32,
+    "gross_margin": 0.38,
+    "op_margin": 0.19,
+    "eps_est": {
+      "0q": {
+        "avg": 1.62,
+        "low": 1.55,
+        "high": 1.68,
+        "n": 11.0,
+        "yoy": -0.11
+      },
+      "+1q": {
+        "avg": 1.68,
+        "low": 1.57,
+        "high": 1.76,
+        "n": 11.0,
+        "yoy": -0.1
+      },
+      "0y": {
+        "avg": 7.42,
+        "low": 7.25,
+        "high": 7.51,
+        "n": 17.0,
+        "yoy": -0.01
+      },
+      "+1y": {
+        "avg": 7.49,
+        "low": 7.2,
+        "high": 7.84,
+        "n": 15.0,
+        "yoy": 0.01
+      }
+    },
+    "rev_est": {
+      "0q": {
+        "avg": 4143813300.0,
+        "yoy": -0.0
+      },
+      "+1q": {
+        "avg": 4125531300.0,
+        "yoy": 0.01
+      },
+      "0y": {
+        "avg": 16626537180.0,
+        "yoy": 0.01
+      },
+      "+1y": {
+        "avg": 17061380270.0,
+        "yoy": 0.03
+      }
+    },
+    "growth_est": {
+      "0q": -0.11,
+      "+1q": -0.1,
+      "0y": -0.01,
+      "+1y": 0.01,
+      "LTG": null
+    },
+    "pe_band_3y": {
+      "min": 14.8,
+      "max": 18.4,
+      "points": [
+        14.8,
+        18.4
+      ]
+    }
+  },
+  {
+    "ticker": "MARUY",
+    "price": 32.95,
+    "eps_ttm": 2.15,
+    "eps_fwd": 19.47,
+    "pe_ttm": 15.33,
+    "pe_fwd": 1.69,
+    "fy_end": 1774915200,
+    "currency": "USD",
+    "target": {
+      "low": 43.87,
+      "mean": 43.87,
+      "median": 43.87,
+      "high": 43.87,
+      "n": 1.0
+    },
+    "rev_growth": 0.21,
+    "eps_growth": 0.22,
+    "gross_margin": 0.15,
+    "op_margin": 0.05,
+    "eps_est": {
+      "0q": {
+        "avg": null,
+        "low": null,
+        "high": null,
+        "n": null,
+        "yoy": null
+      },
+      "+1q": {
+        "avg": null,
+        "low": null,
+        "high": null,
+        "n": null,
+        "yoy": null
+      },
+      "0y": {
+        "avg": 2.36,
+        "low": 2.36,
+        "high": 2.36,
+        "n": 1.0,
+        "yoy": 0.12
+      },
+      "+1y": {
+        "avg": 2.47,
+        "low": 2.47,
+        "high": 2.47,
+        "n": 1.0,
+        "yoy": 0.05
+      }
+    },
+    "rev_est": {
+      "0q": {
+        "avg": 2105983630000.0,
+        "yoy": 0.03
+      },
+      "+1q": {
+        "avg": 2033207130000.0,
+        "yoy": 0.03
+      },
+      "0y": {
+        "avg": 8608200097999.0,
+        "yoy": 2.78
+      },
+      "+1y": {
+        "avg": 8886291114730.0,
+        "yoy": 0.03
+      }
+    },
+    "growth_est": {
+      "0q": null,
+      "+1q": null,
+      "0y": null,
+      "+1y": null,
+      "LTG": null
+    }
+  },
+  {
+    "ticker": "MITSY",
+    "price": 669.9,
+    "eps_ttm": 37.89,
+    "eps_fwd": 37.79,
+    "pe_ttm": 17.68,
+    "pe_fwd": 17.73,
+    "fy_end": 1774915200,
+    "currency": "USD",
+    "target": {
+      "low": 980.65,
+      "mean": 980.65,
+      "median": 980.65,
+      "high": 980.65,
+      "n": 1.0
+    },
+    "rev_growth": 0.32,
+    "eps_growth": 0.56,
+    "gross_margin": 0.1,
+    "op_margin": 0.03,
+    "eps_est": {
+      "0q": {
+        "avg": null,
+        "low": null,
+        "high": null,
+        "n": null,
+        "yoy": null
+      },
+      "+1q": {
+        "avg": null,
+        "low": null,
+        "high": null,
+        "n": null,
+        "yoy": null
+      },
+      "0y": {
+        "avg": 46.95,
+        "low": 46.95,
+        "high": 46.95,
+        "n": 1.0,
+        "yoy": 0.26
+      },
+      "+1y": {
+        "avg": 48.62,
+        "low": 48.62,
+        "high": 48.62,
+        "n": 1.0,
+        "yoy": 0.04
+      }
+    },
+    "rev_est": {
+      "0q": {
+        "avg": 0.0,
+        "yoy": null
+      },
+      "+1q": {
+        "avg": 0.0,
+        "yoy": null
+      },
+      "0y": {
+        "avg": 15104288041160.0,
+        "yoy": 2.9
+      },
+      "+1y": {
+        "avg": 15135312005430.0,
+        "yoy": 0.0
+      }
+    },
+    "growth_est": {
+      "0q": null,
+      "+1q": null,
+      "0y": null,
+      "+1y": null,
+      "LTG": null
+    }
+  },
+  {
+    "ticker": "MU",
+    "price": 924.33,
+    "eps_ttm": 44.28,
+    "eps_fwd": 156.07,
+    "pe_ttm": 20.87,
+    "pe_fwd": 5.92,
+    "fy_end": 1756339200,
+    "currency": "USD",
+    "target": {
+      "low": 361.0,
+      "mean": 1513.11,
+      "median": 1540.0,
+      "high": 2200.0,
+      "n": 45.0
+    },
+    "rev_growth": 3.46,
+    "eps_growth": 13.69,
+    "gross_margin": 0.73,
+    "op_margin": 0.8,
+    "eps_est": {
+      "0q": {
+        "avg": 31.33,
+        "low": 28.04,
+        "high": 37.44,
+        "n": 31.0,
+        "yoy": 9.34
+      },
+      "+1q": {
+        "avg": 34.88,
+        "low": 25.64,
+        "high": 47.81,
+        "n": 32.0,
+        "yoy": 6.3
+      },
+      "0y": {
+        "avg": 73.44,
+        "low": 67.39,
+        "high": 80.16,
+        "n": 35.0,
+        "yoy": 7.86
+      },
+      "+1y": {
+        "avg": 156.07,
+        "low": 106.89,
+        "high": 221.27,
+        "n": 36.0,
+        "yoy": 1.13
+      }
+    },
+    "rev_est": {
+      "0q": {
+        "avg": 50787211780.0,
+        "yoy": 3.49
+      },
+      "+1q": {
+        "avg": 56656371780.0,
+        "yoy": 3.15
+      },
+      "0y": {
+        "avg": 129738438170.0,
+        "yoy": 2.47
+      },
+      "+1y": {
+        "avg": 244458032970.0,
+        "yoy": 0.88
+      }
+    },
+    "growth_est": {
+      "0q": 9.34,
+      "+1q": 6.3,
+      "0y": 7.86,
+      "+1y": 1.13,
+      "LTG": null
+    },
+    "pe_band_3y": {
+      "min": 19.5,
+      "max": 22.0,
+      "points": [
+        19.5,
+        22.0
+      ]
+    }
+  },
+  {
+    "ticker": "NVDA",
+    "price": 211.97,
+    "eps_ttm": 7.9,
+    "eps_fwd": 15.57,
+    "pe_ttm": 26.83,
+    "pe_fwd": 13.62,
+    "fy_end": 1769299200,
+    "currency": "USD",
+    "target": {
+      "low": 180.0,
+      "mean": 327.18,
+      "median": 315.0,
+      "high": 515.0,
+      "n": 58.0
+    },
+    "rev_growth": 1.06,
+    "eps_growth": 1.28,
+    "gross_margin": 0.75,
+    "op_margin": 0.66,
+    "eps_est": {
+      "0q": {
+        "avg": 2.47,
+        "low": 2.34,
+        "high": 2.7,
+        "n": 42.0,
+        "yoy": 0.9
+      },
+      "+1q": {
+        "avg": 2.74,
+        "low": 2.56,
+        "high": 3.12,
+        "n": 40.0,
+        "yoy": 0.69
+      },
+      "0y": {
+        "avg": 9.3,
+        "low": 9.01,
+        "high": 10.1,
+        "n": 49.0,
+        "yoy": 0.95
+      },
+      "+1y": {
+        "avg": 15.57,
+        "low": 9.8,
+        "high": 18.75,
+        "n": 53.0,
+        "yoy": 0.67
+      }
+    },
+    "rev_est": {
+      "0q": {
+        "avg": 108988683310.0,
+        "yoy": 0.91
+      },
+      "+1q": {
+        "avg": 124266648840.0,
+        "yoy": 0.82
+      },
+      "0y": {
+        "avg": 411292753830.0,
+        "yoy": 0.9
+      },
+      "+1y": {
+        "avg": 677919776510.0,
+        "yoy": 0.65
+      }
+    },
+    "growth_est": {
+      "0q": 0.9,
+      "+1q": 0.69,
+      "0y": 0.95,
+      "+1y": 0.67,
+      "LTG": null
+    },
+    "pe_band_3y": {
+      "min": 25.4,
+      "max": 30.5,
+      "points": [
+        30.5,
+        25.4
+      ]
+    }
+  },
+  {
+    "ticker": "PLTR",
+    "price": 171.79,
+    "eps_ttm": 1.17,
+    "eps_fwd": 2.33,
+    "pe_ttm": 146.83,
+    "pe_fwd": 73.86,
+    "fy_end": 1767139200,
+    "currency": "USD",
+    "target": {
+      "low": 80.0,
+      "mean": 195.73,
+      "median": 205.1,
+      "high": 255.0,
+      "n": 27.0
+    },
+    "rev_growth": 0.93,
+    "eps_growth": 2.15,
+    "gross_margin": 0.85,
+    "op_margin": 0.47,
+    "eps_est": {
+      "0q": {
+        "avg": 0.41,
+        "low": 0.38,
+        "high": 0.48,
+        "n": 23.0,
+        "yoy": 0.97
+      },
+      "+1q": {
+        "avg": 0.46,
+        "low": 0.43,
+        "high": 0.55,
+        "n": 23.0,
+        "yoy": 0.86
+      },
+      "0y": {
+        "avg": 1.61,
+        "low": 1.29,
+        "high": 1.75,
+        "n": 29.0,
+        "yoy": 1.14
+      },
+      "+1y": {
+        "avg": 2.33,
+        "low": 1.59,
+        "high": 2.9,
+        "n": 29.0,
+        "yoy": 0.45
+      }
+    },
+    "rev_est": {
+      "0q": {
+        "avg": 2176726360.0,
+        "yoy": 0.84
+      },
+      "+1q": {
+        "avg": 2458945640.0,
+        "yoy": 0.75
+      },
+      "0y": {
+        "avg": 8187709600.0,
+        "yoy": 0.83
+      },
+      "+1y": {
+        "avg": 12211305260.0,
+        "yoy": 0.49
+      }
+    },
+    "growth_est": {
+      "0q": 0.97,
+      "+1q": 0.86,
+      "0y": 1.14,
+      "+1y": 0.45,
+      "LTG": null
+    },
+    "pe_band_3y": {
+      "min": 99.7,
+      "max": 164.3,
+      "points": [
+        164.3,
+        99.7
+      ]
+    }
+  },
+  {
+    "ticker": "SKHY",
+    "price": 176.31,
+    "eps_ttm": 16.97,
+    "eps_fwd": 33.88,
+    "pe_ttm": 10.39,
+    "pe_fwd": 5.2,
+    "fy_end": 1767139200,
+    "currency": "USD",
+    "target": {
+      "low": 152.0,
+      "mean": 248.43,
+      "median": 240.0,
+      "high": 355.0,
+      "n": 14.0
+    },
+    "rev_growth": 2.57,
+    "eps_growth": 12.72,
+    "gross_margin": 0.76,
+    "op_margin": 0.76,
+    "eps_est": {
+      "0q": {
+        "avg": 6.24,
+        "low": 5.76,
+        "high": 6.72,
+        "n": 3.0,
+        "yoy": null
+      },
+      "+1q": {
+        "avg": 7.28,
+        "low": 6.31,
+        "high": 8.23,
+        "n": 3.0,
+        "yoy": null
+      },
+      "0y": {
+        "avg": 26.4,
+        "low": 24.89,
+        "high": 28.61,
+        "n": 5.0,
+        "yoy": null
+      },
+      "+1y": {
+        "avg": 33.88,
+        "low": 23.08,
+        "high": 44.9,
+        "n": 5.0,
+        "yoy": 0.28
+      }
+    },
+    "rev_est": {
+      "0q": {
+        "avg": 100634003220000.0,
+        "yoy": 3.12
+      },
+      "+1q": {
+        "avg": 114298211030000.0,
+        "yoy": 2.48
+      },
+      "0y": {
+        "avg": 347167940360000.0,
+        "yoy": 2.57
+      },
+      "+1y": {
+        "avg": 534970517699999.0,
+        "yoy": 0.54
+      }
+    },
+    "growth_est": {
+      "0q": null,
+      "+1q": null,
+      "0y": null,
+      "+1y": 0.28,
+      "LTG": null
+    }
+  },
+  {
+    "ticker": "SNDK",
+    "price": 1541.7,
+    "eps_ttm": 73.83,
+    "eps_fwd": 264.72,
+    "pe_ttm": 20.88,
+    "pe_fwd": 5.82,
+    "fy_end": 1783036800,
+    "currency": "USD",
+    "target": {
+      "low": 1000.0,
+      "mean": 2125.09,
+      "median": 2100.0,
+      "high": 3600.0,
+      "n": 23.0
+    },
+    "rev_growth": 3.72,
+    "eps_growth": null,
+    "gross_margin": 0.71,
+    "op_margin": 0.78,
+    "eps_est": {
+      "0q": {
+        "avg": 46.21,
+        "low": 44.05,
+        "high": 49.8,
+        "n": 17.0,
+        "yoy": 36.87
+      },
+      "+1q": {
+        "avg": 52.78,
+        "low": 48.4,
+        "high": 59.94,
+        "n": 17.0,
+        "yoy": 7.51
+      },
+      "0y": {
+        "avg": 214.1,
+        "low": 186.97,
+        "high": 238.36,
+        "n": 20.0,
+        "yoy": 2.02
+      },
+      "+1y": {
+        "avg": 264.72,
+        "low": 173.37,
+        "high": 361.2,
+        "n": 19.0,
+        "yoy": 0.24
+      }
+    },
+    "rev_est": {
+      "0q": {
+        "avg": 10688121470.0,
+        "yoy": 3.63
+      },
+      "+1q": {
+        "avg": 12230502410.0,
+        "yoy": 3.04
+      },
+      "0y": {
+        "avg": 48960258320.0,
+        "yoy": 1.42
+      },
+      "+1y": {
+        "avg": 57786626660.0,
+        "yoy": 0.18
+      }
+    },
+    "growth_est": {
+      "0q": 36.87,
+      "+1q": 7.51,
+      "0y": 2.02,
+      "+1y": 0.24,
+      "LTG": null
+    },
+    "pe_band_3y": {
+      "min": 22.1,
+      "max": 31.2,
+      "points": [
+        22.1,
+        31.2
+      ]
+    }
+  },
+  {
+    "ticker": "TSLA",
+    "price": 362.29,
+    "eps_ttm": 1.1,
+    "eps_fwd": 2.16,
+    "pe_ttm": 329.38,
+    "pe_fwd": 167.85,
+    "fy_end": 1767139200,
+    "currency": "USD",
+    "target": {
+      "low": 125.0,
+      "mean": 390.09,
+      "median": 410.0,
+      "high": 600.0,
+      "n": 39.0
+    },
+    "rev_growth": 0.26,
+    "eps_growth": -0.03,
+    "gross_margin": 0.19,
+    "op_margin": 0.01,
+    "eps_est": {
+      "0q": {
+        "avg": 0.45,
+        "low": 0.27,
+        "high": 0.6,
+        "n": 26.0,
+        "yoy": -0.1
+      },
+      "+1q": {
+        "avg": 0.49,
+        "low": 0.24,
+        "high": 0.82,
+        "n": 26.0,
+        "yoy": -0.02
+      },
+      "0y": {
+        "avg": 1.77,
+        "low": 1.25,
+        "high": 2.39,
+        "n": 34.0,
+        "yoy": 0.07
+      },
+      "+1y": {
+        "avg": 2.16,
+        "low": 0.8,
+        "high": 3.65,
+        "n": 32.0,
+        "yoy": 0.22
+      }
+    },
+    "rev_est": {
+      "0q": {
+        "avg": 27533944910.0,
+        "yoy": -0.02
+      },
+      "+1q": {
+        "avg": 28478205970.0,
+        "yoy": 0.14
+      },
+      "0y": {
+        "avg": 106133563670.0,
+        "yoy": 0.12
+      },
+      "+1y": {
+        "avg": 120499493040.0,
+        "yoy": 0.14
+      }
+    },
+    "growth_est": {
+      "0q": -0.1,
+      "+1q": -0.02,
+      "0y": 0.07,
+      "+1y": 0.22,
+      "LTG": null
+    },
+    "pe_band_3y": {
+      "min": 341.1,
+      "max": 389.4,
+      "points": [
+        341.1,
+        389.4
+      ]
+    }
+  },
+  {
+    "ticker": "TSM",
+    "price": 420.86,
+    "eps_ttm": 13.56,
+    "eps_fwd": 21.93,
+    "pe_ttm": 31.04,
+    "pe_fwd": 19.2,
+    "fy_end": 1767139200,
+    "currency": "USD",
+    "target": {
+      "low": 440.0,
+      "mean": 551.26,
+      "median": 536.0,
+      "high": 700.0,
+      "n": 20.0
+    },
+    "rev_growth": 0.36,
+    "eps_growth": 0.77,
+    "gross_margin": 0.64,
+    "op_margin": 0.6,
+    "eps_est": {
+      "0q": {
+        "avg": 4.46,
+        "low": 4.26,
+        "high": 4.72,
+        "n": 9.0,
+        "yoy": 0.53
+      },
+      "+1q": {
+        "avg": 4.97,
+        "low": 4.76,
+        "high": 5.29,
+        "n": 9.0,
+        "yoy": 0.58
+      },
+      "0y": {
+        "avg": 16.93,
+        "low": 15.23,
+        "high": 17.8,
+        "n": 13.0,
+        "yoy": 0.59
+      },
+      "+1y": {
+        "avg": 21.93,
+        "low": 19.58,
+        "high": 24.62,
+        "n": 13.0,
+        "yoy": 0.29
+      }
+    },
+    "rev_est": {
+      "0q": {
+        "avg": 1454270435790.0,
+        "yoy": 0.47
+      },
+      "+1q": {
+        "avg": 1604476916510.0,
+        "yoy": 0.53
+      },
+      "0y": {
+        "avg": 5434703120270.0,
+        "yoy": 0.43
+      },
+      "+1y": {
+        "avg": 7295585273130.0,
+        "yoy": 0.34
+      }
+    },
+    "growth_est": {
+      "0q": 0.53,
+      "+1q": 0.58,
+      "0y": 0.59,
+      "+1y": 0.29,
+      "LTG": null
+    },
+    "pe_band_3y": {
+      "min": 0.9,
+      "max": 1.1,
+      "points": [
+        0.9,
+        1.1
+      ]
+    }
+  }
+]

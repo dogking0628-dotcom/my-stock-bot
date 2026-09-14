@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-09-11",
+  "timestamp": "2026-09-14",
   "tangle_breakout": [],
   "trade_date": "2026-09-14",
   "data_date": "2026-09-11",
   "ref_trading_date": "2026-09-11",
   "patched_bars": 0,
   "basis": "yfinance 2y monthly + 動能確認分數（最強族群挑 5）；最新K棒以證交所 MI_INDEX 校驗",
-  "total_analyzed": 1078,
+  "total_analyzed": 1077,
   "exact_ath": [
     {
       "today": 154.5,
@@ -16,7 +16,7 @@
       "bullish": false,
       "bullish_fast": true,
       "change_pct": -3.4375000000000044,
-      "vol_ratio": 2.6610301818277295,
+      "vol_ratio": 2.638236094653989,
       "rsi": 73.19587628865979,
       "ma5": 148.9,
       "ma20": 128.375,
@@ -33,9 +33,10 @@
       "market_cap_billions": 88.30480384,
       "mcap_pass": false,
       "sitc_net_shares": 0,
-      "momentum_score": 30,
+      "momentum_score": 35,
       "momentum_notes": [
-        "ATH"
+        "ATH",
+        "QQQ+0.9%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -48,7 +49,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 9.934850688155205,
-      "vol_ratio": 2.614915064865028,
+      "vol_ratio": 2.6057995171165502,
       "rsi": 61.96318817397125,
       "ma5": 59.08000030517578,
       "ma20": 55.54000015258789,
@@ -68,9 +69,10 @@
       "market_cap_billions": 27.44030208,
       "mcap_pass": false,
       "sitc_net_shares": 0,
-      "momentum_score": 30,
+      "momentum_score": 35,
       "momentum_notes": [
-        "ATH"
+        "ATH",
+        "QQQ+0.9%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -83,7 +85,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 0.807534925271991,
-      "vol_ratio": 1.3011708859028837,
+      "vol_ratio": 1.266932502295654,
       "rsi": 55.05319472727759,
       "ma5": 67.84000091552734,
       "ma20": 61.213236236572264,
@@ -100,9 +102,10 @@
       "market_cap_billions": 6.51910016,
       "mcap_pass": false,
       "sitc_net_shares": 0,
-      "momentum_score": 30,
+      "momentum_score": 35,
       "momentum_notes": [
-        "ATH"
+        "ATH",
+        "QQQ+0.9%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -115,7 +118,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 3.003333595567237,
-      "vol_ratio": 0.9717115772065118,
+      "vol_ratio": 0.9607523594984746,
       "rsi": 84.97853782133919,
       "ma5": 44.91999969482422,
       "ma20": 40.68249988555908,
@@ -131,12 +134,12 @@
       "industry_strong": true,
       "market_cap_billions": 5151.41894144,
       "mcap_pass": true,
-      "sitc_net_shares": 7183091,
+      "sitc_net_shares": 1514362,
       "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "投信+7,183張"
+        "投信+1,514張"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -149,7 +152,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 7.173911384914233,
-      "vol_ratio": 3.4341063873260858,
+      "vol_ratio": 3.4217309930471824,
       "rsi": 74.68354308133394,
       "ma5": 22.749999618530275,
       "ma20": 21.26499996185303,
@@ -182,7 +185,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": -3.016239635927409,
-      "vol_ratio": 2.107206109103597,
+      "vol_ratio": 2.101674615499578,
       "rsi": 72.9097102614154,
       "ma5": 83.31999816894532,
       "ma20": 75.8799991607666,
@@ -198,11 +201,11 @@
       "industry_strong": false,
       "market_cap_billions": 5220.2258432,
       "mcap_pass": true,
-      "sitc_net_shares": 6517000,
+      "sitc_net_shares": 5199000,
       "momentum_score": 40,
       "momentum_notes": [
         "ATH",
-        "投信+6,517張"
+        "投信+5,199張"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -215,7 +218,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -6.211180124223603,
-      "vol_ratio": 1.4004169649645077,
+      "vol_ratio": 1.3778981193435673,
       "rsi": 71.18664239970693,
       "ma5": 309.6,
       "ma20": 267.77027435302733,
@@ -232,9 +235,10 @@
       "market_cap_billions": 91.26633472,
       "mcap_pass": false,
       "sitc_net_shares": 0,
-      "momentum_score": 30,
+      "momentum_score": 35,
       "momentum_notes": [
-        "ATH"
+        "ATH",
+        "QQQ+0.9%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -247,7 +251,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -4.761904761904767,
-      "vol_ratio": 0.5591685569230175,
+      "vol_ratio": 0.5297117854457245,
       "rsi": 77.58241758241758,
       "ma5": 324.9,
       "ma20": 261.45,
@@ -264,9 +268,10 @@
       "market_cap_billions": 72.05415936,
       "mcap_pass": false,
       "sitc_net_shares": 0,
-      "momentum_score": 30,
+      "momentum_score": 35,
       "momentum_notes": [
-        "ATH"
+        "ATH",
+        "QQQ+0.9%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -279,7 +284,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 1.747305639383745,
-      "vol_ratio": 0.9457908149788663,
+      "vol_ratio": 0.9431532589565209,
       "rsi": 92.0245619881749,
       "ma5": 37.20999984741211,
       "ma20": 33.87500009536743,
@@ -295,12 +300,12 @@
       "industry_strong": true,
       "market_cap_billions": 3768.41601024,
       "mcap_pass": true,
-      "sitc_net_shares": 601627,
+      "sitc_net_shares": 260509,
       "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "投信+602張"
+        "投信+261張"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -313,7 +318,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 3.170731707317076,
-      "vol_ratio": 0.8116157842474362,
+      "vol_ratio": 0.8016642897531802,
       "rsi": 63.96396396396396,
       "ma5": 411.6,
       "ma20": 385.7,
@@ -329,11 +334,13 @@
       "industry_strong": false,
       "market_cap_billions": 971.55997696,
       "mcap_pass": true,
-      "sitc_net_shares": 17000,
-      "momentum_score": 40,
+      "sitc_net_shares": 337000,
+      "momentum_score": 55,
       "momentum_notes": [
         "ATH",
-        "投信+17張"
+        "QQQ+0.9%",
+        "SMH+1.5%",
+        "投信+337張"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -346,7 +353,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 3.9106116280921643,
-      "vol_ratio": 1.714225882306473,
+      "vol_ratio": 1.7086844269169525,
       "rsi": 86.11111012996463,
       "ma5": 27.070000076293944,
       "ma20": 25.26500015258789,
@@ -362,12 +369,12 @@
       "industry_strong": true,
       "market_cap_billions": 2459.10372352,
       "mcap_pass": true,
-      "sitc_net_shares": 5926825,
+      "sitc_net_shares": 7592000,
       "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "投信+5,927張"
+        "投信+7,592張"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -380,7 +387,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 1.1862395774600687,
-      "vol_ratio": 0.6756781229580221,
+      "vol_ratio": 0.6728463916532291,
       "rsi": 85.54913549714097,
       "ma5": 42.220000457763675,
       "ma20": 39.1850004196167,
@@ -396,12 +403,12 @@
       "industry_strong": true,
       "market_cap_billions": 5955.47389952,
       "mcap_pass": true,
-      "sitc_net_shares": 11650209,
+      "sitc_net_shares": 920834,
       "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "投信+11,650張"
+        "投信+921張"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -414,7 +421,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 2.3684250681023755,
-      "vol_ratio": 0.95185496761015,
+      "vol_ratio": 0.9471787268560878,
       "rsi": 92.12598709010793,
       "ma5": 37.96999969482422,
       "ma20": 35.37999992370605,
@@ -430,12 +437,12 @@
       "industry_strong": true,
       "market_cap_billions": 4141.2870144,
       "mcap_pass": true,
-      "sitc_net_shares": 5934376,
+      "sitc_net_shares": 9873505,
       "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "投信+5,934張"
+        "投信+9,874張"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -448,7 +455,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 2.3437483369239454,
-      "vol_ratio": 0.9222222652572718,
+      "vol_ratio": 0.9132168344106524,
       "rsi": 86.26370355713993,
       "ma5": 44.89999923706055,
       "ma20": 41.639999580383304,
@@ -464,15 +471,14 @@
       "industry_strong": true,
       "market_cap_billions": 4550.8476928,
       "mcap_pass": true,
-      "sitc_net_shares": 88000,
-      "momentum_score": 60,
+      "sitc_net_shares": -41000,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "投信+88張"
+        "族群同步"
       ],
-      "tier": "⭐⭐",
-      "next_day_prob": "70-85%"
+      "tier": "⭐",
+      "next_day_prob": "<70%"
     },
     {
       "today": 28.399999618530273,
@@ -482,7 +488,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 2.8985479203023967,
-      "vol_ratio": 0.8093358420197684,
+      "vol_ratio": 0.8109957388383822,
       "rsi": 74.06015377248539,
       "ma5": 26.89000015258789,
       "ma20": 24.477499961853027,
@@ -514,7 +520,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 0.5979095915628285,
-      "vol_ratio": 1.9993090636134596,
+      "vol_ratio": 1.9912499529219032,
       "rsi": 64.1791061771863,
       "ma5": 33.150000762939456,
       "ma20": 31.63500032424927,
@@ -547,7 +553,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 2.5495794485287604,
-      "vol_ratio": 1.1324652658205914,
+      "vol_ratio": 1.1309304791698362,
       "rsi": 55.54177335098643,
       "ma5": 34.97999954223633,
       "ma20": 33.78893146514893,
@@ -579,7 +585,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -3.195488721804507,
-      "vol_ratio": 0.1401066795774798,
+      "vol_ratio": 0.13306437310224414,
       "rsi": 75.72254335260115,
       "ma5": 519.0,
       "ma20": 466.8,
@@ -595,10 +601,11 @@
       "industry_strong": false,
       "market_cap_billions": 643.4725888,
       "mcap_pass": true,
-      "sitc_net_shares": -28000,
-      "momentum_score": 30,
+      "sitc_net_shares": -15000,
+      "momentum_score": 35,
       "momentum_notes": [
-        "ATH"
+        "ATH",
+        "QQQ+0.9%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -611,7 +618,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 0.4975124378109541,
-      "vol_ratio": 0.814479101639081,
+      "vol_ratio": 0.8121268755092015,
       "rsi": 58.091284862118556,
       "ma5": 99.85999908447266,
       "ma20": 95.97999954223633,
@@ -627,12 +634,12 @@
       "industry_strong": true,
       "market_cap_billions": 567.27085056,
       "mcap_pass": true,
-      "sitc_net_shares": 360000,
+      "sitc_net_shares": 1886000,
       "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "投信+360張"
+        "投信+1,886張"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -645,7 +652,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 4.4334975369458185,
-      "vol_ratio": 1.0887439975547866,
+      "vol_ratio": 1.08773122555224,
       "rsi": 55.63062946959567,
       "ma5": 102.01999969482422,
       "ma20": 100.48999938964843,
@@ -662,9 +669,10 @@
       "market_cap_billions": 92.45348864,
       "mcap_pass": false,
       "sitc_net_shares": 0,
-      "momentum_score": 30,
+      "momentum_score": 35,
       "momentum_notes": [
-        "ATH"
+        "ATH",
+        "QQQ+0.9%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -677,7 +685,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 1.565761954297229,
-      "vol_ratio": 0.8033821701164812,
+      "vol_ratio": 0.8005730396899192,
       "rsi": 77.20206823761013,
       "ma5": 47.95000076293945,
       "ma20": 44.907500457763675,
@@ -693,12 +701,12 @@
       "industry_strong": true,
       "market_cap_billions": 1862.4897024,
       "mcap_pass": true,
-      "sitc_net_shares": 290000,
+      "sitc_net_shares": 610000,
       "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "投信+290張"
+        "投信+610張"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -711,7 +719,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -2.8601694915254217,
-      "vol_ratio": 0.9956593224368224,
+      "vol_ratio": 0.9042462490131704,
       "rsi": 73.03370786516854,
       "ma5": 4680.0,
       "ma20": 4161.75,
@@ -727,11 +735,13 @@
       "industry_strong": false,
       "market_cap_billions": 54746.27878912,
       "mcap_pass": true,
-      "sitc_net_shares": 55475,
-      "momentum_score": 40,
+      "sitc_net_shares": 108022,
+      "momentum_score": 55,
       "momentum_notes": [
         "ATH",
-        "投信+55張"
+        "QQQ+0.9%",
+        "SMH+1.5%",
+        "投信+108張"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -744,7 +754,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 0.43042046613084306,
-      "vol_ratio": 0.7665952234644677,
+      "vol_ratio": 0.7608399724791319,
       "rsi": 90.42551723634156,
       "ma5": 70.03999786376953,
       "ma20": 66.01865310668946,
@@ -760,12 +770,12 @@
       "industry_strong": true,
       "market_cap_billions": 7492.10632192,
       "mcap_pass": true,
-      "sitc_net_shares": 324892,
+      "sitc_net_shares": 1513041,
       "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "投信+325張"
+        "投信+1,513張"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -778,7 +788,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 1.8587360858383528,
-      "vol_ratio": 0.6741081155259212,
+      "vol_ratio": 0.6718651335265606,
       "rsi": 72.0407228396526,
       "ma5": 13.629999923706055,
       "ma20": 13.138471126556396,
@@ -794,7 +804,7 @@
       "industry_strong": true,
       "market_cap_billions": 595.99740928,
       "mcap_pass": true,
-      "sitc_net_shares": -1984000,
+      "sitc_net_shares": -5000,
       "momentum_score": 50,
       "momentum_notes": [
         "ATH",
@@ -811,7 +821,7 @@
       "bullish": false,
       "bullish_fast": true,
       "change_pct": 6.623374641715696,
-      "vol_ratio": 5.793643959031113,
+      "vol_ratio": 5.793748432797415,
       "rsi": 86.36363329856758,
       "ma5": 36.23000030517578,
       "ma20": 30.57749996185303,
@@ -828,10 +838,11 @@
       "market_cap_billions": 34.159296,
       "mcap_pass": false,
       "sitc_net_shares": 0,
-      "momentum_score": 80,
+      "momentum_score": 85,
       "momentum_notes": [
         "量爆價揚",
-        "ATH"
+        "ATH",
+        "QQQ+0.9%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -844,7 +855,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 1.8648000200605086,
-      "vol_ratio": 1.2721582224928225,
+      "vol_ratio": 1.2666934429360532,
       "rsi": 85.71431849366932,
       "ma5": 43.17000045776367,
       "ma20": 41.00749969482422,
@@ -860,12 +871,12 @@
       "industry_strong": true,
       "market_cap_billions": 4492.61961216,
       "mcap_pass": true,
-      "sitc_net_shares": 1449517,
+      "sitc_net_shares": 7980068,
       "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "投信+1,450張"
+        "投信+7,980張"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -878,7 +889,7 @@
       "bullish": false,
       "bullish_fast": false,
       "change_pct": -2.9484029484029506,
-      "vol_ratio": 0.8444416648280662,
+      "vol_ratio": 0.7702291480292796,
       "rsi": 62.55924170616114,
       "ma5": 2021.0,
       "ma20": 1733.5,
@@ -910,7 +921,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 1.8518500530834592,
-      "vol_ratio": 0.7310853617817775,
+      "vol_ratio": 0.7304949222528458,
       "rsi": 75.86208937711206,
       "ma5": 10.870000076293945,
       "ma20": 10.510000038146973,
@@ -943,7 +954,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 0.5586613608986157,
-      "vol_ratio": 0.5155122144160392,
+      "vol_ratio": 0.5140993208986877,
       "rsi": 83.6734249015381,
       "ma5": 17.750000381469725,
       "ma20": 16.92000017166138,
@@ -959,7 +970,7 @@
       "industry_strong": true,
       "market_cap_billions": 1574.32610816,
       "mcap_pass": true,
-      "sitc_net_shares": -4000,
+      "sitc_net_shares": 0,
       "momentum_score": 50,
       "momentum_notes": [
         "ATH",
@@ -976,7 +987,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 0.8174365962506869,
-      "vol_ratio": 0.9957360354776642,
+      "vol_ratio": 0.9985253809478776,
       "rsi": 75.02152904333282,
       "ma5": 18.20999984741211,
       "ma20": 17.629139995574953,
@@ -1008,7 +1019,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": -0.9345794392523366,
-      "vol_ratio": 1.7875707670433825,
+      "vol_ratio": 1.770629231372101,
       "rsi": 76.61822985468956,
       "ma5": 1047.4,
       "ma20": 876.0,
@@ -1024,11 +1035,12 @@
       "industry_strong": false,
       "market_cap_billions": 580.626432,
       "mcap_pass": true,
-      "sitc_net_shares": 2305000,
-      "momentum_score": 40,
+      "sitc_net_shares": 720000,
+      "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "投信+2,305張"
+        "QQQ+0.9%",
+        "投信+720張"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1041,7 +1053,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 3.1180400890868487,
-      "vol_ratio": 2.07129915289604,
+      "vol_ratio": 2.053460743801653,
       "rsi": 65.38461538461539,
       "ma5": 222.7,
       "ma20": 219.625,
@@ -1076,7 +1088,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 2.358490566037741,
-      "vol_ratio": 2.551090340710897,
+      "vol_ratio": 2.507050705070507,
       "rsi": 71.42857142857143,
       "ma5": 106.9,
       "ma20": 103.63999977111817,
@@ -1108,7 +1120,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 7.776261937244211,
-      "vol_ratio": 3.4031902257621263,
+      "vol_ratio": 3.257214744022535,
       "rsi": 69.78417266187051,
       "ma5": 740.0,
       "ma20": 709.75,
@@ -1127,11 +1139,12 @@
       "industry_strong": false,
       "market_cap_billions": 848.40194048,
       "mcap_pass": true,
-      "sitc_net_shares": -2000,
-      "momentum_score": 80,
+      "sitc_net_shares": 208600,
+      "momentum_score": 90,
       "momentum_notes": [
         "量爆價揚",
-        "ATH"
+        "ATH",
+        "投信+209張"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -1144,7 +1157,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 0.8333333333333304,
-      "vol_ratio": 0.5586461478967527,
+      "vol_ratio": 0.5548501831694697,
       "rsi": 83.33333333333333,
       "ma5": 119.1,
       "ma20": 116.075,
@@ -1160,11 +1173,12 @@
       "industry_strong": false,
       "market_cap_billions": 3326.9612544,
       "mcap_pass": true,
-      "sitc_net_shares": 15041,
-      "momentum_score": 40,
+      "sitc_net_shares": 60163,
+      "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "投信+15張"
+        "QQQ+0.9%",
+        "投信+60張"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1177,7 +1191,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 1.3035395772704517,
-      "vol_ratio": 1.388321751416536,
+      "vol_ratio": 1.363085181125172,
       "rsi": 90.74074335713044,
       "ma5": 26.850000381469727,
       "ma20": 25.74749994277954,
@@ -1193,15 +1207,14 @@
       "industry_strong": true,
       "market_cap_billions": 3598.77476352,
       "mcap_pass": true,
-      "sitc_net_shares": 119000,
-      "momentum_score": 60,
+      "sitc_net_shares": -16000,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "投信+119張"
+        "族群同步"
       ],
-      "tier": "⭐⭐",
-      "next_day_prob": "70-85%"
+      "tier": "⭐",
+      "next_day_prob": "<70%"
     },
     {
       "today": 185.5,
@@ -1211,7 +1224,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 0.2702702702702675,
-      "vol_ratio": 0.8146502852093042,
+      "vol_ratio": 0.8098701063274728,
       "rsi": 60.20408163265306,
       "ma5": 188.6,
       "ma20": 183.7,
@@ -1227,11 +1240,11 @@
       "industry_strong": false,
       "market_cap_billions": 4659.30354688,
       "mcap_pass": true,
-      "sitc_net_shares": 777463,
-      "momentum_score": 40,
+      "sitc_net_shares": -1049148,
+      "momentum_score": 35,
       "momentum_notes": [
         "ATH",
-        "投信+777張"
+        "QQQ+0.9%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1244,7 +1257,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 2.052788252969262,
-      "vol_ratio": 2.2825818764013794,
+      "vol_ratio": 2.278518121153751,
       "rsi": 71.11110357590024,
       "ma5": 17.05,
       "ma20": 16.669999980926512,
@@ -1277,7 +1290,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 0.3868486653540337,
-      "vol_ratio": 0.9622636438784438,
+      "vol_ratio": 0.9541298646670937,
       "rsi": 87.99998575847079,
       "ma5": 51.98000030517578,
       "ma20": 48.97749977111816,
@@ -1293,12 +1306,12 @@
       "industry_strong": true,
       "market_cap_billions": 624.55185408,
       "mcap_pass": true,
-      "sitc_net_shares": 1303500,
+      "sitc_net_shares": 1128900,
       "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "投信+1,304張"
+        "投信+1,129張"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -1311,7 +1324,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -0.6342478687092479,
-      "vol_ratio": 0.7820214828839837,
+      "vol_ratio": 0.7775773612660336,
       "rsi": 55.43478441148323,
       "ma5": 23.5,
       "ma20": 22.767499923706055,
@@ -1343,7 +1356,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 3.345730705997907,
-      "vol_ratio": 2.0703166809033715,
+      "vol_ratio": 2.0428976002399235,
       "rsi": 63.33210527595992,
       "ma5": 40.01651153564453,
       "ma20": 39.89941596984863,
@@ -1362,11 +1375,11 @@
       "industry_strong": false,
       "market_cap_billions": 346.59536896,
       "mcap_pass": true,
-      "sitc_net_shares": 65000,
+      "sitc_net_shares": 118400,
       "momentum_score": 40,
       "momentum_notes": [
         "ATH",
-        "投信+65張"
+        "投信+118張"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1379,7 +1392,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 0.0,
-      "vol_ratio": 0.5091266059979183,
+      "vol_ratio": 0.5015552429773982,
       "rsi": 75.38461538461539,
       "ma5": 148.5,
       "ma20": 140.775,
@@ -1395,15 +1408,14 @@
       "industry_strong": true,
       "market_cap_billions": 12681.79140608,
       "mcap_pass": true,
-      "sitc_net_shares": 83790,
-      "momentum_score": 60,
+      "sitc_net_shares": -838,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "投信+84張"
+        "族群同步"
       ],
-      "tier": "⭐⭐",
-      "next_day_prob": "70-85%"
+      "tier": "⭐",
+      "next_day_prob": "<70%"
     },
     {
       "today": 16.75,
@@ -1413,7 +1425,7 @@
       "bullish": false,
       "bullish_fast": true,
       "change_pct": 1.208463880116617,
-      "vol_ratio": 1.0689334658415504,
+      "vol_ratio": 1.0667958473335262,
       "rsi": 78.80572954359883,
       "ma5": 16.610000228881837,
       "ma20": 15.702032041549682,
@@ -1446,7 +1458,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -1.542785492894172,
-      "vol_ratio": 0.47471528490518533,
+      "vol_ratio": 0.47316154275052724,
       "rsi": 71.61713524861979,
       "ma5": 71.16000061035156,
       "ma20": 65.26500053405762,
@@ -1462,7 +1474,7 @@
       "industry_strong": false,
       "market_cap_billions": 2982.99817984,
       "mcap_pass": true,
-      "sitc_net_shares": -1000,
+      "sitc_net_shares": -5000,
       "momentum_score": 30,
       "momentum_notes": [
         "ATH"
@@ -1478,7 +1490,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 0.5333333333333412,
-      "vol_ratio": 0.6075446071451089,
+      "vol_ratio": 0.5949263948740784,
       "rsi": 78.125,
       "ma5": 186.7,
       "ma20": 182.3,
@@ -1494,7 +1506,7 @@
       "industry_strong": true,
       "market_cap_billions": 314.79549952,
       "mcap_pass": true,
-      "sitc_net_shares": -22000,
+      "sitc_net_shares": -220184,
       "momentum_score": 50,
       "momentum_notes": [
         "ATH",
@@ -1511,7 +1523,7 @@
       "bullish": false,
       "bullish_fast": false,
       "change_pct": -2.5839793281653756,
-      "vol_ratio": 0.6425362729700317,
+      "vol_ratio": 0.6321317452686854,
       "rsi": 50.534670513405494,
       "ma5": 195.4,
       "ma20": 192.46345443725585,
@@ -1527,11 +1539,12 @@
       "industry_strong": false,
       "market_cap_billions": 229.04987648,
       "mcap_pass": true,
-      "sitc_net_shares": 50000,
-      "momentum_score": 40,
+      "sitc_net_shares": 0,
+      "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "投信+50張"
+        "QQQ+0.9%",
+        "SMH+1.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1544,7 +1557,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 0.0,
-      "vol_ratio": 1.014491680062026,
+      "vol_ratio": 0.9913522440160396,
       "rsi": 68.75,
       "ma5": 110.9,
       "ma20": 109.1,
@@ -1576,7 +1589,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 1.600989040167633,
-      "vol_ratio": 0.7880471659433542,
+      "vol_ratio": 0.7691160049918835,
       "rsi": 50.0,
       "ma5": 81.68000030517578,
       "ma20": 81.55499992370605,
@@ -1592,11 +1605,11 @@
       "industry_strong": false,
       "market_cap_billions": 487.05261568,
       "mcap_pass": true,
-      "sitc_net_shares": 89000,
+      "sitc_net_shares": 10230,
       "momentum_score": 40,
       "momentum_notes": [
         "ATH",
-        "投信+89張"
+        "投信+10張"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1609,7 +1622,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 3.2858706459180542,
-      "vol_ratio": 1.177605413445551,
+      "vol_ratio": 1.171793223001221,
       "rsi": 68.22033542150103,
       "ma5": 45.78000106811523,
       "ma20": 44.71000022888184,
@@ -1642,7 +1655,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 0.16051731949118242,
-      "vol_ratio": 0.5904728731809704,
+      "vol_ratio": 0.5803437539614568,
       "rsi": 70.84676351469193,
       "ma5": 31.14000015258789,
       "ma20": 30.67537727355957,
@@ -1674,7 +1687,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 1.4466546112115841,
-      "vol_ratio": 0.6756300501168655,
+      "vol_ratio": 0.6626327697627009,
       "rsi": 53.246753246753244,
       "ma5": 279.3,
       "ma20": 273.225,
@@ -1691,9 +1704,11 @@
       "market_cap_billions": 253.19059456,
       "mcap_pass": true,
       "sitc_net_shares": 0,
-      "momentum_score": 30,
+      "momentum_score": 45,
       "momentum_notes": [
-        "ATH"
+        "ATH",
+        "QQQ+0.9%",
+        "SMH+1.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1706,7 +1721,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 0.3205079220378604,
-      "vol_ratio": 0.6760416868396517,
+      "vol_ratio": 0.6695082907866158,
       "rsi": 65.33332824707031,
       "ma5": 15.839999961853028,
       "ma20": 14.777499961853028,
@@ -1739,7 +1754,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -0.3816808341898237,
-      "vol_ratio": 0.39537857834428713,
+      "vol_ratio": 0.37743054690748923,
       "rsi": 73.07691743388474,
       "ma5": 26.200000381469728,
       "ma20": 25.795000076293945,
@@ -1771,7 +1786,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 1.4084487779927324,
-      "vol_ratio": 0.5535072851948682,
+      "vol_ratio": 0.5465257074868327,
       "rsi": 66.66666666666666,
       "ma5": 39.06999969482422,
       "ma20": 38.01750011444092,
@@ -1804,7 +1819,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 0.3669724770642091,
-      "vol_ratio": 0.7268769855519703,
+      "vol_ratio": 0.7167476721718122,
       "rsi": 52.33644859813084,
       "ma5": 541.8,
       "ma20": 537.35,
@@ -1820,10 +1835,13 @@
       "industry_strong": false,
       "market_cap_billions": 2686.57819648,
       "mcap_pass": true,
-      "sitc_net_shares": -7040,
-      "momentum_score": 30,
+      "sitc_net_shares": 103842,
+      "momentum_score": 55,
       "momentum_notes": [
-        "ATH"
+        "ATH",
+        "QQQ+0.9%",
+        "SMH+1.5%",
+        "投信+104張"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1836,7 +1854,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -1.8292682926829285,
-      "vol_ratio": 0.5149695051588838,
+      "vol_ratio": 0.49784345430199795,
       "rsi": 52.247191011235955,
       "ma5": 328.3,
       "ma20": 321.8,
@@ -1852,10 +1870,12 @@
       "industry_strong": false,
       "market_cap_billions": 733.41083648,
       "mcap_pass": true,
-      "sitc_net_shares": -11000,
-      "momentum_score": 30,
+      "sitc_net_shares": 22000,
+      "momentum_score": 45,
       "momentum_notes": [
-        "ATH"
+        "ATH",
+        "QQQ+0.9%",
+        "投信+22張"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1868,7 +1888,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 3.6072127896169315,
-      "vol_ratio": 1.1717442289215256,
+      "vol_ratio": 1.1645377120349636,
       "rsi": 74.87181634044798,
       "ma5": 50.54000015258789,
       "ma20": 48.37000007629395,
@@ -1884,12 +1904,12 @@
       "industry_strong": true,
       "market_cap_billions": 5886.37601792,
       "mcap_pass": true,
-      "sitc_net_shares": 150736,
+      "sitc_net_shares": 9392945,
       "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "投信+151張"
+        "投信+9,393張"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -1902,7 +1922,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -2.3866347579542757,
-      "vol_ratio": 0.4195774099494898,
+      "vol_ratio": 0.41876518841448007,
       "rsi": 58.333336987257596,
       "ma5": 41.93000030517578,
       "ma20": 39.80750007629395,
@@ -1919,9 +1939,11 @@
       "market_cap_billions": 25.22604032,
       "mcap_pass": false,
       "sitc_net_shares": 0,
-      "momentum_score": 30,
+      "momentum_score": 45,
       "momentum_notes": [
-        "ATH"
+        "ATH",
+        "QQQ+0.9%",
+        "SMH+1.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1934,7 +1956,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -2.029307197624375,
-      "vol_ratio": 1.141700906441124,
+      "vol_ratio": 1.1330335291543758,
       "rsi": 53.6312915833756,
       "ma5": 43.70999984741211,
       "ma20": 43.168175888061526,
@@ -1966,7 +1988,7 @@
       "bullish": false,
       "bullish_fast": false,
       "change_pct": -0.1555304802009494,
-      "vol_ratio": 0.5569168982487881,
+      "vol_ratio": 0.5530651538044387,
       "rsi": 64.23356749633079,
       "ma5": 64.3,
       "ma20": 61.45500011444092,
@@ -1999,7 +2021,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 0.7168458781362075,
-      "vol_ratio": 1.5914634156364509,
+      "vol_ratio": 1.5850493800568006,
       "rsi": 78.57142857142857,
       "ma5": 139.3,
       "ma20": 137.175,
@@ -2015,11 +2037,12 @@
       "industry_strong": false,
       "market_cap_billions": 10550.12749312,
       "mcap_pass": true,
-      "sitc_net_shares": 99325,
-      "momentum_score": 40,
+      "sitc_net_shares": 113299,
+      "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "投信+99張"
+        "QQQ+0.9%",
+        "投信+113張"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2032,7 +2055,7 @@
       "bullish": false,
       "bullish_fast": true,
       "change_pct": 0.7177015371678808,
-      "vol_ratio": 0.968664968514893,
+      "vol_ratio": 0.9432964292874941,
       "rsi": 68.29272377436294,
       "ma5": 21.039999771118165,
       "ma20": 20.489999866485597,
@@ -2048,7 +2071,7 @@
       "industry_strong": true,
       "market_cap_billions": 898.49430016,
       "mcap_pass": true,
-      "sitc_net_shares": -2000,
+      "sitc_net_shares": 0,
       "momentum_score": 50,
       "momentum_notes": [
         "ATH",
@@ -2065,7 +2088,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": -0.6369426751592355,
-      "vol_ratio": 0.57104804099102,
+      "vol_ratio": 0.5647797736737648,
       "rsi": 65.72769953051642,
       "ma5": 233.6,
       "ma20": 215.7,
@@ -2082,9 +2105,11 @@
       "market_cap_billions": 285.04909824,
       "mcap_pass": true,
       "sitc_net_shares": 0,
-      "momentum_score": 30,
+      "momentum_score": 45,
       "momentum_notes": [
-        "ATH"
+        "ATH",
+        "QQQ+0.9%",
+        "SMH+1.5%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2097,7 +2122,7 @@
       "bullish": false,
       "bullish_fast": false,
       "change_pct": 0.2028444023649989,
-      "vol_ratio": 1.196885142924602,
+      "vol_ratio": 1.1952178846624288,
       "rsi": 41.50947877702579,
       "ma5": 24.539999771118165,
       "ma20": 24.817499923706055,
@@ -2114,9 +2139,10 @@
       "market_cap_billions": 28.42195456,
       "mcap_pass": false,
       "sitc_net_shares": 0,
-      "momentum_score": 30,
+      "momentum_score": 35,
       "momentum_notes": [
-        "ATH"
+        "ATH",
+        "QQQ+0.9%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2129,7 +2155,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -2.4234712868618224,
-      "vol_ratio": 0.4760526295752405,
+      "vol_ratio": 0.4725388412780727,
       "rsi": 56.862742164784,
       "ma5": 78.2,
       "ma20": 74.59999961853028,
@@ -2162,7 +2188,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 0.9569377990430672,
-      "vol_ratio": 0.565657761545503,
+      "vol_ratio": 0.5608488958017801,
       "rsi": 65.38461538461539,
       "ma5": 104.0,
       "ma20": 102.35,
@@ -2178,10 +2204,11 @@
       "industry_strong": false,
       "market_cap_billions": 3430.9275648,
       "mcap_pass": true,
-      "sitc_net_shares": -22046,
-      "momentum_score": 30,
+      "sitc_net_shares": -4184,
+      "momentum_score": 35,
       "momentum_notes": [
-        "ATH"
+        "ATH",
+        "QQQ+0.9%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2194,12 +2221,12 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 0.0,
-      "vol_ratio": 0.5822934607820123,
+      "vol_ratio": 0.5803299791432923,
       "rsi": 86.192539141198,
       "ma5": 66.16000061035156,
       "ma20": 65.17786598205566,
       "ma60": 62.842071533203125,
-      "ma200": 60.81895378112793,
+      "ma200": 60.81895393371582,
       "gap_up": false,
       "close_near_high": false,
       "long_red": false,
@@ -2226,7 +2253,7 @@
       "bullish": false,
       "bullish_fast": false,
       "change_pct": 1.5151515151515138,
-      "vol_ratio": 0.4962001095994119,
+      "vol_ratio": 0.48588752116481493,
       "rsi": 36.206896551724135,
       "ma5": 232.3,
       "ma20": 236.925,
@@ -2242,12 +2269,12 @@
       "industry_strong": true,
       "market_cap_billions": 4589.89109248,
       "mcap_pass": true,
-      "sitc_net_shares": 1325900,
+      "sitc_net_shares": 1206800,
       "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "投信+1,326張"
+        "投信+1,207張"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -2260,7 +2287,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": -1.6867469879518038,
-      "vol_ratio": 0.7524499056929941,
+      "vol_ratio": 0.7272521047802404,
       "rsi": 68.45965770171149,
       "ma5": 6033.0,
       "ma20": 5833.5,
@@ -2276,11 +2303,13 @@
       "industry_strong": false,
       "market_cap_billions": 6640.2451456,
       "mcap_pass": true,
-      "sitc_net_shares": 36519,
-      "momentum_score": 40,
+      "sitc_net_shares": 74678,
+      "momentum_score": 55,
       "momentum_notes": [
         "ATH",
-        "投信+37張"
+        "QQQ+0.9%",
+        "SMH+1.5%",
+        "投信+75張"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2293,7 +2322,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 0.994035785288272,
-      "vol_ratio": 0.892832827493764,
+      "vol_ratio": 0.865887473910416,
       "rsi": 74.36974789915966,
       "ma5": 499.4,
       "ma20": 486.8,
@@ -2309,11 +2338,12 @@
       "industry_strong": false,
       "market_cap_billions": 2564.95730688,
       "mcap_pass": true,
-      "sitc_net_shares": 4985,
-      "momentum_score": 40,
+      "sitc_net_shares": 342942,
+      "momentum_score": 45,
       "momentum_notes": [
         "ATH",
-        "投信+5張"
+        "QQQ+0.9%",
+        "投信+343張"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2326,7 +2356,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 0.0,
-      "vol_ratio": 0.6774640451702669,
+      "vol_ratio": 0.6736253472487919,
       "rsi": 72.6562483701854,
       "ma5": 111.9,
       "ma20": 106.18499984741212,
@@ -2342,14 +2372,15 @@
       "industry_strong": true,
       "market_cap_billions": 11544.66709504,
       "mcap_pass": true,
-      "sitc_net_shares": -8352,
-      "momentum_score": 50,
+      "sitc_net_shares": 34591,
+      "momentum_score": 60,
       "momentum_notes": [
         "ATH",
-        "族群同步"
+        "族群同步",
+        "投信+35張"
       ],
-      "tier": "⭐",
-      "next_day_prob": "<70%"
+      "tier": "⭐⭐",
+      "next_day_prob": "70-85%"
     },
     {
       "today": 24.350000381469727,
@@ -2359,7 +2390,7 @@
       "bullish": false,
       "bullish_fast": false,
       "change_pct": -0.20491490918949085,
-      "vol_ratio": 0.941416668824611,
+      "vol_ratio": 0.9388330062930139,
       "rsi": 37.03702657147822,
       "ma5": 24.420000076293945,
       "ma20": 24.51500005722046,
@@ -2385,13 +2416,13 @@
     },
     {
       "today": 127.5,
-      "monthly_max_2y": 127.55181884765625,
-      "ratio": 0.99959374277745,
-      "from_high_pct": -0.04062572225500549,
+      "monthly_max_2y": 127.55181121826172,
+      "ratio": 0.9995938025672324,
+      "from_high_pct": -0.04061974327675966,
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -0.390625,
-      "vol_ratio": 0.3753598226793836,
+      "vol_ratio": 0.36488690198107687,
       "rsi": 62.554889721087385,
       "ma5": 126.2,
       "ma20": 124.97985191345215,
@@ -2426,7 +2457,7 @@
       "bullish": false,
       "bullish_fast": true,
       "change_pct": -3.4375000000000044,
-      "vol_ratio": 2.6610301818277295,
+      "vol_ratio": 2.638236094653989,
       "rsi": 73.19587628865979,
       "ma5": 148.9,
       "ma20": 128.375,
@@ -2443,9 +2474,10 @@
       "market_cap_billions": 88.30480384,
       "mcap_pass": false,
       "sitc_net_shares": 0,
-      "momentum_score": 30,
+      "momentum_score": 35,
       "momentum_notes": [
-        "ATH"
+        "ATH",
+        "QQQ+0.9%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2458,7 +2490,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 9.934850688155205,
-      "vol_ratio": 2.614915064865028,
+      "vol_ratio": 2.6057995171165502,
       "rsi": 61.96318817397125,
       "ma5": 59.08000030517578,
       "ma20": 55.54000015258789,
@@ -2478,9 +2510,10 @@
       "market_cap_billions": 27.44030208,
       "mcap_pass": false,
       "sitc_net_shares": 0,
-      "momentum_score": 30,
+      "momentum_score": 35,
       "momentum_notes": [
-        "ATH"
+        "ATH",
+        "QQQ+0.9%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2493,7 +2526,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 0.807534925271991,
-      "vol_ratio": 1.3011708859028837,
+      "vol_ratio": 1.266932502295654,
       "rsi": 55.05319472727759,
       "ma5": 67.84000091552734,
       "ma20": 61.213236236572264,
@@ -2510,9 +2543,10 @@
       "market_cap_billions": 6.51910016,
       "mcap_pass": false,
       "sitc_net_shares": 0,
-      "momentum_score": 30,
+      "momentum_score": 35,
       "momentum_notes": [
-        "ATH"
+        "ATH",
+        "QQQ+0.9%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2525,7 +2559,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 3.003333595567237,
-      "vol_ratio": 0.9717115772065118,
+      "vol_ratio": 0.9607523594984746,
       "rsi": 84.97853782133919,
       "ma5": 44.91999969482422,
       "ma20": 40.68249988555908,
@@ -2541,12 +2575,12 @@
       "industry_strong": true,
       "market_cap_billions": 5151.41894144,
       "mcap_pass": true,
-      "sitc_net_shares": 7183091,
+      "sitc_net_shares": 1514362,
       "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "投信+7,183張"
+        "投信+1,514張"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -2559,7 +2593,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 7.173911384914233,
-      "vol_ratio": 3.4341063873260858,
+      "vol_ratio": 3.4217309930471824,
       "rsi": 74.68354308133394,
       "ma5": 22.749999618530275,
       "ma20": 21.26499996185303,
@@ -2592,7 +2626,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": -3.016239635927409,
-      "vol_ratio": 2.107206109103597,
+      "vol_ratio": 2.101674615499578,
       "rsi": 72.9097102614154,
       "ma5": 83.31999816894532,
       "ma20": 75.8799991607666,
@@ -2608,11 +2642,11 @@
       "industry_strong": false,
       "market_cap_billions": 5220.2258432,
       "mcap_pass": true,
-      "sitc_net_shares": 6517000,
+      "sitc_net_shares": 5199000,
       "momentum_score": 40,
       "momentum_notes": [
         "ATH",
-        "投信+6,517張"
+        "投信+5,199張"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2625,7 +2659,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -6.211180124223603,
-      "vol_ratio": 1.4004169649645077,
+      "vol_ratio": 1.3778981193435673,
       "rsi": 71.18664239970693,
       "ma5": 309.6,
       "ma20": 267.77027435302733,
@@ -2642,9 +2676,10 @@
       "market_cap_billions": 91.26633472,
       "mcap_pass": false,
       "sitc_net_shares": 0,
-      "momentum_score": 30,
+      "momentum_score": 35,
       "momentum_notes": [
-        "ATH"
+        "ATH",
+        "QQQ+0.9%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2657,7 +2692,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -4.761904761904767,
-      "vol_ratio": 0.5591685569230175,
+      "vol_ratio": 0.5297117854457245,
       "rsi": 77.58241758241758,
       "ma5": 324.9,
       "ma20": 261.45,
@@ -2674,9 +2709,10 @@
       "market_cap_billions": 72.05415936,
       "mcap_pass": false,
       "sitc_net_shares": 0,
-      "momentum_score": 30,
+      "momentum_score": 35,
       "momentum_notes": [
-        "ATH"
+        "ATH",
+        "QQQ+0.9%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2689,7 +2725,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 1.747305639383745,
-      "vol_ratio": 0.9457908149788663,
+      "vol_ratio": 0.9431532589565209,
       "rsi": 92.0245619881749,
       "ma5": 37.20999984741211,
       "ma20": 33.87500009536743,
@@ -2705,12 +2741,12 @@
       "industry_strong": true,
       "market_cap_billions": 3768.41601024,
       "mcap_pass": true,
-      "sitc_net_shares": 601627,
+      "sitc_net_shares": 260509,
       "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "投信+602張"
+        "投信+261張"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -2723,7 +2759,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 3.170731707317076,
-      "vol_ratio": 0.8116157842474362,
+      "vol_ratio": 0.8016642897531802,
       "rsi": 63.96396396396396,
       "ma5": 411.6,
       "ma20": 385.7,
@@ -2739,11 +2775,13 @@
       "industry_strong": false,
       "market_cap_billions": 971.55997696,
       "mcap_pass": true,
-      "sitc_net_shares": 17000,
-      "momentum_score": 40,
+      "sitc_net_shares": 337000,
+      "momentum_score": 55,
       "momentum_notes": [
         "ATH",
-        "投信+17張"
+        "QQQ+0.9%",
+        "SMH+1.5%",
+        "投信+337張"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2756,7 +2794,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 3.9106116280921643,
-      "vol_ratio": 1.714225882306473,
+      "vol_ratio": 1.7086844269169525,
       "rsi": 86.11111012996463,
       "ma5": 27.070000076293944,
       "ma20": 25.26500015258789,
@@ -2772,12 +2810,12 @@
       "industry_strong": true,
       "market_cap_billions": 2459.10372352,
       "mcap_pass": true,
-      "sitc_net_shares": 5926825,
+      "sitc_net_shares": 7592000,
       "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "投信+5,927張"
+        "投信+7,592張"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -2790,7 +2828,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 1.1862395774600687,
-      "vol_ratio": 0.6756781229580221,
+      "vol_ratio": 0.6728463916532291,
       "rsi": 85.54913549714097,
       "ma5": 42.220000457763675,
       "ma20": 39.1850004196167,
@@ -2806,12 +2844,12 @@
       "industry_strong": true,
       "market_cap_billions": 5955.47389952,
       "mcap_pass": true,
-      "sitc_net_shares": 11650209,
+      "sitc_net_shares": 920834,
       "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "投信+11,650張"
+        "投信+921張"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -2824,7 +2862,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 2.3684250681023755,
-      "vol_ratio": 0.95185496761015,
+      "vol_ratio": 0.9471787268560878,
       "rsi": 92.12598709010793,
       "ma5": 37.96999969482422,
       "ma20": 35.37999992370605,
@@ -2840,12 +2878,12 @@
       "industry_strong": true,
       "market_cap_billions": 4141.2870144,
       "mcap_pass": true,
-      "sitc_net_shares": 5934376,
+      "sitc_net_shares": 9873505,
       "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "投信+5,934張"
+        "投信+9,874張"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -2858,7 +2896,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 2.3437483369239454,
-      "vol_ratio": 0.9222222652572718,
+      "vol_ratio": 0.9132168344106524,
       "rsi": 86.26370355713993,
       "ma5": 44.89999923706055,
       "ma20": 41.639999580383304,
@@ -2874,15 +2912,14 @@
       "industry_strong": true,
       "market_cap_billions": 4550.8476928,
       "mcap_pass": true,
-      "sitc_net_shares": 88000,
-      "momentum_score": 60,
+      "sitc_net_shares": -41000,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "投信+88張"
+        "族群同步"
       ],
-      "tier": "⭐⭐",
-      "next_day_prob": "70-85%"
+      "tier": "⭐",
+      "next_day_prob": "<70%"
     },
     {
       "today": 28.399999618530273,
@@ -2892,7 +2929,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 2.8985479203023967,
-      "vol_ratio": 0.8093358420197684,
+      "vol_ratio": 0.8109957388383822,
       "rsi": 74.06015377248539,
       "ma5": 26.89000015258789,
       "ma20": 24.477499961853027,
@@ -2924,7 +2961,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 0.5979095915628285,
-      "vol_ratio": 1.9993090636134596,
+      "vol_ratio": 1.9912499529219032,
       "rsi": 64.1791061771863,
       "ma5": 33.150000762939456,
       "ma20": 31.63500032424927,
@@ -2957,7 +2994,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 2.5495794485287604,
-      "vol_ratio": 1.1324652658205914,
+      "vol_ratio": 1.1309304791698362,
       "rsi": 55.54177335098643,
       "ma5": 34.97999954223633,
       "ma20": 33.78893146514893,
@@ -2989,7 +3026,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -3.195488721804507,
-      "vol_ratio": 0.1401066795774798,
+      "vol_ratio": 0.13306437310224414,
       "rsi": 75.72254335260115,
       "ma5": 519.0,
       "ma20": 466.8,
@@ -3005,10 +3042,11 @@
       "industry_strong": false,
       "market_cap_billions": 643.4725888,
       "mcap_pass": true,
-      "sitc_net_shares": -28000,
-      "momentum_score": 30,
+      "sitc_net_shares": -15000,
+      "momentum_score": 35,
       "momentum_notes": [
-        "ATH"
+        "ATH",
+        "QQQ+0.9%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -3021,7 +3059,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 0.4975124378109541,
-      "vol_ratio": 0.814479101639081,
+      "vol_ratio": 0.8121268755092015,
       "rsi": 58.091284862118556,
       "ma5": 99.85999908447266,
       "ma20": 95.97999954223633,
@@ -3037,12 +3075,12 @@
       "industry_strong": true,
       "market_cap_billions": 567.27085056,
       "mcap_pass": true,
-      "sitc_net_shares": 360000,
+      "sitc_net_shares": 1886000,
       "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "投信+360張"
+        "投信+1,886張"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -3055,7 +3093,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 4.4334975369458185,
-      "vol_ratio": 1.0887439975547866,
+      "vol_ratio": 1.08773122555224,
       "rsi": 55.63062946959567,
       "ma5": 102.01999969482422,
       "ma20": 100.48999938964843,
@@ -3072,9 +3110,10 @@
       "market_cap_billions": 92.45348864,
       "mcap_pass": false,
       "sitc_net_shares": 0,
-      "momentum_score": 30,
+      "momentum_score": 35,
       "momentum_notes": [
-        "ATH"
+        "ATH",
+        "QQQ+0.9%"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -3087,7 +3126,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 1.565761954297229,
-      "vol_ratio": 0.8033821701164812,
+      "vol_ratio": 0.8005730396899192,
       "rsi": 77.20206823761013,
       "ma5": 47.95000076293945,
       "ma20": 44.907500457763675,
@@ -3103,12 +3142,12 @@
       "industry_strong": true,
       "market_cap_billions": 1862.4897024,
       "mcap_pass": true,
-      "sitc_net_shares": 290000,
+      "sitc_net_shares": 610000,
       "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "投信+290張"
+        "投信+610張"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -3121,7 +3160,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -2.8601694915254217,
-      "vol_ratio": 0.9956593224368224,
+      "vol_ratio": 0.9042462490131704,
       "rsi": 73.03370786516854,
       "ma5": 4680.0,
       "ma20": 4161.75,
@@ -3137,11 +3176,13 @@
       "industry_strong": false,
       "market_cap_billions": 54746.27878912,
       "mcap_pass": true,
-      "sitc_net_shares": 55475,
-      "momentum_score": 40,
+      "sitc_net_shares": 108022,
+      "momentum_score": 55,
       "momentum_notes": [
         "ATH",
-        "投信+55張"
+        "QQQ+0.9%",
+        "SMH+1.5%",
+        "投信+108張"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -3154,7 +3195,7 @@
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 0.43042046613084306,
-      "vol_ratio": 0.7665952234644677,
+      "vol_ratio": 0.7608399724791319,
       "rsi": 90.42551723634156,
       "ma5": 70.03999786376953,
       "ma20": 66.01865310668946,
@@ -3170,12 +3211,12 @@
       "industry_strong": true,
       "market_cap_billions": 7492.10632192,
       "mcap_pass": true,
-      "sitc_net_shares": 324892,
+      "sitc_net_shares": 1513041,
       "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "投信+325張"
+        "投信+1,513張"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -3188,7 +3229,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 1.8587360858383528,
-      "vol_ratio": 0.6741081155259212,
+      "vol_ratio": 0.6718651335265606,
       "rsi": 72.0407228396526,
       "ma5": 13.629999923706055,
       "ma20": 13.138471126556396,
@@ -3204,7 +3245,7 @@
       "industry_strong": true,
       "market_cap_billions": 595.99740928,
       "mcap_pass": true,
-      "sitc_net_shares": -1984000,
+      "sitc_net_shares": -5000,
       "momentum_score": 50,
       "momentum_notes": [
         "ATH",
@@ -3221,7 +3262,7 @@
       "bullish": false,
       "bullish_fast": true,
       "change_pct": 6.623374641715696,
-      "vol_ratio": 5.793643959031113,
+      "vol_ratio": 5.793748432797415,
       "rsi": 86.36363329856758,
       "ma5": 36.23000030517578,
       "ma20": 30.57749996185303,
@@ -3238,10 +3279,11 @@
       "market_cap_billions": 34.159296,
       "mcap_pass": false,
       "sitc_net_shares": 0,
-      "momentum_score": 80,
+      "momentum_score": 85,
       "momentum_notes": [
         "量爆價揚",
-        "ATH"
+        "ATH",
+        "QQQ+0.9%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -3254,7 +3296,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 1.8648000200605086,
-      "vol_ratio": 1.2721582224928225,
+      "vol_ratio": 1.2666934429360532,
       "rsi": 85.71431849366932,
       "ma5": 43.17000045776367,
       "ma20": 41.00749969482422,
@@ -3270,12 +3312,12 @@
       "industry_strong": true,
       "market_cap_billions": 4492.61961216,
       "mcap_pass": true,
-      "sitc_net_shares": 1449517,
+      "sitc_net_shares": 7980068,
       "momentum_score": 60,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "投信+1,450張"
+        "投信+7,980張"
       ],
       "tier": "⭐⭐",
       "next_day_prob": "70-85%"
@@ -3288,7 +3330,7 @@
       "bullish": false,
       "bullish_fast": false,
       "change_pct": -2.9484029484029506,
-      "vol_ratio": 0.8444416648280662,
+      "vol_ratio": 0.7702291480292796,
       "rsi": 62.55924170616114,
       "ma5": 2021.0,
       "ma20": 1733.5,
@@ -3320,7 +3362,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 1.8518500530834592,
-      "vol_ratio": 0.7310853617817775,
+      "vol_ratio": 0.7304949222528458,
       "rsi": 75.86208937711206,
       "ma5": 10.870000076293945,
       "ma20": 10.510000038146973,
@@ -3353,7 +3395,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 0.5586613608986157,
-      "vol_ratio": 0.5155122144160392,
+      "vol_ratio": 0.5140993208986877,
       "rsi": 83.6734249015381,
       "ma5": 17.750000381469725,
       "ma20": 16.92000017166138,
@@ -3369,7 +3411,7 @@
       "industry_strong": true,
       "market_cap_billions": 1574.32610816,
       "mcap_pass": true,
-      "sitc_net_shares": -4000,
+      "sitc_net_shares": 0,
       "momentum_score": 50,
       "momentum_notes": [
         "ATH",
@@ -3386,7 +3428,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 0.8174365962506869,
-      "vol_ratio": 0.9957360354776642,
+      "vol_ratio": 0.9985253809478776,
       "rsi": 75.02152904333282,
       "ma5": 18.20999984741211,
       "ma20": 17.629139995574953,
@@ -3417,7 +3459,7 @@
   "industry_stats": [
     {
       "industry": "金融保險",
-      "count": 30,
+      "count": 29,
       "bullish_count": 23
     },
     {
@@ -3564,15 +3606,13 @@
   "top_industry": "金融保險",
   "market_regime": {
     "today": 107.69999694824219,
-    "ma200": 86.17194156646728,
-    "ma20": 106.44500045776367,
-    "ext_pct": 24.982674163340747,
+    "ma200": 86.41434505462647,
+    "ma20": 106.58250045776367,
+    "ext_pct": 24.63208149082203,
     "in_stage2": true,
     "below_ma20": false
   },
   "v4_blocked": false,
   "v44_paused": false,
-  "v45_filtered": [],
-  "intraday_updated": "2026-09-11 09:20",
-  "is_intraday": true
+  "v45_filtered": []
 }

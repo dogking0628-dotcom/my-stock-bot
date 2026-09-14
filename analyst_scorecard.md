@@ -1,4 +1,4 @@
-# 分析師 / 財經網紅 論點記分板（自動對帳，2026-09-13）
+# 分析師 / 財經網紅 論點記分板（自動對帳，2026-09-14）
 
 > 資料：data/claims.jsonl（analyze_transcript.py 萃取）→ score_claims.py 用 FinMind 日K 依 check 規格判定。
 > 只計 route=due_check 且可機器對帳的預測；基本面/心法/無期限論點不計分。命中率 n<10 僅供參考。

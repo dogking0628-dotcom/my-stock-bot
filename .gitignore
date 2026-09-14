@@ -10,3 +10,4 @@ double_screener_v2_run.log
 # 逐字稿：cookies 與 whisper 音訊暫存不入庫
 cookies.txt
 data/transcripts/_audio/
+run_transcripts.log

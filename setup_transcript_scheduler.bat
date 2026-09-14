@@ -1,17 +1,12 @@
 @echo off
-:: 每日 19:30（機器時區）跑 run_transcripts.bat：抓頻道逐字稿 → 分析入庫 → push
+:: 建立每日 23:00 排程跑 run_transcripts.bat（錯過會在下次開機補跑）。
+:: 用法：對本檔按右鍵 →「以系統管理員身分執行」。實際邏輯在 setup_transcript_scheduler.ps1。
+chcp 65001 >nul
 set SCRIPT_DIR=%~dp0
-schtasks /create ^
-  /tn "InvestBot_Transcripts" ^
-  /tr "\"%SCRIPT_DIR%run_transcripts.bat\"" ^
-  /sc daily ^
-  /st 19:30 ^
-  /f ^
-  /ru "%USERNAME%"
-if %ERRORLEVEL% EQU 0 (
-    echo [OK] 逐字稿排程建立成功（每日 19:30）
-) else (
-    echo [FAIL] 排程建立失敗，請以系統管理員身份執行
+powershell -NoProfile -ExecutionPolicy Bypass -File "%SCRIPT_DIR%setup_transcript_scheduler.ps1"
+if %ERRORLEVEL% NEQ 0 (
+    echo.
+    echo [FAIL] 排程建立失敗。請確認是用「以系統管理員身分執行」開啟本檔。
 )
-schtasks /query /tn "InvestBot_Transcripts" 2>nul | findstr "狀態\|Status\|下次\|Next"
+echo.
 pause

@@ -3,11 +3,15 @@
 :: 本機一鍵：抓追蹤頻道 + 佇列的逐字稿 → Claude 分析入庫 → push
 :: 用途：家用網路不會被 YouTube 要求登入驗證，比 GitHub Actions 穩。
 :: 需要：pip install yt-dlp anthropic；環境變數 ANTHROPIC_API_KEY（分析用，可先不設）
-:: 排程：setup_transcript_scheduler.bat（每日 19:30）
+:: 排程：setup_transcript_scheduler.bat（每日 23:00，沒開機下次開機補跑）
 :: ────────────────────────────────────────────────────────────────
 setlocal
 cd /d "%~dp0"
 chcp 65001 >nul
+
+:: 被 YouTube 要求登入驗證時：把瀏覽器匯出的 cookies.txt 放在本資料夾即可（.gitignore 已排除，不會被推上去）
+:: 或不匯出、直接讀瀏覽器：set YT_COOKIES_BROWSER=firefox（edge/chrome 在 Windows 上常解不開加密，優先 firefox）
+if exist cookies.txt echo [INFO] 使用 cookies.txt 通過 YouTube 驗證
 
 git pull --rebase --autostash
 if errorlevel 1 echo [WARN] git pull 失敗，繼續用本地版本

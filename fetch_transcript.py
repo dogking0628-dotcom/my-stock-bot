@@ -16,7 +16,8 @@
 沒有任何字幕時：預設只記錄 no_subs；加 --whisper 且本機裝了 faster-whisper 才會下載音訊轉錄。
 
 環境變數（選填）：
-  YT_COOKIES_FILE   cookies.txt 路徑（GitHub Actions IP 常被 YouTube 要求登入驗證時用）
+  YT_COOKIES_FILE   cookies.txt 路徑（被 YouTube 要求登入驗證時用；腳本旁有 cookies.txt 會自動用）
+  YT_COOKIES_BROWSER 直接讀瀏覽器登入狀態：firefox / edge / chrome（沒有 cookies.txt 時的替代）
   YT_JS_RUNTIME     JS runtime 名稱，預設 node（SOP 驗證過），可填 deno/bun/quickjs
 """
 import sys, io, os, re, json, time, argparse, datetime as dt
@@ -173,9 +174,17 @@ def ydl_base_opts(cookies=None, quiet=True):
         "retries": 3, "socket_timeout": 30,
         "ignoreerrors": False,
     }
+    # cookies 三種來源，依序：--cookies / YT_COOKIES_FILE → 腳本旁的 cookies.txt → YT_COOKIES_BROWSER（firefox/edge/chrome）
+    # 家用 IP 連抓上百支後也會被要求「Sign in to confirm you're not a bot」，帶登入 cookies 就能過。
     cookies = cookies or os.environ.get("YT_COOKIES_FILE", "")
+    if not cookies and (ROOT / "cookies.txt").exists():
+        cookies = str(ROOT / "cookies.txt")
     if cookies and Path(cookies).exists():
         opts["cookiefile"] = str(cookies)
+    else:
+        browser = os.environ.get("YT_COOKIES_BROWSER", "").strip().lower()
+        if browser:
+            opts["cookiesfrombrowser"] = (browser,)
     return opts
 
 

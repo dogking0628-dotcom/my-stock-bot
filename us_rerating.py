@@ -85,6 +85,17 @@ def grab(tk):
 def main():
     out = [grab(p["ticker"]) for p in H.get("us", [])]
     (ROOT / "us_rerating.json").write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
+    # 台股：同一套素材（yfinance 對台股的分析師覆蓋較少，抓得到多少算多少；.TW 失敗改 .TWO）
+    tw = []
+    for p in H.get("tw", []):
+        tk = str(p["ticker"])
+        if tk == "0050": continue
+        r = grab(tk + ".TW")
+        if r.get("price") is None:
+            r = grab(tk + ".TWO")
+        r["ticker"] = tk; r["name"] = p.get("name"); tw.append(r)
+    (ROOT / "tw_rerating.json").write_text(json.dumps(tw, ensure_ascii=False, indent=2), encoding="utf-8")
+    out = out + tw
     for r in out:
         print(r["ticker"], r.get("price"), "eps_ttm", r.get("eps_ttm"), "eps_fwd", r.get("eps_fwd"), "est", r.get("eps_est"), "tgt", r.get("target"), "band", r.get("pe_band_3y", {}).get("min"), r.get("pe_band_3y", {}).get("max"))
 

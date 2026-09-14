@@ -27,7 +27,7 @@ if "%1"=="backfill" (
 ) else if "%1"=="whisper" (
   :: 把索引裡「無字幕」的影片用 whisper 轉錄：run_transcripts.bat whisper [模型，預設 small]
   :: 需要：pip install faster-whisper opencc-python-reimplemented   （CPU 約 40 分鐘影片轉 7~13 分鐘）
-  python -X utf8 fetch_transcript.py --only-no-subs --whisper --whisper-model %WM% --sleep 1
+  python -X utf8 fetch_transcript.py --only-no-subs --whisper --whisper-model %WM% --sleep 1 --max-new 500
   python -X utf8 analyze_transcript.py --batch --batch-wait 90
 ) else (
   python -X utf8 fetch_transcript.py --watch --queue --notify

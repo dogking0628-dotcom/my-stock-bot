@@ -10,6 +10,28 @@
    "exit_date": "2026-09-09",
    "ret_pct": -9.09,
    "reason": "-7%樓地板"
+  },
+  {
+   "ticker": "2330",
+   "name": "台積電",
+   "entry": 2465.0,
+   "entry_date": "2026-09-08",
+   "shares": 60,
+   "exit": 2385.0,
+   "exit_date": "2026-09-14",
+   "ret_pct": -3.72,
+   "reason": "跌破20MA"
+  },
+  {
+   "ticker": "7788",
+   "name": "松川精密",
+   "entry": 308.0,
+   "entry_date": "2026-09-10",
+   "shares": 480,
+   "exit": 275.0,
+   "exit_date": "2026-09-14",
+   "ret_pct": -11.19,
+   "reason": "跌破20MA"
   }
  ],
  "started": "2026-09-07"

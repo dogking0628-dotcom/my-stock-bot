@@ -4,7 +4,8 @@
   "source": "trade-journal/FREEZE_2026-09.md 部位基準（用戶 2026-09-04 對帳）；零股尾巴（~10.5 萬）不列。",
   "fields": "ticker / name / shares / avg_cost / since / stop_line（缺則以成本 -7% 計）/ note",
   "rule": "翻倍池持倉=thesis-based 管理（EPS連2季下修/市占下滑/治理紅旗→EXIT；不適用-7%動能停損）＋災難線=成本-15%暫定；群聯為動能舊倉照防守線1850",
-  "updated": "2026-09-14 券商截圖對帳：台積電 1,008、群聯 1,992.84、帆宣 537.77、0050 1,108"
+  "updated": "2026-09-14 券商截圖對帳：台積電 1,008、群聯 1,992.84、帆宣 537.77、0050 1,108",
+  "us_note": "2026-09-14 Firstrade 截圖：總市值 $270,661.15、未實現 +$35,239.87（+14.97%）、當日 -$12,248.18（-4.33%）。成本與買進日待用戶補；管理規則（thesis+災難線 或 防守線）待逐檔指定。對照組 QQQ。"
  },
  "tw": [
   {
@@ -70,6 +71,184 @@
    "stop_line": null,
    "exclude_from_benchmark": true,
    "note": "9/11 買 1,000 股 @107.2（用戶 9/14 補記；非訊號股，屬基準部位）＋舊零股 108 股；不入翻倍池評分、不入 0050 對照"
+  }
+ ],
+ "us": [
+  {
+   "ticker": "BTC",
+   "name": "比特幣 ETF",
+   "shares": 351,
+   "avg_cost": null,
+   "since": null,
+   "stop_line": null,
+   "price_2026-09-14": 34.64,
+   "mv_usd_2026-09-14": 12158.64,
+   "theme": "其他"
+  },
+  {
+   "ticker": "GLW",
+   "name": "康寧",
+   "shares": 80,
+   "avg_cost": null,
+   "since": null,
+   "stop_line": null,
+   "price_2026-09-14": 145.67,
+   "mv_usd_2026-09-14": 11653.6,
+   "theme": "AI 硬體"
+  },
+  {
+   "ticker": "GOOG",
+   "name": "Alphabet",
+   "shares": 29,
+   "avg_cost": null,
+   "since": null,
+   "stop_line": null,
+   "price_2026-09-14": 341.49,
+   "mv_usd_2026-09-14": 9903.21,
+   "theme": "其他"
+  },
+  {
+   "ticker": "HCA",
+   "name": "HCA 醫療",
+   "shares": 10,
+   "avg_cost": null,
+   "since": null,
+   "stop_line": null,
+   "price_2026-09-14": 423.66,
+   "mv_usd_2026-09-14": 4236.6,
+   "theme": "其他"
+  },
+  {
+   "ticker": "INTC",
+   "name": "英特爾",
+   "shares": 120,
+   "avg_cost": null,
+   "since": null,
+   "stop_line": null,
+   "price_2026-09-14": 96.34,
+   "mv_usd_2026-09-14": 11560.8,
+   "theme": "AI 硬體"
+  },
+  {
+   "ticker": "ITOCY",
+   "name": "伊藤忠 ADR",
+   "shares": 350,
+   "avg_cost": null,
+   "since": null,
+   "stop_line": null,
+   "price_2026-09-14": 15.11,
+   "mv_usd_2026-09-14": 5288.5,
+   "theme": "其他"
+  },
+  {
+   "ticker": "KMB",
+   "name": "金百利",
+   "shares": 10,
+   "avg_cost": null,
+   "since": null,
+   "stop_line": null,
+   "price_2026-09-14": 100.31,
+   "mv_usd_2026-09-14": 1003.1,
+   "theme": "其他"
+  },
+  {
+   "ticker": "MARUY",
+   "name": "丸紅 ADR",
+   "shares": 60,
+   "avg_cost": null,
+   "since": null,
+   "stop_line": null,
+   "price_2026-09-14": 32.96,
+   "mv_usd_2026-09-14": 1977.6,
+   "theme": "其他"
+  },
+  {
+   "ticker": "MITSY",
+   "name": "三井物產 ADR",
+   "shares": 6,
+   "avg_cost": null,
+   "since": null,
+   "stop_line": null,
+   "price_2026-09-14": 670.0,
+   "mv_usd_2026-09-14": 4020.0,
+   "theme": "其他"
+  },
+  {
+   "ticker": "MU",
+   "name": "美光",
+   "shares": 82,
+   "avg_cost": null,
+   "since": null,
+   "stop_line": null,
+   "price_2026-09-14": 914.7,
+   "mv_usd_2026-09-14": 75005.4,
+   "theme": "記憶體"
+  },
+  {
+   "ticker": "NVDA",
+   "name": "輝達",
+   "shares": 56,
+   "avg_cost": null,
+   "since": null,
+   "stop_line": null,
+   "price_2026-09-14": 210.49,
+   "mv_usd_2026-09-14": 11787.44,
+   "theme": "AI 硬體"
+  },
+  {
+   "ticker": "PLTR",
+   "name": "Palantir",
+   "shares": 95,
+   "avg_cost": null,
+   "since": null,
+   "stop_line": null,
+   "price_2026-09-14": 169.88,
+   "mv_usd_2026-09-14": 16138.6,
+   "theme": "其他"
+  },
+  {
+   "ticker": "SKHY",
+   "name": "SK 海力士 ADR",
+   "shares": 150,
+   "avg_cost": null,
+   "since": null,
+   "stop_line": null,
+   "price_2026-09-14": 175.78,
+   "mv_usd_2026-09-14": 26367.0,
+   "theme": "記憶體"
+  },
+  {
+   "ticker": "SNDK",
+   "name": "Sandisk",
+   "shares": 12,
+   "avg_cost": null,
+   "since": null,
+   "stop_line": null,
+   "price_2026-09-14": 1542.85,
+   "mv_usd_2026-09-14": 18514.2,
+   "theme": "記憶體"
+  },
+  {
+   "ticker": "TSLA",
+   "name": "特斯拉",
+   "shares": 51,
+   "avg_cost": null,
+   "since": null,
+   "stop_line": null,
+   "price_2026-09-14": 358.77,
+   "mv_usd_2026-09-14": 18297.27,
+   "theme": "其他"
+  },
+  {
+   "ticker": "TSM",
+   "name": "台積電 ADR",
+   "shares": 102,
+   "avg_cost": null,
+   "since": null,
+   "stop_line": null,
+   "price_2026-09-14": 419.15,
+   "mv_usd_2026-09-14": 42753.3,
+   "theme": "AI 硬體"
   }
  ]
 }

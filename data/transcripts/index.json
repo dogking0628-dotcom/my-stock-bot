@@ -48,7 +48,15 @@
     "source": "whisper 轉錄",
     "file": "20260910_FRa-0M8ujsg.md",
     "paragraphs": 4,
-    "chars": 1367
+    "chars": 1367,
+    "analyzed_at": "2026-09-14T01:12",
+    "analysis": "FRa-0M8ujsg.analysis.md",
+    "claims_range": [
+      731,
+      738
+    ],
+    "evidence_candidates": 2,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "BJFBQ07grSM": {
     "title": "全球前三、亞洲唯一！台寶生醫Treg新藥 超前部署【生技女王投資勝經#116】",
@@ -62,7 +70,15 @@
     "source": "whisper 轉錄",
     "file": "20260909_BJFBQ07grSM.md",
     "paragraphs": 16,
-    "chars": 6429
+    "chars": 6429,
+    "analyzed_at": "2026-09-14T01:12",
+    "analysis": "BJFBQ07grSM.analysis.md",
+    "claims_range": [
+      714,
+      723
+    ],
+    "evidence_candidates": 2,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "p1LUhkzIzLM": {
     "status": "error",
@@ -81,7 +97,15 @@
     "source": "whisper 轉錄",
     "file": "20260909_dqnYNfMTpG4.md",
     "paragraphs": 4,
-    "chars": 1512
+    "chars": 1512,
+    "analyzed_at": "2026-09-14T01:12",
+    "analysis": "dqnYNfMTpG4.analysis.md",
+    "claims_range": [
+      800,
+      806
+    ],
+    "evidence_candidates": 2,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "WID8k9of31g": {
     "status": "error",
@@ -122,7 +146,15 @@
     "source": "whisper 轉錄",
     "file": "20260907_82d65pHyQL8.md",
     "paragraphs": 5,
-    "chars": 1517
+    "chars": 1517,
+    "analyzed_at": "2026-09-14T01:12",
+    "analysis": "82d65pHyQL8.analysis.md",
+    "claims_range": [
+      707,
+      713
+    ],
+    "evidence_candidates": 2,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "-J-z_Lk41gs": {
     "title": "大立光(3008)飆近4倍還能追？CPO第二曲線挑戰五位數！鎖定投資最錢線。",
@@ -185,7 +217,15 @@
     "source": "whisper 轉錄",
     "file": "20260902_Q69ThTu7a-M.md",
     "paragraphs": 10,
-    "chars": 3440
+    "chars": 3440,
+    "analyzed_at": "2026-09-14T01:12",
+    "analysis": "Q69ThTu7a-M.analysis.md",
+    "claims_range": [
+      768,
+      775
+    ],
+    "evidence_candidates": 2,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "_J02I4UcQrQ": {
     "title": "台股量縮藏警訊！航運、IPC與低本益比股接棒？鎖定投資最錢線。ft.先探投資週刊總主筆 黃啟乙",
@@ -199,7 +239,15 @@
     "source": "whisper 轉錄",
     "file": "20260901__J02I4UcQrQ.md",
     "paragraphs": 13,
-    "chars": 5219
+    "chars": 5219,
+    "analyzed_at": "2026-09-14T01:12",
+    "analysis": "_J02I4UcQrQ.analysis.md",
+    "claims_range": [
+      791,
+      799
+    ],
+    "evidence_candidates": 2,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "odYMfBRqHnU": {
     "title": "運價高檔＋AI貨運爆發！運輸類股下半年誰最有潛力！鎖定投資最錢線。",
@@ -213,7 +261,15 @@
     "source": "whisper 轉錄",
     "file": "20260831_odYMfBRqHnU.md",
     "paragraphs": 4,
-    "chars": 1480
+    "chars": 1480,
+    "analyzed_at": "2026-09-14T01:12",
+    "analysis": "odYMfBRqHnU.analysis.md",
+    "claims_range": [
+      815,
+      823
+    ],
+    "evidence_candidates": 3,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "ZUIAg4Ynhk0": {
     "status": "error",
@@ -232,7 +288,15 @@
     "source": "whisper 轉錄",
     "file": "20260829_LGfU75b_mDs.md",
     "paragraphs": 11,
-    "chars": 4567
+    "chars": 4567,
+    "analyzed_at": "2026-09-14T01:12",
+    "analysis": "LGfU75b_mDs.analysis.md",
+    "claims_range": [
+      746,
+      752
+    ],
+    "evidence_candidates": 3,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "EsoPbOyB7rU": {
     "title": "北京機器人展全解析，人形機器人最新發展！鎖定投資最錢線。ft.先探投資週刊 黃冠豪社長特助",
@@ -278,7 +342,15 @@
     "source": "whisper 轉錄",
     "file": "20260827_skQvusBf0ko.md",
     "paragraphs": 5,
-    "chars": 1931
+    "chars": 1931,
+    "analyzed_at": "2026-09-14T01:12",
+    "analysis": "skQvusBf0ko.analysis.md",
+    "claims_range": [
+      824,
+      832
+    ],
+    "evidence_candidates": 3,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "RQIVNjzjRjE": {
     "title": "新代(7750)新代法說會報喜！直擊自動化大展AI機器人新成長引擎，EPS戰百元底氣是什麼？【賺財富 看先探】。ft.先探數位發展總編輯 黃輝明",
@@ -292,7 +364,15 @@
     "source": "whisper 轉錄",
     "file": "20260826_RQIVNjzjRjE.md",
     "paragraphs": 15,
-    "chars": 6181
+    "chars": 6181,
+    "analyzed_at": "2026-09-14T01:12",
+    "analysis": "RQIVNjzjRjE.analysis.md",
+    "claims_range": [
+      776,
+      783
+    ],
+    "evidence_candidates": 2,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "mOuhryOKEqo": {
     "title": "ABF缺口擴大至51%！欣興、南電、景碩誰最受惠？鎖定投資最錢線。",
@@ -306,7 +386,15 @@
     "source": "whisper 轉錄",
     "file": "20260826_mOuhryOKEqo.md",
     "paragraphs": 4,
-    "chars": 1620
+    "chars": 1620,
+    "analyzed_at": "2026-09-14T01:12",
+    "analysis": "mOuhryOKEqo.analysis.md",
+    "claims_range": [
+      807,
+      814
+    ],
+    "evidence_candidates": 4,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "BUIBDoFphRE": {
     "title": "台積電640億美元資本支出！設備鏈誰吃下擴產大單？鎖定投資最錢線。",
@@ -320,7 +408,15 @@
     "source": "whisper 轉錄",
     "file": "20260825_BUIBDoFphRE.md",
     "paragraphs": 5,
-    "chars": 1613
+    "chars": 1613,
+    "analyzed_at": "2026-09-14T01:12",
+    "analysis": "BUIBDoFphRE.analysis.md",
+    "claims_range": [
+      724,
+      730
+    ],
+    "evidence_candidates": 3,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "Kl2ku7eP8mQ": {
     "status": "error",
@@ -339,7 +435,15 @@
     "source": "whisper 轉錄",
     "file": "20260824_yulYoD13NBQ.md",
     "paragraphs": 23,
-    "chars": 8236
+    "chars": 8236,
+    "analyzed_at": "2026-09-14T01:12",
+    "analysis": "yulYoD13NBQ.analysis.md",
+    "claims_range": [
+      833,
+      842
+    ],
+    "evidence_candidates": 2,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "bJJsjz5k5Tg": {
     "title": "合晶(6182)啟動159.5億擴產！背後藏著多少AI大單？鎖定投資最錢線。",
@@ -375,7 +479,15 @@
     "source": "whisper 轉錄",
     "file": "20260821_7IY58eG5X8s.md",
     "paragraphs": 5,
-    "chars": 1563
+    "chars": 1563,
+    "analyzed_at": "2026-09-14T01:12",
+    "analysis": "7IY58eG5X8s.analysis.md",
+    "claims_range": [
+      701,
+      706
+    ],
+    "evidence_candidates": 2,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "w94-mvWsBTM": {
     "title": "【今晚CPI九月台股定生死! 】2026/9/11(字幕版)",
@@ -587,7 +699,15 @@
     "source": "whisper 轉錄",
     "file": "20260902_cLbVCkhhTxw.md",
     "paragraphs": 2,
-    "chars": 98
+    "chars": 98,
+    "analyzed_at": "2026-09-14T01:12",
+    "analysis": "cLbVCkhhTxw.analysis.md",
+    "claims_range": [
+      800,
+      799
+    ],
+    "evidence_candidates": 0,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "5xHIEebCD80": {
     "title": "【我一億0050創新高 九月要賣嗎?】2026/9/1(字幕版)",
@@ -1156,7 +1276,15 @@
     "source": "whisper 轉錄",
     "file": "20260908_54dOlBabLFg.md",
     "paragraphs": 1,
-    "chars": 56
+    "chars": 56,
+    "analyzed_at": "2026-09-14T01:12",
+    "analysis": "54dOlBabLFg.analysis.md",
+    "claims_range": [
+      701,
+      700
+    ],
+    "evidence_candidates": 0,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "gCzw57b_w4k": {
     "title": "【精華】金融股填息不重要？傳產轉強該買嗎？蔡明翰親選3檔金融好股 《鈔錢部署》盧燕俐 ft.蔡明翰  20260906",
@@ -2020,7 +2148,15 @@
     "source": "whisper 轉錄",
     "file": "20260827_YyR5SgUwwFA.md",
     "paragraphs": 12,
-    "chars": 4722
+    "chars": 4722,
+    "analyzed_at": "2026-09-14T01:12",
+    "analysis": "YyR5SgUwwFA.analysis.md",
+    "claims_range": [
+      784,
+      790
+    ],
+    "evidence_candidates": 1,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "OGGOxVV2uJs": {
     "title": "《投其所展》告別跳舞機器人！AI視覺與數位孿生如何顛覆半導體與物流業?",
@@ -2034,7 +2170,15 @@
     "source": "whisper 轉錄",
     "file": "20260826_OGGOxVV2uJs.md",
     "paragraphs": 12,
-    "chars": 4740
+    "chars": 4740,
+    "analyzed_at": "2026-09-14T01:12",
+    "analysis": "OGGOxVV2uJs.analysis.md",
+    "claims_range": [
+      761,
+      767
+    ],
+    "evidence_candidates": 2,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "IPGjtm7tTiw": {
     "title": "《投其所展》突破抗腫瘤與自免疾病天花板！漢康與圓祥如何搶攻全球新藥藍海？| 2026生技展下集 |",
@@ -2048,7 +2192,15 @@
     "source": "whisper 轉錄",
     "file": "20260821_IPGjtm7tTiw.md",
     "paragraphs": 22,
-    "chars": 8578
+    "chars": 8578,
+    "analyzed_at": "2026-09-14T01:12",
+    "analysis": "IPGjtm7tTiw.analysis.md",
+    "claims_range": [
+      739,
+      745
+    ],
+    "evidence_candidates": 2,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "NtGmboa8j-I": {
     "title": "《統一解答:總經政道》AI資本支出見頂，你手上的AI股還撐得住嗎?",
@@ -2062,7 +2214,15 @@
     "source": "whisper 轉錄",
     "file": "20260819_NtGmboa8j-I.md",
     "paragraphs": 20,
-    "chars": 8148
+    "chars": 8148,
+    "analyzed_at": "2026-09-14T01:12",
+    "analysis": "NtGmboa8j-I.analysis.md",
+    "claims_range": [
+      753,
+      760
+    ],
+    "evidence_candidates": 1,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "c1eo-N19nb4": {
     "title": "《投其所展》挑戰全球前十大 CDMO！地緣政治轉單發酵，保瑞如何靠「供應鏈韌性」通吃大廠訂單？ | 2026生技展上集|",

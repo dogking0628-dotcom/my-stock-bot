@@ -1,0 +1,40 @@
+name: Backtest 龍頭補漲 (leader catch-up)
+
+on:
+  workflow_dispatch:
+  # 從雲端 session 也能觸發：推一個 data/backtest_request.json（內容任意）即跑；跑完自動移除
+  push:
+    paths:
+      - 'data/backtest_request.json'
+
+permissions:
+  contents: write
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run 2y window
+        run: python backtest_leader_catchup.py --window 2y 2>&1 | tee backtest_leader_catchup_2y_log.txt
+      - name: Run 5y window
+        run: python backtest_leader_catchup.py --window 5y 2>&1 | tee backtest_leader_catchup_5y_log.txt
+      - name: Commit results
+        if: always()
+        run: |
+          git config user.name  "github-actions"
+          git config user.email "github-actions@github.com"
+          rm -f data/backtest_request.json
+          for f in backtest_leader_catchup_2y.json backtest_leader_catchup_5y.json \
+                   backtest_leader_catchup_2y_log.txt backtest_leader_catchup_5y_log.txt data/backtest_request.json; do
+            git add -A -- "$f" 2>/dev/null || true
+          done
+          git diff --staged --quiet || git commit -m "backtest: 龍頭補漲 2y+5y 結果"
+          git pull --rebase --autostash || true
+          git push

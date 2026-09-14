@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-12 16:25",
+  "date": "2026-09-13 17:00",
   "market_position": "BULL_MID",
   "sector_results": {
     "半導體_晶圓代工": {
@@ -219,9 +219,9 @@
         }
       },
       "top_member": "2492.TW",
-      "rs_rank_5d": 8,
+      "rs_rank_5d": 7,
       "rs_rank_20d": 12,
-      "rs_momentum": 4
+      "rs_momentum": 5
     },
     "光學_鏡頭": {
       "avg_5d": -6.61,
@@ -364,9 +364,9 @@
         }
       },
       "top_member": "2609.TW",
-      "rs_rank_5d": 9,
+      "rs_rank_5d": 8,
       "rs_rank_20d": 3,
-      "rs_momentum": -6
+      "rs_momentum": -5
     },
     "金融": {
       "avg_5d": -1.36,
@@ -468,9 +468,9 @@
         }
       },
       "top_member": "2912.TW",
-      "rs_rank_5d": 10,
+      "rs_rank_5d": 9,
       "rs_rank_20d": 13,
-      "rs_momentum": 3
+      "rs_momentum": 4
     },
     "觀光電商": {
       "avg_5d": -1.63,
@@ -490,45 +490,45 @@
       "rs_momentum": 7
     },
     "ETF_大盤": {
-      "avg_5d": 1.17,
-      "avg_20d": 1.65,
+      "avg_5d": -0.95,
+      "avg_20d": 1.35,
       "member_count": 7,
       "members": {
         "0050.TW": {
-          "price": 109.15,
-          "ret_5d": 2.78,
-          "ret_20d": 2.3,
-          "vol_avg": 64073694.0
+          "price": 107.7,
+          "ret_5d": -0.19,
+          "ret_20d": 1.22,
+          "vol_avg": 63500612.0
         },
         "0056.TW": {
-          "price": 55.7,
-          "ret_5d": 2.2,
-          "ret_20d": 5.09,
-          "vol_avg": 24501240.0
+          "price": 55.3,
+          "ret_5d": -0.18,
+          "ret_20d": 3.56,
+          "vol_avg": 24417975.0
         },
         "00646.TW": {
-          "price": 76.0,
-          "ret_5d": -0.65,
-          "ret_20d": -3.12,
-          "vol_avg": 2876071.0
+          "price": 75.85,
+          "ret_5d": -2.19,
+          "ret_20d": -3.5,
+          "vol_avg": 2869371.0
         },
         "00885.TW": {
-          "price": 18.53,
-          "ret_5d": 0.0,
-          "ret_20d": 0.27,
-          "vol_avg": 2251588.0
+          "price": 18.45,
+          "ret_5d": -2.02,
+          "ret_20d": 3.48,
+          "vol_avg": 2251288.0
         },
         "00940.TW": {
-          "price": 12.85,
-          "ret_5d": 0.98,
-          "ret_20d": 2.74,
-          "vol_avg": 12031003.0
+          "price": 12.79,
+          "ret_5d": -1.27,
+          "ret_20d": 2.84,
+          "vol_avg": 12030363.0
         },
         "00981A.TW": {
-          "price": 29.89,
-          "ret_5d": 2.61,
-          "ret_20d": -0.2,
-          "vol_avg": 165333839.0
+          "price": 29.44,
+          "ret_5d": -1.11,
+          "ret_20d": -2.58,
+          "vol_avg": 165231408.0
         },
         "2885.TW": {
           "price": 70.0,
@@ -537,10 +537,10 @@
           "vol_avg": 23349772.0
         }
       },
-      "top_member": "0050.TW",
-      "rs_rank_5d": 5,
+      "top_member": "2885.TW",
+      "rs_rank_5d": 10,
       "rs_rank_20d": 11,
-      "rs_momentum": 6
+      "rs_momentum": 1
     },
     "美股_AI晶片": {
       "avg_5d": 0.3,
@@ -567,9 +567,9 @@
         }
       },
       "top_member": "TSM",
-      "rs_rank_5d": 7,
+      "rs_rank_5d": 6,
       "rs_rank_20d": 20,
-      "rs_momentum": 13
+      "rs_momentum": 14
     },
     "美股_記憶體": {
       "avg_5d": 3.41,
@@ -642,9 +642,9 @@
         }
       },
       "top_member": "INTC",
-      "rs_rank_5d": 6,
+      "rs_rank_5d": 5,
       "rs_rank_20d": 17,
-      "rs_momentum": 11
+      "rs_momentum": 12
     }
   },
   "selection": {

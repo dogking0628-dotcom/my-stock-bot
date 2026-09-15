@@ -1,0 +1,2 @@
+date,ticker,name,side,shares,price,amount,source,rule_check,violate_tags,exit_line,note
+2026-09-15,2351,順德,BUY,1000,247.5,247500,V2 推播（非實單來源）,不符：今日單=無動作,非V4.6訊號;開盤買;不在今日單,"max(20MA,230.2)",用戶 9/15 回報；動能倉管法出場

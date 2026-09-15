@@ -1,19 +1,55 @@
 {
-  "timestamp": "2026-09-14",
+  "timestamp": "2026-09-15",
   "strategy": "V2 原版 (實測 OOS PF 1.83 / 主回測 PF 1.69, 抗崩盤強·常空手)",
   "top_industries": [
     {
       "industry": "金融保險",
-      "count": 29,
-      "bullish_count": 23
+      "count": 31,
+      "bullish_count": 24
     },
     {
       "industry": "半導體",
-      "count": 10,
-      "bullish_count": 8
+      "count": 9,
+      "bullish_count": 6
     }
   ],
-  "picks": [],
+  "picks": [
+    {
+      "today": 257.0,
+      "monthly_max_2y": 232.5,
+      "ratio": 1.1053763440860216,
+      "from_high_pct": 10.537634408602159,
+      "bullish": true,
+      "bullish_fast": true,
+      "change_pct": 9.829059829059839,
+      "vol_ratio": 1.9356379890263473,
+      "rsi": 72.37354085603113,
+      "ma5": 238.3,
+      "ma20": 220.05,
+      "ma60": 193.65802027384441,
+      "ma200": 139.22504131317137,
+      "gap_up": false,
+      "close_near_high": true,
+      "long_red": true,
+      "tangle": null,
+      "ticker": "2351",
+      "name": "順德",
+      "industry": "半導體",
+      "industry_strong": false,
+      "market_cap_billions": 285.04909824,
+      "mcap_pass": true,
+      "sitc_net_shares": 0,
+      "momentum_score": 45,
+      "momentum_notes": [
+        "ATH",
+        "QQQ+0.9%",
+        "SMH+1.5%"
+      ],
+      "tier": "⭐",
+      "next_day_prob": "<70%",
+      "_score": 111.39
+    }
+  ],
   "params": {
     "top_industries": 2,
     "vol_ratio_min": 1.5,

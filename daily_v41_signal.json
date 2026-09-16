@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-09-15",
+  "timestamp": "2026-09-16",
   "strategy": "V4.6 (V4.5 + 收盤前買進; 正式月線定義回測 5y +313.5%/PF 5.27/MDD -13.9%, 2y +199.7%/PF 6.31/MDD -10.5%)",
   "entry_timing": "收盤前買（13:25 限價=當時價×1.005 或 14:00-14:30 盤後定價）",
-  "strongest_industry": "半導體",
+  "strongest_industry": "通信網路",
   "v4_blocked": false,
   "picks": []
 }

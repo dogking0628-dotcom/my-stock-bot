@@ -1,5 +1,5 @@
 {
- "date": "2026-09-15",
+ "date": "2026-09-16",
  "etfs": {
   "00981A": {
    "2330": {
@@ -167,15 +167,10 @@
     "shares": 4471.0,
     "weight": 0.03
    },
-   "72.47": {
-    "name": "72.47",
+   "86.69": {
+    "name": "86.69",
     "shares": 0.0,
-    "weight": 9.89
-   },
-   "QQQI": {
-    "name": "QQQI",
-    "shares": 54.56,
-    "weight": 0.89
+    "weight": 10.07
    }
   },
   "00980A": {
@@ -429,15 +424,10 @@
     "shares": 35.0,
     "weight": 0.29
    },
-   "72.43": {
-    "name": "72.43",
+   "78.65": {
+    "name": "78.65",
     "shares": 0.0,
-    "weight": 12.39
-   },
-   "QQQI": {
-    "name": "QQQI",
-    "shares": 54.56,
-    "weight": 0.89
+    "weight": 14.2
    }
   },
   "00982A": {
@@ -671,15 +661,10 @@
     "shares": 1.0,
     "weight": 0.01
    },
-   "71.34": {
-    "name": "71.34",
+   "78.69": {
+    "name": "78.69",
     "shares": 0.0,
-    "weight": 23.38
-   },
-   "QQQI": {
-    "name": "QQQI",
-    "shares": 54.56,
-    "weight": 0.89
+    "weight": 20.5
    }
   }
  },
@@ -687,41 +672,80 @@
   "00981A": {
    "new": [
     {
+     "code": "86.69",
+     "name": "86.69",
+     "shares": 0.0,
+     "weight": 10.07
+    }
+   ],
+   "added": [],
+   "reduced": [],
+   "removed": [
+    {
+     "code": "72.47",
+     "name": "72.47",
+     "shares": 0.0,
+     "weight": 9.89
+    },
+    {
      "code": "QQQI",
      "name": "QQQI",
      "shares": 54.56,
      "weight": 0.89
     }
-   ],
-   "added": [],
-   "reduced": [],
-   "removed": []
+   ]
   },
   "00980A": {
    "new": [
     {
-     "code": "QQQI",
-     "name": "QQQI",
-     "shares": 54.56,
-     "weight": 0.89
+     "code": "78.65",
+     "name": "78.65",
+     "shares": 0.0,
+     "weight": 14.2
     }
    ],
    "added": [],
    "reduced": [],
-   "removed": []
-  },
-  "00982A": {
-   "new": [
+   "removed": [
+    {
+     "code": "72.43",
+     "name": "72.43",
+     "shares": 0.0,
+     "weight": 12.39
+    },
     {
      "code": "QQQI",
      "name": "QQQI",
      "shares": 54.56,
      "weight": 0.89
     }
+   ]
+  },
+  "00982A": {
+   "new": [
+    {
+     "code": "78.69",
+     "name": "78.69",
+     "shares": 0.0,
+     "weight": 20.5
+    }
    ],
    "added": [],
    "reduced": [],
-   "removed": []
+   "removed": [
+    {
+     "code": "71.34",
+     "name": "71.34",
+     "shares": 0.0,
+     "weight": 23.38
+    },
+    {
+     "code": "QQQI",
+     "name": "QQQI",
+     "shares": 54.56,
+     "weight": 0.89
+    }
+   ]
   }
  }
 }

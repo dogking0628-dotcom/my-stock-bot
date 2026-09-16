@@ -1,17 +1,4 @@
 {
- "positions": [
-  {
-   "ticker": "3034",
-   "name": "聯詠",
-   "entry": 543.0,
-   "entry_date": "2026-09-08",
-   "shares": 270,
-   "peak": 556.0,
-   "last_close": 541.0,
-   "unreal_pct": -0.37,
-   "exit_pending": true,
-   "exit_reason": "跌破20MA"
-  }
- ],
- "last_run": "2026-09-15"
+ "positions": [],
+ "last_run": "2026-09-16"
 }

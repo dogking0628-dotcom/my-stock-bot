@@ -32,6 +32,17 @@
    "exit_date": "2026-09-14",
    "ret_pct": -11.19,
    "reason": "跌破20MA"
+  },
+  {
+   "ticker": "3034",
+   "name": "聯詠",
+   "entry": 543.0,
+   "entry_date": "2026-09-08",
+   "shares": 270,
+   "exit": 548.0,
+   "exit_date": "2026-09-16",
+   "ret_pct": 0.45,
+   "reason": "跌破20MA"
   }
  ],
  "started": "2026-09-07"

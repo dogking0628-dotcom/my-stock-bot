@@ -104,12 +104,56 @@ def md(rows, asof):
     return "\n".join(L)
 
 
+def one_tw(pos):
+    """台股持股：只做價格/均線與出場線（線來自 double_holdings 的 stop_line；順德等動能倉取 max(MA20, stop_line)）"""
+    tk = str(pos["ticker"])
+    r = {"ticker": tk, "name": pos.get("name"), "shares": pos.get("shares"), "avg_cost": pos.get("avg_cost"), "theme": "台股"}
+    df = None
+    for suf in (".TW", ".TWO"):
+        try:
+            d = yf.download(tk + suf, period="8mo", auto_adjust=False, progress=False, threads=False)
+            if hasattr(d.columns, "levels"):
+                d.columns = [c[0] if isinstance(c, tuple) else c for c in d.columns]
+            d = d.dropna(subset=["Close"])
+            if len(d) >= 25:
+                df = d; break
+        except Exception:
+            pass
+    if df is None:
+        r["error"] = "抓不到"; return r
+    c = df["Close"]; last = float(c.iloc[-1])
+    r["date"] = df.index[-1].strftime("%Y-%m-%d"); r["close"] = f(last)
+    r["ma20"] = f(c.rolling(20).mean().iloc[-1]); r["ma60"] = f(c.rolling(60).mean().iloc[-1])
+    r["ret_1d_pct"] = f((last / float(c.iloc[-2]) - 1) * 100, 1)
+    r["high_since_entry"] = None
+    note = str(pos.get("note") or "")
+    stop = pos.get("stop_line")
+    if "動能倉" in note or "V4.6 出場" in note or "20MA" in note:
+        r["rule"] = "動能倉：max(MA20, 成本-7%)"
+        r["line"] = max(r["ma20"] or 0, float(stop or 0)) if stop else r["ma20"]
+    elif stop:
+        r["rule"] = "災難線/防守線"; r["line"] = float(stop)
+    else:
+        r["rule"] = "不設線"; r["line"] = None
+    if r.get("line"):
+        r["line_dist_pct"] = f((last / r["line"] - 1) * 100, 1); r["below_line"] = last < r["line"]
+    return r
+
+
 def main():
     rows = [one(p) for p in H.get("us", [])]
+    tw_rows = [one_tw(p) for p in H.get("tw", []) if str(p.get("ticker")) != "0050"]
+    tw_md = ["", "## 台股持股 vs 出場線", "", "| 代號 | 收盤日 | 收盤 | 1日% | MA20 | 規則 | 出場線 | 距線 |", "|---|---|---|---|---|---|---|---|"]
+    for r in tw_rows:
+        if r.get("error"):
+            tw_md.append(f"| {r['ticker']} {r.get('name')} | 抓不到 |" + " |" * 6); continue
+        flag = " ⚠️已破" if r.get("below_line") else ""
+        tw_md.append(f"| {r['ticker']} {r.get('name')} | {r['date']} | {r['close']} | {r['ret_1d_pct']:+.1f} | {r['ma20']} | {r['rule']} | {r.get('line') or '-'}{flag} | {('%+.1f%%' % r['line_dist_pct']) if r.get('line_dist_pct') is not None else '-'} |")
+    (ROOT / "tw_holdings_lines.json").write_text(json.dumps(tw_rows, ensure_ascii=False, indent=2), encoding="utf-8")
     asof = max((r.get("date") or "" for r in rows), default=dt.date.today().isoformat())
     OUT_J.write_text(json.dumps({"as_of": asof, "rows": rows}, ensure_ascii=False, indent=2), encoding="utf-8")
-    OUT_M.write_text(md(rows, asof), encoding="utf-8")
-    print(md(rows, asof))
+    OUT_M.write_text(md(rows, asof) + "\n".join(tw_md) + "\n", encoding="utf-8")
+    print(md(rows, asof)); print("\n".join(tw_md))
 
 
 if __name__ == "__main__":

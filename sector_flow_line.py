@@ -70,7 +70,7 @@ def build_message(signal):
         lines.extend(holding_lines)
 
     lines.append("")
-    lines.append("📌 情報僅供理解盤勢：核心不輪動，行動看 V2")
+    lines.append("📌 情報僅供理解盤勢：核心不輪動；V2 只是資訊，實單只看 V4.6 今日單（差集股 2y 期望為負）")
     return "\n".join(lines)
 
 

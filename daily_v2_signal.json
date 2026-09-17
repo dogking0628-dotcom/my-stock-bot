@@ -1,55 +1,19 @@
 {
-  "timestamp": "2026-09-16",
+  "timestamp": "2026-09-17",
   "strategy": "V2 原版 (實測 OOS PF 1.83 / 主回測 PF 1.69, 抗崩盤強·常空手)",
   "top_industries": [
     {
       "industry": "金融保險",
       "count": 30,
-      "bullish_count": 23
+      "bullish_count": 24
     },
     {
       "industry": "半導體",
-      "count": 9,
-      "bullish_count": 6
+      "count": 10,
+      "bullish_count": 8
     }
   ],
-  "picks": [
-    {
-      "today": 69.69999694824219,
-      "monthly_max_2y": 68.46041107177734,
-      "ratio": 1.0181066087255188,
-      "from_high_pct": 1.8106608725518836,
-      "bullish": true,
-      "bullish_fast": true,
-      "change_pct": 2.349483861925661,
-      "vol_ratio": 1.8221330267075755,
-      "rsi": 70.73169597056419,
-      "ma5": 67.75999908447265,
-      "ma20": 66.1149995803833,
-      "ma60": 65.7723227183024,
-      "ma200": 55.734161109924315,
-      "gap_up": true,
-      "close_near_high": true,
-      "long_red": false,
-      "tangle": null,
-      "ticker": "2891",
-      "name": "中信金",
-      "industry": "金融保險",
-      "industry_strong": false,
-      "market_cap_billions": 10763.76567808,
-      "mcap_pass": true,
-      "sitc_net_shares": 2998538,
-      "momentum_score": 85,
-      "momentum_notes": [
-        "跳空缺口",
-        "ATH",
-        "投信+2,999張"
-      ],
-      "tier": "⭐⭐⭐",
-      "next_day_prob": "≥85%",
-      "_score": 93.65
-    }
-  ],
+  "picks": [],
   "params": {
     "top_industries": 2,
     "vol_ratio_min": 1.5,

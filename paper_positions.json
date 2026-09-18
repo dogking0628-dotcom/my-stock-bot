@@ -6,9 +6,9 @@
    "entry": 96.0,
    "entry_date": "2026-09-17",
    "shares": 1560,
-   "peak": 96.0,
-   "last_close": 96.0,
-   "unreal_pct": 0.0
+   "peak": 102.0,
+   "last_close": 102.0,
+   "unreal_pct": 6.25
   },
   {
    "ticker": "3406",
@@ -16,10 +16,20 @@
    "entry": 965.0,
    "entry_date": "2026-09-17",
    "shares": 150,
-   "peak": 965.0,
-   "last_close": 965.0,
+   "peak": 972.0,
+   "last_close": 972.0,
+   "unreal_pct": 0.73
+  },
+  {
+   "ticker": "7711",
+   "name": "永擎",
+   "entry": 570.0,
+   "entry_date": "2026-09-18",
+   "shares": 260,
+   "peak": 570.0,
+   "last_close": 570.0,
    "unreal_pct": 0.0
   }
  ],
- "last_run": "2026-09-17"
+ "last_run": "2026-09-18"
 }

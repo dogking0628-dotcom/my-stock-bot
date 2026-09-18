@@ -17765,6 +17765,185 @@
       "current_price": 4430.0,
       "current_return": 0.0,
       "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-17",
+      "ticker": "6147.TWO",
+      "name": "頎邦",
+      "sector": "半導體_封測設備",
+      "pick_price": 207.5,
+      "stage": "BULL_MID",
+      "reason": "半導體_封測設備 強勢(+9.8) + 個股 5d+4.8% + 有 CB",
+      "cb_codes": [
+        "614706"
+      ],
+      "max_price": 207.5,
+      "current_price": 207.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-17",
+      "ticker": "3443.TW",
+      "name": "創意",
+      "sector": "半導體_IC設計",
+      "pick_price": 6170.0,
+      "stage": "BULL_MID",
+      "reason": "半導體_IC設計 強勢(+9.4) + 個股 5d+4.1% + 有 CB",
+      "cb_codes": [
+        "344308"
+      ],
+      "max_price": 6170.0,
+      "current_price": 6170.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-17",
+      "ticker": "3034.TW",
+      "name": "聯詠",
+      "sector": "半導體_IC設計",
+      "pick_price": 548.0,
+      "stage": "BULL_MID",
+      "reason": "半導體_IC設計 強勢(+9.4) + 個股 5d+0.9% + 有 CB",
+      "cb_codes": [
+        "303407"
+      ],
+      "max_price": 548.0,
+      "current_price": 548.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-17",
+      "ticker": "5347.TWO",
+      "name": "世界先進",
+      "sector": "半導體_晶圓代工",
+      "pick_price": 158.0,
+      "stage": "BULL_MID",
+      "reason": "半導體_晶圓代工 強勢(+9.6) + 個股 5d+0.6% + 有 CB",
+      "cb_codes": [
+        "534709"
+      ],
+      "max_price": 158.0,
+      "current_price": 158.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-17",
+      "ticker": "2303.TW",
+      "name": "聯電",
+      "sector": "半導體_晶圓代工",
+      "pick_price": 142.0,
+      "stage": "BULL_MID",
+      "reason": "半導體_晶圓代工 強勢(+9.6) + 個股 5d+0.3% + 有 CB",
+      "cb_codes": [
+        "230306"
+      ],
+      "max_price": 142.0,
+      "current_price": 142.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-17",
+      "ticker": "3035.TW",
+      "name": "智原",
+      "sector": "半導體_IC設計",
+      "pick_price": 173.5,
+      "stage": "BULL_MID",
+      "reason": "半導體_IC設計 強勢(+9.4) + 個股 5d-1.7% + 有 CB",
+      "cb_codes": [
+        "303505"
+      ],
+      "max_price": 173.5,
+      "current_price": 173.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-17",
+      "ticker": "6488.TWO",
+      "name": "環球晶",
+      "sector": "半導體_封測設備",
+      "pick_price": 937.0,
+      "stage": "BULL_MID",
+      "reason": "半導體_封測設備 強勢(+9.8) + 個股 5d-1.9% + 有 CB",
+      "cb_codes": [
+        "648810",
+        "648811"
+      ],
+      "max_price": 937.0,
+      "current_price": 937.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-17",
+      "ticker": "2454.TW",
+      "name": "聯發科",
+      "sector": "半導體_IC設計",
+      "pick_price": 4530.0,
+      "stage": "BULL_MID",
+      "reason": "半導體_IC設計 強勢(+9.4) + 個股 5d-2.0% + 有 CB",
+      "cb_codes": [
+        "245408"
+      ],
+      "max_price": 4530.0,
+      "current_price": 4530.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-17",
+      "ticker": "6196.TW",
+      "name": "帆宣",
+      "sector": "半導體_封測設備",
+      "pick_price": 521.0,
+      "stage": "BULL_MID",
+      "reason": "半導體_封測設備 強勢(+9.8) + 個股 5d-2.4% + 有 CB",
+      "cb_codes": [
+        "619608",
+        "619609"
+      ],
+      "max_price": 521.0,
+      "current_price": 521.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-17",
+      "ticker": "2449.TW",
+      "name": "京元電子",
+      "sector": "半導體_封測設備",
+      "pick_price": 261.5,
+      "stage": "BULL_MID",
+      "reason": "半導體_封測設備 強勢(+9.8) + 個股 5d-3.1% + 有 CB",
+      "cb_codes": [
+        "244907"
+      ],
+      "max_price": 261.5,
+      "current_price": 261.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-09-17",
+      "ticker": "2330.TW",
+      "name": "台積電",
+      "sector": "半導體_晶圓代工",
+      "pick_price": 2380.0,
+      "stage": "BULL_MID",
+      "reason": "半導體_晶圓代工 強勢(+9.6) + 個股 5d-3.2% + 有 CB",
+      "cb_codes": [
+        "233027",
+        "233028"
+      ],
+      "max_price": 2380.0,
+      "current_price": 2380.0,
+      "current_return": 0.0,
+      "days_held": 0
     }
   ],
   "closed_picks": []

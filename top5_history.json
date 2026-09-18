@@ -1,42 +1,6 @@
 {
   "records": [
     {
-      "date": "2026-07-23",
-      "industry": "電腦及週邊",
-      "picks": [
-        {
-          "ticker": "6166",
-          "name": "凌華",
-          "industry": "電腦及週邊",
-          "rec_close": 159.5,
-          "momentum_score": 80,
-          "momentum_notes": [
-            "量爆價揚",
-            "ATH"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 69.74134840450509,
-          "change_pct_at_rec": 10.000000000000009,
-          "vol_ratio_at_rec": 3.849119472092862
-        },
-        {
-          "ticker": "3231",
-          "name": "緯創",
-          "industry": "電腦及週邊",
-          "rec_close": 173.5,
-          "momentum_score": 80,
-          "momentum_notes": [
-            "量爆價揚",
-            "ATH"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 67.69163574473018,
-          "change_pct_at_rec": 5.792682926829262,
-          "vol_ratio_at_rec": 4.99098086902546
-        }
-      ]
-    },
-    {
       "date": "2026-07-26",
       "industry": "電腦及週邊",
       "picks": [
@@ -1566,6 +1530,29 @@
           "rsi": 60.49079754601227,
           "change_pct_at_rec": 9.836065573770503,
           "vol_ratio_at_rec": 0.6613817783737916
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "industry": "半導體",
+      "picks": [
+        {
+          "ticker": "7711",
+          "name": "永擎",
+          "industry": "電腦及週邊",
+          "rec_close": 565.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "QQQ+0.0%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 56.91489361702127,
+          "change_pct_at_rec": 9.922178988326857,
+          "vol_ratio_at_rec": 0.34973665728062214
         }
       ]
     }

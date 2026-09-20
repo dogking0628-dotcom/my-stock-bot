@@ -21,13 +21,14 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python us_valuation_lines.py 2>&1 | tee us_holdings_lines_log.txt
       - run: python us_rerating.py 2>&1 | tee us_rerating_log.txt
+      - run: python benchmark_0050.py 2>&1 | tee weekly_benchmark_log.txt || true
       - name: Commit results
         if: always()
         run: |
           git config user.name  "github-actions"
           git config user.email "github-actions@github.com"
           rm -f data/us_lines_request.json
-          git add -A -- us_holdings_lines.json us_holdings_lines.md tw_holdings_lines.json us_holdings_lines_log.txt us_rerating.json tw_rerating.json us_rerating_log.txt data/us_lines_request.json 2>/dev/null || true
+          git add -A -- us_holdings_lines.json us_holdings_lines.md tw_holdings_lines.json weekly_benchmark.json weekly_benchmark.md weekly_benchmark_log.txt us_holdings_lines_log.txt us_rerating.json tw_rerating.json us_rerating_log.txt data/us_lines_request.json 2>/dev/null || true
           git diff --staged --quiet || git commit -m "us: 持股估值與出場線快照"
           git pull --rebase --autostash || true
           git push

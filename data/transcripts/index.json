@@ -2120,7 +2120,7 @@
     "upload_date": "20260910",
     "duration": 927,
     "url": "https://www.youtube.com/watch?v=LNnI1BxQH2c",
-    "fetched_at": "2026-09-20T08:01",
+    "fetched_at": "2026-09-20T08:16",
     "status": "error",
     "available_langs": [],
     "error": "ERROR: [youtube] LNnI1BxQH2c: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-"
@@ -2131,7 +2131,7 @@
     "upload_date": "20260907",
     "duration": 807,
     "url": "https://www.youtube.com/watch?v=NN9kjLIsAOw",
-    "fetched_at": "2026-09-20T08:02",
+    "fetched_at": "2026-09-20T08:16",
     "status": "error",
     "available_langs": [],
     "error": "ERROR: [youtube] NN9kjLIsAOw: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-"
@@ -2876,7 +2876,7 @@
   "61P7Ur25AOo": {
     "status": "error",
     "error": "ERROR: [youtube] 61P7Ur25AOo: This video is available to this channel's members on level: 先探金粉 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
-    "fetched_at": "2026-09-20T08:01"
+    "fetched_at": "2026-09-20T08:15"
   },
   "40aO6Y0npf8": {
     "title": "【又四萬七 這次狼來了?】2026/9/18(字幕版)",
@@ -2994,7 +2994,7 @@
     "upload_date": "20260918",
     "duration": 879,
     "url": "https://www.youtube.com/watch?v=nTcKluR9uwI",
-    "fetched_at": "2026-09-20T08:02",
+    "fetched_at": "2026-09-20T08:16",
     "status": "error",
     "available_langs": [],
     "error": "ERROR: [youtube] nTcKluR9uwI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-"
@@ -3027,7 +3027,7 @@
     "upload_date": "20260916",
     "duration": 2352,
     "url": "https://www.youtube.com/watch?v=T1VhuNpYyHI",
-    "fetched_at": "2026-09-20T08:02",
+    "fetched_at": "2026-09-20T08:16",
     "status": "error",
     "available_langs": [],
     "error": "ERROR: [youtube] T1VhuNpYyHI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-"
@@ -4423,6 +4423,6 @@
   "61XG-h0pvbs": {
     "status": "error",
     "error": "ERROR: [youtube] 61XG-h0pvbs: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-09-20T08:01"
+    "fetched_at": "2026-09-20T08:16"
   }
 }

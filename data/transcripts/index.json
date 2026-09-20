@@ -2120,9 +2120,10 @@
     "upload_date": "20260910",
     "duration": 927,
     "url": "https://www.youtube.com/watch?v=LNnI1BxQH2c",
-    "fetched_at": "2026-09-18T20:31",
-    "status": "no_subs",
-    "available_langs": []
+    "fetched_at": "2026-09-20T07:59",
+    "status": "error",
+    "available_langs": [],
+    "error": "ERROR: [youtube] LNnI1BxQH2c: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-"
   },
   "NN9kjLIsAOw": {
     "title": "《投其所展》突破微縮極限！台灣材料廠如何攻克AI晶片散熱與翹曲難關  (純產業分享，非投資建議)",
@@ -2130,9 +2131,10 @@
     "upload_date": "20260907",
     "duration": 807,
     "url": "https://www.youtube.com/watch?v=NN9kjLIsAOw",
-    "fetched_at": "2026-09-18T20:31",
-    "status": "no_subs",
-    "available_langs": []
+    "fetched_at": "2026-09-20T07:59",
+    "status": "error",
+    "available_langs": [],
+    "error": "ERROR: [youtube] NN9kjLIsAOw: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-"
   },
   "YyR5SgUwwFA": {
     "title": "《華爾街劇透社》Q3利空狂炸是最後買點？美債殖利率飆升的真相公開區間震盪獲利密碼！",
@@ -2857,8 +2859,8 @@
   },
   "61P7Ur25AOo": {
     "status": "error",
-    "error": "\u001b[0;31mERROR:\u001b[0m [youtube] 61P7Ur25AOo: This video is available to this channel's members on level: 先探金粉 (or any higher level). Join this channel to get access to members-only content and other exclu",
-    "fetched_at": "2026-09-20T14:39"
+    "error": "ERROR: [youtube] 61P7Ur25AOo: This video is available to this channel's members on level: 先探金粉 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
+    "fetched_at": "2026-09-20T07:58"
   },
   "40aO6Y0npf8": {
     "title": "【又四萬七 這次狼來了?】2026/9/18(字幕版)",
@@ -2936,9 +2938,10 @@
     "upload_date": "20260918",
     "duration": 879,
     "url": "https://www.youtube.com/watch?v=nTcKluR9uwI",
-    "fetched_at": "2026-09-18T20:31",
-    "status": "no_subs",
-    "available_langs": []
+    "fetched_at": "2026-09-20T07:59",
+    "status": "error",
+    "available_langs": [],
+    "error": "ERROR: [youtube] nTcKluR9uwI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-"
   },
   "rD6aLsQKgYc": {
     "title": "矽電容、MLCC大車拚！愛普、力積電、華邦電誰最有爆發力？#大叔充電站-產業EP155#劉烱德",
@@ -2960,9 +2963,10 @@
     "upload_date": "20260916",
     "duration": 2352,
     "url": "https://www.youtube.com/watch?v=T1VhuNpYyHI",
-    "fetched_at": "2026-09-18T20:31",
-    "status": "no_subs",
-    "available_langs": []
+    "fetched_at": "2026-09-20T07:59",
+    "status": "error",
+    "available_langs": [],
+    "error": "ERROR: [youtube] T1VhuNpYyHI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-"
   },
   "8hSveQHgTbg": {
     "title": "Google證明ASIC不到1年回本！創意、聯發科漲高後，4億股本小巨人接下一棒？【賺財富 看先探】。ft.先探數位發展總編輯 黃輝明",
@@ -4319,5 +4323,10 @@
     "title": "光通訊迎來大成長！800G光模組爆發，台廠迎1.6T新商機！鎖定投資最錢線。",
     "upload_date": "20260316",
     "range": "20260915-20260921"
+  },
+  "61XG-h0pvbs": {
+    "status": "error",
+    "error": "ERROR: [youtube] 61XG-h0pvbs: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-09-20T07:58"
   }
 }

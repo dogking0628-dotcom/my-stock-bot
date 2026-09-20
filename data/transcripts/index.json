@@ -2841,7 +2841,15 @@
     "source": "人工字幕",
     "file": "20260918_mcTcsAaa6OM.md",
     "paragraphs": 6,
-    "chars": 2460
+    "chars": 2460,
+    "analyzed_at": "2026-09-20T08:14",
+    "analysis": "mcTcsAaa6OM.analysis.md",
+    "claims_range": [
+      1002,
+      1007
+    ],
+    "evidence_candidates": 3,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "6EMhhZI6I1c": {
     "title": "第三波漲價＋AI雙引擎！AI電力誰能吃下最大商機？鎖定投資最錢線。",
@@ -2855,7 +2863,15 @@
     "source": "人工字幕",
     "file": "20260918_6EMhhZI6I1c.md",
     "paragraphs": 4,
-    "chars": 1660
+    "chars": 1660,
+    "analyzed_at": "2026-09-20T08:14",
+    "analysis": "6EMhhZI6I1c.analysis.md",
+    "claims_range": [
+      932,
+      939
+    ],
+    "evidence_candidates": 5,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "61P7Ur25AOo": {
     "status": "error",
@@ -2874,7 +2890,15 @@
     "source": "人工字幕",
     "file": "20260918_40aO6Y0npf8.md",
     "paragraphs": 37,
-    "chars": 15447
+    "chars": 15447,
+    "analyzed_at": "2026-09-20T08:14",
+    "analysis": "40aO6Y0npf8.analysis.md",
+    "claims_range": [
+      922,
+      931
+    ],
+    "evidence_candidates": 1,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "Oh7Wjk5SPyA": {
     "title": "【台股開高走低 年底升息還會崩?】2026/9/17(字幕版)",
@@ -2888,7 +2912,15 @@
     "source": "人工字幕",
     "file": "20260917_Oh7Wjk5SPyA.md",
     "paragraphs": 37,
-    "chars": 15316
+    "chars": 15316,
+    "analyzed_at": "2026-09-20T08:14",
+    "analysis": "Oh7Wjk5SPyA.analysis.md",
+    "claims_range": [
+      967,
+      975
+    ],
+    "evidence_candidates": 2,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "0OQDDWxgtTQ": {
     "title": "【精華】台積電攜手ASML升級EUV！家登、帆宣、辛耘 受惠股現在能搶？《鈔錢部署》盧燕俐 ft.蔡明翰 20260918",
@@ -2902,7 +2934,15 @@
     "source": "人工字幕",
     "file": "20260918_0OQDDWxgtTQ.md",
     "paragraphs": 7,
-    "chars": 2581
+    "chars": 2581,
+    "analyzed_at": "2026-09-20T08:14",
+    "analysis": "0OQDDWxgtTQ.analysis.md",
+    "claims_range": [
+      915,
+      921
+    ],
+    "evidence_candidates": 6,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "K8_5jMxfSbc": {
     "title": "1條件大立光破底翻 南亞上400、南亞科破千？卡位台股年底5萬 長抱它直接躺賺《鈔錢部署》盧燕俐 ft.杜金龍 黃世聰 20260917",
@@ -2916,7 +2956,15 @@
     "source": "人工字幕",
     "file": "20260917_K8_5jMxfSbc.md",
     "paragraphs": 27,
-    "chars": 10793
+    "chars": 10793,
+    "analyzed_at": "2026-09-20T08:14",
+    "analysis": "K8_5jMxfSbc.analysis.md",
+    "claims_range": [
+      956,
+      966
+    ],
+    "evidence_candidates": 4,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "UYFuhw9wc1g": {
     "title": "Ai末日，賣掉股票？2027年10月要小心！這些股票要守住！",
@@ -2930,7 +2978,15 @@
     "source": "人工字幕",
     "file": "20260915_UYFuhw9wc1g.md",
     "paragraphs": 13,
-    "chars": 5237
+    "chars": 5237,
+    "analyzed_at": "2026-09-20T08:14",
+    "analysis": "UYFuhw9wc1g.analysis.md",
+    "claims_range": [
+      976,
+      986
+    ],
+    "evidence_candidates": 3,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "nTcKluR9uwI": {
     "title": "輝達豪砸35億美元結盟聯發科，背後暗藏AI運算架構大洗牌！不只「發哥」受惠，世芯與創意也挾帶核心優勢入列，3大台廠會如何稱霸ASIC供應鏈呢？《#王牌財經所136》| #王曈",
@@ -2955,7 +3011,15 @@
     "source": "人工字幕",
     "file": "20260917_rD6aLsQKgYc.md",
     "paragraphs": 9,
-    "chars": 2722
+    "chars": 2722,
+    "analyzed_at": "2026-09-20T08:14",
+    "analysis": "rD6aLsQKgYc.analysis.md",
+    "claims_range": [
+      1008,
+      1015
+    ],
+    "evidence_candidates": 8,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "T1VhuNpYyHI": {
     "title": "如何避免被金融詐騙？澳豐基金、馬多夫啟示錄《賢賢賺大錢EP5》#洪瑞賢分析師",
@@ -2980,7 +3044,15 @@
     "source": "人工字幕",
     "file": "20260917_8hSveQHgTbg.md",
     "paragraphs": 13,
-    "chars": 4510
+    "chars": 4510,
+    "analyzed_at": "2026-09-20T08:14",
+    "analysis": "8hSveQHgTbg.analysis.md",
+    "claims_range": [
+      940,
+      946
+    ],
+    "evidence_candidates": 3,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "-fqRDnqltoI": {
     "title": "【老謝新觀點#64】Token新經濟 智慧電力新賽局",
@@ -3004,7 +3076,15 @@
     "source": "人工字幕",
     "file": "20260916_jk9K-at60iI.md",
     "paragraphs": 13,
-    "chars": 5192
+    "chars": 5192,
+    "analyzed_at": "2026-09-20T08:14",
+    "analysis": "jk9K-at60iI.analysis.md",
+    "claims_range": [
+      994,
+      1001
+    ],
+    "evidence_candidates": 4,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "_q-nh2VICuY": {
     "title": "AI晶片進入多晶粒時代！力旺、M31、智原誰吃到最大商機？鎖定投資最錢線。",
@@ -3018,7 +3098,15 @@
     "source": "人工字幕",
     "file": "20260916__q-nh2VICuY.md",
     "paragraphs": 4,
-    "chars": 1665
+    "chars": 1665,
+    "analyzed_at": "2026-09-20T08:14",
+    "analysis": "_q-nh2VICuY.analysis.md",
+    "claims_range": [
+      987,
+      993
+    ],
+    "evidence_candidates": 4,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "UVGtHK5xWdM": {
     "status": "error",
@@ -3037,7 +3125,15 @@
     "source": "人工字幕",
     "file": "20260915_IWcPXILSQ3M.md",
     "paragraphs": 14,
-    "chars": 5837
+    "chars": 5837,
+    "analyzed_at": "2026-09-20T08:14",
+    "analysis": "IWcPXILSQ3M.analysis.md",
+    "claims_range": [
+      947,
+      955
+    ],
+    "evidence_candidates": 4,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "A4RmrOjh-NM": {
     "status": "error",

@@ -2802,12 +2802,12 @@
   "feMzFS5gjhs": {
     "status": "error",
     "error": "ERROR: [youtube] feMzFS5gjhs: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-09-14T03:04"
+    "fetched_at": "2026-09-20T07:50"
   },
   "1pqn4peYAgs": {
     "status": "error",
     "error": "ERROR: [youtube] 1pqn4peYAgs: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-09-14T03:05"
+    "fetched_at": "2026-09-20T07:50"
   },
   "HyvfSWsRGeU": {
     "status": "error",
@@ -2818,5 +2818,20 @@
     "status": "error",
     "error": "ERROR: [youtube] OdFvBM6GTZ8: This video is available to this channel's members on level: 先探金粉 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
     "fetched_at": "2026-09-14T03:05"
+  },
+  "K8_5jMxfSbc": {
+    "status": "error",
+    "error": "ERROR: [youtube] K8_5jMxfSbc: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-09-20T07:50"
+  },
+  "mcTcsAaa6OM": {
+    "status": "error",
+    "error": "ERROR: [youtube] mcTcsAaa6OM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-09-20T07:50"
+  },
+  "6EMhhZI6I1c": {
+    "status": "error",
+    "error": "ERROR: [youtube] 6EMhhZI6I1c: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-09-20T07:50"
   }
 }

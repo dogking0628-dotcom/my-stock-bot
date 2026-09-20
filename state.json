@@ -1,6 +1,6 @@
 {
-  "last_run": "2026-09-04",
-  "cash": 19521.346362568816,
+  "last_run": "2026-09-11",
+  "cash": 14324.7332230056,
   "positions": [
     {
       "ticker": "AMD",
@@ -38,13 +38,6 @@
       "shares": 17.877591
     },
     {
-      "ticker": "CASY",
-      "entry_date": "2026-06-10",
-      "entry_price": 915.6,
-      "peak_price": 916.280029296875,
-      "shares": 7.64596
-    },
-    {
       "ticker": "LLY",
       "entry_date": "2026-06-26",
       "entry_price": 1208.12,
@@ -71,6 +64,13 @@
       "entry_price": 260.72,
       "peak_price": 298.5799865722656,
       "shares": 26.347769
+    },
+    {
+      "ticker": "DELL",
+      "entry_date": "2026-09-11",
+      "entry_price": 567.29,
+      "peak_price": 567.29,
+      "shares": 17.45575
     }
   ],
   "running_ath": {}

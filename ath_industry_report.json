@@ -28,9 +28,9 @@
       }
     }
   ],
-  "trade_date": "2026-09-21",
+  "trade_date": "2026-09-22",
   "data_date": "2026-09-21",
-  "ref_trading_date": "2026-09-18",
+  "ref_trading_date": "2026-09-21",
   "patched_bars": 0,
   "basis": "yfinance 2y monthly + 動能確認分數（最強族群挑 5）；最新K棒以證交所 MI_INDEX 校驗",
   "total_analyzed": 1078,
@@ -453,7 +453,7 @@
       "ma20": 79.64999923706054,
       "ma60": 73.29333292643229,
       "ma200": 57.957911014556885,
-      "gap_up": false,
+      "gap_up": true,
       "close_near_high": false,
       "long_red": false,
       "tangle": null,
@@ -464,12 +464,13 @@
       "market_cap_billions": 5220.2258432,
       "mcap_pass": true,
       "sitc_net_shares": -180461,
-      "momentum_score": 30,
+      "momentum_score": 75,
       "momentum_notes": [
+        "跳空缺口",
         "ATH"
       ],
-      "tier": "⭐",
-      "next_day_prob": "<70%"
+      "tier": "⭐⭐",
+      "next_day_prob": "70-85%"
     },
     {
       "today": 572.0,
@@ -585,8 +586,8 @@
       "ma5": 4636.0,
       "ma20": 4397.0,
       "ma60": 4028.4802815755206,
-      "ma200": 2824.9329809570313,
-      "gap_up": false,
+      "ma200": 2824.932982788086,
+      "gap_up": true,
       "close_near_high": true,
       "long_red": true,
       "tangle": null,
@@ -597,14 +598,15 @@
       "market_cap_billions": 54746.27878912,
       "mcap_pass": true,
       "sitc_net_shares": -119993,
-      "momentum_score": 45,
+      "momentum_score": 90,
       "momentum_notes": [
+        "跳空缺口",
         "ATH",
         "QQQ+0.6%",
         "SMH+2.2%"
       ],
-      "tier": "⭐",
-      "next_day_prob": "<70%"
+      "tier": "⭐⭐⭐",
+      "next_day_prob": "≥85%"
     },
     {
       "today": 46.20000076293945,
@@ -2096,7 +2098,7 @@
       "ma5": 67.1,
       "ma20": 66.07000045776367,
       "ma60": 63.50475387573242,
-      "ma200": 61.018069133758544,
+      "ma200": 61.01806924819946,
       "gap_up": false,
       "close_near_high": true,
       "long_red": false,
@@ -2432,7 +2434,7 @@
       "ma200": 2057.4077685546877,
       "gap_up": false,
       "close_near_high": true,
-      "long_red": false,
+      "long_red": true,
       "tangle": null,
       "ticker": "2330",
       "name": "台積電",
@@ -2485,9 +2487,9 @@
     },
     {
       "today": 142.0,
-      "monthly_max_2y": 139.0709991455078,
-      "ratio": 1.021061190848479,
-      "from_high_pct": 2.1061190848479017,
+      "monthly_max_2y": 139.07101440429688,
+      "ratio": 1.0210610788182517,
+      "from_high_pct": 2.10610788182517,
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 2.5270758122743597,
@@ -3733,7 +3735,7 @@
       "ma20": 79.64999923706054,
       "ma60": 73.29333292643229,
       "ma200": 57.957911014556885,
-      "gap_up": false,
+      "gap_up": true,
       "close_near_high": false,
       "long_red": false,
       "tangle": null,
@@ -3744,12 +3746,13 @@
       "market_cap_billions": 5220.2258432,
       "mcap_pass": true,
       "sitc_net_shares": -180461,
-      "momentum_score": 30,
+      "momentum_score": 75,
       "momentum_notes": [
+        "跳空缺口",
         "ATH"
       ],
-      "tier": "⭐",
-      "next_day_prob": "<70%"
+      "tier": "⭐⭐",
+      "next_day_prob": "70-85%"
     },
     {
       "today": 572.0,
@@ -3865,8 +3868,8 @@
       "ma5": 4636.0,
       "ma20": 4397.0,
       "ma60": 4028.4802815755206,
-      "ma200": 2824.9329809570313,
-      "gap_up": false,
+      "ma200": 2824.932982788086,
+      "gap_up": true,
       "close_near_high": true,
       "long_red": true,
       "tangle": null,
@@ -3877,14 +3880,15 @@
       "market_cap_billions": 54746.27878912,
       "mcap_pass": true,
       "sitc_net_shares": -119993,
-      "momentum_score": 45,
+      "momentum_score": 90,
       "momentum_notes": [
+        "跳空缺口",
         "ATH",
         "QQQ+0.6%",
         "SMH+2.2%"
       ],
-      "tier": "⭐",
-      "next_day_prob": "<70%"
+      "tier": "⭐⭐⭐",
+      "next_day_prob": "≥85%"
     },
     {
       "today": 46.20000076293945,
@@ -4385,6 +4389,41 @@
       "next_day_prob": "≥85%"
     },
     {
+      "today": 5010.0,
+      "monthly_max_2y": 4284.40087890625,
+      "ratio": 1.1693583634216287,
+      "from_high_pct": 16.93583634216287,
+      "bullish": true,
+      "bullish_fast": false,
+      "change_pct": 6.369426751592355,
+      "vol_ratio": 1.4883424433365273,
+      "rsi": 70.62314540059347,
+      "ma5": 4636.0,
+      "ma20": 4397.0,
+      "ma60": 4028.4802815755206,
+      "ma200": 2824.932982788086,
+      "gap_up": true,
+      "close_near_high": true,
+      "long_red": true,
+      "tangle": null,
+      "ticker": "2454",
+      "name": "聯發科",
+      "industry": "半導體",
+      "industry_strong": false,
+      "market_cap_billions": 54746.27878912,
+      "mcap_pass": true,
+      "sitc_net_shares": -119993,
+      "momentum_score": 90,
+      "momentum_notes": [
+        "跳空缺口",
+        "ATH",
+        "QQQ+0.6%",
+        "SMH+2.2%"
+      ],
+      "tier": "⭐⭐⭐",
+      "next_day_prob": "≥85%"
+    },
+    {
       "today": 724.0,
       "monthly_max_2y": 674.4033813476562,
       "ratio": 1.0735414738776,
@@ -4421,7 +4460,7 @@
     }
   ],
   "tomorrow_top5_industry": "半導體",
-  "high_prob_count": 11,
+  "high_prob_count": 12,
   "industry_stats": [
     {
       "industry": "金融保險",
@@ -4591,6 +4630,6 @@
   "v4_blocked": false,
   "v44_paused": false,
   "v45_filtered": [],
-  "intraday_updated": "2026-09-21 05:56",
+  "intraday_updated": "2026-09-21 08:11",
   "is_intraday": true
 }

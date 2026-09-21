@@ -8,6 +8,10 @@ on:
     - cron: '12,42 1-4 * * 1-5'
     # 預約台灣 12:35 = UTC 04:35（實際多半 13:05-13:25 開跑，收盤 13:30 前）
     - cron: '35 4 * * 1-5'
+  # Claude Routine 準時觸發：推 .trigger/intraday 檔案即開跑（push 不走排程佇列，秒級啟動）
+  push:
+    branches: [main]
+    paths: ['.trigger/intraday']
   workflow_dispatch:
 
 permissions:

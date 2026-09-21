@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-09-18",
+  "timestamp": "2026-09-21",
   "strategy": "V2 原版 (實測 OOS PF 1.83 / 主回測 PF 1.69, 抗崩盤強·常空手)",
   "top_industries": [
     {
       "industry": "金融保險",
-      "count": 30,
-      "bullish_count": 26
+      "count": 31,
+      "bullish_count": 28
     },
     {
       "industry": "電腦及週邊",
-      "count": 12,
-      "bullish_count": 10
+      "count": 23,
+      "bullish_count": 16
     }
   ],
   "picks": [],

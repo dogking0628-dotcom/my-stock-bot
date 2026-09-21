@@ -1,44 +1,8 @@
 {
-  "timestamp": "2026-09-18",
+  "timestamp": "2026-09-21",
   "strategy": "V4.6 (V4.5 + 收盤前買進; 正式月線定義回測 5y +313.5%/PF 5.27/MDD -13.9%, 2y +199.7%/PF 6.31/MDD -10.5%)",
   "entry_timing": "收盤前買（13:25 限價=當時價×1.005 或 14:00-14:30 盤後定價）",
   "strongest_industry": "半導體",
   "v4_blocked": false,
-  "picks": [
-    {
-      "today": 565.0,
-      "monthly_max_2y": 535.0,
-      "ratio": 1.0560747663551402,
-      "from_high_pct": 5.607476635514019,
-      "bullish": true,
-      "bullish_fast": false,
-      "change_pct": 9.922178988326857,
-      "vol_ratio": 0.34973665728062214,
-      "rsi": 56.91489361702127,
-      "ma5": 511.2,
-      "ma20": 544.2,
-      "ma60": 410.9020482381185,
-      "ma200": 325.33341316223147,
-      "gap_up": true,
-      "close_near_high": true,
-      "long_red": false,
-      "tangle": null,
-      "ticker": "7711",
-      "name": "永擎",
-      "industry": "電腦及週邊",
-      "industry_strong": true,
-      "market_cap_billions": 307.38102272,
-      "mcap_pass": true,
-      "sitc_net_shares": 0,
-      "momentum_score": 100,
-      "momentum_notes": [
-        "漲停鎖死",
-        "ATH",
-        "族群同步",
-        "QQQ+0.0%"
-      ],
-      "tier": "⭐⭐⭐",
-      "next_day_prob": "≥85%"
-    }
-  ]
+  "picks": []
 }

@@ -1,99 +1,99 @@
 {
-  "total": 1009,
-  "open_count": 1009,
+  "total": 1086,
+  "open_count": 1086,
   "closed_count": 0,
-  "win_rate": 36.1,
-  "big_win_rate": 11.5,
-  "big_loss_rate": 32.4,
-  "avg_return": -0.2,
-  "median_return": -3.62,
+  "win_rate": 50.4,
+  "big_win_rate": 13.0,
+  "big_loss_rate": 21.3,
+  "avg_return": 3.27,
+  "median_return": 0.28,
   "by_stage": {
     "BULL_LATE": {
-      "n": 432,
-      "win_rate": 36.8,
-      "avg_ret": 2.26
+      "n": 443,
+      "win_rate": 46.5,
+      "avg_ret": 5.65
     },
     "BULL_MID": {
-      "n": 500,
-      "win_rate": 38.4,
-      "avg_ret": -1.53
+      "n": 566,
+      "win_rate": 56.0,
+      "avg_ret": 1.94
     },
     "BULL_ACCEL": {
       "n": 77,
-      "win_rate": 16.9,
-      "avg_ret": -5.35
+      "win_rate": 31.2,
+      "avg_ret": -0.57
     }
   },
   "by_sector": {
     "半導體_封測設備": {
-      "n": 71,
-      "win_rate": 9.9,
-      "avg_ret": -13.98
+      "n": 91,
+      "win_rate": 45.1,
+      "avg_ret": -2.51
     },
     "半導體_IC設計": {
-      "n": 64,
-      "win_rate": 65.6,
-      "avg_ret": 10.62
+      "n": 92,
+      "win_rate": 68.5,
+      "avg_ret": 10.45
     },
     "被動元件_載板": {
       "n": 130,
-      "win_rate": 12.3,
-      "avg_ret": -9.65
+      "win_rate": 32.3,
+      "avg_ret": -6.24
     },
     "記憶體_DRAM_NAND": {
       "n": 172,
-      "win_rate": 38.4,
-      "avg_ret": 12.04
+      "win_rate": 39.0,
+      "avg_ret": 13.51
     },
     "觀光電商": {
       "n": 31,
-      "win_rate": 0.0,
-      "avg_ret": -27.19
+      "win_rate": 3.2,
+      "avg_ret": -24.77
     },
     "金融": {
       "n": 7,
       "win_rate": 0.0,
-      "avg_ret": -13.45
+      "avg_ret": -10.7
     },
     "光學_鏡頭": {
       "n": 54,
-      "win_rate": 9.3,
-      "avg_ret": -2.46
+      "win_rate": 51.9,
+      "avg_ret": 0.37
     },
     "機構_散熱": {
       "n": 108,
-      "win_rate": 65.7,
-      "avg_ret": 13.22
+      "win_rate": 69.4,
+      "avg_ret": 16.39
     },
     "AI_伺服器": {
       "n": 90,
-      "win_rate": 53.3,
-      "avg_ret": -10.83
+      "win_rate": 62.2,
+      "avg_ret": -10.04
     },
     "軍工_航太": {
       "n": 72,
-      "win_rate": 25.0,
-      "avg_ret": -7.25
+      "win_rate": 31.9,
+      "avg_ret": -4.48
     },
     "半導體_晶圓代工": {
-      "n": 36,
-      "win_rate": 0.0,
-      "avg_ret": -9.64
+      "n": 57,
+      "win_rate": 50.9,
+      "avg_ret": 0.04
     },
     "食品民生": {
       "n": 14,
       "win_rate": 28.6,
-      "avg_ret": -3.61
+      "avg_ret": -3.21
     },
     "海運_航運": {
-      "n": 124,
-      "win_rate": 59.7,
-      "avg_ret": 7.57
+      "n": 132,
+      "win_rate": 72.7,
+      "avg_ret": 11.3
     },
     "AI_散熱電源": {
       "n": 36,
-      "win_rate": 36.1,
-      "avg_ret": -3.02
+      "win_rate": 61.1,
+      "avg_ret": 3.9
     }
   }
 }

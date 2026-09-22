@@ -1,28 +1,6 @@
 {
   "records": [
     {
-      "date": "2026-07-26",
-      "industry": "電腦及週邊",
-      "picks": [
-        {
-          "ticker": "6166",
-          "name": "凌華",
-          "industry": "電腦及週邊",
-          "rec_close": 166.5,
-          "momentum_score": 85,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "IGV+1.0%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 76.12139815717124,
-          "change_pct_at_rec": 4.3887147335423204,
-          "vol_ratio_at_rec": 6.632457616233047
-        }
-      ]
-    },
-    {
       "date": "2026-08-02",
       "industry": "電腦及週邊",
       "picks": [
@@ -1553,6 +1531,83 @@
           "rsi": 56.91489361702127,
           "change_pct_at_rec": 9.922178988326857,
           "vol_ratio_at_rec": 0.34973665728062214
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "industry": "半導體",
+      "picks": [
+        {
+          "ticker": "3443",
+          "name": "創意",
+          "industry": "半導體",
+          "rec_close": 7615.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+0.6%",
+            "SMH+2.2%",
+            "投信+23張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 76.82119205298014,
+          "change_pct_at_rec": 6.503496503496509,
+          "vol_ratio_at_rec": 1.6305730426375409
+        },
+        {
+          "ticker": "2454",
+          "name": "聯發科",
+          "industry": "半導體",
+          "rec_close": 5010.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+0.6%",
+            "SMH+2.2%",
+            "投信+313張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 70.62314540059347,
+          "change_pct_at_rec": 6.369426751592355,
+          "vol_ratio_at_rec": 1.2824422853647142
+        },
+        {
+          "ticker": "6257",
+          "name": "矽格",
+          "industry": "半導體",
+          "rec_close": 250.5,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+0.6%",
+            "SMH+2.2%",
+            "投信+18張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 67.90123456790124,
+          "change_pct_at_rec": 2.4539877300613577,
+          "vol_ratio_at_rec": 2.6021846247235247
+        },
+        {
+          "ticker": "6526",
+          "name": "達發",
+          "industry": "半導體",
+          "rec_close": 724.0,
+          "momentum_score": 90,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+0.6%",
+            "SMH+2.2%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 65.4054054054054,
+          "change_pct_at_rec": 4.775687409551366,
+          "vol_ratio_at_rec": 3.7774739715915095
         }
       ]
     }

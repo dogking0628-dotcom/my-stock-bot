@@ -43,6 +43,28 @@
    "exit_date": "2026-09-16",
    "ret_pct": 0.45,
    "reason": "跌破20MA"
+  },
+  {
+   "ticker": "3406",
+   "name": "玉晶光",
+   "entry": 965.0,
+   "entry_date": "2026-09-17",
+   "shares": 150,
+   "exit": 962.0,
+   "exit_date": "2026-09-22",
+   "ret_pct": -0.78,
+   "reason": "跌破20MA"
+  },
+  {
+   "ticker": "7711",
+   "name": "永擎",
+   "entry": 570.0,
+   "entry_date": "2026-09-18",
+   "shares": 260,
+   "exit": 552.0,
+   "exit_date": "2026-09-22",
+   "ret_pct": -3.63,
+   "reason": "跌破20MA"
   }
  ],
  "started": "2026-09-07"

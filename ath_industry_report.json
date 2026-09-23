@@ -28,9 +28,9 @@
       }
     }
   ],
-  "trade_date": "2026-09-23",
+  "trade_date": "2026-09-24",
   "data_date": "2026-09-23",
-  "ref_trading_date": "2026-09-22",
+  "ref_trading_date": "2026-09-23",
   "patched_bars": 0,
   "basis": "yfinance 2y monthly + 動能確認分數（最強族群挑 5）；最新K棒以證交所 MI_INDEX 校驗",
   "total_analyzed": 1078,
@@ -2230,7 +2230,7 @@
       "ma5": 2465.0,
       "ma20": 2424.278125,
       "ma60": 2394.5062337239583,
-      "ma200": 2068.0069165039063,
+      "ma200": 2068.006918334961,
       "gap_up": false,
       "close_near_high": true,
       "long_red": true,
@@ -3388,9 +3388,9 @@
     },
     {
       "today": 139.0,
-      "monthly_max_2y": 139.0709991455078,
-      "ratio": 0.9994894755488631,
-      "from_high_pct": -0.05105244511368623,
+      "monthly_max_2y": 139.07101440429688,
+      "ratio": 0.9994893658854718,
+      "from_high_pct": -0.051063411452823004,
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -1.0676156583629859,
@@ -4641,6 +4641,6 @@
       "why": "6日+32%>32%"
     }
   ],
-  "intraday_updated": "2026-09-23 05:59",
+  "intraday_updated": "2026-09-23 09:31",
   "is_intraday": true
 }

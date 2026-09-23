@@ -1,104 +1,6 @@
 {
   "records": [
     {
-      "date": "2026-08-02",
-      "industry": "電腦及週邊",
-      "picks": [
-        {
-          "ticker": "6669",
-          "name": "緯穎",
-          "industry": "電腦及週邊",
-          "rec_close": 5390.0,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "漲停鎖死",
-            "ATH",
-            "族群同步",
-            "QQQ+0.6%",
-            "IGV+1.4%",
-            "投信+466張"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 56.55487804878049,
-          "change_pct_at_rec": 10.000000000000009,
-          "vol_ratio_at_rec": 0.8755486840831843
-        },
-        {
-          "ticker": "2357",
-          "name": "華碩",
-          "industry": "電腦及週邊",
-          "rec_close": 810.0,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "族群同步",
-            "QQQ+0.6%",
-            "IGV+1.4%",
-            "投信+157張"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 68.79432624113475,
-          "change_pct_at_rec": 9.905020352781557,
-          "vol_ratio_at_rec": 2.1240658052248635
-        },
-        {
-          "ticker": "2059",
-          "name": "川湖",
-          "industry": "電子零組件",
-          "rec_close": 7850.0,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "漲停鎖死",
-            "ATH",
-            "族群同步",
-            "QQQ+0.6%",
-            "投信+47張"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 47.676767676767675,
-          "change_pct_at_rec": 9.943977591036424,
-          "vol_ratio_at_rec": 0.361855303093187
-        },
-        {
-          "ticker": "2330",
-          "name": "台積電",
-          "industry": "半導體",
-          "rec_close": 2425.0,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "族群同步",
-            "QQQ+0.6%",
-            "投信+7,064張"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 49.079754601226995,
-          "change_pct_at_rec": 9.977324263038545,
-          "vol_ratio_at_rec": 1.7201592790498257
-        },
-        {
-          "ticker": "2347",
-          "name": "聯強",
-          "industry": "電子通路",
-          "rec_close": 93.69999694824219,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "族群同步",
-            "QQQ+0.6%",
-            "投信+75張"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 72.400007568364,
-          "change_pct_at_rec": 8.826943796526798,
-          "vol_ratio_at_rec": 1.4540562607609842
-        }
-      ]
-    },
-    {
       "date": "2026-08-03",
       "industry": "電腦及週邊",
       "picks": [
@@ -1608,6 +1510,64 @@
           "rsi": 65.4054054054054,
           "change_pct_at_rec": 4.775687409551366,
           "vol_ratio_at_rec": 3.7774739715915095
+        }
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "industry": "半導體",
+      "picks": [
+        {
+          "ticker": "3711",
+          "name": "日月光投控",
+          "industry": "半導體",
+          "rec_close": 693.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+2.9%",
+            "SMH+4.0%",
+            "投信+1,163張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 72.80701754385964,
+          "change_pct_at_rec": 4.52488687782806,
+          "vol_ratio_at_rec": 1.3223552581109739
+        },
+        {
+          "ticker": "3443",
+          "name": "創意",
+          "industry": "半導體",
+          "rec_close": 8375.0,
+          "momentum_score": 95,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "QQQ+2.9%",
+            "SMH+4.0%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 83.69565217391305,
+          "change_pct_at_rec": 9.980302035456345,
+          "vol_ratio_at_rec": 0.34958699732869514
+        },
+        {
+          "ticker": "6526",
+          "name": "達發",
+          "industry": "半導體",
+          "rec_close": 764.0,
+          "momentum_score": 95,
+          "momentum_notes": [
+            "量爆價揚",
+            "ATH",
+            "QQQ+2.9%",
+            "SMH+4.0%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 78.92156862745098,
+          "change_pct_at_rec": 5.524861878453047,
+          "vol_ratio_at_rec": 4.938400656665825
         }
       ]
     }

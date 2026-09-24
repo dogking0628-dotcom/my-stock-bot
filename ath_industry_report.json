@@ -20,7 +20,7 @@
   "ref_trading_date": "2026-09-24",
   "patched_bars": 0,
   "basis": "yfinance 2y monthly + 動能確認分數（最強族群挑 5）；最新K棒以證交所 MI_INDEX 校驗",
-  "total_analyzed": 1077,
+  "total_analyzed": 1078,
   "exact_ath": [
     {
       "today": 199.0,
@@ -525,7 +525,7 @@
       "ma5": 5074.0,
       "ma20": 4602.25,
       "ma60": 4075.1763997395833,
-      "ma200": 2883.509187011719,
+      "ma200": 2883.5091857910156,
       "gap_up": false,
       "close_near_high": false,
       "long_red": true,
@@ -2364,14 +2364,13 @@
       "ticker": "1315",
       "name": "達新",
       "industry": "塑膠",
-      "industry_strong": true,
+      "industry_strong": false,
       "market_cap_billions": 59.60884736,
       "mcap_pass": false,
       "sitc_net_shares": 0,
-      "momentum_score": 50,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "族群同步"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -2485,7 +2484,7 @@
       "ma5": 2475.0,
       "ma20": 2427.881787109375,
       "ma60": 2394.7934814453124,
-      "ma200": 2073.2691430664063,
+      "ma200": 2073.2691455078125,
       "gap_up": false,
       "close_near_high": false,
       "long_red": false,
@@ -3003,7 +3002,7 @@
       "ma5": 15.780000114440918,
       "ma20": 15.565000104904176,
       "ma60": 14.560868533452352,
-      "ma200": 13.496698431968689,
+      "ma200": 13.496698551177978,
       "gap_up": false,
       "close_near_high": true,
       "long_red": true,
@@ -4050,7 +4049,7 @@
       "ma5": 5074.0,
       "ma20": 4602.25,
       "ma60": 4075.1763997395833,
-      "ma200": 2883.509187011719,
+      "ma200": 2883.5091857910156,
       "gap_up": false,
       "close_near_high": false,
       "long_red": true,
@@ -4771,6 +4770,6 @@
       "why": "6日+39%>32%"
     }
   ],
-  "intraday_updated": "2026-09-24 06:11",
+  "intraday_updated": "2026-09-24 09:30",
   "is_intraday": true
 }

@@ -2479,7 +2479,7 @@
       "ma5": 2475.0,
       "ma20": 2427.881787109375,
       "ma60": 2394.7934814453124,
-      "ma200": 2073.269144287109,
+      "ma200": 2073.269142456055,
       "gap_up": false,
       "close_near_high": false,
       "long_red": false,
@@ -2692,9 +2692,9 @@
     },
     {
       "today": 129.5,
-      "monthly_max_2y": 127.55181121826172,
-      "ratio": 1.0152737053526006,
-      "from_high_pct": 1.5273705352600642,
+      "monthly_max_2y": 127.55181884765625,
+      "ratio": 1.0152736446249393,
+      "from_high_pct": 1.5273644624939298,
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -1.8939393939393923,
@@ -3508,9 +3508,9 @@
     },
     {
       "today": 139.0,
-      "monthly_max_2y": 139.07101440429688,
-      "ratio": 0.9994893658854718,
-      "from_high_pct": -0.051063411452823004,
+      "monthly_max_2y": 139.0709991455078,
+      "ratio": 0.9994894755488631,
+      "from_high_pct": -0.05105244511368623,
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 0.0,
@@ -4771,5 +4771,7 @@
       "name": "健策",
       "why": "6日+32%>32%"
     }
-  ]
+  ],
+  "intraday_updated": "2026-09-25 01:08",
+  "is_intraday": true
 }

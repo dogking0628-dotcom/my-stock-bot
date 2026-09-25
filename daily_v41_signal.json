@@ -1,50 +1,80 @@
 {
-  "timestamp": "2026-09-24",
+  "timestamp": "2026-09-25",
   "strategy": "V4.6 (V4.5 + 收盤前買進; 正式月線定義回測 5y +313.5%/PF 5.27/MDD -13.9%, 2y +199.7%/PF 6.31/MDD -10.5%)",
   "entry_timing": "收盤前買（13:25 限價=當時價×1.005 或 14:00-14:30 盤後定價）",
   "strongest_industry": "半導體",
   "v4_blocked": false,
   "picks": [
     {
-      "today": 78.5999984741211,
-      "monthly_max_2y": 76.5,
-      "ratio": 1.0274509604460274,
-      "from_high_pct": 2.745096044602735,
+      "today": 962.0,
+      "monthly_max_2y": 889.477294921875,
+      "ratio": 1.0815340711810917,
+      "from_high_pct": 8.153407118109168,
       "bullish": true,
-      "bullish_fast": false,
-      "change_pct": 6.793478401712294,
-      "vol_ratio": 4.477915489093337,
-      "rsi": 70.74073508933739,
-      "ma5": 70.91999969482421,
-      "ma20": 68.46500072479247,
-      "ma60": 66.30666643778483,
-      "ma200": 60.74399993896484,
-      "gap_up": false,
+      "bullish_fast": true,
+      "change_pct": 6.181015452538641,
+      "vol_ratio": 2.1328480338925524,
+      "rsi": 74.5704467353952,
+      "ma5": 887.2,
+      "ma20": 838.05,
+      "ma60": 801.65,
+      "ma200": 511.9974418640137,
+      "gap_up": true,
       "close_near_high": false,
       "long_red": false,
       "tangle": {
-        "band_pct": 2.84,
-        "dist_high_pct": -13.7
+        "band_pct": 2.4,
+        "dist_high_pct": 5.3
       },
-      "ticker": "6456",
-      "name": "GIS-KY",
-      "industry": "光電",
+      "ticker": "3189",
+      "name": "景碩",
+      "industry": "半導體",
       "industry_strong": false,
-      "market_cap_billions": 240.72441856,
+      "market_cap_billions": 2542.41767424,
       "mcap_pass": true,
-      "sitc_net_shares": 0,
+      "sitc_net_shares": 984001,
       "momentum_score": 85,
       "momentum_notes": [
-        "量爆價揚",
+        "跳空缺口",
         "ATH",
-        "QQQ+0.8%"
+        "投信+984張"
       ],
       "tier": "⭐⭐⭐",
-      "next_day_prob": "≥85%",
-      "alert": {
-        "level": "NEAR",
-        "msg": "📈接近注意線:6日+28%(再4.4pp觸注意)"
-      }
+      "next_day_prob": "≥85%"
+    },
+    {
+      "today": 595.0,
+      "monthly_max_2y": 548.0,
+      "ratio": 1.0857664233576643,
+      "from_high_pct": 8.576642335766426,
+      "bullish": true,
+      "bullish_fast": true,
+      "change_pct": 9.981515711645095,
+      "vol_ratio": 0.9978157432117539,
+      "rsi": 66.66666666666666,
+      "ma5": 545.2,
+      "ma20": 531.2,
+      "ma60": 438.44166666666666,
+      "ma200": 261.8057201004028,
+      "gap_up": false,
+      "close_near_high": true,
+      "long_red": false,
+      "tangle": null,
+      "ticker": "6213",
+      "name": "聯茂",
+      "industry": "電子零組件",
+      "industry_strong": false,
+      "market_cap_billions": 1036.15225856,
+      "mcap_pass": true,
+      "sitc_net_shares": 600000,
+      "momentum_score": 90,
+      "momentum_notes": [
+        "漲停鎖死",
+        "ATH",
+        "投信+600張"
+      ],
+      "tier": "⭐⭐⭐",
+      "next_day_prob": "≥85%"
     }
   ]
 }

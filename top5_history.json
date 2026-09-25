@@ -1,67 +1,6 @@
 {
   "records": [
     {
-      "date": "2026-08-04",
-      "industry": "電腦及週邊",
-      "picks": [
-        {
-          "ticker": "6669",
-          "name": "緯穎",
-          "industry": "電腦及週邊",
-          "rec_close": 5925.0,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "族群同步",
-            "QQQ+3.4%",
-            "IGV+4.7%",
-            "投信+507張"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 63.56382978723405,
-          "change_pct_at_rec": 9.92578849721706,
-          "vol_ratio_at_rec": 1.7333856785122037
-        },
-        {
-          "ticker": "2059",
-          "name": "川湖",
-          "industry": "電子零組件",
-          "rec_close": 8635.0,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "族群同步",
-            "QQQ+3.4%",
-            "投信+234張"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 55.663716814159294,
-          "change_pct_at_rec": 10.000000000000009,
-          "vol_ratio_at_rec": 1.4823488988236708
-        },
-        {
-          "ticker": "8039",
-          "name": "台虹",
-          "industry": "電子零組件",
-          "rec_close": 190.5,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "漲停鎖死",
-            "ATH",
-            "族群同步",
-            "QQQ+3.4%",
-            "投信+750張"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 51.12107623318386,
-          "change_pct_at_rec": 9.798270893371752,
-          "vol_ratio_at_rec": 1.0967499098410136
-        }
-      ]
-    },
-    {
       "date": "2026-08-05",
       "industry": "電腦及週邊",
       "picks": [
@@ -1495,6 +1434,44 @@
           "rsi": 70.74073508933739,
           "change_pct_at_rec": 6.793478401712294,
           "vol_ratio_at_rec": 4.477915489093337
+        }
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "industry": "半導體",
+      "picks": [
+        {
+          "ticker": "3189",
+          "name": "景碩",
+          "industry": "半導體",
+          "rec_close": 962.0,
+          "momentum_score": 85,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "投信+984張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 74.5704467353952,
+          "change_pct_at_rec": 6.181015452538641,
+          "vol_ratio_at_rec": 2.1328480338925524
+        },
+        {
+          "ticker": "6213",
+          "name": "聯茂",
+          "industry": "電子零組件",
+          "rec_close": 595.0,
+          "momentum_score": 90,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "投信+600張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 66.66666666666666,
+          "change_pct_at_rec": 9.981515711645095,
+          "vol_ratio_at_rec": 0.9978157432117539
         }
       ]
     }

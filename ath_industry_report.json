@@ -20,7 +20,7 @@
   "ref_trading_date": "2026-09-24",
   "patched_bars": 0,
   "basis": "yfinance 2y monthly + 動能確認分數（最強族群挑 5）；最新K棒以證交所 MI_INDEX 校驗",
-  "total_analyzed": 1078,
+  "total_analyzed": 1077,
   "exact_ath": [
     {
       "today": 199.0,
@@ -535,7 +535,7 @@
       "ma5": 5074.0,
       "ma20": 4602.25,
       "ma60": 4075.1763997395833,
-      "ma200": 2883.509187011719,
+      "ma200": 2883.5091857910156,
       "gap_up": false,
       "close_near_high": false,
       "long_red": true,
@@ -2518,7 +2518,7 @@
       "ma5": 2475.0,
       "ma20": 2427.881787109375,
       "ma60": 2394.7934814453124,
-      "ma200": 2073.26914855957,
+      "ma200": 2073.2691479492187,
       "gap_up": false,
       "close_near_high": false,
       "long_red": false,
@@ -3044,7 +3044,7 @@
       "ma5": 15.780000114440918,
       "ma20": 15.565000104904176,
       "ma60": 14.560868533452352,
-      "ma200": 13.496698431968689,
+      "ma200": 13.496698551177978,
       "gap_up": false,
       "close_near_high": true,
       "long_red": true,
@@ -3564,9 +3564,9 @@
     },
     {
       "today": 139.0,
-      "monthly_max_2y": 139.07101440429688,
-      "ratio": 0.9994893658854718,
-      "from_high_pct": -0.051063411452823004,
+      "monthly_max_2y": 139.0709991455078,
+      "ratio": 0.9994894755488631,
+      "from_high_pct": -0.05105244511368623,
       "bullish": true,
       "bullish_fast": false,
       "change_pct": 0.0,
@@ -4110,7 +4110,7 @@
       "ma5": 5074.0,
       "ma20": 4602.25,
       "ma60": 4075.1763997395833,
-      "ma200": 2883.509187011719,
+      "ma200": 2883.5091857910156,
       "gap_up": false,
       "close_near_high": false,
       "long_red": true,
@@ -4884,6 +4884,6 @@
       "why": "6日+32%>32%"
     }
   ],
-  "intraday_updated": "2026-09-28 01:09",
+  "intraday_updated": "2026-09-28 02:09",
   "is_intraday": true
 }

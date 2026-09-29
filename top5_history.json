@@ -1,94 +1,6 @@
 {
   "records": [
     {
-      "date": "2026-08-05",
-      "industry": "電腦及週邊",
-      "picks": [
-        {
-          "ticker": "2395",
-          "name": "研華",
-          "industry": "電腦及週邊",
-          "rec_close": 633.0,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "漲停鎖死",
-            "ATH",
-            "族群同步"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 74.61996740810164,
-          "change_pct_at_rec": 9.895833333333325,
-          "vol_ratio_at_rec": 0.9712013427946122
-        },
-        {
-          "ticker": "6206",
-          "name": "飛捷",
-          "industry": "電腦及週邊",
-          "rec_close": 148.0,
-          "momentum_score": 95,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "族群同步"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 68.64589260622239,
-          "change_pct_at_rec": 5.714285714285716,
-          "vol_ratio_at_rec": 2.840936373858834
-        },
-        {
-          "ticker": "8039",
-          "name": "台虹",
-          "industry": "電子零組件",
-          "rec_close": 220.0,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "漲停鎖死",
-            "ATH",
-            "族群同步",
-            "投信+29張"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 54.44685466377441,
-          "change_pct_at_rec": 10.000000000000009,
-          "vol_ratio_at_rec": 0.26783970519903416
-        },
-        {
-          "ticker": "3008",
-          "name": "大立光",
-          "industry": "光電",
-          "rec_close": 4575.0,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "族群同步",
-            "投信+421張"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 56.49484536082475,
-          "change_pct_at_rec": 5.051664753157281,
-          "vol_ratio_at_rec": 2.020404583865044
-        },
-        {
-          "ticker": "3605",
-          "name": "宏致",
-          "industry": "電子零組件",
-          "rec_close": 101.5,
-          "momentum_score": 95,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "族群同步"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 62.73006226499677,
-          "change_pct_at_rec": 9.611232907704848,
-          "vol_ratio_at_rec": 2.6406872571359346
-        }
-      ]
-    },
-    {
       "date": "2026-08-07",
       "industry": "電腦及週邊",
       "picks": [
@@ -1472,6 +1384,28 @@
           "rsi": 66.66666666666666,
           "change_pct_at_rec": 9.981515711645095,
           "vol_ratio_at_rec": 0.9978157432117539
+        }
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "industry": "半導體",
+      "picks": [
+        {
+          "ticker": "6414",
+          "name": "樺漢",
+          "industry": "電腦及週邊",
+          "rec_close": 407.0,
+          "momentum_score": 95,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 61.146496815286625,
+          "change_pct_at_rec": 8.823529411764696,
+          "vol_ratio_at_rec": 2.4721826124318103
         }
       ]
     }

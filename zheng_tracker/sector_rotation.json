@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-27 17:53",
+  "date": "2026-09-28 20:11",
   "market_position": "BULL_LATE",
   "sector_results": {
     "半導體_晶圓代工": {
@@ -27,8 +27,8 @@
         }
       },
       "top_member": "2303.TW",
-      "rs_rank_5d": 8,
-      "rs_rank_20d": 4,
+      "rs_rank_5d": 7,
+      "rs_rank_20d": 3,
       "rs_momentum": -4
     },
     "半導體_IC設計": {
@@ -126,9 +126,9 @@
         }
       },
       "top_member": "8299.TWO",
-      "rs_rank_5d": 7,
+      "rs_rank_5d": 6,
       "rs_rank_20d": 19,
-      "rs_momentum": 12
+      "rs_momentum": 13
     },
     "AI_伺服器": {
       "avg_5d": -0.16,
@@ -167,9 +167,9 @@
         }
       },
       "top_member": "2376.TW",
-      "rs_rank_5d": 15,
-      "rs_rank_20d": 13,
-      "rs_momentum": -2
+      "rs_rank_5d": 11,
+      "rs_rank_20d": 14,
+      "rs_momentum": 3
     },
     "AI_散熱電源": {
       "avg_5d": 12.48,
@@ -219,8 +219,8 @@
         }
       },
       "top_member": "6658.TW",
-      "rs_rank_5d": 6,
-      "rs_rank_20d": 8,
+      "rs_rank_5d": 5,
+      "rs_rank_20d": 7,
       "rs_momentum": 2
     },
     "光學_鏡頭": {
@@ -248,9 +248,9 @@
         }
       },
       "top_member": "3008.TW",
-      "rs_rank_5d": 14,
+      "rs_rank_5d": 10,
       "rs_rank_20d": 18,
-      "rs_momentum": 4
+      "rs_momentum": 8
     },
     "機構_散熱": {
       "avg_5d": 1.77,
@@ -271,9 +271,9 @@
         }
       },
       "top_member": "2421.TW",
-      "rs_rank_5d": 12,
+      "rs_rank_5d": 9,
       "rs_rank_20d": 17,
-      "rs_momentum": 5
+      "rs_momentum": 8
     },
     "軍工_航太": {
       "avg_5d": -0.44,
@@ -300,9 +300,9 @@
         }
       },
       "top_member": "8033.TW",
-      "rs_rank_5d": 17,
+      "rs_rank_5d": 14,
       "rs_rank_20d": 22,
-      "rs_momentum": 5
+      "rs_momentum": 8
     },
     "重電_電網": {
       "avg_5d": -0.33,
@@ -329,9 +329,9 @@
         }
       },
       "top_member": "1513.TW",
-      "rs_rank_5d": 16,
+      "rs_rank_5d": 12,
       "rs_rank_20d": 21,
-      "rs_momentum": 5
+      "rs_momentum": 9
     },
     "海運_航運": {
       "avg_5d": -1.98,
@@ -364,9 +364,9 @@
         }
       },
       "top_member": "2603.TW",
-      "rs_rank_5d": 21,
-      "rs_rank_20d": 12,
-      "rs_momentum": -9
+      "rs_rank_5d": 20,
+      "rs_rank_20d": 13,
+      "rs_momentum": -7
     },
     "金融": {
       "avg_5d": -0.47,
@@ -399,9 +399,9 @@
         }
       },
       "top_member": "6005.TW",
-      "rs_rank_5d": 18,
+      "rs_rank_5d": 15,
       "rs_rank_20d": 11,
-      "rs_momentum": -7
+      "rs_momentum": -4
     },
     "生技": {
       "avg_5d": 16.94,
@@ -445,9 +445,9 @@
         }
       },
       "top_member": "2002.TW",
-      "rs_rank_5d": 19,
+      "rs_rank_5d": 16,
       "rs_rank_20d": 15,
-      "rs_momentum": -4
+      "rs_momentum": -1
     },
     "食品民生": {
       "avg_5d": -1.81,
@@ -468,9 +468,9 @@
         }
       },
       "top_member": "1216.TW",
-      "rs_rank_5d": 20,
+      "rs_rank_5d": 18,
       "rs_rank_20d": 16,
-      "rs_momentum": -4
+      "rs_momentum": -2
     },
     "觀光電商": {
       "avg_5d": -4.02,
@@ -485,9 +485,9 @@
         }
       },
       "top_member": "8454.TW",
-      "rs_rank_5d": 22,
+      "rs_rank_5d": 21,
       "rs_rank_20d": 20,
-      "rs_momentum": -2
+      "rs_momentum": -1
     },
     "ETF_大盤": {
       "avg_5d": 2.03,
@@ -538,113 +538,113 @@
         }
       },
       "top_member": "00981A.TW",
-      "rs_rank_5d": 11,
+      "rs_rank_5d": 8,
       "rs_rank_20d": 10,
-      "rs_momentum": -1
+      "rs_momentum": 2
     },
     "美股_AI晶片": {
-      "avg_5d": 1.26,
-      "avg_20d": -0.1,
+      "avg_5d": -0.41,
+      "avg_20d": 3.01,
       "member_count": 3,
       "members": {
         "NVDA": {
-          "price": 225.07,
-          "ret_5d": 1.26,
-          "ret_20d": -1.17,
-          "vol_avg": 116060540.0
+          "price": 228.86,
+          "ret_5d": 0.65,
+          "ret_20d": 5.32,
+          "vol_avg": 113078268.0
         },
         "AVGO": {
-          "price": 352.81,
-          "ret_5d": -1.16,
-          "ret_20d": -4.87,
-          "vol_avg": 27399390.0
+          "price": 349.57,
+          "ret_5d": -3.61,
+          "ret_20d": -5.04,
+          "vol_avg": 27496604.0
         },
         "TSM": {
-          "price": 450.61,
-          "ret_5d": 3.67,
-          "ret_20d": 5.74,
-          "vol_avg": 9800105.0
+          "price": 452.86,
+          "ret_5d": 1.73,
+          "ret_20d": 8.76,
+          "vol_avg": 9684302.0
         }
       },
       "top_member": "TSM",
       "rs_rank_5d": 13,
-      "rs_rank_20d": 14,
-      "rs_momentum": 1
+      "rs_rank_20d": 12,
+      "rs_momentum": -1
     },
     "美股_記憶體": {
-      "avg_5d": 2.88,
-      "avg_20d": 17.71,
+      "avg_5d": -1.04,
+      "avg_20d": 14.16,
       "member_count": 2,
       "members": {
         "MU": {
-          "price": 1082.28,
-          "ret_5d": 6.54,
-          "ret_20d": 15.7,
-          "vol_avg": 25001860.0
+          "price": 1053.98,
+          "ret_5d": 0.96,
+          "ret_20d": 12.98,
+          "vol_avg": 24864388.0
         },
         "SNDK": {
-          "price": 1777.8,
-          "ret_5d": -0.78,
-          "ret_20d": 19.72,
-          "vol_avg": 10656155.0
+          "price": 1712.89,
+          "ret_5d": -3.04,
+          "ret_20d": 15.35,
+          "vol_avg": 10577147.0
         }
       },
       "top_member": "MU",
-      "rs_rank_5d": 9,
-      "rs_rank_20d": 3,
-      "rs_momentum": -6
+      "rs_rank_5d": 17,
+      "rs_rank_20d": 4,
+      "rs_momentum": -13
     },
     "美股_電動車區塊鏈": {
-      "avg_5d": 2.6,
-      "avg_20d": 10.16,
+      "avg_5d": -5.75,
+      "avg_20d": 12.96,
       "member_count": 2,
       "members": {
         "TSLA": {
-          "price": 372.11,
-          "ret_5d": 2.15,
-          "ret_20d": 4.88,
-          "vol_avg": 39659735.0
+          "price": 357.45,
+          "ret_5d": -4.76,
+          "ret_20d": 2.49,
+          "vol_avg": 39876370.0
         },
         "MSTR": {
-          "price": 158.61,
-          "ret_5d": 3.05,
-          "ret_20d": 15.44,
-          "vol_avg": 24802980.0
+          "price": 157.14,
+          "ret_5d": -6.74,
+          "ret_20d": 23.43,
+          "vol_avg": 23982444.0
         }
       },
-      "top_member": "MSTR",
-      "rs_rank_5d": 10,
-      "rs_rank_20d": 7,
-      "rs_momentum": -3
+      "top_member": "TSLA",
+      "rs_rank_5d": 22,
+      "rs_rank_20d": 6,
+      "rs_momentum": -16
     },
     "美股_其他": {
-      "avg_5d": 6.35,
-      "avg_20d": 12.21,
+      "avg_5d": -1.89,
+      "avg_20d": 9.77,
       "member_count": 3,
       "members": {
         "GOOG": {
-          "price": 341.08,
-          "ret_5d": -0.97,
-          "ret_20d": 1.06,
-          "vol_avg": 17563465.0
+          "price": 339.16,
+          "ret_5d": -3.34,
+          "ret_20d": -1.02,
+          "vol_avg": 17297842.0
         },
         "PLTR": {
-          "price": 189.67,
-          "ret_5d": 6.77,
-          "ret_20d": 2.01,
-          "vol_avg": 26360900.0
+          "price": 187.48,
+          "ret_5d": 2.4,
+          "ret_20d": 0.64,
+          "vol_avg": 25862173.0
         },
         "INTC": {
-          "price": 123.0,
-          "ret_5d": 13.26,
-          "ret_20d": 33.56,
-          "vol_avg": 105701015.0
+          "price": 116.03,
+          "ret_5d": -4.72,
+          "ret_20d": 29.69,
+          "vol_avg": 106778924.0
         }
       },
-      "top_member": "INTC",
-      "rs_rank_5d": 5,
-      "rs_rank_20d": 6,
-      "rs_momentum": 1
+      "top_member": "PLTR",
+      "rs_rank_5d": 19,
+      "rs_rank_20d": 8,
+      "rs_momentum": -11
     }
   },
   "selection": {

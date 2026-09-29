@@ -6,7 +6,7 @@
   "ref_trading_date": "2026-09-29",
   "patched_bars": 0,
   "basis": "yfinance 2y monthly + 動能確認分數（最強族群挑 5）；最新K棒以證交所 MI_INDEX 校驗",
-  "total_analyzed": 1078,
+  "total_analyzed": 1077,
   "exact_ath": [
     {
       "today": 69.0999984741211,
@@ -2204,9 +2204,9 @@
     },
     {
       "today": 143.0,
-      "monthly_max_2y": 139.07101440429688,
-      "ratio": 1.0282516497958452,
-      "from_high_pct": 2.8251649795845157,
+      "monthly_max_2y": 139.0709991455078,
+      "ratio": 1.0282517626150174,
+      "from_high_pct": 2.8251762615017384,
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 2.877697841726623,
@@ -2279,7 +2279,7 @@
       "ma5": 2478.0,
       "ma20": 2430.986926269531,
       "ma60": 2395.4130818684894,
-      "ma200": 2078.67955078125,
+      "ma200": 2078.679553222656,
       "gap_up": false,
       "close_near_high": false,
       "long_red": false,
@@ -2760,7 +2760,7 @@
       "ma5": 15.860000038146973,
       "ma20": 15.587500095367432,
       "ma60": 14.603062629699707,
-      "ma200": 13.511069235801697,
+      "ma200": 13.511069355010987,
       "gap_up": false,
       "close_near_high": false,
       "long_red": false,
@@ -4557,9 +4557,9 @@
   "top_industry": "金融保險",
   "market_regime": {
     "today": 111.30000305175781,
-    "ma200": 88.91516084671021,
+    "ma200": 88.91516078948975,
     "ma20": 108.94750022888184,
-    "ext_pct": 25.17550661988801,
+    "ext_pct": 25.175506700443464,
     "in_stage2": true,
     "below_ma20": false
   },
@@ -4577,6 +4577,6 @@
       "why": "6日+37%>32%"
     }
   ],
-  "intraday_updated": "2026-09-29 06:54",
+  "intraday_updated": "2026-09-29 10:55",
   "is_intraday": true
 }

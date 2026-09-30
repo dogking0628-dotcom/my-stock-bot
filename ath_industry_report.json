@@ -2957,7 +2957,7 @@
       "ma5": 2478.0,
       "ma20": 2435.0898559570314,
       "ma60": 2395.866748046875,
-      "ma200": 2084.0161779785158,
+      "ma200": 2084.016173095703,
       "gap_up": false,
       "close_near_high": false,
       "long_red": false,
@@ -4027,9 +4027,9 @@
     },
     {
       "today": 139.5,
-      "monthly_max_2y": 139.07101440429688,
-      "ratio": 1.0030846513742684,
-      "from_high_pct": 0.3084651374268388,
+      "monthly_max_2y": 139.0709991455078,
+      "ratio": 1.0030847614321325,
+      "from_high_pct": 0.30847614321325434,
       "bullish": true,
       "bullish_fast": false,
       "change_pct": -2.447552447552448,
@@ -5713,6 +5713,6 @@
       "why": "6日+41%>32%"
     }
   ],
-  "intraday_updated": "2026-09-30 06:42",
+  "intraday_updated": "2026-09-30 10:45",
   "is_intraday": true
 }

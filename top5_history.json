@@ -1,28 +1,6 @@
 {
   "records": [
     {
-      "date": "2026-08-07",
-      "industry": "電腦及週邊",
-      "picks": [
-        {
-          "ticker": "3605",
-          "name": "宏致",
-          "industry": "電子零組件",
-          "rec_close": 108.0,
-          "momentum_score": 95,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "族群同步"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 71.70953171208484,
-          "change_pct_at_rec": 6.403940886699511,
-          "vol_ratio_at_rec": 2.6240765762447182
-        }
-      ]
-    },
-    {
       "date": "2026-08-09",
       "industry": "電腦及週邊",
       "picks": [
@@ -1406,6 +1384,80 @@
           "rsi": 61.146496815286625,
           "change_pct_at_rec": 8.823529411764696,
           "vol_ratio_at_rec": 2.4721826124318103
+        }
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "industry": "半導體",
+      "picks": [
+        {
+          "ticker": "2409",
+          "name": "友達",
+          "industry": "光電",
+          "rec_close": 37.400001525878906,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步",
+            "QQQ+0.2%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 70.20725165857756,
+          "change_pct_at_rec": 6.7047142367225865,
+          "vol_ratio_at_rec": 0.36612270924321194
+        },
+        {
+          "ticker": "6805",
+          "name": "富世達",
+          "industry": "電子零組件",
+          "rec_close": 2680.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步",
+            "QQQ+0.2%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 70.7509881422925,
+          "change_pct_at_rec": 6.5606361829025905,
+          "vol_ratio_at_rec": 0.3230039934599267
+        },
+        {
+          "ticker": "6672",
+          "name": "騰輝電子-KY",
+          "industry": "電子零組件",
+          "rec_close": 346.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步",
+            "QQQ+0.2%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 72.6086956521739,
+          "change_pct_at_rec": 3.129657228017879,
+          "vol_ratio_at_rec": 0.38420132630385556
+        },
+        {
+          "ticker": "5434",
+          "name": "崇越",
+          "industry": "電子通路",
+          "rec_close": 562.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步",
+            "QQQ+0.2%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 68.75,
+          "change_pct_at_rec": 4.074074074074074,
+          "vol_ratio_at_rec": 0.5634994267660304
         }
       ]
     }

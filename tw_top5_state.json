@@ -1,17 +1,4 @@
 {
-  "date": "2026-09-29",
-  "stocks": {
-    "3094": {
-      "name": "聯傑",
-      "score": 90,
-      "close": 59.70000076293945,
-      "category": "limit_up"
-    },
-    "2030": {
-      "name": "彰源",
-      "score": 75,
-      "close": 33.400001525878906,
-      "category": "limit_up"
-    }
-  }
+  "date": "2026-09-30",
+  "stocks": {}
 }

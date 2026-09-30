@@ -7,8 +7,8 @@
    "entry_date": "2026-09-22",
    "shares": 10,
    "peak": 8525.0,
-   "last_close": 7925.0,
-   "unreal_pct": -5.37
+   "last_close": 8040.0,
+   "unreal_pct": -4.0
   },
   {
    "ticker": "2454",
@@ -17,8 +17,8 @@
    "entry_date": "2026-09-22",
    "shares": 20,
    "peak": 5285.0,
-   "last_close": 4910.0,
-   "unreal_pct": -5.21
+   "last_close": 4920.0,
+   "unreal_pct": -5.02
   },
   {
    "ticker": "6257",
@@ -26,9 +26,9 @@
    "entry": 249.0,
    "entry_date": "2026-09-22",
    "shares": 600,
-   "peak": 249.0,
-   "last_close": 236.5,
-   "unreal_pct": -5.02
+   "peak": 254.0,
+   "last_close": 254.0,
+   "unreal_pct": 2.01
   },
   {
    "ticker": "3711",
@@ -36,9 +36,9 @@
    "entry": 693.0,
    "entry_date": "2026-09-23",
    "shares": 210,
-   "peak": 699.0,
-   "last_close": 687.0,
-   "unreal_pct": -0.87
+   "peak": 703.0,
+   "last_close": 703.0,
+   "unreal_pct": 1.44
   },
   {
    "ticker": "6526",
@@ -47,8 +47,8 @@
    "entry_date": "2026-09-23",
    "shares": 170,
    "peak": 840.0,
-   "last_close": 814.0,
-   "unreal_pct": -3.1
+   "last_close": 840.0,
+   "unreal_pct": 0.0
   },
   {
    "ticker": "6456",
@@ -56,9 +56,9 @@
    "entry": 81.3,
    "entry_date": "2026-09-24",
    "shares": 1840,
-   "peak": 89.4,
-   "last_close": 89.4,
-   "unreal_pct": 9.96
+   "peak": 92.0,
+   "last_close": 92.0,
+   "unreal_pct": 13.16
   },
   {
    "ticker": "6414",
@@ -67,9 +67,39 @@
    "entry_date": "2026-09-29",
    "shares": 370,
    "peak": 398.0,
-   "last_close": 398.0,
+   "last_close": 392.0,
+   "unreal_pct": -1.51
+  },
+  {
+   "ticker": "2409",
+   "name": "友達",
+   "entry": 38.55,
+   "entry_date": "2026-09-30",
+   "shares": 3890,
+   "peak": 38.55,
+   "last_close": 38.55,
+   "unreal_pct": 0.0
+  },
+  {
+   "ticker": "6805",
+   "name": "富世達",
+   "entry": 2455.0,
+   "entry_date": "2026-09-30",
+   "shares": 60,
+   "peak": 2455.0,
+   "last_close": 2455.0,
+   "unreal_pct": 0.0
+  },
+  {
+   "ticker": "6672",
+   "name": "騰輝電子-KY",
+   "entry": 369.0,
+   "entry_date": "2026-09-30",
+   "shares": 400,
+   "peak": 369.0,
+   "last_close": 369.0,
    "unreal_pct": 0.0
   }
  ],
- "last_run": "2026-09-29"
+ "last_run": "2026-09-30"
 }

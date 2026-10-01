@@ -1,76 +1,6 @@
 {
   "records": [
     {
-      "date": "2026-08-09",
-      "industry": "電腦及週邊",
-      "picks": [
-        {
-          "ticker": "2059",
-          "name": "川湖",
-          "industry": "電子零組件",
-          "rec_close": 11110.0,
-          "momentum_score": 85,
-          "momentum_notes": [
-            "漲停鎖死",
-            "ATH",
-            "QQQ+1.2%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 75.4160363086233,
-          "change_pct_at_rec": 10.000000000000009,
-          "vol_ratio_at_rec": 0.5154798663863053
-        },
-        {
-          "ticker": "8039",
-          "name": "台虹",
-          "industry": "電子零組件",
-          "rec_close": 237.5,
-          "momentum_score": 85,
-          "momentum_notes": [
-            "漲停鎖死",
-            "ATH",
-            "QQQ+1.2%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 58.95372233400403,
-          "change_pct_at_rec": 9.953703703703699,
-          "vol_ratio_at_rec": 0.24173896286714636
-        },
-        {
-          "ticker": "6213",
-          "name": "聯茂",
-          "industry": "電子零組件",
-          "rec_close": 389.0,
-          "momentum_score": 80,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "QQQ+1.2%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 60.342146189735615,
-          "change_pct_at_rec": 3.733333333333344,
-          "vol_ratio_at_rec": 2.3391034631544723
-        },
-        {
-          "ticker": "8112",
-          "name": "至上",
-          "industry": "電子通路",
-          "rec_close": 91.19999694824219,
-          "momentum_score": 80,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "QQQ+1.2%"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 64.34539691445197,
-          "change_pct_at_rec": 2.47190668341819,
-          "vol_ratio_at_rec": 1.4053592629806382
-        }
-      ]
-    },
-    {
       "date": "2026-08-10",
       "industry": "電腦及週邊",
       "picks": [
@@ -1458,6 +1388,48 @@
           "rsi": 68.75,
           "change_pct_at_rec": 4.074074074074074,
           "vol_ratio_at_rec": 0.5634994267660304
+        }
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "industry": "電子零組件",
+      "picks": [
+        {
+          "ticker": "6672",
+          "name": "騰輝電子-KY",
+          "industry": "電子零組件",
+          "rec_close": 389.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步",
+            "QQQ+0.2%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 79.34426229508196,
+          "change_pct_at_rec": 5.420054200542013,
+          "vol_ratio_at_rec": 0.7580315021314811
+        },
+        {
+          "ticker": "6691",
+          "name": "洋基工程",
+          "industry": "其他電子",
+          "rec_close": 730.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步",
+            "QQQ+0.2%",
+            "SMH+1.1%",
+            "投信+57張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 74.66666666666667,
+          "change_pct_at_rec": 1.5299026425591,
+          "vol_ratio_at_rec": 0.5117492400858252
         }
       ]
     }

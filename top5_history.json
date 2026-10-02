@@ -1,28 +1,6 @@
 {
   "records": [
     {
-      "date": "2026-08-10",
-      "industry": "電腦及週邊",
-      "picks": [
-        {
-          "ticker": "6213",
-          "name": "聯茂",
-          "industry": "電子零組件",
-          "rec_close": 389.0,
-          "momentum_score": 85,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "投信+210張"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 60.342146189735615,
-          "change_pct_at_rec": 3.733333333333344,
-          "vol_ratio_at_rec": 0.9521102455673452
-        }
-      ]
-    },
-    {
       "date": "2026-08-11",
       "industry": "電腦及週邊",
       "picks": [
@@ -1430,6 +1408,62 @@
           "rsi": 74.66666666666667,
           "change_pct_at_rec": 1.5299026425591,
           "vol_ratio_at_rec": 0.5117492400858252
+        }
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "industry": "電子零組件",
+      "picks": [
+        {
+          "ticker": "6196",
+          "name": "帆宣",
+          "industry": "其他電子",
+          "rec_close": 611.0,
+          "momentum_score": 90,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+0.3%",
+            "SMH+1.4%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 70.0,
+          "change_pct_at_rec": 1.4950166112956742,
+          "vol_ratio_at_rec": 0.3833491069192001
+        },
+        {
+          "ticker": "2455",
+          "name": "全新",
+          "industry": "通信網路",
+          "rec_close": 573.0,
+          "momentum_score": 90,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+0.3%",
+            "IGV+1.6%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 60.301507537688444,
+          "change_pct_at_rec": 4.94505494505495,
+          "vol_ratio_at_rec": 0.11949934830658701
+        },
+        {
+          "ticker": "2323",
+          "name": "中環",
+          "industry": "光電",
+          "rec_close": 12.222220420837402,
+          "momentum_score": 85,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "QQQ+0.3%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 75.4177568206764,
+          "change_pct_at_rec": 10.887087040369936,
+          "vol_ratio_at_rec": 0.0
         }
       ]
     }

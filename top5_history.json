@@ -1,60 +1,6 @@
 {
   "records": [
     {
-      "date": "2026-08-11",
-      "industry": "電腦及週邊",
-      "picks": [
-        {
-          "ticker": "7711",
-          "name": "永擎",
-          "industry": "電腦及週邊",
-          "rec_close": 405.0,
-          "momentum_score": 100,
-          "momentum_notes": [
-            "量爆價揚",
-            "ATH",
-            "族群同步"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 79.1907514450867,
-          "change_pct_at_rec": 8.000000000000007,
-          "vol_ratio_at_rec": 4.95249747165966
-        },
-        {
-          "ticker": "6206",
-          "name": "飛捷",
-          "industry": "電腦及週邊",
-          "rec_close": 158.0,
-          "momentum_score": 95,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "族群同步"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 75.5952380952381,
-          "change_pct_at_rec": 9.722222222222232,
-          "vol_ratio_at_rec": 1.9222209771003969
-        },
-        {
-          "ticker": "3416",
-          "name": "融程電",
-          "industry": "電腦及週邊",
-          "rec_close": 196.0,
-          "momentum_score": 95,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "族群同步"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 64.78873239436619,
-          "change_pct_at_rec": 2.617801047120416,
-          "vol_ratio_at_rec": 1.1156172720154724
-        }
-      ]
-    },
-    {
       "date": "2026-08-12",
       "industry": "電腦及週邊",
       "picks": [
@@ -1464,6 +1410,63 @@
           "rsi": 75.4177568206764,
           "change_pct_at_rec": 10.887087040369936,
           "vol_ratio_at_rec": 0.0
+        }
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "industry": "半導體",
+      "picks": [
+        {
+          "ticker": "2455",
+          "name": "全新",
+          "industry": "通信網路",
+          "rec_close": 580.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步",
+            "QQQ+1.0%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 61.6504854368932,
+          "change_pct_at_rec": 6.227106227106227,
+          "vol_ratio_at_rec": 0.4685538621403742
+        },
+        {
+          "ticker": "6196",
+          "name": "帆宣",
+          "industry": "其他電子",
+          "rec_close": 618.0,
+          "momentum_score": 90,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+1.0%",
+            "SMH+2.1%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 71.06598984771574,
+          "change_pct_at_rec": 2.657807308970095,
+          "vol_ratio_at_rec": 0.9851967675734379
+        },
+        {
+          "ticker": "5434",
+          "name": "崇越",
+          "industry": "電子通路",
+          "rec_close": 583.0,
+          "momentum_score": 90,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+1.0%",
+            "投信+7張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 81.11111111111111,
+          "change_pct_at_rec": 2.821869488536155,
+          "vol_ratio_at_rec": 1.8169650388054113
         }
       ]
     }

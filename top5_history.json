@@ -1,29 +1,6 @@
 {
   "records": [
     {
-      "date": "2026-08-12",
-      "industry": "電腦及週邊",
-      "picks": [
-        {
-          "ticker": "8112",
-          "name": "至上",
-          "industry": "電子通路",
-          "rec_close": 100.0,
-          "momentum_score": 90,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "QQQ+0.7%",
-            "投信+217張"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 65.86666547309052,
-          "change_pct_at_rec": 8.225106437896024,
-          "vol_ratio_at_rec": 1.8862269754797312
-        }
-      ]
-    },
-    {
       "date": "2026-08-13",
       "industry": "電腦及週邊",
       "picks": [
@@ -1467,6 +1444,61 @@
           "rsi": 81.11111111111111,
           "change_pct_at_rec": 2.821869488536155,
           "vol_ratio_at_rec": 1.8169650388054113
+        }
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "industry": "電子零組件",
+      "picks": [
+        {
+          "ticker": "3044",
+          "name": "健鼎",
+          "industry": "電子零組件",
+          "rec_close": 580.0,
+          "momentum_score": 90,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+0.9%",
+            "投信+62張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 72.29299363057325,
+          "change_pct_at_rec": 4.129263913824066,
+          "vol_ratio_at_rec": 0.8190469350296629
+        },
+        {
+          "ticker": "7788",
+          "name": "松川精密",
+          "industry": "電子零組件",
+          "rec_close": 365.5,
+          "momentum_score": 80,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "QQQ+0.9%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 84.08163265306122,
+          "change_pct_at_rec": 9.92481203007518,
+          "vol_ratio_at_rec": 1.8011211698095322
+        },
+        {
+          "ticker": "6456",
+          "name": "GIS-KY",
+          "industry": "光電",
+          "rec_close": 99.5999984741211,
+          "momentum_score": 85,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "QQQ+0.9%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 84.57142533282868,
+          "change_pct_at_rec": 9.93377500174104,
+          "vol_ratio_at_rec": 1.1481832227594204
         }
       ]
     }

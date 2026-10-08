@@ -1,43 +1,8 @@
 {
-  "timestamp": "2026-10-07",
+  "timestamp": "2026-10-08",
   "strategy": "V4.6 (V4.5 + 收盤前買進; 正式月線定義回測 5y +313.5%/PF 5.27/MDD -13.9%, 2y +199.7%/PF 6.31/MDD -10.5%)",
   "entry_timing": "收盤前買（13:25 限價=當時價×1.005 或 14:00-14:30 盤後定價）",
   "strongest_industry": "電子零組件",
   "v4_blocked": false,
-  "picks": [
-    {
-      "today": 105.5,
-      "monthly_max_2y": 92.0,
-      "ratio": 1.1467391304347827,
-      "from_high_pct": 14.67391304347827,
-      "bullish": true,
-      "bullish_fast": true,
-      "change_pct": 5.923696401874845,
-      "vol_ratio": 2.1548659850544474,
-      "rsi": 88.71252026599808,
-      "ma5": 95.3,
-      "ma20": 77.26500034332275,
-      "ma60": 69.39166679382325,
-      "ma200": 62.740249938964844,
-      "gap_up": true,
-      "close_near_high": true,
-      "long_red": false,
-      "tangle": null,
-      "ticker": "6456",
-      "name": "GIS-KY",
-      "industry": "光電",
-      "industry_strong": false,
-      "market_cap_billions": 240.72441856,
-      "mcap_pass": true,
-      "sitc_net_shares": 0,
-      "momentum_score": 80,
-      "momentum_notes": [
-        "跳空缺口",
-        "ATH",
-        "QQQ+0.5%"
-      ],
-      "tier": "⭐⭐⭐",
-      "next_day_prob": "≥85%"
-    }
-  ]
+  "picks": []
 }

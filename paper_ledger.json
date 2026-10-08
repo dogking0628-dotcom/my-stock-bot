@@ -76,6 +76,28 @@
    "exit_date": "2026-09-24",
    "ret_pct": 1.4,
    "reason": "跌破20MA"
+  },
+  {
+   "ticker": "2454",
+   "name": "聯發科",
+   "entry": 5180.0,
+   "entry_date": "2026-09-22",
+   "shares": 20,
+   "exit": 4800.0,
+   "exit_date": "2026-10-08",
+   "ret_pct": -7.81,
+   "reason": "跌破20MA"
+  },
+  {
+   "ticker": "7788",
+   "name": "松川精密",
+   "entry": 365.5,
+   "entry_date": "2026-10-06",
+   "shares": 410,
+   "exit": 313.0,
+   "exit_date": "2026-10-08",
+   "ret_pct": -14.83,
+   "reason": "-7%樓地板"
   }
  ],
  "started": "2026-09-07"

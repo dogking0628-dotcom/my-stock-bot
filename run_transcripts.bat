@@ -44,5 +44,6 @@ if exist data\evidence_candidates.csv git add data\evidence_candidates.csv
 if exist data\claims.jsonl git add data\claims.jsonl
 if exist analyst_scorecard.md git add analyst_scorecard.md
 git diff --staged --quiet || git commit -m "chore: transcripts %date:~0,10%"
-git push
+git push origin HEAD:transcripts-local
+if errorlevel 1 echo [WARN] push 失敗；請手動執行 git push origin HEAD:transcripts-local
 endlocal

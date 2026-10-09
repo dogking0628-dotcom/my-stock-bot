@@ -1,42 +1,6 @@
 {
   "records": [
     {
-      "date": "2026-08-16",
-      "industry": "電腦及週邊",
-      "picks": [
-        {
-          "ticker": "2324",
-          "name": "仁寶",
-          "industry": "電腦及週邊",
-          "rec_close": 43.20000076293945,
-          "momentum_score": 80,
-          "momentum_notes": [
-            "量爆價揚",
-            "ATH"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 68.38905457892353,
-          "change_pct_at_rec": 9.923668197431269,
-          "vol_ratio_at_rec": 5.081595085055183
-        },
-        {
-          "ticker": "2357",
-          "name": "華碩",
-          "industry": "電腦及週邊",
-          "rec_close": 996.0,
-          "momentum_score": 80,
-          "momentum_notes": [
-            "量爆價揚",
-            "ATH"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 79.64824120603015,
-          "change_pct_at_rec": 6.296691568836721,
-          "vol_ratio_at_rec": 3.2071384212611185
-        }
-      ]
-    },
-    {
       "date": "2026-08-17",
       "industry": "電腦及週邊",
       "picks": [
@@ -1424,6 +1388,42 @@
           "rsi": 88.71252026599808,
           "change_pct_at_rec": 5.923696401874845,
           "vol_ratio_at_rec": 2.1548659850544474
+        }
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "industry": "電子零組件",
+      "picks": [
+        {
+          "ticker": "2340",
+          "name": "台亞",
+          "industry": "半導體",
+          "rec_close": 52.900001525878906,
+          "momentum_score": 80,
+          "momentum_notes": [
+            "量爆價揚",
+            "ATH"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 86.80297756249084,
+          "change_pct_at_rec": 9.865004879484873,
+          "vol_ratio_at_rec": 3.740302300493717
+        },
+        {
+          "ticker": "3416",
+          "name": "融程電",
+          "industry": "電腦及週邊",
+          "rec_close": 182.0,
+          "momentum_score": 80,
+          "momentum_notes": [
+            "量爆價揚",
+            "ATH"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 86.20689655172414,
+          "change_pct_at_rec": 7.692307692307687,
+          "vol_ratio_at_rec": 6.714461996193046
         }
       ]
     }

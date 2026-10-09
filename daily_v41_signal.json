@@ -1,8 +1,82 @@
 {
-  "timestamp": "2026-10-08",
+  "timestamp": "2026-10-09",
   "strategy": "V4.6 (V4.5 + 收盤前買進; 正式月線定義回測 5y +313.5%/PF 5.27/MDD -13.9%, 2y +199.7%/PF 6.31/MDD -10.5%)",
   "entry_timing": "收盤前買（13:25 限價=當時價×1.005 或 14:00-14:30 盤後定價）",
   "strongest_industry": "電子零組件",
   "v4_blocked": false,
-  "picks": []
+  "picks": [
+    {
+      "today": 52.900001525878906,
+      "monthly_max_2y": 40.79999923706055,
+      "ratio": 1.2965686890951547,
+      "from_high_pct": 29.656868909515467,
+      "bullish": true,
+      "bullish_fast": true,
+      "change_pct": 9.865004879484873,
+      "vol_ratio": 3.740302300493717,
+      "rsi": 86.80297756249084,
+      "ma5": 48.880000305175784,
+      "ma20": 38.164999675750735,
+      "ma60": 33.91416651407878,
+      "ma200": 32.23199986457825,
+      "gap_up": false,
+      "close_near_high": true,
+      "long_red": true,
+      "tangle": null,
+      "ticker": "2340",
+      "name": "台亞",
+      "industry": "半導體",
+      "industry_strong": false,
+      "market_cap_billions": 179.08801536,
+      "mcap_pass": true,
+      "sitc_net_shares": 0,
+      "momentum_score": 80,
+      "momentum_notes": [
+        "量爆價揚",
+        "ATH"
+      ],
+      "tier": "⭐⭐⭐",
+      "next_day_prob": "≥85%",
+      "alert": {
+        "level": "NEAR",
+        "msg": "📈接近注意線:6日+30%(再2.3pp觸注意)"
+      }
+    },
+    {
+      "today": 182.0,
+      "monthly_max_2y": 177.7625274658203,
+      "ratio": 1.0238378278852638,
+      "from_high_pct": 2.3837827885263785,
+      "bullish": false,
+      "bullish_fast": true,
+      "change_pct": 7.692307692307687,
+      "vol_ratio": 6.714461996193046,
+      "rsi": 86.20689655172414,
+      "ma5": 170.7,
+      "ma20": 163.95,
+      "ma60": 167.4868398030599,
+      "ma200": 153.32138549804688,
+      "gap_up": true,
+      "close_near_high": false,
+      "long_red": false,
+      "tangle": {
+        "band_pct": 2.8,
+        "dist_high_pct": -2.9
+      },
+      "ticker": "3416",
+      "name": "融程電",
+      "industry": "電腦及週邊",
+      "industry_strong": false,
+      "market_cap_billions": 129.49552128,
+      "mcap_pass": true,
+      "sitc_net_shares": 0,
+      "momentum_score": 80,
+      "momentum_notes": [
+        "量爆價揚",
+        "ATH"
+      ],
+      "tier": "⭐⭐⭐",
+      "next_day_prob": "≥85%"
+    }
+  ]
 }

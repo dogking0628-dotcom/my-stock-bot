@@ -1,0 +1,13 @@
+{
+  "_doc": "media_radar.py 訂閱清單。lookback_days=只處理幾天內上傳的影片；max_videos_per_channel=每頻道最多看最新幾支；whisper=無字幕時的本機轉錄（small 模型約 0.2x 影片長度；一次最多 max_per_run 支、每支 ≤ max_minutes 分）",
+  "lookback_days": 2,
+  "max_videos_per_channel": 3,
+  "whisper": {"enabled": true, "model": "small", "max_minutes": 60, "max_per_run": 1, "cpu_threads": 14},
+  "price_lookup_max": 25,
+  "channels": [
+    {"name": "郭哲榮分析師-摩爾證券投顧", "url": "https://www.youtube.com/channel/UChfl3auNxAxOR3wy8a8ysQQ/videos", "style": "題材+跌深攤平"},
+    {"name": "鈔錢部署–華視優選", "url": "https://www.youtube.com/channel/UCA_hK5eRICBdSOLlXKESvEg/videos", "style": "來賓訪談"},
+    {"name": "理財達人秀 EBCmoneyshow", "url": "https://www.youtube.com/channel/UCQvsuaih5lE0n_Ne54nNezg/videos", "style": "多來賓電視節目（常無字幕）"},
+    {"name": "先探i投資", "url": "https://www.youtube.com/channel/UCIq8cvi04DdnGA2qkEIJccA/videos", "style": "產業/展場"}
+  ]
+}

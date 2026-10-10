@@ -1,17 +1,4 @@
 {
-  "date": "2026-09-14",
-  "stocks": {
-    "2886": {
-      "name": "兆豐金",
-      "score": 50,
-      "close": 51.70000076293945,
-      "category": "medium"
-    },
-    "2412": {
-      "name": "中華電",
-      "score": 32,
-      "close": 140.5,
-      "category": "medium"
-    }
-  }
+  "date": "2026-10-09",
+  "stocks": {}
 }

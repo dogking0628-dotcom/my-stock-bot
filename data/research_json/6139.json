@@ -1,0 +1,23 @@
+{"ticker":"6139","name":"亞翔","research_date":"2026-09-07",
+ "next_platform_score":4,"new_capacity_score":4,"new_product_mix_score":3,"order_visibility_score":3,"tam_score":4,"governance_score":3,"rerating_score":6,
+ "customer_concentration_pct":null,
+ "eps_2026":65.54,"eps_2027":47.61,"eps_2028":null,"eps_2029":null,
+ "eps_source":"2026: 群益證券 65.54 元（目標價 1,500 元，CMoney 理財寶 2026/8 轉述）；法人平均預估 2026 稅後純益 132.02 億元、EPS 區間 47.92~65.54 元（2026/8）；MoneyDJ 2026/6/26 法人估 60~70 元。2027: 僅有中信投顧等 2025/12/30 舊估 47.61 元（工商時報，stale，早於新加坡 5,000 億大單，明顯偏低）。2028/2029 無公開預估。",
+ "eps_rev_1m":0.99,"eps_rev_3m":null,
+ "thesis":"新加坡美系記憶體廠（美光）新台幣近 5,000 億元廠務統包大單＋台灣 2 奈米/先進封裝/記憶體擴產，使在手訂單 4,400 億元（約全年營收 5.7 倍）、能見度到 2029 年，EPC 統包比重上升帶動毛利率升至 20%，2026 EPS 由 2025 年 27 元躍升至 50~65 元區間。",
+ "risk":"營收 97% 集中半導體、在手訂單 76% 集中東協且高度依賴單一記憶體客戶新加坡專案，若記憶體資本支出反轉或大型專案延宕/執行成本失控，訂單認列與毛利率會同時受衝擊；另公司自承工程管理人才短缺限制接單。",
+ "thesis_status":"OK","governance_red_flag":false,
+ "notes":"Q2'26 EPS 16.46 元（歷史單季新高）、H1 EPS 25.91 元、H1 毛利率 20.2%/營益率 18.2%；7 月營收 109.29 億元年增 62%；8 月營收尚未在搜尋到的來源出現。財報狗/鉅亨網目前顯示近四季 EPS 49.69、本益比約 15 倍（股價 ~742）。客戶集中度：僅找到產業別（半導體 97%）與地區別（東協 76%），年報未查到單一客戶占比。治理：2026/1 股價異常時公司公告無未揭露重大訊息；2026/5 蘇州子公司臨時股東會通過海外機電工程訂單之關係人交易（集團內部承攬，屬營運性質），未見增資、重編、內線裁罰。AI 資料中心機電業務未見公司明確揭露。eps_rev_1m 為法人平均預估稅後純益較上月上修 0.99%，非嚴格 EPS 共識修正。",
+ "evidence":[
+  {"claim_type":"next_platform","claim":"亞翔拿下美系記憶體大廠新加坡新廠廠務統包工程，總金額新幣 200 億元（約新台幣近 5,000 億元），交期至 2029 年，董事長稱未來三年營運繁忙、因人力限制暫不跟進美國市場。","source_url":"https://tw.stock.yahoo.com/news/%E4%BA%9E%E7%BF%94%E5%86%8D%E5%A5%AA%E6%96%B0%E5%8A%A0%E5%9D%A1%E5%8D%83%E5%84%84%E5%A4%A7%E5%96%AE-%E4%BB%8A%E5%B9%B4eps%E4%BC%B0%E8%A1%9D60-70%E5%85%83-024100157.html","source_name":"MoneyDJ via Yahoo股市","published_at":"2026-06-26","confidence":0.85,"direction":"positive","stale":false},
+  {"claim_type":"new_capacity","claim":"2026 上半年新簽約 3,037.37 億元、在手未施工訂單 4,400.73 億元均創歷史新高，地區分布東協 76%/台灣 22%/中國 2%；新加坡員工達 196 人，前五大客戶持續擴產，未來 3 年營運一年比一年好。","source_url":"https://www.ctee.com.tw/news/20260727700491-430201","source_name":"工商時報","published_at":"2026-07-27","confidence":0.9,"direction":"positive","stale":false},
+  {"claim_type":"new_product_mix","claim":"台灣客戶逐漸改採完整 EPC 統包模式，訂單規模明顯放大；Q1 毛利率改善來自各專案執行效益提升而非單一案件，增加的毛利將逐步反映。","source_url":"https://news.nextapple.com/finance/20260724/FAA393CCC0AC1D201057DBBEC1C92CD9","source_name":"壹蘋新聞網","published_at":"2026-07-24","confidence":0.8,"direction":"positive","stale":false},
+  {"claim_type":"new_product_mix","claim":"Q2'26 營收 256.36 億、歸屬母公司淨利 38.77 億、EPS 16.46 元；H1 EPS 25.91 元，H1 毛利率約 20.2%、營益率約 18.2%，較 2025 年明顯改善。","source_url":"https://www.ftnn.com.tw/news/568485","source_name":"FTNN 新聞網","published_at":"2026-08-07","confidence":0.85,"direction":"positive","stale":false},
+  {"claim_type":"order_visibility","claim":"新加坡大型晶圓廠工程第一階段預計 2027 年 Q1-Q2 完工，第二階段規模更大、執行期可能延至 3-4 年；台灣與新加坡工程能見度皆明確，台灣半導體客戶擴產需求更急更大。","source_url":"https://news.nextapple.com/finance/20260724/FAA393CCC0AC1D201057DBBEC1C92CD9","source_name":"壹蘋新聞網","published_at":"2026-07-24","confidence":0.8,"direction":"positive","stale":false},
+  {"claim_type":"tam","claim":"美光未來十年投資 240 億美元在新加坡擴充 NAND 產能並斥資 18 億美元收購力積電銅鑼廠，業界估亞翔從新廠累計訂單上千億元，為最大受惠者。","source_url":"https://money.udn.com/money/story/5612/9292701","source_name":"經濟日報","published_at":"2026-01-28","confidence":0.75,"direction":"positive","stale":true},
+  {"claim_type":"eps_revision","claim":"群益證券預估亞翔 2026 年營收 1,381.28 億元、EPS 65.54 元，目標價 1,500 元。","source_url":"https://readmo.cmoney.tw/article/c6d0ad1d-a1a8-4d39-8fb5-30f1acbc94db","source_name":"CMoney 理財寶","published_at":"2026-08-15","confidence":0.6,"direction":"positive","stale":false},
+  {"claim_type":"eps_revision","claim":"法人機構平均預估 2026 年度稅後純益 132.02 億元、較上月上修 0.99%，預估 EPS 區間 47.92~65.54 元。","source_url":"https://readmo.cmoney.tw/article/8c5d8a3a-561e-40ec-a542-07182a911827","source_name":"CMoney 理財寶（轉述 Yahoo 股市法人預估）","published_at":"2026-08-15","confidence":0.55,"direction":"positive","stale":false},
+  {"claim_type":"customer","claim":"2025 年新簽約 97% 為半導體業務、東協占 84%；營收結構半導體 74%、公共工程約 17%；未揭露前五大客戶個別占比，公司自承工程管理人才短缺限制接單。","source_url":"https://blog.fugle.tw/post/earnings-call-6139-2025-12-26","source_name":"富果 Fugle 法說會備忘錄","published_at":"2025-12-26","confidence":0.8,"direction":"neutral","stale":true},
+  {"claim_type":"governance","claim":"2026/1/13-15 股價三日累計漲逾 20%，公司公告經自查及控股股東確認無重組、併購、增資、回購等未揭露重大資訊；未查到財報重編或內線裁罰。","source_url":"https://www.cmoney.tw/notes/note-detail.aspx?nid=1083421","source_name":"CMoney 即時新聞","published_at":"2026-01-16","confidence":0.6,"direction":"neutral","stale":true}
+ ],
+ "not_found":["customer_concentration_pct（單一最大客戶占比，年報未取得）","eps_2028","eps_2029","eps_rev_3m","2026 年 8 月營收","AI 資料中心機電新業務之公司揭露","2027 年 EPS 之 2026 下半年更新版法人預估（僅有 2025/12 舊估 47.61）"]}

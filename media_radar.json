@@ -1,0 +1,1765 @@
+{
+ "generated": "2026-09-08T07:37",
+ "ath_date": "2026-09-07",
+ "regime": {
+  "today": 109.9000015258789,
+  "ma200": 85.45727237701416,
+  "ma20": 105.92000007629395,
+  "ext_pct": 28.602280963321757,
+  "in_stage2": true,
+  "below_ma20": false
+ },
+ "n_videos": 4,
+ "n_text": 4,
+ "videos": [
+  {
+   "id": "t3W5RYvu8TE",
+   "channel_cfg": "先探i投資",
+   "title": "直擊2026國際半導體展，揭密AI真正贏家，CPO、先進封裝爆發",
+   "channel": "先探i投資",
+   "upload_date": "20260907",
+   "duration": 880,
+   "url": "https://youtu.be/t3W5RYvu8TE",
+   "method": "subs",
+   "fetched_at": "2026-09-08T07:37:32",
+   "pending_whisper": false,
+   "tickers": [
+    [
+     "2360",
+     "致茂",
+     7
+    ],
+    [
+     "2308",
+     "台達電",
+     6
+    ],
+    [
+     "6515",
+     "穎崴",
+     6
+    ],
+    [
+     "4958",
+     "臻鼎-KY",
+     4
+    ],
+    [
+     "3711",
+     "日月光投控",
+     4
+    ]
+   ],
+   "themes": [
+    [
+     "封測",
+     15
+    ],
+    [
+     "伺服器板卡/PCB",
+     14
+    ],
+    [
+     "矽光子/CPO",
+     10
+    ],
+    [
+     "探針卡/測試介面",
+     7
+    ],
+    [
+     "AI伺服器-組裝ODM",
+     3
+    ],
+    [
+     "自動化/機器人",
+     3
+    ]
+   ]
+  },
+  {
+   "id": "baoJt33Pky0",
+   "channel_cfg": "理財達人秀 EBCmoneyshow",
+   "title": "【理財達人秀】川普喊降息 台股大贏家？大立光跌停 封測.被動高換低？聯發科帶頭 有底部起漲股！2026.09.07",
+   "channel": "理財達人秀 EBCmoneyshow",
+   "upload_date": "20260907",
+   "duration": 2980,
+   "url": "https://youtu.be/baoJt33Pky0",
+   "method": "whisper-small",
+   "fetched_at": "2026-09-08T07:37:32",
+   "pending_whisper": false,
+   "tickers": [
+    [
+     "2330",
+     "台積電",
+     24
+    ],
+    [
+     "2454",
+     "聯發科",
+     10
+    ],
+    [
+     "3008",
+     "大立光",
+     10
+    ],
+    [
+     "2327",
+     "國巨*",
+     9
+    ],
+    [
+     "2308",
+     "台達電",
+     6
+    ],
+    [
+     "3167",
+     "大量",
+     5
+    ],
+    [
+     "5007",
+     "三星",
+     4
+    ],
+    [
+     "3444",
+     "利機",
+     4
+    ],
+    [
+     "3711",
+     "日月光投控",
+     3
+    ],
+    [
+     "2344",
+     "華邦電",
+     2
+    ],
+    [
+     "6173",
+     "信昌電",
+     2
+    ],
+    [
+     "3583",
+     "辛耘",
+     2
+    ]
+   ],
+   "themes": [
+    [
+     "被動元件",
+     16
+    ],
+    [
+     "封測",
+     4
+    ],
+    [
+     "記憶體-DRAM",
+     4
+    ],
+    [
+     "IC設計-手機SoC/AI",
+     2
+    ],
+    [
+     "光學鏡頭/模組",
+     2
+    ],
+    [
+     "矽光子/CPO",
+     1
+    ]
+   ]
+  },
+  {
+   "id": "PpNF8G8RBqk",
+   "channel_cfg": "郭哲榮分析師-摩爾證券投顧",
+   "title": "【超級AI來了 台股十萬點不是夢!】2026/9/7(字幕版)",
+   "channel": "郭哲榮分析師-摩爾證券投顧",
+   "upload_date": "20260907",
+   "duration": 3046,
+   "url": "https://youtu.be/PpNF8G8RBqk",
+   "method": "subs",
+   "fetched_at": "2026-09-08T07:37:32",
+   "pending_whisper": false,
+   "tickers": [
+    [
+     "2327",
+     "國巨*",
+     46
+    ],
+    [
+     "3374",
+     "精材",
+     22
+    ],
+    [
+     "2492",
+     "華新科",
+     19
+    ],
+    [
+     "3036",
+     "文曄",
+     12
+    ],
+    [
+     "6488",
+     "環球晶",
+     8
+    ],
+    [
+     "2377",
+     "微星",
+     7
+    ],
+    [
+     "2330",
+     "台積電",
+     5
+    ],
+    [
+     "2454",
+     "聯發科",
+     5
+    ],
+    [
+     "1108",
+     "幸福",
+     5
+    ],
+    [
+     "8299",
+     "群聯",
+     5
+    ],
+    [
+     "2344",
+     "華邦電",
+     4
+    ],
+    [
+     "3376",
+     "新日興",
+     4
+    ]
+   ],
+   "themes": [
+    [
+     "被動元件",
+     6
+    ],
+    [
+     "記憶體-DRAM",
+     4
+    ],
+    [
+     "矽光子/CPO",
+     3
+    ],
+    [
+     "航運-貨櫃",
+     3
+    ],
+    [
+     "伺服器板卡/PCB",
+     2
+    ],
+    [
+     "自動化/機器人",
+     2
+    ]
+   ]
+  },
+  {
+   "id": "UShXVITpn6c",
+   "channel_cfg": "鈔錢部署–華視優選",
+   "title": "欣興遭搜索慘跌停 廖總怎麼看？股價總是領先基本面 技術面才是王道？- 統一投顧總經理 廖婉婷",
+   "channel": "鈔錢部署–華視優選",
+   "upload_date": "20260831",
+   "duration": 163,
+   "url": "https://youtu.be/UShXVITpn6c",
+   "method": "subs",
+   "fetched_at": "2026-09-08T07:37:32",
+   "pending_whisper": false,
+   "tickers": [
+    [
+     "3037",
+     "欣興",
+     6
+    ]
+   ],
+   "themes": [
+    [
+     "伺服器板卡/PCB",
+     2
+    ]
+   ]
+  }
+ ],
+ "products": [
+  {
+   "product": "AI伺服器-組裝ODM",
+   "media_videos": 3,
+   "media_names": [
+    "鴻海"
+   ],
+   "ath": [
+    "緯創",
+    "緯穎",
+    "技嘉",
+    "華碩"
+   ],
+   "near": [],
+   "sitc_amt5": 112.5,
+   "sitc_mom": "⏫加速買",
+   "strong": true,
+   "hot": true,
+   "quad": "🔥主流"
+  },
+  {
+   "product": "IC設計-手機SoC/AI",
+   "media_videos": 3,
+   "media_names": [
+    "聯發科"
+   ],
+   "ath": [
+    "聯發科"
+   ],
+   "near": [],
+   "sitc_amt5": 119.1,
+   "sitc_mom": "⏫加速買",
+   "strong": true,
+   "hot": true,
+   "quad": "🔥主流"
+  },
+  {
+   "product": "矽光子/CPO",
+   "media_videos": 3,
+   "media_names": [],
+   "ath": [],
+   "near": [],
+   "sitc_amt5": 9.6,
+   "sitc_mom": "⏫加速買",
+   "strong": true,
+   "hot": true,
+   "quad": "🔥主流"
+  },
+  {
+   "product": "手機/消費電子",
+   "media_videos": 2,
+   "media_names": [
+    "鴻海",
+    "大立光"
+   ],
+   "ath": [
+    "和碩",
+    "可成"
+   ],
+   "near": [],
+   "sitc_amt5": -17.3,
+   "sitc_mom": "🔄反轉",
+   "strong": true,
+   "hot": true,
+   "quad": "🔥主流"
+  },
+  {
+   "product": "晶圓代工",
+   "media_videos": 2,
+   "media_names": [
+    "台積電",
+    "聯電",
+    "世界"
+   ],
+   "ath": [
+    "台積電"
+   ],
+   "near": [],
+   "sitc_amt5": -2.9,
+   "sitc_mom": "➡️持平",
+   "strong": true,
+   "hot": true,
+   "quad": "🔥主流"
+  },
+  {
+   "product": "被動元件",
+   "media_videos": 2,
+   "media_names": [
+    "國巨*",
+    "華新科"
+   ],
+   "ath": [
+    "台虹"
+   ],
+   "near": [],
+   "sitc_amt5": -33.8,
+   "sitc_mom": "➡️持平",
+   "strong": true,
+   "hot": true,
+   "quad": "🔥主流"
+  },
+  {
+   "product": "記憶體-NAND/模組",
+   "media_videos": 1,
+   "media_names": [
+    "群聯",
+    "威剛"
+   ],
+   "ath": [
+    "晶豪科",
+    "十銓",
+    "晶豪科"
+   ],
+   "near": [],
+   "sitc_amt5": -3.7,
+   "sitc_mom": "➡️持平",
+   "strong": true,
+   "hot": false,
+   "quad": "🏃前跑"
+  },
+  {
+   "product": "工業電腦IPC",
+   "media_videos": 1,
+   "media_names": [
+    "欣興"
+   ],
+   "ath": [
+    "研華",
+    "永擎"
+   ],
+   "near": [],
+   "sitc_amt5": -88.8,
+   "sitc_mom": "⏬加速賣",
+   "strong": true,
+   "hot": false,
+   "quad": "🏃前跑"
+  },
+  {
+   "product": "IC設計-驅動IC",
+   "media_videos": 1,
+   "media_names": [
+    "世界"
+   ],
+   "ath": [
+    "聯詠"
+   ],
+   "near": [],
+   "sitc_amt5": 7.5,
+   "sitc_mom": "⏫加速買",
+   "strong": true,
+   "hot": false,
+   "quad": "🏃前跑"
+  },
+  {
+   "product": "航運-貨櫃",
+   "media_videos": 1,
+   "media_names": [],
+   "ath": [
+    "萬海"
+   ],
+   "near": [],
+   "sitc_amt5": 8.1,
+   "sitc_mom": "⏫加速買",
+   "strong": true,
+   "hot": false,
+   "quad": "🏃前跑"
+  },
+  {
+   "product": "金融-金控",
+   "media_videos": 0,
+   "media_names": [],
+   "ath": [
+    "華南金",
+    "富邦金",
+    "國泰金",
+    "凱基金",
+    "玉山金",
+    "元大金",
+    "台新新光金",
+    "永豐金",
+    "第一金",
+    "合庫金",
+    "彰銀",
+    "臺企銀"
+   ],
+   "near": [],
+   "sitc_amt5": 67.4,
+   "sitc_mom": "➡️持平",
+   "strong": true,
+   "hot": false,
+   "quad": "🏃前跑"
+  },
+  {
+   "product": "塑化",
+   "media_videos": 0,
+   "media_names": [],
+   "ath": [
+    "台塑",
+    "台化",
+    "台塑化"
+   ],
+   "near": [],
+   "sitc_amt5": 30.2,
+   "sitc_mom": "➡️持平",
+   "strong": true,
+   "hot": false,
+   "quad": "🏃前跑"
+  },
+  {
+   "product": "CCL銅箔基板",
+   "media_videos": 0,
+   "media_names": [],
+   "ath": [
+    "台光電",
+    "台虹"
+   ],
+   "near": [],
+   "sitc_amt5": -18.6,
+   "sitc_mom": "➡️持平",
+   "strong": true,
+   "hot": false,
+   "quad": "🏃前跑"
+  },
+  {
+   "product": "PC/NB品牌",
+   "media_videos": 0,
+   "media_names": [],
+   "ath": [
+    "華碩",
+    "緯創"
+   ],
+   "near": [],
+   "sitc_amt5": 92.8,
+   "sitc_mom": "⏫加速買",
+   "strong": true,
+   "hot": false,
+   "quad": "🏃前跑"
+  },
+  {
+   "product": "航運-散裝/航空",
+   "media_videos": 0,
+   "media_names": [],
+   "ath": [
+    "裕民",
+    "慧洋-KY"
+   ],
+   "near": [],
+   "sitc_amt5": 7.3,
+   "sitc_mom": "⏫加速買",
+   "strong": true,
+   "hot": false,
+   "quad": "🏃前跑"
+  },
+  {
+   "product": "鋼鐵",
+   "media_videos": 0,
+   "media_names": [],
+   "ath": [
+    "大成鋼"
+   ],
+   "near": [],
+   "sitc_amt5": 5.6,
+   "sitc_mom": "⏫加速買",
+   "strong": true,
+   "hot": false,
+   "quad": "🏃前跑"
+  },
+  {
+   "product": "水泥/營建",
+   "media_videos": 0,
+   "media_names": [],
+   "ath": [
+    "興富發"
+   ],
+   "near": [],
+   "sitc_amt5": 8.9,
+   "sitc_mom": "⏫加速買",
+   "strong": true,
+   "hot": false,
+   "quad": "🏃前跑"
+  },
+  {
+   "product": "IC設計-網通/傳輸",
+   "media_videos": 0,
+   "media_names": [],
+   "ath": [],
+   "near": [],
+   "sitc_amt5": 16.8,
+   "sitc_mom": "⏫加速買",
+   "strong": true,
+   "hot": false,
+   "quad": "🏃前跑"
+  },
+  {
+   "product": "銅箔/玻纖布",
+   "media_videos": 0,
+   "media_names": [],
+   "ath": [],
+   "near": [],
+   "sitc_amt5": 0.6,
+   "sitc_mom": "⏫加速買",
+   "strong": true,
+   "hot": false,
+   "quad": "🏃前跑"
+  },
+  {
+   "product": "面板/顯示",
+   "media_videos": 0,
+   "media_names": [],
+   "ath": [],
+   "near": [],
+   "sitc_amt5": 9.1,
+   "sitc_mom": "⏫加速買",
+   "strong": true,
+   "hot": false,
+   "quad": "🏃前跑"
+  },
+  {
+   "product": "電池/儲能",
+   "media_videos": 0,
+   "media_names": [],
+   "ath": [],
+   "near": [],
+   "sitc_amt5": 0.2,
+   "sitc_mom": "⏫加速買",
+   "strong": true,
+   "hot": false,
+   "quad": "🏃前跑"
+  },
+  {
+   "product": "記憶體-DRAM",
+   "media_videos": 3,
+   "media_names": [
+    "華邦電"
+   ],
+   "ath": [],
+   "near": [],
+   "sitc_amt5": -51.1,
+   "sitc_mom": "➡️持平",
+   "strong": false,
+   "hot": true,
+   "quad": "📣喊單/落後"
+  },
+  {
+   "product": "封測",
+   "media_videos": 3,
+   "media_names": [
+    "日月光投控",
+    "力成",
+    "精材"
+   ],
+   "ath": [],
+   "near": [],
+   "sitc_amt5": -15.1,
+   "sitc_mom": "➡️持平",
+   "strong": false,
+   "hot": true,
+   "quad": "📣喊單/落後"
+  },
+  {
+   "product": "伺服器板卡/PCB",
+   "media_videos": 3,
+   "media_names": [
+    "欣興"
+   ],
+   "ath": [],
+   "near": [],
+   "sitc_amt5": -115.1,
+   "sitc_mom": "⏬加速賣",
+   "strong": false,
+   "hot": true,
+   "quad": "📣喊單/落後"
+  },
+  {
+   "product": "自動化/機器人",
+   "media_videos": 3,
+   "media_names": [],
+   "ath": [],
+   "near": [],
+   "sitc_amt5": -30.8,
+   "sitc_mom": "⏬加速賣",
+   "strong": false,
+   "hot": true,
+   "quad": "📣喊單/落後"
+  },
+  {
+   "product": "AI伺服器-電源",
+   "media_videos": 2,
+   "media_names": [
+    "台達電"
+   ],
+   "ath": [],
+   "near": [],
+   "sitc_amt5": 19.5,
+   "sitc_mom": "🔄反轉",
+   "strong": false,
+   "hot": true,
+   "quad": "📣喊單/落後"
+  },
+  {
+   "product": "散熱",
+   "media_videos": 2,
+   "media_names": [],
+   "ath": [],
+   "near": [],
+   "sitc_amt5": 5.0,
+   "sitc_mom": "➡️持平",
+   "strong": false,
+   "hot": true,
+   "quad": "📣喊單/落後"
+  },
+  {
+   "product": "ABF載板",
+   "media_videos": 2,
+   "media_names": [
+    "欣興"
+   ],
+   "ath": [],
+   "near": [],
+   "sitc_amt5": -154.1,
+   "sitc_mom": "⏬加速賣",
+   "strong": false,
+   "hot": true,
+   "quad": "📣喊單/落後"
+  },
+  {
+   "product": "光學鏡頭/模組",
+   "media_videos": 2,
+   "media_names": [
+    "大立光"
+   ],
+   "ath": [],
+   "near": [],
+   "sitc_amt5": -5.4,
+   "sitc_mom": "🔄反轉",
+   "strong": false,
+   "hot": true,
+   "quad": "📣喊單/落後"
+  },
+  {
+   "product": "電動車/車用電子",
+   "media_videos": 2,
+   "media_names": [
+    "台達電"
+   ],
+   "ath": [],
+   "near": [],
+   "sitc_amt5": 10.9,
+   "sitc_mom": "🔄反轉",
+   "strong": false,
+   "hot": true,
+   "quad": "📣喊單/落後"
+  },
+  {
+   "product": "半導體材料/耗材",
+   "media_videos": 1,
+   "media_names": [
+    "台勝科",
+    "環球晶"
+   ],
+   "ath": [
+    "台勝科"
+   ],
+   "near": [],
+   "sitc_amt5": 9.6,
+   "sitc_mom": "➡️持平",
+   "strong": false,
+   "hot": false,
+   "quad": ""
+  },
+  {
+   "product": "IC設計-類比/電源",
+   "media_videos": 1,
+   "media_names": [
+    "智原"
+   ],
+   "ath": [],
+   "near": [],
+   "sitc_amt5": -4.3,
+   "sitc_mom": "➡️持平",
+   "strong": false,
+   "hot": false,
+   "quad": ""
+  },
+  {
+   "product": "半導體設備",
+   "media_videos": 1,
+   "media_names": [
+    "弘塑",
+    "辛耘"
+   ],
+   "ath": [],
+   "near": [],
+   "sitc_amt5": -0.5,
+   "sitc_mom": "➡️持平",
+   "strong": false,
+   "hot": false,
+   "quad": ""
+  },
+  {
+   "product": "探針卡/測試介面",
+   "media_videos": 1,
+   "media_names": [],
+   "ath": [],
+   "near": [],
+   "sitc_amt5": 0.0,
+   "sitc_mom": "➡️持平",
+   "strong": false,
+   "hot": false,
+   "quad": ""
+  },
+  {
+   "product": "電子通路",
+   "media_videos": 1,
+   "media_names": [
+    "文曄"
+   ],
+   "ath": [],
+   "near": [],
+   "sitc_amt5": -0.6,
+   "sitc_mom": "➡️持平",
+   "strong": false,
+   "hot": false,
+   "quad": ""
+  },
+  {
+   "product": "光通訊/光收發",
+   "media_videos": 0,
+   "media_names": [],
+   "ath": [
+    "統新"
+   ],
+   "near": [],
+   "sitc_amt5": 14.8,
+   "sitc_mom": "➡️持平",
+   "strong": false,
+   "hot": false,
+   "quad": ""
+  },
+  {
+   "product": "連接器/線材",
+   "media_videos": 0,
+   "media_names": [],
+   "ath": [
+    "信邦"
+   ],
+   "near": [],
+   "sitc_amt5": -14.2,
+   "sitc_mom": "➡️持平",
+   "strong": false,
+   "hot": false,
+   "quad": ""
+  },
+  {
+   "product": "LED",
+   "media_videos": 0,
+   "media_names": [],
+   "ath": [
+    "鼎元"
+   ],
+   "near": [],
+   "sitc_amt5": 0.0,
+   "sitc_mom": "➡️持平",
+   "strong": false,
+   "hot": false,
+   "quad": ""
+  },
+  {
+   "product": "電信服務",
+   "media_videos": 0,
+   "media_names": [],
+   "ath": [
+    "台灣大"
+   ],
+   "near": [],
+   "sitc_amt5": 2.3,
+   "sitc_mom": "➡️持平",
+   "strong": false,
+   "hot": false,
+   "quad": ""
+  },
+  {
+   "product": "金融-證券",
+   "media_videos": 0,
+   "media_names": [],
+   "ath": [
+    "統一證"
+   ],
+   "near": [],
+   "sitc_amt5": 1.3,
+   "sitc_mom": "➡️持平",
+   "strong": false,
+   "hot": false,
+   "quad": ""
+  },
+  {
+   "product": "IC設計-MCU/利基",
+   "media_videos": 0,
+   "media_names": [],
+   "ath": [],
+   "near": [],
+   "sitc_amt5": -0.2,
+   "sitc_mom": "⏬加速賣",
+   "strong": false,
+   "hot": false,
+   "quad": ""
+  },
+  {
+   "product": "AI伺服器-機殼滑軌",
+   "media_videos": 0,
+   "media_names": [],
+   "ath": [],
+   "near": [],
+   "sitc_amt5": -32.2,
+   "sitc_mom": "⏬加速賣",
+   "strong": false,
+   "hot": false,
+   "quad": ""
+  },
+  {
+   "product": "網通設備",
+   "media_videos": 0,
+   "media_names": [],
+   "ath": [],
+   "near": [],
+   "sitc_amt5": -27.5,
+   "sitc_mom": "➡️持平",
+   "strong": false,
+   "hot": false,
+   "quad": ""
+  },
+  {
+   "product": "食品/民生",
+   "media_videos": 0,
+   "media_names": [],
+   "ath": [],
+   "near": [],
+   "sitc_amt5": -2.3,
+   "sitc_mom": "➡️持平",
+   "strong": false,
+   "hot": false,
+   "quad": ""
+  },
+  {
+   "product": "生技/醫療",
+   "media_videos": 0,
+   "media_names": [],
+   "ath": [],
+   "near": [],
+   "sitc_amt5": -11.9,
+   "sitc_mom": "⏬加速賣",
+   "strong": false,
+   "hot": false,
+   "quad": ""
+  },
+  {
+   "product": "觀光/餐飲",
+   "media_videos": 0,
+   "media_names": [],
+   "ath": [],
+   "near": [],
+   "sitc_amt5": -0.2,
+   "sitc_mom": "➡️持平",
+   "strong": false,
+   "hot": false,
+   "quad": ""
+  },
+  {
+   "product": "重電/電線電纜",
+   "media_videos": 0,
+   "media_names": [],
+   "ath": [],
+   "near": [],
+   "sitc_amt5": 1.8,
+   "sitc_mom": "➡️持平",
+   "strong": false,
+   "hot": false,
+   "quad": ""
+  },
+  {
+   "product": "綠能/太陽能",
+   "media_videos": 0,
+   "media_names": [],
+   "ath": [],
+   "near": [],
+   "sitc_amt5": 0.0,
+   "sitc_mom": "➡️持平",
+   "strong": false,
+   "hot": false,
+   "quad": ""
+  }
+ ],
+ "stocks": [
+  {
+   "code": "2327",
+   "name": "國巨*",
+   "videos": 2,
+   "mentions": 55,
+   "industry": "電子零組件",
+   "products": [
+    "被動元件"
+   ],
+   "status": "不在名單",
+   "date": "2026-09-07",
+   "close": 589.0,
+   "chg": 4.8,
+   "vs_ma60": -19.5,
+   "from_hi": -48.3,
+   "pos": "月線上"
+  },
+  {
+   "code": "2330",
+   "name": "台積電",
+   "videos": 2,
+   "mentions": 29,
+   "industry": "半導體",
+   "products": [
+    "晶圓代工"
+   ],
+   "status": "明日Top5、ATH名單",
+   "date": "2026-09-07",
+   "close": 2460.0,
+   "chg": 2.07,
+   "vs_ma60": 2.7,
+   "from_hi": -2.0,
+   "pos": "季線上"
+  },
+  {
+   "code": "2454",
+   "name": "聯發科",
+   "videos": 2,
+   "mentions": 15,
+   "industry": "半導體",
+   "products": [
+    "IC設計-手機SoC/AI"
+   ],
+   "status": "ATH名單",
+   "date": "2026-09-07",
+   "close": 4760.0,
+   "chg": 7.81,
+   "vs_ma60": 19.5,
+   "from_hi": 0.0,
+   "pos": "創高"
+  },
+  {
+   "code": "2308",
+   "name": "台達電",
+   "videos": 2,
+   "mentions": 12,
+   "industry": "電子零組件",
+   "products": [
+    "AI伺服器-電源",
+    "電動車/車用電子"
+   ],
+   "status": "不在名單",
+   "date": "2026-09-07",
+   "close": 1850.0,
+   "chg": 1.37,
+   "vs_ma60": 0.1,
+   "from_hi": -24.6,
+   "pos": "季線上"
+  },
+  {
+   "code": "3711",
+   "name": "日月光投控",
+   "videos": 2,
+   "mentions": 7,
+   "industry": "半導體",
+   "products": [
+    "封測"
+   ],
+   "status": "不在名單",
+   "date": "2026-09-07",
+   "close": 621.0,
+   "chg": 5.61,
+   "vs_ma60": 0.4,
+   "from_hi": -14.6,
+   "pos": "季線上"
+  },
+  {
+   "code": "2344",
+   "name": "華邦電",
+   "videos": 2,
+   "mentions": 6,
+   "industry": "半導體",
+   "products": [
+    "記憶體-DRAM"
+   ],
+   "status": "不在名單",
+   "date": "2026-09-07",
+   "close": 180.0,
+   "chg": 3.45,
+   "vs_ma60": 2.2,
+   "from_hi": -18.9,
+   "pos": "季線上"
+  },
+  {
+   "code": "6173",
+   "name": "信昌電",
+   "videos": 2,
+   "mentions": 5,
+   "industry": "電子零組件",
+   "products": [],
+   "status": "不在名單",
+   "date": "2026-09-07",
+   "close": 286.5,
+   "chg": 9.98,
+   "vs_ma60": 23.1,
+   "from_hi": -18.3,
+   "pos": "季線上"
+  },
+  {
+   "code": "3374",
+   "name": "精材",
+   "videos": 1,
+   "mentions": 22,
+   "industry": "半導體",
+   "products": [
+    "封測"
+   ],
+   "status": "不在名單",
+   "date": "2026-09-07",
+   "close": 469.5,
+   "chg": 9.19,
+   "vs_ma60": 43.1,
+   "from_hi": 0.0,
+   "pos": "創高"
+  },
+  {
+   "code": "2492",
+   "name": "華新科",
+   "videos": 1,
+   "mentions": 19,
+   "industry": "電子零組件",
+   "products": [
+    "被動元件"
+   ],
+   "status": "不在名單",
+   "date": "2026-09-07",
+   "close": 323.0,
+   "chg": 8.21,
+   "vs_ma60": -11.7,
+   "from_hi": -47.6,
+   "pos": "月線上"
+  },
+  {
+   "code": "3036",
+   "name": "文曄",
+   "videos": 1,
+   "mentions": 12,
+   "industry": "電子通路",
+   "products": [
+    "電子通路"
+   ],
+   "status": "不在名單",
+   "date": "2026-09-07",
+   "close": 192.5,
+   "chg": 0.0,
+   "vs_ma60": -7.1,
+   "from_hi": -34.2,
+   "pos": "均線下"
+  },
+  {
+   "code": "3008",
+   "name": "大立光",
+   "videos": 1,
+   "mentions": 10,
+   "industry": "光電",
+   "products": [
+    "光學鏡頭/模組",
+    "手機/消費電子"
+   ],
+   "status": "不在名單",
+   "date": "2026-09-07",
+   "close": 6660.0,
+   "chg": -10.0,
+   "vs_ma60": 36.1,
+   "from_hi": -14.7,
+   "pos": "季線上"
+  },
+  {
+   "code": "6488",
+   "name": "環球晶",
+   "videos": 1,
+   "mentions": 8,
+   "industry": "半導體",
+   "products": [
+    "半導體材料/耗材"
+   ],
+   "status": "不在名單",
+   "date": "2026-09-07",
+   "close": 971.0,
+   "chg": -1.02,
+   "vs_ma60": -7.4,
+   "from_hi": -35.9,
+   "pos": "均線下"
+  },
+  {
+   "code": "2360",
+   "name": "致茂",
+   "videos": 1,
+   "mentions": 7,
+   "industry": "其他電子",
+   "products": [],
+   "status": "不在名單",
+   "date": "2026-09-07",
+   "close": 2230.0,
+   "chg": 9.85,
+   "vs_ma60": 7.3,
+   "from_hi": -14.9,
+   "pos": "季線上"
+  },
+  {
+   "code": "2377",
+   "name": "微星",
+   "videos": 1,
+   "mentions": 7,
+   "industry": "電腦及週邊",
+   "products": [],
+   "status": "不在名單",
+   "date": "2026-09-07",
+   "close": 158.5,
+   "chg": -1.86,
+   "vs_ma60": 8.6,
+   "from_hi": -6.2,
+   "pos": "季線上"
+  },
+  {
+   "code": "6515",
+   "name": "穎崴",
+   "videos": 1,
+   "mentions": 6,
+   "industry": "半導體",
+   "products": [],
+   "status": "不在名單",
+   "date": "2026-09-07",
+   "close": 7000.0,
+   "chg": -1.06,
+   "vs_ma60": -4.1,
+   "from_hi": -29.6,
+   "pos": "月線上"
+  },
+  {
+   "code": "3037",
+   "name": "欣興",
+   "videos": 1,
+   "mentions": 6,
+   "industry": "電子零組件",
+   "products": [
+    "工業電腦IPC",
+    "伺服器板卡/PCB"
+   ],
+   "status": "不在名單",
+   "date": "2026-09-07",
+   "close": 949.0,
+   "chg": 5.21,
+   "vs_ma60": -0.6,
+   "from_hi": -19.6,
+   "pos": "均線下"
+  },
+  {
+   "code": "3167",
+   "name": "大量",
+   "videos": 1,
+   "mentions": 5,
+   "industry": "電機機械",
+   "products": [],
+   "status": "ATH名單",
+   "date": "2026-09-07",
+   "close": 883.0,
+   "chg": 9.96,
+   "vs_ma60": 20.0,
+   "from_hi": -7.2,
+   "pos": "季線上"
+  },
+  {
+   "code": "1108",
+   "name": "幸福",
+   "videos": 1,
+   "mentions": 5,
+   "industry": "水泥",
+   "products": [],
+   "status": "不在名單",
+   "date": "2026-09-07",
+   "close": 11.65,
+   "chg": 0.0,
+   "vs_ma60": -7.6,
+   "from_hi": -17.4,
+   "pos": "均線下"
+  },
+  {
+   "code": "8299",
+   "name": "群聯",
+   "videos": 1,
+   "mentions": 5,
+   "industry": "半導體",
+   "products": [
+    "記憶體-NAND/模組"
+   ],
+   "status": "不在名單",
+   "date": "2026-09-07",
+   "close": 2095.0,
+   "chg": 3.97,
+   "vs_ma60": 0.3,
+   "from_hi": -25.7,
+   "pos": "季線上"
+  },
+  {
+   "code": "4958",
+   "name": "臻鼎-KY",
+   "videos": 1,
+   "mentions": 4,
+   "industry": "電子零組件",
+   "products": [],
+   "status": "不在名單",
+   "date": "2026-09-07",
+   "close": 501.0,
+   "chg": 8.21,
+   "vs_ma60": -3.8,
+   "from_hi": -22.4,
+   "pos": "月線上"
+  },
+  {
+   "code": "5007",
+   "name": "三星",
+   "videos": 1,
+   "mentions": 4,
+   "industry": "鋼鐵",
+   "products": [],
+   "status": "不在名單",
+   "date": "2026-09-07",
+   "close": 56.6,
+   "chg": 0.35,
+   "vs_ma60": 0.7,
+   "from_hi": -2.4,
+   "pos": "季線上"
+  },
+  {
+   "code": "3444",
+   "name": "利機",
+   "videos": 1,
+   "mentions": 4,
+   "industry": "電子通路",
+   "products": [],
+   "status": "不在名單",
+   "date": "2026-09-07",
+   "close": 82.1,
+   "chg": -1.91,
+   "vs_ma60": 1.1,
+   "from_hi": -21.8,
+   "pos": "季線上"
+  },
+  {
+   "code": "3376",
+   "name": "新日興",
+   "videos": 1,
+   "mentions": 4,
+   "industry": "電子零組件",
+   "products": [],
+   "status": "不在名單",
+   "date": "2026-09-07",
+   "close": 206.5,
+   "chg": -2.13,
+   "vs_ma60": 6.7,
+   "from_hi": -12.9,
+   "pos": "季線上"
+  },
+  {
+   "code": "3532",
+   "name": "台勝科",
+   "videos": 1,
+   "mentions": 4,
+   "industry": "半導體",
+   "products": [
+    "半導體材料/耗材"
+   ],
+   "status": "ATH名單",
+   "date": "2026-09-07",
+   "close": 403.0,
+   "chg": 1.0,
+   "vs_ma60": 7.3,
+   "from_hi": -22.9,
+   "pos": "季線上"
+  },
+  {
+   "code": "2317",
+   "name": "鴻海",
+   "videos": 1,
+   "mentions": 4,
+   "industry": "其他電子",
+   "products": [
+    "AI伺服器-組裝ODM",
+    "手機/消費電子"
+   ],
+   "status": "不在名單",
+   "date": "2026-09-07",
+   "close": 256.0,
+   "chg": 0.0,
+   "vs_ma60": 2.1,
+   "from_hi": -17.2,
+   "pos": "季線上"
+  },
+  {
+   "code": "3035",
+   "name": "智原",
+   "videos": 1,
+   "mentions": 4,
+   "industry": "半導體",
+   "products": [
+    "IC設計-類比/電源"
+   ],
+   "status": "不在名單"
+  },
+  {
+   "code": "5483",
+   "name": "中美晶",
+   "videos": 1,
+   "mentions": 3,
+   "industry": "半導體",
+   "products": [],
+   "status": "不在名單"
+  },
+  {
+   "code": "3583",
+   "name": "辛耘",
+   "videos": 1,
+   "mentions": 2,
+   "industry": "半導體",
+   "products": [
+    "半導體設備"
+   ],
+   "status": "不在名單"
+  },
+  {
+   "code": "2303",
+   "name": "聯電",
+   "videos": 1,
+   "mentions": 2,
+   "industry": "半導體",
+   "products": [
+    "晶圓代工"
+   ],
+   "status": "不在名單"
+  },
+  {
+   "code": "3131",
+   "name": "弘塑",
+   "videos": 1,
+   "mentions": 2,
+   "industry": "其他電子",
+   "products": [
+    "半導體設備"
+   ],
+   "status": "不在名單"
+  },
+  {
+   "code": "5347",
+   "name": "世界",
+   "videos": 1,
+   "mentions": 2,
+   "industry": "半導體",
+   "products": [
+    "晶圓代工",
+    "IC設計-驅動IC"
+   ],
+   "status": "不在名單"
+  },
+  {
+   "code": "1806",
+   "name": "冠軍",
+   "videos": 1,
+   "mentions": 2,
+   "industry": "玻璃陶瓷",
+   "products": [],
+   "status": "不在名單"
+  },
+  {
+   "code": "3038",
+   "name": "全台",
+   "videos": 1,
+   "mentions": 2,
+   "industry": "光電",
+   "products": [],
+   "status": "不在名單"
+  },
+  {
+   "code": "6239",
+   "name": "力成",
+   "videos": 1,
+   "mentions": 2,
+   "industry": "半導體",
+   "products": [
+    "封測"
+   ],
+   "status": "不在名單"
+  },
+  {
+   "code": "3260",
+   "name": "威剛",
+   "videos": 1,
+   "mentions": 2,
+   "industry": "半導體",
+   "products": [
+    "記憶體-NAND/模組"
+   ],
+   "status": "不在名單"
+  },
+  {
+   "code": "5287",
+   "name": "數字",
+   "videos": 1,
+   "mentions": 2,
+   "industry": "居家生活",
+   "products": [],
+   "status": "不在名單"
+  }
+ ],
+ "quiet_leaders": [
+  {
+   "code": "3034",
+   "name": "聯詠",
+   "industry": "半導體",
+   "score": 100,
+   "tier": "⭐⭐⭐",
+   "chg": 3.1,
+   "products": [
+    "IC設計-驅動IC"
+   ]
+  },
+  {
+   "code": "6505",
+   "name": "台塑化",
+   "industry": "油電燃氣",
+   "score": 100,
+   "tier": "⭐⭐⭐",
+   "chg": 2.0,
+   "products": [
+    "塑化"
+   ]
+  },
+  {
+   "code": "8039",
+   "name": "台虹",
+   "industry": "電子零組件",
+   "score": 95,
+   "tier": "⭐⭐⭐",
+   "chg": 9.9,
+   "products": [
+    "CCL銅箔基板",
+    "被動元件"
+   ]
+  },
+  {
+   "code": "6426",
+   "name": "統新",
+   "industry": "通信網路",
+   "score": 90,
+   "tier": "⭐⭐⭐",
+   "chg": 9.8,
+   "products": [
+    "光通訊/光收發"
+   ]
+  },
+  {
+   "code": "7610",
+   "name": "聯友金屬-創",
+   "industry": "運動休閒",
+   "score": 80,
+   "tier": "⭐⭐⭐",
+   "chg": 9.9,
+   "products": []
+  },
+  {
+   "code": "7711",
+   "name": "永擎",
+   "industry": "電腦及週邊",
+   "score": 80,
+   "tier": "⭐⭐⭐",
+   "chg": 4.4,
+   "products": [
+    "工業電腦IPC"
+   ]
+  },
+  {
+   "code": "2466",
+   "name": "冠西電",
+   "industry": "光電",
+   "score": 80,
+   "tier": "⭐⭐⭐",
+   "chg": 3.4,
+   "products": []
+  },
+  {
+   "code": "3006",
+   "name": "晶豪科",
+   "industry": "半導體",
+   "score": 55,
+   "tier": "⭐",
+   "chg": 6.6,
+   "products": [
+    "記憶體-NAND/模組"
+   ]
+  },
+  {
+   "code": "4967",
+   "name": "十銓",
+   "industry": "半導體",
+   "score": 55,
+   "tier": "⭐",
+   "chg": 0.5,
+   "products": [
+    "記憶體-NAND/模組"
+   ]
+  },
+  {
+   "code": "2474",
+   "name": "可成",
+   "industry": "其他電子",
+   "score": 55,
+   "tier": "⭐",
+   "chg": -0.5,
+   "products": [
+    "手機/消費電子"
+   ]
+  },
+  {
+   "code": "2351",
+   "name": "順德",
+   "industry": "半導體",
+   "score": 55,
+   "tier": "⭐",
+   "chg": -2.5,
+   "products": []
+  },
+  {
+   "code": "2464",
+   "name": "盟立",
+   "industry": "其他電子",
+   "score": 55,
+   "tier": "⭐",
+   "chg": -3.8,
+   "products": []
+  },
+  {
+   "code": "9908",
+   "name": "大台北",
+   "industry": "油電燃氣",
+   "score": 50,
+   "tier": "⭐",
+   "chg": 0.5,
+   "products": []
+  },
+  {
+   "code": "5434",
+   "name": "崇越",
+   "industry": "電子通路",
+   "score": 45,
+   "tier": "⭐",
+   "chg": 0.6,
+   "products": []
+  },
+  {
+   "code": "3023",
+   "name": "信邦",
+   "industry": "電子零組件",
+   "score": 45,
+   "tier": "⭐",
+   "chg": -0.1,
+   "products": [
+    "連接器/線材"
+   ]
+  }
+ ],
+ "industries": [
+  {
+   "industry": "金融保險",
+   "ath": 31,
+   "bullish": 23,
+   "media": 0,
+   "consensus": "🔥雙買",
+   "mom": "➡️持平"
+  },
+  {
+   "industry": "電腦及週邊",
+   "ath": 22,
+   "bullish": 12,
+   "media": 1,
+   "consensus": "🔥雙買",
+   "mom": "➡️持平"
+  },
+  {
+   "industry": "電子零組件",
+   "ath": 16,
+   "bullish": 9,
+   "media": 10,
+   "consensus": "🔴雙賣",
+   "mom": "➡️持平"
+  },
+  {
+   "industry": "半導體",
+   "ath": 14,
+   "bullish": 11,
+   "media": 20,
+   "consensus": "🟡投信獨買",
+   "mom": "🔄反轉"
+  },
+  {
+   "industry": "航運",
+   "ath": 11,
+   "bullish": 6,
+   "media": 0,
+   "consensus": "🔥雙買",
+   "mom": "➡️持平"
+  },
+  {
+   "industry": "鋼鐵",
+   "ath": 9,
+   "bullish": 5,
+   "media": 1,
+   "consensus": "🟡投信獨買",
+   "mom": "🔄反轉"
+  },
+  {
+   "industry": "建材營造",
+   "ath": 8,
+   "bullish": 4,
+   "media": 0,
+   "consensus": "🟡投信獨買",
+   "mom": "➡️持平"
+  },
+  {
+   "industry": "其他",
+   "ath": 8,
+   "bullish": 3,
+   "media": 0,
+   "consensus": "🟡投信獨買",
+   "mom": "⏬加速賣"
+  },
+  {
+   "industry": "光電",
+   "ath": 7,
+   "bullish": 5,
+   "media": 2,
+   "consensus": "🔥雙買",
+   "mom": "⏫加速買"
+  },
+  {
+   "industry": "通信網路",
+   "ath": 6,
+   "bullish": 3,
+   "media": 0,
+   "consensus": "🔥雙買",
+   "mom": "⏫加速買"
+  }
+ ],
+ "labels": {
+  "v41": "V4.4 (V4.3 + 0050<20MA暫停新倉; 5y回測 +247%/CAGR 27.7%/PF 3.51/MDD -19.8%)",
+  "v2": "V2 原版 (實測 OOS PF 1.83 / 主回測 PF 1.69, 抗崩盤強·常空手)"
+ }
+}

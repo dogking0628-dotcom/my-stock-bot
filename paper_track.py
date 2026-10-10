@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Paper Track — V4.4 紙上跟單器（自動化 Phase 0，2026-09-07 起）
+Paper Track — V4.6 紙上跟單器（自動化 Phase 0，2026-09-07 起；9/10 起進場改收盤價）
 ═════════════════════════════════════════════════
 目的：驗證「訊號→實際可成交→出場」全流程與滑價，為接下單 API 收集 4 週實證。
 每個交易日收盤後跑（post_close_review.yml 15:2x 台北）：
   1) 昨日標記 exit_pending 的持倉 → 以今日開盤價出場，記入 ledger
-  2) 今晨 daily_v41_signal（若 timestamp=今天）→ 模擬限價單：開盤價 ≤ 限價上限(訊號價×1.02)成交，
-     每檔虛擬 15 萬（零股允許），成交價=開盤價
-  3) 持倉出場檢查（V4.4 規則）：收盤 < 20MA 或 < 進場×0.93 → 標記 exit_pending（明開出場）
+  2) 今晨 daily_v41_signal（若 timestamp=今天）→ V4.6：以**今日收盤價**成交，
+     每檔虛擬 15 萬（零股允許）。舊版為開盤限價單，9/10 依回測(CLOSE 5y +313.5% vs OPEN +288.0%)改制。
+  3) 持倉出場檢查（V4.6 規則，出場不變）：收盤 < 20MA 或 < 進場×0.93 → 標記 exit_pending（明開出場）
 輸出：paper_positions.json / paper_ledger.json + 統計列印（close_update 讀取顯示）
 """
 import sys, io, os, json, datetime as dt
@@ -81,17 +81,13 @@ def main():
             if any(x["ticker"] == c for x in pos["positions"]): continue
             d = day.get(c)
             if not d: continue
-            limit_hi = round((pk.get("today") or 0) * 1.02, 1)
-            if d["Open"] <= limit_hi and limit_hi > 0:
-                sh = int(PER_POS / d["Open"] / 10) * 10
-                pos["positions"].append({"ticker": c, "name": pk.get("name", ""), "entry": d["Open"],
-                                         "entry_date": ref_s, "shares": sh, "peak": d["Open"]})
-                print(f"  進場 {c} {pk.get('name')} @開盤 {d['Open']}（限價上限 {limit_hi}）")
-            else:
-                led["trades"].append({"ticker": c, "name": pk.get("name", ""), "entry": None,
-                                      "entry_date": ref_s, "shares": 0, "exit": None, "exit_date": ref_s,
-                                      "ret_pct": None, "reason": f"未成交(開{d['Open']}>限{limit_hi})"})
-                print(f"  未成交 {c}（開 {d['Open']} > 限 {limit_hi}）")
+            # V4.6（2026-09-10）：收盤前買 → 以當日收盤價成交，無限價上限、無未成交情形
+            px = d["Close"]
+            if px and px > 0:
+                sh = int(PER_POS / px / 10) * 10
+                pos["positions"].append({"ticker": c, "name": pk.get("name", ""), "entry": px,
+                                         "entry_date": ref_s, "shares": sh, "peak": px})
+                print(f"  進場 {c} {pk.get('name')} @收盤 {px}（V4.6 收盤前買）")
 
     # ③ 出場條件檢查
     for p in pos["positions"]:

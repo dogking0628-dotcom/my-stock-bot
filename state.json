@@ -1,12 +1,12 @@
 {
-  "last_run": "2026-09-11",
-  "cash": 14324.7332230056,
+  "last_run": "2026-10-08",
+  "cash": 17708.038498426915,
   "positions": [
     {
       "ticker": "AMD",
       "entry_date": "2026-05-01",
       "entry_price": 360.54,
-      "peak_price": 557.8900146484375,
+      "peak_price": 649.4199829101562,
       "shares": 27.736173
     },
     {
@@ -62,15 +62,15 @@
       "ticker": "CRL",
       "entry_date": "2026-08-05",
       "entry_price": 260.72,
-      "peak_price": 298.5799865722656,
+      "peak_price": 310.7699890136719,
       "shares": 26.347769
     },
     {
-      "ticker": "DELL",
-      "entry_date": "2026-09-11",
-      "entry_price": 567.29,
-      "peak_price": 567.29,
-      "shares": 17.45575
+      "ticker": "VLO",
+      "entry_date": "2026-09-10",
+      "entry_price": 388.95,
+      "peak_price": 443.79998779296875,
+      "shares": 17.0275
     }
   ],
   "running_ath": {}

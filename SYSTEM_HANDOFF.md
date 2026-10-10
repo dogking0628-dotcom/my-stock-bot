@@ -19,7 +19,7 @@
 | 軌道 | 內容 | 關鍵數字 |
 |---|---|---|
 | 📡 V2 | 8 條件嚴選（量比≥1.5+RSI55-75+前二強族群…），常空手，金融股常客 | OOS PF 1.83；頻率~每週1檔 |
-| 🎯 **V4.4**（9/4 上線）| 創2y月線ATH+動能≥80+科技7族群+市值≥100億+0050>MA200+7日黑名單＋**0050<自身20MA暫停新倉**；出場=收盤破20MA或進場-7%先到 | 5y +247%/CAGR27.7%/PF3.51/MDD-19.8%（vs V4.3 +186%/-28.3%；vs 0050 全持 +253%/-33.8%）|
+| 🎯 **V4.6**（9/10 上線；=V4.5+**收盤前買進**）｜前身 V4.5（警示股不追）/ V4.4（20MA減速器）| 創2y月線ATH+動能≥80+科技7族群+市值≥100億+0050>MA200+7日黑名單+0050<自身20MA暫停新倉+訊號日已觸注意漲幅標準不追；**進場=當日13:25限價(當時價×1.005)或14:00-14:30盤後定價，以收盤價成交**；出場=收盤破20MA或成交價-7%先到→隔日08:30掛單競價賣 | **正式月線定義** 5y +313.5%/CAGR32.8%/PF5.27/MDD-13.9%；2y +199.7%/PF6.31/MDD-10.5%（同定義 OPEN 為 +288.0%/4.16/-19.6%）⚠️ 舊版標示的 +250.6% 係用回測日線ATH定義，非正式系統實跑 |
 | 🌀 T2 糾結雷達 | 昨MA5/10/20帶寬<3%+首根漲≥3%量≥2x+距2y高≤15%——資訊層測試軌道非掛單 | 2y +81%/勝率34%；與V4.4僅2/178筆重疊（互補）|
 | 🔍 翻倍池 v1 | double_screener.py 量化60分（月營收動能+Quality+估值）×ChatGPT質化40分 | 正式池見 `double_pool_final.md`：S級=智邦/勤誠/緯穎/金像電/貿聯/台積電 |
 | 🔍 **翻倍池 v2**（9/6 建）| `double_screener_v2.py` 100 分制：Quality25+Growth20+Structural20+Revision15+Valuation10+Rerating10；Cycle Pool 自動分流（Normalized EPS/PE）、Double-PE Test、Bear/Base/Bull；質化欄位讀 `double_inputs_v2.json`（缺→proxy＋標「待質化」）；checkpoint 在 `data/checkpoints/s1~s3.json`（schema 版號改了自動失效）；規格原文 `Downloads/3Y_DoubleBagger_APP_v2-2.md` | 輸出 `double_candidates_v2.md/.csv`、`double_screener_v2_result.json`；續跑 `_screener_v2_loop.sh`；Forward EPS 無法人資料時用 tanh 衰減 proxy（標 proxy EPS），`--strict-eps` 則留空（ChatGPT 版原則）；S 級硬性要求已驗證 eps_fy1/fy3，<65 分歸 WATCH；inputs 支援 ChatGPT 版別名 normal_pe / revision_breadth。**v3 研究層（v2.1）**：直接讀 ChatGPT `tw_doublebagger_screener_v3.zip`（Downloads）的四個 CSV（`data/qualitative_research.csv` 分數需附 source_1~3 否則作廢、`data/scenario_inputs.csv` 人工 Bear/Base/Bull EPS×PE、`forward_consensus.csv`、`structural_inputs.csv`）；`--research-pack 30` 產生研究模板（尾端 ref_* 參考欄）；S 級另需有來源質化＋人工 Bear case＋Base≥60%＋R/R≥1.5；**v4 決策層（v2.2）**：`data/evidence_ledger.csv` 證據帳本（一列一論點，需 URL＋180 天內才有效；有新鮮證據即視為有來源）；S 級另需證據覆蓋率≥50% 否則降 A；輸出 `double_dashboard.md`（Top10＋模型組合＋重查佇列）、`double_refresh_queue.csv`、`double_model_portfolio.csv`（單檔≤20%/產業≤35%，候選不足留現金；**排行榜≠投資組合**）。**v5 追蹤層（v2.3）**：`double_holdings.json` 實際持股（9/4 對帳：群聯 1000@1990，防守線 1850）強制納入評分；`data/thesis_updates.csv`（thesis_status BROKEN/FAIL/EXIT 或 governance_red_flag → EXIT）、`data/revision_updates.csv`（1M/3M 同時 <-5% → REDUCE）；Signal Engine 輸出 ADD/HOLD/WATCH/REDUCE/EXIT 到 `double_action_queue.csv` 與儀表板；**ADD 必須有新鮮證據帳本**（比 ChatGPT 版嚴）。API 用量改為跨執行滾動一小時統計（`data/checkpoints/api_usage.json`，上限 590），checkpoint 原子寫入。**v6 Horizon Guard（v2.4）**：`eps_2026~2029` 共識映射 T+1~T+3，2026 執行只有 2029E 才算 horizon_complete，只有 2028E → `verified-T+2`、判定加註「T+2代理」、不得進 S、入重查佇列。`data/consensus_pool.csv` = ChatGPT 2026-09-06 第一版真實候選池（10 檔；法人共識為 ChatGPT 檢索、未驗證；只有台積電有 2029E）。儀表板動作表加「GPT建議」欄供對照。ChatGPT 自家腳本已知問題：缺 forward_consensus.csv 會崩潰、華邦電/南亞科因 PE>10 不會進 CYCLE |
@@ -51,6 +51,7 @@ institutional_tracker（T86投信+3主動ETF）→ smart_money_radar（外資/�
 - **改策略一律：先回測評估（2y+5y 雙窗）→ 呈數字 → 用戶拍板 → 才上線**。升級紅線：期望≥+8%/PF≥2.5/MDD≤-30%
 - 交易憲法 v1（trade-journal/FREEZE_2026-09.md）：只買訊號股、單筆≤50萬、停損不凹、App防呆先行；**翻倍池計畫性買進條款待用戶確認**
 - 用戶口報交易→立刻記 ledger.csv+日記+push；違規標 VIOLATE 但不說教過頭
+- 警示股守門（alert_guard，9/9 上線）：處置/注意/漲幅預估逐檔標示於推播；**用戶 9/9 決策：處置股標示不剔除**（仍出現在掛單，掛 🚫 警語自行判斷）
 - 部位基準（9/4）：台股=群聯1000股@1990+零股10.5萬≈212萬、現金516萬、美股~$178K、BTC~$21K；大立光誤觸事件已結（-495,876）
 
 ## 7. App 開發起點建議
@@ -68,13 +69,16 @@ institutional_tracker（T86投信+3主動ETF）→ smart_money_radar（外資/�
 - [ ] V4.4 上線後首週實際表現追蹤（9/8 週一首日報）
 
 ## 9. 影片/論點餵料 SOP（任何 session 收到用戶餵料時必守）
-1. YouTube 連結 → `python fetch_transcript.py <網址>`（2026-09-08 起自動化；底層仍是 yt-dlp `--js-runtimes node`，語言序 zh-TW→zh-Hant→zh→zh-Hans→en，人工字幕優先）→ 逐字稿落在 `data/transcripts/<上傳日>_<影片ID>.md`（段首帶 [mm:ss] 時間戳供引用），`data/transcripts/index.json` 去重。無字幕影片預設只標 no_subs，加 `--whisper`（需 `pip install faster-whisper` + ffmpeg）才轉錄，成本高，建議用戶優先給有字幕的連結。
-   - 全自動路徑：`data/video_sources.json` 填追蹤頻道（`--watch` 抓最新 N 支）、`data/video_queue.txt` 一行一支佇列（`--queue`）；`.github/workflows/transcripts.yml` 每天 UTC 11:00 跑 `--watch --queue --notify`，手機也能在 Actions 頁 `Run workflow` 貼網址觸發。
-   - 已知限制：YouTube 對 GitHub Actions 的雲端 IP 常要求登入驗證（「Sign in to confirm you're not a bot」）；遇到時本機瀏覽器匯出 cookies.txt → base64 → Secret `YT_COOKIES_B64`，或改在本機排程跑 `--watch --queue`。
-   - 全自動分析（2026-09-09 起）：`analyze_transcript.py --new` 把新逐字稿丟給 Claude（**claude-sonnet-5**，用戶 9/9 為省費用拍板；`ANALYZE_MODEL` 可改回 opus；需 `ANTHROPIC_API_KEY`；系統提示＋系統快照掛 prompt cache）；回補歷史用 `--batch --batch-wait 90` 走 Batch API 五折，批次狀態在 `data/checkpoints/analyze_batch.json`，逾時未收完再跑同指令會接著收，失敗的下次自動重送，自動萃取論點 → 對照系統快照（溫度計/ATH 名單/V4.4 訊號/持股/翻倍池）→ 分流（回測候選/到期對帳/證據候選/資訊層/playbook/否決）→ **追加到 `analyst_claims.md` 尾端（編號接續）**、完整報告 `data/transcripts/<影片ID>.analysis.md`、證據候選 `data/evidence_candidates.csv`（不直接進 evidence_ledger，人工確認後才搬）。transcripts.yml 與本機 `run_transcripts.bat`（排程 `setup_transcript_scheduler.bat` 每日 19:30）都會接著跑。模型被 system prompt 鎖死只能分流，不能出現買賣建議；任何參數/策略調整一律標「需回測」。
-   - 機器可讀論點庫 `data/claims.jsonl`（一行一條，due_check 附 check 規格：ticker/metric/op/value/window/base_date；backtest 附 rule 規格）→ `score_claims.py` 用 FinMind 日K 自動對帳到期預測（hit/miss 寫回 jsonl），產 `analyst_scorecard.md`：講者×頻道×預測類型命中率、已對帳明細、回測候選規則彙整（關鍵詞聚類）。預測時間基準一律是**影片上傳日**，所以回補舊影片也能直接評分。
-   - 回補歷史：`run_transcripts.bat backfill 20260801 20260831`（= `fetch_transcript.py --watch --scan 120 --since --until` + `analyze_transcript.py --new --max 200` + `score_claims.py`）；範圍外影片在 index 標 out_of_range 不重抓。六頻道一個月約 150~200 支，分析費用估 30~60 美元。
-2. 摘要論點 → **寫進 `analyst_claims.md`（論點驗證庫）並 commit+push**——落檔才算數，只在對話裡聊過=散失；自動分析產出的列要在下次對話覆核（自動字幕數字可能有誤）
+1. YouTube 連結 → `yt-dlp --js-runtimes node --write-subs --write-auto-subs --sub-langs "zh-TW,zh-Hant,zh"` 抓字幕（已驗證可用）；純影片檔需先裝轉錄工具（whisper），成本高，建議用戶優先給連結
+2. 摘要論點 → **寫進 `analyst_claims.md`（論點驗證庫）並 commit+push**——落檔才算數，只在對話裡聊過=散失
 3. 分流：技術規則→回測候選（雙窗+紅線）；籌碼→雷達資訊層；基本面→翻倍池質化/證據帳本；預測→掛到期日待對帳
 4. 鐵律：**論點永不直接變成買賣建議**，必須過流水線裁決；用戶「聽了想買」時提醒走進場計畫
 5. 心法類內容 → 併入 `playbook.md` 對應情境段
+6. **每支影片另產一份結構化解析**存 `video_notes/YYYY-MM-DD_講者_節目.md`，固定四段：①核心邏輯鏈（推理骨架圖）②論點清單（可驗證形式+對帳日）③**如何操作**（講者建議→直接照做的風險→翻譯成本系統的對應動作）④一句話總結；範本見 video_notes/2026-09-04 廖婉婷篇
+
+
+## 9-bis. 逐字稿自動化管線（2026-09-08～，併回 main 2026-10-10）
+- 每日：`run_transcripts.bat`（本機排程 23:00，需 `cookies.txt`）→ `fetch_transcript.py --watch --queue` → `analyze_transcript.py --new`（claude-sonnet-5；無 API key 時由雲端 session 以子代理萃取後 `ingest`）→ `score_claims.py` 對帳 → push `transcripts-local`。
+- 檔案：`data/transcripts/`、`data/claims.jsonl`、`analyst_scorecard.md`、`data/video_sources.json`、`data/video_queue.txt`；回補 `run_transcripts.bat backfill 起日 迄日`；無字幕 `run_transcripts.bat whisper`。
+- 操作節奏：`DAILY_SOP.md`；0050 對照：`benchmark_0050.py`（週報）；美股線：`us_valuation_lines.py`；最差價格表 `worst_case_table.md`；2027 目標 `target_2027_table.md`。
+- V2×V4.6 整合回測裁決：`backtest_v2_fusion.md`（差集股否決、V4.6 不改）。

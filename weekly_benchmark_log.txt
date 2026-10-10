@@ -1,0 +1,18 @@
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: 8299.TW"}}}
+$8299.TW: possibly delisted; no timezone found
+
+1 Failed download:
+['8299.TW']: possibly delisted; no timezone found
+📈 實單 vs 0050（自 2026-09-04 建倉，至 2026-09-20）
+  實單 -0.9%（-6.4 萬）
+  同錢買 0050 +0.7%（+4.6 萬）
+  → 落後 0050 1.5 個百分點（-11.0 萬）
+  本週：持股 +3.7% ｜ 0050 +2.8% ｜ 加權 +3.3%
+  台積電 +0.4% vs 0050 -0.1%（+0.4）
+  群聯 +7.4% vs 0050 +1.8%（+5.6）
+  智邦 -12.0% vs 0050 -0.1%（-12.0）
+  帆宣 +0.4% vs 0050 +0.6%（-0.2）
+  緯穎 -12.6% vs 0050 -0.1%（-12.6）
+  金像電 -9.1% vs 0050 -0.1%（-9.0）
+  順德 -2.6% vs 0050 +3.4%（-6.0）
+  判準：一年後沒贏過 0050 → 主力資金換 0050（DAILY_SOP）

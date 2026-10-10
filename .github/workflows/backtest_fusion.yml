@@ -1,0 +1,32 @@
+name: Backtest V2 x V4.6 fusion
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'data/backtest_fusion_request.json'
+
+permissions:
+  contents: write
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python backtest_v2_fusion.py 2>&1 | tee backtest_v2_fusion_log.txt
+      - name: Commit results
+        if: always()
+        run: |
+          git config user.name  "github-actions"
+          git config user.email "github-actions@github.com"
+          rm -f data/backtest_fusion_request.json
+          git add -A -- backtest_v2_fusion.json backtest_v2_fusion.md backtest_v2_fusion_log.txt data/backtest_fusion_request.json 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "backtest: V2 x V4.6 fusion 結果"
+          git pull --rebase --autostash || true
+          git push

@@ -75,3 +75,10 @@ institutional_tracker（T86投信+3主動ETF）→ smart_money_radar（外資/�
 4. 鐵律：**論點永不直接變成買賣建議**，必須過流水線裁決；用戶「聽了想買」時提醒走進場計畫
 5. 心法類內容 → 併入 `playbook.md` 對應情境段
 6. **每支影片另產一份結構化解析**存 `video_notes/YYYY-MM-DD_講者_節目.md`，固定四段：①核心邏輯鏈（推理骨架圖）②論點清單（可驗證形式+對帳日）③**如何操作**（講者建議→直接照做的風險→翻譯成本系統的對應動作）④一句話總結；範本見 video_notes/2026-09-04 廖婉婷篇
+
+
+## 9-bis. 逐字稿自動化管線（2026-09-08～，併回 main 2026-10-10）
+- 每日：`run_transcripts.bat`（本機排程 23:00，需 `cookies.txt`）→ `fetch_transcript.py --watch --queue` → `analyze_transcript.py --new`（claude-sonnet-5；無 API key 時由雲端 session 以子代理萃取後 `ingest`）→ `score_claims.py` 對帳 → push `transcripts-local`。
+- 檔案：`data/transcripts/`、`data/claims.jsonl`、`analyst_scorecard.md`、`data/video_sources.json`、`data/video_queue.txt`；回補 `run_transcripts.bat backfill 起日 迄日`；無字幕 `run_transcripts.bat whisper`。
+- 操作節奏：`DAILY_SOP.md`；0050 對照：`benchmark_0050.py`（週報）；美股線：`us_valuation_lines.py`；最差價格表 `worst_case_table.md`；2027 目標 `target_2027_table.md`。
+- V2×V4.6 整合回測裁決：`backtest_v2_fusion.md`（差集股否決、V4.6 不改）。

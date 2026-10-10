@@ -268,8 +268,8 @@ def main():
     history = git_history_signals(LOOKBACK_DAYS)
     print(f"      找到 {len(history)} 個推送日")
     if not history:
-        print("📭 無歷史訊號可檢討（系統剛上線）")
-        sys.exit(0)
+        print("📭 無歷史訊號可檢討（本週無 V2 訊號）；仍推 0050 對照")
+        history = {}
 
     print(f"[2/4] 評估每個 pick 後續走勢...")
     all_picks, by_industry, by_date = analyze_picks(history)
@@ -278,6 +278,13 @@ def main():
     print(f"[3/4] 組裝週報...")
     msg = build_message(all_picks, by_industry, by_date,
                        start_date.isoformat(), end_date.isoformat())
+
+    # 實單 vs 0050 對照（benchmark_0050.py；用戶 9/14 要求併入週報。算不出來也不擋週報）
+    try:
+        import benchmark_0050
+        msg += "\n\n" + benchmark_0050.line_block(benchmark_0050.run(write=True))
+    except Exception as e:
+        msg += f"\n\n📈 0050 對照：計算失敗（{e}）"
 
     # 輸出 JSON
     report = {

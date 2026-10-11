@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
   # 從雲端 session 也能觸發：推一個 data/backtest_request.json（內容任意）即跑；跑完自動移除
   push:
+    branches: [main]   # 只在 main 觸發；避免 Actions 把 commit 推到 transcripts-local 造成本機 push 被拒
     paths:
       - 'data/backtest_request.json'
 

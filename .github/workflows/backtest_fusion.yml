@@ -3,6 +3,7 @@ name: Backtest V2 x V4.6 fusion
 on:
   workflow_dispatch:
   push:
+    branches: [main]   # 只在 main 觸發；避免 Actions 把 commit 推到 transcripts-local 造成本機 push 被拒
     paths:
       - 'data/backtest_fusion_request.json'
 

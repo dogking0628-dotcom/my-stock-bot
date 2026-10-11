@@ -34,10 +34,10 @@ if "%1"=="backfill" (
   python -X utf8 fetch_transcript.py --only-no-subs --whisper --whisper-model %WM% --sleep 1 --max-new 500
   python -X utf8 analyze_transcript.py --batch --batch-wait 90
 ) else (
-  python -X utf8 fetch_transcript.py --watch --queue --notify
-  python -X utf8 analyze_transcript.py --new --notify
+  python -X utf8 fetch_transcript.py --watch --queue
+  python -X utf8 analyze_transcript.py --new
 )
-python -X utf8 score_claims.py --notify
+python -X utf8 score_claims.py
 
 git add data\transcripts data\video_queue.txt data\video_sources.json analyst_claims.md
 if exist data\evidence_candidates.csv git add data\evidence_candidates.csv

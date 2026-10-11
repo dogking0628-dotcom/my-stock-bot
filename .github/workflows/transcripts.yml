@@ -91,8 +91,8 @@ jobs:
           else
             EXTRA=""
             [ "${{ github.event.inputs.whisper }}" = "true" ] && EXTRA="--whisper"
-            python fetch_transcript.py --watch --queue --notify $EXTRA ${{ github.event.inputs.url }} || echo "fetch failed (non-fatal)"
-            python analyze_transcript.py --new --notify || echo "analyze failed (non-fatal)"
+            python fetch_transcript.py --watch --queue $EXTRA ${{ github.event.inputs.url }} || echo "fetch failed (non-fatal)"
+            python analyze_transcript.py --new || echo "analyze failed (non-fatal)"
           fi
 
       # 到期論點自動對帳（FinMind 日K）+ 講者命中率記分板；不依賴 YouTube，每天都能跑
@@ -101,7 +101,7 @@ jobs:
           FINMIND_TOKEN: ${{ secrets.FINMIND_TOKEN }}
           LINE_TOKEN:    ${{ secrets.LINE_TOKEN }}
           LINE_USER_ID:  ${{ secrets.LINE_USER_ID }}
-        run: python score_claims.py --notify || echo "score failed (non-fatal)"
+        run: python score_claims.py || echo "score failed (non-fatal)"
 
       - name: Commit transcripts
         run: |

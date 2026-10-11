@@ -4470,7 +4470,15 @@
     "source": "人工字幕",
     "file": "20261009_ic8Z1cwz_Bo.md",
     "paragraphs": 7,
-    "chars": 2560
+    "chars": 2560,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "ic8Z1cwz_Bo.analysis.md",
+    "claims_range": [
+      1250,
+      1257
+    ],
+    "evidence_candidates": 4,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "1nGof1UgxGA": {
     "status": "error",
@@ -4494,7 +4502,15 @@
     "source": "人工字幕",
     "file": "20261008_aMjxslF6Q7I.md",
     "paragraphs": 35,
-    "chars": 14369
+    "chars": 14369,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "aMjxslF6Q7I.analysis.md",
+    "claims_range": [
+      1184,
+      1197
+    ],
+    "evidence_candidates": 5,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "QR_UZG1D-lo": {
     "title": "【五萬點未到 先崩盤？】2026/10/7(字幕版)",
@@ -4508,7 +4524,15 @@
     "source": "人工字幕",
     "file": "20261007_QR_UZG1D-lo.md",
     "paragraphs": 35,
-    "chars": 14434
+    "chars": 14434,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "QR_UZG1D-lo.analysis.md",
+    "claims_range": [
+      1100,
+      1113
+    ],
+    "evidence_candidates": 1,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "AKRiI3JL2B8": {
     "title": "【精華】所長入手AI股？只買台積電還不夠 王昭文：這檔金像電也要有《鈔錢部署》盧燕俐 ft.王昭文 20261009",
@@ -4522,7 +4546,15 @@
     "source": "人工字幕",
     "file": "20261009_AKRiI3JL2B8.md",
     "paragraphs": 3,
-    "chars": 1214
+    "chars": 1214,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "AKRiI3JL2B8.analysis.md",
+    "claims_range": [
+      1030,
+      1037
+    ],
+    "evidence_candidates": 2,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "WF0E8zeNQ-U": {
     "status": "error",
@@ -4541,7 +4573,15 @@
     "source": "人工字幕",
     "file": "20261009_nF4JfIkPjIM.md",
     "paragraphs": 8,
-    "chars": 3107
+    "chars": 3107,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "nF4JfIkPjIM.analysis.md",
+    "claims_range": [
+      1295,
+      1301
+    ],
+    "evidence_candidates": 1,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "s9AGh0RhjrE": {
     "title": "11月石油暴跌倒計時！看估值買股票，成功抄底Space X！目標價300美金！美股台股年底大反攻全面啟動！【新高注意回撤】",
@@ -4555,7 +4595,15 @@
     "source": "人工字幕",
     "file": "20261007_s9AGh0RhjrE.md",
     "paragraphs": 12,
-    "chars": 4917
+    "chars": 4917,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "s9AGh0RhjrE.analysis.md",
+    "claims_range": [
+      1308,
+      1319
+    ],
+    "evidence_candidates": 1,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "V-QAmnaKfYY": {
     "title": "《統一有廖》台股再創新高，你選對股票了嗎? 2027年必須認識的台股三光! #日月光 #大立光 #台光電",
@@ -4757,7 +4805,15 @@
     "source": "人工字幕",
     "file": "20261008_cocWdHSMALQ.md",
     "paragraphs": 4,
-    "chars": 1409
+    "chars": 1409,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "cocWdHSMALQ.analysis.md",
+    "claims_range": [
+      1204,
+      1210
+    ],
+    "evidence_candidates": 3,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "d4Xk69pkF3s": {
     "status": "error",
@@ -4776,7 +4832,15 @@
     "source": "人工字幕",
     "file": "20261007_Uqm0N5Y_Bx8.md",
     "paragraphs": 12,
-    "chars": 4589
+    "chars": 4589,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "Uqm0N5Y_Bx8.analysis.md",
+    "claims_range": [
+      1145,
+      1158
+    ],
+    "evidence_candidates": 14,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "RcoqBd83EXE": {
     "title": "矽晶圓賣方市場回歸！報價全面轉強，台廠迎新一波商機！【懂產業 看先探】。",
@@ -4790,7 +4854,15 @@
     "source": "人工字幕",
     "file": "20261007_RcoqBd83EXE.md",
     "paragraphs": 11,
-    "chars": 4349
+    "chars": 4349,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "RcoqBd83EXE.analysis.md",
+    "claims_range": [
+      1114,
+      1123
+    ],
+    "evidence_candidates": 6,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "TE8FyaAHMgE": {
     "title": "生技瘋狂解盲潮！誰是下一檔飆王？【生技女王投資勝經#117】",
@@ -4973,7 +5045,15 @@
     "source": "人工字幕",
     "file": "20261006_Sk_lT6FqxTU.md",
     "paragraphs": 4,
-    "chars": 1415
+    "chars": 1415,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "Sk_lT6FqxTU.analysis.md",
+    "claims_range": [
+      1133,
+      1138
+    ],
+    "evidence_candidates": 4,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "iQi-bl-jnUQ": {
     "title": "美債殖利率飆高音，輝達、納斯達克仍寫歷史新高！投資人下一步看AI變現力",
@@ -4987,7 +5067,15 @@
     "source": "人工字幕",
     "file": "20261005_iQi-bl-jnUQ.md",
     "paragraphs": 20,
-    "chars": 8013
+    "chars": 8013,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "iQi-bl-jnUQ.analysis.md",
+    "claims_range": [
+      1239,
+      1249
+    ],
+    "evidence_candidates": 3,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "mkHkrme_KaA": {
     "title": "台積電海內外瘋狂擴廠，設備股底氣有多強勁？鎖定投資最錢線",
@@ -5001,7 +5089,15 @@
     "source": "人工字幕",
     "file": "20261005_mkHkrme_KaA.md",
     "paragraphs": 4,
-    "chars": 1413
+    "chars": 1413,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "mkHkrme_KaA.analysis.md",
+    "claims_range": [
+      1286,
+      1294
+    ],
+    "evidence_candidates": 5,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "7HEvzQeX85o": {
     "status": "error",
@@ -5188,7 +5284,15 @@
     "source": "人工字幕",
     "file": "20261003_ogfbIyGA9YY.md",
     "paragraphs": 4,
-    "chars": 1570
+    "chars": 1570,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "ogfbIyGA9YY.analysis.md",
+    "claims_range": [
+      1302,
+      1307
+    ],
+    "evidence_candidates": 5,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "Rh4Dkhk0r6Y": {
     "title": "金居(8358)獲利準備跳升，高階銅箔缺貨潮來了！鎖定投資最錢線。",
@@ -5202,7 +5306,15 @@
     "source": "人工字幕",
     "file": "20261002_Rh4Dkhk0r6Y.md",
     "paragraphs": 12,
-    "chars": 4859
+    "chars": 4859,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "Rh4Dkhk0r6Y.analysis.md",
+    "claims_range": [
+      1124,
+      1132
+    ],
+    "evidence_candidates": 5,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "G8wobBulZbY": {
     "title": "AI算力進入GW時代！客製ASIC帶動台廠供應鏈長周期擴產！鎖定投資最錢線。",
@@ -5216,7 +5328,15 @@
     "source": "人工字幕",
     "file": "20261002_G8wobBulZbY.md",
     "paragraphs": 4,
-    "chars": 1506
+    "chars": 1506,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "G8wobBulZbY.analysis.md",
+    "claims_range": [
+      1038,
+      1043
+    ],
+    "evidence_candidates": 4,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "kW0wSz7zOZE": {
     "status": "error",
@@ -5235,7 +5355,15 @@
     "source": "人工字幕",
     "file": "20261001_N_ZJRbllYmg.md",
     "paragraphs": 10,
-    "chars": 3586
+    "chars": 3586,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "N_ZJRbllYmg.analysis.md",
+    "claims_range": [
+      1076,
+      1085
+    ],
+    "evidence_candidates": 5,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "YbZa8L_hMjo": {
     "status": "error",
@@ -5926,7 +6054,15 @@
     "source": "人工字幕",
     "file": "20261006_kSNGw0qlCl8.md",
     "paragraphs": 28,
-    "chars": 11475
+    "chars": 11475,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "kSNGw0qlCl8.analysis.md",
+    "claims_range": [
+      1258,
+      1271
+    ],
+    "evidence_candidates": 3,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "Ut9XagjrYIk": {
     "title": "【五萬點了 我1.25億0050 明天賣?】2026/10/5(字幕版)",
@@ -5940,7 +6076,15 @@
     "source": "人工字幕",
     "file": "20261005_Ut9XagjrYIk.md",
     "paragraphs": 38,
-    "chars": 14700
+    "chars": 14700,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "Ut9XagjrYIk.analysis.md",
+    "claims_range": [
+      1159,
+      1172
+    ],
+    "evidence_candidates": 4,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "epemzSNOXTU": {
     "title": "【國巨1000、華新科600、環球晶2000、中美晶300 何時?】2026/10/2(字幕版)",
@@ -5954,7 +6098,15 @@
     "source": "人工字幕",
     "file": "20261002_epemzSNOXTU.md",
     "paragraphs": 35,
-    "chars": 14242
+    "chars": 14242,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "epemzSNOXTU.analysis.md",
+    "claims_range": [
+      1211,
+      1224
+    ],
+    "evidence_candidates": 1,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "IcVJY2b3BkU": {
     "title": "【十月 五萬或五萬二?】2026/10/1(字幕版)",
@@ -5968,7 +6120,15 @@
     "source": "人工字幕",
     "file": "20261001_IcVJY2b3BkU.md",
     "paragraphs": 35,
-    "chars": 14397
+    "chars": 14397,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "IcVJY2b3BkU.analysis.md",
+    "claims_range": [
+      1056,
+      1069
+    ],
+    "evidence_candidates": 3,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "En8htZuSRuo": {
     "status": "out_of_range",
@@ -8154,7 +8314,15 @@
     "source": "人工字幕",
     "file": "20261008_ONceGQVXw_k.md",
     "paragraphs": 24,
-    "chars": 9568
+    "chars": 9568,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "ONceGQVXw_k.analysis.md",
+    "claims_range": [
+      1086,
+      1099
+    ],
+    "evidence_candidates": 3,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "wIrV0uI2rb8": {
     "title": "【精華】凱基金有夠強！大數據挑金融股 富邦金、國泰金、上海商銀誰最能存？《鈔錢部署》盧燕俐 ft.王昭文 20261007",
@@ -8168,7 +8336,15 @@
     "source": "人工字幕",
     "file": "20261007_wIrV0uI2rb8.md",
     "paragraphs": 8,
-    "chars": 3088
+    "chars": 3088,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "wIrV0uI2rb8.analysis.md",
+    "claims_range": [
+      1320,
+      1326
+    ],
+    "evidence_candidates": 4,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "Gc6VlnH-48Y": {
     "title": "亞馬遜砸16億入股 金像電還能追？台股迎5萬選它穩贏 3檔金融明年股利噴《鈔錢部署》盧燕俐 ft.王昭文 20261006",
@@ -8182,7 +8358,15 @@
     "source": "人工字幕",
     "file": "20261006_Gc6VlnH-48Y.md",
     "paragraphs": 22,
-    "chars": 8256
+    "chars": 8256,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "Gc6VlnH-48Y.analysis.md",
+    "claims_range": [
+      1044,
+      1055
+    ],
+    "evidence_candidates": 4,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "TCijb9aYGPE": {
     "title": "【精華】AI巨獸紛紛掛牌上市！大撒幣真能回收？船長：營收貨真價實而且不小《鈔錢部署》盧燕俐 ft.美股航海王船長 20261004",
@@ -8196,7 +8380,15 @@
     "source": "人工字幕",
     "file": "20261004_TCijb9aYGPE.md",
     "paragraphs": 6,
-    "chars": 2152
+    "chars": 2152,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "TCijb9aYGPE.analysis.md",
+    "claims_range": [
+      1139,
+      1144
+    ],
+    "evidence_candidates": 3,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "aowRGYDYA_8": {
     "title": "【精華】Meta Muse AI爆紅誰能分杯羹？沈萬鈞也推聯發科、健策2檔吃香《鈔錢部署》盧燕俐 ft.沈萬鈞 20261003",
@@ -8210,7 +8402,15 @@
     "source": "人工字幕",
     "file": "20261003_aowRGYDYA_8.md",
     "paragraphs": 6,
-    "chars": 2155
+    "chars": 2155,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "aowRGYDYA_8.analysis.md",
+    "claims_range": [
+      1198,
+      1203
+    ],
+    "evidence_candidates": 3,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "Km-XbfGIl9w": {
     "title": "【精華】高股息ETF竟不輸市值型？0056、00878、00919選誰 博傑哥1招挑《鈔錢部署》盧燕俐 ft.許博傑 20261002",
@@ -8224,7 +8424,15 @@
     "source": "人工字幕",
     "file": "20261002_Km-XbfGIl9w.md",
     "paragraphs": 4,
-    "chars": 1557
+    "chars": 1557,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "Km-XbfGIl9w.analysis.md",
+    "claims_range": [
+      1070,
+      1075
+    ],
+    "evidence_candidates": 1,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "kscDP94QsP4": {
     "title": "友達股價能追上群創？面板雙虎噴出 現在能買？Muse爆紅卡位2檔賺 00662一拆五能搶嗎？《鈔錢部署》盧燕俐 ft.沈萬鈞 船長 20261001",
@@ -8238,7 +8446,15 @@
     "source": "人工字幕",
     "file": "20261001_kscDP94QsP4.md",
     "paragraphs": 25,
-    "chars": 9708
+    "chars": 9708,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "kscDP94QsP4.analysis.md",
+    "claims_range": [
+      1272,
+      1285
+    ],
+    "evidence_candidates": 5,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "WvvSkFaxEVA": {
     "status": "out_of_range",
@@ -10365,7 +10581,15 @@
     "source": "人工字幕",
     "file": "20261002_VeIQL5jK5TY.md",
     "paragraphs": 13,
-    "chars": 5138
+    "chars": 5138,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "VeIQL5jK5TY.analysis.md",
+    "claims_range": [
+      1173,
+      1183
+    ],
+    "evidence_candidates": 6,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "MYCuKwTXmrw": {
     "status": "out_of_range",
@@ -11207,7 +11431,15 @@
     "source": "人工字幕",
     "file": "20261010_A4Pvexwp58s.md",
     "paragraphs": 27,
-    "chars": 10974
+    "chars": 10974,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "A4Pvexwp58s.analysis.md",
+    "claims_range": [
+      1016,
+      1029
+    ],
+    "evidence_candidates": 6,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "fKTdAOhw2mw": {
     "title": "AI伺服器狂吃MLCC！用量暴增10～15倍，台廠誰最受惠？#大叔充電站-產業EP158#劉烱德",
@@ -11221,7 +11453,15 @@
     "source": "人工字幕",
     "file": "20261008_fKTdAOhw2mw.md",
     "paragraphs": 8,
-    "chars": 2947
+    "chars": 2947,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "fKTdAOhw2mw.analysis.md",
+    "claims_range": [
+      1225,
+      1232
+    ],
+    "evidence_candidates": 7,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "NC8WxObOd4c": {
     "title": "磷化銦雷射不一定贏？Micro LED成AI光通訊新霸主！3檔黑馬誰先爆發？【產業姸究室】2026.10.06 股市甜心 分析師劉姸希",
@@ -11403,7 +11643,15 @@
     "source": "人工字幕",
     "file": "20261001_gGp6iulVnRQ.md",
     "paragraphs": 8,
-    "chars": 3076
+    "chars": 3076,
+    "analyzed_at": "2026-10-11T02:14",
+    "analysis": "gGp6iulVnRQ.analysis.md",
+    "claims_range": [
+      1233,
+      1238
+    ],
+    "evidence_candidates": 4,
+    "model": "claude-sonnet-5 (subagent)"
   },
   "6rSZq0CoX0E": {
     "status": "out_of_range",

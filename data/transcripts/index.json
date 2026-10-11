@@ -4482,13 +4482,13 @@
   },
   "1nGof1UgxGA": {
     "status": "error",
-    "error": "\u001b[0;31mERROR:\u001b[0m [youtube] 1nGof1UgxGA: This video is available to this channel's members on level: 先探金粉 (or any higher level). Join this channel to get access to members-only content and other exclu",
-    "fetched_at": "2026-10-10T09:27"
+    "error": "ERROR: [youtube] 1nGof1UgxGA: This video is available to this channel's members on level: 先探金粉 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
+    "fetched_at": "2026-10-11T16:30"
   },
   "2VMzb85lHiA": {
     "status": "error",
-    "error": "\u001b[0;31mERROR:\u001b[0m [youtube] 2VMzb85lHiA: This video is available to this channel's members on level: 先探鐵粉 (or any higher level). Join this channel to get access to members-only content and other exclu",
-    "fetched_at": "2026-10-10T09:27"
+    "error": "ERROR: [youtube] 2VMzb85lHiA: This video is available to this channel's members on level: 先探鐵粉 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
+    "fetched_at": "2026-10-11T16:30"
   },
   "aMjxslF6Q7I": {
     "title": "【雙十連假後 崩盤來真的?】2026/10/8(字幕版)",
@@ -4611,16 +4611,17 @@
     "upload_date": "20261005",
     "duration": 839,
     "url": "https://www.youtube.com/watch?v=V-QAmnaKfYY",
-    "fetched_at": "2026-10-10T10:41",
-    "status": "no_subs",
+    "fetched_at": "2026-10-11T16:30",
+    "status": "error",
     "available_langs": [
       "live_chat"
-    ]
+    ],
+    "error": "ERROR: [youtube] V-QAmnaKfYY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-"
   },
   "ohrBSqxP_JM": {
-    "status": "out_of_range",
+    "status": "error",
     "error": "ERROR: [youtube] ohrBSqxP_JM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-10-10T00:14",
+    "fetched_at": "2026-10-11T16:30",
     "title": "《華爾街劇透社》中秋變盤？為何升息，台股創高？多頭要結束了嗎? Feat.統一期貨",
     "upload_date": "20260924",
     "range": "20261001-20261010"
@@ -4631,8 +4632,8 @@
     "upload_date": "20261009",
     "duration": 1018,
     "url": "https://www.youtube.com/watch?v=9LLUj2mnt3I",
-    "fetched_at": "2026-10-10T10:49",
-    "status": "no_subs",
+    "fetched_at": "2026-10-11T16:30",
+    "status": "error",
     "available_langs": [
       "aa",
       "ab",
@@ -4791,7 +4792,8 @@
       "zh-Hans",
       "zh-Hant",
       "zu"
-    ]
+    ],
+    "error": "ERROR: [youtube] 9LLUj2mnt3I: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-"
   },
   "cocWdHSMALQ": {
     "title": "台積電二奈米放量，誰掌握良率關鍵？研磨化學耗材商機升溫！鎖定投資最錢線。",
@@ -13824,5 +13826,10 @@
     "title": "【產業妍究室】關稅大刀下　竟然也有受惠概念股?!貿聯-KY、佳世達、矽瑪、映興2024.12.03 股市甜心  分析師劉妍希",
     "upload_date": "20241203",
     "range": "20261001-20261010"
+  },
+  "7kPmbA5SCh4": {
+    "status": "error",
+    "error": "ERROR: [youtube] 7kPmbA5SCh4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-10-11T16:30"
   }
 }

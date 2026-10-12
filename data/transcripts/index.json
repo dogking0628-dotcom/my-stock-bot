@@ -4611,7 +4611,7 @@
     "upload_date": "20261005",
     "duration": 839,
     "url": "https://www.youtube.com/watch?v=V-QAmnaKfYY",
-    "fetched_at": "2026-10-11T16:30",
+    "fetched_at": "2026-10-12T20:06",
     "status": "error",
     "available_langs": [
       "live_chat"
@@ -4621,7 +4621,7 @@
   "ohrBSqxP_JM": {
     "status": "error",
     "error": "ERROR: [youtube] ohrBSqxP_JM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-10-11T16:30",
+    "fetched_at": "2026-10-12T20:06",
     "title": "《華爾街劇透社》中秋變盤？為何升息，台股創高？多頭要結束了嗎? Feat.統一期貨",
     "upload_date": "20260924",
     "range": "20261001-20261010"
@@ -13830,6 +13830,26 @@
   "7kPmbA5SCh4": {
     "status": "error",
     "error": "ERROR: [youtube] 7kPmbA5SCh4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-10-11T16:30"
+    "fetched_at": "2026-10-12T20:06"
+  },
+  "n2lCEGHGCt0": {
+    "status": "error",
+    "error": "ERROR: [youtube] n2lCEGHGCt0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-10-12T20:05"
+  },
+  "W3Fq3Myyqbg": {
+    "status": "error",
+    "error": "ERROR: [youtube] W3Fq3Myyqbg: This video is available to this channel's members on level: 先探金粉 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
+    "fetched_at": "2026-10-12T20:05"
+  },
+  "48_ZmI6yIYk": {
+    "status": "error",
+    "error": "ERROR: [youtube] 48_ZmI6yIYk: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-10-12T20:06"
+  },
+  "QmBZNnOcDBE": {
+    "status": "error",
+    "error": "ERROR: [youtube] QmBZNnOcDBE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-10-12T20:06"
   }
 }

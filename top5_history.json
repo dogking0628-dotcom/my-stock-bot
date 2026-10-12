@@ -1,28 +1,6 @@
 {
   "records": [
     {
-      "date": "2026-08-17",
-      "industry": "電腦及週邊",
-      "picks": [
-        {
-          "ticker": "2357",
-          "name": "華碩",
-          "industry": "電腦及週邊",
-          "rec_close": 996.0,
-          "momentum_score": 85,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "投信+420張"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 79.64824120603015,
-          "change_pct_at_rec": 6.296691568836721,
-          "vol_ratio_at_rec": 1.1367212174062273
-        }
-      ]
-    },
-    {
       "date": "2026-08-18",
       "industry": "電子零組件",
       "picks": [
@@ -1424,6 +1402,29 @@
           "rsi": 86.20689655172414,
           "change_pct_at_rec": 7.692307692307687,
           "vol_ratio_at_rec": 6.714461996193046
+        }
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "industry": "電子零組件",
+      "picks": [
+        {
+          "ticker": "4938",
+          "name": "和碩",
+          "industry": "電腦及週邊",
+          "rec_close": 98.5999984741211,
+          "momentum_score": 95,
+          "momentum_notes": [
+            "量爆價揚",
+            "ATH",
+            "QQQ+0.5%",
+            "IGV+2.8%"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 74.69877690739389,
+          "change_pct_at_rec": 9.921964134529793,
+          "vol_ratio_at_rec": 3.7304099525117485
         }
       ]
     }

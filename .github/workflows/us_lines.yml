@@ -31,5 +31,5 @@ jobs:
           rm -f data/us_lines_request.json
           git add -A -- us_holdings_lines.json us_holdings_lines.md tw_holdings_lines.json weekly_benchmark.json weekly_benchmark.md weekly_benchmark_log.txt us_holdings_lines_log.txt us_rerating.json tw_rerating.json us_rerating_log.txt data/us_lines_request.json 2>/dev/null || true
           git diff --staged --quiet || git commit -m "us: 持股估值與出場線快照"
-          git pull --rebase --autostash || true
+          git pull --rebase --autostash -X theirs || { git rebase --abort 2>/dev/null; git stash drop 2>/dev/null; echo "[WARN] rebase 衝突，改以本次產出覆蓋"; git fetch origin main && git reset --soft origin/main && git commit -qm "chore: update state $(date -u +%Y-%m-%d) (post-conflict)" || true; }
           git push

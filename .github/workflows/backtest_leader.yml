@@ -37,5 +37,5 @@ jobs:
             git add -A -- "$f" 2>/dev/null || true
           done
           git diff --staged --quiet || git commit -m "backtest: 龍頭補漲 2y+5y 結果"
-          git pull --rebase --autostash || true
+          git pull --rebase --autostash -X theirs || { git rebase --abort 2>/dev/null; git stash drop 2>/dev/null; echo "[WARN] rebase 衝突，改以本次產出覆蓋"; git fetch origin main && git reset --soft origin/main && git commit -qm "chore: update state $(date -u +%Y-%m-%d) (post-conflict)" || true; }
           git push

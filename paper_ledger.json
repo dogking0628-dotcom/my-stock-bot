@@ -98,6 +98,28 @@
    "exit_date": "2026-10-08",
    "ret_pct": -14.83,
    "reason": "-7%樓地板"
+  },
+  {
+   "ticker": "2409",
+   "name": "友達",
+   "entry": 38.55,
+   "entry_date": "2026-09-30",
+   "shares": 3890,
+   "exit": 34.7,
+   "exit_date": "2026-10-13",
+   "ret_pct": -10.46,
+   "reason": "-7%樓地板"
+  },
+  {
+   "ticker": "6805",
+   "name": "富世達",
+   "entry": 2455.0,
+   "entry_date": "2026-09-30",
+   "shares": 60,
+   "exit": 2220.0,
+   "exit_date": "2026-10-13",
+   "ret_pct": -10.04,
+   "reason": "-7%樓地板"
   }
  ],
  "started": "2026-09-07"

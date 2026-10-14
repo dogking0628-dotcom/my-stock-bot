@@ -1,92 +1,6 @@
 {
   "records": [
     {
-      "date": "2026-08-18",
-      "industry": "電子零組件",
-      "picks": [
-        {
-          "ticker": "2059",
-          "name": "川湖",
-          "industry": "電子零組件",
-          "rec_close": 14370.0,
-          "momentum_score": 85,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "投信+386張"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 96.16613418530352,
-          "change_pct_at_rec": 4.509090909090907,
-          "vol_ratio_at_rec": 2.5050311551819187
-        },
-        {
-          "ticker": "3037",
-          "name": "欣興",
-          "industry": "電子零組件",
-          "rec_close": 1145.0,
-          "momentum_score": 85,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "投信+150張"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 96.34888438133875,
-          "change_pct_at_rec": 2.2321428571428603,
-          "vol_ratio_at_rec": 1.6017529948149498
-        },
-        {
-          "ticker": "3008",
-          "name": "大立光",
-          "industry": "光電",
-          "rec_close": 5290.0,
-          "momentum_score": 85,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "投信+137張"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 78.85196868098913,
-          "change_pct_at_rec": 4.339250493096647,
-          "vol_ratio_at_rec": 1.6067794388127752
-        },
-        {
-          "ticker": "3450",
-          "name": "聯鈞",
-          "industry": "半導體",
-          "rec_close": 579.0,
-          "momentum_score": 85,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "投信+1,892張"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 74.91289198606272,
-          "change_pct_at_rec": 5.272727272727273,
-          "vol_ratio_at_rec": 2.0381777437159654
-        },
-        {
-          "ticker": "5434",
-          "name": "崇越",
-          "industry": "電子通路",
-          "rec_close": 553.0,
-          "momentum_score": 85,
-          "momentum_notes": [
-            "跳空缺口",
-            "ATH",
-            "投信+460張"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 70.29702970297029,
-          "change_pct_at_rec": 7.170542635658905,
-          "vol_ratio_at_rec": 2.464627916967317
-        }
-      ]
-    },
-    {
       "date": "2026-08-19",
       "industry": "電子零組件",
       "picks": [
@@ -1425,6 +1339,29 @@
           "rsi": 74.69877690739389,
           "change_pct_at_rec": 9.921964134529793,
           "vol_ratio_at_rec": 3.7304099525117485
+        }
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "industry": "電子零組件",
+      "picks": [
+        {
+          "ticker": "6278",
+          "name": "台表科",
+          "industry": "光電",
+          "rec_close": 290.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步",
+            "投信+13張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 86.87258687258688,
+          "change_pct_at_rec": 9.84848484848484,
+          "vol_ratio_at_rec": 0.6574941381651678
         }
       ]
     }

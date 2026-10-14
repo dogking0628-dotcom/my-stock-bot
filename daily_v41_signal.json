@@ -1,47 +1,48 @@
 {
-  "timestamp": "2026-10-12",
+  "timestamp": "2026-10-14",
   "strategy": "V4.6 (V4.5 + 收盤前買進; 正式月線定義回測 5y +313.5%/PF 5.27/MDD -13.9%, 2y +199.7%/PF 6.31/MDD -10.5%)",
   "entry_timing": "收盤前買（13:25 限價=當時價×1.005 或 14:00-14:30 盤後定價）",
   "strongest_industry": "電子零組件",
   "v4_blocked": false,
   "picks": [
     {
-      "today": 98.5999984741211,
-      "monthly_max_2y": 91.0999984741211,
-      "ratio": 1.082327114441506,
-      "from_high_pct": 8.23271144415061,
+      "today": 290.0,
+      "monthly_max_2y": 218.0,
+      "ratio": 1.3302752293577982,
+      "from_high_pct": 33.02752293577982,
       "bullish": true,
       "bullish_fast": true,
-      "change_pct": 9.921964134529793,
-      "vol_ratio": 3.7304099525117485,
-      "rsi": 74.69877690739389,
-      "ma5": 91.39999847412109,
-      "ma20": 90.53000030517578,
-      "ma60": 89.09500020345052,
-      "ma200": 79.14644321441651,
+      "change_pct": 9.84848484848484,
+      "vol_ratio": 0.6574941381651678,
+      "rsi": 86.87258687258688,
+      "ma5": 265.0,
+      "ma20": 220.225,
+      "ma60": 189.44166666666666,
+      "ma200": 154.1402786254883,
       "gap_up": true,
       "close_near_high": true,
-      "long_red": true,
-      "tangle": {
-        "band_pct": 0.71,
-        "dist_high_pct": 2.8
-      },
-      "ticker": "4938",
-      "name": "和碩",
-      "industry": "電腦及週邊",
-      "industry_strong": false,
-      "market_cap_billions": 2242.28982784,
+      "long_red": false,
+      "tangle": null,
+      "ticker": "6278",
+      "name": "台表科",
+      "industry": "光電",
+      "industry_strong": true,
+      "market_cap_billions": 481.16072448,
       "mcap_pass": true,
-      "sitc_net_shares": -89000,
-      "momentum_score": 95,
+      "sitc_net_shares": 13000,
+      "momentum_score": 100,
       "momentum_notes": [
-        "量爆價揚",
+        "漲停鎖死",
         "ATH",
-        "QQQ+0.5%",
-        "IGV+2.8%"
+        "族群同步",
+        "投信+13張"
       ],
       "tier": "⭐⭐⭐",
-      "next_day_prob": "≥85%"
+      "next_day_prob": "≥85%",
+      "alert": {
+        "level": "NEAR",
+        "msg": "📈接近注意線:6日+32%(再0.2pp觸注意)"
+      }
     }
   ]
 }

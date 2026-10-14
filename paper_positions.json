@@ -7,8 +7,8 @@
    "entry_date": "2026-09-22",
    "shares": 10,
    "peak": 8600.0,
-   "last_close": 8095.0,
-   "unreal_pct": -3.34
+   "last_close": 8245.0,
+   "unreal_pct": -1.55
   },
   {
    "ticker": "6257",
@@ -17,8 +17,8 @@
    "entry_date": "2026-09-22",
    "shares": 600,
    "peak": 287.0,
-   "last_close": 279.0,
-   "unreal_pct": 12.05
+   "last_close": 277.0,
+   "unreal_pct": 11.24
   },
   {
    "ticker": "3711",
@@ -27,8 +27,8 @@
    "entry_date": "2026-09-23",
    "shares": 210,
    "peak": 762.0,
-   "last_close": 740.0,
-   "unreal_pct": 6.78
+   "last_close": 747.0,
+   "unreal_pct": 7.79
   },
   {
    "ticker": "6526",
@@ -37,8 +37,8 @@
    "entry_date": "2026-09-23",
    "shares": 170,
    "peak": 842.0,
-   "last_close": 783.0,
-   "unreal_pct": -6.79
+   "last_close": 802.0,
+   "unreal_pct": -4.52
   },
   {
    "ticker": "6456",
@@ -47,8 +47,8 @@
    "entry_date": "2026-09-24",
    "shares": 1840,
    "peak": 102.0,
-   "last_close": 97.4,
-   "unreal_pct": 19.8
+   "last_close": 91.2,
+   "unreal_pct": 12.18
   },
   {
    "ticker": "6414",
@@ -57,8 +57,8 @@
    "entry_date": "2026-09-29",
    "shares": 370,
    "peak": 407.5,
-   "last_close": 402.5,
-   "unreal_pct": 1.13
+   "last_close": 404.0,
+   "unreal_pct": 1.51
   },
   {
    "ticker": "6672",
@@ -67,8 +67,8 @@
    "entry_date": "2026-09-30",
    "shares": 400,
    "peak": 598.0,
-   "last_close": 539.0,
-   "unreal_pct": 46.07
+   "last_close": 592.0,
+   "unreal_pct": 60.43
   },
   {
    "ticker": "6691",
@@ -77,8 +77,8 @@
    "entry_date": "2026-10-01",
    "shares": 200,
    "peak": 794.0,
-   "last_close": 720.0,
-   "unreal_pct": -1.77
+   "last_close": 734.0,
+   "unreal_pct": 0.14
   },
   {
    "ticker": "6196",
@@ -87,20 +87,8 @@
    "entry_date": "2026-10-02",
    "shares": 240,
    "peak": 679.0,
-   "last_close": 641.0,
-   "unreal_pct": 3.72
-  },
-  {
-   "ticker": "2455",
-   "name": "全新",
-   "entry": 580.0,
-   "entry_date": "2026-10-02",
-   "shares": 250,
-   "peak": 606.0,
-   "last_close": 508.0,
-   "unreal_pct": -12.41,
-   "exit_pending": true,
-   "exit_reason": "-7%樓地板"
+   "last_close": 656.0,
+   "unreal_pct": 6.15
   },
   {
    "ticker": "5434",
@@ -109,8 +97,8 @@
    "entry_date": "2026-10-05",
    "shares": 240,
    "peak": 620.0,
-   "last_close": 595.0,
-   "unreal_pct": -4.03
+   "last_close": 596.0,
+   "unreal_pct": -3.87
   },
   {
    "ticker": "3044",
@@ -118,9 +106,9 @@
    "entry": 579.0,
    "entry_date": "2026-10-06",
    "shares": 250,
-   "peak": 582.0,
-   "last_close": 572.0,
-   "unreal_pct": -1.21
+   "peak": 603.0,
+   "last_close": 603.0,
+   "unreal_pct": 4.15
   },
   {
    "ticker": "4938",
@@ -129,9 +117,19 @@
    "entry_date": "2026-10-12",
    "shares": 1520,
    "peak": 102.5,
-   "last_close": 102.5,
-   "unreal_pct": 3.96
+   "last_close": 100.0,
+   "unreal_pct": 1.42
+  },
+  {
+   "ticker": "6278",
+   "name": "台表科",
+   "entry": 290.0,
+   "entry_date": "2026-10-14",
+   "shares": 510,
+   "peak": 290.0,
+   "last_close": 290.0,
+   "unreal_pct": 0.0
   }
  ],
- "last_run": "2026-10-13"
+ "last_run": "2026-10-14"
 }

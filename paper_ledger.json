@@ -120,6 +120,17 @@
    "exit_date": "2026-10-13",
    "ret_pct": -10.04,
    "reason": "-7%樓地板"
+  },
+  {
+   "ticker": "2455",
+   "name": "全新",
+   "entry": 580.0,
+   "entry_date": "2026-10-02",
+   "shares": 250,
+   "exit": 508.0,
+   "exit_date": "2026-10-14",
+   "ret_pct": -12.88,
+   "reason": "-7%樓地板"
   }
  ],
  "started": "2026-09-07"

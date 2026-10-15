@@ -4611,7 +4611,7 @@
     "upload_date": "20261005",
     "duration": 839,
     "url": "https://www.youtube.com/watch?v=V-QAmnaKfYY",
-    "fetched_at": "2026-10-12T20:06",
+    "fetched_at": "2026-10-15T15:30",
     "status": "error",
     "available_langs": [
       "live_chat"
@@ -13870,7 +13870,7 @@
   "pNIyJBsuJ8A": {
     "status": "error",
     "error": "ERROR: [youtube] pNIyJBsuJ8A: This video is available to this channel's members on level: 先探鐵粉 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
-    "fetched_at": "2026-10-14T15:40"
+    "fetched_at": "2026-10-15T15:29"
   },
   "Ti3KoiWXeas": {
     "status": "error",
@@ -13885,12 +13885,21 @@
   "x1i0ZAafUCA": {
     "status": "error",
     "error": "ERROR: [youtube] x1i0ZAafUCA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-10-14T15:41"
+    "fetched_at": "2026-10-15T15:29"
   },
   "r4whFhA2IiY": {
-    "status": "error",
-    "error": "ERROR: [youtube] r4whFhA2IiY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-10-14T15:41"
+    "title": "【精華】主動式ETF經理人誰最強？健檢00418A 1招大啖代理式AI商機《鈔錢部署》盧燕俐 ft.沈萬鈞 20261014",
+    "channel": "鈔錢部署–華視優選",
+    "upload_date": "20261014",
+    "duration": 1060,
+    "url": "https://www.youtube.com/watch?v=r4whFhA2IiY",
+    "fetched_at": "2026-10-15T15:29",
+    "status": "ok",
+    "lang": "zh-TW",
+    "source": "人工字幕",
+    "file": "20261014_r4whFhA2IiY.md",
+    "paragraphs": 13,
+    "chars": 5051
   },
   "9ibWZZWIpI8": {
     "status": "error",
@@ -13900,6 +13909,41 @@
   "G_pLLCe5zSU": {
     "status": "error",
     "error": "ERROR: [youtube] G_pLLCe5zSU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-10-14T15:41"
+    "fetched_at": "2026-10-15T15:29"
+  },
+  "rQZhMKeJYgk": {
+    "status": "error",
+    "error": "ERROR: [youtube] rQZhMKeJYgk: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-10-15T15:29"
+  },
+  "b4PVbjmSa9M": {
+    "status": "error",
+    "error": "ERROR: [youtube] b4PVbjmSa9M: This video is available to this channel's members on level: 先探金粉 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
+    "fetched_at": "2026-10-15T15:29"
+  },
+  "vPVWmdMm2sg": {
+    "status": "error",
+    "error": "ERROR: [youtube] vPVWmdMm2sg: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-10-15T15:29"
+  },
+  "aBJQT2o2VfQ": {
+    "status": "error",
+    "error": "ERROR: [youtube] aBJQT2o2VfQ: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-10-15T15:29"
+  },
+  "E6EGSBXC3qg": {
+    "status": "error",
+    "error": "ERROR: [youtube] E6EGSBXC3qg: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-10-15T15:29"
+  },
+  "U2lYNSAhOYY": {
+    "status": "error",
+    "error": "ERROR: [youtube] U2lYNSAhOYY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-10-15T15:30"
+  },
+  "4DtrnPFUQSA": {
+    "status": "error",
+    "error": "ERROR: [youtube] 4DtrnPFUQSA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-10-15T15:30"
   }
 }

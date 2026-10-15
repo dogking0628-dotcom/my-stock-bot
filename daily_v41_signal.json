@@ -1,10 +1,44 @@
 {
-  "timestamp": "2026-10-14",
+  "timestamp": "2026-10-15",
   "strategy": "V4.6 (V4.5 + 收盤前買進; 正式月線定義回測 5y +313.5%/PF 5.27/MDD -13.9%, 2y +199.7%/PF 6.31/MDD -10.5%)",
   "entry_timing": "收盤前買（13:25 限價=當時價×1.005 或 14:00-14:30 盤後定價）",
   "strongest_industry": "電子零組件",
   "v4_blocked": false,
   "picks": [
+    {
+      "today": 557.0,
+      "monthly_max_2y": 442.0,
+      "ratio": 1.260180995475113,
+      "from_high_pct": 26.01809954751131,
+      "bullish": true,
+      "bullish_fast": true,
+      "change_pct": 9.861932938856022,
+      "vol_ratio": 1.072909570385145,
+      "rsi": 75.29976019184652,
+      "ma5": 502.8,
+      "ma20": 451.375,
+      "ma60": 394.72914021809896,
+      "ma200": 333.569421005249,
+      "gap_up": false,
+      "close_near_high": true,
+      "long_red": true,
+      "tangle": null,
+      "ticker": "6715",
+      "name": "嘉基",
+      "industry": "電子零組件",
+      "industry_strong": true,
+      "market_cap_billions": 287.27619584,
+      "mcap_pass": true,
+      "sitc_net_shares": 0,
+      "momentum_score": 100,
+      "momentum_notes": [
+        "漲停鎖死",
+        "ATH",
+        "族群同步"
+      ],
+      "tier": "⭐⭐⭐",
+      "next_day_prob": "≥85%"
+    },
     {
       "today": 290.0,
       "monthly_max_2y": 218.0,
@@ -13,7 +47,7 @@
       "bullish": true,
       "bullish_fast": true,
       "change_pct": 9.84848484848484,
-      "vol_ratio": 0.6574941381651678,
+      "vol_ratio": 1.0897601574287457,
       "rsi": 86.87258687258688,
       "ma5": 265.0,
       "ma20": 220.225,
@@ -29,13 +63,12 @@
       "industry_strong": true,
       "market_cap_billions": 481.16072448,
       "mcap_pass": true,
-      "sitc_net_shares": 13000,
+      "sitc_net_shares": 0,
       "momentum_score": 100,
       "momentum_notes": [
         "漲停鎖死",
         "ATH",
-        "族群同步",
-        "投信+13張"
+        "族群同步"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%",
@@ -43,6 +76,40 @@
         "level": "NEAR",
         "msg": "📈接近注意線:6日+32%(再0.2pp觸注意)"
       }
+    },
+    {
+      "today": 11.899999618530273,
+      "monthly_max_2y": 11.573332786560059,
+      "ratio": 1.028225822068261,
+      "from_high_pct": 2.8225822068260964,
+      "bullish": false,
+      "bullish_fast": false,
+      "change_pct": 9.6774119828954,
+      "vol_ratio": 5.648161188812902,
+      "rsi": 63.074491652399736,
+      "ma5": 11.618888092041015,
+      "ma20": 11.253569841384888,
+      "ma60": 10.806246741612751,
+      "ma200": 10.857377367019653,
+      "gap_up": false,
+      "close_near_high": true,
+      "long_red": true,
+      "tangle": null,
+      "ticker": "2323",
+      "name": "中環",
+      "industry": "光電",
+      "industry_strong": true,
+      "market_cap_billions": 115.47092992,
+      "mcap_pass": true,
+      "sitc_net_shares": 0,
+      "momentum_score": 100,
+      "momentum_notes": [
+        "量爆價揚",
+        "ATH",
+        "族群同步"
+      ],
+      "tier": "⭐⭐⭐",
+      "next_day_prob": "≥85%"
     }
   ]
 }

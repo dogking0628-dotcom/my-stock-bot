@@ -1,27 +1,6 @@
 {
   "records": [
     {
-      "date": "2026-08-19",
-      "industry": "電子零組件",
-      "picks": [
-        {
-          "ticker": "6715",
-          "name": "嘉基",
-          "industry": "電子零組件",
-          "rec_close": 447.5,
-          "momentum_score": 80,
-          "momentum_notes": [
-            "量爆價揚",
-            "ATH"
-          ],
-          "tier": "⭐⭐⭐",
-          "rsi": 80.84677419354838,
-          "change_pct_at_rec": 6.801909307875897,
-          "vol_ratio_at_rec": 3.0663142847808964
-        }
-      ]
-    },
-    {
       "date": "2026-08-20",
       "industry": "電子零組件",
       "picks": [
@@ -1362,6 +1341,93 @@
           "rsi": 86.87258687258688,
           "change_pct_at_rec": 9.84848484848484,
           "vol_ratio_at_rec": 0.6574941381651678
+        }
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "industry": "電子零組件",
+      "picks": [
+        {
+          "ticker": "6715",
+          "name": "嘉基",
+          "industry": "電子零組件",
+          "rec_close": 557.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 75.29976019184652,
+          "change_pct_at_rec": 9.861932938856022,
+          "vol_ratio_at_rec": 1.072909570385145
+        },
+        {
+          "ticker": "6278",
+          "name": "台表科",
+          "industry": "光電",
+          "rec_close": 290.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "漲停鎖死",
+            "ATH",
+            "族群同步"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 86.87258687258688,
+          "change_pct_at_rec": 9.84848484848484,
+          "vol_ratio_at_rec": 1.0897601574287457
+        },
+        {
+          "ticker": "2323",
+          "name": "中環",
+          "industry": "光電",
+          "rec_close": 11.899999618530273,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "量爆價揚",
+            "ATH",
+            "族群同步"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 63.074491652399736,
+          "change_pct_at_rec": 9.6774119828954,
+          "vol_ratio_at_rec": 5.648161188812902
+        },
+        {
+          "ticker": "2379",
+          "name": "瑞昱",
+          "industry": "半導體",
+          "rec_close": 778.0,
+          "momentum_score": 100,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步",
+            "投信+106張"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 66.96428571428571,
+          "change_pct_at_rec": 2.638522427440626,
+          "vol_ratio_at_rec": 1.1398048490693453
+        },
+        {
+          "ticker": "2347",
+          "name": "聯強",
+          "industry": "電子通路",
+          "rec_close": 102.5,
+          "momentum_score": 95,
+          "momentum_notes": [
+            "跳空缺口",
+            "ATH",
+            "族群同步"
+          ],
+          "tier": "⭐⭐⭐",
+          "rsi": 89.44100673946029,
+          "change_pct_at_rec": 1.990049751243772,
+          "vol_ratio_at_rec": 1.5970983455507355
         }
       ]
     }

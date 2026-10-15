@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-14",
+  "timestamp": "2026-10-15",
   "strategy": "V2 原版 (實測 OOS PF 1.83 / 主回測 PF 1.69, 抗崩盤強·常空手)",
   "top_industries": [
     {
@@ -9,8 +9,8 @@
     },
     {
       "industry": "電子零組件",
-      "count": 20,
-      "bullish_count": 17
+      "count": 23,
+      "bullish_count": 19
     }
   ],
   "picks": [],

@@ -3274,7 +3274,7 @@
       "ma5": 72.17999877929688,
       "ma20": 68.63812026977538,
       "ma60": 68.93869654337566,
-      "ma200": 61.52088973999023,
+      "ma200": 61.52088960647583,
       "gap_up": false,
       "close_near_high": false,
       "long_red": false,
@@ -4548,5 +4548,7 @@
   },
   "v4_blocked": false,
   "v44_paused": true,
-  "v45_filtered": []
+  "v45_filtered": [],
+  "intraday_updated": "2026-10-16 01:11",
+  "is_intraday": true
 }

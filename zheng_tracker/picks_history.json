@@ -22012,6 +22012,136 @@
       "current_price": 1015.0,
       "current_return": 0.0,
       "days_held": 0
+    },
+    {
+      "pick_date": "2026-10-15",
+      "ticker": "4174.TWO",
+      "name": "浩鼎",
+      "sector": "生技",
+      "pick_price": 59.7,
+      "stage": "BULL_LATE",
+      "reason": "生技 強勢(+134.6) + 個股 5d+17.5% + 有 CB",
+      "cb_codes": [
+        "417405"
+      ],
+      "max_price": 59.7,
+      "current_price": 59.7,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-10-15",
+      "ticker": "2492.TW",
+      "name": "華新科",
+      "sector": "被動元件_載板",
+      "pick_price": 426.0,
+      "stage": "BULL_LATE",
+      "reason": "被動元件_載板 強勢(+22.3) + 個股 5d+9.4% + 有 CB",
+      "cb_codes": [
+        "249207"
+      ],
+      "max_price": 426.0,
+      "current_price": 426.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-10-15",
+      "ticker": "6147.TWO",
+      "name": "頎邦",
+      "sector": "半導體_封測設備",
+      "pick_price": 232.0,
+      "stage": "BULL_LATE",
+      "reason": "半導體_封測設備 強勢(+20.6) + 個股 5d+7.2% + 有 CB",
+      "cb_codes": [
+        "614706"
+      ],
+      "max_price": 232.0,
+      "current_price": 232.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-10-15",
+      "ticker": "3702.TW",
+      "name": "大聯大",
+      "sector": "被動元件_載板",
+      "pick_price": 118.5,
+      "stage": "BULL_LATE",
+      "reason": "被動元件_載板 強勢(+22.3) + 個股 5d-0.4% + 有 CB",
+      "cb_codes": [
+        "370206"
+      ],
+      "max_price": 118.5,
+      "current_price": 118.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-10-15",
+      "ticker": "2449.TW",
+      "name": "京元電子",
+      "sector": "半導體_封測設備",
+      "pick_price": 296.5,
+      "stage": "BULL_LATE",
+      "reason": "半導體_封測設備 強勢(+20.6) + 個股 5d-0.5% + 有 CB",
+      "cb_codes": [
+        "244907"
+      ],
+      "max_price": 296.5,
+      "current_price": 296.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-10-15",
+      "ticker": "6196.TW",
+      "name": "帆宣",
+      "sector": "半導體_封測設備",
+      "pick_price": 656.0,
+      "stage": "BULL_LATE",
+      "reason": "半導體_封測設備 強勢(+20.6) + 個股 5d-1.1% + 有 CB",
+      "cb_codes": [
+        "619608",
+        "619609"
+      ],
+      "max_price": 656.0,
+      "current_price": 656.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-10-15",
+      "ticker": "6658.TW",
+      "name": "聯策",
+      "sector": "被動元件_載板",
+      "pick_price": 199.0,
+      "stage": "BULL_LATE",
+      "reason": "被動元件_載板 強勢(+22.3) + 個股 5d-2.0% + 有 CB",
+      "cb_codes": [
+        "665805"
+      ],
+      "max_price": 199.0,
+      "current_price": 199.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-10-15",
+      "ticker": "6488.TWO",
+      "name": "環球晶",
+      "sector": "半導體_封測設備",
+      "pick_price": 1020.0,
+      "stage": "BULL_LATE",
+      "reason": "半導體_封測設備 強勢(+20.6) + 個股 5d-15.3% + 有 CB",
+      "cb_codes": [
+        "648810",
+        "648811"
+      ],
+      "max_price": 1020.0,
+      "current_price": 1020.0,
+      "current_return": 0.0,
+      "days_held": 0
     }
   ],
   "closed_picks": []

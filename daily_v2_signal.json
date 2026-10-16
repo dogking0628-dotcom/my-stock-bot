@@ -1,19 +1,91 @@
 {
-  "timestamp": "2026-10-15",
+  "timestamp": "2026-10-16",
   "strategy": "V2 原版 (實測 OOS PF 1.83 / 主回測 PF 1.69, 抗崩盤強·常空手)",
   "top_industries": [
     {
       "industry": "金融保險",
       "count": 29,
-      "bullish_count": 20
+      "bullish_count": 21
     },
     {
       "industry": "電子零組件",
-      "count": 23,
-      "bullish_count": 19
+      "count": 17,
+      "bullish_count": 14
     }
   ],
-  "picks": [],
+  "picks": [
+    {
+      "today": 173.0,
+      "monthly_max_2y": 163.0,
+      "ratio": 1.0613496932515338,
+      "from_high_pct": 6.134969325153383,
+      "bullish": true,
+      "bullish_fast": true,
+      "change_pct": 2.9761904761904656,
+      "vol_ratio": 2.1403004971947377,
+      "rsi": 74.13793103448276,
+      "ma5": 167.7,
+      "ma20": 161.3,
+      "ma60": 159.64166666666668,
+      "ma200": 133.14162124633788,
+      "gap_up": false,
+      "close_near_high": true,
+      "long_red": true,
+      "tangle": null,
+      "ticker": "2850",
+      "name": "新產",
+      "industry": "金融保險",
+      "industry_strong": true,
+      "market_cap_billions": 413.91190016,
+      "mcap_pass": true,
+      "sitc_net_shares": 0,
+      "momentum_score": 50,
+      "momentum_notes": [
+        "ATH",
+        "族群同步"
+      ],
+      "tier": "⭐",
+      "next_day_prob": "<70%",
+      "_score": 101.49
+    },
+    {
+      "today": 53.400001525878906,
+      "monthly_max_2y": 49.150001525878906,
+      "ratio": 1.0864699871425691,
+      "from_high_pct": 8.646998714256915,
+      "bullish": true,
+      "bullish_fast": true,
+      "change_pct": 3.2882025877223553,
+      "vol_ratio": 2.139547207384847,
+      "rsi": 73.41771051682353,
+      "ma5": 51.41000137329102,
+      "ma20": 49.772500610351564,
+      "ma60": 46.22219594319662,
+      "ma200": 40.768365745544436,
+      "gap_up": false,
+      "close_near_high": true,
+      "long_red": true,
+      "tangle": {
+        "band_pct": 2.0,
+        "dist_high_pct": 2.9
+      },
+      "ticker": "5876",
+      "name": "上海商銀",
+      "industry": "金融保險",
+      "industry_strong": true,
+      "market_cap_billions": 1862.4897024,
+      "mcap_pass": true,
+      "sitc_net_shares": -205000,
+      "momentum_score": 50,
+      "momentum_notes": [
+        "ATH",
+        "族群同步"
+      ],
+      "tier": "⭐",
+      "next_day_prob": "<70%",
+      "_score": 101.39
+    }
+  ],
   "params": {
     "top_industries": 2,
     "vol_ratio_min": 1.5,

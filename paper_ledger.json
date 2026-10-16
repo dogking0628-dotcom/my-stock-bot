@@ -131,6 +131,50 @@
    "exit_date": "2026-10-14",
    "ret_pct": -12.88,
    "reason": "-7%樓地板"
+  },
+  {
+   "ticker": "3443",
+   "name": "創意",
+   "entry": 8375.0,
+   "entry_date": "2026-09-22",
+   "shares": 10,
+   "exit": 7905.0,
+   "exit_date": "2026-10-16",
+   "ret_pct": -6.08,
+   "reason": "-7%樓地板"
+  },
+  {
+   "ticker": "3711",
+   "name": "日月光投控",
+   "entry": 693.0,
+   "entry_date": "2026-09-23",
+   "shares": 210,
+   "exit": 652.0,
+   "exit_date": "2026-10-16",
+   "ret_pct": -6.39,
+   "reason": "跌破20MA"
+  },
+  {
+   "ticker": "6526",
+   "name": "達發",
+   "entry": 840.0,
+   "entry_date": "2026-09-23",
+   "shares": 170,
+   "exit": 791.0,
+   "exit_date": "2026-10-16",
+   "ret_pct": -6.3,
+   "reason": "-7%樓地板"
+  },
+  {
+   "ticker": "5434",
+   "name": "崇越",
+   "entry": 620.0,
+   "entry_date": "2026-10-05",
+   "shares": 240,
+   "exit": 576.0,
+   "exit_date": "2026-10-16",
+   "ret_pct": -7.57,
+   "reason": "-7%樓地板"
   }
  ],
  "started": "2026-09-07"

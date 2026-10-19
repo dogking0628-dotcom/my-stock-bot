@@ -13949,7 +13949,7 @@
   "LxQefBRnAi4": {
     "status": "error",
     "error": "ERROR: [youtube] LxQefBRnAi4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-10-18T14:15"
+    "fetched_at": "2026-10-19T17:19"
   },
   "70a9uI3-Buc": {
     "status": "error",
@@ -13959,7 +13959,7 @@
   "UKjv57Bn-iQ": {
     "status": "error",
     "error": "ERROR: [youtube] UKjv57Bn-iQ: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-10-18T14:16"
+    "fetched_at": "2026-10-19T17:19"
   },
   "mLsRzQPsKfY": {
     "status": "error",
@@ -13975,5 +13975,20 @@
     "status": "error",
     "error": "ERROR: [youtube] H_7OOkWRiqk: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
     "fetched_at": "2026-10-18T14:16"
+  },
+  "e53UqQZfAMI": {
+    "status": "error",
+    "error": "ERROR: [youtube] e53UqQZfAMI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-10-19T17:18"
+  },
+  "L2dFjbFS96A": {
+    "status": "error",
+    "error": "ERROR: [youtube] L2dFjbFS96A: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-10-19T17:19"
+  },
+  "bUrbq5ACmOM": {
+    "status": "error",
+    "error": "ERROR: [youtube] bUrbq5ACmOM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-10-19T17:19"
   }
 }

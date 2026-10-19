@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-17 16:34",
+  "date": "2026-10-18 16:41",
   "market_position": "BULL_MID",
   "sector_results": {
     "半導體_晶圓代工": {
@@ -27,9 +27,9 @@
         }
       },
       "top_member": "2330.TW",
-      "rs_rank_5d": 15,
+      "rs_rank_5d": 16,
       "rs_rank_20d": 12,
-      "rs_momentum": -3
+      "rs_momentum": -4
     },
     "半導體_IC設計": {
       "avg_5d": -3.37,
@@ -446,8 +446,8 @@
       },
       "top_member": "2002.TW",
       "rs_rank_5d": 6,
-      "rs_rank_20d": 9,
-      "rs_momentum": 3
+      "rs_rank_20d": 10,
+      "rs_momentum": 4
     },
     "食品民生": {
       "avg_5d": 5.22,
@@ -490,45 +490,45 @@
       "rs_momentum": 5
     },
     "ETF_大盤": {
-      "avg_5d": -1.2,
-      "avg_20d": 2.9,
+      "avg_5d": -0.48,
+      "avg_20d": 4.02,
       "member_count": 7,
       "members": {
         "0050.TW": {
-          "price": 108.9,
-          "ret_5d": -6.16,
-          "ret_20d": 1.87,
-          "vol_avg": 98760300.0
+          "price": 109.0,
+          "ret_5d": -5.18,
+          "ret_20d": 2.59,
+          "vol_avg": 98299791.0
         },
         "0056.TW": {
-          "price": 58.25,
-          "ret_5d": -0.34,
-          "ret_20d": 5.14,
-          "vol_avg": 40700264.0
+          "price": 58.75,
+          "ret_5d": 0.77,
+          "ret_20d": 6.82,
+          "vol_avg": 40633735.0
         },
         "00646.TW": {
-          "price": 78.15,
-          "ret_5d": 0.0,
-          "ret_20d": 2.63,
-          "vol_avg": 3140648.0
+          "price": 79.35,
+          "ret_5d": 1.28,
+          "ret_20d": 4.13,
+          "vol_avg": 3136511.0
         },
         "00885.TW": {
-          "price": 17.64,
-          "ret_5d": -0.51,
-          "ret_20d": -3.24,
-          "vol_avg": 1793914.0
+          "price": 17.7,
+          "ret_5d": -0.62,
+          "ret_20d": -2.96,
+          "vol_avg": 1793047.0
         },
         "00940.TW": {
-          "price": 13.38,
-          "ret_5d": 0.75,
-          "ret_20d": 4.64,
-          "vol_avg": 12291912.0
+          "price": 13.48,
+          "ret_5d": 2.04,
+          "ret_20d": 6.25,
+          "vol_avg": 12291728.0
         },
         "00981A.TW": {
-          "price": 29.4,
-          "ret_5d": -8.87,
-          "ret_20d": 2.51,
-          "vol_avg": 164934291.0
+          "price": 29.53,
+          "ret_5d": -8.41,
+          "ret_20d": 4.61,
+          "vol_avg": 164882096.0
         },
         "2885.TW": {
           "price": 72.9,
@@ -539,14 +539,20 @@
       },
       "top_member": "2885.TW",
       "rs_rank_5d": 7,
-      "rs_rank_20d": 10,
-      "rs_momentum": 3
+      "rs_rank_20d": 9,
+      "rs_momentum": 2
     },
     "美股_AI晶片": {
-      "avg_5d": -9.03,
-      "avg_20d": -6.49,
-      "member_count": 2,
+      "avg_5d": -8.22,
+      "avg_20d": -5.55,
+      "member_count": 3,
       "members": {
+        "NVDA": {
+          "price": 214.13,
+          "ret_5d": -6.61,
+          "ret_20d": -3.66,
+          "vol_avg": 104861870.0
+        },
         "AVGO": {
           "price": 328.75,
           "ret_5d": -9.07,
@@ -560,10 +566,10 @@
           "vol_avg": 10635465.0
         }
       },
-      "top_member": "TSM",
-      "rs_rank_5d": 16,
+      "top_member": "NVDA",
+      "rs_rank_5d": 15,
       "rs_rank_20d": 20,
-      "rs_momentum": 4
+      "rs_momentum": 5
     },
     "美股_記憶體": {
       "avg_5d": -16.22,

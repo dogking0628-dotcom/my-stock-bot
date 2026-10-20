@@ -197,6 +197,39 @@
    "exit_date": "2026-10-19",
    "ret_pct": -7.97,
    "reason": "跌破20MA"
+  },
+  {
+   "ticker": "6456",
+   "name": "GIS-KY",
+   "entry": 81.3,
+   "entry_date": "2026-09-24",
+   "shares": 1840,
+   "exit": 85.1,
+   "exit_date": "2026-10-20",
+   "ret_pct": 4.2,
+   "reason": "跌破20MA"
+  },
+  {
+   "ticker": "6196",
+   "name": "帆宣",
+   "entry": 618.0,
+   "entry_date": "2026-10-02",
+   "shares": 240,
+   "exit": 598.0,
+   "exit_date": "2026-10-20",
+   "ret_pct": -3.71,
+   "reason": "跌破20MA"
+  },
+  {
+   "ticker": "6715",
+   "name": "嘉基",
+   "entry": 533.0,
+   "entry_date": "2026-10-15",
+   "shares": 280,
+   "exit": 480.0,
+   "exit_date": "2026-10-20",
+   "ret_pct": -10.41,
+   "reason": "-7%樓地板"
   }
  ],
  "started": "2026-09-07"

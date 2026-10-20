@@ -4611,7 +4611,7 @@
     "upload_date": "20261005",
     "duration": 839,
     "url": "https://www.youtube.com/watch?v=V-QAmnaKfYY",
-    "fetched_at": "2026-10-15T15:30",
+    "fetched_at": "2026-10-20T15:33",
     "status": "error",
     "available_langs": [
       "live_chat"
@@ -13909,7 +13909,7 @@
   "G_pLLCe5zSU": {
     "status": "error",
     "error": "ERROR: [youtube] G_pLLCe5zSU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-10-15T15:29"
+    "fetched_at": "2026-10-20T15:33"
   },
   "rQZhMKeJYgk": {
     "status": "error",
@@ -13934,7 +13934,7 @@
   "E6EGSBXC3qg": {
     "status": "error",
     "error": "ERROR: [youtube] E6EGSBXC3qg: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-10-15T15:29"
+    "fetched_at": "2026-10-20T15:33"
   },
   "U2lYNSAhOYY": {
     "status": "error",
@@ -13974,12 +13974,12 @@
   "H_7OOkWRiqk": {
     "status": "error",
     "error": "ERROR: [youtube] H_7OOkWRiqk: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-10-18T14:16"
+    "fetched_at": "2026-10-20T15:33"
   },
   "e53UqQZfAMI": {
     "status": "error",
     "error": "ERROR: [youtube] e53UqQZfAMI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-10-19T17:18"
+    "fetched_at": "2026-10-20T15:32"
   },
   "L2dFjbFS96A": {
     "status": "error",
@@ -13989,6 +13989,40 @@
   "bUrbq5ACmOM": {
     "status": "error",
     "error": "ERROR: [youtube] bUrbq5ACmOM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-10-19T17:19"
+    "fetched_at": "2026-10-20T15:33"
+  },
+  "YtiLsF-PyVQ": {
+    "status": "error",
+    "error": "ERROR: [youtube] YtiLsF-PyVQ: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-10-20T15:32"
+  },
+  "k2RisUe0cOw": {
+    "status": "error",
+    "error": "ERROR: [youtube] k2RisUe0cOw: This video is available to this channel's members on level: 先探金粉 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
+    "fetched_at": "2026-10-20T15:32"
+  },
+  "4KIGZP7BdE8": {
+    "status": "error",
+    "error": "ERROR: [youtube] 4KIGZP7BdE8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-10-20T15:32"
+  },
+  "5i3DjmGKoGw": {
+    "title": "台股重挫AI失靈了？外資連10賣 散戶這時撿？大立光 日月光 台光電 3道光照亮明年台股 《鈔錢部署》盧燕俐 ft.廖婉婷 20261020",
+    "channel": "鈔錢部署–華視優選",
+    "upload_date": "20261020",
+    "duration": 1680,
+    "url": "https://www.youtube.com/watch?v=5i3DjmGKoGw",
+    "fetched_at": "2026-10-20T15:33",
+    "status": "ok",
+    "lang": "zh-TW",
+    "source": "人工字幕",
+    "file": "20261020_5i3DjmGKoGw.md",
+    "paragraphs": 22,
+    "chars": 8430
+  },
+  "Kx1w0mLNweA": {
+    "status": "error",
+    "error": "ERROR: [youtube] Kx1w0mLNweA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-10-20T15:33"
   }
 }

@@ -1,26 +1,14 @@
 {
  "positions": [
   {
-   "ticker": "6414",
-   "name": "樺漢",
-   "entry": 398.0,
-   "entry_date": "2026-09-29",
-   "shares": 370,
-   "peak": 407.5,
-   "last_close": 383.5,
-   "unreal_pct": -3.64,
-   "exit_pending": true,
-   "exit_reason": "跌破20MA"
-  },
-  {
    "ticker": "6672",
    "name": "騰輝電子-KY",
    "entry": 369.0,
    "entry_date": "2026-09-30",
    "shares": 400,
-   "peak": 598.0,
-   "last_close": 570.0,
-   "unreal_pct": 54.47
+   "peak": 627.0,
+   "last_close": 627.0,
+   "unreal_pct": 69.92
   },
   {
    "ticker": "3044",
@@ -29,8 +17,8 @@
    "entry_date": "2026-10-06",
    "shares": 250,
    "peak": 603.0,
-   "last_close": 567.0,
-   "unreal_pct": -2.07
+   "last_close": 583.0,
+   "unreal_pct": 0.69
   },
   {
    "ticker": "4938",
@@ -48,9 +36,9 @@
    "entry": 290.0,
    "entry_date": "2026-10-14",
    "shares": 510,
-   "peak": 303.0,
-   "last_close": 288.0,
-   "unreal_pct": -0.69
+   "peak": 316.5,
+   "last_close": 316.5,
+   "unreal_pct": 9.14
   },
   {
    "ticker": "2323",
@@ -59,9 +47,11 @@
    "entry_date": "2026-10-15",
    "shares": 12710,
    "peak": 11.85,
-   "last_close": 11.7,
-   "unreal_pct": -0.85
+   "last_close": 11.5,
+   "unreal_pct": -2.54,
+   "exit_pending": true,
+   "exit_reason": "跌破20MA"
   }
  ],
- "last_run": "2026-10-20"
+ "last_run": "2026-10-21"
 }

@@ -230,6 +230,17 @@
    "exit_date": "2026-10-20",
    "ret_pct": -10.41,
    "reason": "-7%樓地板"
+  },
+  {
+   "ticker": "6414",
+   "name": "樺漢",
+   "entry": 398.0,
+   "entry_date": "2026-09-29",
+   "shares": 370,
+   "exit": 391.0,
+   "exit_date": "2026-10-21",
+   "ret_pct": -2.23,
+   "reason": "跌破20MA"
   }
  ],
  "started": "2026-09-07"

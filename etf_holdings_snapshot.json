@@ -1,5 +1,5 @@
 {
- "date": "2026-10-20",
+ "date": "2026-10-21",
  "etfs": {
   "00981A": {
    "2330": {
@@ -274,14 +274,14 @@
     "shares": 74.0,
     "weight": 1.9
    },
-   "8299": {
-    "name": "群聯",
-    "shares": 168.0,
-    "weight": 1.81
-   },
    "6515": {
     "name": "穎崴",
     "shares": 61.0,
+    "weight": 1.81
+   },
+   "8299": {
+    "name": "群聯",
+    "shares": 168.0,
     "weight": 1.81
    },
    "8046": {
@@ -364,24 +364,24 @@
     "shares": 485.0,
     "weight": 0.87
    },
-   "5904": {
-    "name": "寶雅*",
-    "shares": 2264.0,
-    "weight": 0.79
-   },
    "3264": {
     "name": "欣銓",
     "shares": 648.0,
     "weight": 0.79
    },
-   "8996": {
-    "name": "高力",
-    "shares": 96.0,
-    "weight": 0.77
+   "5904": {
+    "name": "寶雅*",
+    "shares": 2264.0,
+    "weight": 0.79
    },
    "3008": {
     "name": "大立光",
     "shares": 26.0,
+    "weight": 0.77
+   },
+   "8996": {
+    "name": "高力",
+    "shares": 96.0,
     "weight": 0.77
    },
    "3529": {
@@ -705,64 +705,22 @@
  },
  "changes": {
   "00981A": {
-   "new": [
-    {
-     "code": "87.65",
-     "name": "87.65",
-     "shares": 0.0,
-     "weight": 9.63
-    }
-   ],
+   "new": [],
    "added": [],
    "reduced": [],
-   "removed": [
-    {
-     "code": "86.69",
-     "name": "86.69",
-     "shares": 0.0,
-     "weight": 10.07
-    }
-   ]
+   "removed": []
   },
   "00980A": {
-   "new": [
-    {
-     "code": "80.11",
-     "name": "80.11",
-     "shares": 0.0,
-     "weight": 12.94
-    }
-   ],
+   "new": [],
    "added": [],
    "reduced": [],
-   "removed": [
-    {
-     "code": "78.65",
-     "name": "78.65",
-     "shares": 0.0,
-     "weight": 14.2
-    }
-   ]
+   "removed": []
   },
   "00982A": {
-   "new": [
-    {
-     "code": "75.43",
-     "name": "75.43",
-     "shares": 0.0,
-     "weight": 23.23
-    }
-   ],
+   "new": [],
    "added": [],
    "reduced": [],
-   "removed": [
-    {
-     "code": "78.69",
-     "name": "78.69",
-     "shares": 0.0,
-     "weight": 20.5
-    }
-   ]
+   "removed": []
   }
  }
 }

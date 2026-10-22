@@ -7,8 +7,8 @@
    "entry_date": "2026-09-30",
    "shares": 400,
    "peak": 627.0,
-   "last_close": 627.0,
-   "unreal_pct": 69.92
+   "last_close": 581.0,
+   "unreal_pct": 57.45
   },
   {
    "ticker": "3044",
@@ -17,8 +17,10 @@
    "entry_date": "2026-10-06",
    "shares": 250,
    "peak": 603.0,
-   "last_close": 583.0,
-   "unreal_pct": 0.69
+   "last_close": 556.0,
+   "unreal_pct": -3.97,
+   "exit_pending": true,
+   "exit_reason": "跌破20MA"
   },
   {
    "ticker": "4938",
@@ -27,8 +29,8 @@
    "entry_date": "2026-10-12",
    "shares": 1520,
    "peak": 105.0,
-   "last_close": 105.0,
-   "unreal_pct": 6.49
+   "last_close": 103.5,
+   "unreal_pct": 4.97
   },
   {
    "ticker": "6278",
@@ -37,21 +39,9 @@
    "entry_date": "2026-10-14",
    "shares": 510,
    "peak": 316.5,
-   "last_close": 316.5,
-   "unreal_pct": 9.14
-  },
-  {
-   "ticker": "2323",
-   "name": "中環",
-   "entry": 11.8,
-   "entry_date": "2026-10-15",
-   "shares": 12710,
-   "peak": 11.85,
-   "last_close": 11.5,
-   "unreal_pct": -2.54,
-   "exit_pending": true,
-   "exit_reason": "跌破20MA"
+   "last_close": 290.5,
+   "unreal_pct": 0.17
   }
  ],
- "last_run": "2026-10-21"
+ "last_run": "2026-10-22"
 }

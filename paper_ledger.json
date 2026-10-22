@@ -241,6 +241,17 @@
    "exit_date": "2026-10-21",
    "ret_pct": -2.23,
    "reason": "跌破20MA"
+  },
+  {
+   "ticker": "2323",
+   "name": "中環",
+   "entry": 11.8,
+   "entry_date": "2026-10-15",
+   "shares": 12710,
+   "exit": 11.65,
+   "exit_date": "2026-10-22",
+   "ret_pct": -1.74,
+   "reason": "跌破20MA"
   }
  ],
  "started": "2026-09-07"

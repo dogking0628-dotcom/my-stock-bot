@@ -6,7 +6,7 @@
   "ref_trading_date": "2026-10-22",
   "patched_bars": 0,
   "basis": "yfinance 2y monthly + 動能確認分數（最強族群挑 5）；最新K棒以證交所 MI_INDEX 校驗",
-  "total_analyzed": 1078,
+  "total_analyzed": 1077,
   "exact_ath": [
     {
       "today": 261.0,
@@ -1326,7 +1326,7 @@
       "ma5": 18.020000076293947,
       "ma20": 17.76000008583069,
       "ma60": 15.810000054041545,
-      "ma200": 13.92943079471588,
+      "ma200": 13.929430894851684,
       "gap_up": false,
       "close_near_high": false,
       "long_red": false,
@@ -4260,15 +4260,15 @@
   "top_industry": "金融保險",
   "market_regime": {
     "today": 106.9,
-    "ma200": 92.72249001693726,
+    "ma200": 92.72248997879029,
     "ma20": 111.88750068664551,
-    "ext_pct": 15.290260195205075,
+    "ext_pct": 15.290260242636645,
     "in_stage2": true,
     "below_ma20": true
   },
   "v4_blocked": false,
   "v44_paused": true,
   "v45_filtered": [],
-  "intraday_updated": "2026-10-23 02:10",
+  "intraday_updated": "2026-10-23 03:09",
   "is_intraday": true
 }

@@ -1,7 +1,7 @@
 {
   "timestamp": "2026-10-23",
   "tangle_breakout": [],
-  "trade_date": "2026-10-23",
+  "trade_date": "2026-10-26",
   "data_date": "2026-10-22",
   "ref_trading_date": "2026-10-22",
   "patched_bars": 0,
@@ -4260,15 +4260,15 @@
   "top_industry": "金融保險",
   "market_regime": {
     "today": 106.9,
-    "ma200": 92.72248997879029,
+    "ma200": 92.72249001693726,
     "ma20": 111.88750068664551,
-    "ext_pct": 15.290260242636645,
+    "ext_pct": 15.290260195205075,
     "in_stage2": true,
     "below_ma20": true
   },
   "v4_blocked": false,
   "v44_paused": true,
   "v45_filtered": [],
-  "intraday_updated": "2026-10-23 04:53",
+  "intraday_updated": "2026-10-23 06:03",
   "is_intraday": true
 }

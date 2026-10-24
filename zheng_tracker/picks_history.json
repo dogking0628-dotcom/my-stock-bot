@@ -23072,6 +23072,102 @@
       "current_price": 53.5,
       "current_return": 0.0,
       "days_held": 0
+    },
+    {
+      "pick_date": "2026-10-23",
+      "ticker": "2912.TW",
+      "name": "統一超",
+      "sector": "食品民生",
+      "pick_price": 226.0,
+      "stage": "BULL_PULLBACK",
+      "reason": "食品民生 強勢(+5.8) + 個股 5d+0.9% + 有 CB",
+      "cb_codes": [
+        "291206"
+      ],
+      "max_price": 226.0,
+      "current_price": 226.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-10-23",
+      "ticker": "6658.TW",
+      "name": "聯策",
+      "sector": "被動元件_載板",
+      "pick_price": 190.0,
+      "stage": "BULL_PULLBACK",
+      "reason": "被動元件_載板 強勢(+9.8) + 個股 5d+0.8% + 有 CB",
+      "cb_codes": [
+        "665805"
+      ],
+      "max_price": 190.0,
+      "current_price": 190.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-10-23",
+      "ticker": "1216.TW",
+      "name": "統一",
+      "sector": "食品民生",
+      "pick_price": 79.6,
+      "stage": "BULL_PULLBACK",
+      "reason": "食品民生 強勢(+5.8) + 個股 5d+0.1% + 有 CB",
+      "cb_codes": [
+        "121605"
+      ],
+      "max_price": 79.6,
+      "current_price": 79.6,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-10-23",
+      "ticker": "3702.TW",
+      "name": "大聯大",
+      "sector": "被動元件_載板",
+      "pick_price": 114.5,
+      "stage": "BULL_PULLBACK",
+      "reason": "被動元件_載板 強勢(+9.8) + 個股 5d-0.9% + 有 CB",
+      "cb_codes": [
+        "370206"
+      ],
+      "max_price": 114.5,
+      "current_price": 114.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-10-23",
+      "ticker": "2492.TW",
+      "name": "華新科",
+      "sector": "被動元件_載板",
+      "pick_price": 368.0,
+      "stage": "BULL_PULLBACK",
+      "reason": "被動元件_載板 強勢(+9.8) + 個股 5d-9.2% + 有 CB",
+      "cb_codes": [
+        "249207"
+      ],
+      "max_price": 368.0,
+      "current_price": 368.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-10-23",
+      "ticker": "4174.TWO",
+      "name": "浩鼎",
+      "sector": "生技",
+      "pick_price": 50.5,
+      "stage": "BULL_PULLBACK",
+      "reason": "生技 強勢(+68.9) + 個股 5d-14.9% + 有 CB",
+      "cb_codes": [
+        "417405"
+      ],
+      "max_price": 50.5,
+      "current_price": 50.5,
+      "current_return": 0.0,
+      "days_held": 0
     }
   ],
   "closed_picks": []

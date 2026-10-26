@@ -14023,7 +14023,7 @@
   "Kx1w0mLNweA": {
     "status": "error",
     "error": "ERROR: [youtube] Kx1w0mLNweA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-10-21T15:49"
+    "fetched_at": "2026-10-26T17:07"
   },
   "RIppuVAxTd0": {
     "status": "error",
@@ -14043,7 +14043,7 @@
   "9oiFGQr2KhI": {
     "status": "error",
     "error": "ERROR: [youtube] 9oiFGQr2KhI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-10-25T14:45"
+    "fetched_at": "2026-10-26T17:07"
   },
   "j-qL65rKzzY": {
     "status": "error",
@@ -14061,9 +14061,18 @@
     "fetched_at": "2026-10-22T15:46"
   },
   "wUzygxh80RU": {
-    "status": "error",
-    "error": "ERROR: [youtube] wUzygxh80RU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-10-25T14:45"
+    "title": "[Typhoon Day Tomorrow: A Sell-off for Taiwan Stocks Next Week?] 10/22/2026 (Subtitled Version)",
+    "channel": "郭哲榮分析師-摩爾證券投顧",
+    "upload_date": "20261022",
+    "duration": 3030,
+    "url": "https://www.youtube.com/watch?v=wUzygxh80RU",
+    "fetched_at": "2026-10-26T17:06",
+    "status": "ok",
+    "lang": "zh-TW",
+    "source": "人工字幕",
+    "file": "20261022_wUzygxh80RU.md",
+    "paragraphs": 38,
+    "chars": 15452
   },
   "Al47SwnDMWo": {
     "status": "error",
@@ -14073,7 +14082,7 @@
   "vXY4DibepFk": {
     "status": "error",
     "error": "ERROR: [youtube] vXY4DibepFk: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-10-25T14:45"
+    "fetched_at": "2026-10-26T17:06"
   },
   "EIxei-f8e3k": {
     "status": "error",
@@ -14088,21 +14097,26 @@
   "3Hjbas4mHaI": {
     "status": "error",
     "error": "ERROR: [youtube] 3Hjbas4mHaI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-10-25T14:46"
+    "fetched_at": "2026-10-26T17:07"
   },
   "6REy4HxNr9Q": {
     "status": "error",
     "error": "ERROR: [youtube] 6REy4HxNr9Q: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-10-25T14:46"
+    "fetched_at": "2026-10-26T17:07"
   },
   "6fU55NoXbw8": {
     "status": "error",
     "error": "ERROR: [youtube] 6fU55NoXbw8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-10-25T14:45"
+    "fetched_at": "2026-10-26T17:06"
   },
   "PrUR0bl2mdY": {
     "status": "error",
     "error": "ERROR: [youtube] PrUR0bl2mdY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-10-25T14:46"
+    "fetched_at": "2026-10-26T17:07"
+  },
+  "nMT2AeOczvQ": {
+    "status": "error",
+    "error": "ERROR: [youtube] nMT2AeOczvQ: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-10-26T17:06"
   }
 }

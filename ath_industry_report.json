@@ -4259,15 +4259,15 @@
   "top_industry": "金融保險",
   "market_regime": {
     "today": 106.9000015258789,
-    "ma200": 92.94482242584229,
+    "ma200": 92.94482246398925,
     "ma20": 111.64000091552734,
-    "ext_pct": 15.014477122887616,
+    "ext_pct": 15.01447707568271,
     "in_stage2": true,
     "below_ma20": true
   },
   "v4_blocked": false,
   "v44_paused": true,
   "v45_filtered": [],
-  "intraday_updated": "2026-10-26 04:09",
+  "intraday_updated": "2026-10-26 04:54",
   "is_intraday": true
 }

@@ -252,6 +252,17 @@
    "exit_date": "2026-10-22",
    "ret_pct": -1.74,
    "reason": "跌破20MA"
+  },
+  {
+   "ticker": "3044",
+   "name": "健鼎",
+   "entry": 579.0,
+   "entry_date": "2026-10-06",
+   "shares": 250,
+   "exit": 557.0,
+   "exit_date": "2026-10-27",
+   "ret_pct": -4.27,
+   "reason": "跌破20MA"
   }
  ],
  "started": "2026-09-07"

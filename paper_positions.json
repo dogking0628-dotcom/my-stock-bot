@@ -7,8 +7,8 @@
    "entry_date": "2026-09-30",
    "shares": 400,
    "peak": 627.0,
-   "last_close": 533.0,
-   "unreal_pct": 44.44
+   "last_close": 562.0,
+   "unreal_pct": 52.3
   },
   {
    "ticker": "4938",
@@ -16,9 +16,9 @@
    "entry": 98.6,
    "entry_date": "2026-10-12",
    "shares": 1520,
-   "peak": 105.0,
-   "last_close": 105.0,
-   "unreal_pct": 6.49
+   "peak": 108.0,
+   "last_close": 108.0,
+   "unreal_pct": 9.53
   },
   {
    "ticker": "6278",
@@ -27,9 +27,9 @@
    "entry_date": "2026-10-14",
    "shares": 510,
    "peak": 316.5,
-   "last_close": 278.5,
-   "unreal_pct": -3.97
+   "last_close": 285.5,
+   "unreal_pct": -1.55
   }
  ],
- "last_run": "2026-10-27"
+ "last_run": "2026-10-28"
 }

@@ -14147,26 +14147,41 @@
   "ThLA11kHLBo": {
     "status": "error",
     "error": "ERROR: [youtube] ThLA11kHLBo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-10-27T16:11"
+    "fetched_at": "2026-10-29T17:18"
   },
   "IPz6qLgmU3Y": {
     "status": "error",
     "error": "ERROR: [youtube] IPz6qLgmU3Y: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-10-28T16:57"
+    "fetched_at": "2026-10-29T17:17"
   },
   "Idvg3CfTEt8": {
     "status": "error",
     "error": "ERROR: [youtube] Idvg3CfTEt8: This video is available to this channel's members on level: 先探金粉 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
-    "fetched_at": "2026-10-28T16:57"
+    "fetched_at": "2026-10-29T17:17"
   },
   "3W9rdBeuMkk": {
     "status": "error",
-    "error": "ERROR: [youtube] 3W9rdBeuMkk: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-10-28T16:57"
+    "error": "ERROR: [youtube] 3W9rdBeuMkk: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d",
+    "fetched_at": "2026-10-29T17:18"
   },
   "cNlVG1FH-pc": {
     "status": "error",
     "error": "ERROR: [youtube] cNlVG1FH-pc: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-10-28T16:57"
+    "fetched_at": "2026-10-29T17:18"
+  },
+  "LBr-8q00SlM": {
+    "status": "error",
+    "error": "ERROR: [youtube] LBr-8q00SlM: This video is available to this channel's members on level: 先探鐵粉 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
+    "fetched_at": "2026-10-29T17:17"
+  },
+  "9u5Vd9sSFno": {
+    "status": "error",
+    "error": "ERROR: [youtube] 9u5Vd9sSFno: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-10-29T17:17"
+  },
+  "lMiEK-Y0e4Q": {
+    "status": "error",
+    "error": "ERROR: [youtube] lMiEK-Y0e4Q: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d",
+    "fetched_at": "2026-10-29T17:18"
   }
 }

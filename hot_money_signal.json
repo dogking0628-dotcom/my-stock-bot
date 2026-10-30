@@ -1,63 +1,23 @@
 {
-  "timestamp": "2026-10-29",
+  "timestamp": "2026-10-30",
   "lookback_days": 5,
   "history_days": 60,
   "momentum": {
     "金融保險": {
       "today": 27,
-      "avg_n": 26.8,
-      "momentum_pct": 0.7,
-      "trend_days": 0,
-      "status": "steady",
-      "bullish_ratio": 0.74
-    },
-    "電子零組件": {
-      "today": 14,
-      "avg_n": 14.4,
-      "momentum_pct": -2.8,
-      "trend_days": 0,
-      "status": "steady",
-      "bullish_ratio": 0.5
-    },
-    "光電": {
-      "today": 12,
-      "avg_n": 12.2,
-      "momentum_pct": -1.6,
-      "trend_days": 0,
-      "status": "steady",
-      "bullish_ratio": 0.83
-    },
-    "半導體": {
-      "today": 12,
-      "avg_n": 8.0,
-      "momentum_pct": 50.0,
-      "trend_days": 3,
-      "status": "rising",
-      "bullish_ratio": 0.42
-    },
-    "鋼鐵": {
-      "today": 10,
-      "avg_n": 10.0,
+      "avg_n": 27.0,
       "momentum_pct": 0.0,
       "trend_days": 0,
       "status": "steady",
       "bullish_ratio": 0.7
     },
-    "電腦及週邊": {
+    "光電": {
       "today": 10,
-      "avg_n": 10.6,
-      "momentum_pct": -5.7,
+      "avg_n": 12.0,
+      "momentum_pct": -16.7,
       "trend_days": 1,
       "status": "cooling",
-      "bullish_ratio": 0.4
-    },
-    "航運": {
-      "today": 10,
-      "avg_n": 9.8,
-      "momentum_pct": 2.0,
-      "trend_days": 0,
-      "status": "steady",
-      "bullish_ratio": 0.4
+      "bullish_ratio": 0.3
     },
     "生技醫療": {
       "today": 10,
@@ -67,77 +27,93 @@
       "status": "steady",
       "bullish_ratio": 0.5
     },
+    "鋼鐵": {
+      "today": 9,
+      "avg_n": 10.0,
+      "momentum_pct": -10.0,
+      "trend_days": 1,
+      "status": "cooling",
+      "bullish_ratio": 0.44
+    },
+    "航運": {
+      "today": 9,
+      "avg_n": 10.0,
+      "momentum_pct": -10.0,
+      "trend_days": 1,
+      "status": "cooling",
+      "bullish_ratio": 0.67
+    },
     "其他": {
       "today": 8,
       "avg_n": 8.2,
       "momentum_pct": -2.4,
       "trend_days": 0,
       "status": "steady",
-      "bullish_ratio": 0.5
+      "bullish_ratio": 0.38
     },
-    "電機機械": {
-      "today": 6,
-      "avg_n": 5.4,
-      "momentum_pct": 11.1,
-      "trend_days": 0,
-      "status": "rising",
-      "bullish_ratio": 0.17
+    "電子零組件": {
+      "today": 7,
+      "avg_n": 13.4,
+      "momentum_pct": -47.8,
+      "trend_days": 1,
+      "status": "cooling",
+      "bullish_ratio": 0.29
+    },
+    "電腦及週邊": {
+      "today": 7,
+      "avg_n": 10.6,
+      "momentum_pct": -34.0,
+      "trend_days": 2,
+      "status": "cooling",
+      "bullish_ratio": 0.29
+    },
+    "半導體": {
+      "today": 7,
+      "avg_n": 8.0,
+      "momentum_pct": -12.5,
+      "trend_days": 1,
+      "status": "cooling",
+      "bullish_ratio": 0.43
     },
     "塑膠": {
       "today": 6,
-      "avg_n": 7.2,
-      "momentum_pct": -16.7,
-      "trend_days": 1,
+      "avg_n": 6.8,
+      "momentum_pct": -11.8,
+      "trend_days": 0,
       "status": "cooling",
-      "bullish_ratio": 0.67
+      "bullish_ratio": 0.33
     },
     "通信網路": {
       "today": 6,
-      "avg_n": 6.4,
-      "momentum_pct": -6.2,
-      "trend_days": 1,
-      "status": "cooling",
-      "bullish_ratio": 0.83
-    },
-    "紡織纖維": {
-      "today": 6,
-      "avg_n": 6.6,
-      "momentum_pct": -9.1,
-      "trend_days": 0,
-      "status": "cooling",
-      "bullish_ratio": 0.0
-    },
-    "化學工業": {
-      "today": 5,
-      "avg_n": 6.0,
-      "momentum_pct": -16.7,
-      "trend_days": 1,
-      "status": "cooling",
-      "bullish_ratio": 0.2
-    },
-    "電子通路": {
-      "today": 5,
-      "avg_n": 4.0,
-      "momentum_pct": 25.0,
-      "trend_days": 1,
-      "status": "rising",
-      "bullish_ratio": 0.6
-    },
-    "建材營造": {
-      "today": 5,
-      "avg_n": 5.2,
-      "momentum_pct": -3.8,
+      "avg_n": 6.2,
+      "momentum_pct": -3.2,
       "trend_days": 0,
       "status": "steady",
-      "bullish_ratio": 0.2
+      "bullish_ratio": 0.83
     },
-    "汽車": {
-      "today": 4,
-      "avg_n": 4.8,
-      "momentum_pct": -16.7,
+    "建材營造": {
+      "today": 6,
+      "avg_n": 5.0,
+      "momentum_pct": 20.0,
       "trend_days": 1,
+      "status": "rising",
+      "bullish_ratio": 0.17
+    },
+    "化學工業": {
+      "today": 4,
+      "avg_n": 5.4,
+      "momentum_pct": -25.9,
+      "trend_days": 2,
       "status": "cooling",
       "bullish_ratio": 0.25
+    },
+    "紡織纖維": {
+      "today": 4,
+      "avg_n": 6.6,
+      "momentum_pct": -39.4,
+      "trend_days": 1,
+      "status": "cooling",
+      "bullish_ratio": 0.0
     },
     "油電燃氣": {
       "today": 4,
@@ -147,29 +123,29 @@
       "status": "steady",
       "bullish_ratio": 0.0
     },
-    "貿易百貨": {
+    "食品": {
       "today": 4,
-      "avg_n": 3.2,
-      "momentum_pct": 25.0,
-      "trend_days": 0,
+      "avg_n": 3.6,
+      "momentum_pct": 11.1,
+      "trend_days": 1,
       "status": "rising",
       "bullish_ratio": 0.5
     },
-    "資訊服務": {
+    "電機機械": {
       "today": 3,
-      "avg_n": 3.0,
-      "momentum_pct": 0.0,
-      "trend_days": 0,
-      "status": "steady",
-      "bullish_ratio": 0.67
+      "avg_n": 5.4,
+      "momentum_pct": -44.4,
+      "trend_days": 1,
+      "status": "cooling",
+      "bullish_ratio": 0.33
     },
-    "橡膠": {
+    "電子通路": {
       "today": 3,
-      "avg_n": 3.0,
-      "momentum_pct": 0.0,
-      "trend_days": 0,
-      "status": "steady",
-      "bullish_ratio": 0.67
+      "avg_n": 4.2,
+      "momentum_pct": -28.6,
+      "trend_days": 1,
+      "status": "cooling",
+      "bullish_ratio": 0.33
     },
     "運動休閒": {
       "today": 3,
@@ -179,13 +155,37 @@
       "status": "steady",
       "bullish_ratio": 0.0
     },
-    "食品": {
+    "貿易百貨": {
       "today": 3,
-      "avg_n": 3.6,
-      "momentum_pct": -16.7,
-      "trend_days": 0,
+      "avg_n": 3.4,
+      "momentum_pct": -11.8,
+      "trend_days": 1,
       "status": "cooling",
-      "bullish_ratio": 0.33
+      "bullish_ratio": 0.67
+    },
+    "汽車": {
+      "today": 2,
+      "avg_n": 4.6,
+      "momentum_pct": -56.5,
+      "trend_days": 2,
+      "status": "cooling",
+      "bullish_ratio": 1.0
+    },
+    "資訊服務": {
+      "today": 2,
+      "avg_n": 3.2,
+      "momentum_pct": -37.5,
+      "trend_days": 2,
+      "status": "cooling",
+      "bullish_ratio": 1.0
+    },
+    "橡膠": {
+      "today": 2,
+      "avg_n": 3.0,
+      "momentum_pct": -33.3,
+      "trend_days": 1,
+      "status": "cooling",
+      "bullish_ratio": 0.5
     },
     "觀光": {
       "today": 2,
@@ -195,33 +195,25 @@
       "status": "noise",
       "bullish_ratio": 0.5
     },
-    "居家生活": {
-      "today": 2,
-      "avg_n": 2.0,
-      "momentum_pct": null,
-      "trend_days": 0,
-      "status": "noise",
-      "bullish_ratio": 0.5
-    },
-    "其他電子": {
-      "today": 2,
-      "avg_n": 2.4,
-      "momentum_pct": null,
-      "trend_days": 0,
-      "status": "noise",
-      "bullish_ratio": 0.5
-    },
     "造紙": {
       "today": 2,
-      "avg_n": 1.4,
+      "avg_n": 1.6,
       "momentum_pct": null,
       "trend_days": 0,
       "status": "noise",
       "bullish_ratio": 0.0
     },
-    "代碼38": {
+    "居家生活": {
       "today": 1,
-      "avg_n": 1.0,
+      "avg_n": 2.0,
+      "momentum_pct": null,
+      "trend_days": 0,
+      "status": "noise",
+      "bullish_ratio": 0.0
+    },
+    "其他電子": {
+      "today": 1,
+      "avg_n": 2.0,
       "momentum_pct": null,
       "trend_days": 0,
       "status": "noise",
@@ -230,87 +222,69 @@
   },
   "rising_industries": [
     {
-      "industry": "半導體",
-      "today": 12,
-      "avg_n": 8.0,
-      "momentum_pct": 50.0,
-      "trend_days": 3,
-      "status": "rising",
-      "bullish_ratio": 0.42
-    },
-    {
-      "industry": "電子通路",
-      "today": 5,
-      "avg_n": 4.0,
-      "momentum_pct": 25.0,
+      "industry": "建材營造",
+      "today": 6,
+      "avg_n": 5.0,
+      "momentum_pct": 20.0,
       "trend_days": 1,
       "status": "rising",
-      "bullish_ratio": 0.6
+      "bullish_ratio": 0.17
     },
     {
-      "industry": "貿易百貨",
+      "industry": "食品",
       "today": 4,
-      "avg_n": 3.2,
-      "momentum_pct": 25.0,
-      "trend_days": 0,
+      "avg_n": 3.6,
+      "momentum_pct": 11.1,
+      "trend_days": 1,
       "status": "rising",
       "bullish_ratio": 0.5
-    },
-    {
-      "industry": "電機機械",
-      "today": 6,
-      "avg_n": 5.4,
-      "momentum_pct": 11.1,
-      "trend_days": 0,
-      "status": "rising",
-      "bullish_ratio": 0.17
     }
   ],
   "cooling_industries": [
     {
-      "industry": "塑膠",
-      "today": 6,
-      "avg_n": 7.2,
-      "momentum_pct": -16.7,
-      "trend_days": 1,
-      "status": "cooling",
-      "bullish_ratio": 0.67
-    },
-    {
-      "industry": "化學工業",
-      "today": 5,
-      "avg_n": 6.0,
-      "momentum_pct": -16.7,
-      "trend_days": 1,
-      "status": "cooling",
-      "bullish_ratio": 0.2
-    },
-    {
       "industry": "汽車",
-      "today": 4,
-      "avg_n": 4.8,
-      "momentum_pct": -16.7,
-      "trend_days": 1,
+      "today": 2,
+      "avg_n": 4.6,
+      "momentum_pct": -56.5,
+      "trend_days": 2,
       "status": "cooling",
-      "bullish_ratio": 0.25
+      "bullish_ratio": 1.0
     },
     {
-      "industry": "食品",
+      "industry": "電子零組件",
+      "today": 7,
+      "avg_n": 13.4,
+      "momentum_pct": -47.8,
+      "trend_days": 1,
+      "status": "cooling",
+      "bullish_ratio": 0.29
+    },
+    {
+      "industry": "電機機械",
       "today": 3,
-      "avg_n": 3.6,
-      "momentum_pct": -16.7,
-      "trend_days": 0,
+      "avg_n": 5.4,
+      "momentum_pct": -44.4,
+      "trend_days": 1,
       "status": "cooling",
       "bullish_ratio": 0.33
     },
     {
       "industry": "紡織纖維",
-      "today": 6,
+      "today": 4,
       "avg_n": 6.6,
-      "momentum_pct": -9.1,
-      "trend_days": 0,
+      "momentum_pct": -39.4,
+      "trend_days": 1,
       "status": "cooling",
       "bullish_ratio": 0.0
+    },
+    {
+      "industry": "資訊服務",
+      "today": 2,
+      "avg_n": 3.2,
+      "momentum_pct": -37.5,
+      "trend_days": 2,
+      "status": "cooling",
+      "bullish_ratio": 1.0
     }
   ],
   "real_breakout": [],
@@ -319,218 +293,71 @@
   "new_system": [],
   "rotation_picks": [
     {
-      "today": 230.5,
-      "monthly_max_2y": 202.1792755126953,
-      "ratio": 1.1400772874246765,
-      "from_high_pct": 14.007728742467652,
+      "today": 93.80000305175781,
+      "monthly_max_2y": 91.5999984741211,
+      "ratio": 1.0240175176231936,
+      "from_high_pct": 2.4017517623193596,
       "bullish": true,
-      "bullish_fast": false,
-      "change_pct": -2.742616033755274,
-      "vol_ratio": 0.1941092828884482,
-      "rsi": 65.35087719298245,
-      "ma5": 237.6,
-      "ma20": 207.425,
-      "ma60": 179.8951301574707,
-      "ma200": 156.63394649505616,
+      "bullish_fast": true,
+      "change_pct": 0.0,
+      "vol_ratio": 0.5006687976226282,
+      "rsi": 61.11112288487309,
+      "ma5": 92.56000061035157,
+      "ma20": 90.10000076293946,
+      "ma60": 89.88333358764649,
+      "ma200": 79.51321645736694,
       "gap_up": false,
-      "close_near_high": false,
+      "close_near_high": true,
       "long_red": false,
       "tangle": null,
-      "ticker": "7730",
-      "name": "暉盛-創",
-      "industry": "半導體",
+      "ticker": "2535",
+      "name": "達欣工",
+      "industry": "建材營造",
       "industry_strong": false,
-      "market_cap_billions": 61.26656,
+      "market_cap_billions": 191.0204416,
+      "mcap_pass": true,
+      "sitc_net_shares": 0,
+      "momentum_score": 30,
+      "momentum_notes": [
+        "ATH"
+      ],
+      "tier": "⭐",
+      "next_day_prob": "<70%",
+      "rotation_score": 12.4,
+      "industry_momentum_pct": 20.0
+    },
+    {
+      "today": 26.399999618530273,
+      "monthly_max_2y": 25.700000762939453,
+      "ratio": 1.0272373087474864,
+      "from_high_pct": 2.723730874748642,
+      "bullish": true,
+      "bullish_fast": true,
+      "change_pct": -0.18904023806017856,
+      "vol_ratio": 0.08920325675039718,
+      "rsi": 64.5832886299137,
+      "ma5": 26.280000305175783,
+      "ma20": 25.86500015258789,
+      "ma60": 25.664166736602784,
+      "ma200": 24.6021782207489,
+      "gap_up": false,
+      "close_near_high": true,
+      "long_red": false,
+      "tangle": null,
+      "ticker": "1236",
+      "name": "宏亞",
+      "industry": "食品",
+      "industry_strong": false,
+      "market_cap_billions": 22.66525184,
       "mcap_pass": false,
       "sitc_net_shares": 0,
-      "momentum_score": 45,
+      "momentum_score": 30,
       "momentum_notes": [
-        "ATH",
-        "QQQ+0.6%",
-        "SMH+1.7%"
+        "ATH"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%",
-      "rotation_score": 39.01,
-      "industry_momentum_pct": 50.0
-    },
-    {
-      "today": 593.0,
-      "monthly_max_2y": 546.0,
-      "ratio": 1.086080586080586,
-      "from_high_pct": 8.608058608058599,
-      "bullish": true,
-      "bullish_fast": true,
-      "change_pct": -0.8361204013377921,
-      "vol_ratio": 0.26458631569187324,
-      "rsi": 75.0,
-      "ma5": 591.2,
-      "ma20": 562.3,
-      "ma60": 547.0166666666667,
-      "ma200": 457.993302154541,
-      "gap_up": false,
-      "close_near_high": false,
-      "long_red": false,
-      "tangle": null,
-      "ticker": "3034",
-      "name": "聯詠",
-      "industry": "半導體",
-      "industry_strong": false,
-      "market_cap_billions": 2686.57819648,
-      "mcap_pass": true,
-      "sitc_net_shares": 135724,
-      "momentum_score": 55,
-      "momentum_notes": [
-        "ATH",
-        "QQQ+0.6%",
-        "SMH+1.7%",
-        "投信+136張"
-      ],
-      "tier": "⭐",
-      "next_day_prob": "<70%",
-      "rotation_score": 33.61,
-      "industry_momentum_pct": 50.0
-    },
-    {
-      "today": 783.0,
-      "monthly_max_2y": 778.3594360351562,
-      "ratio": 1.0059619807379507,
-      "from_high_pct": 0.5961980737950734,
-      "bullish": true,
-      "bullish_fast": true,
-      "change_pct": -1.0113780025284402,
-      "vol_ratio": 0.3316628317691238,
-      "rsi": 64.3835616438356,
-      "ma5": 782.2,
-      "ma20": 767.8,
-      "ma60": 730.9978983561198,
-      "ma200": 612.5036581420899,
-      "gap_up": false,
-      "close_near_high": false,
-      "long_red": false,
-      "tangle": null,
-      "ticker": "2379",
-      "name": "瑞昱",
-      "industry": "半導體",
-      "industry_strong": false,
-      "market_cap_billions": 2804.3853824,
-      "mcap_pass": true,
-      "sitc_net_shares": -21771,
-      "momentum_score": 45,
-      "momentum_notes": [
-        "ATH",
-        "QQQ+0.6%",
-        "SMH+1.7%"
-      ],
-      "tier": "⭐",
-      "next_day_prob": "<70%",
-      "rotation_score": 25.6,
-      "industry_momentum_pct": 50.0
-    },
-    {
-      "today": 101.5,
-      "monthly_max_2y": 94.9000015258789,
-      "ratio": 1.0695468742676606,
-      "from_high_pct": 6.95468742676606,
-      "bullish": true,
-      "bullish_fast": false,
-      "change_pct": -0.9756097560975618,
-      "vol_ratio": 0.060564982037165635,
-      "rsi": 64.41717934988148,
-      "ma5": 100.92000122070313,
-      "ma20": 99.2550006866455,
-      "ma60": 92.89000053405762,
-      "ma200": 80.97468467712402,
-      "gap_up": false,
-      "close_near_high": false,
-      "long_red": false,
-      "tangle": null,
-      "ticker": "2347",
-      "name": "聯強",
-      "industry": "電子通路",
-      "industry_strong": false,
-      "market_cap_billions": 1409.41524992,
-      "mcap_pass": true,
-      "sitc_net_shares": -148266,
-      "momentum_score": 35,
-      "momentum_notes": [
-        "ATH",
-        "QQQ+0.6%"
-      ],
-      "tier": "⭐",
-      "next_day_prob": "<70%",
-      "rotation_score": 19.45,
-      "industry_momentum_pct": 25.0
-    },
-    {
-      "today": 137.0,
-      "monthly_max_2y": 133.39772033691406,
-      "ratio": 1.0270040571457135,
-      "from_high_pct": 2.7004057145713523,
-      "bullish": true,
-      "bullish_fast": false,
-      "change_pct": -0.7246376811594235,
-      "vol_ratio": 0.04561431345275505,
-      "rsi": 60.0,
-      "ma5": 136.6,
-      "ma20": 134.125,
-      "ma60": 128.55,
-      "ma200": 123.48860443115234,
-      "gap_up": false,
-      "close_near_high": false,
-      "long_red": false,
-      "tangle": null,
-      "ticker": "3010",
-      "name": "華立",
-      "industry": "電子通路",
-      "industry_strong": false,
-      "market_cap_billions": 352.8341504,
-      "mcap_pass": true,
-      "sitc_net_shares": 1678,
-      "momentum_score": 45,
-      "momentum_notes": [
-        "ATH",
-        "QQQ+0.6%",
-        "投信+2張"
-      ],
-      "tier": "⭐",
-      "next_day_prob": "<70%",
-      "rotation_score": 15.2,
-      "industry_momentum_pct": 25.0
-    },
-    {
-      "today": 87.69999694824219,
-      "monthly_max_2y": 83.1495132446289,
-      "ratio": 1.0547265224539029,
-      "from_high_pct": 5.472652245390286,
-      "bullish": true,
-      "bullish_fast": true,
-      "change_pct": -1.7917200994811533,
-      "vol_ratio": 0.256967367426088,
-      "rsi": 68.84055407052762,
-      "ma5": 86.6,
-      "ma20": 80.14000015258789,
-      "ma60": 71.86333351135254,
-      "ma200": 65.16161432266236,
-      "gap_up": false,
-      "close_near_high": false,
-      "long_red": false,
-      "tangle": null,
-      "ticker": "4566",
-      "name": "時碩工業",
-      "industry": "電機機械",
-      "industry_strong": false,
-      "market_cap_billions": 74.478336,
-      "mcap_pass": false,
-      "sitc_net_shares": 2000,
-      "momentum_score": 40,
-      "momentum_notes": [
-        "ATH",
-        "投信+2張"
-      ],
-      "tier": "⭐",
-      "next_day_prob": "<70%",
-      "rotation_score": 11.02,
+      "rotation_score": 8.27,
       "industry_momentum_pct": 11.1
     }
   ],

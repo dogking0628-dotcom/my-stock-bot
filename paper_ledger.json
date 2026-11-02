@@ -263,6 +263,17 @@
    "exit_date": "2026-10-27",
    "ret_pct": -4.27,
    "reason": "跌破20MA"
+  },
+  {
+   "ticker": "6278",
+   "name": "台表科",
+   "entry": 290.0,
+   "entry_date": "2026-10-14",
+   "shares": 510,
+   "exit": 246.0,
+   "exit_date": "2026-11-02",
+   "ret_pct": -15.64,
+   "reason": "-7%樓地板"
   }
  ],
  "started": "2026-09-07"

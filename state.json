@@ -1,6 +1,6 @@
 {
-  "last_run": "2026-10-30",
-  "cash": 18976.067951626952,
+  "last_run": "2026-11-02",
+  "cash": 16307.480458552913,
   "positions": [
     {
       "ticker": "AMZN",
@@ -10,17 +10,10 @@
       "shares": 37.277267
     },
     {
-      "ticker": "CSCO",
-      "entry_date": "2026-06-02",
-      "entry_price": 128.0,
-      "peak_price": 130.0,
-      "shares": 62.858911
-    },
-    {
       "ticker": "MAR",
       "entry_date": "2026-06-05",
       "entry_price": 392.51,
-      "peak_price": 404.0,
+      "peak_price": 416.29998779296875,
       "shares": 17.877591
     },
     {
@@ -62,7 +55,7 @@
       "ticker": "REGN",
       "entry_date": "2026-10-30",
       "entry_price": 927.89,
-      "peak_price": 927.89,
+      "peak_price": 961.260009765625,
       "shares": 10.771082
     },
     {
@@ -71,6 +64,13 @@
       "entry_price": 170.68,
       "peak_price": 170.68,
       "shares": 58.556242
+    },
+    {
+      "ticker": "VLTO",
+      "entry_date": "2026-11-02",
+      "entry_price": 115.7,
+      "peak_price": 115.7,
+      "shares": 78.268641
     }
   ],
   "running_ath": {}

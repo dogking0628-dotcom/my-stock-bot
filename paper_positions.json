@@ -1,27 +1,15 @@
 {
  "positions": [
   {
-   "ticker": "6672",
-   "name": "騰輝電子-KY",
-   "entry": 369.0,
-   "entry_date": "2026-09-30",
-   "shares": 400,
-   "peak": 627.0,
-   "last_close": 529.0,
-   "unreal_pct": 43.36,
-   "exit_pending": true,
-   "exit_reason": "跌破20MA"
-  },
-  {
    "ticker": "4938",
    "name": "和碩",
    "entry": 98.6,
    "entry_date": "2026-10-12",
    "shares": 1520,
    "peak": 108.0,
-   "last_close": 102.5,
-   "unreal_pct": 3.96
+   "last_close": 101.5,
+   "unreal_pct": 2.94
   }
  ],
- "last_run": "2026-11-02"
+ "last_run": "2026-11-03"
 }

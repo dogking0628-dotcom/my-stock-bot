@@ -23934,6 +23934,118 @@
       "current_return": 0.0,
       "days_held": 2,
       "max_return": 0.0
+    },
+    {
+      "pick_date": "2026-11-03",
+      "ticker": "2603.TW",
+      "name": "長榮",
+      "sector": "海運_航運",
+      "pick_price": 274.5,
+      "stage": "BULL_PULLBACK",
+      "reason": "海運_航運 強勢(+8.2) + 個股 5d+5.6% + 有 CB",
+      "cb_codes": [
+        "260305"
+      ],
+      "max_price": 274.5,
+      "current_price": 274.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-11-03",
+      "ticker": "2609.TW",
+      "name": "陽明",
+      "sector": "海運_航運",
+      "pick_price": 64.0,
+      "stage": "BULL_PULLBACK",
+      "reason": "海運_航運 強勢(+8.2) + 個股 5d+3.4% + 有 CB",
+      "cb_codes": [
+        "260905"
+      ],
+      "max_price": 64.0,
+      "current_price": 64.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-11-03",
+      "ticker": "2618.TW",
+      "name": "長榮航",
+      "sector": "海運_航運",
+      "pick_price": 43.15,
+      "stage": "BULL_PULLBACK",
+      "reason": "海運_航運 強勢(+8.2) + 個股 5d+2.2% + 有 CB",
+      "cb_codes": [
+        "261805"
+      ],
+      "max_price": 43.15,
+      "current_price": 43.15,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-11-03",
+      "ticker": "1216.TW",
+      "name": "統一",
+      "sector": "食品民生",
+      "pick_price": 80.6,
+      "stage": "BULL_PULLBACK",
+      "reason": "食品民生 強勢(+7.6) + 個股 5d+1.3% + 有 CB",
+      "cb_codes": [
+        "121605"
+      ],
+      "max_price": 80.6,
+      "current_price": 80.6,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-11-03",
+      "ticker": "2912.TW",
+      "name": "統一超",
+      "sector": "食品民生",
+      "pick_price": 225.5,
+      "stage": "BULL_PULLBACK",
+      "reason": "食品民生 強勢(+7.6) + 個股 5d-0.2% + 有 CB",
+      "cb_codes": [
+        "291206"
+      ],
+      "max_price": 225.5,
+      "current_price": 225.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-11-03",
+      "ticker": "4174.TWO",
+      "name": "浩鼎",
+      "sector": "生技",
+      "pick_price": 47.1,
+      "stage": "BULL_PULLBACK",
+      "reason": "生技 強勢(+9.3) + 個股 5d-7.7% + 有 CB",
+      "cb_codes": [
+        "417405"
+      ],
+      "max_price": 47.1,
+      "current_price": 47.1,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-11-03",
+      "ticker": "2615.TW",
+      "name": "萬海",
+      "sector": "海運_航運",
+      "pick_price": 119.5,
+      "stage": "BULL_PULLBACK",
+      "reason": "海運_航運 強勢(+8.2) + 個股 5d+0.0% + 有 CB",
+      "cb_codes": [
+        "261505"
+      ],
+      "max_price": 119.5,
+      "current_price": 119.5,
+      "current_return": 0.0,
+      "days_held": 0
     }
   ],
   "closed_picks": []

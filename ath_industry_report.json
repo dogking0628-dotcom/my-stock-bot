@@ -1791,15 +1791,15 @@
   "top_industry": "金融保險",
   "market_regime": {
     "today": 99.8499984741211,
-    "ma200": 94.18471172332764,
-    "ma20": 109.51500015258789,
-    "ext_pct": 6.01508105416888,
+    "ma200": 94.34712074279786,
+    "ma20": 108.74750022888183,
+    "ext_pct": 5.832586821938923,
     "in_stage2": true,
     "below_ma20": true
   },
   "v4_blocked": false,
   "v44_paused": true,
   "v45_filtered": [],
-  "intraday_updated": "2026-11-04 07:33",
+  "intraday_updated": "2026-11-04 12:29",
   "is_intraday": true
 }

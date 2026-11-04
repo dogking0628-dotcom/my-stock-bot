@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-11-02",
+  "last_run": "2026-11-03",
   "cash": 16307.480458552913,
   "positions": [
     {
@@ -13,7 +13,7 @@
       "ticker": "MAR",
       "entry_date": "2026-06-05",
       "entry_price": 392.51,
-      "peak_price": 416.29998779296875,
+      "peak_price": 416.3800048828125,
       "shares": 17.877591
     },
     {
@@ -55,7 +55,7 @@
       "ticker": "REGN",
       "entry_date": "2026-10-30",
       "entry_price": 927.89,
-      "peak_price": 961.260009765625,
+      "peak_price": 973.3599853515625,
       "shares": 10.771082
     },
     {
@@ -69,7 +69,7 @@
       "ticker": "VLTO",
       "entry_date": "2026-11-02",
       "entry_price": 115.7,
-      "peak_price": 115.7,
+      "peak_price": 116.31999969482422,
       "shares": 78.268641
     }
   ],

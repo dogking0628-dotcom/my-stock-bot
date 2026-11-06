@@ -1,17 +1,4 @@
 {
- "positions": [
-  {
-   "ticker": "4938",
-   "name": "和碩",
-   "entry": 98.6,
-   "entry_date": "2026-10-12",
-   "shares": 1520,
-   "peak": 108.0,
-   "last_close": 97.2,
-   "unreal_pct": -1.42,
-   "exit_pending": true,
-   "exit_reason": "跌破20MA"
-  }
- ],
- "last_run": "2026-11-05"
+ "positions": [],
+ "last_run": "2026-11-06"
 }

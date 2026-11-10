@@ -1,33 +1,33 @@
 {
- "date": "2026-11-09",
+ "date": "2026-11-10",
  "top50_breadth": {
   "count": 0,
   "total": 50,
   "codes": []
  },
  "turnover": {
-  "twse_date_roc": "115/11/06",
-  "twse_amount": 1321071858650.0,
-  "combined_est": 1558864793207.0,
+  "twse_date_roc": "115/11/09",
+  "twse_amount": 877025617232.0,
+  "combined_est": 1034890228333.7599,
   "sky_alert": false,
   "threshold": 1500000000000.0,
   "note": "合計=上市×1.18 估算(TPEX API 擋外部連線)"
  },
  "ma87": {
   "twii": {
-   "close": 39701.64,
-   "ma87": 45758.08264367816,
+   "close": 41661.7,
+   "ma87": 45696.50459770115,
    "above": false,
-   "gap_pct": -13.235787633061813,
-   "date": "2026-11-06",
+   "gap_pct": -8.829569423793803,
+   "date": "2026-11-09",
    "src": "finmind"
   },
   "twoii": {
-   "close": 304.02,
-   "ma87": 395.86356321839077,
+   "close": 321.97,
+   "ma87": 394.60770114942534,
    "above": false,
-   "gap_pct": -23.200812540486925,
-   "date": "2026-11-06",
+   "gap_pct": -18.407573125877676,
+   "date": "2026-11-09",
    "src": "finmind"
   },
   "strength": "🔴 雙空頭"

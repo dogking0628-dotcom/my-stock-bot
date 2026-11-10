@@ -14211,8 +14211,8 @@
   },
   "ZDtGvQgJifc": {
     "status": "error",
-    "error": "ERROR: [youtube] ZDtGvQgJifc: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-10-30T16:56"
+    "error": "ERROR: [youtube] ZDtGvQgJifc: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d",
+    "fetched_at": "2026-11-10T18:28"
   },
   "Vi8VtIBArMI": {
     "status": "error",
@@ -14375,13 +14375,67 @@
     "fetched_at": "2026-11-09T21:16"
   },
   "Otf110k-VDg": {
-    "status": "error",
-    "error": "ERROR: [youtube] Otf110k-VDg: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-11-09T21:16"
+    "title": "[National Stabilization Fund Steps In: Is the Taiwan Stock Market Rally a Fake-out?] 11/9/2026 (S...",
+    "channel": "郭哲榮分析師-摩爾證券投顧",
+    "upload_date": "20261109",
+    "duration": 2986,
+    "url": "https://www.youtube.com/watch?v=Otf110k-VDg",
+    "fetched_at": "2026-11-10T18:27",
+    "status": "ok",
+    "lang": "zh-TW",
+    "source": "人工字幕",
+    "file": "20261109_Otf110k-VDg.md",
+    "paragraphs": 35,
+    "chars": 14537
   },
   "zIxpd8rspDE": {
     "status": "error",
     "error": "ERROR: [youtube] zIxpd8rspDE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-11-09T21:17"
+    "fetched_at": "2026-11-10T18:27"
+  },
+  "eK-vMpvkaY4": {
+    "status": "error",
+    "error": "ERROR: [youtube] eK-vMpvkaY4: This video is available to this channel's members on level: 先探金粉 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
+    "fetched_at": "2026-11-10T18:27"
+  },
+  "wyTfC670mb8": {
+    "status": "error",
+    "error": "ERROR: [youtube] wyTfC670mb8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-11-10T18:27"
+  },
+  "_dXs6_-EBXw": {
+    "status": "error",
+    "error": "ERROR: [youtube] _dXs6_-EBXw: This video is available to this channel's members on level: 先探金粉 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
+    "fetched_at": "2026-11-10T18:27"
+  },
+  "NqFEOYSU7AA": {
+    "title": "【三天大漲5200點 還會再漲嗎?】2026/11/10(字幕版)",
+    "channel": "郭哲榮分析師-摩爾證券投顧",
+    "upload_date": "20261110",
+    "duration": 3032,
+    "url": "https://www.youtube.com/watch?v=NqFEOYSU7AA",
+    "fetched_at": "2026-11-10T18:27",
+    "status": "no_subs",
+    "available_langs": []
+  },
+  "M0LpYbL3ThU": {
+    "status": "error",
+    "error": "ERROR: [youtube] M0LpYbL3ThU: This video is available to this channel's members on level: 鈔級感謝 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
+    "fetched_at": "2026-11-10T18:27"
+  },
+  "pmDoL1OrOHU": {
+    "status": "error",
+    "error": "ERROR: [youtube] pmDoL1OrOHU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-11-10T18:27"
+  },
+  "izrGbtW7MeQ": {
+    "status": "error",
+    "error": "ERROR: [youtube] izrGbtW7MeQ: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-11-10T18:27"
+  },
+  "C1h1vcRVBZ0": {
+    "status": "error",
+    "error": "ERROR: [youtube] C1h1vcRVBZ0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-11-10T18:28"
   }
 }

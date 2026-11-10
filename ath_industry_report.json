@@ -6,7 +6,7 @@
   "ref_trading_date": "2026-11-10",
   "patched_bars": 0,
   "basis": "yfinance 2y monthly + 動能確認分數（最強族群挑 5）；最新K棒以證交所 MI_INDEX 校驗",
-  "total_analyzed": 1077,
+  "total_analyzed": 1076,
   "exact_ath": [
     {
       "today": 18.350000381469727,
@@ -1287,7 +1287,7 @@
       "ma5": 17.239999771118164,
       "ma20": 17.804999828338623,
       "ma60": 16.495833333333334,
-      "ma200": 14.197432003021241,
+      "ma200": 14.19743191242218,
       "gap_up": false,
       "close_near_high": true,
       "long_red": false,
@@ -1566,6 +1566,6 @@
   "v4_blocked": false,
   "v44_paused": true,
   "v45_filtered": [],
-  "intraday_updated": "2026-11-10 08:24",
+  "intraday_updated": "2026-11-10 12:57",
   "is_intraday": true
 }

@@ -2036,15 +2036,15 @@
   "top_industry": "金融保險",
   "market_regime": {
     "today": 100.94999694824219,
-    "ma200": 95.06796897888184,
-    "ma20": 104.39999961853027,
-    "ext_pct": 6.18718168962562,
+    "ma200": 95.23749729156494,
+    "ma20": 103.90999946594238,
+    "ext_pct": 5.998162298604637,
     "in_stage2": true,
     "below_ma20": true
   },
   "v4_blocked": false,
   "v44_paused": true,
   "v45_filtered": [],
-  "intraday_updated": "2026-11-12 08:17",
+  "intraday_updated": "2026-11-12 13:11",
   "is_intraday": true
 }

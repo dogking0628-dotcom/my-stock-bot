@@ -24341,6 +24341,150 @@
       "current_price": 27.4,
       "current_return": 0.0,
       "days_held": 0
+    },
+    {
+      "pick_date": "2026-11-14",
+      "ticker": "3443.TW",
+      "name": "創意",
+      "sector": "半導體_IC設計",
+      "pick_price": 8610.0,
+      "stage": "BULL_PULLBACK",
+      "reason": "半導體_IC設計 強勢(-1.4) + 個股 5d+38.8% + 有 CB",
+      "cb_codes": [
+        "344308"
+      ],
+      "max_price": 8610.0,
+      "current_price": 8610.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-11-14",
+      "ticker": "4174.TWO",
+      "name": "浩鼎",
+      "sector": "生技",
+      "pick_price": 64.9,
+      "stage": "BULL_PULLBACK",
+      "reason": "生技 強勢(+9.4) + 個股 5d+33.7% + 有 CB",
+      "cb_codes": [
+        "417405"
+      ],
+      "max_price": 64.9,
+      "current_price": 64.9,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-11-14",
+      "ticker": "3035.TW",
+      "name": "智原",
+      "sector": "半導體_IC設計",
+      "pick_price": 196.0,
+      "stage": "BULL_PULLBACK",
+      "reason": "半導體_IC設計 強勢(-1.4) + 個股 5d+22.1% + 有 CB",
+      "cb_codes": [
+        "303505"
+      ],
+      "max_price": 196.0,
+      "current_price": 196.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-11-14",
+      "ticker": "2454.TW",
+      "name": "聯發科",
+      "sector": "半導體_IC設計",
+      "pick_price": 4120.0,
+      "stage": "BULL_PULLBACK",
+      "reason": "半導體_IC設計 強勢(-1.4) + 個股 5d+21.5% + 有 CB",
+      "cb_codes": [
+        "245408"
+      ],
+      "max_price": 4120.0,
+      "current_price": 4120.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-11-14",
+      "ticker": "2618.TW",
+      "name": "長榮航",
+      "sector": "海運_航運",
+      "pick_price": 47.75,
+      "stage": "BULL_PULLBACK",
+      "reason": "海運_航運 強勢(-1.1) + 個股 5d+9.5% + 有 CB",
+      "cb_codes": [
+        "261805"
+      ],
+      "max_price": 47.75,
+      "current_price": 47.75,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-11-14",
+      "ticker": "2609.TW",
+      "name": "陽明",
+      "sector": "海運_航運",
+      "pick_price": 60.3,
+      "stage": "BULL_PULLBACK",
+      "reason": "海運_航運 強勢(-1.1) + 個股 5d+5.6% + 有 CB",
+      "cb_codes": [
+        "260905"
+      ],
+      "max_price": 60.3,
+      "current_price": 60.3,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-11-14",
+      "ticker": "2603.TW",
+      "name": "長榮",
+      "sector": "海運_航運",
+      "pick_price": 257.5,
+      "stage": "BULL_PULLBACK",
+      "reason": "海運_航運 強勢(-1.1) + 個股 5d+4.5% + 有 CB",
+      "cb_codes": [
+        "260305"
+      ],
+      "max_price": 257.5,
+      "current_price": 257.5,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-11-14",
+      "ticker": "3034.TW",
+      "name": "聯詠",
+      "sector": "半導體_IC設計",
+      "pick_price": 474.0,
+      "stage": "BULL_PULLBACK",
+      "reason": "半導體_IC設計 強勢(-1.4) + 個股 5d-4.3% + 有 CB",
+      "cb_codes": [
+        "303407"
+      ],
+      "max_price": 474.0,
+      "current_price": 474.0,
+      "current_return": 0.0,
+      "days_held": 0
+    },
+    {
+      "pick_date": "2026-11-14",
+      "ticker": "2615.TW",
+      "name": "萬海",
+      "sector": "海運_航運",
+      "pick_price": 107.5,
+      "stage": "BULL_PULLBACK",
+      "reason": "海運_航運 強勢(-1.1) + 個股 5d+0.0% + 有 CB",
+      "cb_codes": [
+        "261505"
+      ],
+      "max_price": 107.5,
+      "current_price": 107.5,
+      "current_return": 0.0,
+      "days_held": 0
     }
   ],
   "closed_picks": []

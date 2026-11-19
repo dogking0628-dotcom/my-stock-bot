@@ -14688,12 +14688,37 @@
   },
   "vw3wQo90tMM": {
     "status": "error",
-    "error": "ERROR: [youtube] vw3wQo90tMM: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d",
-    "fetched_at": "2026-11-18T19:16"
+    "error": "ERROR: [youtube] vw3wQo90tMM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-11-19T19:19"
   },
   "ayw3gZwlqwY": {
     "status": "error",
     "error": "ERROR: [youtube] ayw3gZwlqwY: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d",
     "fetched_at": "2026-11-18T19:18"
+  },
+  "fCqJCbzaUD8": {
+    "status": "error",
+    "error": "ERROR: [youtube] fCqJCbzaUD8: This video is available to this channel's members on level: 先探鐵粉 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
+    "fetched_at": "2026-11-19T19:19"
+  },
+  "_D782jDJ2ak": {
+    "status": "error",
+    "error": "ERROR: [youtube] _D782jDJ2ak: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-11-19T19:19"
+  },
+  "CKbADvy3eh0": {
+    "status": "error",
+    "error": "ERROR: [youtube] CKbADvy3eh0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-11-19T19:19"
+  },
+  "LQR50flWzok": {
+    "status": "error",
+    "error": "ERROR: [youtube] LQR50flWzok: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-11-19T19:19"
+  },
+  "s3xMtKSFbio": {
+    "status": "error",
+    "error": "ERROR: [youtube] s3xMtKSFbio: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-11-19T19:19"
   }
 }

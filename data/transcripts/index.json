@@ -14520,12 +14520,12 @@
     "upload_date": "20261111",
     "duration": 550,
     "url": "https://www.youtube.com/watch?v=lQcyffgsjDc",
-    "fetched_at": "2026-11-15T17:33",
+    "fetched_at": "2026-11-20T19:02",
     "status": "error",
     "available_langs": [
       "live_chat"
     ],
-    "error": "ERROR: [youtube] lQcyffgsjDc: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-"
+    "error": "ERROR: [youtube] lQcyffgsjDc: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a"
   },
   "whuVlIt7udM": {
     "status": "error",
@@ -14643,8 +14643,8 @@
   },
   "SkGq_c-Nj5w": {
     "status": "error",
-    "error": "ERROR: [youtube] SkGq_c-Nj5w: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d",
-    "fetched_at": "2026-11-18T19:20"
+    "error": "ERROR: [youtube] SkGq_c-Nj5w: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+    "fetched_at": "2026-11-20T19:01"
   },
   "NMKxrav1XK4": {
     "status": "error",
@@ -14713,12 +14713,62 @@
   },
   "LQR50flWzok": {
     "status": "error",
-    "error": "ERROR: [youtube] LQR50flWzok: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-11-19T19:19"
+    "error": "ERROR: [youtube] LQR50flWzok: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+    "fetched_at": "2026-11-20T18:59"
   },
   "s3xMtKSFbio": {
     "status": "error",
-    "error": "ERROR: [youtube] s3xMtKSFbio: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-11-19T19:19"
+    "error": "ERROR: [youtube] s3xMtKSFbio: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+    "fetched_at": "2026-11-20T19:00"
+  },
+  "JmtD2wZZ4gs": {
+    "status": "error",
+    "error": "ERROR: [youtube] JmtD2wZZ4gs: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+    "fetched_at": "2026-11-20T18:57"
+  },
+  "38BuAkp3knQ": {
+    "status": "error",
+    "error": "ERROR: [youtube] 38BuAkp3knQ: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+    "fetched_at": "2026-11-20T18:57"
+  },
+  "rbjME8_zUso": {
+    "status": "error",
+    "error": "ERROR: [youtube] rbjME8_zUso: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+    "fetched_at": "2026-11-20T18:58"
+  },
+  "RDYhloUUGnM": {
+    "status": "error",
+    "error": "ERROR: [youtube] RDYhloUUGnM: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+    "fetched_at": "2026-11-20T18:59"
+  },
+  "BaxN0MXzWSo": {
+    "status": "error",
+    "error": "ERROR: [youtube] BaxN0MXzWSo: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+    "fetched_at": "2026-11-20T19:00"
+  },
+  "cW9rQGJva48": {
+    "status": "error",
+    "error": "ERROR: [youtube] cW9rQGJva48: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+    "fetched_at": "2026-11-20T19:01"
+  },
+  "RYay9SZ5yiQ": {
+    "status": "error",
+    "error": "ERROR: [youtube] RYay9SZ5yiQ: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+    "fetched_at": "2026-11-20T19:01"
+  },
+  "vDGkwNm0VJI": {
+    "status": "error",
+    "error": "ERROR: [youtube] vDGkwNm0VJI: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+    "fetched_at": "2026-11-20T19:03"
+  },
+  "ANuMJzDZewQ": {
+    "status": "error",
+    "error": "ERROR: [youtube] ANuMJzDZewQ: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+    "fetched_at": "2026-11-20T19:03"
+  },
+  "8ZyN7WFZ9cA": {
+    "status": "error",
+    "error": "ERROR: [youtube] 8ZyN7WFZ9cA: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
+    "fetched_at": "2026-11-20T19:04"
   }
 }

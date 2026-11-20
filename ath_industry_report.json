@@ -1334,15 +1334,15 @@
   "top_industry": "其他",
   "market_regime": {
     "today": 84.44999694824219,
-    "ma200": 95.83764575958251,
-    "ma20": 100.41249885559083,
-    "ext_pct": -11.882229285877166,
+    "ma200": 95.93653839111329,
+    "ma20": 99.57749862670899,
+    "ext_pct": -11.973062229995069,
     "in_stage2": false,
     "below_ma20": true
   },
   "v4_blocked": true,
   "v44_paused": false,
   "v45_filtered": [],
-  "intraday_updated": "2026-11-20 08:31",
+  "intraday_updated": "2026-11-20 13:33",
   "is_intraday": true
 }

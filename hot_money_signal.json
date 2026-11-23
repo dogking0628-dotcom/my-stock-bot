@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-11-20",
+  "timestamp": "2026-11-23",
   "lookback_days": 5,
   "history_days": 60,
   "momentum": {
     "其他": {
       "today": 4,
-      "avg_n": 7.0,
-      "momentum_pct": -42.9,
-      "trend_days": 2,
+      "avg_n": 6.2,
+      "momentum_pct": -35.5,
+      "trend_days": 0,
       "status": "cooling",
       "bullish_ratio": 0.5
     },
     "生技醫療": {
-      "today": 4,
-      "avg_n": 6.0,
-      "momentum_pct": -33.3,
-      "trend_days": 1,
+      "today": 3,
+      "avg_n": 5.4,
+      "momentum_pct": -44.4,
+      "trend_days": 2,
       "status": "cooling",
-      "bullish_ratio": 0.25
+      "bullish_ratio": 0.33
     },
     "油電燃氣": {
       "today": 3,
@@ -25,93 +25,53 @@
       "momentum_pct": 0.0,
       "trend_days": 0,
       "status": "steady",
-      "bullish_ratio": 0.33
+      "bullish_ratio": 0.0
     },
     "建材營造": {
       "today": 2,
-      "avg_n": 3.4,
-      "momentum_pct": -41.2,
-      "trend_days": 1,
+      "avg_n": 3.2,
+      "momentum_pct": -37.5,
+      "trend_days": 0,
       "status": "cooling",
       "bullish_ratio": 0.5
     },
     "食品": {
       "today": 2,
-      "avg_n": 4.0,
-      "momentum_pct": -50.0,
-      "trend_days": 1,
-      "status": "cooling",
-      "bullish_ratio": 0.0
-    },
-    "金融保險": {
-      "today": 2,
-      "avg_n": 14.8,
-      "momentum_pct": -86.5,
-      "trend_days": 4,
-      "status": "cooling",
-      "bullish_ratio": 0.0
-    },
-    "化學工業": {
-      "today": 2,
-      "avg_n": 4.4,
-      "momentum_pct": -54.5,
-      "trend_days": 0,
-      "status": "cooling",
-      "bullish_ratio": 0.0
-    },
-    "電子零組件": {
-      "today": 1,
-      "avg_n": 3.2,
-      "momentum_pct": -68.8,
-      "trend_days": 0,
-      "status": "cooling",
-      "bullish_ratio": 1.0
-    },
-    "電腦及週邊": {
-      "today": 1,
-      "avg_n": 3.0,
-      "momentum_pct": -66.7,
+      "avg_n": 3.6,
+      "momentum_pct": -44.4,
       "trend_days": 0,
       "status": "cooling",
       "bullish_ratio": 0.0
     },
     "光電": {
       "today": 1,
-      "avg_n": 3.2,
-      "momentum_pct": -68.8,
-      "trend_days": 2,
-      "status": "cooling",
-      "bullish_ratio": 1.0
-    },
-    "汽車": {
-      "today": 1,
-      "avg_n": 1.8,
+      "avg_n": 2.2,
       "momentum_pct": null,
       "trend_days": 0,
       "status": "noise",
       "bullish_ratio": 1.0
     },
-    "航運": {
+    "汽車": {
       "today": 1,
-      "avg_n": 4.8,
-      "momentum_pct": -79.2,
-      "trend_days": 1,
-      "status": "cooling",
+      "avg_n": 1.6,
+      "momentum_pct": null,
+      "trend_days": 0,
+      "status": "noise",
       "bullish_ratio": 1.0
+    },
+    "電子零組件": {
+      "today": 1,
+      "avg_n": 1.6,
+      "momentum_pct": null,
+      "trend_days": 0,
+      "status": "noise",
+      "bullish_ratio": 0.0
     },
     "資訊服務": {
       "today": 1,
-      "avg_n": 4.6,
-      "momentum_pct": -78.3,
-      "trend_days": 4,
-      "status": "cooling",
-      "bullish_ratio": 1.0
-    },
-    "通信網路": {
-      "today": 1,
       "avg_n": 3.6,
       "momentum_pct": -72.2,
-      "trend_days": 1,
+      "trend_days": 0,
       "status": "cooling",
       "bullish_ratio": 1.0
     },
@@ -123,11 +83,27 @@
       "status": "noise",
       "bullish_ratio": 0.0
     },
-    "鋼鐵": {
+    "電腦及週邊": {
       "today": 1,
-      "avg_n": 4.6,
-      "momentum_pct": -78.3,
-      "trend_days": 1,
+      "avg_n": 2.2,
+      "momentum_pct": null,
+      "trend_days": 0,
+      "status": "noise",
+      "bullish_ratio": 0.0
+    },
+    "通信網路": {
+      "today": 1,
+      "avg_n": 2.8,
+      "momentum_pct": null,
+      "trend_days": 0,
+      "status": "noise",
+      "bullish_ratio": 1.0
+    },
+    "航運": {
+      "today": 1,
+      "avg_n": 3.8,
+      "momentum_pct": -73.7,
+      "trend_days": 0,
       "status": "cooling",
       "bullish_ratio": 0.0
     },
@@ -139,12 +115,12 @@
       "status": "noise",
       "bullish_ratio": 0.0
     },
-    "橡膠": {
+    "鋼鐵": {
       "today": 1,
-      "avg_n": 1.8,
-      "momentum_pct": null,
+      "avg_n": 3.8,
+      "momentum_pct": -73.7,
       "trend_days": 0,
-      "status": "noise",
+      "status": "cooling",
       "bullish_ratio": 0.0
     },
     "貿易百貨": {
@@ -155,13 +131,29 @@
       "status": "noise",
       "bullish_ratio": 0.0
     },
-    "塑膠": {
+    "化學工業": {
       "today": 1,
-      "avg_n": 2.2,
+      "avg_n": 3.6,
+      "momentum_pct": -72.2,
+      "trend_days": 1,
+      "status": "cooling",
+      "bullish_ratio": 0.0
+    },
+    "金融保險": {
+      "today": 1,
+      "avg_n": 11.2,
+      "momentum_pct": -91.1,
+      "trend_days": 5,
+      "status": "cooling",
+      "bullish_ratio": 0.0
+    },
+    "橡膠": {
+      "today": 1,
+      "avg_n": 1.6,
       "momentum_pct": null,
       "trend_days": 0,
       "status": "noise",
-      "bullish_ratio": 1.0
+      "bullish_ratio": 0.0
     },
     "居家生活": {
       "today": 1,
@@ -176,48 +168,48 @@
   "cooling_industries": [
     {
       "industry": "金融保險",
-      "today": 2,
-      "avg_n": 14.8,
-      "momentum_pct": -86.5,
-      "trend_days": 4,
+      "today": 1,
+      "avg_n": 11.2,
+      "momentum_pct": -91.1,
+      "trend_days": 5,
       "status": "cooling",
       "bullish_ratio": 0.0
     },
     {
       "industry": "航運",
       "today": 1,
-      "avg_n": 4.8,
-      "momentum_pct": -79.2,
-      "trend_days": 1,
-      "status": "cooling",
-      "bullish_ratio": 1.0
-    },
-    {
-      "industry": "資訊服務",
-      "today": 1,
-      "avg_n": 4.6,
-      "momentum_pct": -78.3,
-      "trend_days": 4,
-      "status": "cooling",
-      "bullish_ratio": 1.0
-    },
-    {
-      "industry": "鋼鐵",
-      "today": 1,
-      "avg_n": 4.6,
-      "momentum_pct": -78.3,
-      "trend_days": 1,
+      "avg_n": 3.8,
+      "momentum_pct": -73.7,
+      "trend_days": 0,
       "status": "cooling",
       "bullish_ratio": 0.0
     },
     {
-      "industry": "通信網路",
+      "industry": "鋼鐵",
+      "today": 1,
+      "avg_n": 3.8,
+      "momentum_pct": -73.7,
+      "trend_days": 0,
+      "status": "cooling",
+      "bullish_ratio": 0.0
+    },
+    {
+      "industry": "資訊服務",
+      "today": 1,
+      "avg_n": 3.6,
+      "momentum_pct": -72.2,
+      "trend_days": 0,
+      "status": "cooling",
+      "bullish_ratio": 1.0
+    },
+    {
+      "industry": "化學工業",
       "today": 1,
       "avg_n": 3.6,
       "momentum_pct": -72.2,
       "trend_days": 1,
       "status": "cooling",
-      "bullish_ratio": 1.0
+      "bullish_ratio": 0.0
     }
   ],
   "real_breakout": [],

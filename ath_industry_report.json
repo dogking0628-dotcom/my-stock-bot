@@ -6,7 +6,7 @@
   "ref_trading_date": "2026-11-24",
   "patched_bars": 0,
   "basis": "yfinance 2y monthly + 動能確認分數（最強族群挑 5）；最新K棒以證交所 MI_INDEX 校驗",
-  "total_analyzed": 1078,
+  "total_analyzed": 1077,
   "exact_ath": [
     {
       "today": 124.5,
@@ -38,8 +38,7 @@
         "漲停鎖死",
         "ATH",
         "族群同步",
-        "QQQ+7.0%",
-        "IGV+3.9%"
+        "IGV+0.8%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -107,8 +106,7 @@
       "momentum_notes": [
         "漲停鎖死",
         "ATH",
-        "族群同步",
-        "QQQ+7.0%"
+        "族群同步"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -280,11 +278,10 @@
       "market_cap_billions": 92.45348864,
       "mcap_pass": false,
       "sitc_net_shares": 0,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+7.0%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -413,12 +410,11 @@
       "market_cap_billions": 10550.12749312,
       "mcap_pass": true,
       "sitc_net_shares": 9708308,
-      "momentum_score": 75,
+      "momentum_score": 70,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "QQQ+7.0%",
-        "IGV+3.9%",
+        "IGV+0.8%",
         "投信+9,708張"
       ],
       "tier": "⭐⭐",
@@ -549,11 +545,10 @@
       "market_cap_billions": 115.47092992,
       "mcap_pass": true,
       "sitc_net_shares": 0,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+7.0%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -624,8 +619,7 @@
         "漲停鎖死",
         "ATH",
         "族群同步",
-        "QQQ+7.0%",
-        "IGV+3.9%"
+        "IGV+0.8%"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -693,8 +687,7 @@
       "momentum_notes": [
         "漲停鎖死",
         "ATH",
-        "族群同步",
-        "QQQ+7.0%"
+        "族群同步"
       ],
       "tier": "⭐⭐⭐",
       "next_day_prob": "≥85%"
@@ -866,11 +859,10 @@
       "market_cap_billions": 92.45348864,
       "mcap_pass": false,
       "sitc_net_shares": 0,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+7.0%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -999,12 +991,11 @@
       "market_cap_billions": 10550.12749312,
       "mcap_pass": true,
       "sitc_net_shares": 9708308,
-      "momentum_score": 75,
+      "momentum_score": 70,
       "momentum_notes": [
         "ATH",
         "族群同步",
-        "QQQ+7.0%",
-        "IGV+3.9%",
+        "IGV+0.8%",
         "投信+9,708張"
       ],
       "tier": "⭐⭐",
@@ -1135,11 +1126,10 @@
       "market_cap_billions": 115.47092992,
       "mcap_pass": true,
       "sitc_net_shares": 0,
-      "momentum_score": 55,
+      "momentum_score": 50,
       "momentum_notes": [
         "ATH",
-        "族群同步",
-        "QQQ+7.0%"
+        "族群同步"
       ],
       "tier": "⭐",
       "next_day_prob": "<70%"
@@ -1389,7 +1379,7 @@
       "ma5": 16.6,
       "ma20": 17.139999771118163,
       "ma60": 16.88666664759318,
-      "ma200": 14.38818829536438,
+      "ma200": 14.388188376426697,
       "gap_up": false,
       "close_near_high": false,
       "long_red": false,
@@ -1592,6 +1582,6 @@
   "v4_blocked": true,
   "v44_paused": false,
   "v45_filtered": [],
-  "intraday_updated": "2026-11-24 10:55",
+  "intraday_updated": "2026-11-24 15:14",
   "is_intraday": true
 }

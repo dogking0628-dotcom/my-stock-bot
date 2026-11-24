@@ -1,6 +1,6 @@
 {
-  "last_run": "2026-11-20",
-  "cash": 19455.844372075477,
+  "last_run": "2026-11-23",
+  "cash": 10581.743591456281,
   "positions": [
     {
       "ticker": "AMZN",
@@ -64,6 +64,13 @@
       "entry_price": 118.33,
       "peak_price": 118.33,
       "shares": 76.52747
+    },
+    {
+      "ticker": "BIIB",
+      "entry_date": "2026-11-23",
+      "entry_price": 256.71,
+      "peak_price": 256.71,
+      "shares": 34.568584
     }
   ],
   "running_ath": {}

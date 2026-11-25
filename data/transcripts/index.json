@@ -14748,8 +14748,8 @@
   },
   "cW9rQGJva48": {
     "status": "error",
-    "error": "ERROR: [youtube] cW9rQGJva48: Failed to extract any player response; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you a",
-    "fetched_at": "2026-11-20T19:01"
+    "error": "ERROR: [youtube] cW9rQGJva48: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-11-25T20:21"
   },
   "RYay9SZ5yiQ": {
     "status": "error",
@@ -14819,6 +14819,36 @@
   "Yd93bR3j2IA": {
     "status": "error",
     "error": "ERROR: [youtube] Yd93bR3j2IA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-11-24T20:59"
+    "fetched_at": "2026-11-25T20:21"
+  },
+  "9lCtjgXB5ZM": {
+    "status": "error",
+    "error": "ERROR: [youtube] 9lCtjgXB5ZM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-11-25T20:21"
+  },
+  "wGChoJt4PcE": {
+    "status": "error",
+    "error": "ERROR: [youtube] wGChoJt4PcE: This video is available to this channel's members on level: 先探金粉 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
+    "fetched_at": "2026-11-25T20:21"
+  },
+  "c3DPwCKitXA": {
+    "status": "error",
+    "error": "ERROR: [youtube] c3DPwCKitXA: This video is available to this channel's members on level: 先探金粉 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
+    "fetched_at": "2026-11-25T20:21"
+  },
+  "EtDs9IQPjN4": {
+    "status": "error",
+    "error": "ERROR: [youtube] EtDs9IQPjN4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-11-25T20:21"
+  },
+  "dQwLZ4siBjQ": {
+    "status": "error",
+    "error": "ERROR: [youtube] dQwLZ4siBjQ: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-11-25T20:21"
+  },
+  "SMZpHfK70E8": {
+    "status": "error",
+    "error": "ERROR: [youtube] SMZpHfK70E8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-11-25T20:21"
   }
 }

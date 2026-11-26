@@ -14824,7 +14824,7 @@
   "9lCtjgXB5ZM": {
     "status": "error",
     "error": "ERROR: [youtube] 9lCtjgXB5ZM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-11-25T20:21"
+    "fetched_at": "2026-11-26T19:58"
   },
   "wGChoJt4PcE": {
     "status": "error",
@@ -14839,16 +14839,36 @@
   "EtDs9IQPjN4": {
     "status": "error",
     "error": "ERROR: [youtube] EtDs9IQPjN4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-11-25T20:21"
+    "fetched_at": "2026-11-26T19:58"
   },
   "dQwLZ4siBjQ": {
     "status": "error",
     "error": "ERROR: [youtube] dQwLZ4siBjQ: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
-    "fetched_at": "2026-11-25T20:21"
+    "fetched_at": "2026-11-26T19:58"
   },
   "SMZpHfK70E8": {
     "status": "error",
     "error": "ERROR: [youtube] SMZpHfK70E8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
     "fetched_at": "2026-11-25T20:21"
+  },
+  "lk-RgnR2SXQ": {
+    "status": "error",
+    "error": "ERROR: [youtube] lk-RgnR2SXQ: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-11-26T19:58"
+  },
+  "F6mHUdEX1dM": {
+    "status": "error",
+    "error": "ERROR: [youtube] F6mHUdEX1dM: This video is available to this channel's members on level: 先探金粉 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
+    "fetched_at": "2026-11-26T19:58"
+  },
+  "cZrjD6RVpD0": {
+    "status": "error",
+    "error": "ERROR: [youtube] cZrjD6RVpD0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-11-26T19:58"
+  },
+  "z9NH-ZiggCk": {
+    "status": "error",
+    "error": "ERROR: [youtube] z9NH-ZiggCk: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-",
+    "fetched_at": "2026-11-26T19:58"
   }
 }

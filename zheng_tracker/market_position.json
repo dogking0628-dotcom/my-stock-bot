@@ -1,38 +1,38 @@
 {
-  "date": "2026-11-25 22:39",
-  "stage": "BULL_PULLBACK",
-  "label": "📉 多頭回檔",
-  "desc": "靠近 MA200 區，方向未明",
+  "date": "2026-11-26 22:29",
+  "stage": "BEAR_START",
+  "label": "❌ 空頭起跌",
+  "desc": "剛跌破 MA60，注意進一步下殺",
   "notes": [
-    "距 MA200 -3.5%（盤整區）"
+    "跌破 MA60(-15.8%) + 5 日跌 -5.0%"
   ],
   "indicators": {
-    "price": 40122.35,
-    "ma60": 45494.29,
-    "ma120": 45185.95,
-    "ma200": 41597.05,
-    "ma87_zheng": 45073.08,
-    "ma284_zheng": 37596.93,
-    "bias_87_pct": -10.98,
-    "bias_284_pct": 6.72,
+    "price": 38195.43,
+    "ma60": 45367.01,
+    "ma120": 45126.43,
+    "ma200": 41628.22,
+    "ma87_zheng": 45024.18,
+    "ma284_zheng": 37641.35,
+    "bias_87_pct": -15.17,
+    "bias_284_pct": 1.47,
     "zheng_da_signal": "⚪ 鄭大兩線整理中",
-    "dist_ma60_pct": -11.81,
-    "dist_ma120_pct": -11.21,
-    "dist_ma200_pct": -3.55,
-    "ret_5d": 0.08,
-    "ret_20d": -12.96,
-    "ret_60d": -11.17,
-    "rsi_daily": 43.4,
-    "weekly_K": 28.6,
-    "monthly_K": 72.5,
-    "monthly_D": 83.1,
-    "vol_ratio_20": 0.69,
-    "vol_avg_20": 4389760.0
+    "dist_ma60_pct": -15.81,
+    "dist_ma120_pct": -15.36,
+    "dist_ma200_pct": -8.25,
+    "ret_5d": -4.97,
+    "ret_20d": -18.79,
+    "ret_60d": -16.66,
+    "rsi_daily": 42.3,
+    "weekly_K": 24.2,
+    "monthly_K": 69.0,
+    "monthly_D": 81.9,
+    "vol_ratio_20": 1.12,
+    "vol_avg_20": 4468350.0
   },
   "playbook": {
-    "sector_focus": "逢回看哪族群最不跌（鄭大關鍵）",
-    "cb_filter": "不跌族群中找有 CB 的個股",
-    "action": "📉 多頭回檔：找「跌中相對強+CB」標的，分批進場",
-    "risk_advice": "保留 30% 現金等更深回檔"
+    "sector_focus": "觀察族群輪動（誰先跌透）",
+    "cb_filter": "暫緩進場，等位階轉穩",
+    "action": "❌ 空頭起跌：減碼至 50%，停利強勢族群",
+    "risk_advice": "不要逆勢攤平，等月 K 翻低"
   }
 }

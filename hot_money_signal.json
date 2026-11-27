@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-11-26",
+  "timestamp": "2026-11-27",
   "lookback_days": 5,
   "history_days": 60,
   "momentum": {
     "其他": {
       "today": 5,
-      "avg_n": 5.0,
-      "momentum_pct": 0.0,
+      "avg_n": 4.8,
+      "momentum_pct": 4.2,
       "trend_days": 0,
       "status": "steady",
       "bullish_ratio": 0.4
@@ -15,22 +15,30 @@
       "today": 4,
       "avg_n": 2.8,
       "momentum_pct": 42.9,
-      "trend_days": 1,
+      "trend_days": 0,
       "status": "rising",
       "bullish_ratio": 0.25
     },
     "生技醫療": {
       "today": 3,
-      "avg_n": 3.6,
-      "momentum_pct": -16.7,
+      "avg_n": 3.2,
+      "momentum_pct": -6.2,
       "trend_days": 0,
       "status": "cooling",
       "bullish_ratio": 0.33
     },
+    "航運": {
+      "today": 3,
+      "avg_n": 1.8,
+      "momentum_pct": 66.7,
+      "trend_days": 1,
+      "status": "rising",
+      "bullish_ratio": 0.0
+    },
     "鋼鐵": {
       "today": 3,
-      "avg_n": 2.6,
-      "momentum_pct": 15.4,
+      "avg_n": 2.4,
+      "momentum_pct": 25.0,
       "trend_days": 0,
       "status": "rising",
       "bullish_ratio": 0.0
@@ -41,33 +49,17 @@
       "momentum_pct": 0.0,
       "trend_days": 0,
       "status": "steady",
-      "bullish_ratio": 0.0
+      "bullish_ratio": 0.33
+    },
+    "金融保險": {
+      "today": 3,
+      "avg_n": 2.4,
+      "momentum_pct": 25.0,
+      "trend_days": 2,
+      "status": "rising",
+      "bullish_ratio": 0.33
     },
     "建材營造": {
-      "today": 2,
-      "avg_n": 2.6,
-      "momentum_pct": null,
-      "trend_days": 0,
-      "status": "noise",
-      "bullish_ratio": 0.5
-    },
-    "電腦及週邊": {
-      "today": 2,
-      "avg_n": 1.2,
-      "momentum_pct": null,
-      "trend_days": 0,
-      "status": "noise",
-      "bullish_ratio": 0.0
-    },
-    "汽車": {
-      "today": 2,
-      "avg_n": 1.4,
-      "momentum_pct": null,
-      "trend_days": 0,
-      "status": "noise",
-      "bullish_ratio": 0.5
-    },
-    "航運": {
       "today": 2,
       "avg_n": 2.2,
       "momentum_pct": null,
@@ -75,17 +67,49 @@
       "status": "noise",
       "bullish_ratio": 0.5
     },
-    "金融保險": {
+    "電腦及週邊": {
       "today": 2,
-      "avg_n": 3.8,
-      "momentum_pct": -47.4,
+      "avg_n": 1.4,
+      "momentum_pct": null,
       "trend_days": 0,
-      "status": "cooling",
+      "status": "noise",
+      "bullish_ratio": 0.0
+    },
+    "汽車": {
+      "today": 2,
+      "avg_n": 1.6,
+      "momentum_pct": null,
+      "trend_days": 0,
+      "status": "noise",
       "bullish_ratio": 0.5
+    },
+    "光電": {
+      "today": 2,
+      "avg_n": 1.4,
+      "momentum_pct": null,
+      "trend_days": 0,
+      "status": "noise",
+      "bullish_ratio": 0.0
+    },
+    "化學工業": {
+      "today": 2,
+      "avg_n": 1.4,
+      "momentum_pct": null,
+      "trend_days": 0,
+      "status": "noise",
+      "bullish_ratio": 0.0
+    },
+    "塑膠": {
+      "today": 2,
+      "avg_n": 0.8,
+      "momentum_pct": null,
+      "trend_days": 0,
+      "status": "noise",
+      "bullish_ratio": 0.0
     },
     "資訊服務": {
       "today": 1,
-      "avg_n": 1.6,
+      "avg_n": 1.4,
       "momentum_pct": null,
       "trend_days": 0,
       "status": "noise",
@@ -101,7 +125,7 @@
     },
     "通信網路": {
       "today": 1,
-      "avg_n": 1.4,
+      "avg_n": 1.0,
       "momentum_pct": null,
       "trend_days": 0,
       "status": "noise",
@@ -109,7 +133,7 @@
     },
     "紡織纖維": {
       "today": 1,
-      "avg_n": 1.4,
+      "avg_n": 1.2,
       "momentum_pct": null,
       "trend_days": 0,
       "status": "noise",
@@ -117,7 +141,7 @@
     },
     "貿易百貨": {
       "today": 1,
-      "avg_n": 1.2,
+      "avg_n": 1.0,
       "momentum_pct": null,
       "trend_days": 0,
       "status": "noise",
@@ -139,22 +163,6 @@
       "status": "noise",
       "bullish_ratio": 0.0
     },
-    "化學工業": {
-      "today": 1,
-      "avg_n": 1.6,
-      "momentum_pct": null,
-      "trend_days": 0,
-      "status": "noise",
-      "bullish_ratio": 0.0
-    },
-    "光電": {
-      "today": 1,
-      "avg_n": 1.6,
-      "momentum_pct": null,
-      "trend_days": 0,
-      "status": "noise",
-      "bullish_ratio": 0.0
-    },
     "居家生活": {
       "today": 1,
       "avg_n": 1.0,
@@ -165,15 +173,7 @@
     },
     "其他電子": {
       "today": 1,
-      "avg_n": 0.4,
-      "momentum_pct": null,
-      "trend_days": 0,
-      "status": "noise",
-      "bullish_ratio": 0.0
-    },
-    "塑膠": {
-      "today": 1,
-      "avg_n": 0.8,
+      "avg_n": 0.6,
       "momentum_pct": null,
       "trend_days": 0,
       "status": "noise",
@@ -182,39 +182,48 @@
   },
   "rising_industries": [
     {
+      "industry": "航運",
+      "today": 3,
+      "avg_n": 1.8,
+      "momentum_pct": 66.7,
+      "trend_days": 1,
+      "status": "rising",
+      "bullish_ratio": 0.0
+    },
+    {
       "industry": "食品",
       "today": 4,
       "avg_n": 2.8,
       "momentum_pct": 42.9,
-      "trend_days": 1,
+      "trend_days": 0,
       "status": "rising",
       "bullish_ratio": 0.25
     },
     {
       "industry": "鋼鐵",
       "today": 3,
-      "avg_n": 2.6,
-      "momentum_pct": 15.4,
+      "avg_n": 2.4,
+      "momentum_pct": 25.0,
       "trend_days": 0,
       "status": "rising",
       "bullish_ratio": 0.0
+    },
+    {
+      "industry": "金融保險",
+      "today": 3,
+      "avg_n": 2.4,
+      "momentum_pct": 25.0,
+      "trend_days": 2,
+      "status": "rising",
+      "bullish_ratio": 0.33
     }
   ],
   "cooling_industries": [
     {
-      "industry": "金融保險",
-      "today": 2,
-      "avg_n": 3.8,
-      "momentum_pct": -47.4,
-      "trend_days": 0,
-      "status": "cooling",
-      "bullish_ratio": 0.5
-    },
-    {
       "industry": "生技醫療",
       "today": 3,
-      "avg_n": 3.6,
-      "momentum_pct": -16.7,
+      "avg_n": 3.2,
+      "momentum_pct": -6.2,
       "trend_days": 0,
       "status": "cooling",
       "bullish_ratio": 0.33
@@ -224,6 +233,41 @@
   "fake_breakout_risk": [],
   "normal": [],
   "new_system": [],
-  "rotation_picks": [],
+  "rotation_picks": [
+    {
+      "today": 28.149999618530273,
+      "monthly_max_2y": 28.149999618530273,
+      "ratio": 1.0,
+      "from_high_pct": 0.0,
+      "bullish": true,
+      "bullish_fast": false,
+      "change_pct": 0.17793322555794688,
+      "vol_ratio": 0.27720129497580664,
+      "rsi": 57.894733822953235,
+      "ma5": 27.95,
+      "ma20": 27.985000133514404,
+      "ma60": 27.96916675567627,
+      "ma200": 26.459146356582643,
+      "gap_up": false,
+      "close_near_high": false,
+      "long_red": false,
+      "tangle": null,
+      "ticker": "2852",
+      "name": "第一保",
+      "industry": "金融保險",
+      "industry_strong": false,
+      "market_cap_billions": 78.4531712,
+      "mcap_pass": false,
+      "sitc_net_shares": 0,
+      "momentum_score": 30,
+      "momentum_notes": [
+        "ATH"
+      ],
+      "tier": "⭐",
+      "next_day_prob": "<70%",
+      "rotation_score": 12.5,
+      "industry_momentum_pct": 25.0
+    }
+  ],
   "v4_blocked": true
 }
